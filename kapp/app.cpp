@@ -124,7 +124,7 @@ void ${APP_NAME}::saveProperties(KConfig *config)
     // config file.  anything you write here will be available
     // later when this app is restored
 
-    if (m_view->currentURL() != QString::null)
+    if (!m_view->currentURL().isNull())
         config->writeEntry("lastURL", m_view->currentURL());
 }
 
@@ -137,7 +137,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
 
     QString url = config->readEntry("lastURL");
 
-    if (url != QString::null)
+    if (!url.isNull())
         m_view->openURL(KURL(url));
 }
 
