@@ -6,10 +6,10 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/main.cpp
 #include <kcmdlineargs.h>
 #include <klocale.h>
 
-static const char *description =
+static const char description[] =
     I18N_NOOP("A KDE KPart Application");
 
-static const char *version = "v${APP_VERSION}";
+static const char version[] = "v${APP_VERSION}";
 
 static KCmdLineOptions options[] =
 {
