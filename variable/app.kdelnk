@@ -8,6 +8,5 @@ Exec=$APP_NAME_LC
 Icon=$APP_NAME_LC.xpm
 Type=Application
 DocPath=$APP_NAME_LC/$APP_NAME_LC.html
-Comment=
 Terminal=0
 MiniIcon=$APP_NAME_LC.xpm
