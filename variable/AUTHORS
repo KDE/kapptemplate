@@ -1,3 +1,0 @@
-echo "Creating $LOCATION_ROOT/AUTHORS...";
-cat << EOF > $LOCATION_ROOT/AUTHORS
-$AUTHOR <$EMAIL>

@@ -1,4 +1,0 @@
-echo "Creating $LOCATION_ROOT/ChangeLog...";
-cat << EOF > $LOCATION_ROOT/ChangeLog
-`date` - $AUTHOR <$EMAIL>
-    o Initial Creation
