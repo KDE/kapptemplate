@@ -184,7 +184,7 @@ void ${APP_NAME}::fileOpen()
         else
         {
             // we open the file in a new window...
-            KPartApp* newWin = new KPartApp;
+            ${APP_NAME}* newWin = new ${APP_NAME};
             newWin->load( KURL( file_name ) );
             newWin->show();
         }
