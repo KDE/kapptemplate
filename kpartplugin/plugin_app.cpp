@@ -57,7 +57,7 @@ void Plugin${APP_NAME}::slotAction()
     {
         QString title( i18n( "Malformed URL" ) );
         QString text( i18n( "The URL you entered is not valid, please "
-                            "correct it and try again" ) );
+                            "correct it and try again." ) );
 
         KMessageBox::sorry( 0, text, title );
         return;
