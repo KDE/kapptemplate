@@ -2,6 +2,8 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}pref.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}pref.cpp
 #include "${APP_NAME_LC}pref.h"
 
+#include <klocale.h>
+
 #include <qlayout.h>
 #include <qlabel.h>
 
@@ -13,10 +15,10 @@ ${APP_NAME}Preferences::${APP_NAME}Preferences()
     // a Treelist dialog.. but there are a number of other
     // possibilities (including Tab, Swallow, and just Plain)
     QFrame *frame;
-    frame = addPage("First Page", "Page One Options");
+    frame = addPage(i18n("First Page"), i18n("Page One Options"));
     m_pageOne = new ${APP_NAME}PrefPageOne(frame);
 
-    frame = addPage("Second Page", "Page Two Options");
+    frame = addPage(i18n("Second Page"), i18n("Page Two Options"));
     m_pageTwo = new ${APP_NAME}PrefPageTwo(frame);
 }
 

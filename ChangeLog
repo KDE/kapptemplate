@@ -1,3 +1,7 @@
+Jun-09-2000 - Kurt Granroth (v0.6.3)
+  o Added i18n() around preference titles... mostly so it would
+    compile with the newly ambiguous KDialogBase::addPage methods
+
 May-30-2000 - Kurt Granroth (v0.6.2)
   o Removed KAccel stuff... KKeyDialog can handle action collections
   o Use KURLRequesterDlg instead of homemade job
