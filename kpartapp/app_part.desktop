@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Name=${APP_NAME}Part
-Name[af]=${APP_NAME}deel
+Name[af]=${APP_NAME}Deel
 Name[de]=${APP_NAME}-Objekt
 Name[eo]=${APP_NAME}-Parto
 Name[es]=Parte${NOMBRE_APLIC}
