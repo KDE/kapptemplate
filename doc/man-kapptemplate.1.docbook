@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+<!ENTITY % English "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<author><personname><firstname>Ben</firstname><surname>Burton</surname></personname>
+<email></email></author>
+<date>April 12, 2003</date>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle><command>kapptemplate</command></refentrytitle>
+<manvolnum>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname><command>kapptemplate</command></refname>
+<refpurpose>Creates a framework to develop a KDE application</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis>
+<command>kapptemplate</command>
+<group><option>--noinit</option></group>
+<group><option>--default</option></group>
+<group><option>--full-app</option></group>
+<group><option>--kpart-app</option></group>
+<group><option>--kpart-plugin</option></group>
+<group><option>--existing</option></group>
+<group><option>--help</option></group>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title>Description</title>
+
+<para><command>kapptemplate</command> is a shell script that will create the necessary framework to develop various &kde; applications. It takes care of the autoconf/automake code as well as providing a skeleton and example of what the code typically looks like. </para>
+
+<para>This utility is part of the &kde; Software Development Kit. </para>
+
+</refsect1>
+
+<refsect1>
+<title>Options</title>
+
+<variablelist>
+<title>General Options</title>
+<varlistentry>
+<term><option>--help</option></term>
+<listitem><para>Display a full summary of options. </para></listitem>
+</varlistentry>
+<varlistentry>
+<term><option>--no-init</option></term>
+<listitem><para>Don't run <command>make</command> <option>-f</option> <parameter>Makefile.cvs</parameter></para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><option>--default</option></term>
+<listitem><para>Use default values instead of prompting.</para></listitem>
+</varlistentry>
+</variablelist>
+
+<variablelist>
+<title>Framework Types</title>
+<varlistentry>
+<term><option>--full-app</option></term>
+<listitem><para>Create a full featured KDE application. </para></listitem>
+</varlistentry>
+<varlistentry>
+<term><option>--kpart-app</option></term>
+<listitem><para>Create a full featured KPart application.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><option>--kpart-plugin</option></term>
+<listitem><para>Create a KPart plugin framework.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><option>--existing</option></term>
+<listitem><para>Converting existing source to an automake/autoconf KDE framework.</para></listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+
+<!-- The Following sections are optional, but recommended if they are
+applicable. -->
+
+<refsect1>
+<title>Files</title>
+
+<variablelist>
+<varlistentry>
+<term><filename>~/.kapptemplate</filename></term>
+<listitem><para>Stores default values</para></listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title>See Also</title>
+
+<para><filename>$PREFIX/share/doc/kapptemplate</filename></para>
+
+</refsect1>
+
+<refsect1>
+<title>Authors</title>
+
+<para><command>kapptemplate</command> was written by &Kurt.Granroth; &Kurt.Granroth.mail;</para>
+<para>This manual page was prepared by <personname><firstname>Ben</firstname><surname>Burton</surname></personname><email>bab@debian.org</email></para>
+</refsect1>
+
+</refentry>
