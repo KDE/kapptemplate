@@ -1,3 +1,6 @@
+Oct-27-2000 - Stephan Kulow (v0.7.3)
+  o Fixed pot file handling.  'make package-messages' should now work.
+
 Oct-14-2000 - Malte Starostik (v0.7.2)
   o Added --help option
   o Added option to not run ./configure on newly created project
