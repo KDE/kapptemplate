@@ -7,7 +7,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include <config.h>
 #endif 
 
-#include <kapp.h>
+#include <kapplication.h>
 #include <kparts/mainwindow.h>
  
 class KToggleAction;
