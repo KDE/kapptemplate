@@ -1,3 +1,8 @@
+Jan-18-1999 - Kurt Granroth (v0.3.1)
+  o AUGH!! I forgot 'acinclude.m4'!!
+  o Slightly modified 'install-me' so that kapptemplate will install from
+    CVS.  It was wigging out when it tried to cp the CVS directory...
+  
 Jan-01-1999 - Kurt Granroth (v0.3)
   o Added kapptemplate to kdesdk
   o HUGE clean-up of code

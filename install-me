@@ -11,7 +11,7 @@ else
 	ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.3 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.3.1 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # let's see if we have a previous > 0.2 release
@@ -144,16 +144,16 @@ else
 fi
 
 $ECHO "Installing common files...";
-cp -pf common/* $THE_SHARE/common || exit 1;
+cp -pf common/* $THE_SHARE/common
 
 $ECHO "Installing variable files...";
-cp -pf variable/* $THE_SHARE/variable || exit 1;
+cp -pf variable/* $THE_SHARE/variable
 
 $ECHO "Installing knewclass files...";
-cp -pf knewclass/* $THE_SHARE/knewclass || exit 1;
+cp -pf knewclass/* $THE_SHARE/knewclass
 
 $ECHO "Installing knewfunction files...";
-cp -pf knewfunction/* $THE_SHARE/knewfunction || exit 1;
+cp -pf knewfunction/* $THE_SHARE/knewfunction
 
 $ECHO "Constructing .kapptemplaterc...";
 cat << ENDORC > $HOME/.kapptemplaterc
@@ -164,10 +164,10 @@ SHARE_DIR="$THE_SHARE";
 ENDORC
 
 $ECHO "Installing myself...";
-cp -pf kapptemplate $BIN_DIR || exit 1;
-cp -pf kapptemplate.module $BIN_DIR || exit 1;
-cp -pf knewclass.module $BIN_DIR || exit 1;
-cp -pf knewfunction.module $BIN_DIR || exit 1;
+cp -pf kapptemplate $BIN_DIR
+cp -pf kapptemplate.module $BIN_DIR
+cp -pf knewclass.module $BIN_DIR
+cp -pf knewfunction.module $BIN_DIR
 if [ ! -f $BIN_DIR/knewclass ];
 then
 	ln -s $BIN_DIR/kapptemplate $BIN_DIR/knewclass
