@@ -1,6 +1,0 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am...";
-$MKDIR $LOCATION_ROOT/$APP_NAME_LC/doc/en
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am
-
-KDE_DOCS = $APP_NAME_LC
-KDE_LANG = en

@@ -1,6 +1,6 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/en/index.docbook...";
+echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook...";
 echo "It is better to use template.docbook instead of this - please replace it"
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/index.docbook
+cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1-Based Variant V1.0//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&$APP_NAME;">
@@ -93,7 +93,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/index.docbook
     </qandaset>
 
   </chapter>
-  &docindex; 
+  &documentation.index; 
 </book>
 <!--
 Local Variables:

@@ -1,9 +1,8 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/Makefile.am...";
-$MKDIR $LOCATION_ROOT/$APP_NAME_LC/doc
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/Makefile.am
+echo "Creating $LOCATION_ROOT/doc/Makefile.am...";
+$MKDIR $LOCATION_ROOT/doc
+cat << EOF > $LOCATION_ROOT/doc/Makefile.am
 
-# the SUBDIRS is filled automatically by am_edit. If files are 
-# in this directory they are installed into the english dir
-KDE_LANG = en
+SUBDIRS = $(AUTO_SUBDIRS)
 KDE_DOCS = $APP_NAME_LC
-SUBDIRS = \$(AUTODIRS)  
+KDE_LANG = en
+
