@@ -1,7 +1,7 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/main.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/main.cpp
 #include "${APP_NAME_LC}.h"
-#include <kapp.h>
+#include <kapplication.h>
 #include <dcopclient.h>
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>

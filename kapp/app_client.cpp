@@ -1,6 +1,6 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_client.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_client.cpp
-#include <kapp.h>
+#include <kapplication.h>
 #include <dcopclient.h>
 #include <qdatastream.h>
 #include <qstring.h>
