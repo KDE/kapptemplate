@@ -43,7 +43,7 @@ QString ${APP_NAME}View::currentURL()
     return m_html->url();
 }
 
-void ${APP_NAME}View::openURL(QCString url)
+void ${APP_NAME}View::openURL(QString url)
 {
     m_html->openURL(url);
 }

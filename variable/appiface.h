@@ -11,7 +11,7 @@ class ${APP_NAME}Iface : virtual public DCOPObject
 public:
 
 k_dcop:
-  virtual void openURL(QCString url) = 0;
+  virtual void openURL(QString url) = 0;
 };
 
 #endif // ${APP_NAME_UC}IFACE_H

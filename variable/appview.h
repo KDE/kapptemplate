@@ -44,7 +44,7 @@ public:
     /**
      * Random 'set' function
      */
-    virtual void openURL(QCString url);
+    virtual void openURL(QString url);
 
     /**
      * Print this view to any medium -- paper or not
