@@ -64,6 +64,11 @@ ${APP_NAME}::${APP_NAME}()
         // next time we enter the event loop...
         return;
     }
+
+    // apply the saved mainwindow settings, if any, and ask the mainwindow
+    // to automatically save settings if changed: window size, toolbar
+    // position, icon size, etc.
+    setAutoSaveSettings();
 }
 
 ${APP_NAME}::~${APP_NAME}()
@@ -148,7 +153,7 @@ void ${APP_NAME}::optionsConfigureKeys()
 
 void ${APP_NAME}::optionsConfigureToolbars()
 {
-    saveMainWindowSettings(KGlobal::config(), "MainWindow");
+    saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
 
     // use the standard toolbar editor
     KEditToolbar dlg(factory());
@@ -159,7 +164,7 @@ void ${APP_NAME}::optionsConfigureToolbars()
 
 void ${APP_NAME}::applyNewToolbarConfig()
 {
-    applyMainWindowSettings(KGlobal::config(), "MainWindow");
+    applyMainWindowSettings(KGlobal::config(), autoSaveGroup());
 }
 
 void ${APP_NAME}::fileOpen()
