@@ -48,7 +48,7 @@ ${APP_NAME}::${APP_NAME}()
     setupActions();
 
     // Add typical actions and save size/toolbars/statusbar
-    setupGUI():
+    setupGUI();
 
     // allow the view to change the statusbar and caption
     connect(m_view, SIGNAL(signalChangeStatusbar(const QString&)),
