@@ -2,6 +2,13 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop
 [Desktop Entry]
 Name=${APP_NAME}Part
+Name[de]=${APP_NAME}-Objekt
+Name[eo]=${APP_NAME}-Parto
+Name[es]=${NOMBRE_APLIC}Part
+Name[et]=${APP_NAME} komponent
+Name[it]=Part${APP_NAME}
+Name[ko]=${APP_NAME} 파트
+Name[sv]=${APP_NAME}-del
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
 ServiceTypes=KParts/ReadOnlyPart,KParts/ReadWritePart
 X-KDE-Library=lib${APP_NAME_LC}part
