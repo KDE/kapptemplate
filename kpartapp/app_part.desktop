@@ -2,12 +2,14 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop
 [Desktop Entry]
 Name=${APP_NAME}Part
+Name[af]=${APP_NAME}-DEEL
 Name[de]=${APP_NAME}-Objekt
 Name[eo]=${APP_NAME}-Parto
-Name[es]=${NOMBRE_APLIC}Part
+Name[es]=Parte${NOMBRE_APLIC}
 Name[et]=${APP_NAME} komponent
 Name[it]=Part${APP_NAME}
-Name[ko]=${APP_NAME} 파트
+Name[ko]=${APP_NAME} 부분
+Name[lt]=${APP_NAME}Dalis
 Name[no]=${APP_NAME}
 Name[sv]=${APP_NAME}-del
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
