@@ -13,6 +13,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <qpainter.h>
 #include <qpaintdevicemetrics.h>
 
+#include <kdeversion.h>
 #include <kglobal.h>
 #include <klocale.h>
 #include <kiconloader.h>
@@ -121,8 +122,13 @@ void ${APP_NAME}::saveProperties(KConfig *config)
     // config file.  anything you write here will be available
     // later when this app is restored
 
-    if (!m_view->currentURL().isNull())
+    if (!m_view->currentURL().isNull()) {
+#if KDE_IS_VERSION(3,1,3)
+        config->writePathEntry("lastURL", m_view->currentURL());
+#else
         config->writeEntry("lastURL", m_view->currentURL());
+#endif
+    }
 }
 
 void ${APP_NAME}::readProperties(KConfig *config)
@@ -132,10 +138,10 @@ void ${APP_NAME}::readProperties(KConfig *config)
     // the app is being restored.  read in here whatever you wrote
     // in 'saveProperties'
 
-    QString url = config->readEntry("lastURL");
+    QString url = config->readPathEntry("lastURL");
 
-    if (!url.isNull())
-        m_view->openURL(KURL(url));
+    if (!url.isEmpty())
+        m_view->openURL(KURL::fromPathOrURL(url));
 }
 
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
