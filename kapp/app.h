@@ -14,6 +14,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 
 class QPrinter;
 class KToggleAction;
+class KURL;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the
@@ -40,7 +41,7 @@ public:
     /**
      * Use this method to load whatever file/URL you have
      */
-    void load(const QString& url);
+    void load(const KURL& url);
 
 protected:
     /**

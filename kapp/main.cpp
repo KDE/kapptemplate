@@ -12,11 +12,18 @@ static const char *description =
 
 static const char *version = "v${APP_VERSION}";
 
+static KCmdLineOptions options[] =
+{
+    { "+[URL]", I18N_NOOP( "Document to open." ), 0 },
+    { 0, 0, 0 }
+};
+
 int main(int argc, char **argv)
 {
     KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description, KAboutData::License_GPL, "(C) 2001 ${AUTHOR}", 0, 0, "${EMAIL}");
     about.addAuthor( "${AUTHOR}", 0, "${EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
+    KCmdLineArgs::addCmdLineOptions(options);
     KApplication app;
 
     // register ourselves as a dcop client
@@ -28,10 +35,22 @@ int main(int argc, char **argv)
     else
     {
         // no session.. just start up normally
-        ${APP_NAME} *widget = new ${APP_NAME};
-        if (argc > 1)
-            widget->load(argv[1]);
-        widget->show();
+        KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
+        if (args->count() == 0)
+        {
+            ${APP_NAME} *widget = new ${APP_NAME};
+            widget->show();
+        }
+        else
+        {
+            int i = 0;
+            for (; i < args->count(); i++)
+            {
+                ${APP_NAME} *widget = new ${APP_NAME};
+                widget->show();
+                widget->load(args->url(i));
+            }
+        }
     }
 
     return app.exec();

@@ -63,7 +63,7 @@ ${APP_NAME}::~${APP_NAME}()
 {
 }
 
-void ${APP_NAME}::load(const QString& url)
+void ${APP_NAME}::load(const KURL& url)
 {
     QString target;
     // the below code is what you should normally do.  in this
@@ -85,8 +85,8 @@ void ${APP_NAME}::load(const QString& url)
     }
     #endif
 
-    setCaption(url);
-    m_view->openURL(KURL(url));
+    setCaption(url.url());
+    m_view->openURL(url);
 }
 
 void ${APP_NAME}::setupActions()
@@ -157,7 +157,7 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
         url = uri.first();
 
         // load in the file
-        load(url);
+        load(KURL(url));
     }
 }
 

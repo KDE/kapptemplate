@@ -1,3 +1,8 @@
+Feb-04-2000 - Kurt Granroth (v1.0.3)
+  o Converted App::load method to use KURL instead of QString in kapp
+    module
+  o Added +[URL] command line option in kapp module
+
 Feb-04-2000 - Simon Hausman (v1.0.2)
   o Converted App::load method to use KURL instead of QString in kpart
     module
