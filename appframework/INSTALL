@@ -1,0 +1,2 @@
+echo "Creating $LOCATION_ROOT/INSTALL...";
+cp $SHARE_DIR/appframework/no-exe/INSTALL $LOCATION_ROOT/INSTALL

@@ -1,124 +1,129 @@
-#!/bin/sh
-
-# horrid hack to try and figure out what shell we are using
-# basically, if we can find /usr/ucb/echo, then we are almost for sure
-# NOT on a Linux system and probably 'echo "\c" works.  if we don't
-# find it, we'll assume that the shell is really bash.
-if [ -f "/usr/ucb/echo" ];
-then
-	ECHO="echo";
-else
-	ECHO="echo -e";
-fi
-
 ###########################################################################
 #
-# STEP 1:  LOCAL INITIALIZATION
+# Function: LoadDefaults
 #
-# This is where all the variables that are specific to your local system
-# go.
+# This will load in all the default values stored in the user's
+# .kapptemplaterc file
+#
+# INPUT : $KAPPTEMPLATEVERSION, $INSTALLED_SHARE_DIR
+# OUTPUT: $ECHO, $KAPPTEMPLATERC, $DEFAULT_AUTHOR, $DEFAULT_EMAIL,
+#         $DEFAULT_ROOT, $SHARE_DIR, $BIN_DIR, $MKDIR, $BASENAME
 #
 ###########################################################################
-if [ -f $HOME/.kapptemplaterc ];
-then
-	. $HOME/.kapptemplaterc
-fi
-if [ ! "$DEFAULT_AUTHOR" ];
-then
-	DEFAULT_AUTHOR="Your Name";
-fi
-if [ ! "$DEFAULT_EMAIL" ];
-then
-	DEFAULT_EMAIL="`whoami`@$HOST";
-fi
-if [ ! "$DEFAULT_ROOT" ];
-then
-	DEFAULT_ROOT="/usr/src";
-fi
-if [ ! "$SHARE_DIR" ];
-then
-	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
-fi
-if [ ! "$BIN_DIR" ];
-then
-	BIN_DIR="$KDEDIR/bin";
-fi
+function LoadDefaults
+{
+    # horrid hack to try and figure out what shell we are using
+    # basically, if we can find /usr/ucb/echo, then we are almost for sure
+    # NOT on a Linux system and probably 'echo "\c" works.  if we don't
+    # find it, we'll assume that the shell is really bash.
+    if [ -f "/usr/ucb/echo" ];
+    then
+        ECHO="echo";
+    else
+        ECHO="echo -e";
+    fi
 
-if [ -f "$SHARE_DIR/bin/mkinstalldirs" ];
+    $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2001 Kurt Granroth <granroth@kde.org>";
+    $ECHO;
+
+    if [ ! "$KAPPTEMPLATERC" ];
+    then
+        KAPPTEMPLATERC=$HOME/.kapptemplaterc
+    fi
+
+    if [ -f $KAPPTEMPLATERC ];
+    then
+        . $KAPPTEMPLATERC
+    fi
+
+    if [ ! "$DEFAULT_AUTHOR" ];
+    then
+        DEFAULT_AUTHOR="Your Name";
+    fi
+
+    if [ ! "$DEFAULT_EMAIL" ];
+    then
+        DEFAULT_EMAIL="`whoami`@$HOST";
+    fi
+
+    if [ ! "$DEFAULT_ROOT" ];
+    then
+        DEFAULT_ROOT="$HOME/src";
+    fi
+
+    if [ "$KAPPTEMPLATEVERSION" = "$VERSION" ];
+    then
+        if [ ! "$SHARE_DIR" ];
+        then
+            SHARE_DIR=$INSTALLED_SHARE_DIR;
+        fi
+    else
+        SHARE_DIR=$INSTALLED_SHARE_DIR;
+    fi
+
+    if [ ! "$INCLUDE_DIR" ];
+    then
+        INCLUDE_DIR="$SHARE_DIR/include";
+    fi
+
+    if [ -f "$SHARE_DIR/bin/mkinstalldirs" ];
+    then
+        MKDIR=$SHARE_DIR/bin/mkinstalldirs
+    else
+        MKDIR=mkdir
+    fi
+
+    # Finally, get the name of the running program
+    BASENAME=`echo $0 | sed 's@^.*/@@g'`;
+}
+
+# We start by loading all the default environment variables and
+# performing any initialization necessary
+LoadDefaults
+
+# Now, we source the 'common' file containing all the useful functions
+if [ -f $INCLUDE_DIR/kapptemplate.common ];
 then
-	MKDIR=$SHARE_DIR/bin/mkinstalldirs
+    . $INCLUDE_DIR/kapptemplate.common
 else
-	MKDIR=mkdir
+    $ECHO "Could not find common file 'kapptemplate.common'";
+    $ECHO;
+    exit 1;
 fi
 
-# sanity check
-if [ -d "$SHARE_DIR/common" ];
-then
-	COMMON_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/common`;
+# Parse the command line
+CMDLINE=$@;
+ParseCommandLine
 
-	if [ ! "$COMMON_FILES" ];
-	then
-		$ECHO "Cannot find common files in $SHARE_DIR/common!";
-		exit 1;
-	fi
-else
-	$ECHO "$SHARE_DIR/common directory does not exist!";
-	exit 1;
+
+# Do a sanity check and build the various module lists
+BuildModuleLists
+
+if [ ! "$WHICH_ONE" -a "$ALL_DEFAULTS" ];
+then
+    WHICH_ONE=1;
 fi
-
-if [ -d "$SHARE_DIR/admin" ];
+if [ ! "$WHICH_ONE" ];
 then
-	ADMIN_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/admin`;
+    # Find out how to use kapptemplate this time
+    $ECHO "Please select the type of framework you wish to generate";
+    $ECHO "1. Full featured KDE application [default]";
+    $ECHO "2. Full featured KPart application";
+    $ECHO "3. KPart plugin";
+    $ECHO "4. Convert existing source to automake/autoconf framework";
+    $ECHO "Choose [1-4]: \c";
+    read WHICH_ONE;
+    $ECHO;
+fi;
 
-	if [ ! "$ADMIN_FILES" ];
-	then
-		$ECHO "Cannot find admin files in $SHARE_DIR/admin!";
-		exit 1;
-	fi
-else
-	$ECHO "$SHARE_DIR/admin directory does not exist!";
-	exit 1;
-fi
-
-if [ -d "$SHARE_DIR/variable" ];
-then
-	VARIABLE_FILES=`/bin/ls -1 -I "no-exe" -I*~ $SHARE_DIR/variable`;
-
-	if [ ! "$VARIABLE_FILES" ];
-	then
-		$ECHO "Cannot find variable files in $SHARE_DIR/variable!";
-		exit 1;
-	fi
-else
-	$ECHO "$SHARE_DIR/variable directory does not exist!";
-	exit 1;
-fi
-
-if [ -d "$SHARE_DIR/knewclass" ];
-then
-	KNEWCLASS_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/knewclass`;
-fi
-
-if [ -d "$SHARE_DIR/knewfunction" ];
-then
-	KNEWFUNCTION_FILES=`/bin/ls -I*~ $SHARE_DIR/knewfunction`;
-fi
-
-if [ -d "$SHARE_DIR/kpartplugin" ];
-then
-	KPARTPLUGIN_FILES=`/bin/ls -I*~ $SHARE_DIR/kpartplugin`;
-fi
-
-BASENAME=`echo $0 | sed 's@^.*/@@g'`;
-if [ "$BASENAME" = "knewclass" ];
-then
-	. $BIN_DIR/knewclass.module
-elif [ "$BASENAME" = "knewfunction" ];
-then
-	. $BIN_DIR/knewfunction.module
-elif [ "$BASENAME" = "knewfunction" ];
-then
-	. $BIN_DIR/kpartplugin.module
-else
-	. $BIN_DIR/kapptemplate.module
-fi
+# Start the proper module
+case $WHICH_ONE in
+    2)
+        . $INCLUDE_DIR/kpartapp.module;;
+    3)
+        . $INCLUDE_DIR/kpartplugin.module;;
+    4)
+        . $INCLUDE_DIR/existing.module;;
+    *)
+        . $INCLUDE_DIR/kapptemplate.module;;
+esac

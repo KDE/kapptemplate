@@ -1,0 +1,12 @@
+echo "Creating $LOCATION_ROOT/Makefile.cvs...";
+cat << EOF > $LOCATION_ROOT/Makefile.cvs
+all: 
+	@echo "This Makefile is only for the CVS repository"
+	@echo "This will be deleted before making the distribution"
+	@echo ""
+	\$(MAKE) -f admin/Makefile.common cvs
+
+dist:
+	\$(MAKE) -f admin/Makefile.common dist
+
+.SILENT:

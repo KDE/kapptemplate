@@ -1,3 +1,15 @@
+Feb-04-2000 - Kurt Granroth (v1.0)
+  o GIGANTIC REWRITE.  This was *almost* a complete rewrite from
+    scratch
+  o Made entire system much more modular allowing for future
+    frameworks to be easily added
+  o Added module to create a full KParts application
+  o Added module to create a KPart plugin
+  o Added module to create an autoconf/automake framework for existing
+    source code
+  o Added more command-line options to speed up creation of projects
+  o Dropped knewclass and knewfunction as they were next to useless
+
 Dec-10-2000 - Kurt Granroth (v0.7.5)
   o Finally fixed --noinit for real
   o kapptemplate no longer needs to be in your $PATH

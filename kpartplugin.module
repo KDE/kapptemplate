@@ -4,6 +4,8 @@
 #
 ###########################################################################
 # Get the application name
+APPTYPE="plugin";
+APPDEFAULT="Test";
 GetProperName
 
 # Get the application version
@@ -21,7 +23,7 @@ GetAuthorEmail
 # Verify that everything is grand
 $ECHO;
 $ECHO "Here is what I have:";
-$ECHO "The app: $APP_NAME v$APP_VERSION";
+$ECHO "The plugin: $APP_NAME v$APP_VERSION";
 $ECHO "Installed in: $LOCATION_ROOT";
 $ECHO "Author: $AUTHOR <$EMAIL>";
 $ECHO;
@@ -46,13 +48,12 @@ CreateAppFramework
 
 ###########################################################################
 #
-# STEP 3:  GENERATE APP-SPECIFIC FILES
+# STEP 3:  GENERATE PLUGIN-SPECIFIC FILES
 #
 ###########################################################################
-
-for EXE_FILE in $KAPP_FILES;
+for EXE_FILE in $KPARTPLUGIN_FILES;
 do
-    . $SHARE_DIR/kapp/$EXE_FILE || exit 1;
+    . $SHARE_DIR/kpartplugin/$EXE_FILE || exit 1;
 done
 
 ###########################################################################

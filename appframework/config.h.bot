@@ -1,0 +1,2 @@
+echo "Creating $LOCATION_ROOT/config.h.bot...";
+touch $LOCATION_ROOT/config.h.bot

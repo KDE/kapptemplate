@@ -1,62 +1,64 @@
 #!/bin/sh
 
+KAPPTEMPLATEVERSION=1.0
+
 # horrid hack to try and figure out what shell we are using
 # basically, if we can find /usr/ucb/echo, then we are almost for sure
 # NOT on a Linux system and probably 'echo "\c" works.  if we don't
 # find it, we'll assume that the shell is really bash.
 if [ -f "/usr/ucb/echo" ];
 then
-	ECHO="echo";
+    ECHO="echo";
 else
-	ECHO="echo -e";
+    ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.7.5 Install (C) 2000 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} Install (C) 2001 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # let's see if we have a previous release
 if [ -f $HOME/.kapptemplaterc ];
 then
-	. $HOME/.kapptemplaterc
+    . $HOME/.kapptemplaterc
 fi
 
 unset THE_AUTHOR;
 while [ ! "$THE_AUTHOR" ];
 do
-	$ECHO "What is your full name? \c";
-	if [ "$DEFAULT_AUTHOR" ];
-	then
-		$ECHO "[default: $DEFAULT_AUTHOR]";
-	else
-		$ECHO "[no default]";
-	fi
-	$ECHO ": \c";
-	read THE_AUTHOR;
+    $ECHO "What is your full name? \c";
+    if [ "$DEFAULT_AUTHOR" ];
+    then
+        $ECHO "[default: $DEFAULT_AUTHOR]";
+    else
+        $ECHO "[no default]";
+    fi
+    $ECHO ": \c";
+    read THE_AUTHOR;
 
-	if [ "$DEFAULT_AUTHOR" -a ! "$THE_AUTHOR" ];
-	then
-		THE_AUTHOR="$DEFAULT_AUTHOR";
-	fi
+    if [ "$DEFAULT_AUTHOR" -a ! "$THE_AUTHOR" ];
+    then
+        THE_AUTHOR="$DEFAULT_AUTHOR";
+    fi
 done
 $ECHO;
 
 unset THE_EMAIL;
 while [ ! "$THE_EMAIL" ];
 do
-	$ECHO "What is your email address? \c";
-	if [ "$DEFAULT_EMAIL" ];
-	then
-		$ECHO "[default: $DEFAULT_EMAIL]";
-	else
-		$ECHO "[no default]";
-	fi
-	$ECHO ": \c";
-	read THE_EMAIL;
+    $ECHO "What is your email address? \c";
+    if [ "$DEFAULT_EMAIL" ];
+    then
+        $ECHO "[default: $DEFAULT_EMAIL]";
+    else
+        $ECHO "[no default]";
+    fi
+    $ECHO ": \c";
+    read THE_EMAIL;
 
-	if [ "$DEFAULT_EMAIL" -a ! "$THE_EMAIL" ];
-	then
-		THE_EMAIL="$DEFAULT_EMAIL";
-	fi
+    if [ "$DEFAULT_EMAIL" -a ! "$THE_EMAIL" ];
+    then
+        THE_EMAIL="$DEFAULT_EMAIL";
+    fi
 done
 $ECHO;
 
@@ -64,7 +66,7 @@ unset THE_ROOT;
 $ECHO "Where should I construct apps? \c";
 if [ ! "$DEFAULT_ROOT" ];
 then
-	DEFAULT_ROOT="/usr/src";
+    DEFAULT_ROOT="/usr/src";
 fi
 $ECHO "[default: $DEFAULT_ROOT]";
 $ECHO ": \c";
@@ -72,18 +74,23 @@ read THE_ROOT;
 
 if [ ! "$THE_ROOT" ];
 then
-	THE_ROOT="$DEFAULT_ROOT";
+    THE_ROOT="$DEFAULT_ROOT";
 fi
 $ECHO;
 
-unset BIN_DIR;
-$ECHO "Where should I install myself? [default: $KDEDIR/bin]";
-$ECHO ": \c";
-read BIN_DIR;
-
+unset THE_BIN;
+$ECHO "Where should I install myself? \c";
 if [ ! "$BIN_DIR" ];
 then
-	BIN_DIR="$KDEDIR/bin";
+    BIN_DIR="$KDEDIR/bin";
+fi
+$ECHO "[default: $BIN_DIR]";
+$ECHO ": \c";
+read THE_BIN;
+
+if [ "$THE_BIN" ];
+then
+    BIN_DIR=$THE_BIN;
 fi
 $ECHO;
 
@@ -91,7 +98,7 @@ unset THE_SHARE;
 $ECHO "Where should I install my files? \c";
 if [ ! "$SHARE_DIR" ];
 then
-	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
+    SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
 fi
 $ECHO "[default: $SHARE_DIR]";
 $ECHO ": \c";
@@ -99,89 +106,105 @@ read THE_SHARE;
 
 if [ ! "$THE_SHARE" ];
 then
-	THE_SHARE="$SHARE_DIR";
+    THE_SHARE="$SHARE_DIR";
 fi
 $ECHO;
 
-if [ ! -d $THE_SHARE ];
+if [ -d $THE_SHARE ];
 then
-	$ECHO "Creating $THE_SHARE...";
-	./mkinstalldirs $THE_SHARE || exit 1;
-else
-	$ECHO "$THE_SHARE already exists...";
+    $ECHO "This directory already exists.  If you continue, the contents";
+    $ECHO "of this directory will be lost and replaced with the new files."
+    $ECHO;
+    $ECHO "Replace existing directory (Y/n)? ";
+    $ECHO ": \c";
+    read Y_N;
+    if [ $Y_N -a $Y_N = 'n' ];
+    then
+        $ECHO "Well, try again.";
+        exit 0;
+    fi
+    /bin/rm -rf $THE_SHARE;
 fi
 
-if [ ! -d "$THE_SHARE/common" ];
+if [ ! -d $THE_SHARE ];
 then
-	$ECHO "Creating $THE_SHARE/common...";
-	./mkinstalldirs "$THE_SHARE/common" || exit 1;
-else
-	$ECHO "$THE_SHARE/common already exists...";
+    $ECHO "Creating $THE_SHARE...";
+    ./mkinstalldirs $THE_SHARE || exit 1;
 fi
 
 if [ ! -d "$THE_SHARE/admin" ];
 then
-	$ECHO "Creating $THE_SHARE/admin...";
-	./mkinstalldirs "$THE_SHARE/admin" || exit 1;
-else
-	$ECHO "$THE_SHARE/admin already exists...";
+    $ECHO "Creating $THE_SHARE/admin...";
+    ./mkinstalldirs "$THE_SHARE/admin" || exit 1;
 fi
 
-if [ ! -d "$THE_SHARE/variable" ];
+if [ ! -d "$THE_SHARE/appframework" ];
 then
-	$ECHO "Creating $THE_SHARE/variable...";
-	./mkinstalldirs "$THE_SHARE/variable" || exit 1;
-else
-	$ECHO "$THE_SHARE/variable already exists...";
+    $ECHO "Creating $THE_SHARE/appframework...";
+    ./mkinstalldirs "$THE_SHARE/appframework" || exit 1;
+    ./mkinstalldirs "$THE_SHARE/appframework/no-exe" || exit 1;
+fi
+
+if [ ! -d "$THE_SHARE/kapp" ];
+then
+    $ECHO "Creating $THE_SHARE/kapp...";
+    ./mkinstalldirs "$THE_SHARE/kapp" || exit 1;
+    ./mkinstalldirs "$THE_SHARE/kapp/no-exe" || exit 1;
+fi
+
+if [ ! -d "$THE_SHARE/kpartplugin" ];
+then
+    $ECHO "Creating $THE_SHARE/kpartplugin...";
+    ./mkinstalldirs "$THE_SHARE/kpartplugin" || exit 1;
+    ./mkinstalldirs "$THE_SHARE/kpartplugin/no-exe" || exit 1;
+fi
+
+if [ ! -d "$THE_SHARE/kpartapp" ];
+then
+    $ECHO "Creating $THE_SHARE/kpartapp...";
+    ./mkinstalldirs "$THE_SHARE/kpartapp" || exit 1;
+    ./mkinstalldirs "$THE_SHARE/kpartapp/no-exe" || exit 1;
+fi
+
+if [ ! -d "$THE_SHARE/existing" ];
+then
+    $ECHO "Creating $THE_SHARE/existing...";
+    ./mkinstalldirs "$THE_SHARE/existing" || exit 1;
 fi
 
 if [ ! -d "$THE_SHARE/bin" ];
 then
-	$ECHO "Creating $THE_SHARE/bin...";
-	./mkinstalldirs "$THE_SHARE/bin" || exit 1;
-else
-	$ECHO "$THE_SHARE/bin already exists...";
+    $ECHO "Creating $THE_SHARE/bin...";
+    ./mkinstalldirs "$THE_SHARE/bin" || exit 1;
 fi
 
-if [ ! -d "$THE_SHARE/variable/no-exe" ];
+if [ ! -d "$THE_SHARE/include" ];
 then
-	$ECHO "Creating $THE_SHARE/variable/no-exe...";
-	./mkinstalldirs "$THE_SHARE/variable/no-exe" || exit 1;
-else
-	$ECHO "$THE_SHARE/variable/no-exe already exists...";
+    $ECHO "Creating $THE_SHARE/include...";
+    ./mkinstalldirs "$THE_SHARE/include" || exit 1;
 fi
-
-if [ ! -d "$THE_SHARE/knewclass" ];
-then
-	$ECHO "Creating $THE_SHARE/knewclass...";
-	./mkinstalldirs "$THE_SHARE/knewclass" || exit 1;
-else
-	$ECHO "$THE_SHARE/knewclass already exists...";
-fi
-
-if [ ! -d "$THE_SHARE/knewfunction" ];
-then
-	$ECHO "Creating $THE_SHARE/knewfunction...";
-	./mkinstalldirs "$THE_SHARE/knewfunction" || exit 1;
-else
-	$ECHO "$THE_SHARE/knewfunction already exists...";
-fi
-
-$ECHO "Installing common files...";
-cp -pf common/* $THE_SHARE/common
 
 $ECHO "Installing admin files...";
 cp -pf admin/* $THE_SHARE/admin
 
-$ECHO "Installing variable files...";
-cp -pf variable/* $THE_SHARE/variable
-cp -pf variable/no-exe/* $THE_SHARE/variable/no-exe
+$ECHO "Installing appframework files...";
+cp -pf appframework/* $THE_SHARE/appframework
+cp -pf appframework/no-exe/* $THE_SHARE/appframework/no-exe
 
-$ECHO "Installing knewclass files...";
-cp -pf knewclass/* $THE_SHARE/knewclass
+$ECHO "Installing kapp files...";
+cp -pf kapp/* $THE_SHARE/kapp
+cp -pf kapp/no-exe/* $THE_SHARE/kapp/no-exe
 
-$ECHO "Installing knewfunction files...";
-cp -pf knewfunction/* $THE_SHARE/knewfunction
+$ECHO "Installing kpartplugin files...";
+cp -pf kpartplugin/* $THE_SHARE/kpartplugin
+cp -pf kpartplugin/no-exe/* $THE_SHARE/kpartplugin/no-exe
+
+$ECHO "Installing kpartapp files...";
+cp -pf kpartapp/* $THE_SHARE/kpartapp
+cp -pf kpartapp/no-exe/* $THE_SHARE/kpartapp/no-exe
+
+$ECHO "Installing existing files...";
+cp -pf existing/* $THE_SHARE/existing
 
 $ECHO "Installing mkinstalldirs...";
 cp -pf mkinstalldirs $THE_SHARE/bin
@@ -193,20 +216,25 @@ DEFAULT_EMAIL="$THE_EMAIL";
 DEFAULT_ROOT="$THE_ROOT";
 SHARE_DIR="$THE_SHARE";
 BIN_DIR="$BIN_DIR";
+VERSION="$KAPPTEMPLATEVERSION";
 ENDORC
 
 $ECHO "Installing myself...";
-cp -pf kapptemplate $BIN_DIR
-cp -pf kapptemplate.module $BIN_DIR
-cp -pf knewclass.module $BIN_DIR
-cp -pf knewfunction.module $BIN_DIR
-if [ ! -f $BIN_DIR/knewclass ];
-then
-	ln -s $BIN_DIR/kapptemplate $BIN_DIR/knewclass
-fi
-if [ ! -f $BIN_DIR/knewfunction ];
-then
-	ln -s $BIN_DIR/kapptemplate $BIN_DIR/knewfunction
-fi
+cat << ENDOBIN > $BIN_DIR/kapptemplate
+#!/bin/sh
+
+# This is the directory where 'install-me' installed the shared
+# kapptemplate files.  It may be overridden by the setting in
+# \$HOME/.kapptemplatrc
+INSTALLED_SHARE_DIR=${THE_SHARE}
+KAPPTEMPLATEVERSION=${KAPPTEMPLATEVERSION}
+ENDOBIN
+cat kapptemplate >> $BIN_DIR/kapptemplate
+chmod 755 $BIN_DIR/kapptemplate
+cp -pf kapptemplate.common $THE_SHARE/include/
+cp -pf kapptemplate.module $THE_SHARE/include/
+cp -pf kpartplugin.module $THE_SHARE/include/
+cp -pf kpartapp.module $THE_SHARE/include/
+cp -pf existing.module $THE_SHARE/include/
 
 $ECHO "Done.  Have fun!";

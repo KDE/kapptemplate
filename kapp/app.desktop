@@ -1,0 +1,47 @@
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop
+[Desktop Entry]
+Name=${APP_NAME}
+Name[es]=${NOMBRE_APLIC}
+Exec=${APP_NAME_LC} %i %m -caption "%c"
+Icon=${APP_NAME_LC}
+Type=Application
+DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
+Comment=A KDE Application
+Comment[ca]=Una aplicació KDE
+Comment[cs]=Aplikace prostředí KDE
+Comment[da]=En KDE anvendelse
+Comment[de]=Ein KDE-Programm
+Comment[el]=Μια εφαρμογή KDE
+Comment[eo]=KDE-aplikaĵo
+Comment[es]=Una Aplicación para KDE
+Comment[et]=KDE rakendus
+Comment[fi]=KDE sovellus
+Comment[fr]=Une Application KDE
+Comment[gl]=Unha aplicación de KDE
+Comment[he]=KDE םושיי
+Comment[hr]=KDE aplikacija
+Comment[hu]=Egy KDE tesztalkalmazás
+Comment[is]=knetmgr:  KDE forrit
+Comment[it]=Un'applicazione di KDE
+Comment[ja]=KDEアプリケーション
+Comment[lt]=KDE Programa
+Comment[mk]=KDE апликација
+Comment[nl]=een KDE-applicatie
+Comment[no]=En KDE-applikasjon
+Comment[no_NY]=Eit KDE-program
+Comment[pl]=Aplikacja KDE
+Comment[pt_BR]=Uma aplicação do KDE
+Comment[pt]=Uma aplicação KDE
+Comment[ro]=O aplicaţie KDE
+Comment[ru]=Приложение KDE
+Comment[sk]=KDE Aplikácia
+Comment[sl]=Program za KDE
+Comment[sr]=KDE aplikacija
+Comment[sv]=Ett KDE-program
+Comment[ta]=´Õ KDE ÀÂýÀ¡Î
+Comment[tr]=Bir KDE Uygulaması
+Comment[uk]=Програма KDE
+Comment[zh_CN.GB2312]=KDE 应用程序
+Comment[zh_TW.Big5]=一個 KDE 應用程式
+Terminal=0

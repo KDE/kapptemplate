@@ -1,0 +1,414 @@
+#!/bin/sh
+###########################################################################
+#
+# kapptemplate.common
+#
+# This file contains a bunch of common function that may be used by
+# the various kapptemplate modules.  Each function lists which
+# environment variables need to be set before the function is called
+# and which variables will be set after it's done.  This file is
+# intended to be included or sourced by any module that uses its
+# functions.
+#
+###########################################################################
+
+###########################################################################
+#
+# Function: Usage
+#
+# Display the help output (--help)
+#
+###########################################################################
+function Usage
+{
+    $ECHO "Usage: kapptemplate [options]";
+    $ECHO "Options:";
+    $ECHO "    --help     Display this information";
+    $ECHO "    --noinit   Don't run 'make -f Makefile.cvs'";
+    $ECHO "    --default  Use default values instead of prompting";
+    $ECHO;
+    $ECHO "Framework Types:";
+    $ECHO "    --full-app      Create full featured KDE application";
+    $ECHO "    --kpart-app     Create full KPart application";
+    $ECHO "    --kpart-plugin  Create KPart plugin framework";
+    $ECHO "    --existing      Convert existing source to KDE framework";
+}
+
+###########################################################################
+#
+# Function: ParseCommandLine
+#
+# Parse the commandline args (--help, --noinit, etc)
+#
+# OUTPUT: $NOINIT, $ALL_DEFAULTS, $WHICH_ONE
+#
+###########################################################################
+function ParseCommandLine
+{
+    unset NOINIT;
+    unset ALL_DEFAULTS;
+    unset WHICH_ONE;
+    if [ ! "$CMDLINE" ];
+    then
+        return;
+    fi
+
+    for CMD in $CMDLINE;
+    do
+        case $CMD in
+        --help)
+           Usage;
+           exit 0;;
+
+        --noinit)
+           NOINIT=1;;
+        --default)
+           ALL_DEFAULTS=1;;
+        --full-app)
+           WHICH_ONE=1;;
+        --kpart-app)
+           WHICH_ONE=2;;
+        --kpart-plugin)
+           WHICH_ONE=3;;
+        --existing)
+           WHICH_ONE=4;;
+        *)
+           $ECHO "Unknown option $1";
+           Usage;
+           exit 1;;
+        esac
+    done
+}
+
+###########################################################################
+#
+# Function: GetProperName
+#
+# Get the application or class or plugin or whatever's proper name
+#
+# INPUT : $APPTYPE, $APPDEFAULT
+# OUTPUT: $APP_NAME, $APP_NAME_UC, $APP_NAME_LC
+#
+###########################################################################
+function GetProperName
+{
+    # Make sure we have reasonable defaults
+    if [ ! "$APPTYPE" ];
+    then
+        APPTYPE="application";
+    fi
+    if [ ! "$APPDEFAULT" ];
+    then
+        APPDEFAULT="KMyApp";
+    fi
+
+    # See what we are getting
+    if [ ! "$ALL_DEFAULTS" ];
+    then
+        unset APP_NAME;
+        while [ ! $APP_NAME ];
+        do
+            $ECHO "What is the ${APPTYPE}'s proper name [default: ${APPDEFAULT}]";
+            $ECHO ": \c";
+            read APP_NAME;
+
+            if [ ! $APP_NAME ];
+            then
+                APP_NAME=${APPDEFAULT};
+                $ECHO "Going with default name '${APPDEFAULT}'";
+            fi
+        done
+        $ECHO;
+    else
+        APP_NAME=${APPDEFAULT};
+    fi
+
+    # Create some variations
+    APP_NAME_UC=`$ECHO $APP_NAME | tr a-z A-Z`;
+    APP_NAME_LC=`$ECHO $APP_NAME | tr A-Z a-z`;
+}
+
+###########################################################################
+#
+# Function: GetVersion
+#
+# Get the application or class or plugin or whatever's version
+#
+# INPUT : $APPTYPE
+# OUTPUT: $APP_VERSION
+#
+###########################################################################
+function GetVersion
+{
+    # Make sure we have reasonable defaults
+    if [ ! "$APPTYPE" ];
+    then
+        APPTYPE="application";
+    fi
+
+    # Get the application version
+    if [ ! "$ALL_DEFAULTS" ];
+    then
+        unset APP_VERSION;
+        while [ ! $APP_VERSION ];
+        do
+            $ECHO "What is the ${APPTYPE}'s version [default: 0.1]";
+            $ECHO ": \c";
+            read APP_VERSION;
+
+            if [ ! $APP_VERSION ];
+            then
+                APP_VERSION="0.1";
+                $ECHO "Going with default version '$APP_VERSION'";
+            fi
+        done
+        $ECHO;
+    else
+        APP_VERSION="0.1";
+    fi
+}
+
+###########################################################################
+#
+# Function: GetLocationRoot
+#
+# Get the directory where this all should be installed
+#
+# INPUT : $DEFAULT_ROOT, $APP_NAME_LC, $APP_VERSION
+# OUTPUT: $LOCATION_ROOT
+#
+###########################################################################
+function GetLocationRoot
+{
+    if [ ! "$ALL_DEFAULTS" ];
+    then
+        unset LOCATION_ROOT;
+        while [ ! $LOCATION_ROOT ];
+        do
+            $ECHO "Where should I create this [default: $DEFAULT_ROOT/$APP_NAME_LC-$APP_VERSION]";
+            $ECHO ": \c";
+            read LOCATION_ROOT;
+
+            if [ ! $LOCATION_ROOT ];
+            then
+                LOCATION_ROOT="$DEFAULT_ROOT/$APP_NAME_LC-$APP_VERSION";
+                $ECHO "Going with default root '$LOCATION_ROOT'";
+            fi
+
+            # We overwrite anything if the directory already exists
+            if [ -d $LOCATION_ROOT ];
+            then
+                $ECHO "This directory already exists.  Will overwrite.";
+                $ECHO;
+            fi
+        done
+        $ECHO;
+    else
+        LOCATION_ROOT="$DEFAULT_ROOT/$APP_NAME_LC-$APP_VERSION";
+    fi
+        
+}
+
+###########################################################################
+#
+# Function: GetAuthorName
+#
+# Get the name of the author
+#
+# INPUT: $DEFAULT_AUTHOR
+#
+###########################################################################
+function GetAuthorName
+{
+    unset AUTHOR;
+    while [ ! "$AUTHOR" ];
+    do
+        if [ "$ALL_DEFAULTS" -a "$DEFAULT_AUTHOR" ];
+        then
+            AUTHOR="$DEFAULT_AUTHOR";
+        else
+            if [ "$DEFAULT_AUTHOR" ];
+            then
+                $ECHO "What is your name [default: $DEFAULT_AUTHOR]";
+            else
+                $ECHO "What is your name [no default]";
+            fi
+            $ECHO ": \c";
+            read AUTHOR;
+
+            if [ "$DEFAULT_AUTHOR" -a ! "$AUTHOR" ];
+            then
+                AUTHOR="$DEFAULT_AUTHOR";
+                $ECHO "Going with default author '$AUTHOR'";
+            fi
+        fi
+    done
+    $ECHO;
+}
+
+###########################################################################
+#
+# Function: GetAuthorEmail
+#
+# Get the email of the author
+#
+# INPUT: $DEFAULT_EMAIL
+#
+###########################################################################
+function GetAuthorEmail
+{
+    unset EMAIL;
+    while [ ! "$EMAIL" ];
+    do
+        if [ "$ALL_DEFAULTS" -a "$DEFAULT_EMAIL" ];
+        then
+            EMAIL="$DEFAULT_EMAIL";
+        else
+            if [ "$DEFAULT_EMAIL" ];
+            then
+                $ECHO "What is your email address [default: $DEFAULT_EMAIL]";
+            else
+                $ECHO "What is your email address [no default]";
+            fi
+            $ECHO ": \c";
+            read EMAIL;
+
+            if [ "$DEFAULT_EMAIL" -a ! "$EMAIL" ];
+            then
+                EMAIL="$DEFAULT_EMAIL";
+                $ECHO "Going with default email address '$EMAIL'";
+            fi
+        fi
+    done
+    $ECHO;
+}
+
+###########################################################################
+#
+# Function: GetFileList
+#
+# Generic utility function to get a list of files in a directory
+#
+# INPUT : $DIRECTORY
+# OUTPUT: $FILES
+#
+###########################################################################
+function GetFileList
+{
+    unset FILES;
+    if [ -d "$DIRECTORY" ];
+    then
+        FILES=`/bin/ls -1 -I "no-exe" -I*~ $DIRECTORY`;
+
+        if [ ! "$FILES" ];
+        then
+            $ECHO "Cannot find files in $DIRECTORY!";
+            exit 1;
+        fi
+    else
+        $ECHO "$DIRECTORY directory does not exist!";
+        exit 1;
+    fi
+}
+
+###########################################################################
+#
+# Function: BuildModuleLists
+#
+# Build a list of files that correspond with each module
+#
+# INPUT : $SHARE_DIR
+#
+###########################################################################
+function BuildModuleLists
+{
+    # Make sure all the modules exist first
+    if [ ! -f "$INCLUDE_DIR/kapptemplate.module" ];
+    then
+        $ECHO "The 'kapptemplate.module' file can't be found.";
+        $ECHO;
+        exit 1;
+    fi
+
+    if [ ! -f "$INCLUDE_DIR/kpartplugin.module" ];
+    then
+        $ECHO "The 'kpartplugin.module' file can't be found.";
+        $ECHO;
+        exit 1;
+    fi
+
+    if [ ! -f "$INCLUDE_DIR/existing.module" ];
+    then
+        $ECHO "The 'existing.module' file can't be found.";
+        $ECHO;
+        exit 1;
+    fi
+
+    # Find the 'admin' files
+    DIRECTORY=$SHARE_DIR/admin;
+    GetFileList
+    ADMIN_FILES=$FILES;
+
+    # Find the 'appframework' files
+    DIRECTORY=$SHARE_DIR/appframework;
+    GetFileList
+    APPFRAMEWORK_FILES=$FILES;
+
+    # Find the 'kapp' files
+    DIRECTORY=$SHARE_DIR/kapp;
+    GetFileList
+    KAPP_FILES=$FILES;
+
+    # Find the 'kpartplugin' files
+    DIRECTORY=$SHARE_DIR/kpartplugin;
+    GetFileList
+    KPARTPLUGIN_FILES=$FILES;
+
+    # Find the 'existing' files
+    DIRECTORY=$SHARE_DIR/existing;
+    GetFileList
+    EXISTING_FILES=$FILES;
+
+    # Find the 'kpartapp' files
+    DIRECTORY=$SHARE_DIR/kpartapp;
+    GetFileList
+    KPARTAPP_FILES=$FILES;
+}
+
+###########################################################################
+#
+# Function: CreateAppFramework
+#
+# Create the initial directory structure of the application or plugin
+# and put in the common admin and configure files
+#
+# INPUT : $LOCATION_ROOT, $APP_NAME_LC, $SHARE_DIR
+#
+###########################################################################
+function CreateAppFramework
+{
+    # Create the directory tree
+    $ECHO;
+    $ECHO "Creating directory $LOCATION_ROOT...";
+    $MKDIR $LOCATION_ROOT || exit 1;
+
+    $ECHO "Creating directory $LOCATION_ROOT/admin...";
+    $MKDIR $LOCATION_ROOT/admin || exit 1;
+
+    $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC...";
+    $MKDIR $LOCATION_ROOT/$APP_NAME_LC || exit 1;
+
+    $ECHO "Creating directory $LOCATION_ROOT/po...";
+    $MKDIR $LOCATION_ROOT/po || exit 1;
+
+    for FILE in $ADMIN_FILES;
+    do
+        $ECHO "Copying $LOCATION_ROOT/$FILE...";
+        cp -p $SHARE_DIR/admin/$FILE $LOCATION_ROOT/admin/$FILE || exit 1;
+    done
+
+    for FILE in $APPFRAMEWORK_FILES;
+    do
+        . $SHARE_DIR/appframework/$FILE || exit 1;
+    done
+}

@@ -1,0 +1,2 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/hi16-action-$APP_NAME_LC.png...";
+cp $SHARE_DIR/kpartplugin/no-exe/hi16-action-plugin.png $LOCATION_ROOT/$APP_NAME_LC/hi16-action-$APP_NAME_LC.png

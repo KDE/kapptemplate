@@ -4,6 +4,8 @@
 #
 ###########################################################################
 # Get the application name
+APPTYPE="KPart application";
+APPDEFAULT="KPartApp";
 GetProperName
 
 # Get the application version
@@ -50,9 +52,9 @@ CreateAppFramework
 #
 ###########################################################################
 
-for EXE_FILE in $KAPP_FILES;
+for EXE_FILE in $KPARTAPP_FILES;
 do
-    . $SHARE_DIR/kapp/$EXE_FILE || exit 1;
+    . $SHARE_DIR/kpartapp/$EXE_FILE || exit 1;
 done
 
 ###########################################################################

@@ -1,0 +1,2 @@
+echo "Creating $LOCATION_ROOT/COPYING...";
+cp $SHARE_DIR/appframework/no-exe/COPYING $LOCATION_ROOT/COPYING

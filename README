@@ -1,18 +1,34 @@
-KAppTemplate v0.7.5
+KAppTemplate v1.0
 Kurt Granroth <granroth@kde.org>
 ----------------------------------------------------------------------
 
 What is it?
 -----------
 KAppTemplate is a shell script that will create the necessary
-framework to develop a KDE 2.x KMainWindow-based KDE app.
+framework to develop various KDE applications.  It takes care of the
+autoconf/automake code as well as providing a skeleton and example of
+what the code typically looks like.
 
-What else is it?
-----------------
-There are two other scripts that are distributed with KAppTemplate:
-KNewClass and KNewFunction.  They will create a new class and a new
-function, respectively.  However, they both are terrible.  I'll either
-nuke them or really implement them someday.
+Currently, KAppTemplate creates four different types of frameworks:
+
+1) Full featured KDE application
+
+   This is a "normal" KDE application with nearly every bleeding edge
+   feature.
+
+2) KPart application
+
+   This creates a KDE application that uses KParts as both the Shell
+   and the Part (KParts::MainWindow and KParts::ReadWritePart)
+
+3) KPart plugin
+
+   This creates a sample KPart plugin that acts on KHTMLPart
+
+4) Existing application conversion
+
+   This will take existing source and put it in a KDE automake/autoconf
+   framework
 
 What is a framework?
 --------------------
@@ -24,28 +40,16 @@ to do to compile and install your app is:
 
 What do I need to use this?
 ---------------------------
-o KDE 2.x ("HEAD" CVS branch)
+o KDE 2.x
 o autoconf
 o automake
 
-To generate your app's documentation, you'll also need
-o ksgml2html (from the 'kdesdk' package)
+To generate your app's documentation, you'll also need ksgml2html
+(from the 'kdesdk' package)
 
 How do I install it?
 --------------------
 ./install-me
-
-Why does it have a DCOP interface and use KParts?
--------------------------------------------------
-Because both are The Right Thing to Do(tm).  If you have a
-full-featured KDE application at all, you should use all the tools
-necessary.  A DCOP interface is very necessary if you want any kind of
-interoperability between your app and other apps.  And using the KPart
-component for HTML is preferred to using the KHTML widget directly.
-In fact, whenever there is a component that can handle your data,
-always prefer it over a plain widget.  With a component, your app can
-react to user preferences and component updates on the fly... with a
-widget, you would need to recompile.
 
 How does <whatever> work?
 -------------------------

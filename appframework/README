@@ -1,0 +1,6 @@
+echo "Creating $LOCATION_ROOT/README...";
+cat << EOF > $LOCATION_ROOT/README
+$APP_NAME v$APP_VERSION
+$AUTHOR <$EMAIL>
+----------------------------------------------------------------------
+This is where you should describe why $APP_NAME is so great

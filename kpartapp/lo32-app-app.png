@@ -1,0 +1,2 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/lo32-app-$APP_NAME_LC.png...";
+cp $SHARE_DIR/kapp/no-exe/lo32-app-app.png $LOCATION_ROOT/$APP_NAME_LC/lo32-app-$APP_NAME_LC.png

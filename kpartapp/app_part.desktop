@@ -1,0 +1,8 @@
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.desktop
+[Desktop Entry]
+Name=${APP_NAME}Part
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+ServiceTypes=KParts/ReadOnlyPart,KParts/ReadWritePart
+X-KDE-Library=lib${APP_NAME_LC}part
+Type=Service

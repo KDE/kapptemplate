@@ -1,0 +1,3 @@
+echo "Creating $LOCATION_ROOT/po/Makefile.am...";
+cat << EOF > $LOCATION_ROOT/po/Makefile.am
+POFILES = AUTO
