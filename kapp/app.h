@@ -70,7 +70,6 @@ private slots:
     void fileSave();
     void fileSaveAs();
     void filePrint();
-    void optionsConfigureKeys();
     void optionsConfigureToolbars();
     void optionsPreferences();
     void newToolbarConfig();

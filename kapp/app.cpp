@@ -19,7 +19,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kiconloader.h>
 #include <kmenubar.h>
 #include <kstatusbar.h>
-#include <kkeydialog.h>
 #include <kaccel.h>
 #include <kio/netaccess.h>
 #include <kfiledialog.h>
@@ -104,7 +103,7 @@ void ${APP_NAME}::setupActions()
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
 
-    KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
+    KStdAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
@@ -228,11 +227,6 @@ void ${APP_NAME}::filePrint()
         // and send the result to the printer
         p.end();
     }
-}
-
-void ${APP_NAME}::optionsConfigureKeys()
-{
-    KKeyDialog::configure(actionCollection());
 }
 
 void ${APP_NAME}::optionsConfigureToolbars()
