@@ -4,8 +4,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.rc
 <kpartgui name="${APP_NAME_LC}_part" version="1">
 <MenuBar>
   <Menu name="file">
-    <Action name="file_open"/>
-    <Separator/>
     <Action name="file_save"/>
     <Action name="file_save_as"/>
   </Menu>

@@ -2,6 +2,8 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 #include "${APP_NAME_LC}_part.h"
 
+#include "${APP_NAME_LC}_part.moc"
+
 #include <kinstance.h>
 #include <kaction.h>
 #include <kstdaction.h>
@@ -30,7 +32,6 @@ ${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, const char *widgetName,
     setWidget(m_widget);
 
     // create our actions
-    KStdAction::open(this, SLOT(fileOpen()), actionCollection());
     KStdAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
     KStdAction::save(this, SLOT(save()), actionCollection());
 
@@ -137,17 +138,6 @@ bool ${APP_NAME}Part::saveFile()
     return true;
 }
 
-void ${APP_NAME}Part::fileOpen()
-{
-    // this slot is called whenever the File->Open menu is selected,
-    // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
-    // button is clicked
-    QString file_name = KFileDialog::getOpenFileName();
-
-    if (file_name.isEmpty() == false)
-        openURL(file_name);
-}
-
 void ${APP_NAME}Part::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
@@ -156,4 +146,3 @@ void ${APP_NAME}Part::fileSaveAs()
         saveAs(file_name);
 }
 
-#include "${APP_NAME_LC}_part.moc"

@@ -5,11 +5,11 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif 
+#endif
 
 #include <kapplication.h>
 #include <kparts/mainwindow.h>
- 
+
 class KToggleAction;
 
 /**
@@ -55,6 +55,7 @@ protected:
 
 private slots:
     void fileNew();
+    void fileOpen();
     void optionsShowToolbar();
     void optionsShowStatusbar();
     void optionsConfigureKeys();

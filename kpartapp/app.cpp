@@ -6,6 +6,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
  * Copyright (C) 2001  <kurt@granroth.org>
  */
 #include "${APP_NAME_LC}.h"
+#include "${APP_NAME_LC}.moc"
 
 #include <kkeydialog.h>
 #include <kconfig.h>
@@ -18,6 +19,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <klibloader.h>
 #include <kmessagebox.h>
+#include <kfiledialog.h>
 #include <kstatusbar.h>
 
 ${APP_NAME}::${APP_NAME}()
@@ -76,6 +78,8 @@ void ${APP_NAME}::load(const KURL& url)
 void ${APP_NAME}::setupActions()
 {
     KStdAction::openNew(this, SLOT(fileNew()), actionCollection());
+    KStdAction::open(this, SLOT(fileOpen()), actionCollection());
+
     KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
     m_toolbarAction = KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
@@ -106,8 +110,14 @@ void ${APP_NAME}::fileNew()
     // the New shortcut is pressed (usually CTRL+N) or the New toolbar
     // button is clicked
 
-    // create a new window
-    (new ${APP_NAME})->show();
+    // About this function, the style guide (
+    // http://developer.kde.org/documentation/standards/kde/style/basics/index.html )
+    // says that it should open a new window if the document is _not_
+    // in its initial state.  This is what we do here..
+    if ( ! m_part->url().isEmpty() || m_part->isModified() )
+    {
+        (new ${APP_NAME})->show();
+    };
 }
 
 
@@ -152,4 +162,31 @@ void ${APP_NAME}::applyNewToolbarConfig()
     applyMainWindowSettings(KGlobal::config(), "MainWindow");
 }
 
-#include "${APP_NAME_LC}.moc"
+void ${APP_NAME}::fileOpen()
+{
+    // this slot is called whenever the File->Open menu is selected,
+    // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
+    // button is clicked
+    QString file_name =
+        KFileDialog::getOpenFileName( QString::null, QString::null, this );
+
+    if (file_name.isEmpty() == false)
+    {
+        // About this function, the style guide (
+        // http://developer.kde.org/documentation/standards/kde/style/basics/index.html )
+        // says that it should open a new window if the document is _not_
+        // in its initial state.  This is what we do here..
+        if ( m_part->url().isEmpty() && ! m_part->isModified() )
+        {
+            // we open the file in this window...
+            load( KURL( file_name ) );
+        }
+        else
+        {
+            // we open the file in a new window...
+            KPartApp* newWin = new KPartApp;
+            newWin->load( KURL( file_name ) );
+            newWin->show();
+        }
+    }
+}

@@ -35,7 +35,7 @@ public:
     virtual ~${APP_NAME}Part();
 
     /**
-     * This is a virtual function inherited from KParts::ReadWritePart.  
+     * This is a virtual function inherited from KParts::ReadWritePart.
      * A shell will use this to inform this Part if it should act
      * read-only
      */
@@ -60,7 +60,6 @@ protected:
     virtual bool saveFile();
 
 protected slots:
-    void fileOpen();
     void fileSaveAs();
 
 private:
