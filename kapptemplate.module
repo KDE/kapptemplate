@@ -1,6 +1,6 @@
 #!/bin/sh
 
-$ECHO "KAppTemplate v0.4.5 (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.5 (C) 1999 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # STEP 1: INITIALIZATION is done in the main module

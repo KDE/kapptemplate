@@ -34,9 +34,9 @@ install-yes: all
 	lang=\`echo \$\$cat | sed 's/\\.gmo//'\`; \\
 	name=\$(PACKAGE).mo \\
 	dir=\$\$destdir/\$\$lang/LC_MESSAGES; \\
-	\$(mkinstalldirs) \$\$dir; \\
-	\$(INSTALL_DATA) \$\$cat \$\$dir/\$\$name; \\
-	  echo "installing \$\$cat as \$\$dir/\$\$name"; \\
+	\$(mkinstalldirs) \$(DESTDIR)\$\$dir; \\
+	\$(INSTALL_DATA) \$\$cat \$(DESTDIR)\$\$dir/\$\$name; \\
+	  echo "installing \$\$cat as \$(DESTDIR)\$\$dir/\$\$name"; \\
 	done
 
 install-no:
@@ -48,8 +48,8 @@ uninstall-local:
 	lang=\`echo \$\$cat | sed 's/\\.gmo//'\`; \\
 	name=\$(PACKAGE).mo; \\
 	dir=\$\$destdir/\$\$lang/LC_MESSAGES; \\
-	rm -f \$\$cat \$\$dir/\$\$name; \\
-	echo "removing \$\$dir/\$\$name" ; \\
+	rm -f \$\$cat \$(DESTDIR)\$\$dir/\$\$name; \\
+	echo "removing \$(DESTDIR)\$\$dir/\$\$name" ; \\
 	done
 
 merge:

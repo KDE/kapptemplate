@@ -15,6 +15,8 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 class QPopupMenu;
 class QPrinter;
 class KAccel;
+class KAction;
+class KToggleAction;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the
@@ -80,6 +82,8 @@ private slots:
     void changeCaption(const QString& text);
 
 private:
+	void setupAccel();
+	void setupActions();
     void setupMenuBars();
     void setupToolBars();
 
@@ -94,8 +98,17 @@ private:
 
     KAccel     *m_accelKeys;
 
-    int m_toolbarId;
-    int m_statusbarId;
+	KAction *m_newAct;
+	KAction *m_openAct;
+	KAction *m_saveAct;
+	KAction *m_saveAsAct;
+	KAction *m_printAct;
+	KAction *m_quitAct;
+	KAction *m_keyBindingsAct;
+	KAction *m_preferencesAct;
+	KAction *m_helpAct;
+	KToggleAction *m_showToolbarAct;
+	KToggleAction *m_showStatusbarAct;
 };
 
 #endif // ${APP_NAME_UC}_H

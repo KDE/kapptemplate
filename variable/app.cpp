@@ -31,6 +31,10 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kdialogbase.h>
 #include <khelpmenu.h>
 
+#include <kstdaccel.h>
+#include <kaction.h>
+#include <kstdaction.h>
+
 ${APP_NAME}::${APP_NAME}()
     : m_view(new ${APP_NAME}View(this)),
       m_printer(0),
@@ -41,6 +45,12 @@ ${APP_NAME}::${APP_NAME}()
 
     // tell the KTMainWindow that this is indeed the main widget
     setView(m_view);
+
+    // first, setup our accel keys
+    setupAccel();
+
+    // then, setup our actions
+    setupActions();
 
     // setup our menubars and toolbars
     setupMenuBars();
@@ -90,6 +100,45 @@ void ${APP_NAME}::load(const QString& url)
     m_view->openURL(url.ascii());
 }
 
+void ${APP_NAME}::setupAccel()
+{
+    // insert all of our std accel so that they show up in the
+	// config dialog
+    m_accelKeys->insertStdItem(KAccel::New);
+    m_accelKeys->insertStdItem(KAccel::Open);
+    m_accelKeys->insertStdItem(KAccel::Save);
+    m_accelKeys->insertStdItem(KAccel::Print);
+    m_accelKeys->insertStdItem(KAccel::Quit);
+    m_accelKeys->insertStdItem(KAccel::Help);
+
+    // we need to read in the default settings now.  if we do it
+    // before the 'connectItem' calls or after the 'changeMenuAccel'
+    // calls, the settings will have no effect!
+    m_accelKeys->readSettings();
+}
+
+void ${APP_NAME}::setupActions()
+{
+	m_newAct    = KStdAction::openNew(this, SLOT(fileNew()), this);
+	m_openAct   = KStdAction::open(this, SLOT(fileOpen()), this);
+	m_saveAct   = KStdAction::save(this, SLOT(fileSave()), this);
+	m_saveAsAct = KStdAction::saveAs(this, SLOT(fileSaveAs()), this);
+	m_printAct  = KStdAction::print(this, SLOT(filePrint()), this);
+	m_quitAct   = KStdAction::quit(kapp, SLOT(quit()), this, "quit");
+
+	m_showToolbarAct   = KStdAction::showToolbar(this,
+	                                       SLOT(optionsShowToolbar()), this);
+	m_showStatusbarAct = KStdAction::showStatusbar(this,
+	                                       SLOT(optionsShowStatusbar()), this);
+
+	m_keyBindingsAct = KStdAction::keyBindings(this, SLOT(optionsConfigure()),
+                                               this);
+	m_preferencesAct = KStdAction::preferences(this,
+                                             SLOT(optionsPreferences()), this);
+
+	m_helpAct = KStdAction::help(this, SLOT(appHelpActivated()), this);
+}
+
 void ${APP_NAME}::setupMenuBars()
 {
     // these are the standard menus.  delete the ones that you
@@ -98,67 +147,32 @@ void ${APP_NAME}::setupMenuBars()
     m_options = new QPopupMenu();
     m_help    = new QPopupMenu();
 
-    // the first thing we need to do is setup our keyboard "shortcuts"
-    // this uses the KAccel class -- it's similar to the old KStdAccel
-    // only a LOT more powerful.
-    
-    // connect all of our standard accelerators to their slots
-    m_accelKeys->connectItem(KAccel::New,   this, SLOT(fileNew()));
-    m_accelKeys->connectItem(KAccel::Open,  this, SLOT(fileOpen()));
-    m_accelKeys->connectItem(KAccel::Save,  this, SLOT(fileSave()));
-    m_accelKeys->connectItem(KAccel::Print, this, SLOT(filePrint()));
-    m_accelKeys->connectItem(KAccel::Quit,  kapp, SLOT(quit()));
-
-    // we need to read in the default settings now.  if we do it
-    // before the 'connectItem' calls or aver the 'changeMenuAccel'
-    // calls, the settings will have no effect!
-    m_accelKeys->readSettings();
-
     // first, the File menu
-    int id;
-    id = m_file->insertItem(BarIcon("filenew"), i18n("&New"),
-                            this, SLOT(fileNew()));
-    m_accelKeys->changeMenuAccel(m_file, id, KAccel::New);
-    id = m_file->insertItem(BarIcon("fileopen"), i18n("&Open..."),
-                            this, SLOT(fileOpen()));
-    m_accelKeys->changeMenuAccel(m_file, id, KAccel::Open);
+    m_newAct->plug(m_file);
+    m_openAct->plug(m_file);
     m_file->insertSeparator(-1);
-
-    id = m_file->insertItem(BarIcon("filefloppy"), i18n("&Save"),
-                            this, SLOT(fileSave()));
-    m_accelKeys->changeMenuAccel(m_file, id, KAccel::Save);
-    m_file->insertItem(i18n("Save As..."),
-                       this, SLOT(fileSaveAs()));
+    m_saveAct->plug(m_file);
+    m_saveAsAct->plug(m_file);
     m_file->insertSeparator(-1);
-
-    id = m_file->insertItem(BarIcon("fileprint"), i18n("&Print"),
-                            this, SLOT(filePrint()));
-    m_accelKeys->changeMenuAccel(m_file, id, KAccel::Print);
+    m_printAct->plug(m_file);
     m_file->insertSeparator(-1);
-
-    id = m_file->insertItem(BarIcon("exit"), i18n("&Quit"),
-                            kapp, SLOT(quit()));
-    m_accelKeys->changeMenuAccel(m_file, id, KAccel::Quit);
+    m_quitAct->plug(m_file);
 
     // next, the Options menu
     m_options->setCheckable(true);
-    m_toolbarId = m_options->insertItem(i18n("Show &Toolbar"),
-                                        this, SLOT(optionsShowToolbar()));
-    m_options->setItemChecked(m_toolbarId, true);
-    m_statusbarId = m_options->insertItem(i18n("Show &Statusbar"),
-                                          this, SLOT(optionsShowStatusbar()));
-    m_options->setItemChecked(m_statusbarId, true);
+	m_showToolbarAct->setChecked(true);
+	m_showToolbarAct->plug(m_options);
+	m_showStatusbarAct->setChecked(true);
+	m_showStatusbarAct->plug(m_options);
     m_options->insertSeparator(-1);
-
-    m_options->insertItem(i18n("Configure &Key Bindings..."),
-                          this, SLOT(optionsConfigure()));
-    m_options->insertItem(i18n("&Preferences..."),
-                          this, SLOT(optionsPreferences()));
+	m_keyBindingsAct->plug(m_options);
+	m_preferencesAct->plug(m_options);
 
     // finally, the Help menu
     m_help = helpMenu(i18n("${APP_NAME} v${APP_VERSION}\\n\\n"
-                           "Copyright (C) 1999\\n"
-                           "$AUTHOR <$EMAIL>"));
+                           "Copyright (C) 2000\\n"
+                           "${AUTHOR} <${EMAIL}>"));
+
 
     // now add all of the menus to the menu bar
     menuBar()->insertItem(i18n("&File"),    m_file);
@@ -169,19 +183,11 @@ void ${APP_NAME}::setupMenuBars()
 void ${APP_NAME}::setupToolBars()
 {
     // this toolbar should mirror the menubar fairly closely
-
-    toolBar()->insertButton(BarIcon("filenew"), -1, SIGNAL(clicked()),
-                            this, SLOT(fileNew()), true, i18n("New"));
-    toolBar()->insertButton(BarIcon("fileopen"), -1, SIGNAL(clicked()),
-                            this, SLOT(fileOpen()), true, i18n("Open"));
-    toolBar()->insertButton(BarIcon("filefloppy"), -1, SIGNAL(clicked()),
-                            this, SLOT(fileSave()), true, i18n("Save"));
-    toolBar()->insertButton(BarIcon("fileprint"), -1, SIGNAL(clicked()),
-                            this, SLOT(filePrint()), true, i18n("Print"));
-    toolBar()->insertButton(BarIcon("help"), -1, SIGNAL(clicked()),
-                            this, SLOT(appHelpActivated()),
-                            true, i18n("Help"));
-
+    m_newAct->plug(toolBar());
+    m_openAct->plug(toolBar());
+    m_saveAct->plug(toolBar());
+    m_printAct->plug(toolBar());
+    m_helpAct->plug(toolBar());
 }
 
 void ${APP_NAME}::saveProperties(KConfig *config)
@@ -306,30 +312,20 @@ void ${APP_NAME}::optionsShowToolbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // toolbar
-    static bool show = true;
-    show = show ? false : true;
-
-    m_options->setItemChecked(m_toolbarId, show);
-
-    if (show)
-        toolBar()->enable(KToolBar::Show);
-    else
+    if (toolBar()->isVisible())
         toolBar()->enable(KToolBar::Hide);
+    else
+        toolBar()->enable(KToolBar::Show);
 }
 
 void ${APP_NAME}::optionsShowStatusbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // statusbar
-    static bool show = true;
-    show = show ? false : true;
-
-    m_options->setItemChecked(m_statusbarId, show);
-
-    if (show)
-        statusBar()->enable(KStatusBar::Show);
-    else
+    if (toolBar()->isVisible())
         statusBar()->enable(KStatusBar::Hide);
+    else
+        statusBar()->enable(KStatusBar::Show);
 }
 
 void ${APP_NAME}::optionsConfigure()

@@ -1,4 +1,10 @@
-Doc-05-1999 - Kurt Granroth (v0.4.5)
+Dec-25-1999 - Kurt Granroth (v0.5)
+  o Use standard actions instead of constructing everything manually
+    (big change!)
+  o Allow .po files to be installed in $DESTDIR
+  o Added .spec file for RPM fans
+
+Dec-05-1999 - Kurt Granroth (v0.4.5)
   o Changed 'QCString' to QString in DCOP iface stuff...
 
 Nov-29-1999 - Kurt Granroth (v0.4.4)
