@@ -1,4 +1,4 @@
-SUBDIRS=admin appframework existing kapp kpartapp kpartplugin
+SUBDIRS=appframework existing kapp kpartapp kpartplugin
 
 VERSION := `cat $(srcdir)/VERSION`
 
