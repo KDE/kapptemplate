@@ -1,0 +1,11 @@
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop
+[Desktop Entry]
+Name=${APP_NAME}
+Exec=${APP_NAME_LC} %i %m -caption "%c"
+Icon=${APP_NAME_LC}.png
+MiniIcon=${APP_NAME_LC}.png
+Type=Application
+DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
+Comment=A KDE Application
+Terminal=0

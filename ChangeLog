@@ -1,3 +1,8 @@
+Nov-02-1999 - Kurt Granroth (v0.4)
+  o Updated for KDE 2.x.  The produced application now has a LOT more
+    functionality than before -- it is a scriptable web browser (see
+    dcopclient.py for more info on that)!
+
 Jan-24-1999 - Kurt Granroth (v0.3.2)
   o Added LIB_X11 and LIB_QT to acinclude.m4
 
@@ -12,7 +17,7 @@ Jan-01-1999 - Kurt Granroth (v0.3)
   o Put in some session management stuff
   o Changed main() to use 'App *widget = new App;' instead of 'App widget'.
     The latter case caused the app to seg fault if the user closed it
-	 any way other than File->Quit
+    any way other than File->Quit
 
 Dec-31-1998 - Kurt Granroth
   o Added 'knewfunction' module that will add a function to an existing

@@ -11,7 +11,7 @@ else
 	ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.3.2 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.4 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # let's see if we have a previous > 0.2 release
@@ -119,12 +119,28 @@ else
 	$ECHO "$THE_SHARE/common already exists...";
 fi
 
+if [ ! -d "$THE_SHARE/admin" ];
+then
+	$ECHO "Creating $THE_SHARE/admin...";
+	mkdir "$THE_SHARE/admin" || exit 1;
+else
+	$ECHO "$THE_SHARE/admin already exists...";
+fi
+
 if [ ! -d "$THE_SHARE/variable" ];
 then
 	$ECHO "Creating $THE_SHARE/variable...";
 	mkdir "$THE_SHARE/variable" || exit 1;
 else
 	$ECHO "$THE_SHARE/variable already exists...";
+fi
+
+if [ ! -d "$THE_SHARE/variable/no-exe" ];
+then
+	$ECHO "Creating $THE_SHARE/variable/no-exe...";
+	mkdir "$THE_SHARE/variable/no-exe" || exit 1;
+else
+	$ECHO "$THE_SHARE/variable/no-exe already exists...";
 fi
 
 if [ ! -d "$THE_SHARE/knewclass" ];
@@ -146,8 +162,12 @@ fi
 $ECHO "Installing common files...";
 cp -pf common/* $THE_SHARE/common
 
+$ECHO "Installing admin files...";
+cp -pf admin/* $THE_SHARE/admin
+
 $ECHO "Installing variable files...";
 cp -pf variable/* $THE_SHARE/variable
+cp -pf variable/no-exe/* $THE_SHARE/variable/no-exe
 
 $ECHO "Installing knewclass files...";
 cp -pf knewclass/* $THE_SHARE/knewclass

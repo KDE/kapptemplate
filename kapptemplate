@@ -55,9 +55,23 @@ else
 	exit 1;
 fi
 
+if [ -d "$SHARE_DIR/common" ];
+then
+	ADMIN_FILES=`/bin/ls $SHARE_DIR/admin`;
+
+	if [ ! "$ADMIN_FILES" ];
+	then
+		$ECHO "Cannot find admin files in $SHARE_DIR/admin!";
+		exit 1;
+	fi
+else
+	$ECHO "$SHARE_DIR/admin directory does not exist!";
+	exit 1;
+fi
+
 if [ -d "$SHARE_DIR/variable" ];
 then
-	VARIABLE_FILES=`/bin/ls $SHARE_DIR/variable`;
+	VARIABLE_FILES=`/bin/ls -I "no-exe" $SHARE_DIR/variable`;
 
 	if [ ! "$VARIABLE_FILES" ];
 	then
