@@ -1,5 +1,5 @@
-all:
-	echo "Copying over the admin directory";
-	cp -R ../admin/ .
 
-dist: all
+all:
+	@echo "Copying over the admin directory"; \
+	rm -fr admin && cp -R ../admin/ .
+
