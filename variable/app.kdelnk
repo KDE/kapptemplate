@@ -9,4 +9,3 @@ Icon=$APP_NAME_LC
 Type=Application
 DocPath=$APP_NAME_LC/$APP_NAME_LC.html
 Terminal=0
-MiniIcon=$APP_NAME_LC
