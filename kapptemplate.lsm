@@ -1,7 +1,7 @@
 Begin3
 Title:          KAppTemplate
-Version:        0.7.3
-Entered-date:   27Oct00
+Version:        0.7.4
+Entered-date:   20Nov00
 Description:    Shell script that will automatically create a full-featured
                 KMainWindow-based KDE 2.0 app framework with user input.
 Keywords:       KDE application generator DCOP KParts XML-GUI
@@ -9,8 +9,8 @@ Author:         Kurt Granroth <granroth@kde.org>
 Maintained-by:  Kurt Granroth <granroth@kde.org>
 Home-page:      http://www.granroth.org/kapptemplate
 Primary-site:   cvs.kde.org:/home/kde/kdesdk/kapptemplate
-                xxxxxx  kapptemplate-0.7.3.tar.gz
-                xxx     kapptemplate-0.7.3.lsm
+                xxxxxx  kapptemplate-0.7.4.tar.gz
+                xxx     kapptemplate-0.7.4.lsm
 Platform:       Unix
 Copying-policy: GPL
 End

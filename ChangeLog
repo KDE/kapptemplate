@@ -1,3 +1,7 @@
+Nov-20-2000 - Kurt Granroth (v0.7.4)
+  o Added custom menu item and menu as example on how to do it
+  o Fixed some --noinit bugs
+
 Oct-27-2000 - Stephan Kulow (v0.7.3)
   o Fixed pot file handling.  'make package-messages' should now work.
 

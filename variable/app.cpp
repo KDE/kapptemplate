@@ -105,6 +105,11 @@ void ${APP_NAME}::setupActions()
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
+    // this doesn't do anything useful.  it's just here to illustrate
+    // how to insert a custom menu and menu item
+    KAction *custom = new KAction(i18n("Cus&tom Menuitem"), 0,
+                                  this, SLOT(optionsPreferences()),
+                                  actionCollection(), "custom_action");
     createGUI();
 }
 
