@@ -47,10 +47,8 @@ ${APP_NAME}::${APP_NAME}()
     // then, setup our actions
     setupActions();
 
-    // apply the saved mainwindow settings, if any, and ask the mainwindow
-    // to automatically save settings if changed: window size, toolbar
-    // position, icon size, etc.
-    setAutoSaveSettings();
+    // Add typical actions and save size/toolbars/statusbar
+    setupGUI():
 
     // allow the view to change the statusbar and caption
     connect(m_view, SIGNAL(signalChangeStatusbar(const QString&)),
@@ -100,11 +98,6 @@ void ${APP_NAME}::setupActions()
     KStdAction::print(this, SLOT(filePrint()), actionCollection());
     KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    createStandardStatusBarAction();
-    setStandardToolBarMenuEnabled(true);
-
-    KStdAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
-    KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
     // this doesn't do anything useful.  it's just here to illustrate
@@ -112,7 +105,6 @@ void ${APP_NAME}::setupActions()
     KAction *custom = new KAction(i18n("Cus&tom Menuitem"), 0,
                                   this, SLOT(optionsPreferences()),
                                   actionCollection(), "custom_action");
-    createGUI();
 }
 
 void ${APP_NAME}::saveProperties(KConfig *config)
