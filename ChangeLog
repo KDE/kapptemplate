@@ -1,3 +1,17 @@
+Feb-04-2000 - Simon Hausman (v1.0.2)
+  o Converted App::load method to use KURL instead of QString in kpart
+    module
+  o Used correct constructor for Part in kpart module
+  o Used correct instance() in kpart module
+  o Other random correctness fixes in kpart module
+  o Added +[URL] command line option in kpart module
+
+Feb-04-2000 - Simon Hausman (v1.0.1)
+  o Fixed memory leak in plugin module
+  o Use createObject instead of old create in plugin module
+  o Added version number to xml file in plugin module
+  o Fixed integration of configure.in.in in kdesdk
+
 Feb-04-2000 - Kurt Granroth (v1.0)
   o GIGANTIC REWRITE.  This was *almost* a complete rewrite from
     scratch

@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.h
 #define ${APP_NAME_UC}PART_H
 
 #include <kparts/part.h>
-#include <klibloader.h>
+#include <kparts/factory.h>
 
 class QWidget;
 class QPainter;
@@ -26,7 +26,8 @@ public:
     /**
      * Default constructor
      */
-    ${APP_NAME}Part(QWidget *parent, const char *name);
+    ${APP_NAME}Part(QWidget *parentWidget, const char *widgetName,
+                    QObject *parent, const char *name);
 
     /**
      * Destructor
@@ -67,15 +68,15 @@ private:
 class KInstance;
 class KAboutData;
 
-class ${APP_NAME}PartFactory : public KLibFactory
+class ${APP_NAME}PartFactory : public KParts::Factory
 {
     Q_OBJECT
 public:
     ${APP_NAME}PartFactory();
     virtual ~${APP_NAME}PartFactory();
-    virtual QObject* create(QObject* parent = 0, const char* name = 0,
-                            const char* classname = "QObject",
-                            const QStringList &args = QStringList());
+    virtual KParts::Part* createPartObject( QWidget *parentWidget, const char *widgetName,
+                                            QObject *parent, const char *name,
+                                            const char *classname, const QStringList &args );
     static KInstance* instance();
  
 private:

@@ -64,9 +64,9 @@ ${APP_NAME}::~${APP_NAME}()
 {
 }
 
-void ${APP_NAME}::load(const QString& url)
+void ${APP_NAME}::load(const KURL& url)
 {
-    m_part->openURL(KURL(url));
+    m_part->openURL( url );
 }
 
 void ${APP_NAME}::setupActions()

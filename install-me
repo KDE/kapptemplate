@@ -1,6 +1,6 @@
 #!/bin/sh
 
-KAPPTEMPLATEVERSION=1.0
+KAPPTEMPLATEVERSION=1.0.2
 
 # horrid hack to try and figure out what shell we are using
 # basically, if we can find /usr/ucb/echo, then we are almost for sure

@@ -11,14 +11,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 #include <qtextstream.h>
 #include <qmultilineedit.h>
 
-${APP_NAME}Part::${APP_NAME}Part(QWidget *parent, const char *name)
+${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, const char *widgetName,
+                                  QObject *parent, const char *name )
     : KParts::ReadWritePart(parent, name)
 {
     // we need an instance
-    setInstance(new KInstance("${APP_NAME_LC}"));
+    setInstance( ${APP_NAME}PartFactory::instance() );
 
     // this should be your custom internal widget
-    m_widget = new QMultiLineEdit(parent);
+    m_widget = new QMultiLineEdit( parentWidget, widgetName );
 
     // notify the part that this is our internal widget
     setWidget(m_widget);
@@ -150,7 +151,7 @@ KInstance*  ${APP_NAME}PartFactory::s_instance = 0L;
 KAboutData* ${APP_NAME}PartFactory::s_about = 0L;
 
 ${APP_NAME}PartFactory::${APP_NAME}PartFactory()
-    : KLibFactory()
+    : KParts::Factory()
 {
 }
 
@@ -162,20 +163,17 @@ ${APP_NAME}PartFactory::~${APP_NAME}PartFactory()
     s_instance = 0L;
 }
 
-QObject* ${APP_NAME}PartFactory::create(QObject* parent, const char* name, const char* classname, const QStringList & )
+KParts::Part* ${APP_NAME}PartFactory::createPartObject( QWidget *parentWidget, const char *widgetName,
+                                                        QObject *parent, const char *name,
+                                                        const char *classname, const QStringList &args )
 {
-    // The Part's parent must always inherit from QWidget
-    if (parent && !parent->inherits("QWidget"))
-        return 0L;
-
     // Create an instance of our Part
-    ${APP_NAME}Part* obj = new ${APP_NAME}Part((QWidget*) parent, name);
+    ${APP_NAME}Part* obj = new ${APP_NAME}Part( parentWidget, widgetName, parent, name );
 
     // See if we are to be read-write or not
-    if (QString(classname) == "KParts::ReadWritePart")
-        obj->setReadWrite(true);
+    if (QCString(classname) == "KParts::ReadOnlyPart")
+        obj->setReadWrite(false);
 
-    emit objectCreated(obj);
     return obj;
 }
 

@@ -37,7 +37,7 @@ public:
     /**
      * Use this method to load whatever file/URL you have
      */
-    void load(const QString& url);
+    void load(const KURL& url);
 
 protected:
     /**
