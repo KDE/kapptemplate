@@ -134,13 +134,18 @@ void ${APP_NAME}::optionsConfigureKeys()
 
 void ${APP_NAME}::optionsConfigureToolbars()
 {
+    saveMainWindowSettings(KGlobal::config(), "MainWindow");
+
     // use the standard toolbar editor
-    KEditToolbar dlg(actionCollection());
-    if (dlg.exec())
-    {
-        // recreate our GUI
-        createGUI(m_part);
-    } 
+    KEditToolbar dlg(factory());
+    connect(&dlg, SIGNAL(newToolbarConfig()),
+            this, SLOT(applyNewToolbarConfig()));
+    dlg.exec();
+}
+
+void ${APP_NAME}::applyNewToolbarConfig()
+{
+    applyMainWindowSettings(KGlobal::config(), "MainWindow");
 }
 
 #include "${APP_NAME_LC}.moc"

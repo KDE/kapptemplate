@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 KAPPTEMPLATEVERSION=1.0.6
 
@@ -221,7 +221,7 @@ ENDORC
 
 $ECHO "Installing myself...";
 cat << ENDOBIN > $BIN_DIR/kapptemplate
-#!/bin/sh
+#!/usr/bin/env bash
 
 # This is the directory where 'install-me' installed the shared
 # kapptemplate files.  It may be overridden by the setting in

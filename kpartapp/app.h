@@ -60,6 +60,8 @@ private slots:
     void optionsConfigureKeys();
     void optionsConfigureToolbars();
 
+    void applyNewToolbarConfig();
+
 private:
     void setupAccel();
     void setupActions();

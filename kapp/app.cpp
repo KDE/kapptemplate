@@ -10,7 +10,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include "${APP_NAME_LC}pref.h"
 
 #include <qdragobject.h>
-#include <qlineedit.h>
 #include <kprinter.h>
 #include <qpainter.h>
 #include <qpaintdevicemetrics.h>
@@ -71,7 +70,7 @@ void ${APP_NAME}::load(const KURL& url)
 
     #if 0
     // download the contents
-    if (KIONetAccess::download(url, target))
+    if (KIO::NetAccess::download(url, target))
     {
         // set our caption
         setCaption(url);
@@ -80,7 +79,7 @@ void ${APP_NAME}::load(const KURL& url)
         loadFile(target);
 
         // and remove the temp file
-        KIONetAccess::removeTempFile(target);
+        KIO::NetAccess::removeTempFile(target);
     }
     #endif
 

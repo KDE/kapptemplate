@@ -1,3 +1,11 @@
+Jul-30-2001 - Kurt Granroth
+  o KAppTemplate isn't really a 'sh' shell script.. it's a 'bash'
+    shell script.  Changed #! line to reflect this.
+
+Jul-06-2001 - Kurt Granroth
+  o Fixed 'configure toolbar' in part app template
+  o KIONetAccess is now (and has been for some time) KIO::NetAccess
+
 Jul-05-2001 - Kurt Granroth (v1.0.6)
   o KPartApp's part should be in it's own directory.  Did it ever work
     as-was?  XML merging between shell and part should now work.
