@@ -51,6 +51,7 @@ int main(int argc, char **argv)
                 widget->load(args->url(i));
             }
         }
+        args->clear();
     }
 
     return app.exec();

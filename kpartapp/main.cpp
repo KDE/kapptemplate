@@ -31,7 +31,6 @@ int main(int argc, char **argv)
     else
     {
         // no session.. just start up normally
-
         KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
         if ( args->count() == 0 )
@@ -49,7 +48,7 @@ int main(int argc, char **argv)
                 widget->load( args->url( i ) );
             }
         }
-
+        args->clear();
     }
 
     return app.exec();
