@@ -33,6 +33,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 ${APP_NAME}::${APP_NAME}()
     : m_view(new ${APP_NAME}View(this)),
+      m_printer(0),
       m_accelKeys(new KAccel(this))
 {
     // accept dnd
@@ -284,18 +285,17 @@ void ${APP_NAME}::filePrint()
     // this slot is called whenever the File->Print menu is selected,
     // the Print shortcut is pressed (usually CTRL+P) or the Print toolbar
     // button is clicked
-
-    QPrinter *printer = new QPrinter;
-    if (QPrintDialog::getPrinterSetup(printer))
+    if (!m_printer) m_printer = new QPrinter;
+    if (QPrintDialog::getPrinterSetup(m_printer))
     {
         // setup the printer.  with Qt, you always "print" to a
         // QPainter.. whether the output medium is a pixmap, a screen,
         // or paper
         QPainter p;
-        p.begin(printer);
+        p.begin(m_printer);
 
         // we let our view do the actual printing
-        QPaintDeviceMetrics metrics(printer);
+        QPaintDeviceMetrics metrics(m_printer);
         m_view->print(&p, metrics.height(), metrics.width());
 
         // and send the result to the printer

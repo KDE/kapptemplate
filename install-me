@@ -11,7 +11,7 @@ else
 	ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.4.3 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.4.4 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # let's see if we have a previous > 0.2 release

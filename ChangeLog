@@ -1,3 +1,8 @@
+Nov-29-1999 - Kurt Granroth (v0.4.4)
+  o Added sample DCOP client for app
+  o Fixed .desktop file
+  o Made QPrinter a member var so settings are saved
+
 Nov-26-1999 - Kurt Granroth (v0.4.3)
   o Beefed up the print function with more boilerplate stuff
   o KAccel keys should now work

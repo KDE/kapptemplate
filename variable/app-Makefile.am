@@ -8,7 +8,7 @@ SUBDIRS = pics doc
 
 # this is the program that gets installed.  it's name is used for all
 # of the other Makefile.am variables
-bin_PROGRAMS = $APP_NAME_LC
+bin_PROGRAMS = $APP_NAME_LC ${APP_NAME_LC}_client
 
 # set the include path for X, qt and KDE
 INCLUDES         = \$(all_includes)
@@ -25,6 +25,11 @@ ${APP_NAME_LC}_SOURCES =	main.cpp ${APP_NAME_LC}.cpp ${APP_NAME_LC}view.cpp \\
 
 # these are the headers for your project
 noinst_HEADERS   = ${APP_NAME_LC}.h ${APP_NAME_LC}view.h ${APP_NAME_LC}pref.h
+
+# client stuff
+${APP_NAME_LC}_client_LDFLAGS = \$(KDE_RPATH) \$(all_libraries)
+${APP_NAME_LC}_client_LDADD   = \$(LIB_KDECORE)
+${APP_NAME_LC}_client_SOURCES = ${APP_NAME_LC}_client.cpp
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO

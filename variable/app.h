@@ -13,6 +13,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include "${APP_NAME_LC}view.h"
 
 class QPopupMenu;
+class QPrinter;
 class KAccel;
 
 /**
@@ -84,6 +85,8 @@ private:
 
 private:
     ${APP_NAME}View *m_view;
+
+    QPrinter   *m_printer;
 
     QPopupMenu *m_file;
     QPopupMenu *m_options;
