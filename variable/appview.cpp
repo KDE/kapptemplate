@@ -5,28 +5,68 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp
 #include <qpainter.h>
 #include <qlayout.h>
 
-#include <khtml_part.h>
-#include <kcursor.h>
 #include <kurl.h>
+
+#include <ktrader.h>
+#include <klibloader.h>
+#include <kmessagebox.h>
+#include <krun.h>
 
 ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
     : QWidget(parent),
       DCOPObject("${APP_NAME}Iface")
 {
-    // setup our layout manager
+    // setup our layout manager to automatically add our widgets
     QHBoxLayout *top_layout = new QHBoxLayout(this);
     top_layout->setAutoAdd(true);
 
-    // whatever widgets we have get automatically entered
-    // into our layout manager
-    m_html = new KHTMLPart(this);
-    connect(m_html, SIGNAL(onURL(const QString&)),
-            this,   SLOT(slotOnURL(const QString&)));
-    connect(m_html, SIGNAL(setTitle(const QString&)),
+    // we want to look for all components that satisfy our needs.  the
+    // trader will actually search through *all* registered KDE
+    // applications and components -- not just KParts.  So we have to
+    // specify two things: a service type and a constraint
+    //
+    // the service type is like a mime type.  we say that we want all
+    // applications and components that can handle HTML -- 'text/html'
+    // 
+    // however, by itself, this will return such things as Netscape..
+    // not what we wanted.  so we constrain it by saying that the
+    // string 'KParts/ReadOnlyPart' must be found in the ServiceTypes
+    // field.  with this, only components of the type we want will be
+    // returned.
+    KTrader::OfferList offers = KTrader::self()->query("text/html", "'KParts/ReadOnlyPart' in ServiceTypes");
+
+    KLibFactory *factory = 0;
+    // in theory, we only care about the first one.. but let's try all
+    // offers just in case the first can't be loaded for some reason
+    KTrader::OfferList::Iterator it(offers.begin());
+    for( ; it != offers.end(); ++it)
+    {
+        KService::Ptr ptr = (*it);
+
+        // we now know that our offer can handle HTML and is a part.
+        // since it is a part, it must also have a library... let's try to
+        // load that now
+        factory = KLibLoader::self()->factory( ptr->library() );
+        if (factory)
+        {
+            m_html = static_cast<KParts::ReadOnlyPart *>(factory->create(this, ptr->name(), "KParts::ReadOnlyPart"));
+            break;
+        }
+    }
+
+    // if our factory is invalid, then we never found our component
+    // and we might as well just exit now
+    if (!factory)
+    {
+        KMessageBox::error(this, "Could not find a suitable HTML component");
+        return;
+    }
+
+    connect(m_html, SIGNAL(setWindowCaption(const QString&)),
             this,   SLOT(slotSetTitle(const QString&)));
-    m_html->setURLCursor(KCursor::handCursor());
-	m_html->enableJava(true);
-    m_html->show();
+    connect(m_html, SIGNAL(setStatusBarText(const QString&)),
+            this,   SLOT(slotOnURL(const QString&)));
+
 }
 
 ${APP_NAME}View::~${APP_NAME}View()

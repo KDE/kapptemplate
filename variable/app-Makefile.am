@@ -17,7 +17,7 @@ INCLUDES         = \$(all_includes)
 ${APP_NAME_LC}_LDFLAGS = \$(KDE_RPATH) \$(all_libraries)
 
 # the libraries to link against.
-${APP_NAME_LC}_LDADD   = \$(LIB_KHTML) \$(LIB_KFILE)
+${APP_NAME_LC}_LDADD   = \$(LIB_KFILE)
 
 # which sources should be compiled for $APP_NAME_LC
 ${APP_NAME_LC}_SOURCES =	main.cpp ${APP_NAME_LC}.cpp ${APP_NAME_LC}view.cpp \\

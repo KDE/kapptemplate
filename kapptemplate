@@ -4,7 +4,7 @@
 # basically, if we can find /usr/ucb/echo, then we are almost for sure
 # NOT on a Linux system and probably 'echo "\c" works.  if we don't
 # find it, we'll assume that the shell is really bash.
-if [ -f "/usr/ucb/$ECHO" ];
+if [ -f "/usr/ucb/echo" ];
 then
 	ECHO="echo";
 else

@@ -1,3 +1,8 @@
+Jul-21-2000 - Kurt Granroth (v0.7)
+  o Now using an HTML KPart component instead of a widget since that
+    is The Right Thing to Do(tm)
+  o Renamed .png files to use sizes in the names
+
 Jun-09-2000 - Kurt Granroth (v0.6.3)
   o Added i18n() around preference titles... mostly so it would
     compile with the newly ambiguous KDialogBase::addPage methods

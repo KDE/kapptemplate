@@ -1,4 +1,4 @@
-KAppTemplate v0.6.3
+KAppTemplate v0.7
 Kurt Granroth <granroth@kde.org>
 ----------------------------------------------------------------------
 
@@ -34,6 +34,18 @@ o ksgml2html (from the 'kdesdk' package)
 How do I install it?
 --------------------
 ./install-me
+
+Why does it have a DCOP interface and use KParts?
+-------------------------------------------------
+Because both are The Right Thing to Do(tm).  If you have a
+full-featured KDE application at all, you should use all the tools
+necessary.  A DCOP interface is very necessary if you want any kind of
+interoperability between your app and other apps.  And using the KPart
+component for HTML is preferred to using the KHTML widget directly.
+In fact, whenever there is a component that can handle your data,
+always prefer it over a plain widget.  With a component, your app can
+react to user preferences and component updates on the fly... with a
+widget, you would need to recompile.
 
 How does <whatever> work?
 -------------------------

@@ -4,20 +4,18 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}view.h
 #define ${APP_NAME_UC}VIEW_H
 
 #include <qwidget.h>
+#include <kparts/part.h>
 #include <${APP_NAME_LC}iface.h>
 
 class QPainter;
 class KURL;
-
-// this forward reference you will probably delete..
-class KHTMLPart;
 
 /**
  * This is the main view class for ${APP_NAME}.  Most of the non-menu,
  * non-toolbar, and non-statusbar (e.g., non frame) GUI code should go
  * here.
  *
- * This ${APP_NAME_LC} uses a HTML Widget as an example.
+ * This ${APP_NAME_LC} uses an HTML component as an example.
  *
  * @short Main view
  * @author $AUTHOR <$EMAIL>
@@ -73,7 +71,7 @@ private slots:
     void slotSetTitle(const QString& title);
 
 private:
-    KHTMLPart *m_html;
+    KParts::ReadOnlyPart *m_html;
 };
 
 #endif // ${APP_NAME_UC}VIEW_H

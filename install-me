@@ -4,14 +4,14 @@
 # basically, if we can find /usr/ucb/echo, then we are almost for sure
 # NOT on a Linux system and probably 'echo "\c" works.  if we don't
 # find it, we'll assume that the shell is really bash.
-if [ -f "/usr/ucb/$ECHO" ];
+if [ -f "/usr/ucb/echo" ];
 then
 	ECHO="echo";
 else
 	ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.6.3 Install (C) 2000 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.7 Install (C) 2000 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # let's see if we have a previous release
