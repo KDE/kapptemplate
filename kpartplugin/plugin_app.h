@@ -1,7 +1,7 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h...";
 cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h
-#ifndef _PLUGIN_${APP_NAME_UC}_H
-#define _PLUGIN_${APP_NAME_UC}_H
+#ifndef PLUGIN_${APP_NAME_UC}_H
+#define PLUGIN_${APP_NAME_UC}_H
 
 #include <kparts/plugin.h>
 
@@ -17,4 +17,4 @@ public slots:
   void slotAction();
 };
 
-#endif // _PLUGIN_${APP_NAME_UC}_H
+#endif // PLUGIN_${APP_NAME_UC}_H
