@@ -47,7 +47,7 @@ ${APP_NAME}::${APP_NAME}()
         {
             // tell the KParts::MainWindow that this is indeed the main widget
             setCentralWidget(m_part->widget());
-            
+
             // and integrate the part's GUI with the shell's
             createGUI(m_part);
         }
@@ -58,6 +58,9 @@ ${APP_NAME}::${APP_NAME}()
         // itself can't do anything useful
         KMessageBox::error(this, "Could not find our Part!");
         kapp->quit();
+        // we return here, cause kapp->quit() only means "exit the
+        // next time we enter the event loop...
+        return;
     }
 }
 
