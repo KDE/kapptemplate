@@ -60,6 +60,7 @@ ${APP_NAME}::${APP_NAME}()
 
 ${APP_NAME}::~${APP_NAME}()
 {
+  delete m_printer;
 }
 
 void ${APP_NAME}::load(const KURL& url)
