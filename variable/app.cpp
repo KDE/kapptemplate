@@ -104,12 +104,12 @@ void ${APP_NAME}::setupAccel()
 {
     // insert all of our std accel so that they show up in the
 	// config dialog
-    m_accelKeys->insertStdItem(KAccel::New);
-    m_accelKeys->insertStdItem(KAccel::Open);
-    m_accelKeys->insertStdItem(KAccel::Save);
-    m_accelKeys->insertStdItem(KAccel::Print);
-    m_accelKeys->insertStdItem(KAccel::Quit);
-    m_accelKeys->insertStdItem(KAccel::Help);
+    m_accelKeys->insertStdItem(KStdAccel::New);
+    m_accelKeys->insertStdItem(KStdAccel::Open);
+    m_accelKeys->insertStdItem(KStdAccel::Save);
+    m_accelKeys->insertStdItem(KStdAccel::Print);
+    m_accelKeys->insertStdItem(KStdAccel::Quit);
+    m_accelKeys->insertStdItem(KStdAccel::Help);
 
     // we need to read in the default settings now.  if we do it
     // before the 'connectItem' calls or after the 'changeMenuAccel'
