@@ -13,8 +13,8 @@ all:
 	chmod 755 ${PWD}/kapptemplate
 
 install-exec-local:
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/kapptemplate/bin
-	$(INSTALL_SCRIPT) ${PWD}/mkinstalldirs $(DESTDIR)$(kde_datadir)/kapptemplate/bin
+	$(src_dir)/$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/kapptemplate/bin
+	$(INSTALL_SCRIPT) $(srcdir)/mkinstalldirs $(DESTDIR)$(kde_datadir)/kapptemplate/bin
 
 moduledir = $(kde_datadir)/kapptemplate/include
 module_DATA = kapptemplate.common kapptemplate.module \
