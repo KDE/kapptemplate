@@ -8,11 +8,12 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #endif 
 
 #include <kapp.h>
-#include <ktmainwindow.h>
+#include <kmainwindow.h>
  
 #include "${APP_NAME_LC}view.h"
 
 class QPrinter;
+class KToggleAction;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the
@@ -22,7 +23,7 @@ class QPrinter;
  * @author $AUTHOR <$EMAIL>
  * @version $APP_VERSION
  */
-class ${APP_NAME} : public KTMainWindow
+class ${APP_NAME} : public KMainWindow
 {
     Q_OBJECT
 public:
@@ -86,6 +87,8 @@ private:
     ${APP_NAME}View *m_view;
 
     QPrinter   *m_printer;
+    KToggleAction *m_toolbarAction;
+    KToggleAction *m_statusbarAction;
 };
 
 #endif // ${APP_NAME_UC}_H

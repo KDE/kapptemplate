@@ -35,20 +35,21 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kstdaction.h>
 
 ${APP_NAME}::${APP_NAME}()
-    : m_view(new ${APP_NAME}View(this)),
+    : KMainWindow( 0, "${APP_NAME}" ),
+      m_view(new ${APP_NAME}View(this)),
       m_printer(0)
 {
     // accept dnd
     setAcceptDrops(true);
 
-    // tell the KTMainWindow that this is indeed the main widget
-    setView(m_view);
+    // tell the KMainWindow that this is indeed the main widget
+    setCentralWidget(m_view);
 
     // then, setup our actions
     setupActions();
 
     // and a status bar
-    enableStatusBar();
+    statusBar()->show();
 
     // allow the view to change the statusbar and caption
     connect(m_view, SIGNAL(signalChangeStatusbar(const QString&)),
@@ -97,8 +98,8 @@ void ${APP_NAME}::setupActions()
     KStdAction::print(this, SLOT(filePrint()), actionCollection());
     KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
-    KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
+    m_toolbarAction = KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
+    m_statusbarAction = KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
 
     KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
@@ -221,20 +222,20 @@ void ${APP_NAME}::optionsShowToolbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // toolbar
-    if (toolBar("mainToolBar")->isVisible())
-        toolBar("mainToolBar")->enable(KToolBar::Hide);
+    if (m_toolbarAction->isChecked())
+        toolBar("mainToolBar")->show();
     else
-        toolBar("mainToolBar")->enable(KToolBar::Show);
+        toolBar("mainToolBar")->hide();
 }
 
 void ${APP_NAME}::optionsShowStatusbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // statusbar
-    if (statusBar()->isVisible())
-        enableStatusBar(KStatusBar::Hide);
+    if (m_statusbarAction->isChecked())
+        statusBar()->show();
     else
-        enableStatusBar(KStatusBar::Show);
+        statusBar()->hide();
 }
 
 void ${APP_NAME}::optionsConfigureKeys()
@@ -274,3 +275,5 @@ void ${APP_NAME}::changeCaption(const QString& text)
     // display the text on the caption
     setCaption(text);
 }
+
+#include "${APP_NAME_LC}.moc"
