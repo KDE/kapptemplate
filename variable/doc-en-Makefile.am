@@ -1,10 +1,8 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am...";
 cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am
-# Uncomment this AFTER you have run 'make html' for the first time
-#data_DATA = $APP_NAME_LC.html $APP_NAME_LC-1.html $APP_NAME_LC-2.html $APP_NAME_LC-3.html $APP_NAME_LC-4.html logotp3.gif
 
 # This is where it will all be installed
 datadir = \$(kde_htmldir)/en/$APP_NAME_LC
 
-html: $APP_NAME_LC.sgml
-	ksgml2html $APP_NAME_LC.sgml en
+html: index.docbook
+	ksgml2html index.docbook en
