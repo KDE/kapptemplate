@@ -103,7 +103,7 @@ void ${APP_NAME}::setupActions()
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
-    
+
     KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
@@ -232,7 +232,7 @@ void ${APP_NAME}::filePrint()
 
 void ${APP_NAME}::optionsConfigureKeys()
 {
-    KKeyDialog::configureKeys(actionCollection(), "${APP_NAME_LC}ui.rc");
+    KKeyDialog::configure(actionCollection());
 }
 
 void ${APP_NAME}::optionsConfigureToolbars()
