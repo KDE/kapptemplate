@@ -40,8 +40,7 @@ messages: rc.cpp
 KDE_ICON = $APP_NAME_LC
 
 # this is where the kdelnk file will go 
-kdelnkdir   = \$(kde_appsdir)/Utilities
-kdelnk_DATA = ${APP_NAME_LC}.desktop
+xdg_apps_data = ${APP_NAME_LC}.desktop
 
 # this is where the XML-GUI resource file goes
 rcdir = \$(kde_datadir)/${APP_NAME_LC}
