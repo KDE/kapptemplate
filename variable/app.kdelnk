@@ -3,7 +3,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.kdelnk
 # KDE Config File 
 [KDE Desktop Entry]
 Name=$APP_NAME
-Name[da]=$APP NAME
 Exec=$APP_NAME_LC
 Icon=$APP_NAME_LC.xpm
 Type=Application
