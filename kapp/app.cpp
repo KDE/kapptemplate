@@ -60,6 +60,7 @@ ${APP_NAME}::${APP_NAME}()
 
 ${APP_NAME}::~${APP_NAME}()
 {
+    delete m_printer;
 }
 
 void ${APP_NAME}::load(const KURL& url)
@@ -117,9 +118,9 @@ void ${APP_NAME}::saveProperties(KConfig *config)
     // the 'config' object points to the session managed
     // config file.  anything you write here will be available
     // later when this app is restored
-    
+
     if (m_view->currentURL() != QString::null)
-        config->writeEntry("lastURL", m_view->currentURL()); 
+        config->writeEntry("lastURL", m_view->currentURL());
 }
 
 void ${APP_NAME}::readProperties(KConfig *config)
@@ -129,7 +130,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
     // the app is being restored.  read in here whatever you wrote
     // in 'saveProperties'
 
-    QString url = config->readEntry("lastURL"); 
+    QString url = config->readEntry("lastURL");
 
     if (url != QString::null)
         m_view->openURL(KURL(url));
@@ -255,7 +256,7 @@ void ${APP_NAME}::optionsConfigureToolbars()
     {
         // recreate our GUI
         createGUI();
-    } 
+    }
 }
 
 void ${APP_NAME}::optionsPreferences()
