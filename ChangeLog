@@ -1,0 +1,28 @@
+Jan-01-1999 - Kurt Granroth (v0.3)
+  o Added kapptemplate to kdesdk
+  o HUGE clean-up of code
+  o Put in some session management stuff
+  o Changed main() to use 'App *widget = new App;' instead of 'App widget'.
+    The latter case caused the app to seg fault if the user closed it
+	 any way other than File->Quit
+
+Dec-31-1998 - Kurt Granroth
+  o Added 'knewfunction' module that will add a function to an existing
+    class
+
+Dec-27-1998 - Kurt Granroth
+  o Split kapptemplate into modules.  Added 'knewclass' module that will
+    create a new class
+
+Dec-25-1998 - Kurt Granroth (v0.2.2)
+  o Fixed bug in App class where AppWidget needed 'this' parent
+  o Added 'pics' directory
+
+Dec-18-1998 - Kurt Granroth
+  o Added patch from Helmut Bohr <Helmut.Bohr@t-online.de> to properly
+    escape backquotes in po-Makefile.am
+  o Changed 'cp' to 'cp -p' to hopefully preserve executable permissions
+    where needed.
+
+Dec-04-1998 - Kurt Granroth (v0.2.1)
+  o released 0.2.1

@@ -1,0 +1,4 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/Makefile.am...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/Makefile.am
+# all the languages I have documents for
+SUBDIRS = en

@@ -1,0 +1,200 @@
+#!/bin/sh
+
+$ECHO "KAppTemplate v0.3 (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO;
+
+# STEP 1: INITIALIZATION is done in the main module
+
+###########################################################################
+#
+# STEP 2:  PROJECT INFORMATION
+#
+# These routines gather information about the upcoming app.  You shouldn't
+# have to change these at all
+#
+###########################################################################
+
+# Get the application name
+unset APP_NAME;
+while [ ! $APP_NAME ];
+do
+	$ECHO "What is the application's proper name [default: KMyApp]";
+	$ECHO ": \c";
+	read APP_NAME;
+
+	if [ ! $APP_NAME ];
+	then
+		APP_NAME="KMyApp";
+		$ECHO "Going with default name '$APP_NAME'";
+	fi
+done
+$ECHO;
+
+# Create some variations
+APP_NAME_UC=`$ECHO $APP_NAME | tr a-z A-Z`;
+APP_NAME_LC=`$ECHO $APP_NAME | tr A-Z a-z`;
+
+# Get the application version
+unset APP_VERSION;
+while [ ! $APP_VERSION ];
+do
+	$ECHO "What is the application's version [default: 0.1]";
+	$ECHO ": \c";
+	read APP_VERSION;
+
+	if [ ! $APP_VERSION ];
+	then
+		APP_VERSION="0.1";
+		$ECHO "Going with default version '$APP_VERSION'";
+	fi
+done
+$ECHO;
+
+# Get the root where this framework will be installed
+unset LOCATION_ROOT;
+while [ ! $LOCATION_ROOT ];
+do
+	$ECHO "Where should I create this [default: $DEFAULT_ROOT/$APP_NAME_LC-$APP_VERSION]";
+	$ECHO ": \c";
+	read LOCATION_ROOT;
+
+	# The location root must not exist already
+	if [ ! $LOCATION_ROOT ];
+	then
+		LOCATION_ROOT="$DEFAULT_ROOT/$APP_NAME_LC-$APP_VERSION";
+		$ECHO "Going with default root '$LOCATION_ROOT'";
+	fi
+	if [ -d $LOCATION_ROOT ];
+	then
+		$ECHO "Whoops!  That directory already exists.  Pick another";
+		$ECHO;
+		unset LOCATION_ROOT;
+	fi
+done
+$ECHO;
+
+# Get the author's name
+unset AUTHOR;
+while [ ! "$AUTHOR" ];
+do
+	if [ "$DEFAULT_AUTHOR" ];
+	then
+		$ECHO "What is your name [default: $DEFAULT_AUTHOR]";
+	else
+		$ECHO "What is your name [no default]";
+	fi
+	$ECHO ": \c";
+	read AUTHOR;
+
+	if [ "$DEFAULT_AUTHOR" -a ! "$AUTHOR" ];
+	then
+		AUTHOR="$DEFAULT_AUTHOR";
+		$ECHO "Going with default author '$AUTHOR'";
+	fi
+done
+$ECHO;
+
+# Get the author's email
+unset EMAIL;
+while [ ! "$EMAIL" ];
+do
+	if [ "$DEFAULT_EMAIL" ];
+	then
+		$ECHO "What is your email address [default: $DEFAULT_EMAIL]";
+	else
+		$ECHO "What is your email address [no default]";
+	fi
+	$ECHO ": \c";
+	read EMAIL;
+
+	if [ "$DEFAULT_EMAIL" -a ! "$EMAIL" ];
+	then
+		EMAIL="$DEFAULT_EMAIL";
+		$ECHO "Going with default email address '$EMAIL'";
+	fi
+done
+$ECHO;
+
+# Verify that everything is grand
+$ECHO;
+$ECHO "Here is what I have:";
+$ECHO "The app: $APP_NAME v$APP_VERSION";
+$ECHO "Installed in: $LOCATION_ROOT";
+$ECHO "Author: $AUTHOR <$EMAIL>";
+$ECHO;
+$ECHO "Is this correct (Y/n)? ";
+$ECHO ": \c";
+read Y_N;
+if [ $Y_N -a $Y_N = 'n' ];
+then
+	$ECHO "AUGH!  Well, try again.";
+	exit 0;
+fi
+$ECHO;
+
+$ECHO "OK, Here we go!!";
+
+###########################################################################
+#
+# STEP 3:  CREATE COMMON FILES 
+#
+# This step will create the directory structure and copy over those files
+# that are the same for every app.  Customize this if you want to add
+# or subtract NON-APP SPECIFIC files.
+#
+###########################################################################
+
+# Create the directory tree
+$ECHO;
+$ECHO "Creating directory $LOCATION_ROOT...";
+mkdir $LOCATION_ROOT || exit 1;
+
+$ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC...";
+mkdir $LOCATION_ROOT/$APP_NAME_LC || exit 1;
+
+$ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/doc...";
+mkdir $LOCATION_ROOT/$APP_NAME_LC/doc || exit 1;
+
+$ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/doc/en...";
+mkdir $LOCATION_ROOT/$APP_NAME_LC/doc/en || exit 1;
+
+$ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/pics...";
+mkdir $LOCATION_ROOT/$APP_NAME_LC/pics || exit 1;
+
+$ECHO "Creating directory $LOCATION_ROOT/po...";
+mkdir $LOCATION_ROOT/po || exit 1;
+
+for COMMON_FILE in $COMMON_FILES;
+do
+	$ECHO "Copying $LOCATION_ROOT/$COMMON_FILE...";
+	cp -p $SHARE_DIR/common/$COMMON_FILE $LOCATION_ROOT/$COMMON_FILE || exit 1;
+done
+
+###########################################################################
+#
+# STEP 4:  GENERATE APP-SPECIFIC FILES
+#
+# This step will create all files that are specific to the new app.
+#
+###########################################################################
+
+for EXE_FILE in $VARIABLE_FILES;
+do
+	. $SHARE_DIR/variable/$EXE_FILE || exit 1;
+done
+
+###########################################################################
+#
+# STEP 5:  FINAL STEPS
+#
+# This step will finish off the process.  Put any final commands here
+#
+###########################################################################
+
+cd $LOCATION_ROOT && make -f Makefile.dist all
+touch stamp-h.in
+./configure || exit 1;
+make || exit 1;
+cd $APP_NAME_LC/doc/en && make html
+
+$ECHO "DONE!";

@@ -1,0 +1,42 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/en/$APP_NAME_LC.sgml...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/$APP_NAME_LC.sgml
+<!doctype linuxdoc system>
+
+<article>
+
+<title>The $APP_NAME Handbook
+<author>$AUTHOR
+<htmlurl url="mailto:$EMAIL" name="&lt;$EMAIL&gt;">
+<date>Version $APP_VERSION `date "+%m/%d/%Y"`
+<abstract>SHORT DESCRIPTION GOES HERE
+<toc>
+<sect>Introduction
+<p>
+<sect1>Features
+<p>
+<sect>Installation
+<p>
+<sect1>How to obtain $APP_NAME
+<p>
+<sect1>Requirements
+<p>
+<sect1>Compilation and Installation
+<p>
+Compiling $APP_NAME is very easy. The following should do it:
+<code>
+&percnt; ./configure
+&percnt; make
+&percnt; make install
+</code>
+
+That should do it! Should you run into any problems, please report them
+ to the <htmlurl url="mailto:$EMAIL" name="author">
+
+<sect>Using $APP_NAME
+<p>
+<sect>Questions, Answers, and Tips
+<p>
+<sect1>Question 1
+<p>
+The answer
+</article>

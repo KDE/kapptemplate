@@ -1,0 +1,180 @@
+#!/bin/sh
+
+# horrid hack to try and figure out what shell we are using
+# basically, if we can find /usr/ucb/echo, then we are almost for sure
+# NOT on a Linux system and probably 'echo "\c" works.  if we don't
+# find it, we'll assume that the shell is really bash.
+if [ -f "/usr/ucb/$ECHO" ];
+then
+	ECHO="echo";
+else
+	ECHO="echo -e";
+fi
+
+$ECHO "KAppTemplate v0.3 Install (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO;
+
+# let's see if we have a previous > 0.2 release
+if [ -f $HOME/.kapptemplaterc ];
+then
+	. $HOME/.kapptemplaterc
+fi
+
+unset THE_AUTHOR;
+while [ ! "$THE_AUTHOR" ];
+do
+	$ECHO "What is your full name? \c";
+	if [ "$DEFAULT_AUTHOR" ];
+	then
+		$ECHO "[default: $DEFAULT_AUTHOR]";
+	else
+		$ECHO "[no default]";
+	fi
+	$ECHO ": \c";
+	read THE_AUTHOR;
+
+	if [ "$DEFAULT_AUTHOR" -a ! "$THE_AUTHOR" ];
+	then
+		THE_AUTHOR="$DEFAULT_AUTHOR";
+	fi
+done
+$ECHO;
+
+unset THE_EMAIL;
+while [ ! "$THE_EMAIL" ];
+do
+	$ECHO "What is your email address? \c";
+	if [ "$DEFAULT_EMAIL" ];
+	then
+		$ECHO "[default: $DEFAULT_EMAIL]";
+	else
+		$ECHO "[no default]";
+	fi
+	$ECHO ": \c";
+	read THE_EMAIL;
+
+	if [ "$DEFAULT_EMAIL" -a ! "$THE_EMAIL" ];
+	then
+		THE_EMAIL="$DEFAULT_EMAIL";
+	fi
+done
+$ECHO;
+
+unset THE_ROOT;
+$ECHO "Where should I construct apps? \c";
+if [ ! "$DEFAULT_ROOT" ];
+then
+	DEFAULT_ROOT="/usr/src";
+fi
+$ECHO "[default: $DEFAULT_ROOT]";
+$ECHO ": \c";
+read THE_ROOT;
+
+if [ ! "$THE_ROOT" ];
+then
+	THE_ROOT="$DEFAULT_ROOT";
+fi
+$ECHO;
+
+unset BIN_DIR;
+$ECHO "Where should I install myself? [default: $KDEDIR/bin]";
+$ECHO ": \c";
+read BIN_DIR;
+
+if [ ! "$BIN_DIR" ];
+then
+	BIN_DIR="$KDEDIR/bin";
+fi
+$ECHO;
+
+unset THE_SHARE;
+$ECHO "Where should I install my files? \c";
+if [ ! "$SHARE_DIR" ];
+then
+	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
+fi
+$ECHO "[default: $SHARE_DIR]";
+$ECHO ": \c";
+read THE_SHARE;
+
+if [ ! "$THE_SHARE" ];
+then
+	THE_SHARE="$SHARE_DIR";
+fi
+$ECHO;
+
+if [ ! -d $THE_SHARE ];
+then
+	$ECHO "Creating $THE_SHARE...";
+	mkdir $THE_SHARE || exit 1;
+else
+	$ECHO "$THE_SHARE already exists...";
+fi
+
+if [ ! -d "$THE_SHARE/common" ];
+then
+	$ECHO "Creating $THE_SHARE/common...";
+	mkdir "$THE_SHARE/common" || exit 1;
+else
+	$ECHO "$THE_SHARE/common already exists...";
+fi
+
+if [ ! -d "$THE_SHARE/variable" ];
+then
+	$ECHO "Creating $THE_SHARE/variable...";
+	mkdir "$THE_SHARE/variable" || exit 1;
+else
+	$ECHO "$THE_SHARE/variable already exists...";
+fi
+
+if [ ! -d "$THE_SHARE/knewclass" ];
+then
+	$ECHO "Creating $THE_SHARE/knewclass...";
+	mkdir "$THE_SHARE/knewclass" || exit 1;
+else
+	$ECHO "$THE_SHARE/knewclass already exists...";
+fi
+
+if [ ! -d "$THE_SHARE/knewfunction" ];
+then
+	$ECHO "Creating $THE_SHARE/knewfunction...";
+	mkdir "$THE_SHARE/knewfunction" || exit 1;
+else
+	$ECHO "$THE_SHARE/knewfunction already exists...";
+fi
+
+$ECHO "Installing common files...";
+cp -pf common/* $THE_SHARE/common || exit 1;
+
+$ECHO "Installing variable files...";
+cp -pf variable/* $THE_SHARE/variable || exit 1;
+
+$ECHO "Installing knewclass files...";
+cp -pf knewclass/* $THE_SHARE/knewclass || exit 1;
+
+$ECHO "Installing knewfunction files...";
+cp -pf knewfunction/* $THE_SHARE/knewfunction || exit 1;
+
+$ECHO "Constructing .kapptemplaterc...";
+cat << ENDORC > $HOME/.kapptemplaterc
+DEFAULT_AUTHOR="$THE_AUTHOR";
+DEFAULT_EMAIL="$THE_EMAIL";
+DEFAULT_ROOT="$THE_ROOT";
+SHARE_DIR="$THE_SHARE";
+ENDORC
+
+$ECHO "Installing myself...";
+cp -pf kapptemplate $BIN_DIR || exit 1;
+cp -pf kapptemplate.module $BIN_DIR || exit 1;
+cp -pf knewclass.module $BIN_DIR || exit 1;
+cp -pf knewfunction.module $BIN_DIR || exit 1;
+if [ ! -f $BIN_DIR/knewclass ];
+then
+	ln -s $BIN_DIR/kapptemplate $BIN_DIR/knewclass
+fi
+if [ ! -f $BIN_DIR/knewfunction ];
+then
+	ln -s $BIN_DIR/kapptemplate $BIN_DIR/knewfunction
+fi
+
+$ECHO "Done.  Have fun!";

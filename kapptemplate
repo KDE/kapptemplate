@@ -1,0 +1,91 @@
+#!/bin/sh
+
+# horrid hack to try and figure out what shell we are using
+# basically, if we can find /usr/ucb/echo, then we are almost for sure
+# NOT on a Linux system and probably 'echo "\c" works.  if we don't
+# find it, we'll assume that the shell is really bash.
+if [ -f "/usr/ucb/$ECHO" ];
+then
+	ECHO="echo";
+else
+	ECHO="echo -e";
+fi
+
+###########################################################################
+#
+# STEP 1:  LOCAL INITIALIZATION
+#
+# This is where all the variables that are specific to your local system
+# go.
+#
+###########################################################################
+if [ -f $HOME/.kapptemplaterc ];
+then
+	. $HOME/.kapptemplaterc
+fi
+if [ ! "$DEFAULT_AUTHOR" ];
+then
+	DEFAULT_AUTHOR="Your Name";
+fi
+if [ ! "$DEFAULT_EMAIL" ];
+then
+	DEFAULT_EMAIL="`whoami`@$HOST";
+fi
+if [ ! "$DEFAULT_ROOT" ];
+then
+	DEFAULT_ROOT="/usr/src";
+fi
+if [ ! "$SHARE_DIR" ];
+then
+	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
+fi
+
+# sanity check
+if [ -d "$SHARE_DIR/common" ];
+then
+	COMMON_FILES=`/bin/ls $SHARE_DIR/common`;
+
+	if [ ! "$COMMON_FILES" ];
+	then
+		$ECHO "Cannot find common files in $SHARE_DIR/common!";
+		exit 1;
+	fi
+else
+	$ECHO "$SHARE_DIR/common directory does not exist!";
+	exit 1;
+fi
+
+if [ -d "$SHARE_DIR/variable" ];
+then
+	VARIABLE_FILES=`/bin/ls $SHARE_DIR/variable`;
+
+	if [ ! "$VARIABLE_FILES" ];
+	then
+		$ECHO "Cannot find variable files in $SHARE_DIR/variable!";
+		exit 1;
+	fi
+else
+	$ECHO "$SHARE_DIR/variable directory does not exist!";
+	exit 1;
+fi
+
+if [ -d "$SHARE_DIR/knewclass" ];
+then
+	KNEWCLASS_FILES=`/bin/ls $SHARE_DIR/knewclass`;
+fi
+
+if [ -d "$SHARE_DIR/knewfunction" ];
+then
+	KNEWFUNCTION_FILES=`/bin/ls $SHARE_DIR/knewfunction`;
+fi
+
+BASENAME=`echo $0 | sed 's@^.*/@@g'`;
+if [ "$BASENAME" = "knewclass" ];
+then
+	. knewclass.module
+elif [ "$BASENAME" = "knewfunction" ];
+then
+	. knewfunction.module
+else
+	. kapptemplate.module
+fi

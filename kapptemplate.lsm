@@ -1,0 +1,16 @@
+Begin3
+Title:          KAppTemplate
+Version:        0.3
+Entered-date:   01JAN99
+Description:    Shell script that will automatically create a KTMainWindow-
+                based KDE app framework with user input.
+Keywords:       KDE 
+Author:         Kurt Granroth <granroth@kde.org>
+Maintained-by:  Kurt Granroth <granroth@kde.org>
+Home-page:      http://www.pobox.com/~kurt_granroth/kapptemplate
+Primary-site:   ftp://ftp.kde.org/pub/kde/devel/helpers/
+                xxxxxx  kapptemplate-0.3.tar.gz
+                xxx     kapptemplate-0.3.lsm
+Platform:       Unix
+Copying-policy: GPL
+End

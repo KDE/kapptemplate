@@ -1,0 +1,7 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/pics/Makefile.am...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/pics/Makefile.am
+# Add all of your pixmaps here
+data_DATA = 
+
+# This is where it will all be installed
+datadir = \$(kde_datadir)/$APP_NAME_LC/pics

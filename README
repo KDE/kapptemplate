@@ -1,0 +1,47 @@
+KAppTemplate v0.3
+Kurt Granroth <granroth@kde.org>
+----------------------------------------------------------------------
+
+What is it?
+-----------
+KAppTemplate is a shell script that will create the necessary framework
+to develop a KTMainWindow-based KDE app.
+
+What else is it?
+----------------
+There are two other scripts that are distributed with KAppTemplate: KNewClass
+and KNewFunction.  They will create a new class and a new function,
+respectively.
+
+What is a framework?
+--------------------
+When I say "framework", I mean all of the source files as well as the
+autoconf/automake stuff.  When KAppTemplate is done, all you will need
+to do to compile and install your app is:
+	./configure
+	make && make install
+
+What do I need to use this?
+---------------------------
+o KDE 1.1 (snapshots or CVS if 1.1 hasn't been released yet)
+o autoconf
+o automake
+
+To generate your app's documentation, you'll also need
+o ksgml2html (from the 'kdesdk' package)
+
+How do I install it?
+--------------------
+./install-me
+
+How does <whatever> work?
+-------------------------
+Before you email me, look through the kapptemplate file.  It is a shell
+script so it should be pretty easy to understand what is going on.
+
+I have a suggest, question, or comment
+--------------------------------------
+Well, email me, then!
+
+Have fun!
+Kurt Granroth <granroth@kde.org>

@@ -1,0 +1,81 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/Makefile.am...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/Makefile.am
+# this 10 paths are KDE specific. Use them:
+# kde_htmldir       Where your docs should go to. (contains lang subdirs)
+# kde_appsdir       Where your application file (.kdelnk) should go to. 
+# kde_icondir       Where your icon should go to.
+# kde_sounddir      Where system sounds should go to.
+# kde_datadir       Where you install application data. (Use a subdir)
+# kde_locale        Where translation files should go to.(contains lang subdirs)
+# kde_cgidir        Where cgi-bin executables should go to.
+# kde_confdir       Where config files should go to.
+# kde_mimedir       Where mimetypes should go to.
+# kde_toolbardir    Where general toolbar icons should go to.
+# kde_wallpaperdir  Where general wallpapers should go to.
+
+# this is where the kdelnk file will go 
+APPSDIR = \$(kde_appsdir)/Utilities
+
+# set the include path for X, qt and KDE
+INCLUDES= \$(all_includes)
+
+# this has all of the subdirectories that make will recurse into.  if
+# there are none, comment this out
+SUBDIRS = doc pics
+
+# this is where the source documentation will be installed
+SRCDOC_DEST=\$(kde_htmldir)/en/$APP_NAME_LC
+
+####### This part is very $APP_NAME_LC specific
+# this is the program that gets installed
+bin_PROGRAMS = 	$APP_NAME_LC
+
+# Which sources should be compiled for $APP_NAME_LC.
+${APP_NAME_LC}_SOURCES = $APP_NAME_LC.cpp ${APP_NAME_LC}widget.cpp main.cpp
+
+# let automoc handle all of the meta source files (moc)
+${APP_NAME_LC}_METASOURCES = USE_AUTOMOC
+
+# the library search path. 
+${APP_NAME_LC}_LDFLAGS = \$(all_libraries) \$(KDE_RPATH)
+
+# the libraries to link against. Be aware of the order. First the libraries,
+# that depend on the following ones.
+${APP_NAME_LC}_LDADD = \$(LIB_KFILE)
+
+# these are the headers for your project
+noinst_HEADERS = $APP_NAME_LC.h ${APP_NAME_LC}widget.h
+
+# if you "make distclean", this files get removed. If you want to remove
+# them while "make clean", use CLEANFILES
+DISTCLEANFILES = \$(${APP_NAME_LC}_METASOURCES)
+
+# make messages.po. Move this one to ../po/ and "make merge" in po
+# the -x is for skipping messages already translated in kdelibs
+messages:
+	\$(XGETTEXT) -C -ki18n -x \$(includedir)/kde.pot \$(${APP_NAME_LC}_SOURCES) && mv messages.po ../po/$APP_NAME_LC.pot
+
+# generate source documentation
+srcdoc:
+	\$(mkinstalldirs) \$(SRCDOC_DEST)
+	kdoc -H -d \$(SRCDOC_DEST) $APP_NAME_LC \
+	     \$(noinst_HEADERS) -lqt
+
+# just install datas here. Use install-exec-local for scripts and etc.
+# the binary itself is already installed from automake
+# use mkinstalldirs, not "install -d"
+# don't install a list of file. Just one file per install.
+# if you have more of them, create a subdirectory with an extra Makefile 
+install-data-local: 
+	\$(mkinstalldirs) \$(APPSDIR)
+	\$(INSTALL_DATA) $APP_NAME_LC.kdelnk \$(APPSDIR)
+	\$(mkinstalldirs) \$(kde_icondir)
+	\$(INSTALL_DATA) $APP_NAME_LC.xpm \$(kde_icondir)
+	\$(mkinstalldirs) \$(kde_minidir)
+	\$(INSTALL_DATA) mini-$APP_NAME_LC.xpm \$(kde_minidir)/$APP_NAME_LC.xpm
+
+# remove ALL you have installed in install-data-local or install-exec-local
+uninstall-local:
+	-rm -f \$(APPSDIR)/$APP_NAME_LC.kdelnk
+	-rm -f \$(kde_icondir)/$APP_NAME_LC.xpm
+	-rm -f \$(kde_minidir)/$APP_NAME_LC.xpm
