@@ -1,6 +1,6 @@
 #!/bin/sh
 
-$ECHO "KAppTemplate v0.4.1 (C) 1999 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.4.2 (C) 1999 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # STEP 1: INITIALIZATION is done in the main module
@@ -147,25 +147,25 @@ $ECHO "OK, Here we go!!";
 # Create the directory tree
 $ECHO;
 $ECHO "Creating directory $LOCATION_ROOT...";
-mkdir $LOCATION_ROOT || exit 1;
+$MKDIR $LOCATION_ROOT || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/admin...";
-mkdir $LOCATION_ROOT/admin || exit 1;
+$MKDIR $LOCATION_ROOT/admin || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC...";
-mkdir $LOCATION_ROOT/$APP_NAME_LC || exit 1;
+$MKDIR $LOCATION_ROOT/$APP_NAME_LC || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/doc...";
-mkdir $LOCATION_ROOT/$APP_NAME_LC/doc || exit 1;
+$MKDIR $LOCATION_ROOT/$APP_NAME_LC/doc || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/doc/en...";
-mkdir $LOCATION_ROOT/$APP_NAME_LC/doc/en || exit 1;
+$MKDIR $LOCATION_ROOT/$APP_NAME_LC/doc/en || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC/pics...";
-mkdir $LOCATION_ROOT/$APP_NAME_LC/pics || exit 1;
+$MKDIR $LOCATION_ROOT/$APP_NAME_LC/pics || exit 1;
 
 $ECHO "Creating directory $LOCATION_ROOT/po...";
-mkdir $LOCATION_ROOT/po || exit 1;
+$MKDIR $LOCATION_ROOT/po || exit 1;
 
 for COMMON_FILE in $COMMON_FILES;
 do

@@ -40,6 +40,13 @@ then
 	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
 fi
 
+if [ -f "$SHARE_DIR/bin/mkinstalldirs" ];
+then
+	MKDIR=$SHARE_DIR/bin/mkinstalldirs
+else
+	MKDIR=mkdir
+fi
+
 # sanity check
 if [ -d "$SHARE_DIR/common" ];
 then
@@ -55,7 +62,7 @@ else
 	exit 1;
 fi
 
-if [ -d "$SHARE_DIR/common" ];
+if [ -d "$SHARE_DIR/admin" ];
 then
 	ADMIN_FILES=`/bin/ls $SHARE_DIR/admin`;
 
