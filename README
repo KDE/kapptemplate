@@ -1,11 +1,11 @@
-KAppTemplate v0.7.1
+KAppTemplate v0.7.2
 Kurt Granroth <granroth@kde.org>
 ----------------------------------------------------------------------
 
 What is it?
 -----------
 KAppTemplate is a shell script that will create the necessary
-framework to develop a KDE 2.x KTMainWindow-based KDE app.
+framework to develop a KDE 2.x KMainWindow-based KDE app.
 
 What else is it?
 ----------------

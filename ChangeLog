@@ -1,3 +1,7 @@
+Oct-14-2000 - Malte Starostik (v0.7.2)
+  o Added --help option
+  o Added option to not run ./configure on newly created project
+
 Sep-26-2000 - Kurt Granroth (v0.7.1)
   o Added hooks for more KAboutData information
   o Now building moc files as moc.cpp instead of #including them
