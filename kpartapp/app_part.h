@@ -4,12 +4,12 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.h
 #define ${APP_NAME_UC}PART_H
 
 #include <kparts/part.h>
-#include <kparts/factory.h>
 
 class QWidget;
 class QPainter;
 class KURL;
 class QMultiLineEdit;
+class KAboutData;
 
 /**
  * This is a "Part".  It that does all the real work in a KPart
@@ -27,7 +27,7 @@ public:
      * Default constructor
      */
     ${APP_NAME}Part(QWidget *parentWidget, const char *widgetName,
-                    QObject *parent, const char *name);
+                    QObject *parent, const char *name, const QStringList &args);
 
     /**
      * Destructor
@@ -46,6 +46,8 @@ public:
      */
     virtual void setModified(bool modified);
 
+    static KAboutData *createAboutData();
+
 protected:
     /**
      * This must be implemented by each part
@@ -63,25 +65,6 @@ protected slots:
 
 private:
     QMultiLineEdit *m_widget;
-};
-
-class KInstance;
-class KAboutData;
-
-class ${APP_NAME}PartFactory : public KParts::Factory
-{
-    Q_OBJECT
-public:
-    ${APP_NAME}PartFactory();
-    virtual ~${APP_NAME}PartFactory();
-    virtual KParts::Part* createPartObject( QWidget *parentWidget, const char *widgetName,
-                                            QObject *parent, const char *name,
-                                            const char *classname, const QStringList &args );
-    static KInstance* instance();
- 
-private:
-    static KInstance* s_instance;
-    static KAboutData* s_about;
 };
 
 #endif // ${APP_NAME_UC}PART_H

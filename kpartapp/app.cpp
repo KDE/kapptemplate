@@ -18,6 +18,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <klibloader.h>
 #include <kmessagebox.h>
+#include <kstatusbar.h>
 
 ${APP_NAME}::${APP_NAME}()
     : KParts::MainWindow( 0L, "${APP_NAME}" )

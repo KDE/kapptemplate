@@ -6,13 +6,18 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 #include <kaction.h>
 #include <kstdaction.h>
 #include <kfiledialog.h>
+#include <kparts/genericfactory.h>
 
 #include <qfile.h>
 #include <qtextstream.h>
 #include <qmultilineedit.h>
 
+typedef KParts::GenericFactory<${APP_NAME}Part> ${APP_NAME}PartFactory;
+K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}part, ${APP_NAME}PartFactory );
+
 ${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, const char *widgetName,
-                                  QObject *parent, const char *name )
+                                  QObject *parent, const char *name,
+                                  const QStringList & /*args*/ )
     : KParts::ReadWritePart(parent, name)
 {
     // we need an instance
@@ -75,6 +80,16 @@ void ${APP_NAME}Part::setModified(bool modified)
 
     // in any event, we want our parent to do it's thing
     ReadWritePart::setModified(modified);
+}
+
+KAboutData *${APP_NAME}Part::createAboutData()
+{
+    // the non-i18n name here must be the same as the directory in
+    // which the part's rc file is installed ('partrcdir' in the
+    // Makefile)
+    KAboutData *aboutData = new KAboutData("${APP_NAME_LC}part", I18N_NOOP("${APP_NAME}Part"), "${APP_VERSION}");
+    aboutData->addAuthor("${AUTHOR}", 0, "${EMAIL}");
+    return aboutData;
 }
 
 bool ${APP_NAME}Part::openFile()
@@ -140,63 +155,5 @@ void ${APP_NAME}Part::fileSaveAs()
     if (file_name.isEmpty() == false)
         saveAs(file_name);
 }
-
-
-// It's usually safe to leave the factory code alone.. with the
-// notable exception of the KAboutData data
-#include <kaboutdata.h>
-#include <klocale.h>
-
-KInstance*  ${APP_NAME}PartFactory::s_instance = 0L;
-KAboutData* ${APP_NAME}PartFactory::s_about = 0L;
-
-${APP_NAME}PartFactory::${APP_NAME}PartFactory()
-    : KParts::Factory()
-{
-}
-
-${APP_NAME}PartFactory::~${APP_NAME}PartFactory()
-{
-    delete s_instance;
-    delete s_about;
-
-    s_instance = 0L;
-}
-
-KParts::Part* ${APP_NAME}PartFactory::createPartObject( QWidget *parentWidget, const char *widgetName,
-                                                        QObject *parent, const char *name,
-                                                        const char *classname, const QStringList &args )
-{
-    // Create an instance of our Part
-    ${APP_NAME}Part* obj = new ${APP_NAME}Part( parentWidget, widgetName, parent, name );
-
-    // See if we are to be read-write or not
-    if (QCString(classname) == "KParts::ReadOnlyPart")
-        obj->setReadWrite(false);
-
-    return obj;
-}
-
-KInstance* ${APP_NAME}PartFactory::instance()
-{
-    if( !s_instance )
-    {
-        // the non-i18n name here must be the same as the directory in
-        // which the part's rc file is installed ('partrcdir' in the
-        // Makefile)
-        s_about = new KAboutData("${APP_NAME_LC}part", I18N_NOOP("${APP_NAME}Part"), "${APP_VERSION}");
-        s_about->addAuthor("${AUTHOR}", 0, "${EMAIL}");
-        s_instance = new KInstance(s_about);
-    }
-    return s_instance;
-}
-
-extern "C"
-{
-    void* init_lib${APP_NAME_LC}part()
-    {
-        return new ${APP_NAME}PartFactory;
-    }
-};
 
 #include "${APP_NAME_LC}_part.moc"

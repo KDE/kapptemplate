@@ -7,8 +7,14 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.cpp
 #include <kinstance.h>
 #include <kmessagebox.h>
 #include <klocale.h>
+#include <kgenericfactory.h>
 
-Plugin${APP_NAME}::Plugin${APP_NAME}( QObject* parent, const char* name )
+typedef KGenericFactory<Plugin${APP_NAME}> ${APP_NAME}Factory;
+K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}plugin, 
+                            ${APP_NAME}Factory( "${APP_NAME_LC}" ) );
+
+Plugin${APP_NAME}::Plugin${APP_NAME}( QObject* parent, const char* name,
+                                      const QStringList & /*args*/ )
     : Plugin( parent, name )
 {
     // Instantiate all of your actions here.  These will appear in
@@ -71,37 +77,5 @@ void Plugin${APP_NAME}::slotAction()
     // Finally, execute the request
     part->openURL( work );
 }
-
-${APP_NAME}Factory::${APP_NAME}Factory()
-{
-}
-
-${APP_NAME}Factory::~${APP_NAME}Factory()
-{
-  delete s_instance;
-  s_instance = 0;
-}
-
-QObject* ${APP_NAME}Factory::createObject( QObject* parent, const char* name, const char*, const QStringList & )
-{
-  return new Plugin${APP_NAME}( parent, name );
-}
-
-KInstance *${APP_NAME}Factory::instance()
-{
-  if ( !s_instance )
-    s_instance = new KInstance( "${APP_NAME_LC}" );
-  return s_instance;
-}
-
-extern "C"
-{
-  void* init_lib${APP_NAME_LC}plugin()
-  {
-    return new ${APP_NAME}Factory;
-  }
-}
-
-KInstance* ${APP_NAME}Factory::s_instance = 0L;
 
 #include <plugin_${APP_NAME_LC}.moc>
