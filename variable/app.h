@@ -13,7 +13,6 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include "${APP_NAME_LC}view.h"
 
 class QPrinter;
-class KAccel;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the
@@ -87,8 +86,6 @@ private:
     ${APP_NAME}View *m_view;
 
     QPrinter   *m_printer;
-
-    KAccel     *m_accelKeys;
 };
 
 #endif // ${APP_NAME_UC}_H

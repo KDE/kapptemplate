@@ -26,8 +26,8 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kfiledialog.h>
 #include <kconfig.h>
 #include <kurl.h>
+#include <kurlrequesterdlg.h>
 
-#include <kdialogbase.h>
 #include <kedittoolbar.h>
 
 #include <kstdaccel.h>
@@ -36,17 +36,13 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 ${APP_NAME}::${APP_NAME}()
     : m_view(new ${APP_NAME}View(this)),
-      m_printer(0),
-      m_accelKeys(new KAccel(this))
+      m_printer(0)
 {
     // accept dnd
     setAcceptDrops(true);
 
     // tell the KTMainWindow that this is indeed the main widget
     setView(m_view);
-
-    // first, setup our accel keys
-    setupAccel();
 
     // then, setup our actions
     setupActions();
@@ -90,23 +86,6 @@ void ${APP_NAME}::load(const QString& url)
 
     setCaption(url);
     m_view->openURL(KURL(url));
-}
-
-void ${APP_NAME}::setupAccel()
-{
-    // insert all of our std accel so that they show up in the
-    // config dialog
-    m_accelKeys->insertStdItem(KStdAccel::New);
-    m_accelKeys->insertStdItem(KStdAccel::Open);
-    m_accelKeys->insertStdItem(KStdAccel::Save);
-    m_accelKeys->insertStdItem(KStdAccel::Print);
-    m_accelKeys->insertStdItem(KStdAccel::Quit);
-    m_accelKeys->insertStdItem(KStdAccel::Help);
-
-    // we need to read in the default settings now.  if we do it
-    // before the 'connectItem' calls or after the 'changeMenuAccel'
-    // calls, the settings will have no effect!
-    m_accelKeys->readSettings();
 }
 
 void ${APP_NAME}::setupActions()
@@ -191,16 +170,9 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-
-    // this illustrates a simple use of KDialogBase.  all dialogs in
-    // KDE should be derived from KDialogBase
-    KDialogBase dialog;
-    QLineEdit *url_edit = new QLineEdit(&dialog);
-    dialog.setCaption(i18n("Enter a URL"));
-    dialog.setMainWidget(url_edit);
-    dialog.showButtonApply(false);
-    if (dialog.exec())
-        m_view->openURL(KURL(url_edit->text()));
+    KURL url = KURLRequesterDlg::getURL(QString::null, this, i18n("Open Location") );
+    if (!url.isEmpty())
+        m_view->openURL(url);
 }
 
 void ${APP_NAME}::fileSave()
@@ -267,7 +239,7 @@ void ${APP_NAME}::optionsShowStatusbar()
 
 void ${APP_NAME}::optionsConfigureKeys()
 {
-    KKeyDialog::configureKeys(m_accelKeys);
+    KKeyDialog::configureKeys(actionCollection(), "${APP_NAME_LC}ui.rc");
 }
 
 void ${APP_NAME}::optionsConfigureToolbars()
