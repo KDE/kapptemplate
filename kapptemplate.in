@@ -29,7 +29,7 @@ function LoadDefaults
     then
         if [ -f "/usr/bin/gmake" ] || [ -f "/usr/local/bin/gmake" ];
         then    
-	    MAKE="gmake";
+            MAKE="gmake";
         else
             MAKE="make";
         fi
