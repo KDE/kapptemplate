@@ -32,8 +32,7 @@ ${APP_NAME_LC}_LDFLAGS = \$(KDE_RPATH) \$(all_libraries)
 ${APP_NAME_LC}_LDADD   = \$(LIB_KPARTS)
 
 # this is where the desktop file will go 
-shelldesktopdir   = \$(kde_appsdir)/Utilities
-shelldesktop_DATA = ${APP_NAME_LC}.desktop
+xdg_apps_DATA = ${APP_NAME_LC}.desktop
 
 # this is where the shell's XML-GUI resource file goes
 shellrcdir   = \$(kde_datadir)/${APP_NAME_LC}
