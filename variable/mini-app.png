@@ -1,2 +1,0 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/mini-$APP_NAME_LC.png...";
-cp $SHARE_DIR/variable/no-exe/mini-app.png $LOCATION_ROOT/$APP_NAME_LC/mini-$APP_NAME_LC.png

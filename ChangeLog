@@ -1,3 +1,11 @@
+Nov-04-1999 - Kurt Granroth (v0.4.1)
+  o Removed a few files from common/ that are in admin/ (missing,
+    install-sh, mkinstalldirs)
+  o Renamed .png files to "proper" naming convention
+  o Got rid of admin/ directory from CVS.  It is now copied over from
+    the common admin directory (found in kdesdk/admin).  This should
+    prevent a lot of redundent updates
+
 Nov-02-1999 - Kurt Granroth (v0.4)
   o Updated for KDE 2.x.  The produced application now has a LOT more
     functionality than before -- it is a scriptable web browser (see

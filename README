@@ -1,4 +1,4 @@
-KAppTemplate v0.4
+KAppTemplate v0.4.1
 Kurt Granroth <granroth@kde.org>
 ----------------------------------------------------------------------
 
@@ -19,8 +19,8 @@ What is a framework?
 When I say "framework", I mean all of the source files as well as the
 autoconf/automake stuff.  When KAppTemplate is done, all you will need
 to do to compile and install your app is:
-	./configure
-	make && make install
+    ./configure
+    make && make install
 
 What do I need to use this?
 ---------------------------
