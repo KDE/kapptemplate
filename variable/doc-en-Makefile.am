@@ -1,8 +1,5 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am...";
 cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/doc/en/Makefile.am
 
-# This is where it will all be installed
-datadir = \$(kde_htmldir)/en/$APP_NAME_LC
-
-html: index.docbook
-	ksgml2html index.docbook en
+KDE_DOCS = $APP_NAME_LC
+KDE_LANG = en
