@@ -12,7 +12,10 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <qpopupmenu.h>
 #include <qdragobject.h>
 #include <qlineedit.h>
+#include <qprinter.h>
 #include <qprintdialog.h>
+#include <qpainter.h>
+#include <qpaintdevicemetrics.h>
 
 #include <kglobal.h>
 #include <klocale.h>
@@ -104,7 +107,12 @@ void ${APP_NAME}::setupMenuBars()
     m_accelKeys->connectItem(KAccel::Save,  this, SLOT(fileSave()));
     m_accelKeys->connectItem(KAccel::Print, this, SLOT(filePrint()));
     m_accelKeys->connectItem(KAccel::Quit,  kapp, SLOT(quit()));
-    
+
+    // we need to read in the default settings now.  if we do it
+    // before the 'connectItem' calls or aver the 'changeMenuAccel'
+    // calls, the settings will have no effect!
+    m_accelKeys->readSettings();
+
     // first, the File menu
     int id;
     id = m_file->insertItem(BarIcon("filenew"), i18n("&New"),
@@ -277,10 +285,21 @@ void ${APP_NAME}::filePrint()
     // the Print shortcut is pressed (usually CTRL+P) or the Print toolbar
     // button is clicked
 
-    QPrinter *printer;
+    QPrinter *printer = new QPrinter;
     if (QPrintDialog::getPrinterSetup(printer))
     {
-        // do the actual printing, here
+        // setup the printer.  with Qt, you always "print" to a
+        // QPainter.. whether the output medium is a pixmap, a screen,
+        // or paper
+        QPainter p;
+        p.begin(printer);
+
+        // we let our view do the actual printing
+        QPaintDeviceMetrics metrics(printer);
+        m_view->print(&p, metrics.height(), metrics.width());
+
+        // and send the result to the printer
+        p.end();
     }
 }
 

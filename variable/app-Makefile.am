@@ -41,5 +41,5 @@ messages:
 KDE_ICON = $APP_NAME_LC
 
  # this is where the kdelnk file will go 
-kdelnkdir   = \$(kde_appsdir)/Programs/Utilities
+kdelnkdir   = \$(kde_appsdir)/Utilities
 kdelnk_DATA = ${APP_NAME_LC}.desktop

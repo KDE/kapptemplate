@@ -6,6 +6,8 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}view.h
 #include <qwidget.h>
 #include <${APP_NAME_LC}iface.h>
 
+class QPainter;
+
 // this forward reference you will probably delete..
 class KHTMLWidget;
 
@@ -43,6 +45,11 @@ public:
      * Random 'set' function
      */
     virtual void openURL(QCString url);
+
+    /**
+     * Print this view to any medium -- paper or not
+     */
+    void print(QPainter *, int height, int width);
 
 signals:
     /**

@@ -1,3 +1,10 @@
+Nov-26-1999 - Kurt Granroth (v0.4.3)
+  o Beefed up the print function with more boilerplate stuff
+  o KAccel keys should now work
+
+Nov-20-1999 - Kurt Granroth (v0.4.2)
+  o Use mkinstalldirs instead of mkdir
+
 Nov-04-1999 - Kurt Granroth (v0.4.1)
   o Removed a few files from common/ that are in admin/ (missing,
     install-sh, mkinstalldirs)

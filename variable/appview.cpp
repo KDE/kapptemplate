@@ -2,6 +2,7 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp
 #include "${APP_NAME_LC}view.h"
 
+#include <qpainter.h>
 #include <qlayout.h>
 
 #include <khtml.h>
@@ -23,11 +24,18 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
     connect(m_html, SIGNAL(setTitle(const QString&)),
             this,   SLOT(slotSetTitle(const QString&)));
     m_html->setURLCursor(KCursor::handCursor());
+	m_html->enableJava(true);
     m_html->show();
 }
 
 ${APP_NAME}View::~${APP_NAME}View()
 {
+}
+
+void ${APP_NAME}View::print(QPainter *p, int height, int width)
+{
+    // do the actual printing, here
+    // p->drawText(etc..)
 }
 
 QString ${APP_NAME}View::currentURL()
