@@ -2,6 +2,7 @@ echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop
 [Desktop Entry]
 Name=${APP_NAME}
+Name[es]=${NOMBRE_APLIC}
 Exec=${APP_NAME_LC} %i %m -caption "%c"
 Type=Application
 Terminal=0
