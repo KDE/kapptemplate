@@ -19,7 +19,7 @@ static KCmdLineOptions options[] =
 
 int main(int argc, char **argv)
 {
-    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description, KAboutData::License_GPL, "(C) 2003 ${AUTHOR}", 0, 0, "${EMAIL}");
+    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description, KAboutData::License_GPL, "(C) 2004 ${AUTHOR}", 0, 0, "${EMAIL}");
     about.addAuthor( "${AUTHOR}", 0, "${EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
     KCmdLineArgs::addCmdLineOptions( options );
