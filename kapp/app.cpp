@@ -9,7 +9,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include "${APP_NAME_LC}pref.h"
 
-#include <qdragobject.h>
 #include <kprinter.h>
 #include <qpainter.h>
 #include <qpaintdevicemetrics.h>
@@ -25,6 +24,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kfiledialog.h>
 #include <kconfig.h>
 #include <kurl.h>
+#include <kurldrag.h>
 #include <kurlrequesterdlg.h>
 
 #include <kedittoolbar.h>
@@ -77,7 +77,7 @@ void ${APP_NAME}::load(const KURL& url)
     if (KIO::NetAccess::download(url, target))
     {
         // set our caption
-        setCaption(url);
+        setCaption(url.prettyURL());
 
         // load in the file (target is always local)
         loadFile(target);
@@ -87,7 +87,7 @@ void ${APP_NAME}::load(const KURL& url)
     }
     #endif
 
-    setCaption(url.url());
+    setCaption(url.prettyURL());
     m_view->openURL(url);
 }
 
@@ -141,7 +141,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
 {
     // accept uri drops only
-    event->accept(QUriDrag::canDecode(event));
+    event->accept(KURLDrag::canDecode(event));
 }
 
 void ${APP_NAME}::dropEvent(QDropEvent *event)
@@ -149,17 +149,16 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
     // this is a very simplistic implementation of a drop event.  we
     // will only accept a dropped URL.  the Qt dnd code can do *much*
     // much more, so please read the docs there
-    QStrList uri;
+    KURL::List urls;
 
     // see if we can decode a URI.. if not, just ignore it
-    if (QUriDrag::decode(event, uri))
+    if (KURLDrag::decode(event, urls) && !urls.isEmpty())
     {
         // okay, we have a URI.. process it
-        QString url, target;
-        url = uri.first();
+        const KURL &url = urls.first();
 
         // load in the file
-        load(KURL(url));
+        load(url);
     }
 }
 
