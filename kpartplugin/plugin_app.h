@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h
 #define _PLUGIN_${APP_NAME_UC}_H
 
 #include <kparts/plugin.h>
-#include <kparts/factory.h>
+#include <klibloader.h>
 
 class Plugin${APP_NAME} : public KParts::Plugin
 {
@@ -17,7 +17,7 @@ public slots:
   void slotAction();
 };
 
-class ${APP_NAME}Factory : public KParts::Factory
+class ${APP_NAME}Factory : public KLibFactory
 {
   Q_OBJECT
 public:

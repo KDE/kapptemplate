@@ -1,3 +1,6 @@
+Feb-16-2000 - Kurt Granroth (v1.0.5)
+  o KParts::Factory, it seems, should not be used with plugins
+
 Feb-15-2000 - Kurt Granroth (v1.0.4)
   o Create a "real" factory for the KPart plugins instead of using a
     generic one

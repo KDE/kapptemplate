@@ -73,7 +73,6 @@ void Plugin${APP_NAME}::slotAction()
 }
 
 ${APP_NAME}Factory::${APP_NAME}Factory()
-  : KParts::Factory()
 {
 }
 
