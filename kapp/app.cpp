@@ -201,7 +201,7 @@ void ${APP_NAME}::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
     KURL file_url = KFileDialog::getSaveURL();
-    if (!file_url.isEmpty() && !file_url.isMalformed())
+    if (!file_url.isEmpty() && file_url.isValid())
     {
         // save your info, here
     }
