@@ -413,3 +413,84 @@ function CreateAppFramework
         . $SHARE_DIR/appframework/$FILE || exit 1;
     done
 }
+
+###########################################################################
+#
+# Function: GetInitialDefaults
+#
+# This is run the first time a user uses kapptemplate.  It gets a few
+# default values and installs them into $HOME/.kapptemplate
+# 
+# INPUT: $KAPPTEMPLATEVERSION
+#
+###########################################################################
+function GetInitialDefaults
+{
+  $ECHO "I see that this is your first time using KAppTemplate.  Excellent!";
+  $ECHO "To get started, I need you to answer the following questions.  Your";
+  $ECHO "answers will be used as the default values every time you use this";
+  $ECHO "program in the future.";
+  unset THE_AUTHOR;
+  while [ ! "$THE_AUTHOR" ];
+  do
+    $ECHO "What is your full name? \c";
+    if [ "$DEFAULT_AUTHOR" ];
+    then
+      $ECHO "[default: $DEFAULT_AUTHOR]";
+    else
+      $ECHO "[no default]";
+    fi
+    $ECHO ": \c";
+    read THE_AUTHOR;
+
+    if [ "$DEFAULT_AUTHOR" -a ! "$THE_AUTHOR" ];
+    then
+      THE_AUTHOR="$DEFAULT_AUTHOR";
+    fi
+  done
+  $ECHO;
+
+  unset THE_EMAIL;
+  while [ ! "$THE_EMAIL" ];
+  do
+    $ECHO "What is your email address? \c";
+    if [ "$DEFAULT_EMAIL" ];
+    then
+      $ECHO "[default: $DEFAULT_EMAIL]";
+    else
+      $ECHO "[no default]";
+    fi
+    $ECHO ": \c";
+    read THE_EMAIL;
+
+    if [ "$DEFAULT_EMAIL" -a ! "$THE_EMAIL" ];
+    then
+      THE_EMAIL="$DEFAULT_EMAIL";
+    fi
+  done
+  $ECHO;
+
+  unset THE_ROOT;
+  $ECHO "Where should I construct apps? \c";
+  if [ ! "$DEFAULT_ROOT" ];
+  then
+    DEFAULT_ROOT="$HOME/src";
+  fi
+  $ECHO "[default: $DEFAULT_ROOT]";
+  $ECHO ": \c";
+  read THE_ROOT;
+
+  if [ ! "$THE_ROOT" ];
+  then
+    THE_ROOT="$DEFAULT_ROOT";
+  fi
+  $ECHO;
+
+  $ECHO "Constructing .kapptemplaterc...";
+  cat << ENDORC > $HOME/.kapptemplaterc
+DEFAULT_AUTHOR="$THE_AUTHOR";
+DEFAULT_EMAIL="$THE_EMAIL";
+DEFAULT_ROOT="$THE_ROOT";
+VERSION="$KAPPTEMPLATEVERSION";
+ENDORC
+}

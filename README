@@ -1,4 +1,4 @@
-KAppTemplate v1.0
+KAppTemplate v1.1
 Kurt Granroth <granroth@kde.org>
 ----------------------------------------------------------------------
 
@@ -40,16 +40,19 @@ to do to compile and install your app is:
 
 What do I need to use this?
 ---------------------------
-o KDE 2.x
+o KDE 3.x
 o autoconf
 o automake
 
-To generate your app's documentation, you'll also need ksgml2html
-(from the 'kdesdk' package)
-
 How do I install it?
 --------------------
-./install-me
+If you have a standalone kapptemplate.tar.bz2, do:
+  ./configure
+  make && make install
+If you are installing from kdesdk, then just
+  make && make install
+If you are installing from .deb or .rpm, then install like any other
+normal package
 
 How does <whatever> work?
 -------------------------

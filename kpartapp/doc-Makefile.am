@@ -2,7 +2,7 @@ echo "Creating $LOCATION_ROOT/doc/Makefile.am...";
 $MKDIR $LOCATION_ROOT/doc
 cat << EOF > $LOCATION_ROOT/doc/Makefile.am
 
-SUBDIRS = $(AUTO_SUBDIRS)
+SUBDIRS = \$(AUTO_SUBDIRS)
 KDE_DOCS = $APP_NAME_LC
 KDE_LANG = en
 

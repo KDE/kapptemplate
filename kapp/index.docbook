@@ -1,4 +1,5 @@
 echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook...";
+$MKDIR $LOCATION_ROOT/doc/$APP_NAME_LC
 echo "It is better to use template.docbook instead of this - please replace it"
 cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook
 <?xml version="1.0" ?>

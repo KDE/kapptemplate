@@ -23,7 +23,7 @@ function LoadDefaults
         ECHO="echo -e";
     fi
 
-    $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2001 Kurt Granroth <granroth@kde.org>";
+    $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2002 Kurt Granroth <granroth@kde.org>";
     $ECHO;
 
     if [ ! "$KAPPTEMPLATERC" ];
@@ -34,6 +34,8 @@ function LoadDefaults
     if [ -f $KAPPTEMPLATERC ];
     then
         . $KAPPTEMPLATERC
+    else
+        GetInitialDefaults
     fi
 
     if [ ! "$DEFAULT_AUTHOR" ];
@@ -51,20 +53,8 @@ function LoadDefaults
         DEFAULT_ROOT="$HOME/src";
     fi
 
-    if [ "$KAPPTEMPLATEVERSION" = "$VERSION" ];
-    then
-        if [ ! "$SHARE_DIR" ];
-        then
-            SHARE_DIR=$INSTALLED_SHARE_DIR;
-        fi
-    else
-        SHARE_DIR=$INSTALLED_SHARE_DIR;
-    fi
-
-    if [ ! "$INCLUDE_DIR" ];
-    then
-        INCLUDE_DIR="$SHARE_DIR/include";
-    fi
+    SHARE_DIR=$INSTALLED_SHARE_DIR;
+    INCLUDE_DIR="$SHARE_DIR/include";
 
     if [ -f "$SHARE_DIR/bin/mkinstalldirs" ];
     then
@@ -77,19 +67,20 @@ function LoadDefaults
     BASENAME=`echo $0 | sed 's@^.*/@@g'`;
 }
 
-# We start by loading all the default environment variables and
-# performing any initialization necessary
-LoadDefaults
-
-# Now, we source the 'common' file containing all the useful functions
-if [ -f $INCLUDE_DIR/kapptemplate.common ];
+# We start by loading the 'common' file containing all useful
+# functions
+if [ -f $INSTALLED_SHARE_DIR/include/kapptemplate.common ];
 then
-    . $INCLUDE_DIR/kapptemplate.common
+    . $INSTALLED_SHARE_DIR/include/kapptemplate.common
 else
     $ECHO "Could not find common file 'kapptemplate.common'";
     $ECHO;
     exit 1;
 fi
+
+# Then, we load all the default environment variables and perform
+# any necessary initialization
+LoadDefaults
 
 # Parse the command line
 CMDLINE=$@;

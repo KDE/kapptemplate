@@ -1,3 +1,13 @@
+Feb-12-2002 - Kurt Granroth (v1.1)
+  o Restructuring change to make kapptemplate behave a little better
+    during installation.  Now, the standard 'make' commands should
+    work.  The 'install-me' script is gone.
+
+Nov-10-2001 - Simon Hausmann
+  o Added missing kstatusbar.h include in app.cpp
+  o Use KParts::GenericFactory and KGenericFactory to reduce
+    boilerplate code
+
 Jul-30-2001 - Kurt Granroth
   o KAppTemplate isn't really a 'sh' shell script.. it's a 'bash'
     shell script.  Changed #! line to reflect this.
