@@ -104,6 +104,11 @@ then
 	KNEWFUNCTION_FILES=`/bin/ls -I*~ $SHARE_DIR/knewfunction`;
 fi
 
+if [ -d "$SHARE_DIR/kpartplugin" ];
+then
+	KPARTPLUGIN_FILES=`/bin/ls -I*~ $SHARE_DIR/kpartplugin`;
+fi
+
 BASENAME=`echo $0 | sed 's@^.*/@@g'`;
 if [ "$BASENAME" = "knewclass" ];
 then
@@ -111,6 +116,9 @@ then
 elif [ "$BASENAME" = "knewfunction" ];
 then
 	. $BIN_DIR/knewfunction.module
+elif [ "$BASENAME" = "knewfunction" ];
+then
+	. $BIN_DIR/kpartplugin.module
 else
 	. $BIN_DIR/kapptemplate.module
 fi
