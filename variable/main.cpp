@@ -3,10 +3,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/main.cpp
 #include "${APP_NAME_LC}.h"
 #include <kapp.h>
 #include <dcopclient.h>
+#include <kaboutdata.h>
+#include <kcmdlineargs.h>
+#include <klocale.h>
 
 int main(int argc, char **argv)
 {
-    KApplication app(argc, argv, "${APP_NAME_LC}");
+    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), "${APP_VERSION}");
+    KCmdLineArgs::init(argc, argv, &about);
+    KApplication app;
 
     // register ourselves as a dcop client
     app.dcopClient()->registerAs(app.name());
