@@ -1,7 +1,18 @@
-Feb-16-2000 - Kurt Granroth (v1.0.5)
+Jul-05-2001 - Kurt Granroth (v1.0.6)
+  o KPartApp's part should be in it's own directory.  Did it ever work
+    as-was?  XML merging between shell and part should now work.
+  o Added new hi-color default icons to kpartapp and kapp
+
+Jun-30-2001 - David Faure
+  o Include .moc files in .cpp files in kapp template
+
+Mar-29-2001 - Nikolas Zimmermann
+  o Converted kapp template to use new KPrinter printing framework
+
+Feb-16-2001 - Kurt Granroth (v1.0.5)
   o KParts::Factory, it seems, should not be used with plugins
 
-Feb-15-2000 - Kurt Granroth (v1.0.4)
+Feb-15-2001 - Kurt Granroth (v1.0.4)
   o Create a "real" factory for the KPart plugins instead of using a
     generic one
   o Use 'find' instead of 'ls' for listing files.  Works better on
@@ -10,12 +21,12 @@ Feb-15-2000 - Kurt Granroth (v1.0.4)
   o Fixed command line args and module selection code.  Thanks to
     David Jarvie <djarvie@lineone.net> for the fix.
 
-Feb-04-2000 - Kurt Granroth (v1.0.3)
+Feb-04-2001 - Kurt Granroth (v1.0.3)
   o Converted App::load method to use KURL instead of QString in kapp
     module
   o Added +[URL] command line option in kapp module
 
-Feb-04-2000 - Simon Hausman (v1.0.2)
+Feb-04-2001 - Simon Hausman (v1.0.2)
   o Converted App::load method to use KURL instead of QString in kpart
     module
   o Used correct constructor for Part in kpart module
@@ -23,13 +34,13 @@ Feb-04-2000 - Simon Hausman (v1.0.2)
   o Other random correctness fixes in kpart module
   o Added +[URL] command line option in kpart module
 
-Feb-04-2000 - Simon Hausman (v1.0.1)
+Feb-04-2001 - Simon Hausman (v1.0.1)
   o Fixed memory leak in plugin module
   o Use createObject instead of old create in plugin module
   o Added version number to xml file in plugin module
   o Fixed integration of configure.in.in in kdesdk
 
-Feb-04-2000 - Kurt Granroth (v1.0)
+Feb-04-2001 - Kurt Granroth (v1.0)
   o GIGANTIC REWRITE.  This was *almost* a complete rewrite from
     scratch
   o Made entire system much more modular allowing for future

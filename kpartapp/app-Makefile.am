@@ -54,5 +54,5 @@ partdesktopdir   = \$(kde_servicesdir)
 partdesktop_DATA = ${APP_NAME_LC}_part.desktop
 
 # this is where the part's XML-GUI resource file goes
-partrcdir   = \$(kde_datadir)/${APP_NAME_LC}
+partrcdir   = \$(kde_datadir)/${APP_NAME_LC}part
 partrc_DATA = ${APP_NAME_LC}_part.rc

@@ -181,6 +181,9 @@ KInstance* ${APP_NAME}PartFactory::instance()
 {
     if( !s_instance )
     {
+        // the non-i18n name here must be the same as the directory in
+        // which the part's rc file is installed ('partrcdir' in the
+        // Makefile)
         s_about = new KAboutData("${APP_NAME_LC}part", I18N_NOOP("${APP_NAME}Part"), "${APP_VERSION}");
         s_about->addAuthor("${AUTHOR}", 0, "${EMAIL}");
         s_instance = new KInstance(s_about);
