@@ -5,7 +5,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif 
+#endif
 
 #include <kapplication.h>
 #include <kmainwindow.h>
@@ -76,13 +76,14 @@ private slots:
     void optionsConfigureKeys();
     void optionsConfigureToolbars();
     void optionsPreferences();
+    void newToolbarConfig();
 
     void changeStatusbar(const QString& text);
     void changeCaption(const QString& text);
 
 private:
-	void setupAccel();
-	void setupActions();
+    void setupAccel();
+    void setupActions();
 
 private:
     ${APP_NAME}View *m_view;

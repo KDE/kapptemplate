@@ -50,6 +50,11 @@ ${APP_NAME}::${APP_NAME}()
     // and a status bar
     statusBar()->show();
 
+    // apply the saved mainwindow settings, if any, and ask the mainwindow
+    // to automatically save settings if changed: window size, toolbar
+    // position, icon size, etc.
+    setAutoSaveSettings();
+
     // allow the view to change the statusbar and caption
     connect(m_view, SIGNAL(signalChangeStatusbar(const QString&)),
             this,   SLOT(changeStatusbar(const QString&)));
@@ -251,12 +256,18 @@ void ${APP_NAME}::optionsConfigureKeys()
 void ${APP_NAME}::optionsConfigureToolbars()
 {
     // use the standard toolbar editor
+    saveMainWindowSettings( autoSaveGroup() );
     KEditToolbar dlg(actionCollection());
-    if (dlg.exec())
-    {
-        // recreate our GUI
-        createGUI();
-    }
+    connect(&dlg, SIGNAL(newToolbarConfig()), this, SLOT(newToolbarConfig()));
+    dlg.exec();
+}
+
+void ${APP_NAME}::newToolbarConfig()
+{
+    // this slot is called when user clicks "Ok" or "Apply" in the toolbar editor.
+    // recreate our GUI, and re-apply the settings (e.g. "text under icons", etc.)
+    createGUI();
+    applyMainWindowSettings( autoSaveGroup() );
 }
 
 void ${APP_NAME}::optionsPreferences()
@@ -280,4 +291,5 @@ void ${APP_NAME}::changeCaption(const QString& text)
     // display the text on the caption
     setCaption(text);
 }
+
 #include "${APP_NAME_LC}.moc"
