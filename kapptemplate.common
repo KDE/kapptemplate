@@ -298,7 +298,8 @@ function GetFileList
     unset FILES;
     if [ -d "$DIRECTORY" ];
     then
-        FILES=`/bin/ls -1 -I "no-exe" -I*~ $DIRECTORY`;
+#        FILES=`/bin/ls -1 -I "no-exe" -I*~ $DIRECTORY`;
+         FILES=`cd $DIRECTORY; find . ! -name "*~" -maxdepth 1 -type f -print | sed 's,^\./,,'`;
 
         if [ ! "$FILES" ];
         then

@@ -4,30 +4,32 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h
 #define _PLUGIN_${APP_NAME_UC}_H
 
 #include <kparts/plugin.h>
-#include <klibloader.h>
+#include <kparts/factory.h>
 
 class Plugin${APP_NAME} : public KParts::Plugin
 {
-    Q_OBJECT
+  Q_OBJECT
 public:
-    Plugin${APP_NAME}( QObject* parent = 0, const char* name = 0 );
-    virtual ~Plugin${APP_NAME}();
+  Plugin${APP_NAME}( QObject* parent = 0, const char* name = 0 );
+  virtual ~Plugin${APP_NAME}();
 
 public slots:
-    void slotAction();
+  void slotAction();
 };
 
-class KPluginFactory : public KLibFactory
+class ${APP_NAME}Factory : public KParts::Factory
 {
-    Q_OBJECT
+  Q_OBJECT
 public:
-    KPluginFactory( QObject* parent = 0, const char* name = 0 );
-    virtual ~KPluginFactory();
+  ${APP_NAME}Factory();
+  virtual ~${APP_NAME}Factory();
 
-    virtual QObject* createObject( QObject* parent = 0, const char* pname = 0, const char* name = "QObject", const QStringList &args = QStringList() );
+  virtual QObject* createObject( QObject* parent = 0, const char* pname = 0, const char* name = "QObject", const QStringList &args = QStringList() );
+
+  static KInstance* instance();
 
 private:
-    static KInstance* s_instance;
+  static KInstance* s_instance;
 };
 
 #endif // _PLUGIN_${APP_NAME_UC}_H

@@ -95,11 +95,10 @@ fi
 CMDLINE=$@;
 ParseCommandLine
 
-
 # Do a sanity check and build the various module lists
 BuildModuleLists
 
-if [ ! "$WHICH_ONE" -a "$ALL_DEFAULTS" ];
+if [ ! "$WHICH_ONE" ] && [ "$ALL_DEFAULTS" ];
 then
     WHICH_ONE=1;
 fi

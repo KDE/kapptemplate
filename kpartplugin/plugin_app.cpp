@@ -72,31 +72,37 @@ void Plugin${APP_NAME}::slotAction()
     part->openURL( work );
 }
 
-KPluginFactory::KPluginFactory( QObject* parent, const char* name )
-  : KLibFactory( parent, name )
+${APP_NAME}Factory::${APP_NAME}Factory()
+  : KParts::Factory()
 {
-  s_instance = new KInstance( "KPluginFactory" );
 }
 
-KPluginFactory::~KPluginFactory()
+${APP_NAME}Factory::~${APP_NAME}Factory()
 {
   delete s_instance;
   s_instance = 0;
 }
 
-QObject* KPluginFactory::createObject( QObject* parent, const char* name, const char*, const QStringList & )
+QObject* ${APP_NAME}Factory::createObject( QObject* parent, const char* name, const char*, const QStringList & )
 {
   return new Plugin${APP_NAME}( parent, name );
+}
+
+KInstance *${APP_NAME}Factory::instance()
+{
+  if ( !s_instance )
+    s_instance = new KInstance( "${APP_NAME_LC}" );
+  return s_instance;
 }
 
 extern "C"
 {
   void* init_lib${APP_NAME_LC}plugin()
   {
-    return new KPluginFactory;
+    return new ${APP_NAME}Factory;
   }
 }
 
-KInstance* KPluginFactory::s_instance = 0L;
+KInstance* ${APP_NAME}Factory::s_instance = 0L;
 
 #include <plugin_${APP_NAME_LC}.moc>
