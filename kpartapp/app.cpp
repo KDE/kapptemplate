@@ -86,7 +86,7 @@ void ${APP_NAME}::setupActions()
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
-    
+
     KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
@@ -124,7 +124,10 @@ void ${APP_NAME}::fileNew()
 
 void ${APP_NAME}::optionsConfigureKeys()
 {
-    KKeyDialog::configureKeys(actionCollection(), "${APP_NAME_LC}_shell.rc");
+  KKeyDialog dlg( true,  this );
+  dlg.insert( actionCollection(), "${APP_NAME_LC}_shell.rc" );
+  dlg.insert( m_part->actionCollection(), "${APP_NAME_LC}_part.rc" );
+  (void) dlg.configure( true );
 }
 
 void ${APP_NAME}::optionsConfigureToolbars()
