@@ -50,7 +50,7 @@ fi
 # sanity check
 if [ -d "$SHARE_DIR/common" ];
 then
-	COMMON_FILES=`/bin/ls $SHARE_DIR/common`;
+	COMMON_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/common`;
 
 	if [ ! "$COMMON_FILES" ];
 	then
@@ -64,7 +64,7 @@ fi
 
 if [ -d "$SHARE_DIR/admin" ];
 then
-	ADMIN_FILES=`/bin/ls $SHARE_DIR/admin`;
+	ADMIN_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/admin`;
 
 	if [ ! "$ADMIN_FILES" ];
 	then
@@ -78,7 +78,7 @@ fi
 
 if [ -d "$SHARE_DIR/variable" ];
 then
-	VARIABLE_FILES=`/bin/ls -I "no-exe" $SHARE_DIR/variable`;
+	VARIABLE_FILES=`/bin/ls -1 -I "no-exe" -I*~ $SHARE_DIR/variable`;
 
 	if [ ! "$VARIABLE_FILES" ];
 	then
@@ -92,12 +92,12 @@ fi
 
 if [ -d "$SHARE_DIR/knewclass" ];
 then
-	KNEWCLASS_FILES=`/bin/ls $SHARE_DIR/knewclass`;
+	KNEWCLASS_FILES=`/bin/ls -1 -I*~ $SHARE_DIR/knewclass`;
 fi
 
 if [ -d "$SHARE_DIR/knewfunction" ];
 then
-	KNEWFUNCTION_FILES=`/bin/ls $SHARE_DIR/knewfunction`;
+	KNEWFUNCTION_FILES=`/bin/ls -I*~ $SHARE_DIR/knewfunction`;
 fi
 
 BASENAME=`echo $0 | sed 's@^.*/@@g'`;
