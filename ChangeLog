@@ -1,3 +1,8 @@
+Jan-09-2003 - Kurt Granroth
+  o Use variable subst in kpartapp/main.cpp instead of my hard-coded
+    email address
+  o Update some dates to 2003
+
 Mar-25-2002 - Frerich Raabe (v1.1.1)
   o Changes to make kapptemplate work better under *BSD (no more hard-
     coded 'make')

@@ -35,7 +35,7 @@ function LoadDefaults
         fi
     fi
 
-    $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2002 Kurt Granroth <granroth@kde.org>";
+    $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2003 Kurt Granroth <granroth@kde.org>";
     $ECHO;
 
     if [ ! "$KAPPTEMPLATERC" ];
