@@ -172,10 +172,10 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    QString file_name =
-        KFileDialog::getOpenFileName( QString::null, QString::null, this );
+    KURL url =
+        KFileDialog::getOpenURL( QString::null, QString::null, this );
 
-    if (file_name.isEmpty() == false)
+    if (url.isEmpty() == false)
     {
         // About this function, the style guide (
         // http://developer.kde.org/documentation/standards/kde/style/basics/index.html )
@@ -184,13 +184,13 @@ void ${APP_NAME}::fileOpen()
         if ( m_part->url().isEmpty() && ! m_part->isModified() )
         {
             // we open the file in this window...
-            load( KURL( file_name ) );
+            load( url );
         }
         else
         {
             // we open the file in a new window...
             ${APP_NAME}* newWin = new ${APP_NAME};
-            newWin->load( KURL( file_name ) );
+            newWin->load( url );
             newWin->show();
         }
     }
