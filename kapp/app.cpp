@@ -18,6 +18,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <klocale.h>
 #include <kiconloader.h>
 #include <kmenubar.h>
+#include <kstatusbar.h>
 #include <kkeydialog.h>
 #include <kaccel.h>
 #include <kio/netaccess.h>
