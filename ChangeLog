@@ -1,3 +1,7 @@
+Sep-26-2000 - Kurt Granroth (v0.7.1)
+  o Added hooks for more KAboutData information
+  o Now building moc files as moc.cpp instead of #including them
+
 Jul-21-2000 - Kurt Granroth (v0.7)
   o Now using an HTML KPart component instead of a widget since that
     is The Right Thing to Do(tm)

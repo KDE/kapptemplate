@@ -39,6 +39,3 @@ ${APP_NAME}PrefPageTwo::${APP_NAME}PrefPageTwo(QWidget *parent)
 
     new QLabel("Add something here", this);
 }
-
-#include "${APP_NAME_LC}pref.moc"
-

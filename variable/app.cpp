@@ -275,5 +275,3 @@ void ${APP_NAME}::changeCaption(const QString& text)
     // display the text on the caption
     setCaption(text);
 }
-
-#include "${APP_NAME_LC}.moc"

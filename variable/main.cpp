@@ -7,9 +7,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/main.cpp
 #include <kcmdlineargs.h>
 #include <klocale.h>
 
+static const char *description =
+    I18N_NOOP("A KDE Application");
+
+static const char *version = "v${APP_VERSION}";
+
 int main(int argc, char **argv)
 {
-    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), "${APP_VERSION}");
+    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description, KAboutData::License_GPL, "(C) 2000 ${AUTHOR}");
+    about.addAuthor( "${AUTHOR}", 0, "${EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
     KApplication app;
 
