@@ -15,7 +15,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 #include <qmultilineedit.h>
 
 typedef KParts::GenericFactory<${APP_NAME}Part> ${APP_NAME}PartFactory;
-K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}part, ${APP_NAME}PartFactory );
+K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}part, ${APP_NAME}PartFactory )
 
 ${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, const char *widgetName,
                                   QObject *parent, const char *name,
