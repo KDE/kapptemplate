@@ -1,9 +1,10 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC.spec...";
 cat << EOF > $LOCATION_ROOT/$APP_NAME_LC.spec
+%define distversion %( perl -e '$_=\<\>;/(\\d+)\\.(\\d)\\.?(\\d)?/; print "$1$2".($3||0)' /etc/*-release)
 Name: ${APP_NAME_LC}
 Summary: ${APP_NAME} -- Some description
 Version: ${APP_VERSION}
-Release: 1
+Release: %{_vendor}_%{distversion}
 Copyright: GPL
 Group: X11/KDE/Utilities
 Source: ftp://ftp.kde.org/pub/kde/unstable/apps/utils/${APP_NAME_LC}-${APP_VERSION}.tar.gz
@@ -34,11 +35,11 @@ make -j$numprocs
 make DESTDIR=\$RPM_BUILD_ROOT install
 
 cd $RPM_BUILD_ROOT
-find . -type d | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' > $RPM_BUILD_DIR/${APP_NAME_LC}-kdoomload-master.list
-find . -type f -o -type l | sed 's|^\.||' > \$RPM_BUILD_DIR/${APP_NAME_LC}-master.list
+find . -type d | sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' > $RPM_BUILD_DIR/%{name}-master.list
+find . -type f -o -type l | sed 's|^\.||' >> \$RPM_BUILD_DIR/%{name}-master.list
 
 %clean
 rm -rf \$RPM_BUILD_DIR/${APP_NAME_LC}-${APP_VERSION}
-rm -rf \$RPM_BUILD_DIR/${APP_NAME_LC}-master.list
+rm -rf \$RPM_BUILD_DIR/${APP_NAME_LC}-${name}-master.list
 
-%files -f \$RPM_BUILD_DIR/master.list
+%files -f \$RPM_BUILD_DIR/%{name}-master.list
