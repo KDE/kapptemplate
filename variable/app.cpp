@@ -22,7 +22,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kmenubar.h>
 #include <kkeydialog.h>
 #include <kaccel.h>
-#include <kio_netaccess.h>
+#include <kio/netaccess.h>
 #include <kfiledialog.h>
 #include <kconfig.h>
 #include <kurl.h>
