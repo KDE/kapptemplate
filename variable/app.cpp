@@ -3,13 +3,12 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 /*
  * ${APP_NAME_LC}.cpp
  *
- * Copyright (C) 1999 $AUTHOR <$EMAIL>
+ * Copyright (C) 2000 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
 
 #include "${APP_NAME_LC}pref.h"
 
-#include <qpopupmenu.h>
 #include <qdragobject.h>
 #include <qlineedit.h>
 #include <qprinter.h>
@@ -23,13 +22,12 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kmenubar.h>
 #include <kkeydialog.h>
 #include <kaccel.h>
-#include <ktoolbar.h>
 #include <kio_netaccess.h>
 #include <kfiledialog.h>
 #include <kconfig.h>
+#include <kurl.h>
 
 #include <kdialogbase.h>
-#include <khelpmenu.h>
 
 #include <kstdaccel.h>
 #include <kaction.h>
@@ -52,10 +50,6 @@ ${APP_NAME}::${APP_NAME}()
     // then, setup our actions
     setupActions();
 
-    // setup our menubars and toolbars
-    setupMenuBars();
-    setupToolBars();
-
     // and a status bar
     enableStatusBar();
 
@@ -69,9 +63,6 @@ ${APP_NAME}::${APP_NAME}()
 
 ${APP_NAME}::~${APP_NAME}()
 {
-    delete m_file;
-    delete m_options;
-    delete m_help;
 }
 
 void ${APP_NAME}::load(const QString& url)
@@ -103,7 +94,7 @@ void ${APP_NAME}::load(const QString& url)
 void ${APP_NAME}::setupAccel()
 {
     // insert all of our std accel so that they show up in the
-	// config dialog
+    // config dialog
     m_accelKeys->insertStdItem(KStdAccel::New);
     m_accelKeys->insertStdItem(KStdAccel::Open);
     m_accelKeys->insertStdItem(KStdAccel::Save);
@@ -119,75 +110,20 @@ void ${APP_NAME}::setupAccel()
 
 void ${APP_NAME}::setupActions()
 {
-	m_newAct    = KStdAction::openNew(this, SLOT(fileNew()), this);
-	m_openAct   = KStdAction::open(this, SLOT(fileOpen()), this);
-	m_saveAct   = KStdAction::save(this, SLOT(fileSave()), this);
-	m_saveAsAct = KStdAction::saveAs(this, SLOT(fileSaveAs()), this);
-	m_printAct  = KStdAction::print(this, SLOT(filePrint()), this);
-	m_quitAct   = KStdAction::quit(kapp, SLOT(quit()), this, "quit");
+    KStdAction::openNew(this, SLOT(fileNew()), actionCollection());
+    KStdAction::open(this, SLOT(fileOpen()), actionCollection());
+    KStdAction::save(this, SLOT(fileSave()), actionCollection());
+    KStdAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
+    KStdAction::print(this, SLOT(filePrint()), actionCollection());
+    KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
-	m_showToolbarAct   = KStdAction::showToolbar(this,
-	                                       SLOT(optionsShowToolbar()), this);
-	m_showStatusbarAct = KStdAction::showStatusbar(this,
-	                                       SLOT(optionsShowStatusbar()), this);
+    KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
+    KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
 
-	m_keyBindingsAct = KStdAction::keyBindings(this, SLOT(optionsConfigure()),
-                                               this);
-	m_preferencesAct = KStdAction::preferences(this,
-                                             SLOT(optionsPreferences()), this);
+    KStdAction::keyBindings(this, SLOT(optionsConfigure()), actionCollection());
+    KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
-	m_helpAct = KStdAction::help(this, SLOT(appHelpActivated()), this);
-}
-
-void ${APP_NAME}::setupMenuBars()
-{
-    // these are the standard menus.  delete the ones that you
-    // aren't using
-    m_file    = new QPopupMenu();
-    m_options = new QPopupMenu();
-    m_help    = new QPopupMenu();
-
-    // first, the File menu
-    m_newAct->plug(m_file);
-    m_openAct->plug(m_file);
-    m_file->insertSeparator(-1);
-    m_saveAct->plug(m_file);
-    m_saveAsAct->plug(m_file);
-    m_file->insertSeparator(-1);
-    m_printAct->plug(m_file);
-    m_file->insertSeparator(-1);
-    m_quitAct->plug(m_file);
-
-    // next, the Options menu
-    m_options->setCheckable(true);
-	m_showToolbarAct->setChecked(true);
-	m_showToolbarAct->plug(m_options);
-	m_showStatusbarAct->setChecked(true);
-	m_showStatusbarAct->plug(m_options);
-    m_options->insertSeparator(-1);
-	m_keyBindingsAct->plug(m_options);
-	m_preferencesAct->plug(m_options);
-
-    // finally, the Help menu
-    m_help = helpMenu(i18n("${APP_NAME} v${APP_VERSION}\\n\\n"
-                           "Copyright (C) 2000\\n"
-                           "${AUTHOR} <${EMAIL}>"));
-
-
-    // now add all of the menus to the menu bar
-    menuBar()->insertItem(i18n("&File"),    m_file);
-    menuBar()->insertItem(i18n("&Options"), m_options);
-    menuBar()->insertItem(i18n("&Help"),    m_help);
-}
-
-void ${APP_NAME}::setupToolBars()
-{
-    // this toolbar should mirror the menubar fairly closely
-    m_newAct->plug(toolBar());
-    m_openAct->plug(toolBar());
-    m_saveAct->plug(toolBar());
-    m_printAct->plug(toolBar());
-    m_helpAct->plug(toolBar());
+    createGUI();
 }
 
 void ${APP_NAME}::saveProperties(KConfig *config)
@@ -277,9 +213,8 @@ void ${APP_NAME}::fileSave()
 void ${APP_NAME}::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
-
-    QString file_name;
-    if ((file_name = KFileDialog::getSaveFileName()) != QString::null)
+    KURL file_url = KFileDialog::getSaveURL();
+    if (!file_url.isEmpty() && !file_url.isMalformed())
     {
         // save your info, here
     }
@@ -322,7 +257,7 @@ void ${APP_NAME}::optionsShowStatusbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // statusbar
-    if (toolBar()->isVisible())
+    if (statusBar()->isVisible())
         statusBar()->enable(KStatusBar::Hide);
     else
         statusBar()->enable(KStatusBar::Show);

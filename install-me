@@ -11,10 +11,10 @@ else
 	ECHO="echo -e";
 fi
 
-$ECHO "KAppTemplate v0.5.2 Install (C) 2000 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.6 Install (C) 2000 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
-# let's see if we have a previous > 0.2 release
+# let's see if we have a previous release
 if [ -f $HOME/.kapptemplaterc ];
 then
 	. $HOME/.kapptemplaterc

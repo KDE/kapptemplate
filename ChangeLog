@@ -1,3 +1,6 @@
+Feb-26-2000 - Kurt Granroth (v0.6)
+  o Converted to use the new XML UI framework (big change!)
+
 Jan-12-2000 - Kurt Granroth (v0.5.2)
   o Use KAboutData and KCmdLineArgs
 

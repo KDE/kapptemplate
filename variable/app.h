@@ -12,11 +12,8 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
  
 #include "${APP_NAME_LC}view.h"
 
-class QPopupMenu;
 class QPrinter;
 class KAccel;
-class KAction;
-class KToggleAction;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the
@@ -84,31 +81,13 @@ private slots:
 private:
 	void setupAccel();
 	void setupActions();
-    void setupMenuBars();
-    void setupToolBars();
 
 private:
     ${APP_NAME}View *m_view;
 
     QPrinter   *m_printer;
 
-    QPopupMenu *m_file;
-    QPopupMenu *m_options;
-    QPopupMenu *m_help;
-
     KAccel     *m_accelKeys;
-
-	KAction *m_newAct;
-	KAction *m_openAct;
-	KAction *m_saveAct;
-	KAction *m_saveAsAct;
-	KAction *m_printAct;
-	KAction *m_quitAct;
-	KAction *m_keyBindingsAct;
-	KAction *m_preferencesAct;
-	KAction *m_helpAct;
-	KToggleAction *m_showToolbarAct;
-	KToggleAction *m_showStatusbarAct;
 };
 
 #endif // ${APP_NAME_UC}_H
