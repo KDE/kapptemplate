@@ -223,9 +223,9 @@ void ${APP_NAME}::optionsShowToolbar()
     // this is all very cut and paste code for showing/hiding the
     // toolbar
     if (m_toolbarAction->isChecked())
-        toolBar("mainToolBar")->show();
+        toolBar()->show();
     else
-        toolBar("mainToolBar")->hide();
+        toolBar()->hide();
 }
 
 void ${APP_NAME}::optionsShowStatusbar()
