@@ -112,7 +112,7 @@ done
 ###########################################################################
 
 if [ ! $NOINIT ]; then
-    cd $LOCATION_ROOT && make -f Makefile.cvs
+    cd $LOCATION_ROOT && $MAKE -f Makefile.cvs
 fi
 
 $ECHO "DONE!";

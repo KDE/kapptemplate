@@ -1,3 +1,7 @@
+Mar-25-2002 - Frerich Raabe (v1.1.1)
+  o Changes to make kapptemplate work better under *BSD (no more hard-
+    coded 'make')
+
 Feb-12-2002 - Kurt Granroth (v1.1)
   o Restructuring change to make kapptemplate behave a little better
     during installation.  Now, the standard 'make' commands should

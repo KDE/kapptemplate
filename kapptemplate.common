@@ -24,7 +24,7 @@ function Usage
     $ECHO "Usage: kapptemplate [options]";
     $ECHO "Options:";
     $ECHO "    --help     Display this information";
-    $ECHO "    --noinit   Don't run 'make -f Makefile.cvs'";
+    $ECHO "    --noinit   Don't run '$MAKE -f Makefile.cvs'";
     $ECHO "    --default  Use default values instead of prompting";
     $ECHO;
     $ECHO "Framework Types:";

@@ -23,6 +23,18 @@ function LoadDefaults
         ECHO="echo -e";
     fi
 
+    # If $MAKE hasn't been set yet, try to figure out how we reach GNU make
+    # ourselves.
+    if [ ! "$MAKE" ];
+    then
+        if [ -f "/usr/bin/gmake" ] || [ -f "/usr/local/bin/gmake" ];
+        then    
+	    MAKE="gmake";
+        else
+            MAKE="make";
+        fi
+    fi
+
     $ECHO "KAppTemplate v${KAPPTEMPLATEVERSION} (C) 2002 Kurt Granroth <granroth@kde.org>";
     $ECHO;
 
