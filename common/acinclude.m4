@@ -356,6 +356,9 @@ AC_SUBST(X_LDFLAGS)
 AC_SUBST(x_libraries)
 AC_SUBST(x_includes)
 all_includes=$X_INCLUDES
+
+LIB_X11='-lX11 $(LIBSOCKET)'
+AC_SUBST(LIB_X11)
 ])
 
 AC_DEFUN(KDE_PRINT_QT_PROGRAM,
@@ -460,7 +463,7 @@ if test "$ac_qt_includes" = NO || test "$ac_qt_libraries" = NO; then
 AC_CACHE_VAL(ac_cv_have_qt,
 [#try to guess qt locations
 
-qt_incdirs="$ac_qt_includes /usr/lib/qt/include /usr/local/qt/include /usr/include/qt /usr/include /usr/X11R6/include/X11/qt $x_includes $QTINC"
+qt_incdirs="$ac_qt_includes /opt/qt/include /usr/lib/qt/include /usr/local/qt/include /usr/include/qt /usr/include /usr/X11R6/include/X11/qt $x_includes $QTINC"
 test -n "$QTDIR" && qt_incdirs="$QTDIR/include $QTDIR $qt_incdirs"
 AC_FIND_FILE(qmovie.h, $qt_incdirs, qt_incdir)
 ac_qt_includes="$qt_incdir"
@@ -469,7 +472,7 @@ if test ! "$ac_qt_libraries" = "NO"; then
   qt_libdirs="$ac_qt_libraries"
 fi
 
-qt_libdirs="$qt_libdirs /usr/lib/qt/lib /usr/X11R6/lib /usr/lib /usr/local/qt/lib /usr/lib/qt $x_libraries $QTLIB"
+qt_libdirs="$qt_libdirs /opt/qt/lib /usr/lib/qt/lib /usr/X11R6/lib /usr/lib /usr/local/qt/lib /usr/lib/qt $x_libraries $QTLIB"
 test -n "$QTDIR" && qt_libdirs="$QTDIR/lib $QTDIR $qt_libdirs"
 
 test=NONE
@@ -563,6 +566,9 @@ fi
 AC_SUBST(QT_INCLUDES)
 AC_SUBST(QT_LDFLAGS)
 AC_PATH_QT_MOC
+
+LIB_QT='-lqt $(LIB_X11)'
+AC_SUBST(LIB_QT)
 ])
 
 AC_DEFUN(AC_PATH_QT,

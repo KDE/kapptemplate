@@ -1,3 +1,6 @@
+Jan-24-1999 - Kurt Granroth (v0.3.2)
+  o Added LIB_X11 and LIB_QT to acinclude.m4
+
 Jan-18-1999 - Kurt Granroth (v0.3.1)
   o AUGH!! I forgot 'acinclude.m4'!!
   o Slightly modified 'install-me' so that kapptemplate will install from
