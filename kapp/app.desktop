@@ -9,4 +9,3 @@ Type=Application
 DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
 GenericName=A KDE Application
 Terminal=0
-EOF
