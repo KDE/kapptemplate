@@ -2,19 +2,17 @@ SUBDIRS=admin appframework existing kapp kpartapp kpartplugin
 
 VERSION := `cat $(srcdir)/VERSION`
 
-bin_PROGRAMS = kapptemplate
-kapptemplate_SOURCES =
+bin_SCRIPTS = kapptemplate
 
-all:
-	@echo "#!/usr/bin/env bash" > ${PWD}/kapptemplate; \
-	echo "INSTALLED_SHARE_DIR=$(kde_datadir)/kapptemplate" >> ${PWD}/kapptemplate; \
-	echo "KAPPTEMPLATEVERSION=$(VERSION)" >> ${PWD}/kapptemplate; \
-	cat $(srcdir)/kapptemplate.in >> ${PWD}/kapptemplate; \
-	chmod 755 ${PWD}/kapptemplate
+kapptemplate: kapptemplate.in
+	echo "#!/usr/bin/env bash" > kapptemplate; \
+	echo "INSTALLED_SHARE_DIR=$(kde_datadir)/kapptemplate" >> kapptemplate; \
+	echo "KAPPTEMPLATEVERSION=$(VERSION)" >> kapptemplate; \
+	cat $(srcdir)/kapptemplate.in >> kapptemplate; \
+	chmod 755 kapptemplate
 
-install-exec-local:
-	$(src_dir)/$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/kapptemplate/bin
-	$(INSTALL_SCRIPT) $(srcdir)/mkinstalldirs $(DESTDIR)$(kde_datadir)/kapptemplate/bin
+databindir = $(kde_datadir)/kapptemplate/bin
+databin_SCRIPTS = mkinstalldirs
 
 moduledir = $(kde_datadir)/kapptemplate/include
 module_DATA = kapptemplate.common kapptemplate.module \
