@@ -8,6 +8,7 @@ Name[es]=${NOMBRE_APLIC}Part
 Name[et]=${APP_NAME} komponent
 Name[it]=Part${APP_NAME}
 Name[ko]=${APP_NAME} 파트
+Name[lt]=${APP_NAME}Dalis
 Name[no]=${APP_NAME}
 Name[sv]=${APP_NAME}-del
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
