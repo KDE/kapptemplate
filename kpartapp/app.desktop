@@ -11,6 +11,7 @@ Icon=${APP_NAME_LC}
 Type=Application
 DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
 GenericName=A KDE KPart Application
+GenericName[af]='n kde k-deel aansoek
 GenericName[az]=KDE Kpart Proqramı
 GenericName[bg]=Приложение KPart KDE
 GenericName[bs]=KDE KPart aplikacija
