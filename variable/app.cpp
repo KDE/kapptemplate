@@ -178,9 +178,8 @@ void ${APP_NAME}::setupToolBars()
                             this, SLOT(fileSave()), true, i18n("Save"));
     toolBar()->insertButton(BarIcon("fileprint"), -1, SIGNAL(clicked()),
                             this, SLOT(filePrint()), true, i18n("Print"));
-    KHelpMenu *help = new KHelpMenu(this);
     toolBar()->insertButton(BarIcon("help"), -1, SIGNAL(clicked()),
-                            help, SLOT(appHelpActivated()),
+                            this, SLOT(appHelpActivated()),
                             true, i18n("Help"));
 
 }
