@@ -256,7 +256,7 @@ void ${APP_NAME}::optionsConfigureKeys()
 void ${APP_NAME}::optionsConfigureToolbars()
 {
     // use the standard toolbar editor
-    saveMainWindowSettings( autoSaveGroup() );
+    saveMainWindowSettings( KGlobal::config(), autoSaveGroup() );
     KEditToolbar dlg(actionCollection());
     connect(&dlg, SIGNAL(newToolbarConfig()), this, SLOT(newToolbarConfig()));
     dlg.exec();
@@ -267,7 +267,7 @@ void ${APP_NAME}::newToolbarConfig()
     // this slot is called when user clicks "Ok" or "Apply" in the toolbar editor.
     // recreate our GUI, and re-apply the settings (e.g. "text under icons", etc.)
     createGUI();
-    applyMainWindowSettings( autoSaveGroup() );
+    applyMainWindowSettings( KGlobal::config(), autoSaveGroup() );
 }
 
 void ${APP_NAME}::optionsPreferences()
