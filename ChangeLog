@@ -1,3 +1,7 @@
+Mar-14-2000 - Kurt Granroth (v0.6.1)
+  o Added toolbar editor
+  o Changed sample html code to reflect khtml changes
+
 Feb-26-2000 - Kurt Granroth (v0.6)
   o Converted to use the new XML UI framework (big change!)
 

@@ -72,7 +72,8 @@ private slots:
     void filePrint();
     void optionsShowToolbar();
     void optionsShowStatusbar();
-    void optionsConfigure();
+    void optionsConfigureKeys();
+    void optionsConfigureToolbars();
     void optionsPreferences();
 
     void changeStatusbar(const QString& text);

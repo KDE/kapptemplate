@@ -7,9 +7,10 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}view.h
 #include <${APP_NAME_LC}iface.h>
 
 class QPainter;
+class KURL;
 
 // this forward reference you will probably delete..
-class KHTMLWidget;
+class KHTMLPart;
 
 /**
  * This is the main view class for ${APP_NAME}.  Most of the non-menu,
@@ -42,9 +43,14 @@ public:
     QString currentURL();
 
     /**
-     * Random 'set' function
+     * Random 'set' function accessed by DCOP
      */
     virtual void openURL(QString url);
+
+    /**
+     * Random 'set' function
+     */
+    virtual void openURL(const KURL& url);
 
     /**
      * Print this view to any medium -- paper or not
@@ -67,7 +73,7 @@ private slots:
     void slotSetTitle(const QString& title);
 
 private:
-    KHTMLWidget *m_html;
+    KHTMLPart *m_html;
 };
 
 #endif // ${APP_NAME_UC}VIEW_H

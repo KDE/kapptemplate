@@ -28,6 +28,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kurl.h>
 
 #include <kdialogbase.h>
+#include <kedittoolbar.h>
 
 #include <kstdaccel.h>
 #include <kaction.h>
@@ -88,7 +89,7 @@ void ${APP_NAME}::load(const QString& url)
     #endif
 
     setCaption(url);
-    m_view->openURL(url.ascii());
+    m_view->openURL(KURL(url));
 }
 
 void ${APP_NAME}::setupAccel()
@@ -120,7 +121,8 @@ void ${APP_NAME}::setupActions()
     KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
     KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
 
-    KStdAction::keyBindings(this, SLOT(optionsConfigure()), actionCollection());
+    KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
+    KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
     createGUI();
@@ -146,7 +148,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
     QString url = config->readEntry("lastURL"); 
 
     if (url != QString::null)
-        m_view->openURL(url.ascii());
+        m_view->openURL(KURL(url));
 }
 
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
@@ -198,7 +200,7 @@ void ${APP_NAME}::fileOpen()
     dialog.setMainWidget(url_edit);
     dialog.showButtonApply(false);
     if (dialog.exec())
-        m_view->openURL(url_edit->text().ascii());
+        m_view->openURL(KURL(url_edit->text()));
 }
 
 void ${APP_NAME}::fileSave()
@@ -247,10 +249,10 @@ void ${APP_NAME}::optionsShowToolbar()
 {
     // this is all very cut and paste code for showing/hiding the
     // toolbar
-    if (toolBar()->isVisible())
-        toolBar()->enable(KToolBar::Hide);
+    if (toolBar("mainToolBar")->isVisible())
+        toolBar("mainToolBar")->enable(KToolBar::Hide);
     else
-        toolBar()->enable(KToolBar::Show);
+        toolBar("mainToolBar")->enable(KToolBar::Show);
 }
 
 void ${APP_NAME}::optionsShowStatusbar()
@@ -258,21 +260,32 @@ void ${APP_NAME}::optionsShowStatusbar()
     // this is all very cut and paste code for showing/hiding the
     // statusbar
     if (statusBar()->isVisible())
-        statusBar()->enable(KStatusBar::Hide);
+        enableStatusBar(KStatusBar::Hide);
     else
-        statusBar()->enable(KStatusBar::Show);
+        enableStatusBar(KStatusBar::Show);
 }
 
-void ${APP_NAME}::optionsConfigure()
+void ${APP_NAME}::optionsConfigureKeys()
 {
     KKeyDialog::configureKeys(m_accelKeys);
+}
+
+void ${APP_NAME}::optionsConfigureToolbars()
+{
+    // use the standard toolbar editor
+    KEditToolbar dlg(actionCollection());
+    if (dlg.exec())
+    {
+        // recreate our GUI
+        createGUI();
+    } 
 }
 
 void ${APP_NAME}::optionsPreferences()
 {
     // popup some sort of preference dialog, here
-    ${APP_NAME}Preferences *dlg = new ${APP_NAME}Preferences;
-    if (dlg->exec())
+    ${APP_NAME}Preferences dlg;
+    if (dlg.exec())
     {
         // redo your settings
     }

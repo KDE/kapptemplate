@@ -5,8 +5,9 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp
 #include <qpainter.h>
 #include <qlayout.h>
 
-#include <khtml.h>
+#include <khtml_part.h>
 #include <kcursor.h>
+#include <kurl.h>
 
 ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
     : QWidget(parent),
@@ -18,7 +19,7 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
 
     // whatever widgets we have get automatically entered
     // into our layout manager
-    m_html = new KHTMLWidget(this);
+    m_html = new KHTMLPart(this);
     connect(m_html, SIGNAL(onURL(const QString&)),
             this,   SLOT(slotOnURL(const QString&)));
     connect(m_html, SIGNAL(setTitle(const QString&)),
@@ -40,10 +41,15 @@ void ${APP_NAME}View::print(QPainter *p, int height, int width)
 
 QString ${APP_NAME}View::currentURL()
 {
-    return m_html->url();
+    return m_html->url().url();
 }
 
 void ${APP_NAME}View::openURL(QString url)
+{
+    openURL(KURL(url));
+}
+
+void ${APP_NAME}View::openURL(const KURL& url)
 {
     m_html->openURL(url);
 }
