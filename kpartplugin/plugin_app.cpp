@@ -36,7 +36,7 @@ void Plugin${APP_NAME}::slotAction()
     if ( !parent()->inherits("KHTMLPart") )
     {
         QString title( i18n( "Cannot Translate Source" ) );
-        QString text( i18n( "You cannot translate anything except web pages\n"
+        QString text( i18n( "You cannot translate anything except web pages "
                             "with this plugin." ) );
 
         KMessageBox::sorry( 0, text, title );
