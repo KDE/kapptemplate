@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 /*
  * ${APP_NAME_LC}.cpp
  *
- * Copyright (C) 2001  <kurt@granroth.org>
+ * Copyright (C) 2002 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
 #include "${APP_NAME_LC}.moc"
