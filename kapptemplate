@@ -39,6 +39,10 @@ if [ ! "$SHARE_DIR" ];
 then
 	SHARE_DIR="$KDEDIR/share/apps/kapptemplate";
 fi
+if [ ! "$BIN_DIR" ];
+then
+	BIN_DIR="$KDEDIR/bin";
+fi
 
 if [ -f "$SHARE_DIR/bin/mkinstalldirs" ];
 then
@@ -103,10 +107,10 @@ fi
 BASENAME=`echo $0 | sed 's@^.*/@@g'`;
 if [ "$BASENAME" = "knewclass" ];
 then
-	. knewclass.module
+	. $BIN_DIR/knewclass.module
 elif [ "$BASENAME" = "knewfunction" ];
 then
-	. knewfunction.module
+	. $BIN_DIR/knewfunction.module
 else
-	. kapptemplate.module
+	. $BIN_DIR/kapptemplate.module
 fi

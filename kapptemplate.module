@@ -1,6 +1,6 @@
 #!/bin/sh
 
-$ECHO "KAppTemplate v0.7.4 (C) 2000 Kurt Granroth <granroth@kde.org>";
+$ECHO "KAppTemplate v0.7.5 (C) 2000 Kurt Granroth <granroth@kde.org>";
 $ECHO;
 
 # STEP 1: INITIALIZATION is done in the main module
@@ -12,7 +12,7 @@ function usage {
 	echo -e "    --noinit  Don't run configure"
 }
 
-NOINIT=0;
+unset NOINIT;
 if [ -n "$1" ]; then
 	if [ "$1" == "--help" ]; then
 		usage
@@ -221,7 +221,7 @@ done
 #
 ###########################################################################
 
-if [ $NOINIT = 1 ]; then
+if [ ! $NOINIT ]; then
 	cd $LOCATION_ROOT && make -f Makefile.cvs
 	make -f Makefile.cvs dist
 	./configure || exit 1;
