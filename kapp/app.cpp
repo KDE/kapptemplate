@@ -11,8 +11,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <qdragobject.h>
 #include <qlineedit.h>
-#include <qprinter.h>
-#include <qprintdialog.h>
+#include <kprinter.h>
 #include <qpainter.h>
 #include <qpaintdevicemetrics.h>
 
@@ -205,8 +204,8 @@ void ${APP_NAME}::filePrint()
     // this slot is called whenever the File->Print menu is selected,
     // the Print shortcut is pressed (usually CTRL+P) or the Print toolbar
     // button is clicked
-    if (!m_printer) m_printer = new QPrinter;
-    if (QPrintDialog::getPrinterSetup(m_printer))
+    if (!m_printer) m_printer = new KPrinter;
+    if (m_printer->setup(this))
     {
         // setup the printer.  with Qt, you always "print" to a
         // QPainter.. whether the output medium is a pixmap, a screen,

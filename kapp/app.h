@@ -9,10 +9,10 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 
 #include <kapp.h>
 #include <kmainwindow.h>
- 
+
 #include "${APP_NAME_LC}view.h"
 
-class QPrinter;
+class KPrinter;
 class KToggleAction;
 class KURL;
 
@@ -87,7 +87,7 @@ private:
 private:
     ${APP_NAME}View *m_view;
 
-    QPrinter   *m_printer;
+    KPrinter   *m_printer;
     KToggleAction *m_toolbarAction;
     KToggleAction *m_statusbarAction;
 };
