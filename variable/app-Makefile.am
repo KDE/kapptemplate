@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/Makefile.am
 
 # this has all of the subdirectories that make will recurse into.  if
 # there are none, comment this out
-SUBDIRS = pics doc
+SUBDIRS = . pics doc
 
 # this is the program that gets installed.  it's name is used for all
 # of the other Makefile.am variables
@@ -34,17 +34,12 @@ ${APP_NAME_LC}_client_SOURCES = ${APP_NAME_LC}_client.cpp
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
 
-# if you "make distclean", this files get removed. If you want to remove
-# them while "make clean", use CLEANFILES
-DISTCLEANFILES = \$(METASOURCES)
-
-# make messages.po. Move this one to ../po/ and "make merge" in po
-# the -x is for skipping messages already translated in kdelibs
-messages:
-	\$(XGETTEXT) -C -ki18n -x \$(includedir)/kde.pot \$(${APP_NAME_LC}_SOURCES) && mv messages.po ../po/${APP_NAME_LC}.pot
+messages: rc.cpp
+	\$(XGETTEXT) *.cpp -o \$(podir)/${APP_NAME_LC}.pot
 
 KDE_ICON = $APP_NAME_LC
 
  # this is where the kdelnk file will go 
 kdelnkdir   = \$(kde_appsdir)/Utilities
 kdelnk_DATA = ${APP_NAME_LC}.desktop
+
