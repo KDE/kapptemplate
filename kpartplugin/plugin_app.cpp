@@ -78,11 +78,15 @@ KPluginFactory::KPluginFactory( QObject* parent, const char* name )
   s_instance = new KInstance( "KPluginFactory" );
 }
 
-QObject* KPluginFactory::create( QObject* parent, const char* name, const char*, const QStringList & )
+KPluginFactory::~KPluginFactory()
 {
-    QObject *obj = new Plugin${APP_NAME}( parent, name );
-    emit objectCreated( obj );
-    return obj;
+  delete s_instance;
+  s_instance = 0;
+}
+
+QObject* KPluginFactory::createObject( QObject* parent, const char* name, const char*, const QStringList & )
+{
+  return new Plugin${APP_NAME}( parent, name );
 }
 
 extern "C"

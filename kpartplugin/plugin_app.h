@@ -22,9 +22,9 @@ class KPluginFactory : public KLibFactory
     Q_OBJECT
 public:
     KPluginFactory( QObject* parent = 0, const char* name = 0 );
-    ~KPluginFactory() {};
+    virtual ~KPluginFactory()
 
-    virtual QObject* create( QObject* parent = 0, const char* pname = 0, const char* name = "QObject", const QStringList &args = QStringList() );
+    virtual QObject* createObject( QObject* parent = 0, const char* pname = 0, const char* name = "QObject", const QStringList &args = QStringList() );
 
 private:
     static KInstance* s_instance;
