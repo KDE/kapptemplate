@@ -13,7 +13,7 @@ static const char version[] = "v${APP_VERSION}";
 
 static KCmdLineOptions options[] =
 {
-    { "+[URL]", I18N_NOOP( "Document to open." ), 0 },
+    { "+[URL]", I18N_NOOP( "Document to open" ), 0 },
     KCmdLineLastOption
 };
 
