@@ -47,9 +47,6 @@ ${APP_NAME}::${APP_NAME}()
     // then, setup our actions
     setupActions();
 
-    // and a status bar
-    statusBar()->show();
-
     // apply the saved mainwindow settings, if any, and ask the mainwindow
     // to automatically save settings if changed: window size, toolbar
     // position, icon size, etc.
@@ -103,9 +100,9 @@ void ${APP_NAME}::setupActions()
     KStdAction::print(this, SLOT(filePrint()), actionCollection());
     KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    m_toolbarAction = KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
-    m_statusbarAction = KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
-
+    createStandardStatusBarAction();
+    setStandardToolBarMenuEnabled(true);
+    
     KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
     KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
@@ -226,26 +223,6 @@ void ${APP_NAME}::filePrint()
         // and send the result to the printer
         p.end();
     }
-}
-
-void ${APP_NAME}::optionsShowToolbar()
-{
-    // this is all very cut and paste code for showing/hiding the
-    // toolbar
-    if (m_toolbarAction->isChecked())
-        toolBar()->show();
-    else
-        toolBar()->hide();
-}
-
-void ${APP_NAME}::optionsShowStatusbar()
-{
-    // this is all very cut and paste code for showing/hiding the
-    // statusbar
-    if (m_statusbarAction->isChecked())
-        statusBar()->show();
-    else
-        statusBar()->hide();
 }
 
 void ${APP_NAME}::optionsConfigureKeys()

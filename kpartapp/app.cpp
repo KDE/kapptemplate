@@ -31,9 +31,6 @@ ${APP_NAME}::${APP_NAME}()
     // then, setup our actions
     setupActions();
 
-    // and a status bar
-    statusBar()->show();
-
     // this routine will find and load our Part.  it finds the Part by
     // name which is a bad idea usually.. but it's alright in this
     // case since our Part is made for this Shell
@@ -87,9 +84,9 @@ void ${APP_NAME}::setupActions()
 
     KStdAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    m_toolbarAction = KStdAction::showToolbar(this, SLOT(optionsShowToolbar()), actionCollection());
-    m_statusbarAction = KStdAction::showStatusbar(this, SLOT(optionsShowStatusbar()), actionCollection());
-
+    createStandardStatusBarAction();
+    setStandardToolBarMenuEnabled(true);
+    
     KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
     KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
@@ -123,27 +120,6 @@ void ${APP_NAME}::fileNew()
     {
         (new ${APP_NAME})->show();
     };
-}
-
-
-void ${APP_NAME}::optionsShowToolbar()
-{
-    // this is all very cut and paste code for showing/hiding the
-    // toolbar
-    if (m_toolbarAction->isChecked())
-        toolBar()->show();
-    else
-        toolBar()->hide();
-}
-
-void ${APP_NAME}::optionsShowStatusbar()
-{
-    // this is all very cut and paste code for showing/hiding the
-    // statusbar
-    if (m_statusbarAction->isChecked())
-        statusBar()->show();
-    else
-        statusBar()->hide();
 }
 
 void ${APP_NAME}::optionsConfigureKeys()

@@ -10,8 +10,6 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include <kapplication.h>
 #include <kparts/mainwindow.h>
 
-class KToggleAction;
-
 /**
  * This is the application "Shell".  It has a menubar, toolbar, and
  * statusbar but relies on the "Part" to do all the real work.
@@ -56,8 +54,6 @@ protected:
 private slots:
     void fileNew();
     void fileOpen();
-    void optionsShowToolbar();
-    void optionsShowStatusbar();
     void optionsConfigureKeys();
     void optionsConfigureToolbars();
 
@@ -69,9 +65,6 @@ private:
 
 private:
     KParts::ReadWritePart *m_part;
-
-    KToggleAction *m_toolbarAction;
-    KToggleAction *m_statusbarAction;
 };
 
 #endif // ${APP_NAME_UC}_H

@@ -13,7 +13,6 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include "${APP_NAME_LC}view.h"
 
 class KPrinter;
-class KToggleAction;
 class KURL;
 
 /**
@@ -71,8 +70,6 @@ private slots:
     void fileSave();
     void fileSaveAs();
     void filePrint();
-    void optionsShowToolbar();
-    void optionsShowStatusbar();
     void optionsConfigureKeys();
     void optionsConfigureToolbars();
     void optionsPreferences();
@@ -89,8 +86,6 @@ private:
     ${APP_NAME}View *m_view;
 
     KPrinter   *m_printer;
-    KToggleAction *m_toolbarAction;
-    KToggleAction *m_statusbarAction;
 };
 
 #endif // ${APP_NAME_UC}_H
