@@ -1,11 +1,11 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC.lsm...";
 cat << EOF > $LOCATION_ROOT/$APP_NAME_LC.lsm
-Begin3
+Begin4
 Title:          $APP_NAME -- Some description
 Version:        $APP_VERSION
-Entered-date:   
+Entered-date:   YYYY-MM-DD
 Description:    
-Keywords:       KDE2 Qt
+Keywords:       KDE3 Qt
 Author:         $AUTHOR <$EMAIL>
 Maintained-by:  $AUTHOR <$EMAIL>
 Home-page:      
