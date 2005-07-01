@@ -1,3 +1,6 @@
+//Added by qt3to4:
+#include <QDragEnterEvent>
+#include <QDropEvent>
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 /*
@@ -11,7 +14,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <kprinter.h>
 #include <qpainter.h>
-#include <qpaintdevicemetrics.h>
+#include <q3paintdevicemetrics.h>
 
 #include <kdeversion.h>
 #include <kglobal.h>
@@ -213,7 +216,7 @@ void ${APP_NAME}::filePrint()
         p.begin(m_printer);
 
         // we let our view do the actual printing
-        QPaintDeviceMetrics metrics(m_printer);
+        Q3PaintDeviceMetrics metrics(m_printer);
         m_view->print(&p, metrics.height(), metrics.width());
 
         // and send the result to the printer
