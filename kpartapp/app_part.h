@@ -8,7 +8,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.h
 class QWidget;
 class QPainter;
 class KURL;
-class QMultiLineEdit;
+class Q3MultiLineEdit;
 class KAboutData;
 
 /**
@@ -63,7 +63,7 @@ protected slots:
     void fileSaveAs();
 
 private:
-    QMultiLineEdit *m_widget;
+    Q3MultiLineEdit *m_widget;
 };
 
 #endif // ${APP_NAME_UC}PART_H

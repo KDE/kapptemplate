@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}pref.h
 #define ${APP_NAME_UC}PREF_H
 
 #include <kdialogbase.h>
-#include <qframe.h>
+#include <q3frame.h>
 
 class ${APP_NAME}PrefPageOne;
 class ${APP_NAME}PrefPageTwo;
@@ -20,14 +20,14 @@ private:
     ${APP_NAME}PrefPageTwo *m_pageTwo;
 };
 
-class ${APP_NAME}PrefPageOne : public QFrame
+class ${APP_NAME}PrefPageOne : public Q3Frame
 {
     Q_OBJECT
 public:
     ${APP_NAME}PrefPageOne(QWidget *parent = 0);
 };
 
-class ${APP_NAME}PrefPageTwo : public QFrame
+class ${APP_NAME}PrefPageTwo : public Q3Frame
 {
     Q_OBJECT
 public:
