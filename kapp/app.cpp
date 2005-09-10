@@ -117,11 +117,7 @@ void ${APP_NAME}::saveProperties(KConfig *config)
     // later when this app is restored
 
     if (!m_view->currentURL().isNull()) {
-#if KDE_IS_VERSION(3,1,3)
         config->writePathEntry("lastURL", m_view->currentURL());
-#else
-        config->writeEntry("lastURL", m_view->currentURL());
-#endif
     }
 }
 
