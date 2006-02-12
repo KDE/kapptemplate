@@ -66,7 +66,7 @@ ${APP_NAME}::~${APP_NAME}()
     delete m_printer;
 }
 
-void ${APP_NAME}::load(const KURL& url)
+void ${APP_NAME}::load(const KUrl& url)
 {
     QString target;
     // the below code is what you should normally do.  in this
@@ -151,7 +151,7 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
     if (KURLDrag::decode(event, urls) && !urls.isEmpty())
     {
         // okay, we have a URI.. process it
-        const KURL &url = urls.first();
+        const KUrl &url = urls.first();
 
         // load in the file
         load(url);
@@ -173,7 +173,7 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KURL url = KURLRequesterDlg::getURL(QString::null, this, i18n("Open Location") );
+    KUrl url = KUrlRequesterDlg::getURL(QString::null, this, i18n("Open Location") );
     if (!url.isEmpty())
         m_view->openURL(url);
 }
@@ -190,7 +190,7 @@ void ${APP_NAME}::fileSave()
 void ${APP_NAME}::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
-    KURL file_url = KFileDialog::getSaveURL();
+    KUrl file_url = KFileDialog::getSaveURL();
     if (!file_url.isEmpty() && file_url.isValid())
     {
         // save your info, here

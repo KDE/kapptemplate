@@ -49,7 +49,7 @@ void Plugin${APP_NAME}::slotAction()
 
     // This plugin only uses the URL.  You may use whatever data you
     // need.
-    KURL url( part->url() );
+    KUrl url( part->url() );
 
     // This is a standard check to make sure we are dealing with a
     // valid URL
@@ -67,7 +67,7 @@ void Plugin${APP_NAME}::slotAction()
 // translate the current page with AltaVista's BabelFish.  You will
 // definitely want to change this.
 // BEGIN
-    KURL work( "http://babel.altavista.com/translate.dyn" );
+    KUrl work( "http://babel.altavista.com/translate.dyn" );
 
     QString query( "urltext=" );
     query += KURL::encode_string( url.url() );

@@ -72,7 +72,7 @@ ${APP_NAME}::~${APP_NAME}()
 {
 }
 
-void ${APP_NAME}::load(const KURL& url)
+void ${APP_NAME}::load(const KUrl& url)
 {
     m_part->openURL( url );
 }
@@ -151,7 +151,7 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KURL url =
+    KUrl url =
         KFileDialog::getOpenURL( QString::null, QString::null, this );
 
     if (url.isEmpty() == false)

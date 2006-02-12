@@ -48,7 +48,7 @@ public:
     /**
      * Random 'set' function
      */
-    virtual void openURL(const KURL& url);
+    virtual void openURL(const KUrl& url);
 
     /**
      * Print this view to any medium -- paper or not

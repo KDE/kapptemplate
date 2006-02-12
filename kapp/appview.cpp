@@ -88,10 +88,10 @@ QString ${APP_NAME}View::currentURL()
 
 void ${APP_NAME}View::openURL(QString url)
 {
-    openURL(KURL(url));
+    openURL(KUrl(url));
 }
 
-void ${APP_NAME}View::openURL(const KURL& url)
+void ${APP_NAME}View::openURL(const KUrl& url)
 {
     m_html->openURL(url);
 }
