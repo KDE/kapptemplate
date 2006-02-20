@@ -131,7 +131,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
     QString url = config->readPathEntry("lastURL");
 
     if (!url.isEmpty())
-        m_view->openURL(KURL::fromPathOrURL(url));
+        m_view->openURL(KUrl::fromPathOrURL(url));
 }
 
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
@@ -145,7 +145,7 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
     // this is a very simplistic implementation of a drop event.  we
     // will only accept a dropped URL.  the Qt dnd code can do *much*
     // much more, so please read the docs there
-    KURL::List urls;
+    KUrl::List urls;
 
     // see if we can decode a URI.. if not, just ignore it
     if (KURLDrag::decode(event, urls) && !urls.isEmpty())

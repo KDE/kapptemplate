@@ -7,7 +7,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.h
 
 class QWidget;
 class QPainter;
-class KURL;
+class KUrl;
 class Q3MultiLineEdit;
 class KAboutData;
 

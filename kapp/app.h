@@ -16,7 +16,7 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}.h
 #include "${APP_NAME_LC}view.h"
 
 class KPrinter;
-class KURL;
+class KUrl;
 
 /**
  * This class serves as the main window for ${APP_NAME}.  It handles the

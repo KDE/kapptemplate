@@ -70,7 +70,7 @@ void Plugin${APP_NAME}::slotAction()
     KUrl work( "http://babel.altavista.com/translate.dyn" );
 
     QString query( "urltext=" );
-    query += KURL::encode_string( url.url() );
+    query += KUrl::encode_string( url.url() );
     work.setQuery( query );
 // END
 
