@@ -152,7 +152,7 @@ void ${APP_NAME}::fileOpen()
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
     KUrl url =
-        KFileDialog::getOpenURL( QString::null, QString::null, this );
+        KFileDialog::getOpenUrl( QString::null, QString::null, this );
 
     if (url.isEmpty() == false)
     {
