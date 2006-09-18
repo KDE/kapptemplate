@@ -15,11 +15,11 @@ FILE(READ ${CMAKE_SOURCE_DIR}/kapptemplate/VERSION VERSION)
 	#cat $(srcdir)/kapptemplate.in >> kapptemplate; \
 	#chmod 755 kapptemplate
 
-FILE(WRITE ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate "#!/usr/bin/env bash \nINSTALLED_SHARE_DIR=${DATA_INSTALL_DIR}/kapptemplate \nKAPPTEMPLATEVERSION=${VERSION}")
+FILE(WRITE ${CMAKE_BINARY_DIR}/kapptemplate/kapptemplate "#!/usr/bin/env bash \nINSTALLED_SHARE_DIR=${DATA_INSTALL_DIR}/kapptemplate \nKAPPTEMPLATEVERSION=${VERSION}")
 #put kapptemplate.in n a var and then append it to kapptemplate - maybe that could be done in 1 command
 FILE(READ ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate.in temp)
-FILE(APPEND ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate ${temp} )
-EXECUTE_PROCESS(COMMAND chmod 755 ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate)
+FILE(APPEND ${CMAKE_BINARY_DIR}/kapptemplate/kapptemplate ${temp} )
+EXECUTE_PROCESS(COMMAND chmod 755 ${CMAKE_BINARY_DIR}/kapptemplate/kapptemplate)
 
 
 ########### install files ###############
