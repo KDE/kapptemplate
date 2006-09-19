@@ -15,18 +15,12 @@ FILE(READ ${CMAKE_SOURCE_DIR}/kapptemplate/VERSION VERSION)
 	#cat $(srcdir)/kapptemplate.in >> kapptemplate; \
 	#chmod 755 kapptemplate
 
-#This generates the kapptemplate script from kapptemplate.in in the src dir; it'll get installed after
-FILE(WRITE ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate "#!/usr/bin/env bash \nINSTALLED_SHARE_DIR=${DATA_INSTALL_DIR}/kapptemplate \nKAPPTEMPLATEVERSION=${VERSION}")
+FILE(WRITE ${CMAKE_CURRENT_BINARY_DIR}/kapptemplate "#!/usr/bin/env bash \nINSTALLED_SHARE_DIR=${DATA_INSTALL_DIR}/kapptemplate \nKAPPTEMPLATEVERSION=${VERSION}")
 #put kapptemplate.in n a var and then append it to kapptemplate - maybe that could be done in 1 command
 FILE(READ ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate.in temp)
-FILE(APPEND ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate ${temp} )
-EXECUTE_PROCESS(COMMAND chmod 755 ${CMAKE_SOURCE_DIR}/kapptemplate/kapptemplate)
+FILE(APPEND ${CMAKE_CURRENT_BINARY_DIR}/kapptemplate ${temp} )
 
-
-########### install files ###############
-
-#bin_SCRIPTS = kapptemplate
-install(PROGRAMS kapptemplate DESTINATION ${BIN_INSTALL_DIR})
+install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/kapptemplate DESTINATION ${BIN_INSTALL_DIR} PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ)
 
 #databindir = $(kde_datadir)/kapptemplate/bin
 #databin_SCRIPTS = mkinstalldirs
