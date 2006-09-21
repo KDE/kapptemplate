@@ -345,11 +345,6 @@ function BuildModuleLists
         exit 1;
     fi
 
-    # Find the 'admin' files
-    DIRECTORY=$SHARE_DIR/admin;
-    GetFileList
-    ADMIN_FILES=$FILES;
-
     # Find the 'appframework' files
     DIRECTORY=$SHARE_DIR/appframework;
     GetFileList
@@ -420,7 +415,7 @@ function CreateAppFramework
 #
 # This is run the first time a user uses kapptemplate.  It gets a few
 # default values and installs them into $HOME/.kapptemplate
-# 
+#
 # INPUT: $KAPPTEMPLATEVERSION
 #
 ###########################################################################
