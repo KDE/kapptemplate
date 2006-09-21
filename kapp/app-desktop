@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Name=${APP_NAME}
-Exec=${APP_NAME_LC} %i %m -caption "%c"
+Exec=${APP_NAME_LC} %i -caption "%c"
 Icon=${APP_NAME_LC}
 Type=Application
 DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
