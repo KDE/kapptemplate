@@ -15,8 +15,8 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp
 #include <krun.h>
 
 ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
-    : QWidget(parent),
-      DCOPObject("${APP_NAME}Iface")
+    : QWidget(parent)
+      //DCOPObject("${APP_NAME}Iface")
 {
     // setup our layout manager to automatically add our widgets
     QHBoxLayout *top_layout = new QHBoxLayout(this);

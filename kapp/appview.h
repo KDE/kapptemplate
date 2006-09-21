@@ -5,7 +5,6 @@ cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/${APP_NAME_LC}view.h
 
 #include <qwidget.h>
 #include <kparts/part.h>
-#include <${APP_NAME_LC}iface.h>
 
 class QPainter;
 class KUrl;
@@ -21,7 +20,7 @@ class KUrl;
  * @author $AUTHOR <$EMAIL>
  * @version $APP_VERSION
  */
-class ${APP_NAME}View : public QWidget, public ${APP_NAME}Iface
+class ${APP_NAME}View : public QWidget
 {
     Q_OBJECT
 public:
