@@ -17,17 +17,17 @@ kde4_add_ui_files(${APP_NAME_LC}_SRCS ${APP_NAME_LC}view_base.ui prefs_base.ui)
 
 kde4_add_kcfg_files(${APP_NAME_LC}_SRCS settings.kcfgc )
 
-kde4_add_executable(${APP_NAME_LC} ${APP_NAME_LC}_SRCS)
+kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
 
-target_link_libraries(${APP_NAME_LC}  ${KDE4_KDEUI_LIBS} kdeeducore )
+target_link_libraries(${APP_NAME_LC} \${KDE4_KDEUI_LIBS} kdeeducore )
 
-install(TARGETS ${APP_NAME_LC}  DESTINATION ${BIN_INSTALL_DIR} )
+install(TARGETS ${APP_NAME_LC} DESTINATION \${BIN_INSTALL_DIR} )
 
 
 ########### install files ###############
 
-install( FILES ${APP_NAME_LC}.desktop  DESTINATION  ${XDG_APPS_DIR} )
-install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
+install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_DIR} )
+install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  \${KCFG_INSTALL_DIR} )
 install( FILES ${APP_NAME_LC}ui.rc  DESTINATION  ${DATA_INSTALL_DIR}/${APP_NAME_LC} )
 
 

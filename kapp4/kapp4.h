@@ -10,7 +10,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 #include <kapplication.h>
 #include <kmainwindow.h>
 
-#include "${APP_NAME}view.h"
+#include "${APP_NAME_LC}view.h"
 #include "ui_prefs_base.h"
 
 class KPrinter;

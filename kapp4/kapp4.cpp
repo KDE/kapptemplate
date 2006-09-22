@@ -90,5 +90,5 @@ void ${APP_NAME}::optionsPreferences()
         dialog->show();
 }
 
-#include "${APP_NAME}.moc"
+#include "${APP_NAME_LC}.moc"
 
