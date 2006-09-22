@@ -32,6 +32,7 @@ function Usage
     $ECHO "    --kpart-app     Create full KPart application";
     $ECHO "    --kpart-plugin  Create KPart plugin framework";
     $ECHO "    --existing      Convert existing source to KDE framework";
+    $ECHO "    --kapp4         Create full KDE4 application";
 }
 
 ###########################################################################
@@ -72,6 +73,8 @@ function ParseCommandLine
            WHICH_ONE=3;;
         --existing)
            WHICH_ONE=4;;
+        --kapp4)
+           WHICH_ONE=5;;
         *)
            $ECHO "Unknown option $1";
            Usage;
@@ -345,6 +348,13 @@ function BuildModuleLists
         exit 1;
     fi
 
+    if [ ! -f "$INCLUDE_DIR/kapp4template.module" ];
+    then
+        $ECHO "The 'kapp4template.module' file can't be found.";
+        $ECHO;
+        exit 1;
+    fi
+
     # Find the 'appframework' files
     DIRECTORY=$SHARE_DIR/appframework;
     GetFileList
@@ -369,6 +379,11 @@ function BuildModuleLists
     DIRECTORY=$SHARE_DIR/kpartapp;
     GetFileList
     KPARTAPP_FILES=$FILES;
+
+    # Find the 'kapp4' files
+    DIRECTORY=$SHARE_DIR/kapp4;
+    GetFileList
+    KAPP4_FILES=$FILES;
 }
 
 ###########################################################################
@@ -388,24 +403,24 @@ function CreateAppFramework
     $ECHO "Creating directory $LOCATION_ROOT...";
     $MKDIR $LOCATION_ROOT || exit 1;
 
-    $ECHO "Creating directory $LOCATION_ROOT/admin...";
-    $MKDIR $LOCATION_ROOT/admin || exit 1;
+    #$ECHO "Creating directory $LOCATION_ROOT/admin...";
+    #$MKDIR $LOCATION_ROOT/admin || exit 1;
 
-    $ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC...";
-    $MKDIR $LOCATION_ROOT/$APP_NAME_LC || exit 1;
+    #$ECHO "Creating directory $LOCATION_ROOT/$APP_NAME_LC...";
+    #$MKDIR $LOCATION_ROOT/$APP_NAME_LC || exit 1;
 
-    $ECHO "Creating directory $LOCATION_ROOT/po...";
-    $MKDIR $LOCATION_ROOT/po || exit 1;
+    #$ECHO "Creating directory $LOCATION_ROOT/po...";
+    #$MKDIR $LOCATION_ROOT/po || exit 1;
 
-    for FILE in $ADMIN_FILES;
-    do
-        $ECHO "Copying $LOCATION_ROOT/$FILE...";
-        cp -p $SHARE_DIR/admin/$FILE $LOCATION_ROOT/admin/$FILE || exit 1;
-    done
+    #for FILE in $ADMIN_FILES;
+    #do
+       # $ECHO "Copying $LOCATION_ROOT/$FILE...";
+        #cp -p $SHARE_DIR/admin/$FILE $LOCATION_ROOT/admin/$FILE || exit 1;
+    #done
 
-    for FILE in $APPFRAMEWORK_FILES;
-    do
-        . $SHARE_DIR/appframework/$FILE || exit 1;
+    #for FILE in $APPFRAMEWORK_FILES;
+    #do
+        #. $SHARE_DIR/appframework/$FILE || exit 1;
     done
 }
 
