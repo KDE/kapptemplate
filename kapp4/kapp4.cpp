@@ -27,7 +27,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 ${APP_NAME}::${APP_NAME}()
     : KMainWindow(),
-      m_view(new ${APP_NAME_LC}View(this)),
+      m_view(new ${APP_NAME}View(this)),
       m_printer(0)
 {
     // accept dnd

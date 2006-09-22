@@ -9,7 +9,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
 
 ${APP_NAME}View::${APP_NAME}View(QWidget *)
 {
-	ui_${APP_NAME}view_base.setupUi(this);
+	ui_${APP_NAME_LC}view_base.setupUi(this);
 	settingsChanged();
 	setAutoFillBackground(true);
 }

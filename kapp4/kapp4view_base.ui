@@ -1,8 +1,8 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view_base.ui...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
 <ui version="4.0" >
- <class>${APP_NAME}view_base</class>
- <widget class="QWidget" name="${APP_NAME}view_base" >
+ <class>${APP_NAME_LC}view_base</class>
+ <widget class="QWidget" name="${APP_NAME_LC}view_base" >
   <property name="geometry" >
    <rect>
     <x>0</x>

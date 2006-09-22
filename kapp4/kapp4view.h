@@ -1,8 +1,8 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view.h...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.h
 
-#ifndef _${APP_NAME_UL}VIEW_H_
-#define _${APP_NAME_UL}VIEW_H_
+#ifndef _${APP_NAME_UC}VIEW_H_
+#define _${APP_NAME_UC}VIEW_H_
 
 #include <QWidget>
 
@@ -21,7 +21,7 @@ class KURL;
  * @version %{VERSION}
  */
 
-class ${APP_NAME}View : public QWidget, public Ui::${APP_NAME}view_base
+class ${APP_NAME}View : public QWidget, public Ui::${APP_NAME_LC}view_base
 {
     Q_OBJECT
 public:
@@ -36,7 +36,7 @@ public:
     virtual ~${APP_NAME}View();
 
 private:
-    Ui::${APP_NAME}view_base ui_${APP_NAME}view_base;
+    Ui::${APP_NAME_LC}view_base ui_${APP_NAME_LC}view_base;
 
 signals:
     /**
