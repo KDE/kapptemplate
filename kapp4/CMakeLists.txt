@@ -1,0 +1,1 @@
+install(FILES kapp4.cpp kapp4.h kapp4-CMakeLists.txt main.cpp kapp4-desktop kapp4view.cpp kapp4view.h settings.kcfgc kapp4ui.rc kapp4-desktop kapp4.kcfg prefs_base.ui kapp4view_base.ui DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/kapp4)
