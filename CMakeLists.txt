@@ -3,6 +3,7 @@ add_subdirectory( existing )
 add_subdirectory( kapp) 
 add_subdirectory( kpartapp)
 add_subdirectory( kpartplugin)
+add_subdirectory( kapp4)
 
 FILE(READ ${CMAKE_SOURCE_DIR}/kapptemplate/VERSION VERSION)
 

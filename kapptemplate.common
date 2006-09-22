@@ -421,7 +421,7 @@ function CreateAppFramework
     #for FILE in $APPFRAMEWORK_FILES;
     #do
         #. $SHARE_DIR/appframework/$FILE || exit 1;
-    done
+    #done
 }
 
 ###########################################################################

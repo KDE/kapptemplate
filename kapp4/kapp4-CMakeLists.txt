@@ -1,8 +1,8 @@
 echo "Creating $LOCATION_ROOT/CMakeLists.txt...";
-cat << EOF > $LOCATION_ROOT/CMakeLists.txt
+cat << EOF > $LOCATION_ROOT/CMakeLists.txt;
 PROJECT(${APP_NAME_LC})
 FIND_PACKAGE(KDE4 REQUIRED)
-cat << INCLUDE_DIRECTORIES( ${CMAKE_SOURCE_DIR} ${KDE4_INCLUDE_DIR} ${QT_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}  ) >> $LOCATION_ROOT/CMakeLists.txt
+INCLUDE_DIRECTORIES( \${CMAKE_SOURCE_DIR} \${KDE4_INCLUDE_DIR} \${QT_INCLUDES} \${CMAKE_CURRENT_SOURCE_DIR} \${CMAKE_CURRENT_BINARY_DIR}  )
 
 set(${APP_NAME_LC}_SRCS
    ${APP_NAME_LC}.cpp
@@ -11,7 +11,7 @@ set(${APP_NAME_LC}_SRCS
    settings.cpp
  )
 
-kde4_automoc(${APP_NAME_LC}_SRCS)
+kde4_automoc(\${${APP_NAME_LC}_SRCS})
 
 kde4_add_ui_files(${APP_NAME_LC}_SRCS ${APP_NAME_LC}view_base.ui prefs_base.ui)
 

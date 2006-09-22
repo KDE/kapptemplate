@@ -51,8 +51,6 @@ CreateAppFramework
 # STEP 3:  GENERATE APP-SPECIFIC FILES
 #
 ###########################################################################
-$ECHO "APP_NAME_LC " ${APP_NAME_LC};
-$ECHO "APP_NAME " ${APP_NAME};
 
 for EXE_FILE in $KAPP4_FILES;
 do
