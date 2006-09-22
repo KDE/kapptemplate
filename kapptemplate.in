@@ -113,7 +113,8 @@ then
     $ECHO "2. Full featured KPart application";
     $ECHO "3. KPart plugin";
     $ECHO "4. Convert existing source to automake/autoconf framework";
-    $ECHO "Choose [1-4]: \c";
+    $ECHO "5. KDE4 application";
+    $ECHO "Choose [1-5]: \c";
     read WHICH_ONE;
     $ECHO;
 fi;
@@ -126,6 +127,8 @@ case $WHICH_ONE in
         . $INCLUDE_DIR/kpartplugin.module;;
     4)
         . $INCLUDE_DIR/existing.module;;
+    5)
+        . $INCLUDE_DIR/kapp4template.module;;
     *)
         . $INCLUDE_DIR/kapptemplate.module;;
 esac
