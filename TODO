@@ -1,0 +1,27 @@
+September 2006
+by annma - annemarie.mahfouf@free.fr
+
+This is what I think needs to be done in KAppTemplate for the KDE4 release.
+
+** Write a doc for newdeveloper.kde.org to explain what the templates are and how to generate them.
+
+KAPP4
+kapp4 is a kde4 base application featuring KConfig XT and a GUI with a ui file from designer. Will need update if config system changes. Should include all base KDE4 technologies.
+
+What is missing:
+- add dbus support
+- icons subdir in kapp4
+- po subdir in kapp4
+- doc subdir in kapp4
+
+KPARTAPP
+- make a similar template
+
+EXISTING
+- port (should not be too difficult)
+
+KPARTPLUGIN
+- is it necessary?
+
+APPFRAMEWORK
+- suppress folder as it installs automake-related stuff
