@@ -4,6 +4,7 @@ by annma - annemarie.mahfouf@free.fr
 This is what I think needs to be done in KAppTemplate for the KDE4 release.
 
 ** Write a doc for newdeveloper.kde.org to explain what the templates are and how to generate them. Base that on the KDE-Women article at http://women.kde.org/articles/tutorials/kde4_template/
+** Maybe code a GUI wizard-like interface for it
 
 KAPP4
 kapp4 is a kde4 base application featuring KConfig XT and a GUI with a ui file from designer. Will need update if config system changes. Should include all base KDE4 technologies.
@@ -17,14 +18,14 @@ What is missing:
 - drag & drop? 
 
 KAPP
-- see if KAPP4 does the job - if so, remove. If not, port.
+- see if KAPP4 does the job - if so, remove. If not, port and make it different from kapp4.
 
 KPARTAPP
 - to port to kde4 and to modernize - same as above, should include the latest stuff
 
 EXISTING
 not sure what purpose it has...
-- port if someone convince me it's useful (should not be too difficult) 
+- port if someone convinces me it's useful (should not be too difficult to port) 
 
 KPARTPLUGIN
 - is it necessary to have that as a template? if so, port. If not, suppress
