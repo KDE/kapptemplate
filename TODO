@@ -28,7 +28,7 @@ not sure what purpose it has...
 - port if someone convinces me it's useful (should not be too difficult to port) 
 
 KPARTPLUGIN
-- is it necessary to have that as a template? if so, port. If not, suppress
+- ported to Cmake/KDE4 - find out how to "see" it.
 
 APPFRAMEWORK
 - suppress folder as it installs automake-related stuff
