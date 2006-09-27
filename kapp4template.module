@@ -57,5 +57,6 @@ do
     . $SHARE_DIR/kapp4/$EXE_FILE || exit 1;
 done
 
-$ECHO "DONE!";
-$ECHO "Please now run CMake and make";
+$ECHO "Project created! \n";
+$MKDIR $LOCATION_ROOT/build && cd $LOCATION_ROOT/build 
+$ECHO "In "$LOCATION_ROOT"/build , run cmake."
