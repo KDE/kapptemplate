@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.cpp...";
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.cpp
+echo "Creating $LOCATION_ROOT/plugin_${APP_NAME_LC}.cpp...";
+cat << EOF > $LOCATION_ROOT/plugin_${APP_NAME_LC}.cpp
 #include "plugin_${APP_NAME_LC}.h"
 
 #include <khtml_part.h>
@@ -13,9 +13,8 @@ typedef KGenericFactory<Plugin${APP_NAME}> ${APP_NAME}Factory;
 K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}plugin, 
                             ${APP_NAME}Factory( "${APP_NAME_LC}" ) );
 
-Plugin${APP_NAME}::Plugin${APP_NAME}( QObject* parent, const char* name,
-                                      const QStringList & /*args*/ )
-    : Plugin( parent, name )
+Plugin${APP_NAME}::Plugin${APP_NAME}( QObject* parent, const QStringList & )
+    : KParts::Plugin( parent )
 {
     // Instantiate all of your actions here.  These will appear in
     // Konqueror's menu and toolbars.
@@ -75,7 +74,7 @@ void Plugin${APP_NAME}::slotAction()
 // END
 
     // Finally, execute the request
-    part->openURL( work );
+    part->openUrl( work );
 }
 
 #include <plugin_${APP_NAME_LC}.moc>

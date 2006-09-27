@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h...";
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/plugin_${APP_NAME_LC}.h
+echo "Creating $LOCATION_ROOT/plugin_${APP_NAME_LC}.h...";
+cat << EOF > $LOCATION_ROOT/plugin_${APP_NAME_LC}.h
 #ifndef PLUGIN_${APP_NAME_UC}_H
 #define PLUGIN_${APP_NAME_UC}_H
 
@@ -9,8 +9,7 @@ class Plugin${APP_NAME} : public KParts::Plugin
 {
   Q_OBJECT
 public:
-  Plugin${APP_NAME}( QObject* parent = 0, const char* name = 0, 
-                     const QStringList &args = QStringList() );
+  Plugin${APP_NAME}( QObject* parent, const QStringList &);
   virtual ~Plugin${APP_NAME}();
 
 public slots:

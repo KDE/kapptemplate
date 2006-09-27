@@ -1,0 +1,25 @@
+echo "Creating $LOCATION_ROOT/CMakeLists.txt...";
+cat << EOF > $LOCATION_ROOT/CMakeLists.txt
+
+PROJECT(${APP_NAME_LC})
+FIND_PACKAGE(KDE4 REQUIRED)
+
+INCLUDE_DIRECTORIES( \${CMAKE_SOURCE_DIR} \${KDE4_INCLUDE_DIR} \${QT_INCLUDES} \${CMAKE_CURRENT_SOURCE_DIR} \${CMAKE_CURRENT_BINARY_DIR}  )
+
+kde4_install_icons( \${ICON_INSTALL_DIR}   )
+
+set(lib${APP_NAME_LC}plugin_la_SRCS
+	plugin_${APP_NAME_LC}.cpp)
+
+kde4_automoc(\${lib${APP_NAME_LC}plugin_la_SRCS})
+
+kde4_add_plugin(lib${APP_NAME_LC}plugin_la \${lib${APP_NAME_LC}plugin_la_SRCS})
+kde4_install_libtool_file( \${PLUGIN_INSTALL_DIR} lib${APP_NAME_LC}plugin_la )
+
+target_link_libraries(lib${APP_NAME_LC}plugin_la \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} \${KDE4_KHTML_LIBS} \${KDE4_PLUGIN} )
+
+install(TARGETS lib${APP_NAME_LC}plugin_la  DESTINATION \${PLUGIN_INSTALL_DIR} )
+
+#pluginsdir = \$(kde_datadir)/khtml/kpartplugins
+#plugins_DATA = plugin_${APP_NAME_LC}.rc
+install( FILES plugin_${APP_NAME_LC}.rc  DESTINATION  \${DATA_INSTALL_DIR}/khtml/kpartplugins )
