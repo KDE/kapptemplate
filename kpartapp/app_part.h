@@ -26,8 +26,7 @@ public:
     /**
      * Default constructor
      */
-    ${APP_NAME}Part(QWidget *parentWidget, const char *widgetName,
-                    QObject *parent, const char *name, const QStringList &args);
+    ${APP_NAME}Part(QWidget *parentWidget,QObject *parent, const QStringList &);
 
     /**
      * Destructor
@@ -58,6 +57,7 @@ protected:
      * This must be implemented by each read-write part
      */
     virtual bool saveFile();
+    KAction *save;
 
 protected slots:
     void fileSaveAs();

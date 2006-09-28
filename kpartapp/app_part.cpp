@@ -17,23 +17,21 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 typedef KParts::GenericFactory<${APP_NAME}Part> ${APP_NAME}PartFactory;
 K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}part, ${APP_NAME}PartFactory )
 
-${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, const char *widgetName,
-                                  QObject *parent, const char *name,
-                                  const QStringList & /*args*/ )
-    : KParts::ReadWritePart(parent, name)
+${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, QObject *parent, const QStringList & /*args*/ )
+    : KParts::ReadWritePart(parent)
 {
     // we need an instance
     setInstance( ${APP_NAME}PartFactory::instance() );
 
     // this should be your custom internal widget
-    m_widget = new Q3MultiLineEdit( parentWidget, widgetName );
+    m_widget = new Q3MultiLineEdit( parentWidget);
 
     // notify the part that this is our internal widget
     setWidget(m_widget);
 
     // create our actions
     KStdAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
-    KStdAction::save(this, SLOT(save()), actionCollection());
+    save = KStdAction::save(this, SLOT(save()), actionCollection());
 
     // set our XML-UI resource file
     setXMLFile("${APP_NAME_LC}_part.rc");
@@ -68,7 +66,6 @@ void ${APP_NAME}Part::setReadWrite(bool rw)
 void ${APP_NAME}Part::setModified(bool modified)
 {
     // get a handle on our Save action and make sure it is valid
-    KAction *save = actionCollection()->action(KStdAction::stdName(KStdAction::Save));
     if (!save)
         return;
 
@@ -104,7 +101,7 @@ bool ${APP_NAME}Part::openFile()
     // of a raw QDataStream
     QTextStream stream(&file);
     QString str;
-    while (!stream.eof())
+    while (!stream.atEnd())
         str += stream.readLine() + "\n";
 
     file.close();
@@ -113,7 +110,7 @@ bool ${APP_NAME}Part::openFile()
     m_widget->setText(str);
 
     // just for fun, set the status bar
-    emit setStatusBarText( m_url.prettyURL() );
+    emit setStatusBarText( m_url.prettyUrl() );
 
     return true;
 }
