@@ -18,8 +18,6 @@ kde4_install_libtool_file( \${PLUGIN_INSTALL_DIR} lib${APP_NAME_LC}plugin_la )
 
 target_link_libraries(lib${APP_NAME_LC}plugin_la \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} \${KDE4_KHTML_LIBS} \${KDE4_PLUGIN} )
 
+########### install files ###############
 install(TARGETS lib${APP_NAME_LC}plugin_la  DESTINATION \${PLUGIN_INSTALL_DIR} )
-
-#pluginsdir = \$(kde_datadir)/khtml/kpartplugins
-#plugins_DATA = plugin_${APP_NAME_LC}.rc
 install( FILES plugin_${APP_NAME_LC}.rc  DESTINATION  \${DATA_INSTALL_DIR}/khtml/kpartplugins )

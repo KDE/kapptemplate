@@ -1,0 +1,8 @@
+echo "Creating $LOCATION_ROOT/doc/CMakeLists.txt...";
+$MKDIR $LOCATION_ROOT/doc
+cat << EOF > $LOCATION_ROOT/doc/CMakeLists.txt
+
+#SUBDIRS = \$(AUTODIRS)
+#KDE_DOCS = $APP_NAME_LC
+#KDE_LANG = en
+
