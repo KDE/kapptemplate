@@ -23,7 +23,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kstatusbar.h>
 
 ${APP_NAME}::${APP_NAME}()
-    : KParts::MainWindow( 0L, "${APP_NAME}" )
+    : KParts::MainWindow( )
 {
     // set the shell's ui resource file
     setXMLFile("${APP_NAME_LC}_shell.rc");
@@ -40,7 +40,7 @@ ${APP_NAME}::${APP_NAME}()
         // now that the Part is loaded, we cast it to a Part to get
         // our hands on it
         m_part = static_cast<KParts::ReadWritePart *>(factory->create(this,
-                                "${APP_NAME_LC}_part", "KParts::ReadWritePart" ));
+                                "${APP_NAME_LC}_part" ));
 
         if (m_part)
         {
@@ -74,7 +74,7 @@ ${APP_NAME}::~${APP_NAME}()
 
 void ${APP_NAME}::load(const KUrl& url)
 {
-    m_part->openURL( url );
+    m_part->openUrl( url );
 }
 
 void ${APP_NAME}::setupActions()
@@ -124,7 +124,7 @@ void ${APP_NAME}::fileNew()
 
 void ${APP_NAME}::optionsConfigureKeys()
 {
-  KKeyDialog dlg( true,  this );
+  KKeyDialog dlg( KKeyChooser::AllActions, KKeyChooser::LetterShortcutsDisallowed, this );
   dlg.insert( actionCollection(), "${APP_NAME_LC}_shell.rc" );
   dlg.insert( m_part->actionCollection(), "${APP_NAME_LC}_part.rc" );
   (void) dlg.configure( true );
@@ -152,7 +152,7 @@ void ${APP_NAME}::fileOpen()
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
     KUrl url =
-        KFileDialog::getOpenUrl( QString::null, QString::null, this );
+        KFileDialog::getOpenUrl( KUrl(), QString::null, this );
 
     if (url.isEmpty() == false)
     {
