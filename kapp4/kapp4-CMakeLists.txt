@@ -10,7 +10,7 @@ set(${APP_NAME_LC}_SRCS
    ${APP_NAME_LC}view.cpp
  )
 
-kde4_automoc(\${${APP_NAME_LC}_SRCS})
+kde4_automoc(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
 
 kde4_add_ui_files(${APP_NAME_LC}_SRCS ${APP_NAME_LC}view_base.ui prefs_base.ui)
 
