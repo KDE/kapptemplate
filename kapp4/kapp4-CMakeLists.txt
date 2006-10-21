@@ -14,7 +14,7 @@ kde4_automoc(\${${APP_NAME_LC}_SRCS})
 
 kde4_add_ui_files(${APP_NAME_LC}_SRCS ${APP_NAME_LC}view_base.ui prefs_base.ui)
 
-kde4_add_kcfg_files(${APP_NAME_LC}_SRCS settings.kcfgc )
+kde4_add_kcfg_files(${APP_NAME_LC} ${APP_NAME_LC}_SRCS settings.kcfgc )
 
 kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
 
