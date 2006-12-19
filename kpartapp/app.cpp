@@ -15,7 +15,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kedittoolbar.h>
 
 #include <kaction.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 
 #include <klibloader.h>
 #include <kmessagebox.h>
@@ -79,16 +79,16 @@ void ${APP_NAME}::load(const KUrl& url)
 
 void ${APP_NAME}::setupActions()
 {
-    KStdAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStdAction::open(this, SLOT(fileOpen()), actionCollection());
+    KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
+    KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
 
-    KStdAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
 
-    KStdAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
-    KStdAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
+    KStandardAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
+    KStandardAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
 
 void ${APP_NAME}::saveProperties(KConfig* /*config*/)

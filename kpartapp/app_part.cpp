@@ -6,7 +6,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 
 #include <kinstance.h>
 #include <kaction.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 #include <kfiledialog.h>
 #include <kparts/genericfactory.h>
 
@@ -30,8 +30,8 @@ ${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, QObject *parent, const 
     setWidget(m_widget);
 
     // create our actions
-    KStdAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
-    save = KStdAction::save(this, SLOT(save()), actionCollection());
+    KStandardAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
+    save = KStandardAction::save(this, SLOT(save()), actionCollection());
 
     // set our XML-UI resource file
     setXMLFile("${APP_NAME_LC}_part.rc");

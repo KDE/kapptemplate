@@ -34,7 +34,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <kstdaccel.h>
 #include <kaction.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 
 ${APP_NAME}::${APP_NAME}()
     : KMainWindow( 0, "${APP_NAME}" ),
@@ -94,14 +94,14 @@ void ${APP_NAME}::load(const KUrl& url)
 
 void ${APP_NAME}::setupActions()
 {
-    KStdAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStdAction::open(this, SLOT(fileOpen()), actionCollection());
-    KStdAction::save(this, SLOT(fileSave()), actionCollection());
-    KStdAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
-    KStdAction::print(this, SLOT(filePrint()), actionCollection());
-    KStdAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
+    KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
+    KStandardAction::save(this, SLOT(fileSave()), actionCollection());
+    KStandardAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
+    KStandardAction::print(this, SLOT(filePrint()), actionCollection());
+    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
+    KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
     // this doesn't do anything useful.  it's just here to illustrate
     // how to insert a custom menu and menu item

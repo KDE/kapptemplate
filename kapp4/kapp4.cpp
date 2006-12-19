@@ -23,7 +23,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <kstdaccel.h>
 #include <kaction.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 
 ${APP_NAME}::${APP_NAME}()
     : KMainWindow(),
@@ -54,10 +54,10 @@ ${APP_NAME}::~${APP_NAME}()
 
 void ${APP_NAME}::setupActions()
 {
-    KStdAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStdAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
+    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
 
-    KStdAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
+    KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
     // custom menu and menu item - the slot is in the class ${APP_NAME}View
     KAction *custom = new KAction(i18n("Swi&tch Colors"), actionCollection(), "switch_action");
