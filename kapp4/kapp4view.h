@@ -9,7 +9,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.h
 #include "ui_${APP_NAME_LC}view_base.h"
 
 class QPainter;
-class KURL;
+class KUrl;
 
 /**
  * This is the main view class for %{APPNAME}.  Most of the non-menu,

@@ -15,7 +15,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 
 class KPrinter;
 class KToggleAction;
-class KURL;
+class KUrl;
 
 /**
  * This class serves as the main window for %{APPNAME}.  It handles the

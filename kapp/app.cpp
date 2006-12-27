@@ -32,7 +32,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <kedittoolbar.h>
 
-#include <kstdaccel.h>
+#include <kstandardaccel.h>
 #include <kaction.h>
 #include <kstandardaction.h>
 
@@ -78,7 +78,7 @@ void ${APP_NAME}::load(const KUrl& url)
     if (KIO::NetAccess::download(url, target))
     {
         // set our caption
-        setCaption(url.prettyURL());
+        setCaption(url.prettyUrl());
 
         // load in the file (target is always local)
         loadFile(target);
@@ -88,7 +88,7 @@ void ${APP_NAME}::load(const KUrl& url)
     }
     #endif
 
-    setCaption(url.prettyURL());
+    setCaption(url.prettyUrl());
     m_view->openURL(url);
 }
 
@@ -131,7 +131,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
     QString url = config->readPathEntry("lastURL");
 
     if (!url.isEmpty())
-        m_view->openURL(KUrl::fromPathOrURL(url));
+        m_view->openURL(KUrl::fromPathOrUrl(url));
 }
 
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)

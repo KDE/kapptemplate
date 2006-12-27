@@ -21,7 +21,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <kedittoolbar.h>
 
-#include <kstdaccel.h>
+#include <kstandardaccel.h>
 #include <kaction.h>
 #include <kstandardaction.h>
 
