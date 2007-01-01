@@ -10,7 +10,7 @@ Group: X11/KDE/Utilities
 Source: ftp://ftp.kde.org/pub/kde/unstable/apps/utils/%{name}-%{version}.tar.gz
 Packager: ${AUTHOR} <${EMAIL}>
 BuildRoot: /tmp/%{name}-%{version}
-Prefix: `kde-config --prefix`
+Prefix: `kde4-config --prefix`
 
 %description
 A long description
