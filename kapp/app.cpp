@@ -28,7 +28,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kconfig.h>
 #include <kurl.h>
 #include <kurldrag.h>
-#include <kurlrequesterdlg.h>
+#include <kurlrequesterdialog.h>
 
 #include <kedittoolbar.h>
 
