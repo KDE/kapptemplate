@@ -1,5 +1,10 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.h...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
+/*
+ * ${APP_NAME_LC}.h
+ *
+ * Copyright (C) 2006 $AUTHOR <$EMAIL>
+ */
 #ifndef ${APP_NAME_UC}_H
 #define ${APP_NAME_UC}_H
 
@@ -18,12 +23,12 @@ class KToggleAction;
 class KUrl;
 
 /**
- * This class serves as the main window for %{APPNAME}.  It handles the
+ * This class serves as the main window for ${APP_NAME}.  It handles the
  * menus, toolbars, and status bars.
  *
  * @short Main window class
- * @author %{AUTHOR} <%{EMAIL}>
- * @version %{VERSION}
+ * @author ${AUTHOR} <${EMAIL}>
+ * @version ${APP_VERSION}
  */
 class ${APP_NAME} : public KMainWindow
 {
@@ -57,4 +62,3 @@ private:
 };
 
 #endif // _${APP_NAME_UC}_H_
-

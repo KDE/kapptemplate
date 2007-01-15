@@ -9,7 +9,7 @@ cat << EOF > $LOCATION_ROOT/main.cpp
 static const char description[] =
     I18N_NOOP("A KDE 4 Application");
 
-static const char version[] = "%{VERSION}";
+static const char version[] = "${APP_VERSION}";
 
 static KCmdLineOptions options[] =
 {
@@ -19,9 +19,9 @@ static KCmdLineOptions options[] =
 
 int main(int argc, char **argv)
 {
-    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME_LC}"), version, description,
-                     KAboutData::License_GPL, "(C) 2006 your_name}", 0, 0, "your_email");
-    about.addAuthor( "your_name", 0, "your_email" );
+    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description,
+                     KAboutData::License_GPL, "(C) 2006 ${AUTHOR}", 0, 0, "${EMAIL}");
+    about.addAuthor( "${AUTHOR}", 0, "${EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
     KCmdLineArgs::addCmdLineOptions(options);
     KApplication app;
@@ -56,4 +56,3 @@ int main(int argc, char **argv)
 
     return app.exec();
 }
-

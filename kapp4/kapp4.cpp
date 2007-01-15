@@ -21,8 +21,8 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <kedittoolbar.h>
 
-#include <kstandardaccel.h>
 #include <kaction.h>
+#include <kactioncollection.h>
 #include <kstandardaction.h>
 
 ${APP_NAME}::${APP_NAME}()
@@ -38,8 +38,11 @@ ${APP_NAME}::${APP_NAME}()
 
     // then, setup our actions
     setupActions();
+    // a call to KMainWindow::createGUI() populates the GUI 
+    // with actions, using KXMLGUI
+    createGUI();
 
-    // and a status bar
+    // add a status bar
     statusBar()->show();
 
     // apply the saved mainwindow settings, if any, and ask the mainwindow
@@ -60,8 +63,8 @@ void ${APP_NAME}::setupActions()
     KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
     // custom menu and menu item - the slot is in the class ${APP_NAME}View
-    KAction *custom = new KAction(i18n("Swi&tch Colors"), actionCollection(), "switch_action");
-    custom->setIcon(KIcon("colorize"));
+    KAction *custom = new KAction(KIcon("colorize"), i18n("Swi&tch Colors"), this);
+    actionCollection()->addAction( QLatin1String("switch_action"), custom );
     connect(custom, SIGNAL(triggered(bool)), m_view, SLOT(switchColors()));
     setupGUI();
 }
@@ -78,17 +81,16 @@ void ${APP_NAME}::fileNew()
 
 void ${APP_NAME}::optionsPreferences()
 {
-	// The preference dialog is derived from prefs_base.ui 
-	//
-	// compare the names of the widgets in the .ui file 
-	// to the names of the variables in the .kcfg file
-        KConfigDialog *dialog = new KConfigDialog(this, "settings", Settings::self());
-    	QWidget *generalSettingsDlg = new QWidget;
-    	ui_prefs_base.setupUi(generalSettingsDlg);
-    	dialog->addPage(generalSettingsDlg, i18n("General"), "package_setting");
-        connect(dialog, SIGNAL(settingsChanged(const QString &)), m_view, SLOT(settingsChanged()));
-        dialog->show();
+    // The preference dialog is derived from prefs_base.ui
+    //
+    // compare the names of the widgets in the .ui file
+    // to the names of the variables in the .kcfg file
+    KConfigDialog *dialog = new KConfigDialog(this, "settings", Settings::self());
+    QWidget *generalSettingsDlg = new QWidget;
+    ui_prefs_base.setupUi(generalSettingsDlg);
+    dialog->addPage(generalSettingsDlg, i18n("General"), "package_setting");
+    connect(dialog, SIGNAL(settingsChanged(QString)), m_view, SLOT(settingsChanged()));
+    dialog->show();
 }
 
 #include "${APP_NAME_LC}.moc"
-
