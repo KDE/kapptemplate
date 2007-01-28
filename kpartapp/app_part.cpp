@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 
 #include "${APP_NAME_LC}_part.moc"
 
-#include <kinstance.h>
+#include <kcomponentdata.h>
 #include <kaction.h>
 #include <kstandardaction.h>
 #include <kfiledialog.h>
@@ -21,7 +21,7 @@ ${APP_NAME}Part::${APP_NAME}Part( QWidget *parentWidget, QObject *parent, const 
     : KParts::ReadWritePart(parent)
 {
     // we need an instance
-    setInstance( ${APP_NAME}PartFactory::instance() );
+    setComponentData( ${APP_NAME}PartFactory::componentData() );
 
     // this should be your custom internal widget
     m_widget = new Q3MultiLineEdit( parentWidget);
