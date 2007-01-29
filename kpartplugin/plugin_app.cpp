@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/plugin_${APP_NAME_LC}.cpp
 
 #include <khtml_part.h>
 #include <kaction.h>
-#include <kinstance.h>
+#include <kcomponentdata.h>
 #include <kmessagebox.h>
 #include <klocale.h>
 #include <kgenericfactory.h>
