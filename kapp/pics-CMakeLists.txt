@@ -1,6 +1,6 @@
 echo "Creating $LOCATION_ROOT/$APP_NAME_LC/pics/CMakeLists.txt...";
 $MKDIR $LOCATION_ROOT/$APP_NAME_LC/pics
-cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/pics/CmakeLists.txt
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/pics/CMakeLists.txt
 # Add all of your pixmaps here
 #picsdata_DATA = 
 
