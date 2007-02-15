@@ -1,8 +1,0 @@
-echo "Creating $LOCATION_ROOT/doc/Makefile.am...";
-$MKDIR $LOCATION_ROOT/doc
-cat << EOF > $LOCATION_ROOT/doc/Makefile.am
-
-SUBDIRS = \$(AUTODIRS)
-KDE_DOCS = $APP_NAME_LC
-KDE_LANG = en
-
