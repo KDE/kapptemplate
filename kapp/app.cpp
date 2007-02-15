@@ -1,8 +1,7 @@
-//Added by qt3to4:
 #include <QDragEnterEvent>
 #include <QDropEvent>
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.cpp...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 /*
  * ${APP_NAME_LC}.cpp
  *

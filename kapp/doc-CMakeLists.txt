@@ -1,0 +1,6 @@
+echo "Creating $LOCATION_ROOT/doc/CMakeLists.txt...";
+$MKDIR $LOCATION_ROOT/doc
+cat << EOF > $LOCATION_ROOT/doc/CMakeLists.txt
+
+
+

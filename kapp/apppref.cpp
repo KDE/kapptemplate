@@ -1,8 +1,7 @@
-//Added by qt3to4:
 #include <Q3Frame>
 #include <QHBoxLayout>
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}pref.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}pref.cpp
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}pref.cpp...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}pref.cpp
 #include "${APP_NAME_LC}pref.h"
 
 #include <klocale.h>

@@ -1,7 +1,6 @@
-//Added by qt3to4:
 #include <QHBoxLayout>
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}view.cpp
+echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view.cpp...";
+cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
 #include "${APP_NAME_LC}view.h"
 
 #include <qpainter.h>

@@ -1,0 +1,8 @@
+echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt...";
+$MKDIR $LOCATION_ROOT/doc/$APP_NAME_LC
+cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt
+
+# the SUBDIRS is filled automatically by am_edit. If files are 
+# in this directory they are installed into the english dir
+kde4_create_handbook(index.docbook)
+kde4_install_handbook()
