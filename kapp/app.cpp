@@ -5,7 +5,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 /*
  * ${APP_NAME_LC}.cpp
  *
- * Copyright (C) 2004 $AUTHOR <$EMAIL>
+ * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
 
@@ -30,7 +30,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include <kactioncollection.h>
 #include <kedittoolbar.h>
 
-#include <kstandardaccel.h>
 #include <kaction.h>
 
 ${APP_NAME}::${APP_NAME}()
@@ -171,7 +170,7 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KUrl url = KUrlRequesterDialog::getURL(QString::null, this, i18n("Open Location") );
+    KUrl url = KUrlRequesterDialog::getUrl(QString::null, this, i18n("Open Location") );
     if (!url.isEmpty())
         m_view->openURL(url);
 }

@@ -1,14 +1,13 @@
-#include <QDragEnterEvent>
-#include <QDropEvent>
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.h...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 #ifndef ${APP_NAME_UC}_H
 #define ${APP_NAME_UC}_H
 
-#include <config.h>
-
 #include <kapplication.h>
 #include <kmainwindow.h>
+
+#include <QDragEnterEvent>
+#include <QDropEvent>
 
 #include "${APP_NAME_LC}view.h"
 
