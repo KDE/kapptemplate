@@ -8,7 +8,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
 
 #include <kurl.h>
 
-#include <ktrader.h>
+//#include <ktrader.h>
 #include <klibloader.h>
 #include <kmessagebox.h>
 #include <krun.h>
@@ -19,7 +19,6 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
 {
     // setup our layout manager to automatically add our widgets
     QHBoxLayout *top_layout = new QHBoxLayout(this);
-    top_layout->setAutoAdd(true);
 
     // we want to look for all components that satisfy our needs.  the
     // trader will actually search through *all* registered KDE
@@ -34,12 +33,12 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
     // string 'KParts/ReadOnlyPart' must be found in the ServiceTypes
     // field.  with this, only components of the type we want will be
     // returned.
-    KTrader::OfferList offers = KTrader::self()->query("text/html", "'KParts/ReadOnlyPart' in ServiceTypes");
+    //KTrader::OfferList offers = KTrader::self()->query("text/html", "'KParts/ReadOnlyPart' in ServiceTypes");
 
-    KLibFactory *factory = 0;
+    //KLibFactory *factory = 0;
     // in theory, we only care about the first one.. but let's try all
     // offers just in case the first can't be loaded for some reason
-    KTrader::OfferList::Iterator it(offers.begin());
+    /*KTrader::OfferList::Iterator it(offers.begin());
     for( ; it != offers.end(); ++it)
     {
         KService::Ptr ptr = (*it);
@@ -66,7 +65,7 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
     connect(m_html, SIGNAL(setWindowCaption(const QString&)),
             this,   SLOT(slotSetTitle(const QString&)));
     connect(m_html, SIGNAL(setStatusBarText(const QString&)),
-            this,   SLOT(slotOnURL(const QString&)));
+            this,   SLOT(slotOnURL(const QString&)));*/
 
 }
 
@@ -74,7 +73,7 @@ ${APP_NAME}View::~${APP_NAME}View()
 {
 }
 
-void ${APP_NAME}View::print(QPainter *p, int height, int width)
+void ${APP_NAME}View::print(QPainter *, int , int )
 {
     // do the actual printing, here
     // p->drawText(etc..)
@@ -82,7 +81,7 @@ void ${APP_NAME}View::print(QPainter *p, int height, int width)
 
 QString ${APP_NAME}View::currentURL()
 {
-    return m_html->url().url();
+    //return m_html->url().url();
 }
 
 void ${APP_NAME}View::openURL(QString url)
@@ -92,7 +91,7 @@ void ${APP_NAME}View::openURL(QString url)
 
 void ${APP_NAME}View::openURL(const KUrl& url)
 {
-    m_html->openURL(url);
+    //m_html->openURL(url);
 }
 
 void ${APP_NAME}View::slotOnURL(const QString& url)

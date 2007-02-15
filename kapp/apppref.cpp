@@ -10,7 +10,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}pref.cpp
 #include <qlabel.h>
 
 ${APP_NAME}Preferences::${APP_NAME}Preferences()
-    : KDialogBase(TreeList, "${APP_NAME} Preferences",
+    : KDialog(TreeList, "${APP_NAME} Preferences",
                   Help|Default|Ok|Apply|Cancel, Ok)
 {
     // this is the base class for your preferences dialog.  it is now

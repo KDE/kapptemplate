@@ -14,6 +14,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include <kprinter.h>
 #include <qpainter.h>
 #include <q3paintdevicemetrics.h>
+#include <QDragEnterEvent>
 
 #include <kdeversion.h>
 #include <kglobal.h>
@@ -24,16 +25,13 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <kio/netaccess.h>
 #include <kfiledialog.h>
-#include <kconfig.h>
 #include <kurl.h>
-#include <kurldrag.h>
 #include <kurlrequesterdialog.h>
-
+#include <kactioncollection.h>
 #include <kedittoolbar.h>
 
 #include <kstandardaccel.h>
 #include <kaction.h>
-#include <kstandardaction.h>
 
 ${APP_NAME}::${APP_NAME}()
     : KMainWindow( 0, "${APP_NAME}" ),
@@ -104,9 +102,9 @@ void ${APP_NAME}::setupActions()
 
     // this doesn't do anything useful.  it's just here to illustrate
     // how to insert a custom menu and menu item
-    KAction *custom = new KAction(i18n("Cus&tom Menuitem"), 0,
-                                  this, SLOT(optionsPreferences()),
-                                  actionCollection(), "custom_action");
+    KAction *custom = new KAction(i18n("Cus&tom Menuitem"), this);
+    actionCollection()->addAction("custom_action", custom );
+    connect(custom, SIGNAL(triggered(bool)), this, SLOT(optionsPreferences()));
 }
 
 void ${APP_NAME}::saveProperties(KConfig *config)
@@ -136,7 +134,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
 void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
 {
     // accept uri drops only
-    event->accept(KURLDrag::canDecode(event));
+    //event->accept(KURLDrag::canDecode(event));
 }
 
 void ${APP_NAME}::dropEvent(QDropEvent *event)
@@ -147,7 +145,8 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
     KUrl::List urls;
 
     // see if we can decode a URI.. if not, just ignore it
-    if (KURLDrag::decode(event, urls) && !urls.isEmpty())
+    KUrl::List uriList = KUrl::List::fromMimeData( event->mimeData() );
+    if ( !uriList.isEmpty() ) 
     {
         // okay, we have a URI.. process it
         const KUrl &url = urls.first();
@@ -172,7 +171,7 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KUrl url = KUrlRequesterDlg::getURL(QString::null, this, i18n("Open Location") );
+    KUrl url = KUrlRequesterDialog::getURL(QString::null, this, i18n("Open Location") );
     if (!url.isEmpty())
         m_view->openURL(url);
 }
@@ -189,7 +188,7 @@ void ${APP_NAME}::fileSave()
 void ${APP_NAME}::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
-    KUrl file_url = KFileDialog::getSaveURL();
+    KUrl file_url = KFileDialog::getSaveUrl();
     if (!file_url.isEmpty() && file_url.isValid())
     {
         // save your info, here
@@ -219,37 +218,20 @@ void ${APP_NAME}::filePrint()
     }
 }
 
-void ${APP_NAME}::optionsConfigureToolbars()
-{
-    // use the standard toolbar editor
-    saveMainWindowSettings( KGlobal::config(), autoSaveGroup() );
-    KEditToolbar dlg(actionCollection());
-    connect(&dlg, SIGNAL(newToolbarConfig()), this, SLOT(newToolbarConfig()));
-    dlg.exec();
-}
-
-void ${APP_NAME}::newToolbarConfig()
-{
-    // this slot is called when user clicks "Ok" or "Apply" in the toolbar editor.
-    // recreate our GUI, and re-apply the settings (e.g. "text under icons", etc.)
-    createGUI();
-    applyMainWindowSettings( KGlobal::config(), autoSaveGroup() );
-}
-
 void ${APP_NAME}::optionsPreferences()
 {
     // popup some sort of preference dialog, here
     ${APP_NAME}Preferences dlg;
-    if (dlg.exec())
-    {
+    //if (dlg.exec())
+    //{
         // redo your settings
-    }
+    //}
 }
 
 void ${APP_NAME}::changeStatusbar(const QString& text)
 {
     // display the text on the statusbar
-    statusBar()->message(text);
+    statusBar()->showMessage(text);
 }
 
 void ${APP_NAME}::changeCaption(const QString& text)

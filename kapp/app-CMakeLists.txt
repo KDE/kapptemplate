@@ -9,7 +9,6 @@ set(${APP_NAME_LC}_SRCS
    main.cpp
    ${APP_NAME_LC}view.cpp
    ${APP_NAME_LC}pref.cpp 
-   ${APP_NAME_LC}iface.skel
  )
 
 kde4_automoc(\${${APP_NAME_LC}_SRCS})
@@ -31,7 +30,6 @@ install(TARGETS ${APP_NAME_LC}_client DESTINATION \${BIN_INSTALL_DIR} )
 ########### install files ###############
 
 install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_DIR} )
-install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  \${KCFG_INSTALL_DIR} )
 install( FILES ${APP_NAME_LC}ui.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC} )
 
 

@@ -70,9 +70,7 @@ private slots:
     void fileSave();
     void fileSaveAs();
     void filePrint();
-    void optionsConfigureToolbars();
     void optionsPreferences();
-    void newToolbarConfig();
 
     void changeStatusbar(const QString& text);
     void changeCaption(const QString& text);

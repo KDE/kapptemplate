@@ -3,13 +3,13 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}pref.h
 #ifndef ${APP_NAME_UC}PREF_H
 #define ${APP_NAME_UC}PREF_H
 
-#include <kdialogbase.h>
+#include <kdialog.h>
 #include <q3frame.h>
 
 class ${APP_NAME}PrefPageOne;
 class ${APP_NAME}PrefPageTwo;
 
-class ${APP_NAME}Preferences : public KDialogBase
+class ${APP_NAME}Preferences : public KDialog
 {
     Q_OBJECT
 public:
