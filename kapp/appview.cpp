@@ -1,10 +1,10 @@
-#include <QHBoxLayout>
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
+echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}view.cpp...";
+cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}view.cpp
 #include "${APP_NAME_LC}view.h"
 
 #include <qpainter.h>
 #include <qlayout.h>
+#include <QHBoxLayout>
 
 #include <kurl.h>
 

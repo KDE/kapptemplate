@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}_client.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}_client.cpp
+echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}_client.cpp...";
+cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}_client.cpp
 #include <kapplication.h>
 #include <dcopclient.h>
 #include <qdatastream.h>

@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}pref.h...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}pref.h
+echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}pref.h...";
+cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}pref.h
 #ifndef ${APP_NAME_UC}PREF_H
 #define ${APP_NAME_UC}PREF_H
 

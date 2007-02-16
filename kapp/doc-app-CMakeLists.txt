@@ -1,6 +1,5 @@
-echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt...";
-$MKDIR $LOCATION_ROOT/doc/$APP_NAME_LC
-cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt
+echo "Creating $LOCATION_ROOT/doc/CMakeLists.txt...";
+cat << EOF > $LOCATION_ROOT/doc/CMakeLists.txt
 
 # the SUBDIRS is filled automatically by am_edit. If files are 
 # in this directory they are installed into the english dir
