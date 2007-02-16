@@ -1,0 +1,8 @@
+echo "Creating $LOCATION_ROOT/src/settings.kcfgc...";
+cat << EOF > $LOCATION_ROOT/src/settings.kcfgc
+# Code generation options for kconfig_compiler
+File=${APP_NAME_LC}.kcfg
+ClassName=Settings
+Singleton=true
+Mutators=col_background,col_foreground
+# will create the necessary code for setting those variables

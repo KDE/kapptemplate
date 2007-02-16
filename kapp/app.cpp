@@ -6,8 +6,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
  * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
-
-#include "${APP_NAME_LC}pref.h"
+#include "settings.h"
 
 #include <kprinter.h>
 #include <qpainter.h>
@@ -21,7 +20,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include <kiconloader.h>
 #include <kmenubar.h>
 #include <kstatusbar.h>
-
+#include <kconfigdialog.h>
 #include <kio/netaccess.h>
 #include <kfiledialog.h>
 #include <kurl.h>
@@ -218,12 +217,11 @@ void ${APP_NAME}::filePrint()
 
 void ${APP_NAME}::optionsPreferences()
 {
-    // popup some sort of preference dialog, here
-    ${APP_NAME}Preferences dlg;
-    //if (dlg.exec())
-    //{
-        // redo your settings
-    //}
+    KConfigDialog *dialog = new KConfigDialog(this, "settings", Settings::self());
+    QWidget *m_pageOne = new QWidget();
+    dialog->addPage(m_pageOne, i18n("General"), "package_setting");
+    connect(dialog, SIGNAL(settingsChanged(QString)), m_view, SLOT(settingsChanged()));
+    dialog->show();
 }
 
 void ${APP_NAME}::changeStatusbar(const QString& text)
