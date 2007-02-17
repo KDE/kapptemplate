@@ -221,6 +221,7 @@ void ${APP_NAME}::optionsPreferences()
     QWidget *m_pageOne = new QWidget();
     dialog->addPage(m_pageOne, i18n("General"), "package_setting");
     connect(dialog, SIGNAL(settingsChanged(QString)), m_view, SLOT(settingsChanged()));
+    dialog->setAttribute( Qt::WA_DeleteOnClose );
     dialog->show();
 }
 
