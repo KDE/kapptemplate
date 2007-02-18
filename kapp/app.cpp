@@ -31,10 +31,11 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include <kaction.h>
 
 ${APP_NAME}::${APP_NAME}()
-    : KMainWindow( 0, "${APP_NAME}" ),
+    : KMainWindow( ),
       m_view(new ${APP_NAME}View(this)),
       m_printer(0)
 {
+    setObjectName(QLatin1String("${APP_NAME}"));
     // accept dnd
     setAcceptDrops(true);
 
@@ -128,7 +129,7 @@ void ${APP_NAME}::readProperties(KConfig *config)
         m_view->openURL(KUrl::fromPathOrUrl(url));
 }
 
-void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *event)
+void ${APP_NAME}::dragEnterEvent(QDragEnterEvent *)
 {
     // accept uri drops only
     //event->accept(KURLDrag::canDecode(event));
@@ -217,11 +218,17 @@ void ${APP_NAME}::filePrint()
 
 void ${APP_NAME}::optionsPreferences()
 {
+    //avoid to have 2 dialogs shown
+    if ( KConfigDialog::showDialog( "settings" ) )  {
+        return;
+    }
     KConfigDialog *dialog = new KConfigDialog(this, "settings", Settings::self());
     QWidget *m_pageOne = new QWidget();
     dialog->addPage(m_pageOne, i18n("General"), "package_setting");
     connect(dialog, SIGNAL(settingsChanged(QString)), m_view, SLOT(settingsChanged()));
+    //free mem by deleting the dialog on close without waiting for deletingit when the application quits
     dialog->setAttribute( Qt::WA_DeleteOnClose );
+
     dialog->show();
 }
 

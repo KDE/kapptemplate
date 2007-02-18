@@ -18,7 +18,7 @@ ${APP_NAME}View::${APP_NAME}View(QWidget *parent)
       //DCOPObject("${APP_NAME}Iface")
 {
     // setup our layout manager to automatically add our widgets
-    QHBoxLayout *top_layout = new QHBoxLayout(this);
+    //QHBoxLayout *top_layout = new QHBoxLayout(this);
 
     // we want to look for all components that satisfy our needs.  the
     // trader will actually search through *all* registered KDE
@@ -81,7 +81,7 @@ void ${APP_NAME}View::print(QPainter *, int , int )
 
 QString ${APP_NAME}View::currentURL()
 {
-    //return m_html->url().url();
+    return 0;//m_html->url().url();
 }
 
 void ${APP_NAME}View::openURL(QString url)
@@ -89,7 +89,7 @@ void ${APP_NAME}View::openURL(QString url)
     openURL(KUrl(url));
 }
 
-void ${APP_NAME}View::openURL(const KUrl& url)
+void ${APP_NAME}View::openURL(const KUrl& )
 {
     //m_html->openURL(url);
 }
@@ -103,4 +103,5 @@ void ${APP_NAME}View::slotSetTitle(const QString& title)
 {
     emit signalChangeCaption(title);
 }
+
 #include "${APP_NAME_LC}view.moc"

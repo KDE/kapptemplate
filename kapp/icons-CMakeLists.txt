@@ -1,7 +1,4 @@
 echo "Creating $LOCATION_ROOT/icons/CMakeLists.txt...";
 cat << EOF > $LOCATION_ROOT/icons/CMakeLists.txt
-# Add all of your pixmaps here
-#picsdata_DATA = 
 
-# This is where it will all be installed
-#picsdatadir = \$(kde_datadir)/$APP_NAME_LC/pics
+kde4_install_icons( \${ICON_INSTALL_DIR})
