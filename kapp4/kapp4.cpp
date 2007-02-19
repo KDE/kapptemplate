@@ -85,11 +85,16 @@ void ${APP_NAME}::optionsPreferences()
     //
     // compare the names of the widgets in the .ui file
     // to the names of the variables in the .kcfg file
+    //avoid to have 2 dialogs shown
+    if ( KConfigDialog::showDialog( "settings" ) )  {
+        return;
+    }
     KConfigDialog *dialog = new KConfigDialog(this, "settings", Settings::self());
     QWidget *generalSettingsDlg = new QWidget;
     ui_prefs_base.setupUi(generalSettingsDlg);
     dialog->addPage(generalSettingsDlg, i18n("General"), "package_setting");
     connect(dialog, SIGNAL(settingsChanged(QString)), m_view, SLOT(settingsChanged()));
+    dialog->setAttribute( Qt::WA_DeleteOnClose );
     dialog->show();
 }
 
