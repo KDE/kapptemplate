@@ -8,19 +8,16 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include "${APP_NAME_LC}.h"
 #include "${APP_NAME_LC}.moc"
 
-#include <kkeydialog.h>
-#include <kconfig.h>
-#include <kurl.h>
-
-#include <kedittoolbar.h>
-
-#include <kaction.h>
-#include <kstandardaction.h>
-
-#include <klibloader.h>
-#include <kmessagebox.h>
-#include <kfiledialog.h>
-#include <kstatusbar.h>
+#include <KAction>
+#include <KConfig>
+#include <KEditToolBar>
+#include <KFileDialog>
+#include <KKeyDialog>
+#include <KLibLoader>
+#include <KMessageBox>
+#include <KStandardAction>
+#include <KStatusBar>
+#include <KUrl>
 
 ${APP_NAME}::${APP_NAME}()
     : KParts::MainWindow( )
@@ -135,7 +132,7 @@ void ${APP_NAME}::optionsConfigureToolbars()
     saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
 
     // use the standard toolbar editor
-    KEditToolbar dlg(factory());
+    KEditToolBar dlg(factory());
     connect(&dlg, SIGNAL(newToolbarConfig()),
             this, SLOT(applyNewToolbarConfig()));
     dlg.exec();

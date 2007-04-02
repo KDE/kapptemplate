@@ -4,14 +4,14 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 
 #include "${APP_NAME_LC}_part.moc"
 
-#include <kcomponentdata.h>
-#include <kaction.h>
-#include <kstandardaction.h>
-#include <kfiledialog.h>
-#include <kparts/genericfactory.h>
+#include <KAction>
+#include <KComponentData>
+#include <KFileDialog>
+#include <KParts/GenericFactory>
+#include <KStandardAction>
 
-#include <qfile.h>
-#include <qtextstream.h>
+#include <QFile>
+#include <QTextStream>
 #include <q3multilineedit.h>
 
 typedef KParts::GenericFactory<${APP_NAME}Part> ${APP_NAME}PartFactory;
