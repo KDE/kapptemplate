@@ -10,7 +10,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 
 
 #include <kapplication.h>
-#include <kmainwindow.h>
+#include <kxmlguiwindow.h>
 
 #include "${APP_NAME_LC}view.h"
 #include "ui_prefs_base.h"
@@ -27,7 +27,7 @@ class KUrl;
  * @author ${AUTHOR} <${EMAIL}>
  * @version ${APP_VERSION}
  */
-class ${APP_NAME} : public KMainWindow
+class ${APP_NAME} : public KXmlGuiWindow
 {
     Q_OBJECT
 public:

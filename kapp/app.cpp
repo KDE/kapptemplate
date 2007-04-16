@@ -31,7 +31,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include <kaction.h>
 
 ${APP_NAME}::${APP_NAME}()
-    : KMainWindow( ),
+    : KXmlGuiWindow( ),
       m_view(new ${APP_NAME}View(this)),
       m_printer(0)
 {
@@ -39,7 +39,7 @@ ${APP_NAME}::${APP_NAME}()
     // accept dnd
     setAcceptDrops(true);
 
-    // tell the KMainWindow that this is indeed the main widget
+    // tell the KXmlGuiWindow that this is indeed the main widget
     setCentralWidget(m_view);
 
     // then, setup our actions
@@ -144,7 +144,7 @@ void ${APP_NAME}::dropEvent(QDropEvent *event)
 
     // see if we can decode a URI.. if not, just ignore it
     KUrl::List uriList = KUrl::List::fromMimeData( event->mimeData() );
-    if ( !uriList.isEmpty() ) 
+    if ( !uriList.isEmpty() )
     {
         // okay, we have a URI.. process it
         const KUrl &url = urls.first();

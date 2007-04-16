@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
 #define ${APP_NAME_UC}_H
 
 #include <kapplication.h>
-#include <kmainwindow.h>
+#include <kxmlguiwindow.h>
 
 #include <QDragEnterEvent>
 #include <QDropEvent>
@@ -22,7 +22,7 @@ class KUrl;
  * @author $AUTHOR <$EMAIL>
  * @version $APP_VERSION
  */
-class ${APP_NAME} : public KMainWindow
+class ${APP_NAME} : public KXmlGuiWindow
 {
     Q_OBJECT
 public:
