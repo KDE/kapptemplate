@@ -26,19 +26,19 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include <kstandardaction.h>
 
 ${APP_NAME}::${APP_NAME}()
-    : KMainWindow(),
+    : KXmlGuiWindow(),
       m_view(new ${APP_NAME}View(this)),
       m_printer(0)
 {
     // accept dnd
     setAcceptDrops(true);
 
-    // tell the KMainWindow that this is indeed the main widget
+    // tell the KXmlGuiWindow that this is indeed the main widget
     setCentralWidget(m_view);
 
     // then, setup our actions
     setupActions();
-    // a call to KMainWindow::createGUI() populates the GUI 
+    // a call to KXmlGuiWindow::createGUI() populates the GUI
     // with actions, using KXMLGUI
     createGUI();
 
