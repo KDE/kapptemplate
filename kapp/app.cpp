@@ -105,25 +105,25 @@ void ${APP_NAME}::setupActions()
     connect(custom, SIGNAL(triggered(bool)), this, SLOT(optionsPreferences()));
 }
 
-void ${APP_NAME}::saveProperties(KConfig *config)
+void ${APP_NAME}::saveProperties(KConfigGroup &config)
 {
     // the 'config' object points to the session managed
     // config file.  anything you write here will be available
     // later when this app is restored
 
     if (!m_view->currentURL().isNull()) {
-        config->writePathEntry("lastURL", m_view->currentURL());
+        config.writePathEntry("lastURL", m_view->currentURL());
     }
 }
 
-void ${APP_NAME}::readProperties(KConfig *config)
+void ${APP_NAME}::readProperties(const KConfigGroup &config)
 {
     // the 'config' object points to the session managed
     // config file.  this function is automatically called whenever
     // the app is being restored.  read in here whatever you wrote
     // in 'saveProperties'
 
-    QString url = config->readPathEntry("lastURL");
+    QString url = config.readPathEntry("lastURL");
 
     if (!url.isEmpty())
         m_view->openURL(KUrl::fromPathOrUrl(url));
