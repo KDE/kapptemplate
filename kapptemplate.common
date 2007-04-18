@@ -24,15 +24,16 @@ function Usage
     $ECHO "Usage: kapptemplate [options]";
     $ECHO "Options:";
     $ECHO "    --help     Display this information";
-    $ECHO "    --noinit   Don't run '$MAKE -f Makefile.cvs'";
+    #$ECHO "    --noinit   Don't run '$MAKE -f Makefile.cvs'";
     $ECHO "    --default  Use default values instead of prompting";
     $ECHO;
     $ECHO "Framework Types:";
-    $ECHO "    --full-app      Create full featured KDE application";
+    $ECHO "    --full-app      Create full featured KDE 4 framework
+application";
     $ECHO "    --kpart-app     Create full KPart application";
     $ECHO "    --kpart-plugin  Create KPart plugin framework";
     $ECHO "    --existing      Convert existing source to KDE framework";
-    $ECHO "    --kapp4         Create full KDE4 application";
+    $ECHO "    --kapp4         Create simple KDE4 application";
 }
 
 ###########################################################################
