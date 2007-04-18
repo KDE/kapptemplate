@@ -1,0 +1,10 @@
+# KDE Config File
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Exec=kapptemplate 
+DocPath=kapptemplate/index.html
+GenericName=KDE Template Generator
+Terminal=true
+Name=KAppTemplate
+Categories=Qt;KDE;Development;
