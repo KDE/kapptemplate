@@ -1,8 +1,8 @@
 echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view_base.ui...";
 cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
 <ui version="4.0" >
- <class>${APP_NAME_LC}view_base</class>
- <widget class="QWidget" name="${APP_NAME_LC}view_base" >
+<class>${APP_NAME_LC}view_base</class>
+<widget class="QWidget" name="${APP_NAME_LC}view_base" >
   <property name="geometry" >
    <rect>
     <x>0</x>
@@ -14,11 +14,26 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
   <property name="windowTitle" >
    <string>kapp4_base</string>
   </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
+  </property>
   <layout class="QGridLayout" >
-   <property name="margin" >
+   <property name="leftMargin" >
     <number>11</number>
    </property>
-   <property name="spacing" >
+   <property name="topMargin" >
+    <number>11</number>
+   </property>
+   <property name="rightMargin" >
+    <number>11</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>11</number>
+   </property>
+   <property name="horizontalSpacing" >
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing" >
     <number>6</number>
    </property>
    <item row="0" column="0" >
@@ -54,6 +69,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
          </brush>
         </colorrole>
         <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase" >
          <brush brushstyle="SolidPattern" >
           <color alpha="255" >
            <red>0</red>
@@ -100,6 +124,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
           </color>
          </brush>
         </colorrole>
+        <colorrole role="AlternateBase" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
        </inactive>
        <disabled>
         <colorrole role="WindowText" >
@@ -138,6 +171,15 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
           </color>
          </brush>
         </colorrole>
+        <colorrole role="AlternateBase" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
        </disabled>
       </palette>
      </property>
@@ -146,6 +188,9 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view_base.ui
        <family>Sans Serif</family>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="autoFillBackground" >
+      <bool>true</bool>
      </property>
      <property name="text" >
       <string>hello, world</string>
