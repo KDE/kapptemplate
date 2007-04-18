@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&kapptemplate;">
+  <!ENTITY package "kdesdk">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title>The &kapptemplate; Handbook</title>
+
+<authorgroup>
+<author>
+<firstname>Anne-Marie</firstname>
+<surname>Mahfouf</surname>
+<affiliation>
+<address>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+</authorgroup>
+
+<copyright>
+<year>2007</year>
+<holder>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice>&FDLNotice;</legalnotice>
+
+
+<date>2007-04-18</date>
+<releaseinfo>0.00.00</releaseinfo>
+
+<abstract>
+<para>
+&kapptemplate; is a KDE4 templates generator.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>kdesdk</keyword>
+<keyword>KDE4</keyword>
+<keyword>programming</keyword>
+<keyword>template</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"> 
+<title>Introduction</title> 
+<para>
+&kapptemplate; generates KDE 4 templates to help you start easily KDE
+programming.</para> 
+<para>
+&kapptemplate; runs in konsole or any terminal and you start it by typing
+<userinput>kapptemplate</userinput> at the prompt.
+</para>
+
+<para>
+You are then presented with the templates list.
+</para>
+<para>
+There are two kinds of templates:</para>
+
+<itemizedlist>
+<listitem><para>1. a simple KDE 4 application</para> </listitem>
+<listitem><para>2. a full featured KDE 4 framework application</para>
+</listitem>
+</itemizedlist>
+
+<para>Choose one template and type its number then fill in the details of
+your project. </para>
+
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title>Using &kapptemplate;</title>
+<para>This chapter describes the templates so you can choose the one that
+ is the best adapted to your needs.</para>
+
+<sect1 id="ksimpleapp-template">
+<title>Generating the KDE 4 simple application template</title>
+
+<screenshot>
+<screeninfo>Here's a screenshot of the kde4 simple
+application</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="ksimpleapp.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>kde4 simple application</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para>This template demonstrates how you create KDE menus using XMLGui and 
+how to use KConfig XT to change settings using the <menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure &lt;AppName&gt;</guimenuitem>
+</menuchoice>.</para>
+
+<screenshot>
+<screeninfo>Here's a screenshot of the kde4 simple application
+settings dialog</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="ksimpleapp-settings.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>kde4 template settings</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para>Please note in the config dialog that there are tooltips to help the user
+understanding each setting. These tooltips can either be written directly
+in Qt Designer for each widget or be added in the subclass. A tooltip
+consists on only a few words describing the use of the widget.</para>
+<screenshot>
+<screeninfo>A tooltip</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="ksimpleapp-tooltips.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>A tooltip</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para>Furthermore using <keycombo
+action="simul">&Shift;<keycap>F1</keycap></keycombo> the user can see
+QWhatsThis help which helps him to understand better what each setting
+does. This QWhatsThis help can either be written directly
+in Qt Designer for each widget or be added in the subclass. It should be
+more detailed than the tooltip and can use HTML markup such as bold,
+color or italic.</para>
+<screenshot>
+<screeninfo>QWhatsThis</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="ksimpleapp-qwhatsthis.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>QWhatsThis</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="framework-template">
+<title>Generating the full featured KDE 4 framework application</title>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title>Credits and License</title>
+
+<itemizedlist>
+<listitem><para>Program copyright 1998-2003 Kurt Granroth</para> </listitem>
+<listitem><para>Program copyright 2006-2007 &Anne-Marie.Mahfouf;</para>
+</listitem>
+</itemizedlist>
+
+<para>
+Documentation copyright 2007 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
+</para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+&underFDL;               <!-- FDL: do not remove -->
+&underGPL;        	 <!-- GPL License -->
+
+</chapter>
+
+
+<appendix id="installation">
+<title>Installation</title>
+
+<sect1 id="getting-kapptemplate">
+<title>How to obtain &kapptemplate;</title>
+
+&install.intro.documentation;
+
+</sect1>
+
+<sect1 id="compilation">
+<title>Compilation and installation</title>
+
+&install.compile.documentation;
+
+</sect1>
+
+</appendix>
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
