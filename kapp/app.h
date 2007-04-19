@@ -41,6 +41,11 @@ public:
      */
     void load(const KUrl& url);
 
+public Q_SLOTS:
+    // DBus interface
+    Q_SCRIPTABLE void fileOpen();
+    Q_SCRIPTABLE void changeStatusbar(const QString &);
+
 protected:
     /**
      * Overridden virtuals for Qt drag 'n drop (XDND)
@@ -65,13 +70,11 @@ protected:
 
 private slots:
     void fileNew();
-    void fileOpen();
     void fileSave();
     void fileSaveAs();
     void filePrint();
     void optionsPreferences();
 
-    void changeStatusbar(const QString& text);
     void changeCaption(const QString& text);
 
 private:

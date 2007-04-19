@@ -7,6 +7,8 @@ set(${APP_NAME_LC}_SRCS
    ${APP_NAME_LC}view.cpp
  )
 
+qt4_add_dbus_adaptor(${APP_NAME_LC}_SRCS org.kde.${APP_NAME_LC}.${APP_NAME}.xml ${APP_NAME_LC}.h ${APP_NAME})
+
 kde4_automoc(\${${APP_NAME_LC}_SRCS})
 
 kde4_add_kcfg_files(${APP_NAME_LC}_SRCS settings.kcfgc )

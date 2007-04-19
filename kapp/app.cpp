@@ -30,6 +30,9 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 
 #include <kaction.h>
 
+#include "${APP_NAME_LC}adaptor.h"
+#include <QtDBus>
+
 ${APP_NAME}::${APP_NAME}()
     : KXmlGuiWindow( ),
       m_view(new ${APP_NAME}View(this)),
@@ -54,6 +57,8 @@ ${APP_NAME}::${APP_NAME}()
     connect(m_view, SIGNAL(signalChangeCaption(const QString&)),
             this,   SLOT(changeCaption(const QString&)));
 
+    new ${APP_NAME}Adaptor(this);
+    QDBusConnection::sessionBus().registerObject("/${APP_NAME_LC}", this);
 }
 
 ${APP_NAME}::~${APP_NAME}()
