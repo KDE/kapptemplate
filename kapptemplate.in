@@ -109,9 +109,10 @@ if [ ! "$WHICH_ONE" ];
 then
     # Find out how to use kapptemplate this time
     $ECHO "Please select the type of framework you wish to generate";
-    $ECHO "1. Simple KDE4 application [default]";
+    $ECHO "1. Simple KDE 4 application [default]";
     $ECHO "2. Full featured KDE 4 framework application";
-    $ECHO "Choose [1-2]: \c";
+    $ECHO "3. KPart KDE 4 application";
+    $ECHO "Choose [1-3]: \c";
     read WHICH_ONE;
     $ECHO;
 fi;
@@ -121,11 +122,11 @@ case $WHICH_ONE in
     2)
         . $INCLUDE_DIR/kapptemplate.module;;
     3)
-        . $INCLUDE_DIR/kpartplugin.module;;
+        . $INCLUDE_DIR/kpartapp.module;;
     4)
         . $INCLUDE_DIR/existing.module;;
     5)
-        . $INCLUDE_DIR/kpartapp.module;;
+        . $INCLUDE_DIR/kpartplugin.module;;
     *)
         . $INCLUDE_DIR/kapp4template.module;;
 esac
