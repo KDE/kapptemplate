@@ -4,11 +4,12 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 
 #include "${APP_NAME_LC}_part.moc"
 
-#include <KAction>
-#include <KComponentData>
-#include <KFileDialog>
-#include <KParts/GenericFactory>
-#include <KStandardAction>
+#include <kaction.h>
+#include <kactioncollection.h>
+#include <kcomponentdata.h>
+#include <kfiledialog.h>
+#include <kparts/genericfactory.h>
+#include <kstandardaction.h>
 
 #include <QFile>
 #include <QTextStream>
@@ -93,8 +94,8 @@ KAboutData *${APP_NAME}Part::createAboutData()
 bool ${APP_NAME}Part::openFile()
 {
     // m_file is always local so we can use QFile on it
-    QFile file(m_file);
-    if (file.open(QIODevice::ReadOnly) == false)
+    QFile file("m_file");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return false;
 
     // our example widget is text-based, so we use QTextStream instead
@@ -110,7 +111,7 @@ bool ${APP_NAME}Part::openFile()
     m_widget->setText(str);
 
     // just for fun, set the status bar
-    emit setStatusBarText( m_url.prettyUrl() );
+    //emit setStatusBarText( m_url.prettyUrl() );
 
     return true;
 }
@@ -122,8 +123,8 @@ bool ${APP_NAME}Part::saveFile()
         return false;
 
     // m_file is always local, so we use QFile
-    QFile file(m_file);
-    if (file.open(QIODevice::WriteOnly) == false)
+    QFile file("m_file");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return false;
 
     // use QTextStream to dump the text to the file

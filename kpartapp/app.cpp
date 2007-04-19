@@ -8,16 +8,17 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include "${APP_NAME_LC}.h"
 #include "${APP_NAME_LC}.moc"
 
-#include <KAction>
-#include <KConfig>
-#include <KEditToolBar>
-#include <KFileDialog>
-#include <KKeyDialog>
-#include <KLibLoader>
-#include <KMessageBox>
-#include <KStandardAction>
-#include <KStatusBar>
-#include <KUrl>
+#include <kaction.h>
+#include <kactioncollection.h>
+#include <kconfig.h>
+#include <kedittoolbar.h>
+#include <kfiledialog.h>
+#include <kshortcutsdialog.h>
+#include <klibloader.h>
+#include <kmessagebox.h>
+#include <kstandardaction.h>
+#include <kstatusbar.h>
+#include <kurl.h>
 
 ${APP_NAME}::${APP_NAME}()
     : KParts::MainWindow( )
@@ -45,7 +46,7 @@ ${APP_NAME}::${APP_NAME}()
             setCentralWidget(m_part->widget());
 
             // and integrate the part's GUI with the shell's
-            createGUI(m_part);
+            setupGUI();
         }
     }
     else
@@ -84,18 +85,18 @@ void ${APP_NAME}::setupActions()
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
 
-    KStandardAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
-    KStandardAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
+    //KStandardAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
+    //KStandardAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
 
-void ${APP_NAME}::saveProperties(KConfig* /*config*/)
+void ${APP_NAME}::saveProperties(KConfigGroup & /*config*/)
 {
     // the 'config' object points to the session managed
     // config file.  anything you write here will be available
     // later when this app is restored
 }
 
-void ${APP_NAME}::readProperties(KConfig* /*config*/)
+void ${APP_NAME}::readProperties(const KConfigGroup & /*config*/)
 {
     // the 'config' object points to the session managed
     // config file.  this function is automatically called whenever
@@ -121,26 +122,26 @@ void ${APP_NAME}::fileNew()
 
 void ${APP_NAME}::optionsConfigureKeys()
 {
-  KKeyDialog dlg( KKeyChooser::AllActions, KKeyChooser::LetterShortcutsDisallowed, this );
+  /*KShortcutsDialog dlg( KKeyChooser::AllActions, KKeyChooser::LetterShortcutsDisallowed, this );
   dlg.insert( actionCollection(), "${APP_NAME_LC}_shell.rc" );
   dlg.insert( m_part->actionCollection(), "${APP_NAME_LC}_part.rc" );
-  (void) dlg.configure( true );
+  (void) dlg.configure( true );*/
 }
 
 void ${APP_NAME}::optionsConfigureToolbars()
 {
-    saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
+    //saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
 
     // use the standard toolbar editor
-    KEditToolBar dlg(factory());
+    /*KEditToolBar dlg(factory());
     connect(&dlg, SIGNAL(newToolbarConfig()),
             this, SLOT(applyNewToolbarConfig()));
-    dlg.exec();
+    dlg.exec();*/
 }
 
 void ${APP_NAME}::applyNewToolbarConfig()
 {
-    applyMainWindowSettings(KGlobal::config(), autoSaveGroup());
+    //applyMainWindowSettings(KGlobal::config(), autoSaveGroup());
 }
 
 void ${APP_NAME}::fileOpen()
