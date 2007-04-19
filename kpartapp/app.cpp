@@ -38,7 +38,7 @@ ${APP_NAME}::${APP_NAME}()
         // now that the Part is loaded, we cast it to a Part to get
         // our hands on it
         m_part = static_cast<KParts::ReadWritePart *>(factory->create(this,
-                                "${APP_NAME_LC}_part" ));
+                                "${APP_NAME}Part" ));
 
         if (m_part)
         {
