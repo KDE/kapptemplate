@@ -34,7 +34,7 @@ set(${APP_NAME_LC}_PART_SRCS
  )
 kde4_automoc(\${${APP_NAME_LC}_PART_SRCS})
 
-kde4_add_plugin(lib${APP_NAME_LC}part_la WITH_PREFIX \${${APP_NAME_LC}_PART_SRCS})
+kde4_add_plugin(${APP_NAME_LC}part WITH_PREFIX \${${APP_NAME_LC}_PART_SRCS})
 
 target_link_libraries(${APP_NAME_LC}part \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} )
 
