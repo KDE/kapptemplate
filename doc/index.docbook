@@ -35,14 +35,14 @@
 
 <abstract>
 <para>
-&kapptemplate; is a KDE4 templates generator.
+&kapptemplate; is a &kde; 4 templates generator.
 </para>
 </abstract>
 
 <keywordset>
 <keyword>KDE</keyword>
 <keyword>kdesdk</keyword>
-<keyword>KDE4</keyword>
+<keyword>KDE 4</keyword>
 <keyword>programming</keyword>
 <keyword>template</keyword>
 </keywordset>
@@ -52,7 +52,7 @@
 <chapter id="introduction"> 
 <title>Introduction</title> 
 <para>
-&kapptemplate; generates KDE 4 templates to help you start easily KDE
+&kapptemplate; generates &kde; 4 templates to help you start easily &kde;
 programming.</para> 
 <para>
 &kapptemplate; runs in konsole or any terminal and you start it by typing
@@ -63,11 +63,12 @@ programming.</para>
 You are then presented with the templates list.
 </para>
 <para>
-There are two kinds of templates:</para>
+There are three kinds of templates:</para>
 
 <itemizedlist>
-<listitem><para>1. a simple KDE 4 application</para> </listitem>
-<listitem><para>2. a full featured KDE 4 framework application</para>
+<listitem><para>1. a simple &kde; 4 application</para> </listitem>
+<listitem><para>2. a full featured &kde; 4 framework application</para></listitem>
+<listitem><para>3. a KParts &kde; 4 application</para>
 </listitem>
 </itemizedlist>
 
@@ -82,7 +83,7 @@ your project. </para>
  is the best adapted to your needs.</para>
 
 <sect1 id="ksimpleapp-template">
-<title>Generating the KDE 4 simple application template</title>
+<title>Generating the &kde; 4 simple application template</title>
 
 <screenshot>
 <screeninfo>Here's a screenshot of the kde4 simple
@@ -96,7 +97,7 @@ application</screeninfo>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para>This template demonstrates how you create KDE menus using XMLGui and 
+<para>This template demonstrates how you create &kde; menus using XMLGui and 
 how to use KConfig XT to change settings using the <menuchoice>
 <guimenu>Settings</guimenu>
 <guimenuitem>Configure &lt;AppName&gt;</guimenuitem>
@@ -148,12 +149,54 @@ color or italic.</para>
 	  </textobject>
 	</mediaobject>
 </screenshot>
+
+<para>You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
 </sect1>
 
 <sect1 id="framework-template">
-<title>Generating the full featured KDE 4 framework application</title>
+<title>Generating the full featured &kde; 4 framework application</title>
+<para>This template has the same features than the previous one with more menus and with DBUS support.</para>
+
+<screenshot>
+<screeninfo>&kde; 4 framework application</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kapp-main.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>&kde; 4 framework application</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
 
 </sect1>
+
+<sect1 id="kpart-template">
+<title>Generating the KParts &kde; 4 application</title>
+<para>A KParts component is a &kde; GUI component featuring a widget embeddedable in any application and GUI elements that will be merged in the "host" user interface (menubars, toolbars... ). It can embed in other &kde; applications. For example, &konsole; is a KPart and can therefore be easily used in KDevelop or &kate;.</para>
+
+<para>
+The template will give you the following application:
+</para>
+
+<screenshot>
+<screeninfo>KParts application</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kpartapp-main.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>KParts application</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para>This template is a small editor</para>
+<para>You can read more about KParts in this detailed tutorial: 
+<ulink url="http://techbase.kde.org/Development/Architecture/KDE3/KParts">http://techbase.kde.org/Development/Architecture/KDE3/KParts</ulink>.
+</para>
+</sect1>
+
 </chapter>
 
 <chapter id="credits">
