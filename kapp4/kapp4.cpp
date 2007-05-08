@@ -39,17 +39,16 @@ ${APP_NAME}::${APP_NAME}()
 
     // then, setup our actions
     setupActions();
-    // a call to KXmlGuiWindow::createGUI() populates the GUI
-    // with actions, using KXMLGUI
-    createGUI();
 
     // add a status bar
     statusBar()->show();
 
-    // apply the saved mainwindow settings, if any, and ask the mainwindow
-    // to automatically save settings if changed: window size, toolbar
-    // position, icon size, etc.
-    setAutoSaveSettings();
+    // a call to KXmlGuiWindow::setupGUI() populates the GUI
+    // with actions, using KXMLGUI.
+    // It also applies the saved mainwindow settings, if any, and ask the
+    // mainwindow to automatically save settings if changed: window size,
+    // toolbar position, icon size, etc.
+    setupGUI();
 }
 
 ${APP_NAME}::~${APP_NAME}()
@@ -67,7 +66,6 @@ void ${APP_NAME}::setupActions()
     KAction *custom = new KAction(KIcon("colorize"), i18n("Swi&tch Colors"), this);
     actionCollection()->addAction( QLatin1String("switch_action"), custom );
     connect(custom, SIGNAL(triggered(bool)), m_view, SLOT(switchColors()));
-    setupGUI();
 }
 
 void ${APP_NAME}::fileNew()
