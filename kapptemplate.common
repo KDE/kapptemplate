@@ -303,7 +303,7 @@ function GetFileList
     if [ -d "$DIRECTORY" ];
     then
 #        FILES=`/bin/ls -1 -I "no-exe" -I*~ $DIRECTORY`;
-         FILES=`cd $DIRECTORY; find . ! -name "*~" -maxdepth 1 -type f -print | sed 's,^\./,,' | sort`;
+         FILES=`cd $DIRECTORY; find . -maxdepth 1 ! -name "*~" -type f -print | sed 's,^\./,,' | sort`;
 
         if [ ! "$FILES" ];
         then
