@@ -45,7 +45,6 @@ private slots:
     void optionsPreferences();
 
 private:
-    void setupAccel();
     void setupActions();
 
 private:

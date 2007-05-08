@@ -55,7 +55,6 @@ private slots:
     void applyNewToolbarConfig();
 
 private:
-    void setupAccel();
     void setupActions();
 
 private:

@@ -76,7 +76,6 @@ private slots:
     void changeCaption(const QString& text);
 
 private:
-    void setupAccel();
     void setupActions();
 
 private:
