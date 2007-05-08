@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
 /*
  * ${APP_NAME_LC}view.cpp
  *
- * Copyright (C) 2006 $AUTHOR <$EMAIL>
+ * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}view.h"
 #include "settings.h"

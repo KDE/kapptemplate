@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.h
 /*
  * ${APP_NAME_LC}view.h
  *
- * Copyright (C) 2006 $AUTHOR <$EMAIL>
+ * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #ifndef _${APP_NAME_UC}VIEW_H_
 #define _${APP_NAME_UC}VIEW_H_
