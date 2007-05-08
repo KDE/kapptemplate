@@ -9,12 +9,11 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 #define ${APP_NAME_UC}_H
 
 
-#include <kapplication.h>
 #include <kxmlguiwindow.h>
 
-#include "${APP_NAME_LC}view.h"
 #include "ui_prefs_base.h"
 
+class ${APP_NAME_LC}View;
 class KPrinter;
 class KToggleAction;
 class KUrl;

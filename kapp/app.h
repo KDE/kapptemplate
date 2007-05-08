@@ -3,14 +3,12 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
 #ifndef ${APP_NAME_UC}_H
 #define ${APP_NAME_UC}_H
 
-#include <kapplication.h>
 #include <kxmlguiwindow.h>
 
 #include <QDragEnterEvent>
 #include <QDropEvent>
 
-#include "${APP_NAME_LC}view.h"
-
+class ${APP_NAME_LC}View;
 class KPrinter;
 class KUrl;
 

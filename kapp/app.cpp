@@ -6,6 +6,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
  * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
+#include "${APP_NAME_LC}view.h"
 #include "settings.h"
 
 #include <kprinter.h>
@@ -99,7 +100,7 @@ void ${APP_NAME}::setupActions()
     KStandardAction::save(this, SLOT(fileSave()), actionCollection());
     KStandardAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
     KStandardAction::print(this, SLOT(filePrint()), actionCollection());
-    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(qApp, SLOT(quit()), actionCollection());
 
     KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 

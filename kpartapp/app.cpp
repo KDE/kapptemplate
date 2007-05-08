@@ -54,8 +54,8 @@ ${APP_NAME}::${APP_NAME}()
         // if we couldn't find our Part, we exit since the Shell by
         // itself can't do anything useful
         KMessageBox::error(this, "Could not find our Part!");
-        kapp->quit();
-        // we return here, cause kapp->quit() only means "exit the
+        qApp->quit();
+        // we return here, cause qApp->quit() only means "exit the
         // next time we enter the event loop...
         return;
     }
@@ -80,7 +80,7 @@ void ${APP_NAME}::setupActions()
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
     KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
 
-    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(qApp, SLOT(quit()), actionCollection());
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);

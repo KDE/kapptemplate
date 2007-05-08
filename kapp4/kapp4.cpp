@@ -6,6 +6,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
  * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
 #include "${APP_NAME_LC}.h"
+#include "${APP_NAME_LC}view.h"
 #include "settings.h"
 
 #include <QDropEvent>
@@ -58,7 +59,7 @@ ${APP_NAME}::~${APP_NAME}()
 void ${APP_NAME}::setupActions()
 {
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStandardAction::quit(kapp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(qApp, SLOT(quit()), actionCollection());
 
     KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
