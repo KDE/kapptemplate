@@ -3,7 +3,7 @@ cat << EOF > $LOCATION_ROOT/CMakeLists.txt;
 project(${APP_NAME_LC})
 find_package(KDE4 REQUIRED)
 include (KDE4Defaults)
-include_directories( \${KDE4_INCLUDE_DIR} \${QT_INCLUDES} )
+include_directories( \${KDE4_INCLUDES} \${QT_INCLUDES} )
 
 set(${APP_NAME_LC}_SRCS
    ${APP_NAME_LC}.cpp
