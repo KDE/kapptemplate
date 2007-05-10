@@ -108,7 +108,7 @@ bool ${APP_NAME}Part::openFile()
     file.close();
 
     // now that we have the entire file, display it
-    m_widget->setText(str);
+    m_widget->setPlainText(str);
 
     // just for fun, set the status bar
     //emit setStatusBarText( m_url.prettyUrl() );

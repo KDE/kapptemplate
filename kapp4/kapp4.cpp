@@ -13,18 +13,13 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include <QPainter>
 
 #include <kconfigdialog.h>
-#include <kglobal.h>
-#include <klocale.h>
-#include <kicon.h>
-#include <kprinter.h>
 #include <kstatusbar.h>
-#include <kkeydialog.h>
-
-#include <kedittoolbar.h>
 
 #include <kaction.h>
 #include <kactioncollection.h>
 #include <kstandardaction.h>
+
+#include <KLocale>
 
 ${APP_NAME}::${APP_NAME}()
     : KXmlGuiWindow(),
