@@ -13,7 +13,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 
 #include "ui_prefs_base.h"
 
-class ${APP_NAME_LC}View;
+class ${APP_NAME}View;
 class KPrinter;
 class KToggleAction;
 class KUrl;

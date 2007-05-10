@@ -28,12 +28,10 @@ function Usage
     $ECHO "    --default  Use default values instead of prompting";
     $ECHO;
     $ECHO "Framework Types:";
+    $ECHO "    --kapp4         Create simple KDE4 application";
     $ECHO "    --full-app      Create full featured KDE 4 framework
 application";
     $ECHO "    --kpart-app     Create full KPart application";
-    $ECHO "    --kpart-plugin  Create KPart plugin framework";
-    $ECHO "    --existing      Convert existing source to KDE framework";
-    $ECHO "    --kapp4         Create simple KDE4 application";
 }
 
 ###########################################################################
@@ -66,16 +64,12 @@ function ParseCommandLine
            NOINIT=1;;
         --default)
            ALL_DEFAULTS=1;;
-        --full-app)
+	 --kapp4)
            WHICH_ONE=1;;
-        --kpart-app)
+        --full-app)
            WHICH_ONE=2;;
-        --kpart-plugin)
+        --kpart-app)
            WHICH_ONE=3;;
-        --existing)
-           WHICH_ONE=4;;
-        --kapp4)
-           WHICH_ONE=5;;
         *)
            $ECHO "Unknown option $1";
            Usage;

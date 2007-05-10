@@ -10,6 +10,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include "settings.h"
 
 #include <kprinter.h>
+#include <qapplication.h>
 #include <qpainter.h>
 #include <q3paintdevicemetrics.h>
 #include <QDragEnterEvent>
@@ -17,7 +18,6 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 
 #include <kdeversion.h>
 #include <kglobal.h>
-#include <klocale.h>
 #include <kiconloader.h>
 #include <kmenubar.h>
 #include <kstatusbar.h>
@@ -27,9 +27,8 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include <kurl.h>
 #include <kurlrequesterdialog.h>
 #include <kactioncollection.h>
-#include <kedittoolbar.h>
-
 #include <kaction.h>
+#include <KLocale>
 
 #include "${APP_NAME_LC}adaptor.h"
 #include <QtDBus>

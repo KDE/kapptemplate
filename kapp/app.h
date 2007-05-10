@@ -8,7 +8,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
 #include <QDragEnterEvent>
 #include <QDropEvent>
 
-class ${APP_NAME_LC}View;
+class ${APP_NAME}View;
 class KPrinter;
 class KUrl;
 
