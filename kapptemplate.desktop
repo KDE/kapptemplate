@@ -5,6 +5,7 @@ Type=Application
 Exec=kapptemplate
 DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator
+GenericName[it]=Generatore di modelli di KDE
 GenericName[x-test]=xxKDE Template Generatorxx
 Terminal=true
 Name=KAppTemplate
