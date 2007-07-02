@@ -86,8 +86,8 @@ KAboutData *${APP_NAME}Part::createAboutData()
     // the non-i18n name here must be the same as the directory in
     // which the part's rc file is installed ('partrcdir' in the
     // Makefile)
-    KAboutData *aboutData = new KAboutData("${APP_NAME_LC}part", I18N_NOOP("${APP_NAME}Part"), "${APP_VERSION}");
-    aboutData->addAuthor("${AUTHOR}", 0, "${EMAIL}");
+    KAboutData *aboutData = new KAboutData("${APP_NAME_LC}part", 0, ki18n("${APP_NAME}Part"), "${APP_VERSION}");
+    aboutData->addAuthor(ki18n("${AUTHOR}"), KLocalizedString(), "${EMAIL}");
     return aboutData;
 }
 

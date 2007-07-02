@@ -11,17 +11,14 @@ static const char description[] =
 
 static const char version[] = "v${APP_VERSION}";
 
-static KCmdLineOptions options[] =
-{
-    { "+[URL]", I18N_NOOP( "Document to open" ), 0 },
-    KCmdLineLastOption
-};
-
 int main(int argc, char **argv)
 {
-    KAboutData about("${APP_NAME_LC}", I18N_NOOP("${APP_NAME}"), version, description, KAboutData::License_GPL, "(C) 2007 ${AUTHOR}", 0, 0, "${EMAIL}");
-    about.addAuthor( "${AUTHOR}", 0, "${EMAIL}" );
+    KAboutData about("${APP_NAME_LC}", 0, ki18n("${APP_NAME}"), version, ki18n(description), KAboutData::License_GPL, ki18n("(C) 2007 ${AUTHOR}"), KLocalizedString(), 0, "${EMAIL}");
+    about.addAuthor( ki18n("${AUTHOR}"), KLocalizedString(), "${EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
+
+    KCmdLineOptions options;
+    options.add("+[URL]", ki18n( "Document to open" ));
     KCmdLineArgs::addCmdLineOptions( options );
     KApplication app;
 
