@@ -18,6 +18,6 @@ install(PROGRAMS mkinstalldirs DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/bin)
 
 install( FILES kapptemplate.common kapptemplate.module kapp4template.module kpartplugin.module kpartapp.module existing.module  DESTINATION  ${DATA_INSTALL_DIR}/kapptemplate/include )
 
-install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_DIR} )
+install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 
 
