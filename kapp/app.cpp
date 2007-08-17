@@ -174,7 +174,7 @@ void ${APP_NAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KUrl url = KUrlRequesterDialog::getUrl(QString::null, this, i18n("Open Location") );
+    KUrl url = KUrlRequesterDialog::getUrl(QString::null, this, i18n("Open Location") );	//krazy:exclude=nullstrassign fr old broken gcc
     if (!url.isEmpty())
         m_view->openURL(url);
 }
