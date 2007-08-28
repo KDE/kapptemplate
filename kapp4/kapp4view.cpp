@@ -9,7 +9,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.cpp
 #include "settings.h"
 
 #include <klocale.h>
-#include <QLabel>
+#include <QtGui/QLabel>
 
 ${APP_NAME}View::${APP_NAME}View(QWidget *)
 {

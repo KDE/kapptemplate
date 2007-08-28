@@ -4,7 +4,7 @@ cat << EOF > $LOCATION_ROOT/main.cpp
 #include <kapplication.h>
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
-#include <KLocale>
+#include <KDE/KLocale>
 
 static const char description[] =
     I18N_NOOP("A KDE 4 Application");

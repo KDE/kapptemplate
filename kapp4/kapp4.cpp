@@ -9,8 +9,8 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include "${APP_NAME_LC}view.h"
 #include "settings.h"
 
-#include <QDropEvent>
-#include <QPainter>
+#include <QtGui/QDropEvent>
+#include <QtGui/QPainter>
 
 #include <kconfigdialog.h>
 #include <kstatusbar.h>
@@ -19,7 +19,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 #include <kactioncollection.h>
 #include <kstandardaction.h>
 
-#include <KLocale>
+#include <KDE/KLocale>
 
 ${APP_NAME}::${APP_NAME}()
     : KXmlGuiWindow(),

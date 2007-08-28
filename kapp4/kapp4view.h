@@ -5,10 +5,10 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.h
  *
  * Copyright (C) 2007 $AUTHOR <$EMAIL>
  */
-#ifndef _${APP_NAME_UC}VIEW_H_
-#define _${APP_NAME_UC}VIEW_H_
+#ifndef ${APP_NAME_UC}VIEW_H
+#define ${APP_NAME_UC}VIEW_H
 
-#include <QWidget>
+#include <QtGui/QWidget>
 
 #include "ui_${APP_NAME_LC}view_base.h"
 
@@ -58,4 +58,4 @@ private slots:
     void settingsChanged();
 };
 
-#endif // _${APP_NAME}VIEW_H_
+#endif // ${APP_NAME}VIEW_H

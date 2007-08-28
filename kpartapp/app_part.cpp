@@ -11,9 +11,9 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
 #include <kparts/genericfactory.h>
 #include <kstandardaction.h>
 
-#include <QFile>
-#include <QTextStream>
-#include <QTextEdit>
+#include <QtCore/QFile>
+#include <QtCore/QTextStream>
+#include <QtGui/QTextEdit>
 
 typedef KParts::GenericFactory<${APP_NAME}Part> ${APP_NAME}PartFactory;
 K_EXPORT_COMPONENT_FACTORY( lib${APP_NAME_LC}part, ${APP_NAME}PartFactory )
