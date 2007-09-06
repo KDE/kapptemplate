@@ -3,7 +3,7 @@
 Encoding=UTF-8
 Type=Application
 Exec=kapptemplate
-DocPath=kapptemplate/index.html
+X-DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator
 GenericName[de]=KDE-Vorlagengenerator
 GenericName[el]=Γεννήτρια προτύπων του KDE
