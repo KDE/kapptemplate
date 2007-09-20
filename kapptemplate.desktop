@@ -16,6 +16,7 @@ GenericName[pt]=Gerador de Modelos do KDE
 GenericName[pt_BR]=Gerador de Modelos do KDE
 GenericName[sv]=KDE:s mallgenerering
 GenericName[x-test]=xxKDE Template Generatorxx
+GenericName[zh_CN]=KDE 模板生成器
 GenericName[zh_TW]=KDE 樣本產生器
 Terminal=true
 Name=KAppTemplate
