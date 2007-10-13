@@ -14,7 +14,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 #include "ui_prefs_base.h"
 
 class ${APP_NAME}View;
-class KPrinter;
+class QPrinter;
 class KToggleAction;
 class KUrl;
 
@@ -51,7 +51,7 @@ private:
     Ui::prefs_base ui_prefs_base ;
     ${APP_NAME}View *m_view;
 
-    KPrinter   *m_printer;
+    QPrinter   *m_printer;
     KToggleAction *m_toolbarAction;
     KToggleAction *m_statusbarAction;
 };

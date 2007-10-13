@@ -11,6 +11,7 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <QtGui/QDropEvent>
 #include <QtGui/QPainter>
+#include <QtGui/QPrinter>
 
 #include <kconfigdialog.h>
 #include <kstatusbar.h>
