@@ -9,8 +9,6 @@ set(${APP_NAME_LC}_SRCS
 
 qt4_add_dbus_adaptor(${APP_NAME_LC}_SRCS org.kde.${APP_NAME_LC}.${APP_NAME}.xml ${APP_NAME_LC}.h ${APP_NAME})
 
-kde4_automoc(\${${APP_NAME_LC}_SRCS})
-
 kde4_add_kcfg_files(${APP_NAME_LC}_SRCS settings.kcfgc )
 
 kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
@@ -29,7 +27,7 @@ set(${APP_NAME_LC}_client_SRCS
 
 ########### install files ###############
 
-install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_DIR} )
+install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
 install( FILES ${APP_NAME_LC}ui.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC} )
 install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  \${KCFG_INSTALL_DIR} )
 

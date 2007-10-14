@@ -6,8 +6,8 @@ echo "Creating $LOCATION_ROOT/doc...";
 $MKDIR $LOCATION_ROOT/doc/
 echo "Creating $LOCATION_ROOT/CMakeLists.txt...";
 cat << EOF > $LOCATION_ROOT/CMakeLists.txt
+project(${APP_NAME_LC})
 
-PROJECT(${APP_NAME_LC})
 find_package(KDE4 REQUIRED)
 include (KDE4Defaults)
 include_directories( \${KDE4_INCLUDES} \${QT_INCLUDES} )

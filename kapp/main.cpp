@@ -6,6 +6,7 @@ cat << EOF > $LOCATION_ROOT/src/main.cpp
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
 #include <klocale.h>
+#include <kurl.h>
 
 static const char description[] =
     I18N_NOOP("A KDE Application");
