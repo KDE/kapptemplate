@@ -11,10 +11,7 @@ kde4_install_icons( \${ICON_INSTALL_DIR}   )
 set(lib${APP_NAME_LC}plugin_la_SRCS
 	plugin_${APP_NAME_LC}.cpp)
 
-kde4_automoc(\${lib${APP_NAME_LC}plugin_la_SRCS})
-
 kde4_add_plugin(lib${APP_NAME_LC}plugin_la \${lib${APP_NAME_LC}plugin_la_SRCS})
-kde4_install_libtool_file( \${PLUGIN_INSTALL_DIR} lib${APP_NAME_LC}plugin_la )
 
 target_link_libraries(lib${APP_NAME_LC}plugin_la \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} \${KDE4_KHTML_LIBS} \${KDE4_PLUGIN} )
 
