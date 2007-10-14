@@ -1,9 +1,4 @@
 echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt...";
 $MKDIR $LOCATION_ROOT/doc/$APP_NAME_LC
 cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/CMakeLists.txt
-
-# the SUBDIRS is filled automatically by am_edit. If files are 
-# in this directory they are installed into the english dir
-#KDE_LANG = en
-#KDE_DOCS = $APP_NAME_LC
-#SUBDIRS = \$(AUTODIRS)  
+kde4_create_handbook(index.docbook INSTALL_DESTINATION \${HTML_INSTALL_DIR}/en)
