@@ -128,7 +128,7 @@ void ${APP_NAME}::readProperties(const KConfigGroup &config)
     // the app is being restored.  read in here whatever you wrote
     // in 'saveProperties'
 
-    QString url = config.readPathEntry("lastURL");
+    QString url = config.readPathEntry("lastURL", QString());
 
     if (!url.isEmpty())
         m_view->openURL(KUrl::fromPathOrUrl(url));
