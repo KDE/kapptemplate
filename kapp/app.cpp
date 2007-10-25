@@ -9,10 +9,8 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include "${APP_NAME_LC}view.h"
 #include "settings.h"
 
-#include <kprinter.h>
 #include <qapplication.h>
 #include <qpainter.h>
-#include <q3paintdevicemetrics.h>
 #include <QDragEnterEvent>
 #include <QDropEvent>
 
@@ -213,8 +211,7 @@ void ${APP_NAME}::filePrint()
         p.begin(m_printer);
 
         // we let our view do the actual printing
-        Q3PaintDeviceMetrics metrics(m_printer);
-        m_view->print(&p, metrics.height(), metrics.width());
+        m_view->print(&p, m_printer->height(), m_printer-width());
 
         // and send the result to the printer
         p.end();
