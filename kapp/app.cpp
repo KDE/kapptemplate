@@ -10,9 +10,11 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 #include "settings.h"
 
 #include <qapplication.h>
-#include <qpainter.h>
-#include <QDragEnterEvent>
-#include <QDropEvent>
+#include <QtGui/QDragEnterEvent>
+#include <QtGui/QPrinter>
+#include <QtGui/QPrintDialog>
+#include <QtGui/QDropEvent>
+#include <QtGui/QPainter>
 
 #include <kdeversion.h>
 #include <kglobal.h>
@@ -201,8 +203,9 @@ void ${APP_NAME}::filePrint()
     // this slot is called whenever the File->Print menu is selected,
     // the Print shortcut is pressed (usually CTRL+P) or the Print toolbar
     // button is clicked
-    if (!m_printer) m_printer = new KPrinter;
-    if (m_printer->setup(this))
+    if (!m_printer) m_printer = new QPrinter;
+    QPrintDialog dialog(m_printer, this);
+    if (dialog.exec())
     {
         // setup the printer.  with Qt, you always "print" to a
         // QPainter.. whether the output medium is a pixmap, a screen,
@@ -211,7 +214,7 @@ void ${APP_NAME}::filePrint()
         p.begin(m_printer);
 
         // we let our view do the actual printing
-        m_view->print(&p, m_printer->height(), m_printer-width());
+        m_view->print(&p, m_printer->height(), m_printer->width());
 
         // and send the result to the printer
         p.end();

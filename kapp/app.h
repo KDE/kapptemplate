@@ -9,7 +9,7 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
 #include <QDropEvent>
 
 class ${APP_NAME}View;
-class KPrinter;
+class QPrinter;
 class KUrl;
 
 /**
@@ -81,7 +81,7 @@ private:
 private:
     ${APP_NAME}View *m_view;
 
-    KPrinter   *m_printer;
+    QPrinter   *m_printer;
 };
 
 #endif // ${APP_NAME_UC}_H
