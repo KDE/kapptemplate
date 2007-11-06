@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_part.cpp
+echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}_part.cpp...";
+cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}_part.cpp
 #include "${APP_NAME_LC}_part.h"
 
 #include "${APP_NAME_LC}_part.moc"

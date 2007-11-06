@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_shell.rc...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}_shell.rc
+echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}_shell.rc...";
+cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}_shell.rc
 <!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
 <kpartgui name="${APP_NAME_LC}_shell" version="1">
 <MenuBar>

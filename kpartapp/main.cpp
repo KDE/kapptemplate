@@ -1,5 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}/main.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/main.cpp
+echo "Creating $LOCATION_ROOT/src/main.cpp...";
+cat << EOF > $LOCATION_ROOT/src/main.cpp
 #include "${APP_NAME_LC}.h"
 #include <kapplication.h>
 #include <kaboutdata.h>
