@@ -10,6 +10,7 @@ class QPainter;
 class KUrl;
 class QTextEdit;
 class KAboutData;
+class KAction;
 
 /**
  * This is a "Part".  It that does all the real work in a KPart

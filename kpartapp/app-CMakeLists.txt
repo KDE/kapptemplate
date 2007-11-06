@@ -12,8 +12,6 @@ set(${APP_NAME_LC}_SRCS
    ${APP_NAME_LC}.cpp
  )
 
-kde4_automoc(\${${APP_NAME_LC}_SRCS})
-
 kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
 
 target_link_libraries(${APP_NAME_LC} \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS})
@@ -33,7 +31,6 @@ install( FILES ${APP_NAME_LC}_shell.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_
 set(${APP_NAME_LC}_PART_SRCS
    ${APP_NAME_LC}_part.cpp
  )
-kde4_automoc(\${${APP_NAME_LC}_PART_SRCS})
 
 kde4_add_plugin(${APP_NAME_LC}part WITH_PREFIX \${${APP_NAME_LC}_PART_SRCS})
 
