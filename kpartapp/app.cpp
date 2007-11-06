@@ -10,7 +10,6 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 
 #include <kaction.h>
 #include <kactioncollection.h>
-#include <kapplication.h>
 #include <kconfig.h>
 #include <kedittoolbar.h>
 #include <kfiledialog.h>
@@ -20,6 +19,8 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}/${APP_NAME_LC}.cpp
 #include <kstandardaction.h>
 #include <kstatusbar.h>
 #include <kurl.h>
+
+#include <QApplication>
 
 ${APP_NAME}::${APP_NAME}()
     : KParts::MainWindow( )
@@ -55,7 +56,7 @@ ${APP_NAME}::${APP_NAME}()
         // if we couldn't find our Part, we exit since the Shell by
         // itself can't do anything useful
         KMessageBox::error(this, "Could not find our Part!");
-        kapp->quit();
+        qApp->quit();
         // we return here, cause qApp->quit() only means "exit the
         // next time we enter the event loop...
         return;

@@ -64,5 +64,5 @@ done
 ###########################################################################
 
 $ECHO "Project created! \n";
-$MKDIR $LOCATION_ROOT/kpartapp/build && cd $LOCATION_ROOT/kpartapp/build 
-$ECHO "In "$LOCATION_ROOT"/kpartapp/build and  run 'cmake -DCMAKE_INSTALL_PREFIX=path/to/kde4/install ..'"
+$MKDIR $LOCATION_ROOT/build && cd $LOCATION_ROOT/build 
+$ECHO "In "$LOCATION_ROOT"/build and  run 'cmake -DCMAKE_INSTALL_PREFIX=path/to/kde4/install ..'"

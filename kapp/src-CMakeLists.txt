@@ -15,7 +15,7 @@ kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
 
 target_link_libraries(${APP_NAME_LC} \${KDE4_KDEUI_LIBS}  \${KDE4_KIO_LIBS})
 
-install(TARGETS ${APP_NAME_LC} DESTINATION \${BIN_INSTALL_DIR} ) ${KDE4_KIO_LIBS}
+install(TARGETS ${APP_NAME_LC} DESTINATION \${BIN_INSTALL_DIR} ) 
 
 ##### client #####
 set(${APP_NAME_LC}_client_SRCS
