@@ -1,6 +1,6 @@
-echo "Creating $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook...";
+echo "Creating $LOCATION_ROOT/doc/index.docbook...";
 echo "It is better to use template.docbook instead of this - please replace it"
-cat << EOF > $LOCATION_ROOT/doc/$APP_NAME_LC/index.docbook
+cat << EOF > $LOCATION_ROOT/doc/index.docbook
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&$APP_NAME;">
