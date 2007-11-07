@@ -6,7 +6,7 @@ Name=${APP_NAME}
 Exec=${APP_NAME_LC} %i -caption "%c"
 Icon=${APP_NAME_LC}
 Type=Application
-DocPath=${APP_NAME_LC}/${APP_NAME_LC}.html
+DocPath=${APP_NAME_LC}/index.html
 GenericName=A KDE4 Application
 Terminal=0
 
