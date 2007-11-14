@@ -31,3 +31,4 @@ install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
 install( FILES ${APP_NAME_LC}ui.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC} )
 install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  \${KCFG_INSTALL_DIR} )
 
+kde4_install_icons( \${ICON_INSTALL_DIR}   )
