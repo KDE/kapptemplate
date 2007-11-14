@@ -1,0 +1,13 @@
+$MKDIR $LOCATION_ROOT/
+echo "Creating $LOCATION_ROOT/CMakeLists.txt...";
+cat << EOF > $LOCATION_ROOT/CMakeLists.txt
+#MIN_CONFIG
+
+
+project(${APP_NAME_LC})
+find_package(KDE4 REQUIRED)
+include (KDE4Defaults)
+include_directories( \${KDE4_INCLUDES} \${QT_INCLUDES} )
+
+add_subdirectory( doc )
+add_subdirectory( src )
