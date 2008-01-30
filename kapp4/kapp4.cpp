@@ -54,7 +54,7 @@ ${APP_NAME}::~${APP_NAME}()
 void ${APP_NAME}::setupActions()
 {
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStandardAction::quit(qApp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
 
     KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 

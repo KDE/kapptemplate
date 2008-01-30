@@ -82,7 +82,7 @@ void ${APP_NAME}::setupActions()
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
     KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
 
-    KStandardAction::quit(qApp, SLOT(quit()), actionCollection());
+    KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
