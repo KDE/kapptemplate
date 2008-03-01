@@ -6,6 +6,7 @@ Exec=kapptemplate
 X-DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator
 GenericName[ca]=Generador de plantilles del KDE
+GenericName[da]=KDE skabelongenerator
 GenericName[de]=KDE-Vorlagengenerator
 GenericName[el]=Γεννήτρια προτύπων του KDE
 GenericName[es]=Generador de plantillas para KDE
