@@ -1,0 +1,3 @@
+echo "Creating $LOCATION_ROOT/NEWS...";
+cat << EOF > $LOCATION_ROOT/NEWS
+

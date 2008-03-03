@@ -1,0 +1,18 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC.lsm...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC.lsm
+Begin4
+Title:          $APP_NAME -- Some description
+Version:        $APP_VERSION
+Entered-date:   YYYY-MM-DD
+Description:    
+Keywords:       KDE3 Qt
+Author:         $AUTHOR <$EMAIL>
+Maintained-by:  $AUTHOR <$EMAIL>
+Home-page:      
+Alternate-site: 
+Primary-site:   ftp://ftp.kde.org/pub/kde/unstable/apps/utils
+                xxxxxx  $APP_NAME_LC-$APP_VERSION.tar.gz
+                xxx     $APP_NAME_LC-$APP_VERSION.lsm
+Platform:       Linux. Needs KDE 2.x
+Copying-policy: GPL
+End

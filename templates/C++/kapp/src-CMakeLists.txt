@@ -1,0 +1,34 @@
+echo "Creating $LOCATION_ROOT/src/CMakeLists.txt...";
+cat << EOF > $LOCATION_ROOT/src/CMakeLists.txt
+
+set(${APP_NAME_LC}_SRCS
+   ${APP_NAME_LC}.cpp
+   main.cpp
+   ${APP_NAME_LC}view.cpp
+ )
+
+qt4_add_dbus_adaptor(${APP_NAME_LC}_SRCS org.kde.${APP_NAME_LC}.${APP_NAME}.xml ${APP_NAME_LC}.h ${APP_NAME})
+
+kde4_add_kcfg_files(${APP_NAME_LC}_SRCS settings.kcfgc )
+
+kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
+
+target_link_libraries(${APP_NAME_LC} \${KDE4_KDEUI_LIBS}  \${KDE4_KIO_LIBS})
+
+install(TARGETS ${APP_NAME_LC} DESTINATION \${BIN_INSTALL_DIR} ) 
+
+##### client #####
+set(${APP_NAME_LC}_client_SRCS
+    ${APP_NAME_LC}_client.cpp
+ )
+#kde4_add_executable(${APP_NAME_LC}_client \${${APP_NAME_LC}_client_SRCS})
+#target_link_libraries(${APP_NAME_LC}_client \${KDE4_KDECORE_LIBS})
+#install(TARGETS ${APP_NAME_LC}_client DESTINATION \${BIN_INSTALL_DIR} )
+
+########### install files ###############
+
+install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
+install( FILES ${APP_NAME_LC}ui.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC} )
+install( FILES ${APP_NAME_LC}.kcfg  DESTINATION  \${KCFG_INSTALL_DIR} )
+
+kde4_install_icons( \${ICON_INSTALL_DIR}   )

@@ -1,0 +1,28 @@
+project(kapptemplate)
+
+add_subdirectory(templates)
+
+set(kapptemplate_SRCS
+   kapptemplate.cpp
+   main.cpp
+   apptemplatesmodel.cpp
+   apptemplateitem.cpp
+ )
+
+kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui summary.ui generate.ui)
+
+kde4_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
+
+kde4_add_executable(kapptemplate ${kapptemplate_SRCS})
+
+target_link_libraries(kapptemplate ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS})
+
+install(TARGETS kapptemplate DESTINATION ${BIN_INSTALL_DIR} )
+
+
+########### install files ###############
+
+install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
+
+

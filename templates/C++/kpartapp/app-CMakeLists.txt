@@ -1,0 +1,40 @@
+$MKDIR $LOCATION_ROOT/src
+echo "Creating $LOCATION_ROOT/src/CMakeLists.txt...";
+cat << EOF > $LOCATION_ROOT/src/CMakeLists.txt
+
+project(${APP_NAME_LC})
+
+set(${APP_NAME_LC}_SRCS
+   main.cpp
+   ${APP_NAME_LC}.cpp
+ )
+
+kde4_add_executable(${APP_NAME_LC} \${${APP_NAME_LC}_SRCS})
+
+target_link_libraries(${APP_NAME_LC} \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS})
+
+########### install files ###############
+install(TARGETS ${APP_NAME_LC} DESTINATION \${BIN_INSTALL_DIR} )
+install( FILES ${APP_NAME_LC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
+install( FILES ${APP_NAME_LC}_shell.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC} )
+
+
+#########################################################################
+# KPART SECTION
+#########################################################################
+#kde_module_LTLIBRARIES = lib${APP_NAME_LC}part.la
+set(${APP_NAME_LC}_PART_SRCS
+   ${APP_NAME_LC}_part.cpp
+ )
+
+kde4_add_plugin(${APP_NAME_LC}part WITH_PREFIX \${${APP_NAME_LC}_PART_SRCS})
+
+target_link_libraries(${APP_NAME_LC}part \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} )
+
+install( FILES ${APP_NAME_LC}_part.desktop  DESTINATION \${XDG_APPS_INSTALL_DIR} )
+install( FILES ${APP_NAME_LC}_part.rc  DESTINATION  \${DATA_INSTALL_DIR}/${APP_NAME_LC}part )
+
+set_target_properties(${APP_NAME_LC}part PROPERTIES VERSION SOVERSION)
+install(TARGETS ${APP_NAME_LC}part  DESTINATION \${PLUGIN_INSTALL_DIR} )
+
+kde4_install_icons( \${ICON_INSTALL_DIR}   )

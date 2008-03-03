@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+ <include>kuser.h</include>
+  <kcfgfile name="kapptemplaterc"/>
+  <group name="Project">
+    <entry name="appName" type="String">
+	    <label>Name of the project</label>
+	    <default>KApp4</default>
+    </entry>
+    <entry name="appVersion" type="String">
+	    <label>Project version</label>
+	    <default>0.1</default>
+    </entry>
+    <entry name="url" type="String">
+	    <label>Home dir of the user</label>
+	    <code>QString defaultDir = KUser().homeDir()+"/src";
+	    </code>
+	    <default code="true">defaultDir</default>
+    </entry>
+  </group>
+  <group name="User">
+    <entry name="name" type="String">
+	    <label>Name of the user</label>
+	    <default></default>
+    </entry>
+    <entry name="email" type="String">
+	    <label>Email of the user</label>
+	    <default></default>
+    </entry>
+  </group>
+</kcfg>

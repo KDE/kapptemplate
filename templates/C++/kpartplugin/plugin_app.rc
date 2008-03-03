@@ -1,0 +1,13 @@
+echo "Creating $LOCATION_ROOT/plugin_${APP_NAME_LC}.rc...";
+cat << EOF > $LOCATION_ROOT/plugin_${APP_NAME_LC}.rc
+<!DOCTYPE kpartgui>
+<kpartplugin name="${APP_NAME_LC}" library="lib${APP_NAME_LC}plugin" version="1">
+<MenuBar>
+ <Menu name="tools"><Text>&amp;Tools</Text>
+  <Action name="plugin_action"/>
+ </Menu>
+</MenuBar>
+<ToolBar name="extraToolBar">
+  <Action name="plugin_action"/>
+</ToolBar>
+</kpartplugin>

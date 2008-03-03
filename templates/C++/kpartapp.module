@@ -1,0 +1,68 @@
+###########################################################################
+#
+# STEP 1: GET USER INFORMATION
+#
+###########################################################################
+# Get the application name
+APPTYPE="KPart application";
+APPDEFAULT="KPartApp";
+GetProperName
+
+# Get the application version
+GetVersion
+
+# Get the root where this framework will be installed
+GetLocationRoot
+
+# Get the author's name
+GetAuthorName
+
+# Get the author's email
+GetAuthorEmail
+
+# Verify that everything is grand
+$ECHO;
+$ECHO "Here is what I have:";
+$ECHO "The app: $APP_NAME v$APP_VERSION";
+$ECHO "Installed in: $LOCATION_ROOT";
+$ECHO "Author: $AUTHOR <$EMAIL>";
+$ECHO;
+$ECHO "Is this correct (Y/n)? ";
+$ECHO ": \c";
+read Y_N;
+if [ $Y_N -a $Y_N = 'n' ];
+then
+	$ECHO "AUGH!  Well, try again.";
+	exit 0;
+fi
+$ECHO;
+
+$ECHO "OK, Here we go!!";
+
+###########################################################################
+#
+# STEP 2: CREATE APPLICATION FRAMEWORK
+#
+###########################################################################
+CreateAppFramework
+
+###########################################################################
+#
+# STEP 3:  GENERATE APP-SPECIFIC FILES
+#
+###########################################################################
+
+for EXE_FILE in $KPARTAPP_FILES;
+do
+    . $SHARE_DIR/kpartapp/$EXE_FILE || exit 1;
+done
+
+###########################################################################
+#
+# STEP 4:  FINAL STEPS
+#
+###########################################################################
+
+$ECHO "Project created! \n";
+$MKDIR $LOCATION_ROOT/build && cd $LOCATION_ROOT/build 
+$ECHO "In "$LOCATION_ROOT"/build and  run 'cmake -DCMAKE_INSTALL_PREFIX=path/to/kde4/install ..'"

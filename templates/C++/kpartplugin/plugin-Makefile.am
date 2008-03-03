@@ -1,0 +1,20 @@
+echo "Creating $LOCATION_ROOT/$APP_NAME_LC/Makefile.am...";
+cat << EOF > $LOCATION_ROOT/$APP_NAME_LC/Makefile.am
+INCLUDES    = \$(all_includes)
+METASOURCES = AUTO
+
+KDE_ICON = ${APP_NAME_LC}
+
+# Install this plugin in the KDE modules directory
+kde_module_LTLIBRARIES = lib${APP_NAME_LC}plugin.la
+
+# This is all standard.  Remove the LIB_KHTML reference if you are not
+# using the KHTML Part
+lib${APP_NAME_LC}plugin_la_SOURCES = plugin_${APP_NAME_LC}.cpp
+lib${APP_NAME_LC}plugin_la_LIBADD = \$(LIB_KPARTS) \$(LIB_KHTML)
+lib${APP_NAME_LC}plugin_la_LDFLAGS = -module \$(KDE_PLUGIN) \$(all_libraries)
+
+# Install the .rc file in the Part's directory (in this case, the part
+# is KHTMLPart)
+pluginsdir = \$(kde_datadir)/khtml/kpartplugins
+plugins_DATA = plugin_${APP_NAME_LC}.rc
