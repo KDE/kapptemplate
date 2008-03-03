@@ -4,6 +4,7 @@
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
  <include>kuser.h</include>
+ <include>kemailsettings.h</include>
   <kcfgfile name="kapptemplaterc"/>
   <group name="Project">
     <entry name="appName" type="String">
@@ -24,11 +25,18 @@
   <group name="User">
     <entry name="name" type="String">
 	    <label>Name of the user</label>
-	    <default></default>
+	    <code>KEMailSettings emailConfig;
+	    emailConfig.setProfile( emailConfig.defaultProfileName() );
+	    QString name = emailConfig.getSetting( KEMailSettings::RealName );
+	    </code>
+	    <default code="true">name</default>
     </entry>
     <entry name="email" type="String">
 	    <label>Email of the user</label>
-	    <default></default>
+	    <code>
+	    QString address = emailConfig.getSetting( KEMailSettings::EmailAddress );
+	    </code>
+	    <default code="true">address</default>
     </entry>
   </group>
 </kcfg>
