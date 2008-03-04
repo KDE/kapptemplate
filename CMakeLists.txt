@@ -1,6 +1,7 @@
 project(kapptemplate)
 
 add_subdirectory(templates)
+add_subdirectory(tests)
 
 set(kapptemplate_SRCS
    kapptemplate.cpp

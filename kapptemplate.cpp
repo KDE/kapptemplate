@@ -24,6 +24,7 @@
 #include <ktoolinvocation.h>
 
 #include <QPixmap>
+#include <QRegExpValidator>
 
 #include "kapptemplate.h"
 #include "prefs.h"
@@ -72,7 +73,9 @@ ChoicePage::ChoicePage( QWidget *parent)
     connect(ui_choice.kcfg_appName, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
     connect(ui_choice.appTree->selectionModel(), SIGNAL(currentChanged(QModelIndex, QModelIndex)), this, SLOT(itemSelected(QModelIndex)));
-
+    QRegExp rx("[a-zA-Z0-9_.\\-]*");
+    QValidator *validator = new QRegExpValidator(rx, this);
+    ui_choice.kcfg_appName->setValidator(validator);
     registerField("appName*", ui_choice.kcfg_appName);
 }
 
