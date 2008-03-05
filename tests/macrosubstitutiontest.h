@@ -18,23 +18,19 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
-#include "namevalidatortest.h"
-#include <qtest_kde.h>
-#include <QRegExp>
-#include <QString>
+#ifndef MACROSUBSTITUTIONTEST_H
+#define MACROSUBSTITUTIONTEST_H
 
-QTEST_KDEMAIN_CORE(NameValidatorTest)
+#include <QtCore/QObject>
+#include <QHash>
 
-// This is a test to check the validity of the validator we use
-// for entering a project application name. Foreign characters should be excluded
-// as well as weird characters except _ . and -
-void NameValidatorTest::testAppName()
+class MacroSubstitutionTest : public QObject
 {
-    QRegExp rx("[a-zA-Z0-9_.\\-]*");
-    QString myAppName = "KTry_App-0.1" ;
-    bool ok = true;
-    QCOMPARE( rx.exactMatch(myAppName), ok);
-    QVERIFY(ok);
-}
+    Q_OBJECT
+private:
+    QHash<QString, QString> m_variables;
+private Q_SLOTS:
+    void substitute();
+};
 
-#include "namevalidatortest.moc"
+#endif
