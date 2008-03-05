@@ -1,5 +1,3 @@
-echo "Creating $LOCATION_ROOT/prefs_base.ui...";
-cat << EOF > $LOCATION_ROOT/prefs_base.ui
 <ui version="4.0" >
  <class>prefs_base</class>
  <widget class="QWidget" name="prefs_base" >

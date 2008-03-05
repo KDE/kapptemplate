@@ -1,44 +1,42 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.h...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.h
 /*
- * ${APP_NAME_LC}.h
+ * %{APPNAMELC}.h
  *
- * Copyright (C) 2007 $AUTHOR <$EMAIL>
+ * Copyright (C) 2008 %{AUTHOR} <%{EMAIL}>
  */
-#ifndef ${APP_NAME_UC}_H
-#define ${APP_NAME_UC}_H
+#ifndef %{APPNAMEUC}_H
+#define %{APPNAMEUC}_H
 
 
 #include <kxmlguiwindow.h>
 
 #include "ui_prefs_base.h"
 
-class ${APP_NAME}View;
+class %{APPNAME}View;
 class QPrinter;
 class KToggleAction;
 class KUrl;
 
 /**
- * This class serves as the main window for ${APP_NAME}.  It handles the
+ * This class serves as the main window for %{APPNAME}.  It handles the
  * menus, toolbars, and status bars.
  *
  * @short Main window class
- * @author ${AUTHOR} <${EMAIL}>
- * @version ${APP_VERSION}
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{APP_VERSION}
  */
-class ${APP_NAME} : public KXmlGuiWindow
+class %{APPNAME} : public KXmlGuiWindow
 {
     Q_OBJECT
 public:
     /**
      * Default Constructor
      */
-    ${APP_NAME}();
+    %{APPNAME}();
 
     /**
      * Default Destructor
      */
-    virtual ~${APP_NAME}();
+    virtual ~%{APPNAME}();
 
 private slots:
     void fileNew();
@@ -49,11 +47,11 @@ private:
 
 private:
     Ui::prefs_base ui_prefs_base ;
-    ${APP_NAME}View *m_view;
+    %{APPNAME}View *m_view;
 
     QPrinter   *m_printer;
     KToggleAction *m_toolbarAction;
     KToggleAction *m_statusbarAction;
 };
 
-#endif // _${APP_NAME_UC}_H_
+#endif // _%{APPNAMEUC}_H_

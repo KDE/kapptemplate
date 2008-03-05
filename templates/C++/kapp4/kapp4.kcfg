@@ -1,11 +1,9 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.kcfg...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.kcfg
 <?xml version="1.0" encoding="UTF-8"?>
 <kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
-  <kcfgfile name="${APP_NAME}rc"/>
+  <kcfgfile name="%{APPNAME}rc"/>
   <group name="Preferences">
     <entry name="col_background" type="Color">
 	    <label>color of the background</label>

@@ -1,12 +1,10 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.cpp...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 /*
- * ${APP_NAME_LC}.cpp
+ * %{APPNAMELC}.cpp
  *
- * Copyright (C) 2007 $AUTHOR <$EMAIL>
+ * Copyright (C) 2008 %{AUTHOR} <%{EMAIL}>
  */
-#include "${APP_NAME_LC}.h"
-#include "${APP_NAME_LC}view.h"
+#include "%{APPNAMELC}.h"
+#include "%{APPNAMELC}view.h"
 #include "settings.h"
 
 #include <QtGui/QDropEvent>
@@ -22,9 +20,9 @@ cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.cpp
 
 #include <KDE/KLocale>
 
-${APP_NAME}::${APP_NAME}()
+%{APPNAME}::%{APPNAME}()
     : KXmlGuiWindow(),
-      m_view(new ${APP_NAME}View(this)),
+      m_view(new %{APPNAME}View(this)),
       m_printer(0)
 {
     // accept dnd
@@ -47,34 +45,34 @@ ${APP_NAME}::${APP_NAME}()
     setupGUI();
 }
 
-${APP_NAME}::~${APP_NAME}()
+%{APPNAME}::~%{APPNAME}()
 {
 }
 
-void ${APP_NAME}::setupActions()
+void %{APPNAME}::setupActions()
 {
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
     KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
 
     KStandardAction::preferences(this, SLOT(optionsPreferences()), actionCollection());
 
-    // custom menu and menu item - the slot is in the class ${APP_NAME}View
+    // custom menu and menu item - the slot is in the class %{APPNAME}View
     KAction *custom = new KAction(KIcon("colorize"), i18n("Swi&tch Colors"), this);
     actionCollection()->addAction( QLatin1String("switch_action"), custom );
     connect(custom, SIGNAL(triggered(bool)), m_view, SLOT(switchColors()));
 }
 
-void ${APP_NAME}::fileNew()
+void %{APPNAME}::fileNew()
 {
     // this slot is called whenever the File->New menu is selected,
     // the New shortcut is pressed (usually CTRL+N) or the New toolbar
     // button is clicked
 
     // create a new window
-    (new ${APP_NAME})->show();
+    (new %{APPNAME})->show();
 }
 
-void ${APP_NAME}::optionsPreferences()
+void %{APPNAME}::optionsPreferences()
 {
     // The preference dialog is derived from prefs_base.ui
     //
@@ -93,4 +91,4 @@ void ${APP_NAME}::optionsPreferences()
     dialog->show();
 }
 
-#include "${APP_NAME_LC}.moc"
+#include "%{APPNAMELC}.moc"

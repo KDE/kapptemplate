@@ -1,46 +1,44 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}view.h...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}view.h
 /*
- * ${APP_NAME_LC}view.h
+ * %{APPNAMELC}view.h
  *
- * Copyright (C) 2007 $AUTHOR <$EMAIL>
+ * Copyright (C) 2007 %{AUTHOR} <%{EMAIL}>
  */
-#ifndef ${APP_NAME_UC}VIEW_H
-#define ${APP_NAME_UC}VIEW_H
+#ifndef %{APPNAMEUC}VIEW_H
+#define %{APPNAMEUC}VIEW_H
 
 #include <QtGui/QWidget>
 
-#include "ui_${APP_NAME_LC}view_base.h"
+#include "ui_%{APPNAMELC}view_base.h"
 
 class QPainter;
 class KUrl;
 
 /**
- * This is the main view class for ${APP_NAME}.  Most of the non-menu,
+ * This is the main view class for %{APPNAME}.  Most of the non-menu,
  * non-toolbar, and non-statusbar (e.g., non frame) GUI code should go
  * here.
  *
  * @short Main view
- * @author ${AUTHOR} <${EMAIL}>
- * @version ${APP_VERSION}
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{APP_VERSION}
  */
 
-class ${APP_NAME}View : public QWidget, public Ui::${APP_NAME_LC}view_base
+class %{APPNAME}View : public QWidget, public Ui::%{APPNAMELC}view_base
 {
     Q_OBJECT
 public:
     /**
      * Default constructor
      */
-    ${APP_NAME}View(QWidget *parent);
+    %{APPNAME}View(QWidget *parent);
 
     /**
      * Destructor
      */
-    virtual ~${APP_NAME}View();
+    virtual ~%{APPNAME}View();
 
 private:
-    Ui::${APP_NAME_LC}view_base ui_${APP_NAME_LC}view_base;
+    Ui::%{APPNAMELC}view_base ui_%{APPNAMELC}view_base;
 
 signals:
     /**
@@ -58,4 +56,4 @@ private slots:
     void settingsChanged();
 };
 
-#endif // ${APP_NAME}VIEW_H
+#endif // %{APPNAME}VIEW_H

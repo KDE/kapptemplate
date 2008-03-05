@@ -1,12 +1,10 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}.desktop...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}.desktop
 [Desktop Entry]
 Encoding=UTF-8
-Name=${APP_NAME}
-Exec=${APP_NAME_LC} %i -caption "%c"
-Icon=${APP_NAME_LC}
+Name=%{APPNAME}
+Exec=%{APPNAMELC} %i -caption "%c"
+Icon=%{APPNAMELC}
 Type=Application
-DocPath=${APP_NAME_LC}/index.html
+DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Application
 Terminal=0
 
