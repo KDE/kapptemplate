@@ -89,9 +89,22 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 {
     if (!index.isValid())
 	return;
-    //get picture and description
-    ui_choice.pictureLabel->setPixmap(templatesModel->picture(index).value<QPixmap>());
-    ui_choice.descriptionLabel->setText(templatesModel->description(index).toString());
+    //get picture 
+    KStandardDirs dirs;
+    QString picPath = dirs.findResource("data", QString("kapptemplate/pics/%1").arg(index.data(Qt::UserRole+2).toString()));
+    if (index.data(Qt::UserRole+2).toString().isEmpty()) {
+	picPath = dirs.findResource("data", "kapptemplate/pics/default.png");//default if none
+    }
+    QPixmap pixmap(picPath);
+    ui_choice.pictureLabel->setPixmap(pixmap);
+    //and description
+    QString description;
+    if (index.data(Qt::UserRole+1).toString().isEmpty())  {
+	description = i18n("Template description");//default if none
+    } else {
+	description = index.data(Qt::UserRole+1).toString();
+    }
+    ui_choice.descriptionLabel->setText(description);
 }
 
 PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?

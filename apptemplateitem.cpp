@@ -46,6 +46,6 @@ AppTemplateItem::AppTemplateItem(int rows, int columns)
 
 void AppTemplateItem::init()
 {
-    setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
+    setFlags(Qt::ItemIsEnabled);
 }
 

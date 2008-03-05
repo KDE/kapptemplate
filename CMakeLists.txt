@@ -25,5 +25,5 @@ install(TARGETS kapptemplate DESTINATION ${BIN_INSTALL_DIR} )
 
 install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
-
+install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 

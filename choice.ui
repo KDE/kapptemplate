@@ -5,8 +5,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>358</width>
-    <height>285</height>
+    <width>474</width>
+    <height>379</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout" >
@@ -21,6 +21,12 @@
         <layout class="QVBoxLayout" name="verticalLayout" >
          <item>
           <widget class="QLabel" name="pictureLabel" >
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>150</height>
+            </size>
+           </property>
            <property name="text" >
             <string comment="Do not translate" >Preview</string>
            </property>
@@ -31,6 +37,12 @@
          </item>
          <item>
           <widget class="QLabel" name="descriptionLabel" >
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>130</height>
+            </size>
+           </property>
            <property name="palette" >
             <palette>
              <active>

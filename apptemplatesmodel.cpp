@@ -30,75 +30,53 @@
 AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
     :QStandardItemModel(parent), m_choicePage(parent)
 {
-    kDebug() << "#######  create model" << endl;
 }
 
 void AppTemplatesModel::refresh()
 {
-    clear();
-    //extractTemplateDescriptions();
-    QStringList rootDirs;
-    QStringList mdirs = KGlobal::dirs()->findDirs("data", "kapptemplate/");
-    for (QStringList::Iterator it =mdirs.begin(); it !=mdirs.end(); ++it ) {
-	QDir dir(*it);
-	rootDirs += dir.entryList(QDir::Dirs, QDir::Name);
-	rootDirs.removeAll(".");
-	rootDirs.removeAll("..");
-    }
-    foreach (QString rootDir, rootDirs)
+    m_templateItems.clear();
+    m_templateItems[""] = invisibleRootItem();
+    //find all .kdevtemplate files on the system
+    QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.*");
+    QStringList tempList;
+    foreach (QString templateArchive, templateArchives)
     {
-        AppTemplateItem *templateItem = createCategoryItem(rootDir);
-
-	QStringList mdirs = KGlobal::dirs()->findDirs("data", "kapptemplate/"+rootDir+"/");
-	QStringList templatesDir;
-	for (QStringList::Iterator it =mdirs.begin(); it !=mdirs.end(); ++it ) {
-	    QDir dir(*it);
-	    templatesDir += dir.entryList(QDir::Dirs, QDir::Name);
-	    templatesDir.removeAll(".");
-	    templatesDir.removeAll("..");
-	}
-	int i = 0;
-	foreach (QString entry, templatesDir)
-	{
-	    AppTemplateItem *item = new AppTemplateItem(entry);
-	    templateItem->setChild(i, item);
-	    picture(item->index());
-	    i++;
-	}
+        KConfig templateConfig(templateArchive);
+        KConfigGroup general(&templateConfig, "General");
+        QString name = general.readEntry("Name");
+        QString category = general.readEntry("Category");
+	QString description = general.readEntry("Comment");
+	QString picture = general.readEntry("Icon");
+	AppTemplateItem *templateItem = createItem(name, category);
+	templateItem->setData(description, Qt::UserRole+1);
+	templateItem->setData(picture, Qt::UserRole+2);
     }
 }
 
-AppTemplateItem *AppTemplatesModel::createCategoryItem(const QString &name)
+AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QString &category)
 {
-    QStandardItem *root = invisibleRootItem();
+    QStringList path = category.split("/");
+
+    QStandardItem *parent = invisibleRootItem();
+    QStringList currentPath;
+    foreach (QString entry, path)
+    {
+        currentPath << entry;
+        if (!m_templateItems.contains(currentPath.join("/")))
+        {
+            AppTemplateItem *item = new AppTemplateItem(entry);
+            parent->appendRow(item);
+            m_templateItems[currentPath.join("/")] = item;
+            parent = item;
+        }
+        else
+            parent = m_templateItems[currentPath.join("/")];
+    }
+
     AppTemplateItem *templateItem = new AppTemplateItem(name);
-    root->appendRow(templateItem);
-    templateItem->setFlags(Qt::ItemIsEnabled);
+    parent->appendRow(templateItem);
+    templateItem->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
     return templateItem;
-}
-
-QVariant AppTemplatesModel::picture(const QModelIndex &index) const
-{
-    //get picture
-    QString picPath = KStandardDirs::locate("data", QString("kapptemplate/C++/%1/%1.png").arg(index.data().toString()));
-    QPixmap pixmap(picPath);
-    //if pixmap null then display default pic
-    return pixmap;
-}
-
-QVariant AppTemplatesModel::description(const QModelIndex &index) const
-{
-    //configure kapp4.txt
-    QString descriptionPath = KStandardDirs::locate("data", QString("kapptemplate/C++/%1/description.txt").arg(index.data().toString()));
-    QFile myFile;
-    myFile.setFileName(descriptionPath);
-    QFile openFileStream(myFile.fileName());
-    openFileStream.open(QIODevice::ReadOnly);
-    QTextStream readFileStr(&openFileStream);
-    QString description = readFileStr.readAll();
-    openFileStream.close();
-    //if no description then display default string
-    return description;
 }
 
 // Set the column title (only 1 column in that case)

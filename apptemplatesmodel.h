@@ -24,6 +24,7 @@
 #include <QMap>
 #include <QStandardItemModel>
 #include <QVariant>
+#include <QMap>
 
 class KAppTemplate;
 class AppTemplateItem;
@@ -41,16 +42,15 @@ public:
     void refresh();
     // Display the header
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    // Get the description of the selected project
-    QVariant description(const QModelIndex &index) const;
     // Get the screenshot for the selected project
     QVariant picture(const QModelIndex &index) const;
 
 private:
-    // Based on QStandardItem, a model item
-    AppTemplateItem *createCategoryItem(const QString &name);
+    // Based on QStandardItem, create a model item 
+    AppTemplateItem *createItem(const QString &name, const QString &category);
     // Instance of the view
     ChoicePage *m_choicePage;
+    QMap<QString, QStandardItem*> m_templateItems;
 };
 
 #endif

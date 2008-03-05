@@ -1,0 +1,44 @@
+KAppTemplate and KDevelop placeholders
+
+%{APPNAME}    used in .kdev4, project name as entered by user ex: MyKApp
+%{APPNAMELC}  project name in lower case ex: mykapp
+%{APPNAMEUC}  project name in upper case ex: MYKAPP
+
+%{CPP_TEMPLATE}  license header for cpp file
+%{H_TEMPLATE}    license header for h file
+
+%{AUTHOR}        author name ex: George Ignacious
+%{EMAIL}	 author email ex: foo@bar.org
+%{VERSION}       project version ex: 0.1
+
+%{VERSIONCONTROLPLUGIN}  used in .kdev4
+
+%{dest}   used in .kdevtemplate
+%{src}
+
+
+***** In the view that lists the templates *****
+kapptemplate -> ChoicePage
+or
+kdevelop -> plugins -> appwizard -> appwizard -> ProjectSelectionPage
+
+
+** Template name
+The name of the template is the name you write in English in the .kdevtemplate file in Name= and which is translated in other languages. This appears in the Tree View.
+Example: Name=Qt4 GUI Application
+
+** Template description
+The description of the template is the comment you write in English in the .kdevtemplate file in Comment= and which is translated in other languages.
+Example: Comment=Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
+
+** Template Category
+The template category as it'll appear in the Tree View is extracted from the Category= line in the .kdevtemplate file.
+Example: Category=C++/Qt (qmake)
+
+** Template preview
+A screenshot will help the user preview the template. This screenshot name will be indicated as Icon= . This icon should be installed in ${DATA_INSTALL_DIR}/kapptemplate/pics to make it found by the program and should have a different name from any other one. Screenshot prefered size: 200 pixels width.
+Example: Icon=qt4gui.png
+
+KDevelop: templates are tarred using the CMake kdevelop_add_app_templates macro and installes in kdevappwizard/templates.
+Model untars it and extracts the .kdevtemplate files mocally in $KDEHOME/share/apps/kdevappwizard/template_descriptions (void ProjectTemplatesModel::extractTemplateDescriptions()).
+Model then read the name and description from there (void ProjectTemplatesModel::refresh()).
