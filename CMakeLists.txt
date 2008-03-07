@@ -1,5 +1,8 @@
 project(kapptemplate)
 
+include(KDevelopMacros)
+
+add_subdirectory(cmake)
 add_subdirectory(templates)
 add_subdirectory(tests)
 
@@ -8,6 +11,7 @@ set(kapptemplate_SRCS
    main.cpp
    apptemplatesmodel.cpp
    apptemplateitem.cpp
+   generatepage.cpp
  )
 
 kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui summary.ui generate.ui)

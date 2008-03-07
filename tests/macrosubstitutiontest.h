@@ -31,6 +31,7 @@ private:
     QHash<QString, QString> m_variables;
 private Q_SLOTS:
     void substitute();
+    void substituteTest();
 };
 
 #endif

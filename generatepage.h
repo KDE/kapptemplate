@@ -1,4 +1,6 @@
 /***************************************************************************
+ *   Copyright 2001 Bernd Gehrmann <bernd@kdevelop.org>                    *
+ *   Copyright 2004-2005 Sascha Cunz <sascha@kdevelop.org>                 *
  *   Copyright 2007 Alexander Dymo <adymo@kdevelop.org>                    *
  *   Copyright 2008 Anne-Marie Mahfouf <annma@kde.org>                     *
  *                                                                         *
@@ -15,43 +17,32 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
+ *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#ifndef _APPTEMPLATESMODEL_H_
-#define _APPTEMPLATESMODEL_H_
+#ifndef GENERATEPAGE_H
+#define GENERATEPAGE_H
 
-#include <QMap>
-#include <QStandardItemModel>
-#include <QVariant>
-#include <QMap>
+#include <QHash>
+#include <QWizardPage>
 
-class KAppTemplate;
-class AppTemplateItem;
+#include <karchive.h>
 
-/**
- * @short Templates Model class
- * @author Anne-Marie Mahfouf <annma@kde.org>
- * @version 0.1
- */
+#include "ui_generate.h"
 
-class AppTemplatesModel: public QStandardItemModel {
-public:
-    AppTemplatesModel(ChoicePage *parent);
-    // Refresh the model data
-    void refresh();
-    // Display the header
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    // Get the screenshot for the selected project
-    QVariant picture(const QModelIndex &index) const;
+class GeneratePage : public QWizardPage
+{
+    Q_OBJECT
 
-private:
-    // Based on QStandardItem, create a model item 
-    AppTemplateItem *createItem(const QString &name, const QString &category);
-    // Instance of the view
-    ChoicePage *m_choicePage;
-    QMap<QString, QStandardItem*> m_templateItems;
+    public:
+	GeneratePage(QWidget *parent = 0);
+    private:
+	Ui::generate ui_generate;
+	QHash<QString, QString> m_variables;
+	bool copyFile(const QString &source, const QString &dest);
+	bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
+
+	void initializePage();
 };
 
-#endif
-
+#endif // _KAPPTEMPLATE_H_

@@ -21,7 +21,7 @@
 #include "macrosubstitutiontest.h"
 #include <qtest_kde.h>
 #include <kmacroexpander.h>
-
+#include <kstandarddirs.h>
 #include <QString>
 #include <QTextStream>
 
@@ -68,6 +68,35 @@ void MacroSubstitutionTest::substitute()
     outputString = KMacroExpander::expandMacros(line, m_variables);
     right = "Exec=ktryapp %i -caption \"%c\"";
     QCOMPARE(  outputString, right);
+}
+
+void MacroSubstitutionTest::substituteTest()
+{
+    KStandardDirs dirs;
+    QString source = dirs.findResource("data", "kapptemplate/C++/kapp4/%{APPNAMELC}.h");
+    QFile inputFile(source);
+    QFile outputFile("home/kde4/dest.txt");
+    inputFile.open(QFile::ReadOnly);
+    QTextStream input(&inputFile);
+    QString line = input.readAll();
+    QString dest = KMacroExpander::expandMacros(line, m_variables);
+    qDebug() << "#### " << dest << endl;
+    /*if (inputFile.open(QFile::ReadOnly) && outputFile.open(QFile::WriteOnly))
+    {
+        QTextStream input(&inputFile);
+        input.setCodec(QTextCodec::codecForName("UTF-8"));
+        QTextStream output(&outputFile);
+        output.setCodec(QTextCodec::codecForName("UTF-8"));
+        while(!input.atEnd())  {
+            QString line = input.readLine();
+            output << KMacroExpander::expandMacros(line, m_variables) << "\n";
+	    qDebug() << "#### " << output.string() << endl;
+        }
+    }  else  {
+        inputFile.close();
+        outputFile.close();
+    }*/
+
 }
 
 #include "macrosubstitutiontest.moc"

@@ -17,15 +17,16 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
+#include <QPixmap>
+#include <QRegExpValidator>
+
 #include <kapplication.h>
 #include <KLocale>
 #include <KDebug>
 #include <kstandarddirs.h>
 #include <ktoolinvocation.h>
 
-#include <QPixmap>
-#include <QRegExpValidator>
-
+#include "generatepage.h"
 #include "kapptemplate.h"
 #include "prefs.h"
 #include "apptemplatesmodel.h"
@@ -119,6 +120,11 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     ui_properties.kcfg_name->setText(Prefs::name());
     ui_properties.kcfg_email->setText(Prefs::email());
 
+    registerField("author",  ui_properties.kcfg_name);
+    registerField("email", ui_properties.kcfg_email);
+    registerField("version", ui_properties.kcfg_appVersion);
+    registerField("url", ui_properties.kcfg_url->lineEdit());
+
     //get from emaildefaults [PROFILE_Default]
     connect(ui_properties.kcfg_appVersion, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(ui_properties.kcfg_url, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
@@ -130,7 +136,7 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
 
 void PropertiesPage::initializePage()
 {
-    QString appNameString = field("appName").toString();
+    appNameString = field("appName").toString();
     QString message = i18n("Your project name is : %1", appNameString);
     ui_properties.appNameLabel->setText(message);
 }
@@ -141,6 +147,7 @@ void PropertiesPage::saveConfig()
     Prefs::setUrl(ui_properties.kcfg_url->url().path());
     Prefs::setName(ui_properties.kcfg_name->text());
     Prefs::setEmail(ui_properties.kcfg_email->text());
+    Prefs::setAppName(appNameString);
     Prefs::self()->writeConfig();
 }
 
@@ -151,12 +158,8 @@ SummaryPage::SummaryPage(QWidget *parent)
     ui_summary.setupUi(this);
 }
 
-GeneratePage::GeneratePage(QWidget *parent)
-    : QWizardPage(parent)
-{
-    setTitle(i18n("Generating your project"));
-    ui_generate.setupUi(this);
-}
+
+
 
 
 

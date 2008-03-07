@@ -20,7 +20,10 @@
 #ifndef KAPPTEMPLATE_H
 #define KAPPTEMPLATE_H
 
+#include <QHash>
 #include <QWizard>
+
+#include <karchive.h>
 
 #include "ui_introduction.h"
 #include "ui_choice.h"
@@ -101,6 +104,8 @@ class PropertiesPage : public QWizardPage
 
     private:
 	Ui::properties ui_properties;
+	QString appNameString;
+
     private slots:
 	/**
 	* Saves all changed fields values in config file
@@ -124,16 +129,6 @@ class SummaryPage : public QWizardPage
 	SummaryPage(QWidget *parent = 0);
     private:
 	Ui::summary ui_summary;
-};
-
-class GeneratePage : public QWizardPage
-{
-    Q_OBJECT
-
-    public:
-	GeneratePage(QWidget *parent = 0);
-    private:
-	Ui::generate ui_generate;
 };
 
 #endif // _KAPPTEMPLATE_H_
