@@ -20,7 +20,7 @@ class KUrl;
  *
  * @short Main view
  * @author %{AUTHOR} <%{EMAIL}>
- * @version %{APP_VERSION}
+ * @version %{VERSION}
  */
 
 class %{APPNAME}View : public QWidget, public Ui::%{APPNAMELC}view_base

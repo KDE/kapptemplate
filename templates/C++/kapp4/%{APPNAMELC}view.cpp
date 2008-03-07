@@ -36,7 +36,7 @@ void %{APPNAME}View::settingsChanged()
     QPalette pal;
     pal.setColor( QPalette::Window, Settings::col_background());
     pal.setColor( QPalette::WindowText, Settings::col_foreground());
-    ui_%{APPNAME_LC}view_base.kcfg_sillyLabel->setPalette( pal );
+    ui_%{APPNAMELC}view_base.kcfg_sillyLabel->setPalette( pal );
 
     // i18n : internationalization
     ui_%{APPNAMELC}view_base.kcfg_sillyLabel->setText( i18n("This project is %1 days old",Settings::val_time()) );

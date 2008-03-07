@@ -22,7 +22,7 @@ class KUrl;
  *
  * @short Main window class
  * @author %{AUTHOR} <%{EMAIL}>
- * @version %{APP_VERSION}
+ * @version %{VERSION}
  */
 class %{APPNAME} : public KXmlGuiWindow
 {
