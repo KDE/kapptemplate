@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright 2008 by Anne-Marie Mahfouf                             *
- *   annma@kde.org                                                         *
+ *   Copyright 2007 Alexander Dymo <adymo@kdevelop.org>                    *
+ *   Copyright 2008 Anne-Marie Mahfouf <annma@kde.org>                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *

@@ -40,7 +40,8 @@ class ChoicePage : public QWizardPage
     public:
 	ChoicePage( QWidget *parent = 0);
 	AppTemplatesModel *templatesModel;
-
+	QString m_baseName;
+	QString getBaseName();
     private:
 	Ui::choice ui_choice;
 

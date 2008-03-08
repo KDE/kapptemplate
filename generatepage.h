@@ -28,6 +28,7 @@
 
 #include <karchive.h>
 
+#include "kapptemplate.h"
 #include "ui_generate.h"
 
 class GeneratePage : public QWizardPage
@@ -36,6 +37,7 @@ class GeneratePage : public QWizardPage
 
     public:
 	GeneratePage(QWidget *parent = 0);
+	ChoicePage *choicePage;
     private:
 	Ui::generate ui_generate;
 	QHash<QString, QString> m_variables;

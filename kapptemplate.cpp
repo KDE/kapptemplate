@@ -106,6 +106,18 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 	description = index.data(Qt::UserRole+1).toString();
     }
     ui_choice.descriptionLabel->setText(description);
+    //Template view name
+    QStandardItem *item = templatesModel->itemFromIndex(index);
+
+    m_baseName = index.data(Qt::UserRole+3).toString();
+    //baseName can check if an item is selected.
+    kDebug() << "## : " << m_baseName << endl;
+}
+
+QString ChoicePage::getBaseName()
+{
+    kDebug() << "#### in get : " << m_baseName << endl;
+    return m_baseName;
 }
 
 PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?

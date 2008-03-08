@@ -31,6 +31,7 @@
 #include <ktar.h>
 #include <kzip.h>
 
+#include "kapptemplate.h"
 #include "generatepage.h"
 #include "prefs.h"
 
@@ -117,8 +118,9 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
 void GeneratePage::initializePage()
 {
-    QString templateName = "kapp4";//TODO templateInfo.baseName();
-
+    choicePage = new ChoicePage();
+    QString templateName = choicePage->getBaseName();//parent->ChoicePage->baseName;//TODO templateInfo.baseName();
+    kDebug() << "######## base name" << templateName << endl;
     QString templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.zip").arg(templateName));
     if( templateArchive.isEmpty() )  {
         templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.tar.bz2").arg(templateName));

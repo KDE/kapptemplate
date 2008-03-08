@@ -37,10 +37,12 @@ void AppTemplatesModel::refresh()
     m_templateItems.clear();
     m_templateItems[""] = invisibleRootItem();
     //find all .kdevtemplate files on the system
-    QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.*");
+    QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.kdevtemplate");
     QStringList tempList;
     foreach (QString templateArchive, templateArchives)
     {
+	QFileInfo archiveInfo(templateArchive);
+	QString baseName = archiveInfo.baseName();
         KConfig templateConfig(templateArchive);
         KConfigGroup general(&templateConfig, "General");
         QString name = general.readEntry("Name");
@@ -50,6 +52,7 @@ void AppTemplatesModel::refresh()
 	AppTemplateItem *templateItem = createItem(name, category);
 	templateItem->setData(description, Qt::UserRole+1);
 	templateItem->setData(picture, Qt::UserRole+2);
+	templateItem->setData(baseName, Qt::UserRole+3);
     }
 }
 
@@ -94,3 +97,4 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
     }
     return QVariant();
 }
+

@@ -1,8 +1,9 @@
 project(kapptemplate)
 
-include(KDevelopMacros)
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
 
-add_subdirectory(cmake)
+include(KAppTemplateMacro)
+
 add_subdirectory(templates)
 add_subdirectory(tests)
 

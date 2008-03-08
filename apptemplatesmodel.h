@@ -42,8 +42,6 @@ public:
     void refresh();
     // Display the header
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    // Get the screenshot for the selected project
-    QVariant picture(const QModelIndex &index) const;
 
 private:
     // Based on QStandardItem, create a model item 
