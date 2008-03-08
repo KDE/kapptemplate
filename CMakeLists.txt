@@ -25,10 +25,11 @@ target_link_libraries(kapptemplate ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS})
 
 install(TARGETS kapptemplate DESTINATION ${BIN_INSTALL_DIR} )
 
-
 ########### install files ###############
 
 install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
 install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
+install(FILES templates/C++/kapp4/kapp4.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
+install(FILES templates/C++/kapp4/kapp4.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 

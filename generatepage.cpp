@@ -118,9 +118,10 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
 void GeneratePage::initializePage()
 {
-    choicePage = new ChoicePage();
-    QString templateName = choicePage->getBaseName();//parent->ChoicePage->baseName;//TODO templateInfo.baseName();
-    kDebug() << "######## base name" << templateName << endl;
+    QString templateName = field("tempName").toString();
+    if (templateName.isEmpty())  {
+	templateName = "kde4";
+    }
     QString templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.zip").arg(templateName));
     if( templateArchive.isEmpty() )  {
         templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.tar.bz2").arg(templateName));

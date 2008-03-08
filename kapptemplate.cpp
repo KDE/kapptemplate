@@ -111,13 +111,8 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 
     m_baseName = index.data(Qt::UserRole+3).toString();
     //baseName can check if an item is selected.
-    kDebug() << "## : " << m_baseName << endl;
-}
-
-QString ChoicePage::getBaseName()
-{
-    kDebug() << "#### in get : " << m_baseName << endl;
-    return m_baseName;
+    registerField("tempName", this);
+    setField("tempName", m_baseName);
 }
 
 PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
