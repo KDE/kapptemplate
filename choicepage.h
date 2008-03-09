@@ -20,31 +20,35 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#ifndef GENERATEPAGE_H
-#define GENERATEPAGE_H
+#ifndef CHOICEPAGE_H
+#define CHOICEPAGE_H
 
-#include <QHash>
 #include <QWizardPage>
 
-#include <karchive.h>
+#include "ui_choice.h"
 
-#include "kapptemplate.h"
-#include "ui_generate.h"
+class AppTemplatesModel;
 
-class GeneratePage : public QWizardPage
+class ChoicePage : public QWizardPage
 {
     Q_OBJECT
 
     public:
-	GeneratePage(QWidget *parent = 0);
+	ChoicePage( QWidget *parent = 0);
+	AppTemplatesModel *templatesModel;
+	QString m_baseName;
 
     private:
-	Ui::generate ui_generate;
-	QHash<QString, QString> m_variables;
-	bool copyFile(const QString &source, const QString &dest);
-	bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
+	Ui::choice ui_choice;
 
-	void initializePage();
+    private slots:
+	/**
+	* Saves project name in config file
+	*/
+	void saveConfig();
+
+    protected slots:
+	void itemSelected(const QModelIndex &index);
 };
 
-#endif // _GENERATEPAGE_H_
+#endif // _CHOICEPAGE_H_

@@ -20,40 +20,11 @@
 #ifndef KAPPTEMPLATE_H
 #define KAPPTEMPLATE_H
 
-#include <QHash>
 #include <QWizard>
 
-#include <karchive.h>
-
 #include "ui_introduction.h"
-#include "ui_choice.h"
 #include "ui_properties.h"
 #include "ui_summary.h"
-#include "ui_generate.h"
-
-class AppTemplatesModel;
-
-class ChoicePage : public QWizardPage
-{
-    Q_OBJECT
-
-    public:
-	ChoicePage( QWidget *parent = 0);
-	AppTemplatesModel *templatesModel;
-	QString m_baseName;
-
-    private:
-	Ui::choice ui_choice;
-
-    private slots:
-	/**
-	* Saves project name in config file
-	*/
-	void saveConfig();
-
-    protected slots:
-	void itemSelected(const QModelIndex &index);
-};
 
 /**
  * This class serves as the main window for KAppTemplate.  It is a wizard-like

@@ -26,7 +26,7 @@
 #include <QVariant>
 #include <QMap>
 
-class KAppTemplate;
+class ChoicePage;
 class AppTemplateItem;
 
 /**

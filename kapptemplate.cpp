@@ -23,13 +23,13 @@
 #include <kapplication.h>
 #include <KLocale>
 #include <KDebug>
-#include <kstandarddirs.h>
 #include <ktoolinvocation.h>
 
+#include "choicepage.h"
 #include "generatepage.h"
 #include "kapptemplate.h"
 #include "prefs.h"
-#include "apptemplatesmodel.h"
+
 
 KAppTemplate::KAppTemplate( QWidget *parent )
     : QWizard()
@@ -62,59 +62,6 @@ IntroPage::IntroPage(QWidget *parent)
     ui_introduction.setupUi(this);
 }
 
-ChoicePage::ChoicePage( QWidget *parent)
-    : QWizardPage(parent)
-{
-    setTitle(i18n("Choose your project template"));
-    ui_choice.setupUi(this);
-    //Get the model
-    templatesModel = new AppTemplatesModel(this);
-    templatesModel->refresh();
-    ui_choice.appTree->setModel(templatesModel); 
-    connect(ui_choice.kcfg_appName, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
-    connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
-    connect(ui_choice.appTree->selectionModel(), SIGNAL(currentChanged(QModelIndex, QModelIndex)), this, SLOT(itemSelected(QModelIndex)));
-    QRegExp rx("[a-zA-Z0-9_.\\-]*");
-    QValidator *validator = new QRegExpValidator(rx, this);
-    ui_choice.kcfg_appName->setValidator(validator);
-    registerField("appName*", ui_choice.kcfg_appName);
-}
-
-void ChoicePage::saveConfig()
-{
-    Prefs::setAppName(ui_choice.kcfg_appName->text());
-    Prefs::self()->writeConfig();
-}
-
-void ChoicePage::itemSelected(const QModelIndex &index)
-{
-    if (!index.isValid())
-	return;
-    //get picture 
-    KStandardDirs dirs;
-    QString picPath = dirs.findResource("data", QString("kapptemplate/pics/%1").arg(index.data(Qt::UserRole+2).toString()));
-    if (index.data(Qt::UserRole+2).toString().isEmpty()) {
-	picPath = dirs.findResource("data", "kapptemplate/pics/default.png");//default if none
-    }
-    QPixmap pixmap(picPath);
-    ui_choice.pictureLabel->setPixmap(pixmap);
-    //and description
-    QString description;
-    if (index.data(Qt::UserRole+1).toString().isEmpty())  {
-	description = i18n("Template description");//default if none
-    } else {
-	description = index.data(Qt::UserRole+1).toString();
-    }
-    ui_choice.descriptionLabel->setText(description);
-    //Template view name
-    QStandardItem *item = templatesModel->itemFromIndex(index);
-
-    m_baseName = index.data(Qt::UserRole+3).toString();
-    //baseName can check if an item is selected.
-    registerField("tempName", this);
-    setField("tempName", m_baseName);
-}
-
 PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     : QWizardPage(parent)
 {
@@ -138,7 +85,7 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     connect(ui_properties.kcfg_name, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(ui_properties.kcfg_email, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
-    // TODO make fields mandatory
+    // TODO make some fields mandatory?
 }
 
 void PropertiesPage::initializePage()

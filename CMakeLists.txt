@@ -13,6 +13,7 @@ set(kapptemplate_SRCS
    apptemplatesmodel.cpp
    apptemplateitem.cpp
    generatepage.cpp
+   choicepage.cpp
  )
 
 kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui summary.ui generate.ui)
