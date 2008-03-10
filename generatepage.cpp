@@ -54,32 +54,38 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 
     foreach (QString entry, entries)
     {
-	//don't substitute .kdevtemplate and .png
+	//don't copy .kdevtemplate 
         if (entry.endsWith(".kdevtemplate"))
             continue;
-	if (entry.endsWith(".png"))
-            continue;
-        if (dir->entry(entry)->isDirectory())
-        {
+	if (entry == templateName+".png")
+	    continue;
+        if (dir->entry(entry)->isDirectory())  {
             const KArchiveDirectory *file = (KArchiveDirectory *)dir->entry(entry);
             QString newdest = dest+"/"+file->name();
-            if( !QFileInfo( newdest ).exists() )
-            {
+            if( !QFileInfo( newdest ).exists() )  {
                 QDir::root().mkdir( newdest  );
             }
             ret |= unpackArchive(file, newdest);
         }
-        else if (dir->entry(entry)->isFile())
-        {
+        else if (dir->entry(entry)->isFile())  {
             const KArchiveFile *file = (KArchiveFile *)dir->entry(entry);
             file->copyTo(tdir.name());
             QString destName = dest + '/' + file->name();
-            if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
-                    KMacroExpander::expandMacros(destName, m_variables)))
-            {
-                KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
-                return false;
-            }
+	    if (!destName.contains("/icons/")) {
+		if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
+                    KMacroExpander::expandMacros(destName, m_variables))) {
+		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+		    return false;
+		}
+	    }
+	    else  {
+		//do not parse .png but parse filemanes for placeholders
+		if (!QFile(QDir::cleanPath(tdir.name()+'/'+file->name())).copy(KMacroExpander::expandMacros(destName, m_variables))) {
+		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+		    return false;
+		}
+	    kDebug() << "after copying.... " << endl;
+	    }
         }
     }
     tdir.unlink();
@@ -118,7 +124,7 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
 void GeneratePage::initializePage()
 {
-    QString templateName = field("tempName").toString();
+    templateName = field("tempName").toString();
     if (templateName.isEmpty())  {
 	templateName = "kde4";
     }

@@ -45,6 +45,8 @@ class GeneratePage : public QWizardPage
 	bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
 
 	void initializePage();
+
+	QString templateName;
 };
 
 #endif // _GENERATEPAGE_H_
