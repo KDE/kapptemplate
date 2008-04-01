@@ -1,7 +1,7 @@
 require 'prefs_base.rb'
 require '%{APPNAME}view.rb'
 
-class ${APP_NAME} < KDE::XmlGuiWindow
+class %{APPNAME} < KDE::XmlGuiWindow
 # Default Constructor
   slots 'fileNew()', 'optionsPreferences()', 'setupActions()'
   def initialize()

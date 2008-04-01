@@ -1,0 +1,7 @@
+# KDE Config File
+[General]
+Name=KDE 4 Ruby GUI Application
+Comment=KDE4 simple template based on CMake, inherits from XMLGuiWindow - needs 
+Category=Ruby/KDE (cmake)
+Icon=kappruby.png
+ShowFilesAfterGeneration=%{dest}/src/main.rb
