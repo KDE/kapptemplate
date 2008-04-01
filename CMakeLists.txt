@@ -33,4 +33,5 @@ install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
 install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 install(FILES templates/C++/kapp4/kapp4.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
 install(FILES templates/C++/kapp4/kapp4.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
-
+install(FILES templates/ruby/kderubyapp/kderubyapp.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
+#install(FILES templates/C++/kapp4/kderubyapp.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
