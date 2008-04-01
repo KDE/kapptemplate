@@ -1,5 +1,5 @@
 require 'prefs_base.rb'
-require '${APP_NAME_LC}view.rb'
+require '%{APPNAME}view.rb'
 
 class ${APP_NAME} < KDE::XmlGuiWindow
 # Default Constructor
@@ -10,7 +10,7 @@ class ${APP_NAME} < KDE::XmlGuiWindow
     setAcceptDrops(true)
 
     # initialise the view
-#     @view(${APP_NAME}View.new(self)),
+    #    @view(%{APPNAME}View.new(self)),
     @view = Qt::Widget.new
 
     # tell the KXmlGuiWindow that this is indeed the main widget
@@ -32,7 +32,7 @@ class ${APP_NAME} < KDE::XmlGuiWindow
 
 private
   def fileNew()
-    ${APP_NAME}.new.show()
+    %{APPNAMELC}.new.show()
   end
   def optionsPreferences()
 #     dialog = KDE::ConfigDialog.new(self, "settings", Settings::self())

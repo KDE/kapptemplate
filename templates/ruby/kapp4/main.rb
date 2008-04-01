@@ -1,22 +1,22 @@
 require 'korundum4'
-require '${APP_NAME_LC}.rb'
+require '%{APPNAMELC}.rb'
 
 description = "A ruby KDE 4 Application"
-version = "${APP_VERSION}"
+version = "%{VERSION}"
 
 about = KDE::AboutData.new(
-    "${APP_NAME_LC}",
+    "%{APPNAMELC}",
     Qt::ByteArray.new(),
-    KDE::ki18n("${APP_NAME}"),
+    KDE::ki18n("%{APPNAME}"),
     Qt::ByteArray.new(version),
     KDE::ki18n(description),
     KDE::AboutData::License_LGPL,
-    KDE::ki18n("(C) 2007 ${AUTHOR}"),
+    KDE::ki18n("(C) 2008 %{AUTHOR}"),
     KDE::LocalizedString.new,
     Qt::ByteArray.new(),
-    "${EMAIL}" )
+    "%{EMAIL}" )
 
-about.addAuthor( KDE::ki18n("${AUTHOR}"), KDE::LocalizedString.new(), "${EMAIL}" )
+about.addAuthor( KDE::ki18n("%{AUTHOR}"), KDE::LocalizedString.new(), "%{EMAIL}" )
 KDE::CmdLineArgs::init(ARGV, about)
 options = KDE::CmdLineOptions.new
 options.add("+[URL]", KDE::ki18n( "Document to open" ))
@@ -25,11 +25,11 @@ KDE::CmdLineArgs::addCmdLineOptions(options)
 
 app = KDE::Application.new
 
-widget = ${APP_NAME}.new
+widget = %{APPNAMELC}.new
 
 # see if we are starting with session management
 if(app.isSessionRestored())
-  KDE::RESTORE(${APP_NAME});
+  KDE::RESTORE(%{APPNAMELC});
 else
   # no session.. just start up normally
   args = KDE::CmdLineArgs::parsedArgs()

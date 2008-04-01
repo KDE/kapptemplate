@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=${APPNAME}
+Exec=${APPNAMELC} %i -caption "%c"
+Icon=${APPNAMELC}
+Type=Application
+DocPath=${APPNAMELC}/index.html
+GenericName=A KDE4 Ruby Application
+Terminal=0
+

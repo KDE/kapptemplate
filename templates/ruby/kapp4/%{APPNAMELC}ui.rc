@@ -1,7 +1,5 @@
-echo "Creating $LOCATION_ROOT/${APP_NAME_LC}ui.rc...";
-cat << EOF > $LOCATION_ROOT/${APP_NAME_LC}ui.rc
 <!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="${APP_NAME}" version="1">
+<kpartgui name="%{APPNAMELC}"  version="1">
 <MenuBar>
   <Menu name="move"><text>&amp;Move</text>
     <Action name="switch_action" />
