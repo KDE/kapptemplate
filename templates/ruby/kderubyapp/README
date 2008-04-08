@@ -1,0 +1,14 @@
+Ruby Application Template
+-------------------------
+
+You need korundum4 from KDE 4 kdebindings module or from your distribution to run this template.
+
+
+Tutorials
+You'll find a KDE Ruby tutorial in kdebindings svn source code
+http://websvn.kde.org/trunk/KDE/kdebindings/ruby/korundum/tutorials/
+or via anonymous svn
+svn co svn://anonsvn.kde.org/home/kde/trunk/KDE/kdebindings/ruby/korundum/tutorials/
+
+Qt4 Ruby Tutorial
+http://www.darshancomputing.com/qt4-qtruby-tutorial/

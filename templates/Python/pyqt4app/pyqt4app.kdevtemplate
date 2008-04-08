@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
 Name=PyQt4 GUI Application
-Comment=PyQt tempate using a Designer file - needs PyQt4
+Comment=PyQt template using a Designer file - needs PyQt4
 Category=PyQt4
 Icon=pyqt4app.png
