@@ -1,0 +1,6 @@
+# KDE Config File
+[General]
+Name=Plasma Applet Template
+Comment=A plasma applet template displaying an icon and a text
+Category=C++/KDE
+Icon=plasma-applet.png

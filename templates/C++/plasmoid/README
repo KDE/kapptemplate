@@ -1,0 +1,15 @@
+Plasma Applet Template
+----------------------
+
+-- Build instructions --
+
+cd /where/your/applet/is/installed
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS .. 
+make make install
+
+(your $KDEDIRS is where you install your KDE 4)
+
+
+-- Tutorials and resources --
