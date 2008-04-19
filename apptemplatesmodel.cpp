@@ -49,6 +49,7 @@ void AppTemplatesModel::refresh()
         KConfigGroup general(&templateConfig, "General");
         QString name = general.readEntry("Name");
         QString category = general.readEntry("Category");
+	kDebug() << "category " << category << endl;
 	QString description = general.readEntry("Comment");
 	QString picture = general.readEntry("Icon");
 	AppTemplateItem *templateItem = createItem(name, category);
@@ -67,8 +68,10 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
     foreach (QString entry, path)
     {
         currentPath << entry;
+	kDebug() << "current path " << currentPath << endl;
         if (!m_templateItems.contains(currentPath.join("/")))
         {
+	    kDebug() << "in if " << endl;
             AppTemplateItem *item = new AppTemplateItem(entry);
             parent->appendRow(item);
             m_templateItems[currentPath.join("/")] = item;

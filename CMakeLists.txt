@@ -39,3 +39,5 @@ install(FILES templates/ruby/kderubyapp/kderubyapp.kdevtemplate DESTINATION ${DA
 #install(FILES templates/ruby/kderubyapp/kderubyapp.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 install(FILES templates/Python/pyqt4app/pyqt4app.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
 install(FILES templates/Python/pyqt4app/pyqt4app.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
+install(FILES templates/Python/pykde4app/pykde4app.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
+#install(FILES templates/Python/pykde4app/pykde4app.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)

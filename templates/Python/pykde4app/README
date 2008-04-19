@@ -1,0 +1,27 @@
+PyKDE4 Application Template
+---------------------------
+
+You need PyKDE4 from your distribution.
+
+To run the template: 
+first generate the python module from the Designer myCalendar.ui file
+pykdeuic4 -o myCalendar.py myCalendar.ui
+then start your project:
+python APPNAME.py
+(where you replace APPNAME by your project name)
+
+Some PyQt4 tutorials links
+http://zetcode.com/tutorials/pyqt4/
+http://chaos.troll.no/~dboddie/Python/Designer/PyCon_UK_2007_PyQt_and_Qt_Designer.pdf
+http://www.rkblog.rk.edu.pl/w/p/introduction-pyqt4/
+
+PyKDE4 comes with its own set of tutorials. So look under
+/usr/share/doc/packages/PyKDE
+or wherever your distribution might save the package files to.
+
+PyKDE4 website
+http://www.riverbankcomputing.co.uk/pykde/index.php
+http://www.riverbankcomputing.com/static/Docs/PyKDE4/
+
+GUI programming with Python - Qt Edition
+http://www.commandprompt.com/community/pyqt/book1
