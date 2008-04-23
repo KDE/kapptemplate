@@ -1,5 +1,4 @@
 find_package(KDE4 REQUIRED)
-include (KDE4Defaults)
 
 SET(UI_PREFS_BASE ${CMAKE_CURRENT_SOURCE_DIR}/prefs_base.ui)
 SET(UI_%{APPNAMEUC}_VIEW_BASE ${CMAKE_CURRENT_SOURCE_DIR}/%{APPNAMELC}view_base.ui)
