@@ -1,5 +1,5 @@
 <ui version="4.0" >
- <class>%{APPNAMELC}view_base</class>
+ <class>%{APPNAME}view_base</class>
  <widget class="QWidget" name="%{APPNAMELC}view_base" >
   <property name="geometry" >
    <rect>

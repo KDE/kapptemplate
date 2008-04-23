@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=%{APPNAME}
-Exec=%{APPNAMELC} %i -caption "%c"
+Exec=krubyapplication %{APPNAMELC} %{APPNAMELC}/main.rb %i -caption "%c"
 Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
