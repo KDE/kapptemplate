@@ -1,4 +1,4 @@
-require 'prefs_base.rb'
+require 'ui_prefs_base.rb'
 require '%{APPNAMELC}view.rb'
 
 class %{APPNAME} < KDE::XmlGuiWindow
@@ -11,8 +11,7 @@ class %{APPNAME} < KDE::XmlGuiWindow
     setAcceptDrops(true)
 
     # initialise the view
-    #    @view(%{APPNAME}View.new(self)),
-    @view = Qt::Widget.new
+    @view = %{APPNAME}View.new(self)
 
     # tell the KXmlGuiWindow that this is indeed the main widget
     setCentralWidget(@view)
@@ -45,10 +44,10 @@ private
 #    if KDE::ConfigDialog.showDialog( "settings" )
 #        return
 #    end
-#     dialog = KDE::ConfigDialog.new(self, "settings", Settings::self())
+#     dialog = KDE::ConfigDialog.new(self, "settings", Settings.self())
 #     generalSettingsDlg = Qt::Widget.new
-#     ui_prefs_base = Ui_prefs_base.new
-#     ui_prefs_base.setupUi(generalSettingsDlg)
+#     @ui = Ui_Prefs_base.new
+#     @ui.setupUi(generalSettingsDlg)
 #     dialog.addPage(generalSettingsDlg, KDE::i18n("General"), "package_setting")
 #     connect(dialog, SIGNAL('settingsChanged(QString)'), @view, SLOT('settingsChanged()'))
 #     dialog.setAttribute( Qt::WA_DeleteOnClose )
