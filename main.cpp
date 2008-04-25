@@ -1,5 +1,6 @@
 /***************************************************************************
  *   Copyright  2008 by Anne-Marie Mahfouf <annma@kde.org>                 *
+ *   Copyright  2008 by Beat Wolf          <asraniel@fryx.ch>              *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
