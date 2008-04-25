@@ -11,7 +11,7 @@ class %{APPNAMEFU} < KDE::XmlGuiWindow
     setAcceptDrops(true)
 
     # initialise the view
-    @view = %{APPNAME}View.new(self)
+    @view = %{APPNAMEFU}View.new(self)
 
     # tell the KXmlGuiWindow that this is indeed the main widget
     setCentralWidget(@view)
@@ -32,7 +32,7 @@ class %{APPNAMEFU} < KDE::XmlGuiWindow
 
 private
   def fileNew()
-    %{APPNAME}.new.show
+    %{APPNAMEFU}.new.show
   end
 
   def optionsPreferences

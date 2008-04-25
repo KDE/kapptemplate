@@ -17,16 +17,16 @@ app = KDE::Application.new
 # see if we are starting with session management
 if app.sessionRestored?
   KDE::MainWindow.each_restore do |n|
-    %{APPNAME}.new.restore(n)
+    %{APPNAMEFU}.new.restore(n)
   end
 else
   # no session.. just start up normally
   args = KDE::CmdLineArgs.parsedArgs
   if args.count == 0
-    %{APPNAME}.new.show
+    %{APPNAMEFU}.new.show
   else
     args.each do |arg|
-      %{APPNAME}.new.show
+      %{APPNAMEFU}.new.show
     end
     args.clear
   end

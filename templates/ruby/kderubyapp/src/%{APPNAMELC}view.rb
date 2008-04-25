@@ -1,12 +1,12 @@
 require 'ui_%{APPNAMELC}view_base.rb'
 
-class %{APPNAME}View < Qt::Widget
+class %{APPNAMEFU}View < Qt::Widget
   signals 'signalChangeStatusbar(QString)', 'signalChangeCaption(QString)'
   slots :switchColors, :settingsChanged
 
   def initialize( parent )
     super(parent)
-    @ui = Ui_%{APPNAME}view_base.new
+    @ui = Ui_%{APPNAMEFU}view_base.new
     @ui.setupUi(self)
     settingsChanged()
     setAutoFillBackground(true)
