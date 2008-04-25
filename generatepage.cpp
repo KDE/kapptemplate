@@ -108,6 +108,8 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
     kDebug(9010) << "copy:" << source << "to" << dest;
     QFile inputFile(source);
     QFile outputFile(dest);
+    
+    QFileInfo temp(source);
 
     if (inputFile.open(QFile::ReadOnly) && outputFile.open(QFile::WriteOnly))
     {
@@ -118,7 +120,12 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
         while(!input.atEnd())  {
             QString line = input.readLine();
-            output << KMacroExpander::expandMacros(line, m_variables) << "\n";
+            
+            if(!temp.suffix().compare(".png")){
+                output << KMacroExpander::expandMacros(line, m_variables) << "\n";
+            }else{
+                output << line;
+            }
         }
         // Preserve file mode...
         struct stat fmode;
