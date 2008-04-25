@@ -108,30 +108,38 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
     kDebug(9010) << "copy:" << source << "to" << dest;
     QFile inputFile(source);
     QFile outputFile(dest);
-    
+
     QFileInfo temp(source);
 
     if (inputFile.open(QFile::ReadOnly) && outputFile.open(QFile::WriteOnly))
     {
-        QTextStream input(&inputFile);
-        input.setCodec(QTextCodec::codecForName("UTF-8"));
-        QTextStream output(&outputFile);
-        output.setCodec(QTextCodec::codecForName("UTF-8"));
+        if(temp.suffix().compare("png",Qt::CaseInsensitive) == 0)
+        {
+            QDataStream input(&inputFile);
+            QDataStream output(&outputFile);
 
-        while(!input.atEnd())  {
-            QString line = input.readLine();
-            
-            if(!temp.suffix().compare(".png")){
+            while(!input.atEnd())  {
+                qint8 t;
+                input >> t;
+                output << t;
+            }
+        }  else  {
+            QTextStream input(&inputFile);
+            input.setCodec(QTextCodec::codecForName("UTF-8"));
+            QTextStream output(&outputFile);
+            output.setCodec(QTextCodec::codecForName("UTF-8"));
+    
+            while(!input.atEnd())  {
+                QString line = input.readLine();
+    
                 output << KMacroExpander::expandMacros(line, m_variables) << "\n";
-            }else{
-                output << line;
             }
         }
-        // Preserve file mode...
+
         struct stat fmode;
         ::fstat(inputFile.handle(), &fmode);
         ::fchmod(outputFile.handle(), fmode.st_mode);
-	
+
         return true;
     }  else  {
         inputFile.close();
