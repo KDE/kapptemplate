@@ -8,18 +8,19 @@
  
 %{APPNAME}::%{APPNAME}(QObject *parent, const QVariantList &args)
     : Plasma::Applet(parent, args),
-    m_svg("widgets/background", this),
+    m_svg(this),
     m_icon("document")
 {
     // this will get us the standard applet background, for free!
     setDrawStandardBackground(true);
+    m_svg.setImagePath("widgets/background");
     resize(200, 200);
 }
  
 
 %{APPNAME}::~%{APPNAME}()
 {
-    if (failedToLaunch()) {
+    if (hasFailedToLaunch()) {
         // Do some cleanup here
     } else {
         // Save settings
@@ -28,9 +29,6 @@
 
 void %{APPNAME}::init()
 {
-    m_svg.setContentType(Plasma::Svg::SingleImage);
-
-  
     // A small demonstration of the setFailedToLaunch function
     if (m_icon.isNull()) {
         setFailedToLaunch(true, "No world to say hello");
