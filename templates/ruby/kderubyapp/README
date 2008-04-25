@@ -3,8 +3,22 @@ Ruby Application Template
 
 You need korundum4 from KDE 4 kdebindings module or from your distribution to run this template.
 
+Build it
+--------
+cd /your_app
+mkdir build
+cd build
+cmake ..
+make 
+make install
+
+Run it
+------
+krubyapplication your_app your-app/main.rb
+
 
 Tutorials
+---------
 You'll find a KDE Ruby tutorial in kdebindings svn source code
 http://websvn.kde.org/trunk/KDE/kdebindings/ruby/korundum/tutorials/
 or via anonymous svn
