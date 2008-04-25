@@ -40,6 +40,7 @@ GeneratePage::GeneratePage(QWidget *parent)
 {
     setTitle(i18n("Generating your project"));
     ui_generate.setupUi(this);
+    ui_generate.label->setText(i18n("Progress"));
 }
 
 bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest)
@@ -52,8 +53,18 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 
     bool ret = true;
 
+    //create path were we want copy files to
+    if(!QDir::root().mkpath(dest)){
+        KMessageBox::sorry(0, i18n("%1 cannot be created.", dest));
+        return false;
+    }
+
+    int progress = 0;
+
     foreach (QString entry, entries)
     {
+        progress++;
+        ui_generate.progressBar->setValue( (progress / entries.size()) * 100);
 	//don't copy .kdevtemplate 
         if (entry.endsWith(".kdevtemplate"))
             continue;

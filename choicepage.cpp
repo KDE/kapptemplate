@@ -50,6 +50,15 @@ ChoicePage::ChoicePage( QWidget *parent)
     registerField("appName*", ui_choice.kcfg_appName);
 }
 
+bool ChoicePage::isComplete () const{
+    kDebug() << m_baseName.isEmpty() << ui_choice.kcfg_appName->text().isEmpty();
+    if(!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()){
+        return true;
+    }
+
+    return false;
+}
+
 void ChoicePage::saveConfig()
 {
     Prefs::setAppName(ui_choice.kcfg_appName->text());
@@ -58,8 +67,10 @@ void ChoicePage::saveConfig()
 
 void ChoicePage::itemSelected(const QModelIndex &index)
 {
-    if (!index.isValid())
+    if (!index.isValid()){
+        emit completeChanged();
 	return;
+    }
     //get picture 
     KStandardDirs dirs;
     QString picPath = dirs.findResource("data", QString("kapptemplate/pics/%1").arg(index.data(Qt::UserRole+2).toString()));
@@ -82,11 +93,11 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     m_baseName = index.data(Qt::UserRole+3).toString();
     //baseName can check if an item is selected.
     if (!m_baseName.isEmpty())  {
-	ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
+        ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
     }
     registerField("tempName", this);
     setField("tempName", m_baseName);
-    
+    emit completeChanged();
 }
 
 #include "choicepage.moc"

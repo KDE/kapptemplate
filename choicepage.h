@@ -37,6 +37,7 @@ class ChoicePage : public QWizardPage
 	ChoicePage( QWidget *parent = 0);
 	AppTemplatesModel *templatesModel;
 	QString m_baseName;
+        bool isComplete () const;
 
     private:
 	Ui::choice ui_choice;
