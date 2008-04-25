@@ -40,7 +40,6 @@ GeneratePage::GeneratePage(QWidget *parent)
 {
     setTitle(i18n("Generating your project"));
     ui_generate.setupUi(this);
-    ui_generate.label->setText(i18n("Progress"));
 }
 
 bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest)
@@ -86,6 +85,8 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 		if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
                     KMacroExpander::expandMacros(destName, m_variables))) {
 		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+		    feedback.append(i18n("\n\nThe file %1 cannot be created."));
+		    ui_generate.label->setText(feedback);
 		    return false;
 		}
 	    }
@@ -93,6 +94,8 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 		//do not parse .png but parse filemanes for placeholders
 		if (!QFile(QDir::cleanPath(tdir.name()+'/'+file->name())).copy(KMacroExpander::expandMacros(destName, m_variables))) {
 		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+		    feedback.append(i18n("\n\nThe file %1 cannot be created."));
+		    ui_generate.label->setText(feedback);
 		    return false;
 		}
 	    kDebug() << "after copying.... " << endl;
@@ -150,6 +153,8 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
 void GeneratePage::initializePage()
 {
+    feedback = i18n("Generation Progress\n");
+    ui_generate.label->setText(feedback);
     templateName = field("tempName").toString();
     if (templateName.isEmpty())  {
 	templateName = "kde4";
@@ -183,6 +188,17 @@ void GeneratePage::initializePage()
         }
         unpackArchive(arch->directory(), dest.toLocalFile());
     }
+
+    feedback.append(i18n("Success!\n"));
+    ui_generate.label->setText(feedback);
+
+    QString resume;
+    QString url = field("url").toString();
+    resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
+    resume.append(i18n("Version: %1 <br /><br />", version));
+    resume.append(i18n("Installed in: %1 <br /><br />", url));
+    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project!", url+"/"+appName.toLower()));
+    ui_generate.summaryLabel->setText(resume);
 }
 
 #include "generatepage.moc"

@@ -41,7 +41,7 @@ KAppTemplate::KAppTemplate( QWidget *parent )
     addPage(new IntroPage);
     addPage(new ChoicePage);
     addPage(new PropertiesPage);
-    addPage(new SummaryPage);
+    //addPage(new SummaryPage);
     addPage(new GeneratePage);
 }
 

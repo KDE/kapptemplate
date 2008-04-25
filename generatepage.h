@@ -47,6 +47,7 @@ class GeneratePage : public QWizardPage
 	void initializePage();
 
 	QString templateName;
+	QString feedback;
 };
 
 #endif // _GENERATEPAGE_H_
