@@ -51,7 +51,6 @@ ChoicePage::ChoicePage( QWidget *parent)
 }
 
 bool ChoicePage::isComplete () const{
-    kDebug() << m_baseName.isEmpty() << ui_choice.kcfg_appName->text().isEmpty();
     if(!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()){
         return true;
     }
