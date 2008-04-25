@@ -1,7 +1,7 @@
 require 'ui_prefs_base.rb'
 require '%{APPNAMELC}view.rb'
 
-class %{APPNAME} < KDE::XmlGuiWindow
+class %{APPNAMEFU} < KDE::XmlGuiWindow
 # Default Constructor
   slots :fileNew, :optionsPreferences, :setupActions
 
