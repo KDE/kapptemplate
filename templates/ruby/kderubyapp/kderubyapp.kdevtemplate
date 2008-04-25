@@ -2,6 +2,6 @@
 [General]
 Name=KDE 4 Ruby GUI Application
 Comment=KDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4
-Category=Ruby/KDE 
-Icon=kappruby.png
+Category=Ruby 
+Icon=kderubyapp.png
 ShowFilesAfterGeneration=%{dest}/src/main.rb
