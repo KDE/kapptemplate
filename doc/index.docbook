@@ -56,7 +56,7 @@
 <chapter id="introduction"> 
 <title>Introduction</title> 
 <para>
-&kapptemplate; generates &kde; 4 templates to help you start easily &kde;
+&kapptemplate; generates &kde; templates to help you start easily &kde;
 programming.</para> 
 
 <para>
@@ -73,10 +73,9 @@ As default you will find:</para>
 <listitem><para>A plasma applet template</para></listitem>
 </itemizedlist>
 
-<para>Choose one template and type its number then fill in the details of
-your project. </para>
+<para>Answer the wizard questions on each page and generate your template.</para>
 
-<note><para>A README file in each template will allow you to find out how to build the template. It will also give you links for tutorials related to the project.</para></note>
+<note><para>A <filename>README</filename> file in each template will allow you to find out how to build the template. It will also give you links for tutorials related to the project.</para></note>
 </chapter>
 
 <chapter id="using-kapptemplate">
@@ -214,10 +213,23 @@ The template will give you the following application:
 
 <itemizedlist>
 <listitem><para>Program copyright 1998-2003 Kurt Granroth</para> </listitem>
-<listitem><para>Program copyright 2006-2007 &Anne-Marie.Mahfouf;</para>
+<listitem><para>Program copyright 2006-2008 &Anne-Marie.Mahfouf;</para></listitem>
+<listitem><para>Program copyright 2008 Beat Wolf</para>
 </listitem>
 </itemizedlist>
-
+<para>
+Contributors:
+<itemizedlist>
+<listitem><para>Coding help: Beat Wolf
+<email>asraniel@fryx.ch</email></para> </listitem>
+<listitem><para>Ruby template: Cyrille Berger
+<email>cberger@cberger.net</email></para> </listitem>
+<listitem><para>Ruby template: Richard Dale
+<email>Richard_Dale@tipitina.demon.co.uk></email></para> </listitem>
+<listitem><para>PyKDE4 template: Christoph Burgmer 
+<email>chrislb@gmx.de</email></para> </listitem>
+</itemizedlist>
+</para>
 <para>
 Documentation copyright 2007 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
 </para>
