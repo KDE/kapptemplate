@@ -139,18 +139,17 @@ As default you will find:</para>
 <para>This chapter describes the templates so you can choose the one that
  is the best adapted to your needs.</para>
 
-<sect1 id="ksimpleapp-template">
-<title>Generating the &kde; 4 simple application template</title>
-
+<sect1 id="kde4-gui-app">
+<title>The C++ &kde; 4 GUI application template</title>
+<para>This is a CMake based KDE 4 GUI template using KXMLGuiWindow and KConfig XT. This is a KDE 4 norma application.</para>
 <screenshot>
-<screeninfo>Here's a screenshot of the kde4 simple
-application</screeninfo>
+<screeninfo>Here's a screenshot of the C++ KDE 4 GUI application template</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="ksimpleapp.png" format="PNG"/>
+	    <imagedata fileref="kapp4.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>kde4 simple application</phrase>
+	    <phrase>C++ KDE 4 GUI application template</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -160,98 +159,50 @@ how to use KConfig XT to change settings using the <menuchoice>
 <guimenuitem>Configure &lt;AppName&gt;</guimenuitem>
 </menuchoice>.</para>
 
-<screenshot>
-<screeninfo>Here's a screenshot of the kde4 simple application
-settings dialog</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="ksimpleapp-settings.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase>kde4 template settings</phrase>
-	  </textobject>
-	</mediaobject>
-</screenshot>
-
-<para>Please note in the config dialog that there are tooltips to help the user
-understanding each setting. These tooltips can either be written directly
-in Qt Designer for each widget or be added in the subclass. A tooltip
-consists on only a few words describing the use of the widget.</para>
-<screenshot>
-<screeninfo>A tooltip</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="ksimpleapp-tooltips.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase>A tooltip</phrase>
-	  </textobject>
-	</mediaobject>
-</screenshot>
-<para>Furthermore using <keycombo
-action="simul">&Shift;<keycap>F1</keycap></keycombo> the user can see
-QWhatsThis help which helps him to understand better what each setting
-does. This QWhatsThis help can either be written directly
-in Qt Designer for each widget or be added in the subclass. It should be
-more detailed than the tooltip and can use HTML markup such as bold,
-color or italic.</para>
-<screenshot>
-<screeninfo>QWhatsThis</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="ksimpleapp-qwhatsthis.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase>QWhatsThis</phrase>
-	  </textobject>
-	</mediaobject>
-</screenshot>
-
-<para>You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
+<para>Don't forget to read the <filename>README</filename> in the project directory. You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
 </sect1>
 
-<sect1 id="framework-template">
-<title>Generating the full featured &kde; 4 framework application</title>
-<para>This template has the same features than the previous one with more menus and with DBUS support.</para>
+<sect1 id="plasmoid">
+<title>The plasmoid application</title>
+<para>This template generates a simple plasma applet with an icon and some text on it.</para>
 
 <screenshot>
-<screeninfo>&kde; 4 framework application</screeninfo>
+<screeninfo>&kde; 4 plasma applet template</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="kapp-main.png" format="PNG"/>
+	    <imagedata fileref="plasma-applet.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>&kde; 4 framework application</phrase>
+	    <phrase>&kde; 4 plasma applet template</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-
+<para>This template uses CMake and you can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>.</para>
 </sect1>
 
-<sect1 id="kpart-template">
-<title>Generating the KParts &kde; 4 application</title>
-<para>A KParts component is a &kde; GUI component featuring a widget embeddedable in any application and GUI elements that will be merged in the "host" user interface (menubars, toolbars... ). It can embed in other &kde; applications. For example, &konsole; is a KPart and can therefore be easily used in KDevelop or &kate;.</para>
+<sect1 id="pyqt4-template">
+<title>The PyQT4 application</title>
+<para></para>
 
 <para>
 The template will give you the following application:
 </para>
 
 <screenshot>
-<screeninfo>KParts application</screeninfo>
+<screeninfo>The PyQT4 application</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="kpartapp-main.png" format="PNG"/>
+	    <imagedata fileref="pyqt4app.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>KParts application</phrase>
+	    <phrase>The PyQT4 application</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
-<para>This template is a small editor</para>
-<para>You can read more about KParts in this detailed tutorial: 
-<ulink url="http://techbase.kde.org/Development/Architecture/KDE3/KParts">http://techbase.kde.org/Development/Architecture/KDE3/KParts</ulink>.
-</para>
+<para> - </para>
+
+<para> - </para>
 </sect1>
 
 </chapter>
