@@ -16,7 +16,7 @@ set(kapptemplate_SRCS
    choicepage.cpp
  )
 
-kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui summary.ui generate.ui)
+kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
 
 kde4_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
 
