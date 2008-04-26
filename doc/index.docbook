@@ -30,7 +30,7 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 
-<date>2008-04-11</date>
+<date>2008-04-26</date>
 <releaseinfo>0.1</releaseinfo>
 
 <abstract>
@@ -48,6 +48,8 @@
 <keyword>C++</keyword>
 <keyword>python</keyword>
 <keyword>ruby</keyword>
+<keyword>pyqt4</keyword>
+<keyword>pykde4</keyword>
 <keyword>plasma</keyword>
 </keywordset>
 
@@ -75,15 +77,61 @@ As default you will find:</para>
 
 <para>Answer the wizard questions on each page and generate your template.</para>
 
-<note><para>A <filename>README</filename> file in each template will allow you to find out how to build the template. It will also give you links for tutorials related to the project.</para></note>
+<note><para>A <filename>README</filename> file in each template will allow you to find out how to build the template. It will also give you links for tutorials related to the project. After the project is generated, &kapptemplate;'s job is finished and you are on your own to build it.</para></note>
 </chapter>
 
 <chapter id="using-kapptemplate">
 <title>Using &kapptemplate;</title>
-<para>&kapptemplate; is a wizard. The first page of the wizard explains you that &kapptemplate; will generate a base project.</para>
-<para> - </para>
-<para> - </para>
+<para>&kapptemplate; is a wizard. The first page of the wizard explains you that &kapptemplate; will generate a base project. Click <guibutton>Next</guibutton> to start generating your project. <guibutton>Cancel</guibutton> will stop the program and quit it. <guibutton>Help</guibutton> will display this help handbook in &khelpcenter;.</para>
+<screenshot>
+<screeninfo>&kapptemplate; first page</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>&kapptemplate; first page</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
 
+<para>The second page lists the available templates. On the rigth you can see the template preview and below the template description. After you chose your template, you are invited to enter the project name in the field at the bottom.</para>
+<screenshot>
+<screeninfo>&kapptemplate; second page</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>&kapptemplate; second page</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para>On the third page, you are asked for the project version, the source directory and the author name and email. If you filled &systemsettings; tab about your personal information, it will be taken from there as default.</para>
+<screenshot>
+<screeninfo>&kapptemplate; third page</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>&kapptemplate; third page</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para>The fourth and last page gives you some feedback about the project generation.</para>
+<screenshot>
+<screeninfo>&kapptemplate; fourth page</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>&kapptemplate; fourth page</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para>Then click <guibutton>Finish</guibutton> to close &kapptemplate;.</para>
 </chapter>
 
 <chapter id="templates-description">
@@ -231,7 +279,7 @@ Contributors:
 </itemizedlist>
 </para>
 <para>
-Documentation copyright 2007 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
+Documentation copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
