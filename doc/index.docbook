@@ -177,12 +177,12 @@ how to use KConfig XT to change settings using the <menuchoice>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para>This template uses CMake and you can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>.</para>
+<para>You need KDE 4.1 to build this template and it uses CMake. You can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>, all methods are explained here.</para>
+<para>Restart plasma to load the applet by issuing <userinput>kquitapp plasma &amp;&amp; plasma</userinput> or view it with <userinput>plasmoidviewer YourAppletName</userinput>.</para>
 </sect1>
 
 <sect1 id="pyqt4-template">
 <title>The PyQT4 application</title>
-<para></para>
 
 <para>
 The template will give you the following application:
@@ -200,9 +200,50 @@ The template will give you the following application:
 	</mediaobject>
 </screenshot>
 
-<para> - </para>
+<para>You need PyQt4 from your distribution.</para>
 
-<para> - </para>
+<para>To run the template, first generate the python module from the Designer myCalendar.ui file by typing
+<userinput>pyuic4 -o myCalendar.py myCalendar.ui</userinput> in your project folder and then start your project:
+<userinput>python APPNAME.py</userinput>.</para>
+</sect1>
+
+
+<sect1 id="pyKDE4-template">
+<title>The PyKDE4 application</title>
+
+<para>
+The template will give you the following application:
+</para>
+
+<para>You need PyKDE4 from your distribution.</para>
+
+<para>To run the template, first generate the python module from the Designer myCalendar.ui file by typing
+<userinput>pyuic4 -o myCalendar.py myCalendar.ui</userinput> in your project folder and then start your project:
+<userinput>python APPNAME.py</userinput>.</para>
+</sect1>
+
+<sect1 id="ruby-template">
+<title>The Ruby KDE application</title>
+
+<para>
+The template will give you the following application:
+</para>
+
+<screenshot>
+<screeninfo>The KDE Ruby application</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kderubyapp.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>The KDE Ruby application</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para>You need korundum4 from KDE 4 kdebindings module or from your distribution to run this template.</para>
+
+<para>To run the template, after building and installing the project (see the <filename>README</filename>), type in konsole: <userinput>krubyapplication your_app your-app/main.rb</userinput>.</para>
 </sect1>
 
 </chapter>
