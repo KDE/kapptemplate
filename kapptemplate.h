@@ -24,7 +24,6 @@
 
 #include "ui_introduction.h"
 #include "ui_properties.h"
-#include "ui_summary.h"
 
 /**
  * This class serves as the main window for KAppTemplate.  It is a wizard-like
@@ -93,14 +92,6 @@ class PropertiesPage : public QWizardPage
 	void completeChanged();
 };
 
-class SummaryPage : public QWizardPage
-{
-    Q_OBJECT
 
-    public:
-	SummaryPage(QWidget *parent = 0);
-    private:
-	Ui::summary ui_summary;
-};
 
 #endif // _KAPPTEMPLATE_H_

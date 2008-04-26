@@ -41,7 +41,6 @@ KAppTemplate::KAppTemplate( QWidget *parent )
     addPage(new IntroPage);
     addPage(new ChoicePage);
     addPage(new PropertiesPage);
-    //addPage(new SummaryPage);
     addPage(new GeneratePage);
 }
 
@@ -105,12 +104,7 @@ void PropertiesPage::saveConfig()
     Prefs::self()->writeConfig();
 }
 
-SummaryPage::SummaryPage(QWidget *parent)
-    : QWizardPage(parent)
-{
-    setTitle(i18n("Your project summary"));
-    ui_summary.setupUi(this);
-}
+
 
 
 
