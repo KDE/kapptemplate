@@ -15,11 +15,11 @@ class %{APPNAMELC}(KXmlGuiWindow):
         KXmlGuiWindow.__init__(self)
 
         self.ui = Ui_myCalendar()
-	myWidget = QtGui.QWidget()
+        myWidget = QtGui.QWidget()
         self.ui.setupUi(myWidget)
-	self.setCentralWidget(myWidget)
-	#set label text to current date
-	self.ui.myLabel.setText(str(self.ui.calendarWidget.selectedDate().toPyDate()))
+        self.setCentralWidget(myWidget)
+        #set label text to current date
+        self.ui.myLabel.setText(str(self.ui.calendarWidget.selectedDate().toPyDate()))
         # Connect the calendar to show the date on the QLabel
         self.connect(self.ui.calendarWidget, QtCore.SIGNAL('selectionChanged()'), self.showDate)
         # Add a quit action
@@ -33,8 +33,8 @@ class %{APPNAMELC}(KXmlGuiWindow):
         self.setupGUI(KXmlGuiWindow.Default, os.path.join(sys.path[0], "%{APPNAME}ui.rc"))
 
     def showDate(self):
-	date = self.ui.calendarWidget.selectedDate()
-	self.ui.myLabel.setText(str(date.toPyDate()))
+        date = self.ui.calendarWidget.selectedDate()
+        self.ui.myLabel.setText(str(date.toPyDate()))
 
 if __name__ == "__main__":
     appName     = "%{APPNAMELC}"
