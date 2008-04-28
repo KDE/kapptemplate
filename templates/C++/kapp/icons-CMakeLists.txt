@@ -1,4 +1,0 @@
-echo "Creating $LOCATION_ROOT/icons/CMakeLists.txt...";
-cat << EOF > $LOCATION_ROOT/icons/CMakeLists.txt
-
-kde4_install_icons( \${ICON_INSTALL_DIR})
