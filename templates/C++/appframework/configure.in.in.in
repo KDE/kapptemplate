@@ -1,3 +1,0 @@
-echo "Creating $LOCATION_ROOT/configure.in.in...";
-cat << EOF > $LOCATION_ROOT/configure.in.in
-#MIN_CONFIG
