@@ -10,6 +10,11 @@ then start your project:
 python APPNAME.py
 (where you replace APPNAME by your project name)
 
+Warning: in Oxygen style, the menus are not seen, you need to set another style in System Settings!
+
+
+Tutorials links
+--------------
 Some PyQt4 tutorials links
 http://zetcode.com/tutorials/pyqt4/
 http://chaos.troll.no/~dboddie/Python/Designer/PyCon_UK_2007_PyQt_and_Qt_Designer.pdf

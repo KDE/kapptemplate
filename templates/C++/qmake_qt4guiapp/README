@@ -1,0 +1,32 @@
+Qt4 GUI Template
+----------------------
+
+You need QT 4.3 or higher
+
+-- Build instructions --
+
+cd /where/your/project/is/installed
+qmake -project
+qmake
+make
+
+./<appname>
+
+
+-- Tutorials and resources --
+
+Qt online docs
+http://doc.trolltech.com/4.4rc1/index.html
+
+Trolltech tutorial
+http://doc.trolltech.com/4.3/tutorial.html
+
+Tutorial for beginners
+http://sector.ynet.sk/qt4-tutorial/
+
+Qt Forum
+http://www.qtforum.org/
+
+Qt Centre
+http://www.qtcentre.org/
+
