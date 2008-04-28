@@ -1,7 +1,5 @@
-echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}.h...";
-cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
-#ifndef ${APP_NAME_UC}_H
-#define ${APP_NAME_UC}_H
+#ifndef %{APPNAMEUC}_H
+#define %{APPNAMEUC}_H
 
 #include <kparts/mainwindow.h>
 
@@ -13,19 +11,19 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.h
  * @author ${AUTHOR} <${EMAIL}>
  * @version ${APP_VERSION}
  */
-class ${APP_NAME} : public KParts::MainWindow
+class %{APPNAME} : public KParts::MainWindow
 {
     Q_OBJECT
 public:
     /**
      * Default Constructor
      */
-    ${APP_NAME}();
+    %{APPNAME}();
 
     /**
      * Default Destructor
      */
-    virtual ~${APP_NAME}();
+    virtual ~%{APPNAME}();
 
     /**
      * Use this method to load whatever file/URL you have
@@ -61,4 +59,4 @@ private:
     KParts::ReadWritePart *m_part;
 };
 
-#endif // ${APP_NAME_UC}_H
+#endif // %{APPNAMEUC}_H

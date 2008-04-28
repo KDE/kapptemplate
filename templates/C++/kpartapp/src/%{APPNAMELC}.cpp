@@ -1,12 +1,10 @@
-echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}.cpp...";
-cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 /*
- * ${APP_NAME_LC}.cpp
+ * %{APPNAMELC}.cpp
  *
  * Copyright (C) 2004 $AUTHOR <$EMAIL>
  */
-#include "${APP_NAME_LC}.h"
-#include "${APP_NAME_LC}.moc"
+#include "%{APPNAMELC}.h"
+#include "%{APPNAMELC}.moc"
 
 #include <kaction.h>
 #include <kactioncollection.h>
@@ -22,11 +20,11 @@ cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}.cpp
 
 #include <QApplication>
 
-${APP_NAME}::${APP_NAME}()
+%{APPNAME}::%{APPNAME}()
     : KParts::MainWindow( )
 {
     // set the shell's ui resource file
-    setXMLFile("${APP_NAME_LC}_shell.rc");
+    setXMLFile("%{APPNAMELC}_shell.rc");
 
     // then, setup our actions
     setupActions();
@@ -34,13 +32,13 @@ ${APP_NAME}::${APP_NAME}()
     // this routine will find and load our Part.  it finds the Part by
     // name which is a bad idea usually.. but it's alright in this
     // case since our Part is made for this Shell
-    KLibFactory *factory = KLibLoader::self()->factory("lib${APP_NAME_LC}part");
+    KLibFactory *factory = KLibLoader::self()->factory("lib%{APPNAMELC}part");
     if (factory)
     {
         // now that the Part is loaded, we cast it to a Part to get
         // our hands on it
         m_part = static_cast<KParts::ReadWritePart *>(factory->create(this,
-                                "${APP_NAME}Part" ));
+                                "%{APPNAME}Part" ));
 
         if (m_part)
         {
@@ -68,16 +66,16 @@ ${APP_NAME}::${APP_NAME}()
     setAutoSaveSettings();
 }
 
-${APP_NAME}::~${APP_NAME}()
+%{APPNAME}::~%{APPNAME}()
 {
 }
 
-void ${APP_NAME}::load(const KUrl& url)
+void %{APPNAME}::load(const KUrl& url)
 {
     m_part->openUrl( url );
 }
 
-void ${APP_NAME}::setupActions()
+void %{APPNAME}::setupActions()
 {
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
     KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
@@ -91,14 +89,14 @@ void ${APP_NAME}::setupActions()
     //KStandardAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
 
-void ${APP_NAME}::saveProperties(KConfigGroup & /*config*/)
+void %{APPNAME}::saveProperties(KConfigGroup & /*config*/)
 {
     // the 'config' object points to the session managed
     // config file.  anything you write here will be available
     // later when this app is restored
 }
 
-void ${APP_NAME}::readProperties(const KConfigGroup & /*config*/)
+void %{APPNAME}::readProperties(const KConfigGroup & /*config*/)
 {
     // the 'config' object points to the session managed
     // config file.  this function is automatically called whenever
@@ -106,7 +104,7 @@ void ${APP_NAME}::readProperties(const KConfigGroup & /*config*/)
     // in 'saveProperties'
 }
 
-void ${APP_NAME}::fileNew()
+void %{APPNAME}::fileNew()
 {
     // this slot is called whenever the File->New menu is selected,
     // the New shortcut is pressed (usually CTRL+N) or the New toolbar
@@ -118,19 +116,19 @@ void ${APP_NAME}::fileNew()
     // in its initial state.  This is what we do here..
     if ( ! m_part->url().isEmpty() || m_part->isModified() )
     {
-        (new ${APP_NAME})->show();
+        (new %{APPNAME})->show();
     };
 }
 
-void ${APP_NAME}::optionsConfigureKeys()
+void %{APPNAME}::optionsConfigureKeys()
 {
   /*KShortcutsDialog dlg( KKeyChooser::AllActions, KKeyChooser::LetterShortcutsDisallowed, this );
-  dlg.insert( actionCollection(), "${APP_NAME_LC}_shell.rc" );
-  dlg.insert( m_part->actionCollection(), "${APP_NAME_LC}_part.rc" );
+  dlg.insert( actionCollection(), "%{APPNAMELC}_shell.rc" );
+  dlg.insert( m_part->actionCollection(), "%{APPNAMELC}_part.rc" );
   (void) dlg.configure( true );*/
 }
 
-void ${APP_NAME}::optionsConfigureToolbars()
+void %{APPNAME}::optionsConfigureToolbars()
 {
     //saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
 
@@ -141,12 +139,12 @@ void ${APP_NAME}::optionsConfigureToolbars()
     dlg.exec();*/
 }
 
-void ${APP_NAME}::applyNewToolbarConfig()
+void %{APPNAME}::applyNewToolbarConfig()
 {
     //applyMainWindowSettings(KGlobal::config(), autoSaveGroup());
 }
 
-void ${APP_NAME}::fileOpen()
+void %{APPNAME}::fileOpen()
 {
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
@@ -168,7 +166,7 @@ void ${APP_NAME}::fileOpen()
         else
         {
             // we open the file in a new window...
-            ${APP_NAME}* newWin = new ${APP_NAME};
+            %{APPNAME}* newWin = new %{APPNAME};
             newWin->load( url );
             newWin->show();
         }

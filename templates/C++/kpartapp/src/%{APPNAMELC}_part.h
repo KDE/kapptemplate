@@ -1,7 +1,5 @@
-echo "Creating $LOCATION_ROOT/src/${APP_NAME_LC}_part.h...";
-cat << EOF > $LOCATION_ROOT/src/${APP_NAME_LC}_part.h
-#ifndef ${APP_NAME_UC}PART_H
-#define ${APP_NAME_UC}PART_H
+#ifndef %{APPNAMEUC}PART_H
+#define %{APPNAMEUC}PART_H
 
 #include <kparts/part.h>
 
@@ -17,22 +15,22 @@ class KAction;
  * application.
  *
  * @short Main Part
- * @author ${AUTHOR} <${EMAIL}>
+ * @author %{AUTHOR} <%{EMAIL}>
  * @version ${APP_VERSION}
  */
-class ${APP_NAME}Part : public KParts::ReadWritePart
+class %{APPNAME}Part : public KParts::ReadWritePart
 {
     Q_OBJECT
 public:
     /**
      * Default constructor
      */
-    ${APP_NAME}Part(QWidget *parentWidget,QObject *parent, const QStringList &);
+    %{APPNAME}Part(QWidget *parentWidget,QObject *parent, const QStringList &);
 
     /**
      * Destructor
      */
-    virtual ~${APP_NAME}Part();
+    virtual ~%{APPNAME}Part();
 
     /**
      * This is a virtual function inherited from KParts::ReadWritePart.
@@ -67,4 +65,4 @@ private:
     QTextEdit *m_widget;
 };
 
-#endif // ${APP_NAME_UC}PART_H
+#endif // %{APPNAMEUC}PART_H
