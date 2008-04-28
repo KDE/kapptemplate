@@ -15,6 +15,12 @@ Note: you can use another build path. Then cd in your build dir and:
 export KDE_SRC=path_to_your_src
 cmake $KDE_SRC -DCMAKE_INSTALL_PREFIX=$KDEDIR -DCMAKE_BUILD_TYPE=debugfull
 
+Tutorials
+-=-=-=-=-
+Kpart docs
+http://techbase.kde.org/index.php?title=Development/Architecture/KDE4/KParts
+Tutorial
+http://techbase.kde.org/Development/Architecture/KDE3/KParts
 
 ----------------------------
 Please send all comments to:
