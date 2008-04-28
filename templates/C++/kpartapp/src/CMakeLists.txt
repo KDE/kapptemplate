@@ -1,18 +1,16 @@
-project(%{APPNAMELC})
-
 set(%{APPNAMELC}_SRCS
    main.cpp
    %{APPNAMELC}.cpp
  )
 
-kde4_add_executable(%{APPNAMELC} \${%{APPNAMELC}_SRCS})
+kde4_add_executable(%{APPNAMELC} ${%{APPNAMELC}_SRCS})
 
-target_link_libraries(%{APPNAMELC} \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS})
+target_link_libraries(%{APPNAMELC} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS})
 
 ########### install files ###############
-install(TARGETS %{APPNAMELC} DESTINATION \${BIN_INSTALL_DIR} )
-install( FILES %{APPNAMELC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
-install( FILES %{APPNAMELC}_shell.rc  DESTINATION  \${DATA_INSTALL_DIR}/%{APPNAMELC} )
+install(TARGETS %{APPNAMELC} DESTINATION ${BIN_INSTALL_DIR} )
+install( FILES %{APPNAMELC}.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( FILES %{APPNAMELC}_shell.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC} )
 
 
 #########################################################################
@@ -23,14 +21,12 @@ set(%{APPNAMELC}_PART_SRCS
    %{APPNAMELC}_part.cpp
  )
 
-kde4_add_plugin(%{APPNAMELC}part WITH_PREFIX \${%{APPNAMELC}_PART_SRCS})
+kde4_add_plugin(%{APPNAMELC}part WITH_PREFIX ${%{APPNAMELC}_PART_SRCS})
 
-target_link_libraries(%{APPNAMELC}part \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} )
+target_link_libraries(%{APPNAMELC}part ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS} )
 
-install( FILES %{APPNAMELC}_part.desktop  DESTINATION \${XDG_APPS_INSTALL_DIR} )
-install( FILES %{APPNAMELC}_part.rc  DESTINATION  \${DATA_INSTALL_DIR}/%{APPNAMELC}part )
+install( FILES %{APPNAMELC}_part.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
+install( FILES %{APPNAMELC}_part.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC}part )
 
 set_target_properties(%{APPNAMELC}part PROPERTIES VERSION SOVERSION)
-install(TARGETS %{APPNAMELC}part  DESTINATION \${PLUGIN_INSTALL_DIR} )
-
-kde4_install_icons( \${ICON_INSTALL_DIR}   )
+install(TARGETS %{APPNAMELC}part  DESTINATION ${PLUGIN_INSTALL_DIR} )
