@@ -171,10 +171,12 @@ void GeneratePage::initializePage()
     m_variables["APPNAME"] = appName;
     m_variables["APPNAMEUC"] = appName.toUpper();
     m_variables["APPNAMELC"] = appName.toLower();
+    m_variables["PROJECTDIRNAME"] = appName.toLower();
     m_variables["APPNAMEFU"] = appName.replace(0, 1, appName.toUpper().at(0));
     m_variables["AUTHOR"] = field("author").toString();
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
+    m_variables["VERSIONCONTROLPLUGIN"] = version;
     m_variables["PROJECTDIRNAME"] = appName.toLower()+"-"+version;// TODO what for? change "dest" to that?
 
     KArchive* arch = 0;

@@ -1,4 +1,36 @@
-add_subdirectory( no-exe) 
+project(%{APPNAMELC})
 
-install(FILES app_part.cpp app-CMakeLists.txt app-main-CMakeLists.txt app_part-desktop hi16-app-app.png main.cpp app_part.h hi32-app-app.png app.cpp app_part.rc hi48-app-app.png app-desktop app_shell.rc index.docbook app.h doc-CMakeLists.txt DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/kpartapp)
+set(%{APPNAMELC}_SRCS
+   main.cpp
+   %{APPNAMELC}.cpp
+ )
 
+kde4_add_executable(%{APPNAMELC} \${%{APPNAMELC}_SRCS})
+
+target_link_libraries(%{APPNAMELC} \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS})
+
+########### install files ###############
+install(TARGETS %{APPNAMELC} DESTINATION \${BIN_INSTALL_DIR} )
+install( FILES %{APPNAMELC}.desktop  DESTINATION  \${XDG_APPS_INSTALL_DIR} )
+install( FILES %{APPNAMELC}_shell.rc  DESTINATION  \${DATA_INSTALL_DIR}/%{APPNAMELC} )
+
+
+#########################################################################
+# KPART SECTION
+#########################################################################
+#kde_module_LTLIBRARIES = lib%{APPNAMELC}part.la
+set(%{APPNAMELC}_PART_SRCS
+   %{APPNAMELC}_part.cpp
+ )
+
+kde4_add_plugin(%{APPNAMELC}part WITH_PREFIX \${%{APPNAMELC}_PART_SRCS})
+
+target_link_libraries(%{APPNAMELC}part \${KDE4_KDEUI_LIBS} \${KDE4_KPARTS_LIBS} )
+
+install( FILES %{APPNAMELC}_part.desktop  DESTINATION \${XDG_APPS_INSTALL_DIR} )
+install( FILES %{APPNAMELC}_part.rc  DESTINATION  \${DATA_INSTALL_DIR}/%{APPNAMELC}part )
+
+set_target_properties(%{APPNAMELC}part PROPERTIES VERSION SOVERSION)
+install(TARGETS %{APPNAMELC}part  DESTINATION \${PLUGIN_INSTALL_DIR} )
+
+kde4_install_icons( \${ICON_INSTALL_DIR}   )

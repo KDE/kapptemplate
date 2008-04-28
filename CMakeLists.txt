@@ -41,3 +41,5 @@ install(FILES templates/Python/pyqt4app/pyqt4app.kdevtemplate DESTINATION ${DATA
 install(FILES templates/Python/pyqt4app/pyqt4app.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 install(FILES templates/Python/pykde4app/pykde4app.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
 install(FILES templates/Python/pykde4app/pykde4.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
+install(FILES templates/C++/qmake_qt4guiapp/qmake_qt4guiapp.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
+install(FILES templates/C++/qmake_qt4guiapp/qmake4gui.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
