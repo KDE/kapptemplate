@@ -22,6 +22,7 @@
 
 #include <QDir>
 #include <QFileInfo>
+#include <QTextCodec>
 
 #include <KDebug>
 #include <kmacroexpander.h>
