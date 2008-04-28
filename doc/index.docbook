@@ -30,7 +30,7 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 
-<date>2008-04-26</date>
+<date>2008-04-28</date>
 <releaseinfo>0.1</releaseinfo>
 
 <abstract>
@@ -51,6 +51,7 @@
 <keyword>pyqt4</keyword>
 <keyword>pykde4</keyword>
 <keyword>plasma</keyword>
+<keyword>Qt 4</keyword>
 </keywordset>
 
 </bookinfo>
@@ -69,8 +70,10 @@ As default you will find:</para>
 
 <itemizedlist>
 <listitem><para>A simple &kde; 4 GUI template</para> </listitem>
+<listitem><para>A &kde; 4 KPart template</para> </listitem>
 <listitem><para>A Qt4 main window based template</para></listitem>
 <listitem><para>A PyQt4 application</para></listitem>
+<listitem><para>A PyKDE4 application</para></listitem>
 <listitem><para>A Ruby (korundum4) template</para></listitem>
 <listitem><para>A plasma applet template</para></listitem>
 </itemizedlist>
@@ -95,7 +98,7 @@ As default you will find:</para>
 	</mediaobject>
 </screenshot>
 
-<para>The second page lists the available templates. On the rigth you can see the template preview and below the template description. After you chose your template, you are invited to enter the project name in the field at the bottom.</para>
+<para>The second page lists the available templates. On the right you can see the template preview and below the template description. After you chose your template, you are invited to enter the project name in the field at the bottom.</para>
 <screenshot>
 <screeninfo>&kapptemplate; second page</screeninfo>
 	<mediaobject>
@@ -141,7 +144,7 @@ As default you will find:</para>
 
 <sect1 id="kde4-gui-app">
 <title>The C++ &kde; 4 GUI application template</title>
-<para>This is a CMake based KDE 4 GUI template using KXMLGuiWindow and KConfig XT. This is a KDE 4 norma application.</para>
+<para>This is a CMake based KDE 4 GUI template using KXMLGuiWindow and KConfig XT. This is a KDE 4 standard application.</para>
 <screenshot>
 <screeninfo>Here's a screenshot of the C++ KDE 4 GUI application template</screeninfo>
 	<mediaobject>
@@ -160,6 +163,24 @@ how to use KConfig XT to change settings using the <menuchoice>
 </menuchoice>.</para>
 
 <para>Don't forget to read the <filename>README</filename> in the project directory. You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
+</sect1>
+
+<sect1 id="kpart-app">
+<title>The C++ &kde; 4 KPart application template</title>
+<para>This is a CMake based KDE 4 KPart template.</para>
+<screenshot>
+<screeninfo>Here's a screenshot of the C++ KDE 4 Kpart template</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kpartapp.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>C++ KDE 4 Kpart template</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para>Don't forget to read the <filename>README</filename> in the project directory.</para>
 </sect1>
 
 <sect1 id="plasmoid">
@@ -214,6 +235,18 @@ The template will give you the following application:
 <para>
 The template will give you the following application:
 </para>
+
+<screenshot>
+<screeninfo>The PyKDE4 application</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="pykde4.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase>The PyKDE4 application</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
 
 <para>You need PyKDE4 from your distribution.</para>
 
