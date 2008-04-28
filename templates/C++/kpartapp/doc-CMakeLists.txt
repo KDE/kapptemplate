@@ -1,6 +1,0 @@
-echo "Creating $LOCATION_ROOT/doc/CMakeLists.txt...";
-$MKDIR $LOCATION_ROOT/doc
-cat << EOF > $LOCATION_ROOT/doc/CMakeLists.txt
-
-kde4_create_handbook(index.docbook INSTALL_DESTINATION \${HTML_INSTALL_DIR}/en)
-
