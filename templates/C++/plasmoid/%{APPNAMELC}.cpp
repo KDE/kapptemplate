@@ -12,7 +12,7 @@
     m_icon("document")
 {
     // this will get us the standard applet background, for free!
-    setBackgroundHintsDefaultBackground);
+    setBackgroundHints(DefaultBackground);
     m_svg.setImagePath("widgets/background");
     resize(200, 200);
 }
