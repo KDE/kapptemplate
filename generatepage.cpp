@@ -61,7 +61,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 
     int progress = 0;
 
-    foreach (QString entry, entries)
+    foreach (const QString &entry, entries)
     {
         progress++;
         ui_generate.progressBar->setValue( (progress / entries.size()) * 100);
@@ -86,7 +86,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 		if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
                     KMacroExpander::expandMacros(destName, m_variables))) {
 		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
-		    feedback.append(i18n("\n\nThe file %1 cannot be created."));
+		    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
 		    ui_generate.label->setText(feedback);
 		    return false;
 		}
@@ -95,7 +95,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 		//do not parse .png but parse filemanes for placeholders
 		if (!QFile(QDir::cleanPath(tdir.name()+'/'+file->name())).copy(KMacroExpander::expandMacros(destName, m_variables))) {
 		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
-		    feedback.append(i18n("\n\nThe file %1 cannot be created."));
+		    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
 		    ui_generate.label->setText(feedback);
 		    return false;
 		}
