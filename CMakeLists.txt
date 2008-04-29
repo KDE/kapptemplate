@@ -22,7 +22,7 @@ kde4_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
 
 kde4_add_executable(kapptemplate ${kapptemplate_SRCS})
 
-target_link_libraries(kapptemplate ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS})
+target_link_libraries(kapptemplate ${KDE4_KIO_LIBS})
 
 install(TARGETS kapptemplate DESTINATION ${BIN_INSTALL_DIR} )
 
