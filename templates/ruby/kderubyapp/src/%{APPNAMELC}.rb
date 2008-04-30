@@ -41,17 +41,17 @@ private
     # compare the names of the widgets in the .ui file
     # to the names of the variables in the .kcfg file
     # avoid to have 2 dialogs shown
-#    if KDE::ConfigDialog.showDialog( "settings" )
-#        return
-#    end
-#     dialog = KDE::ConfigDialog.new(self, "settings", Settings.self())
-#     generalSettingsDlg = Qt::Widget.new
-#     @ui = Ui_Prefs_base.new
-#     @ui.setupUi(generalSettingsDlg)
-#     dialog.addPage(generalSettingsDlg, KDE::i18n("General"), "package_setting")
-#     connect(dialog, SIGNAL('settingsChanged(QString)'), @view, SLOT('settingsChanged()'))
-#     dialog.setAttribute( Qt::WA_DeleteOnClose )
-#     dialog.show()
+    if KDE::ConfigDialog.showDialog("settings")
+      return
+    end
+    dialog = KDE::ConfigDialog.new(self, "settings", @view.settings)
+    generalSettingsDlg = Qt::Widget.new
+    @ui = Ui_Prefs_base.new
+    @ui.setupUi(generalSettingsDlg)
+    dialog.addPage(generalSettingsDlg, KDE::i18n("General"), "package_setting")
+    connect(dialog, SIGNAL('settingsChanged(QString)'), @view, SLOT('settingsChanged()'))
+    dialog.setAttribute(Qt::WA_DeleteOnClose)
+    dialog.show
   end
 
 private
