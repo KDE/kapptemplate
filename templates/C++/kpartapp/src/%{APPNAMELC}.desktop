@@ -6,4 +6,5 @@ Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE KPart Application
+GenericName[sv]=Ett KDE KPart-program
 Terminal=0
