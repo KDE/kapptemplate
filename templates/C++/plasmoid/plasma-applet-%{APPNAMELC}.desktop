@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=%{APPNAME}
+Name[x-test]=xx%{APPNAME}xx
 Comment=Plasma %{APPNAME}
+Comment[x-test]=xxPlasma %{APPNAME}xx
 Type=Service
 ServiceTypes=Plasma/Applet
 
