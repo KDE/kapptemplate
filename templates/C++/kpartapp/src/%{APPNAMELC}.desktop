@@ -1,14 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=%{APPNAME}
-Name[x-test]=xx%{APPNAME}xx
 Exec=%{APPNAMELC} %i %m -caption "%c"
 Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE KPart Application
-GenericName[el]=Μια εφαρμογή KDE KPart
-GenericName[lv]=KDE KPart lietotne
+GenericName[et]=KDE KPart rakendus
 GenericName[sv]=Ett KDE KPart-program
-GenericName[x-test]=xxA KDE KPart Applicationxx
 Terminal=0
