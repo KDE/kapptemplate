@@ -41,7 +41,7 @@ void AppTemplatesModel::refresh()
     //find all .kdevtemplate files on the system
     QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.kdevtemplate");
     QStringList tempList;
-    foreach (QString templateArchive, templateArchives)
+    foreach (const QString &templateArchive, templateArchives)
     {
 	QFileInfo archiveInfo(templateArchive);
 	QString baseName = archiveInfo.baseName();
@@ -65,7 +65,7 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
 
     QStandardItem *parent = invisibleRootItem();
     QStringList currentPath;
-    foreach (QString entry, path)
+    foreach (const QString &entry, path)
     {
         currentPath << entry;
 	kDebug() << "current path " << currentPath << endl;
