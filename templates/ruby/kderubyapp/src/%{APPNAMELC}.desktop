@@ -6,7 +6,5 @@ Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Ruby Application
-GenericName[et]=KDE4 Ruby rakendus
-GenericName[sv]=Ett KDE4 Ruby-program
 Terminal=0
 

@@ -6,7 +6,5 @@ Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Application
-GenericName[et]=KDE4 rakendus
-GenericName[sv]=Ett KDE 4-program
 Terminal=0
 
