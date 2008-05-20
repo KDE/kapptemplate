@@ -6,5 +6,11 @@ Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Ruby Application
+GenericName[ga]=Feidhmchlár Ruby KDE4
+GenericName[it]=Un'applicazione Ruby di KDE
+GenericName[pt]=Uma Aplicação em Ruby para o KDE4
+GenericName[pt_BR]=Uma Aplicação em Ruby para o KDE4
+GenericName[uk]=Програма на Ruby для KDE4
+GenericName[zh_TW]=KDE4 Ruby 應用程式
 Terminal=0
 

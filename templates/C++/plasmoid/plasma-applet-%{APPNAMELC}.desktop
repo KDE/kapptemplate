@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=%{APPNAME}
 Comment=Plasma %{APPNAME}
+Comment[uk]=Плазма %{APPNAME}
 Type=Service
 ServiceTypes=Plasma/Applet
 
