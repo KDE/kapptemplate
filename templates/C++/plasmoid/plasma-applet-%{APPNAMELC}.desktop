@@ -1,18 +1,18 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=%{APPNAME}
 Comment=Plasma %{APPNAME}
 Comment[uk]=Плазма %{APPNAME}
 Type=Service
-ServiceTypes=Plasma/Applet
 
+X-KDE-ServiceTypes=Plasma/Applet
 X-KDE-Library=plasma_applet_%{APPNAMELC}
 X-KDE-PluginInfo-Author=%{AUTHOR}
 X-KDE-PluginInfo-Email=%{EMAIL}
-X-KDE-PluginInfo-Name=plasma_applet_%{APPNAMELC}
+X-KDE-PluginInfo-Name=%{APPNAMELC}
 X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Website=http://plasma.kde.org/
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL
 X-KDE-PluginInfo-EnabledByDefault=true
+
