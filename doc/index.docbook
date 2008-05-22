@@ -69,11 +69,11 @@ programming.</para>
 As default you will find:</para>
 
 <itemizedlist>
-<listitem><para>A simple &kde; 4 GUI template</para> </listitem>
+<listitem><para>A simple &kde; 4 &GUI; template</para> </listitem>
 <listitem><para>A &kde; 4 KPart template</para> </listitem>
 <listitem><para>A Qt4 main window based template</para></listitem>
 <listitem><para>A PyQt4 application</para></listitem>
-<listitem><para>A PyKDE4 application</para></listitem>
+<listitem><para>A Py&kde;4 application</para></listitem>
 <listitem><para>A Ruby (korundum4) template</para></listitem>
 <listitem><para>A plasma applet template</para></listitem>
 </itemizedlist>
@@ -110,7 +110,7 @@ As default you will find:</para>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para>On the third page, you are asked for the project version, the source directory and the author name and email. If you filled &systemsettings; tab about your personal information, it will be taken from there as default.</para>
+<para>On the third page, you are asked for the project version, the source folder and the author name and email. If you filled &systemsettings; tab about your personal information, it will be taken from there as default.</para>
 <screenshot>
 <screeninfo>&kapptemplate; third page</screeninfo>
 	<mediaobject>
@@ -143,16 +143,16 @@ As default you will find:</para>
  is the best adapted to your needs.</para>
 
 <sect1 id="kde4-gui-app">
-<title>The C++ &kde; 4 GUI application template</title>
-<para>This is a CMake based KDE 4 GUI template using KXMLGuiWindow and KConfig XT. This is a KDE 4 standard application.</para>
+<title>The C++ &kde; 4 &GUI; application template</title>
+<para>This is a CMake based &kde; 4 &GUI; template using KXMLGuiWindow and KConfig XT. This is a &kde; 4 standard application.</para>
 <screenshot>
-<screeninfo>Here's a screenshot of the C++ KDE 4 GUI application template</screeninfo>
+<screeninfo>Here's a screenshot of the C++ &kde; 4 &GUI; application template</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="kapp4.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>C++ KDE 4 GUI application template</phrase>
+	    <phrase>C++ &kde; 4 &GUI; application template</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -167,15 +167,15 @@ how to use KConfig XT to change settings using the <menuchoice>
 
 <sect1 id="kpart-app">
 <title>The C++ &kde; 4 KPart application template</title>
-<para>This is a CMake based KDE 4 KPart template.</para>
+<para>This is a CMake based &kde; 4 KPart template.</para>
 <screenshot>
-<screeninfo>Here's a screenshot of the C++ KDE 4 Kpart template</screeninfo>
+<screeninfo>Here's a screenshot of the C++ &kde; 4 Kpart template</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="kpartapp.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>C++ KDE 4 Kpart template</phrase>
+	    <phrase>C++ &kde; 4 Kpart template</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -198,7 +198,7 @@ how to use KConfig XT to change settings using the <menuchoice>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para>You need KDE 4.1 to build this template and it uses CMake. You can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>, all methods are explained here.</para>
+<para>You need &kde; 4.1 to build this template and it uses CMake. You can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>, all methods are explained here.</para>
 <para>Restart plasma to load the applet by issuing <userinput>kquitapp plasma &amp;&amp; plasma</userinput> or view it with <userinput>plasmoidviewer YourAppletName</userinput>.</para>
 </sect1>
 
@@ -248,7 +248,7 @@ The template will give you the following application:
 	</mediaobject>
 </screenshot>
 
-<para>You need PyKDE4 from your distribution.</para>
+<para>You need PyKDE 4 from your distribution.</para>
 
 <para>To run the template, first generate the python module from the Designer myCalendar.ui file by typing
 <userinput>pyuic4 -o myCalendar.py myCalendar.ui</userinput> in your project folder and then start your project:
@@ -256,25 +256,25 @@ The template will give you the following application:
 </sect1>
 
 <sect1 id="ruby-template">
-<title>The Ruby KDE application</title>
+<title>The Ruby &kde; application</title>
 
 <para>
 The template will give you the following application:
 </para>
 
 <screenshot>
-<screeninfo>The KDE Ruby application</screeninfo>
+<screeninfo>The &kde; Ruby application</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="kderubyapp.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>The KDE Ruby application</phrase>
+	    <phrase>The &kde; Ruby application</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
-<para>You need korundum4 from KDE 4 kdebindings module or from your distribution to run this template.</para>
+<para>You need korundum4 from &kde; 4 kdebindings module or from your distribution to run this template.</para>
 
 <para>To run the template, after building and installing the project (see the <filename>README</filename>), type in konsole: <userinput>krubyapplication your_app your-app/main.rb</userinput>.</para>
 </sect1>
@@ -285,7 +285,7 @@ The template will give you the following application:
 <title>Credits and License</title>
 
 <itemizedlist>
-<listitem><para>Program copyright 1998-2003 Kurt Granroth</para> </listitem>
+<listitem><para>Program copyright 1998-2003 &Kurt.Granroth;</para> </listitem>
 <listitem><para>Program copyright 2006-2008 &Anne-Marie.Mahfouf;</para></listitem>
 <listitem><para>Program copyright 2008 Beat Wolf</para>
 </listitem>
@@ -299,7 +299,7 @@ Contributors:
 <email>cberger@cberger.net</email></para> </listitem>
 <listitem><para>Ruby template: Richard Dale
 <email>Richard_Dale@tipitina.demon.co.uk></email></para> </listitem>
-<listitem><para>PyKDE4 template: Christoph Burgmer 
+<listitem><para>Py&kde;4 template: Christoph Burgmer 
 <email>chrislb@gmx.de</email></para> </listitem>
 </itemizedlist>
 </para>
