@@ -1,0 +1,11 @@
+/** @mainpage KAppTemplate
+*
+* KAppTemplate will create the necessary framework to develop various
+* KDE applications. It takes care of the make code as well as providing
+* a skeleton and example of what the code typically looks like.
+*
+* Currently there are templates for C++, Python, and ruby applications.
+* For instructions how to use check the README file in each subdirectory.
+*
+* This package is part of KDE, and a component of the KDE SDK module.
+*/
