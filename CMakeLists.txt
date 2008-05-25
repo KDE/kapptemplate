@@ -45,3 +45,5 @@ install(FILES templates/C++/qmake_qt4guiapp/qmake_qt4guiapp.kdevtemplate DESTINA
 install(FILES templates/C++/qmake_qt4guiapp/qmake4gui.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
 install(FILES templates/C++/kpartapp/kpartapp.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
 install(FILES templates/C++/kpartapp/kpartapp.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)
+install(FILES templates/C++/akonadiresource/akonadiresource.kdevtemplate DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_descriptions)
+install(FILES templates/C++/akonadiresource/akonadi-resources.png DESTINATION ${DATA_INSTALL_DIR}/kapptemplate/pics)

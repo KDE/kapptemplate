@@ -1,0 +1,6 @@
+# KDE Config File
+[General]
+Name=Akonadi Resource Template
+Comment=A template for an Akonadi PIM data resource
+Category=C++/KDE
+Icon=akonadi-resources.png
