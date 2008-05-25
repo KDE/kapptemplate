@@ -8,6 +8,7 @@ DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE KPart Application
 GenericName[ga]=Feidhmchlár KPart KDE
 GenericName[it]=Un'applicazione KPart di KDE
+GenericName[nds]=En KPart-Komponent för KDE
 GenericName[pt]=Uma Aplicação KPart do KDE
 GenericName[pt_BR]=Uma Aplicação KPart do KDE
 GenericName[sv]=Ett KDE KPart-program
