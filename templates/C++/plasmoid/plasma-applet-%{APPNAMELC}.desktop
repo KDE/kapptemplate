@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=%{APPNAME}
 Comment=Plasma %{APPNAME}
+Comment[sr]=Плазмин %{APPNAME}
+Comment[sr@latin]=Plasmin %{APPNAME}
 Comment[uk]=Плазма %{APPNAME}
 Type=Service
 
