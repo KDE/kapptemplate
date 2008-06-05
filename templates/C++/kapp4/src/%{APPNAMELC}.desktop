@@ -6,6 +6,7 @@ Icon=%{APPNAMELC}
 Type=Application
 DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Application
+GenericName[es]=Una aplicación de KDE4
 GenericName[ga]=Feidhmchlár KDE4
 GenericName[gl]=Un programa de KDE4
 GenericName[it]=Un'applicazione di KDE 4
