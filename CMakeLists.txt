@@ -24,7 +24,7 @@ kde4_add_executable(kapptemplate ${kapptemplate_SRCS})
 
 target_link_libraries(kapptemplate ${KDE4_KIO_LIBS})
 
-install(TARGETS kapptemplate DESTINATION ${BIN_INSTALL_DIR} )
+install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
