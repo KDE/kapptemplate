@@ -1,10 +1,12 @@
 [Desktop Entry]
 Name=%{APPNAME}
+Name[x-test]=xx%{APPNAME}xx
 Comment=Plasma %{APPNAME}
 Comment[km]=ប្លាស្មា %{APPNAME}
 Comment[sr]=Плазмин %{APPNAME}
 Comment[sr@latin]=Plasmin %{APPNAME}
 Comment[uk]=Плазма %{APPNAME}
+Comment[x-test]=xxPlasma %{APPNAME}xx
 Type=Service
 
 X-KDE-ServiceTypes=Plasma/Applet

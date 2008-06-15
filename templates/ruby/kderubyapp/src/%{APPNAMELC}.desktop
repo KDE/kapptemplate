@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=%{APPNAME}
+Name[x-test]=xx%{APPNAME}xx
 Exec=krubyapplication %{APPNAMELC}/main.rb %i -caption "%c"
 Icon=%{APPNAMELC}
 Type=Application
@@ -23,6 +24,7 @@ GenericName[sr@latin]=KDE4 ruby program
 GenericName[sv]=Ett KDE4 Ruby-program
 GenericName[tr]=Bir KDE4 Ruby Uygulaması
 GenericName[uk]=Програма на Ruby для KDE4
+GenericName[x-test]=xxA KDE4 Ruby Applicationxx
 GenericName[zh_CN]=KDE4 Ruby 应用程序
 GenericName[zh_TW]=KDE4 Ruby 應用程式
 Terminal=0
