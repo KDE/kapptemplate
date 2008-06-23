@@ -1,7 +1,21 @@
 # KDE Config File
 [General]
 Name=Qt4 GUI Application
+Name[es]=Aplicación Qt4 para interfaz gráfica
+Name[et]=Qt4 GUI rakendus
+Name[gl]=Un programa con GUI de Qt4
+Name[pt]=Aplicação GUI do Qt4
+Name[pt_BR]=Aplicação GUI do Qt4
+Name[uk]=Програма з графічним інтерфейсом на Qt4
+Name[zh_TW]=Qt4 圖形介面應用程式
 Category=C++/Qt (qmake)
 Comment=Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
+Comment[es]=Genera una aplicación basada en QMake/Qt4 con interfaz gráfica de usuario (compatible multiplataforma)
+Comment[et]=QMake/Qt4 põhise rakenduse loomine graafilise kasutajaliidesega (ühildub paljude platvormidega)
+Comment[gl]=Xera un programa baseado en QMake/Qt4 con interface gráfica de usuario (compatíbel con multiplataforma)
+Comment[pt]=Gera uma aplicação baseada no QMake/Qt4 com uma interface gráfica (compatível com várias plataformas)
+Comment[pt_BR]=Gera uma aplicação baseada no QMake/Qt4 com uma interface gráfica (compatível com várias plataformas)
+Comment[uk]=Створення програми, заснованої на QMake/Qt4, з графічним інтерфейсом (годиться для декількох платформ)
+Comment[zh_TW]=產生以 QMake/Qt4 為基礎的應用程式，含圖形介面，並且跨平台
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
 Icon=qmake4gui.png
