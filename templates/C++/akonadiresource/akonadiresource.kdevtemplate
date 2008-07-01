@@ -1,6 +1,8 @@
 # KDE Config File
 [General]
 Name=Akonadi Resource Template
+Name[da]=Ressourceskabelon til Akonadi
+Name[el]=Πρότυπο πόρου του Akonadi
 Name[es]=Plantilla de recursos de Akonadi
 Name[et]=Akonadi ressursi mall
 Name[gl]=Modelo de recurso de Akonadi
@@ -13,6 +15,8 @@ Name[uk]=Шаблон ресурсу Akonadi
 Name[zh_CN]=Akonadi 资源模板
 Name[zh_TW]=Aknoadi 資源樣本
 Comment=A template for an Akonadi PIM data resource
+Comment[da]=En skabelon til en Akonadi PIM-dataressource
+Comment[el]=Ένα πρότυπο για έναν πόρο δεδομένων Akonadi PIM
 Comment[es]=Una plantilla para un recurso de datos PIM de Akonadi
 Comment[et]=Akonadi PIM andmete ressursi mall
 Comment[gl]=Un modelo de recurso de datos de PIM para Akonadi

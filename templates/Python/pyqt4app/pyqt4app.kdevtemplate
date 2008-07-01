@@ -1,6 +1,8 @@
 # KDE Config File
 [General]
 Name=PyQt4 GUI Application
+Name[da]=Grafisk PyQt4-program
+Name[el]=Εφαρμογή PyQt4
 Name[es]=Aplicación PyQt4 con interfaz gráfica
 Name[et]=PyQt4 GUI rakendus
 Name[gl]=Un programa con GUI de PyQt4
@@ -13,6 +15,8 @@ Name[uk]=Програма з графічним інтерфейсом на PyQt
 Name[zh_CN]=PyQt4 图形用户界面应用程序
 Name[zh_TW]=PyQt4 圖形介面應用程式
 Comment=PyQt template using a Designer file - needs PyQt4
+Comment[da]=PyQt-skabelon som bruger en Designer-fil - kræver PyQt4
+Comment[el]=Πρότυπο της PyQt4 που χρησιμοποιεί αρχείο του Designer - απαιτείται η PyQt4
 Comment[es]=Plantilla PyQt que usa un archivo de Designer (necesita PyQt4)
 Comment[et]=PyQt mall Disaineri faili põhjal - vajalik on PyQt4
 Comment[gl]=Modelo de PyQt que emprega un ficheiro do Designer, precisa de PyQt4

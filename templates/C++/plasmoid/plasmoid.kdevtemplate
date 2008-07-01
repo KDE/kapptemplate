@@ -1,6 +1,8 @@
 # KDE Config File
 [General]
 Name=Plasma Applet Template
+Name[da]=Skabelon til Plasma-applet
+Name[el]=Πρότυπο μικροεφαρμογής Πλασμοειδούς
 Name[es]=Plantilla de applet para Plasma
 Name[et]=Plasma apleti mall
 Name[gl]=Modelo de applet de Plasma
@@ -13,6 +15,8 @@ Name[uk]=Шаблон аплету Plasma
 Name[zh_CN]=Plasma 小程序模板
 Name[zh_TW]=Plasma 小程式樣本
 Comment=A plasma applet template displaying an icon and a text
+Comment[da]=En skabelon til en Plasma-applet, som viser et ikon og en tekst
+Comment[el]=Ένα πρότυπο ενός πλασμοειδούς που εμφανίζει ένα εικονίδιο και ένα κείμενο
 Comment[es]=Una plantilla de applet para Plasma que muestra un icono y un texto
 Comment[et]=Plasma apleti mall, näitab ikooni ja teksti
 Comment[gl]=Un modelo de applet de plasma que mostra un ícone e un texto
