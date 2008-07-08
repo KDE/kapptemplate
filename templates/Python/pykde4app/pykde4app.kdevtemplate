@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=PyKDE4 GUI Application
+Name[ca]=Aplicació IGU PyKDE4
 Name[da]=Grafisk PyKDE4-program
 Name[el]=Εφαρμογή PyKDE4
 Name[es]=Aplicación PyKDE4 con interfaz gráfica
@@ -16,6 +17,7 @@ Name[uk]=Програма з графічним інтерфейсом на PyKD
 Name[zh_CN]=PyKDE4 图形用户界面应用程序
 Name[zh_TW]=PyKDE4 圖形介面應用程式
 Comment=PyKDE4 template  - needs PyKDE4
+Comment[ca]=Plantilla PyKDE4 - necessita el PyKDE4
 Comment[da]=PyKDE4-skabelon  - kræver PyKDE4
 Comment[el]=Πρότυπο του PyKDE4 - απαιτείται το PyKDE4
 Comment[es]=Plantilla PyKDE4 (necesita PyKDE4)
