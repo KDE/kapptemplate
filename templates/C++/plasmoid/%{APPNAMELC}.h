@@ -3,12 +3,12 @@
 #define %{APPNAMEUC}_HEADER
 // We need the Plasma Applet headers
 #include <KIcon>
- 
+
 #include <Plasma/Applet>
 #include <Plasma/Svg>
- 
+
 class QSizeF;
- 
+
 // Define our plasma Applet
 class %{APPNAME} : public Plasma::Applet
 {
@@ -17,12 +17,12 @@ class %{APPNAME} : public Plasma::Applet
         // Basic Create/Destroy
         %{APPNAME}(QObject *parent, const QVariantList &args);
         ~%{APPNAME}();
- 
+
         // The paintInterface procedure paints the applet to screen
         void paintInterface(QPainter *painter,
                 const QStyleOptionGraphicsItem *option,
                 const QRect& contentsRect);
-	void init();
+        void init();
 
     private:
         Plasma::Svg m_svg;

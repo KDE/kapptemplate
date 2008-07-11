@@ -2,10 +2,10 @@
 #include <QPainter>
 #include <QFontMetrics>
 #include <QSizeF>
- 
+
 #include <plasma/svg.h>
 #include <plasma/theme.h>
- 
+
 %{APPNAME}::%{APPNAME}(QObject *parent, const QVariantList &args)
     : Plasma::Applet(parent, args),
     m_svg(this),
@@ -16,7 +16,7 @@
     m_svg.setImagePath("widgets/background");
     resize(200, 200);
 }
- 
+
 
 %{APPNAME}::~%{APPNAME}()
 {
@@ -33,19 +33,19 @@ void %{APPNAME}::init()
     if (m_icon.isNull()) {
         setFailedToLaunch(true, "No world to say hello");
     }
-} 
- 
- 
+}
+
+
 void %{APPNAME}::paintInterface(QPainter *p,
         const QStyleOptionGraphicsItem *option, const QRect &contentsRect)
 {
     p->setRenderHint(QPainter::SmoothPixmapTransform);
     p->setRenderHint(QPainter::Antialiasing);
- 
+
     // Now we draw the applet, starting with our svg
     m_svg.resize((int)contentsRect.width(), (int)contentsRect.height());
     m_svg.paint(p, (int)contentsRect.left(), (int)contentsRect.top());
- 
+
     // We place the icon and text
     p->drawPixmap(7, 0, m_icon.pixmap((int)contentsRect.width(),(int)contentsRect.width()-14));
     p->save();
@@ -55,5 +55,5 @@ void %{APPNAME}::paintInterface(QPainter *p,
                 "Hello Plasmoid!");
     p->restore();
 }
- 
+
 #include "%{APPNAMELC}.moc"
