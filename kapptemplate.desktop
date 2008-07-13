@@ -2,6 +2,7 @@
 [Desktop Entry]
 Type=Application
 Exec=kapptemplate
+Icon=kapptemplate
 X-DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator
 GenericName[ca]=Generador de plantilles del KDE

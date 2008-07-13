@@ -4,6 +4,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
 
 include(KAppTemplateMacro)
 
+add_subdirectory(icons)
 add_subdirectory(templates)
 add_subdirectory(tests)
 
