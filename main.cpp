@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     KAboutData about("kapptemplate", 0, ki18n("KAppTemplate"), version, ki18n(description),
                      KAboutData::License_GPL, ki18n("(C) 2008 Anne-Marie Mahfouf"),KLocalizedString(), 0, "submit@bugs.kde.org");
     about.addAuthor( ki18n("Anne-Marie Mahfouf"), KLocalizedString(), "annma AT kde DOT org");
-    about.addAuthor( ki18n("Sean Wilson"), ki18n("Icons"), "suseux AT googlemail DOT com");
+    about.addAuthor( ki18n("Sean Wilson"), ki18n("Icons from Oxygen Team icons"), "suseux AT googlemail DOT com");
     
     KCmdLineArgs::init(argc, argv, &about);
 
