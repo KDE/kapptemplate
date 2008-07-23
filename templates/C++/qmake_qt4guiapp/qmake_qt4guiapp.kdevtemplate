@@ -3,6 +3,7 @@
 Name=Qt4 GUI Application
 Name[ca]=Aplicació IGU Qt4
 Name[da]=Grafisk Qt4-program
+Name[de]=Graphische Qt-4-Anwendung
 Name[el]=Εφαρμογή GUI της Qt4
 Name[es]=Aplicación Qt4 para interfaz gráfica
 Name[et]=Qt4 GUI rakendus
@@ -25,6 +26,7 @@ Category=C++/Qt (qmake)
 Comment=Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
 Comment[ca]=Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[da]=Genererer et QMake-/Qt4-baseret program med grafisk brugerflade (kompatibel på tværs af platforme)
+Comment[de]=Erstellt eine auf QMake/Qt 4 basierende Anwendung mit graphischer Benutzeroberfläche (plattformübergreifend)
 Comment[el]=Δημιουργία μιας εφαρμογής βασισμένη στο QMake/Qt4 με γραφικό περιβάλλον (συμβατή με πολλαπλές πλατφόρμες)
 Comment[es]=Genera una aplicación basada en QMake/Qt4 con interfaz gráfica de usuario (compatible multiplataforma)
 Comment[et]=QMake/Qt4 põhise rakenduse loomine graafilise kasutajaliidesega (ühildub paljude platvormidega)

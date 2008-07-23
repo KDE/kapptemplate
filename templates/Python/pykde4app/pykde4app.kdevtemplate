@@ -3,6 +3,7 @@
 Name=PyKDE4 GUI Application
 Name[ca]=Aplicació IGU PyKDE4
 Name[da]=Grafisk PyKDE4-program
+Name[de]=Graphische PyKDE4-Anwendung
 Name[el]=Εφαρμογή PyKDE4
 Name[es]=Aplicación PyKDE4 con interfaz gráfica
 Name[et]=PyKDE4 GUI rakendus
@@ -24,6 +25,7 @@ Name[zh_TW]=PyKDE4 圖形介面應用程式
 Comment=PyKDE4 template  - needs PyKDE4
 Comment[ca]=Plantilla PyKDE4 - necessita el PyKDE4
 Comment[da]=PyKDE4-skabelon  - kræver PyKDE4
+Comment[de]=Vorlage für PyKDE4 - benötigt PyKDE4
 Comment[el]=Πρότυπο του PyKDE4 - απαιτείται το PyKDE4
 Comment[es]=Plantilla PyKDE4 (necesita PyKDE4)
 Comment[et]=PyKDE4 mall - vajalik on PyKDE4

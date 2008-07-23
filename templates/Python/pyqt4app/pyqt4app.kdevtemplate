@@ -3,6 +3,7 @@
 Name=PyQt4 GUI Application
 Name[ca]=Aplicació IGU PyQt4
 Name[da]=Grafisk PyQt4-program
+Name[de]=Graphische PyQt4-Anwendung
 Name[el]=Εφαρμογή PyQt4
 Name[es]=Aplicación PyQt4 con interfaz gráfica
 Name[et]=PyQt4 GUI rakendus
@@ -24,6 +25,7 @@ Name[zh_TW]=PyQt4 圖形介面應用程式
 Comment=PyQt template using a Designer file - needs PyQt4
 Comment[ca]=Plantilla PyQt que usa un fitxer Designer - necessita el PyQt4
 Comment[da]=PyQt-skabelon som bruger en Designer-fil - kræver PyQt4
+Comment[de]=Vorlage für PyQt mit Qt-Designer-Datei - benötigt PyQt4
 Comment[el]=Πρότυπο της PyQt4 που χρησιμοποιεί αρχείο του Designer - απαιτείται η PyQt4
 Comment[es]=Plantilla PyQt que usa un archivo de Designer (necesita PyQt4)
 Comment[et]=PyQt mall Disaineri faili põhjal - vajalik on PyQt4

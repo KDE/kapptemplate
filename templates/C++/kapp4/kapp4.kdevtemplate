@@ -3,6 +3,7 @@
 Name=KDE 4 GUI Application
 Name[ca]=Aplicació IGU del KDE 4
 Name[da]=Et grafisk KDE4-program
+Name[de]=Graphische KDE-4-Anwendung
 Name[el]=Εφαρμογή του KDE4
 Name[es]=Una aplicación para el entorno gráfico de KDE 4
 Name[et]=KDE4 GUI rakendus
@@ -24,6 +25,7 @@ Name[zh_TW]=KDE 4 圖形介面應用程式
 Comment=KDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KConfig XT
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva del XMLGuiWindow i que demostra com usar el KConfig XT
 Comment[da]=Simpel KDE4-skabelon baseret på CMake. Den efterfølger XMLGuiWindow og demonstrerer hvordan KConfig XT bruges
+Comment[de]=Einfache KDE-4-Vorlage basierend auf CMake. Abgeleitet von XMLGuiWindow und demonstriert, wie KConfig XT zu verwenden ist
 Comment[el]=Απλό πρότυπο του KDE4 βασισμένο στο CMake, προέρχεται από το XMLGuiWindow και δείχνει πως χρησιμοποιείται το KConfig XT
 Comment[es]=Sencilla plantilla para KDE 4 basada en CMake, que hereda de XMLGuiWindow y demuestra cómo usar KConfig XT
 Comment[et]=Lihtne KDE4 mall CMake'i põhjal, XMLGuiWindow järglane, mis näitab, kuidas kasutada KConfig XT-d
