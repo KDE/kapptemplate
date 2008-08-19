@@ -2,6 +2,7 @@
 #include <QPainter>
 #include <QFontMetrics>
 #include <QSizeF>
+#include <KLocale>
 
 #include <plasma/svg.h>
 #include <plasma/theme.h>
@@ -14,6 +15,7 @@
     // this will get us the standard applet background, for free!
     setBackgroundHints(DefaultBackground);
     m_svg.setImagePath("widgets/background");
+    setHasConfigurationInterface(true);  
     resize(200, 200);
 }
 
@@ -31,7 +33,7 @@ void %{APPNAME}::init()
 {
     // A small demonstration of the setFailedToLaunch function
     if (m_icon.isNull()) {
-        setFailedToLaunch(true, "No world to say hello");
+        setFailedToLaunch(true, i18n("No world to say hello"));
     }
 }
 
@@ -52,7 +54,7 @@ void %{APPNAME}::paintInterface(QPainter *p,
     p->setPen(Qt::white);
     p->drawText(contentsRect,
                 Qt::AlignBottom | Qt::AlignHCenter,
-                "Hello Plasmoid!");
+                i18n("Hello Plasmoid!"));
     p->restore();
 }
 
