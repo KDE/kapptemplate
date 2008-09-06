@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=%{APPNAME}Part
+Name[ko]=%{APPNAME} 부분
 Name[nds]=%{APPNAME}Komponent
 Name[sr]=%{APPNAME} део
 Name[sr@latin]=%{APPNAME} deo
