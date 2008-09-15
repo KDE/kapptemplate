@@ -40,7 +40,6 @@ void AppTemplatesModel::refresh()
     m_templateItems[""] = invisibleRootItem();
     //find all .kdevtemplate files on the system
     QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.kdevtemplate");
-    QStringList tempList;
     foreach (const QString &templateArchive, templateArchives)
     {
 	QFileInfo archiveInfo(templateArchive);
