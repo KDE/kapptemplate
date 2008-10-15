@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=%{APPNAME}
+Name[x-test]=xx%{APPNAME}xx
 Comment=%{APPNAME} runner
 Icon=
 
