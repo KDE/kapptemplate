@@ -1,6 +1,16 @@
 # KDE Config File
 [General]
 Name=Plasma Runner Template
+Name[gl]=Modelo de executor de Plasma
+Name[pt]=Modelo de Módulo de Execução do Plasma
+Name[pt_BR]=Modelo de Módulo de Execução do Plasma
+Name[uk]=Шаблон засобу запуску Плазми
+Name[x-test]=xxPlasma Runner Templatexx
 Comment=A plasma runner template
+Comment[gl]=Un modelo de executor de Plasma
+Comment[pt]=Um modelo de módulos de execução do Plasma
+Comment[pt_BR]=Um modelo de módulos de execução do Plasma
+Comment[uk]=Шаблон засобу запуску Плазми
+Comment[x-test]=xxA plasma runner templatexx
 Category=C++/KDE
 Icon=
