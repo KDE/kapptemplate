@@ -3,6 +3,7 @@
 Name=Plasma Runner Template
 Name[el]=Πρότυπο εκτελεστή Plasma
 Name[es]=Plantilla de lanzador para Plasma
+Name[fr]=Modèle de lanceur pour Plasma
 Name[gl]=Modelo de executor de Plasma
 Name[nds]=Plasma-Dregervörlaag
 Name[pt]=Modelo de Módulo de Execução do Plasma
@@ -15,6 +16,7 @@ Name[zh_TW]=Plasma 執行器樣本
 Comment=A plasma runner template
 Comment[el]=Ένα πρότυπο εκτελεστή plasma
 Comment[es]=Una plantilla de lanzador para Plasma
+Comment[fr]=Un modèle de lanceur pour Plasma
 Comment[gl]=Un modelo de executor de Plasma
 Comment[nds]=En Dregervörlaag för Plasma
 Comment[pt]=Um modelo de módulos de execução do Plasma

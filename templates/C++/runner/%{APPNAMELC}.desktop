@@ -4,6 +4,7 @@ Name[x-test]=xx%{APPNAME}xx
 Comment=%{APPNAME} runner
 Comment[el]=εκτελεστής %{APPNAME}
 Comment[es]=Lanzador para %{APPNAME}
+Comment[fr]=Lanceur %{APPNAME}
 Comment[gl]=Executor %{APPNAME}
 Comment[nds]=%{APPNAME}-Dreger
 Comment[pt]=Execução do %{APPNAME}
