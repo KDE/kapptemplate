@@ -3,7 +3,6 @@ project(plasma-%{APPNAMELC})
 # Find the required Libaries
 find_package(KDE4 REQUIRED)
 include(KDE4Defaults)
-find_package(Plasma REQUIRED)
 
 add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
 include_directories(
@@ -17,7 +16,7 @@ set(%{APPNAMELC}_SRCS %{APPNAMELC}.cpp)
 
 kde4_add_plugin(krunner_%{APPNAMELC} ${%{APPNAMELC}_SRCS})
 target_link_libraries(krunner_%{APPNAMELC}
-                      ${PLASMA_LIBS} ${KDE4_KDEUI_LIBS})
+                      ${KDE4_PLASMA_LIBS} ${KDE4_KDEUI_LIBS})
 
 install(TARGETS krunner_%{APPNAMELC}
         DESTINATION ${PLUGIN_INSTALL_DIR})
