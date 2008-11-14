@@ -17,6 +17,7 @@
 #include <kstandardaction.h>
 #include <kstatusbar.h>
 #include <kurl.h>
+#include <klocale.h>
 
 #include <QApplication>
 
@@ -53,7 +54,7 @@
     {
         // if we couldn't find our Part, we exit since the Shell by
         // itself can't do anything useful
-        KMessageBox::error(this, "Could not find our Part!");
+        KMessageBox::error(this, i18n("Could not find our Part!"));
         qApp->quit();
         // we return here, cause qApp->quit() only means "exit the
         // next time we enter the event loop...
