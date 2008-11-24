@@ -14,6 +14,7 @@ Comment[sv]=Körning av %{APPNAME}
 Comment[tr]=%{APPNAME} çalıştırıcı
 Comment[uk]=Засіб запуску %{APPNAME}
 Comment[x-test]=xx%{APPNAME} runnerxx
+Comment[zh_CN]=%{APPNAME} 启动器
 Comment[zh_TW]=%{APPNAME} 執行器
 Icon=
 
