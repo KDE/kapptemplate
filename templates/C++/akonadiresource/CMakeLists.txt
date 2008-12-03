@@ -1,4 +1,4 @@
-project(vcarddirresource)
+project(%{APPNAMELC})
 
 # search packages used by KDE
 find_package (KDE4 REQUIRED)
@@ -60,4 +60,4 @@ kde4_add_executable(akonadi_%{APPNAMELC}_resource RUN_UNINSTALLED ${%{APPNAMELC}
 
 target_link_libraries(akonadi_%{APPNAMELC}_resource ${KDE4_AKONADI_LIBS} ${QT_QTCORE_LIBRARY} ${QT_QTDBUS_LIBRARY} ${KDE4_KDECORE_LIBS})
 
-install(TARGETS akonadi_%{APPNAMELC}_resource DESTINATION ${BIN_INSTALL_DIR})
+install(TARGETS akonadi_%{APPNAMELC}_resource ${INSTALL_TARGETS_DEFAULT_ARGS})

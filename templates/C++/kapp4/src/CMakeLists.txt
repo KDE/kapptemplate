@@ -12,7 +12,7 @@ kde4_add_executable(%{APPNAMELC} ${%{APPNAMELC}_SRCS})
 
 target_link_libraries(%{APPNAMELC} ${KDE4_KDEUI_LIBS} )
 
-install(TARGETS %{APPNAMELC} DESTINATION ${BIN_INSTALL_DIR} )
+install(TARGETS %{APPNAMELC} ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
 ########### install files ###############
