@@ -22,6 +22,7 @@
 #include <kcmdlineargs.h>
 #include <klocale.h>
 #include <kapplication.h>
+#include <kstandarddirs.h>
 
 #include "kapptemplate.h"
 
@@ -42,6 +43,10 @@ int main(int argc, char **argv)
     KCmdLineOptions options;
     KCmdLineArgs::addCmdLineOptions(options);
     KApplication app;
+
+    KStandardDirs* dirs = KGlobal::dirs();
+    dirs->addResourceType( "apptemplates", "data", "kdevappwizard/templates/" );
+    dirs->addResourceType( "apptemplate_descriptions", "data", "kdevappwizard/template_descriptions/" );
 
     KAppTemplate appTemplate(0);
     appTemplate.show();

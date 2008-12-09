@@ -24,6 +24,7 @@
 #include <KDebug>
 #include <klocale.h>
 #include <kstandarddirs.h>
+#include <ktar.h>
 
 #include "choicepage.h"
 #include "apptemplatesmodel.h"
@@ -34,12 +35,49 @@ AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
 {
 }
 
+void extractTemplateDescriptions( KStandardDirs* dirs )
+{
+    QStringList templateArchives = dirs->findAllResources("apptemplates");
+
+    QString localDescriptionsDir = dirs->saveLocation("apptemplate_descriptions");
+
+    foreach (const QString &archName, templateArchives)
+    {
+        kDebug(9010) << "processing template" << archName;
+#ifdef Q_WS_WIN
+        KZip templateArchive(archName);
+#else
+        KTar templateArchive(archName, "application/x-bzip");
+#endif //Q_WS_WIN
+        if (templateArchive.open(QIODevice::ReadOnly))
+        {
+            QFileInfo templateInfo(archName);
+            const KArchiveEntry *templateEntry =
+                templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
+            if (!templateEntry || !templateEntry->isFile())
+            {
+                kDebug(9010) << "template" << archName << "does not contain .kdevtemplate file";
+                continue;
+            }
+            const KArchiveFile *templateFile = (KArchiveFile*)templateEntry;
+
+            kDebug(9010) << "copy template description to" << localDescriptionsDir;
+            templateFile->copyTo(localDescriptionsDir);
+        }
+        else
+            kDebug(9010) << "could not open template" << archName;
+    }
+}
+
 void AppTemplatesModel::refresh()
 {
     m_templateItems.clear();
     m_templateItems[""] = invisibleRootItem();
+
+    extractTemplateDescriptions( KGlobal::dirs() );
+
     //find all .kdevtemplate files on the system
-    QStringList templateArchives = KGlobal::dirs()->findAllResources("data", "kdevappwizard/template_descriptions/*.kdevtemplate");
+    QStringList templateArchives = KGlobal::dirs()->findAllResources("apptemplate_descriptions");
     foreach (const QString &templateArchive, templateArchives)
     {
 	QFileInfo archiveInfo(templateArchive);
