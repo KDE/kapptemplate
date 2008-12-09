@@ -2,6 +2,7 @@
 Name=%{APPNAME}
 Name[x-test]=xx%{APPNAME}xx
 Comment=%{APPNAME} runner
+Comment[de]=%{APPNAME}
 Comment[el]=εκτελεστής %{APPNAME}
 Comment[es]=Lanzador para %{APPNAME}
 Comment[fr]=Lanceur %{APPNAME}

@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Plasma Runner Template
+Name[de]=Vorlage für KRunner-Modul
 Name[el]=Πρότυπο εκτελεστή Plasma
 Name[es]=Plantilla de lanzador para Plasma
 Name[fr]=Modèle de lanceur pour Plasma
@@ -17,6 +18,7 @@ Name[x-test]=xxPlasma Runner Templatexx
 Name[zh_CN]=Plasma 启动器模板
 Name[zh_TW]=Plasma 執行器樣本
 Comment=A plasma runner template
+Comment[de]=Eine Vorlage für ein KRunner-Modul
 Comment[el]=Ένα πρότυπο εκτελεστή plasma
 Comment[es]=Una plantilla de lanzador para Plasma
 Comment[fr]=Un modèle de lanceur pour Plasma
