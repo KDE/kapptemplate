@@ -71,10 +71,11 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 	return;
     }
     //get picture 
-    KStandardDirs dirs;
-    QString picPath = dirs.findResource("data", QString("kapptemplate/pics/%1").arg(index.data(Qt::UserRole+2).toString()));
+    KStandardDirs* dirs = KGlobal::dirs();
+    kDebug() << index.data(Qt::UserRole+2);
+    QString picPath = dirs->findResource("apptemplate_previews", index.data(Qt::UserRole+2).toString());
     if (index.data(Qt::UserRole+2).toString().isEmpty()) {
-	picPath = dirs.findResource("data", "kapptemplate/pics/default.png");//default if none
+	picPath = dirs->findResource("apptemplate_previews", "default.png");//default if none
     }
     QPixmap pixmap(picPath);
     ui_choice.pictureLabel->setPixmap(pixmap);

@@ -47,6 +47,7 @@ int main(int argc, char **argv)
     KStandardDirs* dirs = KGlobal::dirs();
     dirs->addResourceType( "apptemplates", "data", "kdevappwizard/templates/" );
     dirs->addResourceType( "apptemplate_descriptions", "data", "kdevappwizard/template_descriptions/" );
+    dirs->addResourceType( "apptemplate_previews", "data", "kdevappwizard/template_previews/" );
 
     KAppTemplate appTemplate(0);
     appTemplate.show();
