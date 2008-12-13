@@ -21,6 +21,9 @@ plasma
 or view it with 
 plasmoidviewer YourAppletName
 
+You might need to run kbuildsycoca4
+in order to get the .desktop file recognized.
+
 -- Tutorials and resources --
 The explanation of the template
 http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted
