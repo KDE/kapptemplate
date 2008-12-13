@@ -35,4 +35,4 @@ Comment[x-test]=xxA plasma runner templatexx
 Comment[zh_CN]=一个 plasma 启动器模板
 Comment[zh_TW]=Plasma 執行器樣本
 Category=C++/KDE
-Icon=
+Icon=runner.png
