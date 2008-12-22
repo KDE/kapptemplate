@@ -3,6 +3,7 @@ Name=%{APPNAME}
 Name[x-test]=xx%{APPNAME}xx
 Comment=Plasma %{APPNAME}
 Comment[km]=ប្លាស្មា %{APPNAME}
+Comment[pa]=ਪਲਾਜ਼ਮਾ %{APPNAME}
 Comment[sr]=Плазмин %{APPNAME}
 Comment[sr@latin]=Plasmin %{APPNAME}
 Comment[uk]=Плазма %{APPNAME}
