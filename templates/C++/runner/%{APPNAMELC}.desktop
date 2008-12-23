@@ -6,6 +6,7 @@ Comment[da]=%{APPNAME}-runner
 Comment[de]=%{APPNAME}
 Comment[el]=εκτελεστής %{APPNAME}
 Comment[es]=Lanzador para %{APPNAME}
+Comment[et]=%{APPNAME} käivitaja
 Comment[fr]=Lanceur %{APPNAME}
 Comment[gl]=Executor %{APPNAME}
 Comment[it]=Esecutore di %{APPNAME}
