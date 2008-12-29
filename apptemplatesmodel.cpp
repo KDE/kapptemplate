@@ -25,6 +25,7 @@
 #include <klocale.h>
 #include <kstandarddirs.h>
 #include <ktar.h>
+#include <kzip.h>
 
 #include "choicepage.h"
 #include "apptemplatesmodel.h"
