@@ -21,6 +21,8 @@ kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui gene
 
 kde4_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
 
+kde4_add_app_icon(kapptemplate_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/hi*-app-kapptemplate.png")
+
 kde4_add_executable(kapptemplate ${kapptemplate_SRCS})
 
 target_link_libraries(kapptemplate ${KDE4_KIO_LIBS})
