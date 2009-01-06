@@ -11,6 +11,7 @@ Comment[fr]=Lanceur %{APPNAME}
 Comment[gl]=Executor %{APPNAME}
 Comment[it]=Esecutore di %{APPNAME}
 Comment[km]=កម្មវិធី​រត់ %{APPNAME}​
+Comment[ko]=%{APPNAME} 실행기
 Comment[lv]=%{APPNAME} darbinātājs
 Comment[nds]=%{APPNAME}-Dreger
 Comment[pa]=%{APPNAME} ਰਨਰ
