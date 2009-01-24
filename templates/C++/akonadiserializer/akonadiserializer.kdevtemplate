@@ -1,0 +1,6 @@
+# KDE Config File
+[General]
+Name=Akonadi Serializer Template
+Comment=A template for an Akonadi data serializer plugin
+Category=C++/KDE
+Icon=akonadi-serializer.png

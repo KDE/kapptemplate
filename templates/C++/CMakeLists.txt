@@ -5,6 +5,7 @@ set(apptemplate_DIRS
     qmake_qt4guiapp
     kpartapp
     akonadiresource
+    akonadiserializer
 )
 
 kapptemplate_add_app_templates(${apptemplate_DIRS})
