@@ -15,6 +15,7 @@ class SerializerPlugin%{APPNAME} : public QObject, public ItemSerializerPlugin
 public:
   bool deserialize( Item& item, const QByteArray& label, QIODevice& data, int version );
   void serialize( const Item& item, const QByteArray& label, QIODevice& data, int &version );
+  QSet<QByteArray> parts( const Item &item ) const;
 };
 
 }

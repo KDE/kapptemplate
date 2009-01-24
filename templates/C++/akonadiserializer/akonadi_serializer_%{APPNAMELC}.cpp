@@ -28,6 +28,13 @@ void SerializerPlugin%{APPNAME}::serialize( const Item& item, const QByteArray& 
   // TODO Implement this
 }
 
+QSet<QByteArray> SerializerPlugin%{APPNAME}::parts( const Item &item ) const
+{
+  // only need to reimplement this when implementing partial serialization
+  // i.e. when using the "label" parameter of the other two methods
+  return ItemSerializerPlugin::parts( item );
+}
+
 Q_EXPORT_PLUGIN2( akonadi_serializer_%{APPNAMELC}, Akonadi::SerializerPlugin%{APPNAME} )
 
 #include "akonadi_serializer_%{APPNAMELC}.moc"
