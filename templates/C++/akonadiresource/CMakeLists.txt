@@ -6,7 +6,7 @@ include(KDE4Defaults)
 include(MacroLibrary)
 include(MacroOptionalAddSubdirectory)
 include(CheckIncludeFiles)
-include(FindKdepimLibs)
+find_package (KdepimLibs REQUIRED)
 
 find_program(XSLTPROC_EXECUTABLE xsltproc)
 macro_log_feature(XSLTPROC_EXECUTABLE "xsltproc" "The command line XSLT processor from libxslt" "http://xmlsoft.org/XSLT/" FALSE "" "Needed for building Akonadi resources. Recommended.")
@@ -17,10 +17,10 @@ if (XSLTPROC_EXECUTABLE)
     add_custom_command(
       OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
       COMMAND ${XSLTPROC_EXECUTABLE} --stringparam interfaceName ${_name}
-              ${KDE4_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
+              ${KDEPIMLIBS_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
               ${_kcfg}
               > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-      DEPENDS ${KDE4_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
+      DEPENDS ${KDEPIMLIBS_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
               ${_kcfg}
     )
   endmacro( kcfg_generate_dbus_interface )
@@ -37,6 +37,7 @@ set(KDE4_ICON_DIR ${KDE4_INSTALL_DIR}/share/icons)
 
 include_directories(
     ${KDE4_INCLUDES}
+    ${KDEPIMLIBS_INCLUDE_DIR}
 )
 
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KDE4_ENABLE_EXCEPTIONS}" )
