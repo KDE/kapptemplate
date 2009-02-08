@@ -6,7 +6,7 @@ include(KDE4Defaults)
 include(MacroLibrary)
 include(MacroOptionalAddSubdirectory)
 include(CheckIncludeFiles)
-include(FindKdepimLibs)
+find_package (KdepimLibs REQUIRED)
 
 if(WIN32)
     set(LIB_INSTALL_DIR ${LIB_INSTALL_DIR}
@@ -17,6 +17,7 @@ endif(WIN32)
 
 include_directories(
     ${KDE4_INCLUDES}
+    ${KDEPIMLIBS_INCLUDE_DIR}
 )
 
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KDE4_ENABLE_EXCEPTIONS}" )
