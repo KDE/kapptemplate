@@ -9,6 +9,7 @@ Name[sv]=Serialisering av %{APPNAME}
 Name[uk]=Перетворювач у послідовну форму %{APPNAME}
 Name[x-test]=xx%{APPNAME} Serializerxx
 Name[zh_CN]=%{APPNAME} 转换器
+Name[zh_TW]=%{APPNAME} 序列器
 Comment=An Akonadi serializer plugin for %{APPNAMELC}
 Comment[et]=Akonadi %{APPNAMELC} jadasti plugin
 Comment[nds]=En Akonadi-Reegmodul för %{APPNAMELC}
@@ -18,6 +19,7 @@ Comment[sv]=Ett Akonadi insticksprogram för serialisering av %{APPNAMELC}
 Comment[uk]=Додаток перетворення у послідовну форму Akonadi для %{APPNAMELC}
 Comment[x-test]=xxAn Akonadi serializer plugin for %{APPNAMELC}xx
 Comment[zh_CN]=%{APPNAMELC} 的 Akonadi 转换器插件
+Comment[zh_TW]=%{APPNAMELC} 的 Akonadi 序列器外掛程式
 
 [Plugin]
 Type=application/x-vnd.kde.%{APPNAMELC}
