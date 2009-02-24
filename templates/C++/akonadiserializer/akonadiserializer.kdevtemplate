@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Akonadi Serializer Template
+Name[es]=Plantilla de serializador de Akonadi
 Name[et]=Akonadi jadasti mall
 Name[ga]=Teimpléad Srathóra Akonadi
 Name[nds]=Akonadi-Reegmoduulvörlaag
@@ -12,6 +13,7 @@ Name[x-test]=xxAkonadi Serializer Templatexx
 Name[zh_CN]=Akonadi 转换器模板
 Name[zh_TW]=Aknoadi 序列器樣本
 Comment=A template for an Akonadi data serializer plugin
+Comment[es]=Una plantilla para un complemento serializador de datos de Akonadi
 Comment[et]=Akonadi andmete jadasti plugina mall
 Comment[nds]=En Vörlaag för en Akonadidaten-Reegmoduul
 Comment[pt]=Um modelo para um 'plugin' de serialização de dados do Akonadi
