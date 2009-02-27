@@ -193,7 +193,7 @@ void GeneratePage::initializePage()
         unpackArchive(arch->directory(), dest.toLocalFile());
     }
 
-    feedback.append(i18n("Success!\n"));
+    feedback.append(i18n("Succeeded.\n"));
     ui_generate.label->setText(feedback);
 
     QString resume;
@@ -201,7 +201,7 @@ void GeneratePage::initializePage()
     resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
     resume.append(i18n("Version: %1 <br /><br />", version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
-    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project!", url+"/"+appName.toLower()));
+    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", url+"/"+appName.toLower()));
     ui_generate.summaryLabel->setText(resume);
 }
 

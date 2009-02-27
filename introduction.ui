@@ -13,7 +13,7 @@
    <item row="0" column="0" >
     <widget class="QLabel" name="label" >
      <property name="text" >
-      <string>This wizard will help you generating  a KDE 4 project template.
+      <string>This wizard will help you generate a KDE 4 project template.
 You will be able to start developing you own KDE 4 project from this template.</string>
      </property>
      <property name="wordWrap" >
