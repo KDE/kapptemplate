@@ -1,5 +1,6 @@
 [Misc]
 Name=%{APPNAME} Serializer
+Name[en_GB]=%{APPNAME} Serialiser
 Name[es]=Serializador para %{APPNAME}
 Name[et]=%{APPNAME} jadasti
 Name[ga]=Srathóir %{APPNAME}
@@ -12,6 +13,7 @@ Name[x-test]=xx%{APPNAME} Serializerxx
 Name[zh_CN]=%{APPNAME} 转换器
 Name[zh_TW]=%{APPNAME} 序列器
 Comment=An Akonadi serializer plugin for %{APPNAMELC}
+Comment[en_GB]=An Akonadi serialiser plugin for %{APPNAMELC}
 Comment[es]=Un complemento serializador de Akonadi para %{APPNAMELC}
 Comment[et]=Akonadi %{APPNAMELC} jadasti plugin
 Comment[nds]=En Akonadi-Reegmodul för %{APPNAMELC}
