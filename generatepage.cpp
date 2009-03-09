@@ -192,6 +192,7 @@ void GeneratePage::initializePage()
         }
         unpackArchive(arch->directory(), dest.toLocalFile());
     }
+    delete arch;
 
     feedback.append(i18n("Success!\n"));
     ui_generate.label->setText(feedback);
