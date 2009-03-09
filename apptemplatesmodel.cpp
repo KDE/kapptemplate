@@ -38,9 +38,9 @@ AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
 
 void extractTemplateDescriptions( KStandardDirs* dirs )
 {
-    QStringList templateArchives = dirs->findAllResources("apptemplates");
+    const QStringList templateArchives = dirs->findAllResources("apptemplates");
 
-    QString localDescriptionsDir = dirs->saveLocation("apptemplate_descriptions");
+    const QString localDescriptionsDir = dirs->saveLocation("apptemplate_descriptions");
 
     foreach (const QString &archName, templateArchives)
     {
@@ -78,7 +78,7 @@ void AppTemplatesModel::refresh()
     extractTemplateDescriptions( KGlobal::dirs() );
 
     //find all .kdevtemplate files on the system
-    QStringList templateArchives = KGlobal::dirs()->findAllResources("apptemplate_descriptions");
+    const QStringList templateArchives = KGlobal::dirs()->findAllResources("apptemplate_descriptions");
     foreach (const QString &templateArchive, templateArchives)
     {
 	QFileInfo archiveInfo(templateArchive);
