@@ -10,6 +10,7 @@ Comment[et]=%{APPNAME} käivitaja
 Comment[fr]=Lanceur %{APPNAME}
 Comment[ga]=Feidhmitheoir %{APPNAME}
 Comment[gl]=Executor %{APPNAME}
+Comment[hu]=%{APPNAME}-futtató
 Comment[it]=Esecutore di %{APPNAME}
 Comment[km]=កម្មវិធី​រត់ %{APPNAME}​
 Comment[ko]=%{APPNAME} 실행기
