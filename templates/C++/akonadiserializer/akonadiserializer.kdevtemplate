@@ -2,6 +2,7 @@
 [General]
 Name=Akonadi Serializer Template
 Name[de]=Akonadi-Serialisierer-Vorlage
+Name[el]=Πρότυπο διαχειριστή του Akonadi
 Name[en_GB]=Akonadi Serialiser Template
 Name[es]=Plantilla de serializador de Akonadi
 Name[et]=Akonadi jadasti mall
@@ -16,6 +17,7 @@ Name[zh_CN]=Akonadi 转换器模板
 Name[zh_TW]=Aknoadi 序列器樣本
 Comment=A template for an Akonadi data serializer plugin
 Comment[de]=Eine Vorlage für einen Datenserialisierer für das Akonadi-PIM-Framework
+Comment[el]=Ένα πρότυπο για ένα πρόσθετο διαχειρστή του Akonadi
 Comment[en_GB]=A template for an Akonadi data serialiser plugin
 Comment[es]=Una plantilla para un complemento serializador de datos de Akonadi
 Comment[et]=Akonadi andmete jadasti plugina mall
