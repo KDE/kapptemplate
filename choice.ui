@@ -500,7 +500,7 @@
        <item>
         <widget class="QLabel" name="nameLabel" >
          <property name="text" >
-          <string>Project Name:</string>
+          <string>Project name:</string>
          </property>
         </widget>
        </item>

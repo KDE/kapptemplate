@@ -445,7 +445,7 @@
        <item>
         <widget class="QLabel" name="versionLabel" >
          <property name="text" >
-          <string>Version Number:</string>
+          <string>Version number:</string>
          </property>
          <property name="buddy" >
           <cstring>kcfg_appVersion</cstring>
@@ -475,7 +475,7 @@
        <item>
         <widget class="QLabel" name="installLabel" >
          <property name="text" >
-          <string>Installation Directory:</string>
+          <string>Installation directory:</string>
          </property>
          <property name="buddy" >
           <cstring>kcfg_url</cstring>
@@ -499,7 +499,7 @@
        <item>
         <widget class="QLabel" name="authorLabel" >
          <property name="text" >
-          <string>Author Name:</string>
+          <string>Author name:</string>
          </property>
          <property name="buddy" >
           <cstring>kcfg_name</cstring>
@@ -529,7 +529,7 @@
        <item>
         <widget class="QLabel" name="emailLabel" >
          <property name="text" >
-          <string>Author Email:</string>
+          <string>Author email:</string>
          </property>
          <property name="buddy" >
           <cstring>kcfg_email</cstring>
