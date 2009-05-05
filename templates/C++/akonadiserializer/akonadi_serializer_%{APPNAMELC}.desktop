@@ -10,6 +10,7 @@ Name[nds]=%{APPNAME}-Reegmoduul
 Name[pt]=Serialização do %{APPNAME}
 Name[pt_BR]=Serialização do %{APPNAME}
 Name[sv]=Serialisering av %{APPNAME}
+Name[tr]=%{APPNAME} Sıralandırıcı
 Name[uk]=Перетворювач у послідовну форму %{APPNAME}
 Name[x-test]=xx%{APPNAME} Serializerxx
 Name[zh_CN]=%{APPNAME} 转换器
