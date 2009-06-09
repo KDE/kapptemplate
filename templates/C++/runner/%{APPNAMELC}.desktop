@@ -18,6 +18,7 @@ Comment[lv]=%{APPNAME} darbinātājs
 Comment[nds]=%{APPNAME}-Dreger
 Comment[nl]=%{APPNAME}-starter
 Comment[pa]=%{APPNAME} ਰਨਰ
+Comment[pl]=Uruchamianie %{APPNAME}
 Comment[pt]=Execução do %{APPNAME}
 Comment[pt_BR]=Execução do %{APPNAME}
 Comment[ro]=Lansator %{APPNAME}
