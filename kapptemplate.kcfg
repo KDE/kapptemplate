@@ -25,16 +25,23 @@
   <group name="User">
     <entry name="name" type="String">
 	    <label>Name of the user</label>
-	    <code>KEMailSettings emailConfig;
+	    <code>QString name;
+	{
+	    KEMailSettings emailConfig;
 	    emailConfig.setProfile( emailConfig.defaultProfileName() );
-	    QString name = emailConfig.getSetting( KEMailSettings::RealName );
+	    name = emailConfig.getSetting( KEMailSettings::RealName );
+	}
 	    </code>
 	    <default code="true">name</default>
     </entry>
     <entry name="email" type="String">
 	    <label>Email of the user</label>
-	    <code>
-	    QString address = emailConfig.getSetting( KEMailSettings::EmailAddress );
+	    <code>QString address;
+	{
+	    KEMailSettings emailConfig;
+	    emailConfig.setProfile( emailConfig.defaultProfileName() );
+	    address = emailConfig.getSetting( KEMailSettings::EmailAddress );
+	}
 	    </code>
 	    <default code="true">address</default>
     </entry>
