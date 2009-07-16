@@ -14,6 +14,7 @@ Name[it]=Serializzatore di %{APPNAME}
 Name[lv]=%{APPNAME} serializētājs
 Name[nds]=%{APPNAME}-Reegmoduul
 Name[nl]=%{APPNAME}-serialisator
+Name[pa]=%{APPNAME} ਸੀਰੀਲਾਈਜ਼ਰ
 Name[pt]=Serialização do %{APPNAME}
 Name[pt_BR]=Serialização do %{APPNAME}
 Name[ru]=Сериализатор %{APPNAME}
