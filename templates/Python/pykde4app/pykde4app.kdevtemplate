@@ -2,6 +2,7 @@
 [General]
 Name=PyKDE4 GUI Application
 Name[ca]=Aplicació IGU PyKDE4
+Name[cs]=GUI aplikace PyKDE4
 Name[da]=Grafisk PyKDE4-program
 Name[de]=Grafische PyKDE4-Anwendung
 Name[el]=Εφαρμογή PyKDE4
