@@ -2,6 +2,7 @@
 Name=%{APPNAME}Part
 Name[ko]=%{APPNAME} 부분
 Name[nds]=%{APPNAME}Komponent
+Name[nn]=%{APPNAME}-del
 Name[ru]=Компонент %{APPNAME}
 Name[sr]=%{APPNAME} део
 Name[sr@latin]=%{APPNAME} deo
