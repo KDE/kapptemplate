@@ -18,6 +18,7 @@ Comment[ko]=%{APPNAME} 실행기
 Comment[lv]=%{APPNAME} darbinātājs
 Comment[nds]=%{APPNAME}-Dreger
 Comment[nl]=%{APPNAME}-starter
+Comment[nn]=%{APPNAME}-køyrar
 Comment[pa]=%{APPNAME} ਰਨਰ
 Comment[pl]=Uruchamianie %{APPNAME}
 Comment[pt]=Execução do %{APPNAME}
