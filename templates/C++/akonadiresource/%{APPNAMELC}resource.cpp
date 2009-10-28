@@ -67,6 +67,10 @@ void %{APPNAME}Resource::configure( WId windowId )
   // The given window ID is usually useful to get the correct
   // "on top of parent" behavior if the running window manager applies any kind
   // of focus stealing prevention technique
+  //
+  // If the configuration dialog has been accepted by the user by clicking Ok,
+  // the signal configurationDialogAccepted() has to be emitted, otherwise, if
+  // the user canceled the dialog, configurationDialogRejected() has to be emitted.
 }
 
 void %{APPNAME}Resource::itemAdded( const Akonadi::Item &item, const Akonadi::Collection &collection )
