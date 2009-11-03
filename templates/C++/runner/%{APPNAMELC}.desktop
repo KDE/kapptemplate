@@ -59,6 +59,7 @@ Comment[pl]=Uruchamianie %{APPNAME}
 Comment[pt]=Execução do %{APPNAME}
 Comment[pt_BR]=Execução do %{APPNAME}
 Comment[ro]=Lansator %{APPNAME}
+Comment[ru]=Способ запуска %{APPNAME}
 Comment[sr]=%{APPNAME} извођач
 Comment[sr@latin]=%{APPNAME} izvođač
 Comment[sv]=Körning av %{APPNAME}
