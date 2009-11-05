@@ -2,6 +2,7 @@
 [General]
 Name=PyQt4 GUI Application
 Name[ca]=Aplicació IGU PyQt4
+Name[cs]=GUI aplikace PyQt4
 Name[da]=Grafisk PyQt4-program
 Name[de]=Grafische PyQt4-Anwendung
 Name[el]=Εφαρμογή PyQt4

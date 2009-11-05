@@ -1,6 +1,7 @@
 [Misc]
 Name=%{APPNAME} Serializer
 Name[ca]=Serialitzador %{APPNAME}
+Name[cs]=%{APPNAME} Serializer
 Name[da]=%{APPNAME} serializer
 Name[de]=%{APPNAME}-Serialisierer
 Name[el]=Διαχειριστής %{APPNAME}
