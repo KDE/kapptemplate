@@ -1,0 +1,31 @@
+%{APPNAME}Shape.(h|cpp):
+Data representation and painting should be implemented here.
+Do not put heavy code into the constructor, therefore you should use the activate()-method!
+
+%{APPNAME}Tool.(h|cpp):
+A tool to modify the shape.
+Do not use paint() to display real data, it is only for "decorations", hints while modifying the shape.
+
+%{APPNAME}Widget.(h|cpp):
+This widget will be displayed inside a docker. Here you can place inputs to modify your shape.
+
+%{APPNAME}(Shape|Tool)Factory.(h|cpp):
+Factories to create shapes and tools.
+
+%{APPNAME}Plugin.(h|cpp):
+Will be loaded by KOffice, here the factories are registered.
+
+%{APPNAMELC}shape.desktop:
+The .desktop file with meta-data.
+
+CMakeLists.txt:
+A build file.
+You may want to link against additional KOffice-libraries like kobase, kotext or pigmentcms.
+
+-----------------
+Template created by Jonathan Schmidt-Dominé <devel@the-user.org>. (19.11.2009)
+
+Last update: 19.11.2009
+
+Post comments or questions in IRC (Freenode: #koffice, The_User).
+When nobody is online, use MemoServ (/ms help).

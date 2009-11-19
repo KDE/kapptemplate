@@ -2,6 +2,7 @@ set(apptemplate_DIRS
     kapp4
     plasmoid
     runner
+    flake
     qmake_qt4guiapp
     kpartapp
     akonadiresource

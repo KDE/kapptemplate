@@ -1,0 +1,7 @@
+# KDE Config File
+[General]
+Name=KOffice Shape Template (Flake)
+Name[de]=KOffice Shape Vorlage (Flake)
+Comment=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
+Comment[de]=Vorlage für ein KOffice-Plugin mit einer Shape (Objekt), einem Tool und einem Docker (bitte benutze DiesesFormat für den Projektnamen)
+Category=C++/KDE
