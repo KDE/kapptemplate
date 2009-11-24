@@ -2,6 +2,7 @@
 [General]
 Name=KOffice Shape Template (Flake)
 Name[en_GB]=KOffice Shape Template (Flake)
+Name[et]=KOffice'i kujundi mall (Flake)
 Name[pt]=Modelo de Formas do KOffice (Flake)
 Name[pt_BR]=Modelo de Formas do KOffice (Flake)
 Name[sv]=Koffice-formmall (flinga)
@@ -10,6 +11,7 @@ Name[x-test]=xxKOffice Shape Template (Flake)xx
 Name[zh_TW]=KOffice 元件樣本（Flake）
 Comment=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
 Comment[en_GB]=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
+Comment[et]=KOffice'i plugina mall kujundi, tööriista ja dokiga (palun kasuta projekti nime puhul kuju SeeVorming)
 Comment[pt]=Um modelo de 'plugin' do KOffice com uma forma, uma ferramenta e uma área acoplável (use por favor EsteFormato como nome do projecto)
 Comment[pt_BR]=Um modelo de plugin do KOffice com uma forma, uma ferramenta e uma área acoplável (use por favor EsteFormato como nome do projeto)
 Comment[sv]=En Koffice-insticksmall med en form, ett verktyg och en panel (använd projektnamnet ThisFormat)
