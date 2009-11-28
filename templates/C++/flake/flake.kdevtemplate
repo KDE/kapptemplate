@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=KOffice Shape Template (Flake)
+Name[da]=KOffice form-skabelon (Flake)
 Name[en_GB]=KOffice Shape Template (Flake)
 Name[et]=KOffice'i kujundi mall (Flake)
 Name[it]=Modello di forma di KOffice (Flake)
@@ -11,6 +12,7 @@ Name[uk]=Шаблон форми KOffice (луска)
 Name[x-test]=xxKOffice Shape Template (Flake)xx
 Name[zh_TW]=KOffice 元件樣本（Flake）
 Comment=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
+Comment[da]=En skabelon til KOffice-plugin med en form, et værktøj og en dokker (brug venligst DetteFormat til projektnavnet)
 Comment[en_GB]=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
 Comment[et]=KOffice'i plugina mall kujundi, tööriista ja dokiga (palun kasuta projekti nime puhul kuju SeeVorming)
 Comment[it]=Un modello di estensione di KOffice con una forma, uno strumento e un gancio (usa questo formato per il nome del progetto)

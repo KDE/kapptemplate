@@ -2,6 +2,7 @@
 X-SuSE-translate=true
 Encoding=UTF-8
 Name=%{APPNAME} Shape
+Name[da]=%{APPNAME} Form
 Name[en_GB]=%{APPNAME} Shape
 Name[et]=%{APPNAME} kujund
 Name[it]=Forma %{APPNAME}
@@ -12,6 +13,7 @@ Name[uk]=Форма %{APPNAME}
 Name[x-test]=xx%{APPNAME} Shapexx
 Name[zh_TW]=%{APPNAME} 元件
 Comment=%{APPNAME} Flake Shape
+Comment[da]=%{APPNAME} Flake-form
 Comment[en_GB]=%{APPNAME} Flake Shape
 Comment[et]=%{APPNAME} Flake'i kujund
 Comment[it]=Forma di Flake di %{APPNAME}
