@@ -23,10 +23,10 @@ kde4_add_plugin(%{APPNAMELC}shape ${%{APPNAMELC}_SRCS})
 
 target_link_libraries(%{APPNAMELC}shape
     QtCore
-	QtGui
-	flake
+    QtGui
+    flake
     kostore
-	${KDE4_KDEUI_LIBS}
+    ${KDE4_KDEUI_LIBS}
 )
 
 install(TARGETS %{APPNAMELC}shape DESTINATION ${PLUGIN_INSTALL_DIR})
