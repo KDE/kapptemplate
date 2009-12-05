@@ -3,6 +3,7 @@ set(apptemplate_DIRS
     plasmoid
     runner
     flake
+    kofficetext
     qmake_qt4guiapp
     kpartapp
     akonadiresource
