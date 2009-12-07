@@ -1,5 +1,15 @@
 # KDE Config File
 [General]
 Name=KOffice Text-Plugin Template
+Name[en_GB]=KOffice Text-Plugin Template
+Name[it]=Modello di estensioni di testo di KOffice
+Name[sv]=Koffice-textinsticksmodulmall
+Name[uk]=Шаблон текстового додатка KOffice
+Name[x-test]=xxKOffice Text-Plugin Templatexx
 Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment[en_GB]=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment[it]=Un modello di estensioni di KOffice per aggiungere nuove funzionalità per modificare il testo (usa questo formato per il nome del progetto)
+Comment[sv]=En Koffice-insticksmodulmall för att lägga till nya funktioner för textmodifiering (använd projektnamnet ThisFormat)
+Comment[uk]=Шаблон додатка KOffice, призначений для додавання нових можливостей зміни тексту (будь ласка, використовуйте назву проекту у форматі ThisFormat)
+Comment[x-test]=xxA KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)xx
 Category=C++/KDE

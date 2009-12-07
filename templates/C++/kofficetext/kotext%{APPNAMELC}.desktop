@@ -1,5 +1,10 @@
 [Desktop Entry]
 Name=%{APPNAME} plugin
+Name[en_GB]=%{APPNAME} plugin
+Name[it]=Estensione di %{APPNAME}
+Name[sv]=%{APPNAME}-insticksprogram
+Name[uk]=Додаток %{APPNAME}
+Name[x-test]=xx%{APPNAME} pluginxx
 X-KDE-ServiceTypes=KOffice/Text-EditingPlugin
 Type=Service
 X-KDE-Library=kotext%{APPNAMELC}
