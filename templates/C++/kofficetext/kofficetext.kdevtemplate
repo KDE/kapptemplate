@@ -2,12 +2,16 @@
 [General]
 Name=KOffice Text-Plugin Template
 Name[en_GB]=KOffice Text-Plugin Template
+Name[et]=KOffice'i tekstiplugina mall
+Name[gl]=Modelo de extensión de texto para KOffice
 Name[it]=Modello di estensioni di testo di KOffice
 Name[sv]=Koffice-textinsticksmodulmall
 Name[uk]=Шаблон текстового додатка KOffice
 Name[x-test]=xxKOffice Text-Plugin Templatexx
 Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[en_GB]=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment[et]=KOffice'i plugina mall uute omaduste lisamiseks teksti muutmiseks (palun kasuta projekti nime puhul kuju SeeVorming)
+Comment[gl]=Un modelo de extensión de KOffice para engadir novas funcións para modificar texto (empregue EsteFormato no nome do proxecto)
 Comment[it]=Un modello di estensioni di KOffice per aggiungere nuove funzionalità per modificare il testo (usa questo formato per il nome del progetto)
 Comment[sv]=En Koffice-insticksmodulmall för att lägga till nya funktioner för textmodifiering (använd projektnamnet ThisFormat)
 Comment[uk]=Шаблон додатка KOffice, призначений для додавання нових можливостей зміни тексту (будь ласка, використовуйте назву проекту у форматі ThisFormat)

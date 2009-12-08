@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=%{APPNAME} plugin
 Name[en_GB]=%{APPNAME} plugin
+Name[et]=%{APPNAME} plugin
+Name[gl]=Extensión para %{APPNAME}
 Name[it]=Estensione di %{APPNAME}
 Name[sv]=%{APPNAME}-insticksprogram
 Name[uk]=Додаток %{APPNAME}
