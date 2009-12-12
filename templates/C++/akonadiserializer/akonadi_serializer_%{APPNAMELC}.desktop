@@ -19,6 +19,7 @@ Name[nb]=%{APPNAME}-serialisator
 Name[nds]=%{APPNAME}-Reegmoduul
 Name[nl]=%{APPNAME}-serialisator
 Name[nn]=%{APPNAME}-serialisator
+Name[pa]=%{APPNAME} ਸੀਰੀਅਲਾਈਜ਼ਰ
 Name[pl]=Serializacja %{APPNAME}
 Name[pt]=Serialização do %{APPNAME}
 Name[pt_BR]=Serialização do %{APPNAME}

@@ -12,6 +12,7 @@ Name[x-test]=xxKOffice Text-Plugin Templatexx
 Name[zh_TW]=KOffice 文字外掛程式樣本
 Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[en_GB]=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment[es]=Complemento de KOffice que añade nuevas funciones de modificación de texto (use EsteFormato en el nombre del proyecto)
 Comment[et]=KOffice'i plugina mall uute omaduste lisamiseks teksti muutmiseks (palun kasuta projekti nime puhul kuju SeeVorming)
 Comment[gl]=Un modelo de extensión de KOffice para engadir novas funcións para modificar texto (empregue EsteFormato no nome do proxecto)
 Comment[it]=Un modello di estensioni di KOffice per aggiungere nuove funzionalità per modificare il testo (usa questo formato per il nome del progetto)
