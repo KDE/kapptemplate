@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=%{APPNAME} plugin
+Name[ca]=Connector %{APPNAME}
 Name[en_GB]=%{APPNAME} plugin
 Name[es]=Complemento %{APPNAME}
 Name[et]=%{APPNAME} plugin
 Name[fr]=Module externe %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
 Name[it]=Estensione di %{APPNAME}
+Name[nb]=%{APPNAME}-programtillegg
 Name[pa]=%{APPNAME} ਪਲੱਗਇਨ
 Name[pt]='Plugin' do %{APPNAME}
 Name[sv]=%{APPNAME}-insticksprogram
