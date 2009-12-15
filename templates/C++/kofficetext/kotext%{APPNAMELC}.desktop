@@ -10,6 +10,7 @@ Name[it]=Estensione di %{APPNAME}
 Name[nb]=%{APPNAME}-programtillegg
 Name[pa]=%{APPNAME} ਪਲੱਗਇਨ
 Name[pt]='Plugin' do %{APPNAME}
+Name[pt_BR]=Plug-in do %{APPNAME}
 Name[sv]=%{APPNAME}-insticksprogram
 Name[uk]=Додаток %{APPNAME}
 Name[x-test]=xx%{APPNAME} pluginxx
