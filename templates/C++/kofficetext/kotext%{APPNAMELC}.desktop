@@ -14,6 +14,7 @@ Name[pt_BR]=Plug-in do %{APPNAME}
 Name[sv]=%{APPNAME}-insticksprogram
 Name[uk]=Додаток %{APPNAME}
 Name[x-test]=xx%{APPNAME} pluginxx
+Name[zh_CN]=%{APPNAME} 插件
 Name[zh_TW]=%{APPNAME} 外掛程式
 X-KDE-ServiceTypes=KOffice/Text-EditingPlugin
 Type=Service
