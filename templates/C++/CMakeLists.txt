@@ -4,6 +4,7 @@ set(apptemplate_DIRS
     runner
     flake
     kofficetext
+    ktexteditor
     qmake_qt4guiapp
     kpartapp
     akonadiresource

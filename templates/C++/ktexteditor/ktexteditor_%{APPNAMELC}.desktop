@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Service
+Comment=%{APPNAME}
+Name=%{APPNAME}
+GenericName=%{APPNAME}
+Icon=kate
+ServiceTypes=KTextEditor/Plugin
+X-KDE-ServiceTypes=KTextEditor/Plugin
+X-KDE-Library=ktexteditor_%{APPNAMELC}
+X-KDE-PluginKeyword=ktexteditor_%{APPNAMELC}
+X-KDE-PluginInfo-Name=ktexteditor_%{APPNAMELC}
+X-KDE-PluginInfo-Author=%{AUTHOR}
+X-KDE-PluginInfo-Email=%{EMAIL}
+X-KDE-PluginInfo-Website=http://kate.kde.org
+X-KDE-PluginInfo-Version=%{VERSION}
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-Category=Editor
+X-KDE-ParentApp=kate
+X-KDE-Version=4.0
