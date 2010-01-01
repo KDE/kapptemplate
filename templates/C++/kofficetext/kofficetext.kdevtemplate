@@ -2,6 +2,7 @@
 [General]
 Name=KOffice Text-Plugin Template
 Name[ca]=Plantilla de connector de text del KOffice
+Name[de]=Vorlage für ein KOffice-Text-Modul
 Name[en_GB]=KOffice Text-Plugin Template
 Name[et]=KOffice'i tekstiplugina mall
 Name[fr]=Modèle de module externe de texte pour KOffice
@@ -17,6 +18,7 @@ Name[zh_CN]=KOffice 文本插件模板
 Name[zh_TW]=KOffice 文字外掛程式樣本
 Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[ca]=Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)
+Comment[de]=Eine Vorlage für ein KOffice-Modul, um neue Funktionalität zur Textbearbeitung hinzuzufügen (bitte benutze DiesesFormat für den Projektnamen)
 Comment[en_GB]=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[es]=Complemento de KOffice que añade nuevas funciones de modificación de texto (use EsteFormato en el nombre del proyecto)
 Comment[et]=KOffice'i plugina mall uute omaduste lisamiseks teksti muutmiseks (palun kasuta projekti nime puhul kuju SeeVorming)
