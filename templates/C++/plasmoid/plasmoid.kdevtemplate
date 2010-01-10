@@ -2,6 +2,7 @@
 [General]
 Name=Plasma Applet Template
 Name[ca]=Plantilla de miniaplicació Plasma
+Name[ca@valencia]=Plantilla de miniaplicació Plasma
 Name[cs]=Šablona plasma appletu
 Name[da]=Skabelon til Plasma-applet
 Name[de]=Plasma-Miniprogramm
@@ -38,6 +39,7 @@ Name[zh_CN]=Plasma 小程序模板
 Name[zh_TW]=Plasma 小程式樣本
 Comment=A plasma applet template displaying an icon and a text
 Comment[ca]=Una plantilla de miniaplicació plasma que mostra una icona i un text
+Comment[ca@valencia]=Una plantilla de miniaplicació plasma que mostra una icona i un text
 Comment[da]=En skabelon til en Plasma-applet, som viser et ikon og en tekst
 Comment[de]=Vorlage für ein Plasma-Miniprogramm, das ein Symbol und einen Text anzeigt
 Comment[el]=Ένα πρότυπο ενός πλασμοειδούς που εμφανίζει ένα εικονίδιο και ένα κείμενο

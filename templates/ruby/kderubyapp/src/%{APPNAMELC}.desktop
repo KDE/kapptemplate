@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=%{APPNAME}
 Name[ca]=%{APPNAME}
+Name[ca@valencia]=%{APPNAME}
 Name[cs]=%{APPNAME}
 Name[da]=%{APPNAME}
 Name[de]=%{APPNAME}
@@ -41,6 +42,7 @@ Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Ruby Application
 GenericName[ca]=Una aplicació Ruby del KDE4
+GenericName[ca@valencia]=Una aplicació Ruby del KDE4
 GenericName[da]=Et KDE4 Ruby-program
 GenericName[de]=KDE-4-Ruby-Anwendung
 GenericName[el]=Μια εφαρμογή KDE4 Ruby

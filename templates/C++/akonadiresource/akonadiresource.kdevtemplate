@@ -2,6 +2,7 @@
 [General]
 Name=Akonadi Resource Template
 Name[ca]=Plantilla de recurs de l'Akonadi
+Name[ca@valencia]=Plantilla de recurs de l'Akonadi
 Name[da]=Ressourceskabelon til Akonadi
 Name[de]=Akonadi-Ressource
 Name[el]=Πρότυπο πόρου του Akonadi
@@ -36,6 +37,7 @@ Name[zh_CN]=Akonadi 资源模板
 Name[zh_TW]=Aknoadi 資源樣本
 Comment=A template for an Akonadi PIM data resource
 Comment[ca]=Una plantilla per un recurs de dades PIM de l'Akonadi
+Comment[ca@valencia]=Una plantilla per un recurs de dades PIM de l'Akonadi
 Comment[da]=En skabelon til en Akonadi PIM-dataressource
 Comment[de]=Vorlage für eine Datenressource für das Akonadi-PIM-Framework
 Comment[el]=Ένα πρότυπο για έναν πόρο δεδομένων Akonadi PIM
