@@ -3,6 +3,7 @@ Name=%{APPNAME} plugin
 Name[ca]=Connector %{APPNAME}
 Name[ca@valencia]=Connector %{APPNAME}
 Name[cs]=%{APPNAME} modul
+Name[da]=%{APPNAME} plugin
 Name[de]=%{APPNAME}-Modul
 Name[en_GB]=%{APPNAME} plugin
 Name[es]=Complemento %{APPNAME}

@@ -3,6 +3,7 @@
 Name=KTextEditor Plugin Template
 Name[ca]=Plantilla de connector del KTextEditor
 Name[ca@valencia]=Plantilla de connector del KTextEditor
+Name[da]=Skabelon til KTextEditor-plugin
 Name[en_GB]=KTextEditor Plugin Template
 Name[es]=Plantilla de complemento para KTextEditor
 Name[et]=KTextEditori plugina mall
@@ -17,6 +18,7 @@ Name[zh_TW]=KTextEditor 外掛程式樣本
 Comment=A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
 Comment[ca]=Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
+Comment[da]=En skabelon til KTextEditor-plugin til at udføre særlige handlinger på tekst i KWrite, Kate, KDevelop osv. (brug DetteFormat til projektnavnet)
 Comment[en_GB]=A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
 Comment[es]=Un complemento de KTextEditor para realizar operaciones especiales sobre el texto en KWrite, Kate, KDevelop, etc. (use EsteFormato para el nombre del proyecto)
 Comment[et]=KTextEditori plugina mall eritoimingute sooritamiseks tekstiga rakendustes KWrite, Kate, KDevelop jne. (palun kasuta projekti nime puhul kuju SeeVorming)
