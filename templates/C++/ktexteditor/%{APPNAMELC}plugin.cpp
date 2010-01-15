@@ -10,7 +10,7 @@
 #include <KAction>
 #include <KActionCollection>
 
-K_PLUGIN_FACTORY(%{APPNAME}PluginFactory, registerPlugin<%{APPNAME}Plugin>();)
+K_PLUGIN_FACTORY(%{APPNAME}PluginFactory, registerPlugin<%{APPNAME}Plugin>("ktexteditor_%{APPNAMELC}");)
 K_EXPORT_PLUGIN(%{APPNAME}PluginFactory("ktexteditor_%{APPNAMELC}", "ktexteditor_plugins"))
 
 %{APPNAME}Plugin::%{APPNAME}Plugin(QObject *parent, const QVariantList &args)
