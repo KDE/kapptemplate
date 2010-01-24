@@ -12,6 +12,7 @@ Name[fr]=Module externe %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
 Name[it]=Estensione di %{APPNAME}
 Name[nb]=%{APPNAME}-programtillegg
+Name[nl]=%{APPNAME}-plugin
 Name[pa]=%{APPNAME} ਪਲੱਗਇਨ
 Name[pt]='Plugin' do %{APPNAME}
 Name[pt_BR]=Plug-in do %{APPNAME}
