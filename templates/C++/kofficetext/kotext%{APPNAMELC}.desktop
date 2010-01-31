@@ -11,6 +11,7 @@ Name[et]=%{APPNAME} plugin
 Name[fr]=Module externe %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
 Name[it]=Estensione di %{APPNAME}
+Name[lv]=%{APPNAME} spraudnis
 Name[nb]=%{APPNAME}-programtillegg
 Name[nl]=%{APPNAME}-plugin
 Name[pa]=%{APPNAME} ਪਲੱਗਇਨ
