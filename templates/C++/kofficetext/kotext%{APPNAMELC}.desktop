@@ -8,6 +8,7 @@ Name[de]=%{APPNAME}-Modul
 Name[en_GB]=%{APPNAME} plugin
 Name[es]=Complemento %{APPNAME}
 Name[et]=%{APPNAME} plugin
+Name[fi]=%{APPNAME}-liitännäinen
 Name[fr]=Module externe %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
 Name[it]=Estensione di %{APPNAME}
