@@ -41,6 +41,7 @@ Comment[es]=Forma de Flake %{APPNAME}
 Comment[et]=%{APPNAME} Flake'i kujund
 Comment[fr]=Forme de Flake %{APPNAME}
 Comment[gl]=Forma flake de %{APPNAME}
+Comment[hu]=%{APPNAME} pehelyalak
 Comment[it]=Forma di Flake di %{APPNAME}
 Comment[lv]=%{APPNAME} Flake figūra
 Comment[nb]=%{APPNAME}-flakform
