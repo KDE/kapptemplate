@@ -16,6 +16,7 @@ Name[lv]=%{APPNAME} spraudnis
 Name[nb]=%{APPNAME}-programtillegg
 Name[nds]=%{APPNAME}-Moduul
 Name[nl]=%{APPNAME}-plugin
+Name[nn]=%{APPNAME}-tillegg
 Name[pa]=%{APPNAME} ਪਲੱਗਇਨ
 Name[pt]='Plugin' do %{APPNAME}
 Name[pt_BR]=Plug-in do %{APPNAME}
