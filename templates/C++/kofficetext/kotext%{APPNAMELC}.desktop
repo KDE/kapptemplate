@@ -10,6 +10,7 @@ Name[es]=Complemento %{APPNAME}
 Name[et]=%{APPNAME} plugin
 Name[fi]=%{APPNAME}-liitännäinen
 Name[fr]=Module externe %{APPNAME}
+Name[ga]=Breiseán %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
 Name[hu]=%{APPNAME} plugin
 Name[it]=Estensione di %{APPNAME}
