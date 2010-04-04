@@ -1,7 +1,7 @@
 #include "%{APPNAMELC}.h"
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
+#include <KDE/KApplication>
+#include <KDE/KAboutData>
+#include <KDE/KCmdLineArgs>
 #include <KDE/KLocale>
 
 static const char description[] =
