@@ -1,4 +1,4 @@
 [Project]
-Manager=KDevQMakeManager
+Manager=KDevCustomMakeManager 
 Name=%{APPNAME}
 VersionControl=%{VERSIONCONTROLPLUGIN}

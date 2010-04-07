@@ -40,6 +40,6 @@ Example: Category=C++/Qt (qmake)
 A screenshot will help the user preview the template. This screenshot name will be indicated as Icon= . This icon should be installed in ${DATA_INSTALL_DIR}/kapptemplate/pics to make it found by the program and should have a different name from any other one. Screenshot prefered size: 200 pixels width.
 Example: Icon=qt4gui.png
 
-KDevelop: templates are tarred using the CMake kdevelop_add_app_templates macro and installes in kdevappwizard/templates.
+KDevelop: templates are tarred using the CMake kdevelop_add_app_templates macro and installed in kdevappwizard/templates.
 Model untars it and extracts the .kdevtemplate files mocally in $KDEHOME/share/apps/kdevappwizard/template_descriptions (void ProjectTemplatesModel::extractTemplateDescriptions()).
 Model then read the name and description from there (void ProjectTemplatesModel::refresh()).
