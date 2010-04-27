@@ -1,7 +1,9 @@
 # KDE Config File
 [General]
 Name=KDE 4 Konqueror plugin
+Name[x-test]=xxKDE 4 Konqueror pluginxx
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
+Comment[x-test]=xxKDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror pluginxx
 Category=C++/KDE
 Icon=konqplugin.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
