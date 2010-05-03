@@ -1,6 +1,8 @@
 # KDE Config File
 [General]
 Name=KDE 4 Konqueror plugin
+Name[ca]=Un connector del Konqueror del KDE 4
+Name[en_GB]=KDE 4 Konqueror plugin
 Name[pt]='Plugin' do Konqueror para o KDE 4
 Name[pt_BR]=Plugin do Konqueror para o KDE 4
 Name[sv]=KDE 4 Konqueror insticksprogram
@@ -8,6 +10,8 @@ Name[uk]=Додаток до Konqueror KDE 4
 Name[x-test]=xxKDE 4 Konqueror pluginxx
 Name[zh_TW]=KDE4 Konqueror 外掛程式
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
+Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
+Comment[en_GB]=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
 Comment[pt]=Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror
 Comment[pt_BR]=Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um plugin para o Konqueror
 Comment[sv]=Enkel KDE4-mall baserad på CMake, ärver KParts::Plugin och demonstrerar hur man använder skriver ett insticksprogram för Konqueror
