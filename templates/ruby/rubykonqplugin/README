@@ -1,0 +1,59 @@
+This template shows, how to write a Konqueror-plugin with Ruby.
+Have a look at src/%{APPNAME}.rb, there you will be able to change the functionality.
+
+
+How To Build This Template
+-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+--- On Unix:
+
+cd <project_name_path>
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
+make
+make install or su -c 'make install'
+
+where $KDEDIRS points to your KDE installation prefix.
+
+to uninstall the project:
+make uninstall or su -c 'make uninstall'
+
+Note: you can use another build path. Then cd in your build dir and:
+export KDE_SRC=path_to_your_src
+cmake $KDE_SRC -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug
+
+--- On Windows:
+
+cd <project_name_path>
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=%KDEDIRS% -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
+[n]make
+[n]make install
+
+where %KDEDIRS% points to your KDE installation prefix.
+
+to uninstall the project:
+[n]make uninstall
+
+Note: use nmake if you're building with the Visual Studio compiler, or make
+if you're using the minGW compiler
+
+
+Tutorials
+-=-=-=-=-
+Kpart docs
+http://techbase.kde.org/index.php?title=Development/Architecture/KDE4/KParts
+
+Use rbqtapi to explore the Ruby-API.
+
+----------------------------
+Please send all comments to:
+Jonathan Schmidt-Dominé
+devel@the-user.org
+or join the IRC-channel:
+#kde-bindings@freenode
+
+Last update: May 6th 2010
+

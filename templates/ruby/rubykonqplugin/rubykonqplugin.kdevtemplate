@@ -1,0 +1,9 @@
+# KDE Config File
+[General]
+Name=KDE 4 Ruby Konqueror plugin
+Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
+Category=Ruby
+Icon=konqplugin.png
+ShowFilesAfterGeneration=%{dest}/%{APPNAME}/%{APPNAME}.rb
+X-SuSE-translate=true
+X-Ubuntu-Gettext-Domain=desktop_kdesdk

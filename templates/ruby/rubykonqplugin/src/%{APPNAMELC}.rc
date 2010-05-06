@@ -1,0 +1,9 @@
+<!DOCTYPE kpartgui>
+<kpartplugin name="%{APPNAME}" library="krubypluginfactory" version="%{VERSION}">
+<MenuBar>
+ <Menu name="tools"><Text>&amp;Tools</Text>
+    <separator group="tools_operations" />
+    <Action name="tools_%{APPNAME}" group="tools_operations"/>
+ </Menu>
+</MenuBar>
+</kpartplugin>
