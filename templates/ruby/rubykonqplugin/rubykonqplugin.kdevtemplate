@@ -3,12 +3,14 @@
 Name=KDE 4 Ruby Konqueror plugin
 Name[en_GB]=KDE 4 Ruby Konqueror plugin
 Name[pt]='Plugin' do Konqueror para o KDE 4 em Ruby
+Name[pt_BR]=Plug-in do Konqueror para o KDE 4 em Ruby
 Name[sv]=KDE 4 Ruby Konqueror insticksprogram
 Name[uk]=Додаток до Konqueror KDE 4 мовою Ruby
 Name[x-test]=xxKDE 4 Ruby Konqueror pluginxx
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[en_GB]=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[pt]=Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror em Ruby
+Comment[pt_BR]=Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um plug-in para o Konqueror em Ruby
 Comment[sv]=Enkel KDE4-mall baserad på CMake, ärver KParts::Plugin och demonstrerar hur man använder skriver ett insticksprogram för Konqueror i Ruby
 Comment[uk]=Простий шаблон програми для KDE4, заснований на CMake, успадковує клас KParts::Plugin і є зразком додатка до Konqueror мовою Ruby.
 Comment[x-test]=xxKDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Rubyxx
