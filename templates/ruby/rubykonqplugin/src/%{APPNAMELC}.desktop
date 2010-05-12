@@ -17,6 +17,7 @@ X-KDE-PluginInfo-Website=
 DocPath=konq-plugins/%{APPNAMELC}/index.html
 Comment=%{APPNAME} - You can write Konqueror-Plugins in Ruby
 Comment[en_GB]=%{APPNAME} - You can write Konqueror-Plugins in Ruby
+Comment[nds]=%{APPNAME} - Du kannst Modulen för Konqueror in Ruby schrieven
 Comment[pt]=%{APPNAME} - Poderá criar 'plugins' do Konqueror em Ruby
 Comment[pt_BR]=%{APPNAME} - Você pode criar plug-ins do Konqueror em Ruby
 Comment[sv]=%{APPNAME} - Du kan skriva insticksprogram för Konqueror i Ruby
