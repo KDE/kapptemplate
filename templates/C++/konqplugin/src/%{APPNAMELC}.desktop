@@ -15,6 +15,7 @@ DocPath=konq-plugins/%{APPNAMELC}/index.html
 Encoding=UTF-8
 Comment=Extended UrlBar Options
 Comment[ca]=Opcions ampliades de l'UrlBar
+Comment[de]=Erweiterte Addressleisteneinstellungen
 Comment[en_GB]=Extended UrlBar Options
 Comment[nds]=Verwiedert Adressbalken-Optschonen
 Comment[pt]=Opções Extendidas da Barra de URL's

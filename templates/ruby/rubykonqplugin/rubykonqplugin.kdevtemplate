@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=KDE 4 Ruby Konqueror plugin
+Name[de]=Ruby-Konqueror-Modul für KDE 4
 Name[en_GB]=KDE 4 Ruby Konqueror plugin
 Name[nds]=Konqueror-Ruby-Moduul för KDE4
 Name[pt]='Plugin' do Konqueror para o KDE 4 em Ruby
@@ -9,6 +10,7 @@ Name[sv]=KDE 4 Ruby Konqueror insticksprogram
 Name[uk]=Додаток до Konqueror KDE 4 мовою Ruby
 Name[x-test]=xxKDE 4 Ruby Konqueror pluginxx
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
+Comment[de]=Einfache KDE-4-Vorlage basierend auf CMake. Abgeleitet von KParts::Plugin und demonstriert, wie ein Konqueror-Modul in Ruby zu schreiben ist
 Comment[en_GB]=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[nds]=Eenfach KDE4-Vörlaag, opbuut op CMake, arvt vun XMLGuiWindow un wiest, wodennig sik en Moduul för Konqueror in Ruby schrieven lett.
 Comment[pt]=Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror em Ruby
