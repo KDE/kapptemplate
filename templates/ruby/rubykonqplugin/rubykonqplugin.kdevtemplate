@@ -26,4 +26,3 @@ Category=Ruby
 Icon=konqplugin.png
 ShowFilesAfterGeneration=%{dest}/%{APPNAME}/%{APPNAME}.rb
 X-SuSE-translate=true
-X-Ubuntu-Gettext-Domain=desktop_kdesdk
