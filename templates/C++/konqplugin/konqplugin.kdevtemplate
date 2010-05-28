@@ -27,4 +27,3 @@ Comment[zh_TW]=基於 CMake 的 KDE4 簡單樣本，從 KParts::Plugin 繼承而
 Category=C++/KDE
 Icon=konqplugin.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
-X-Ubuntu-Gettext-Domain=desktop_kdesdk
