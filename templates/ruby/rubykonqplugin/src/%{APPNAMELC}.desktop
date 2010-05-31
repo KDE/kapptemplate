@@ -26,6 +26,7 @@ Comment[pt_BR]=%{APPNAME} - Você pode criar plug-ins do Konqueror em Ruby
 Comment[sv]=%{APPNAME} - Du kan skriva insticksprogram för Konqueror i Ruby
 Comment[uk]=%{APPNAME} — ви можете писати додатки до Konqueror мовою Ruby
 Comment[x-test]=xx%{APPNAME} - You can write Konqueror-Plugins in Rubyxx
+Comment[zh_TW]=%{APPNAME} - 您可以用 Ruby 撰寫 Konqueror 外掛程式
 Name=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
