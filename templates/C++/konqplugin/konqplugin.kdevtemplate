@@ -3,6 +3,8 @@
 Name=KDE 4 Konqueror plugin
 Name[ca]=Un connector del Konqueror del KDE 4
 Name[ca@valencia]=Un connector del Konqueror del KDE 4
+Name[cs]=Modul pro Konqueror v KDE 4
+Name[da]=KDE 4 Konqueror-plugin
 Name[de]=Konqueror-Modul für KDE 4
 Name[en_GB]=KDE 4 Konqueror plugin
 Name[it]=Estensione per Konqueror di KDE 4
@@ -16,6 +18,7 @@ Name[zh_TW]=KDE4 Konqueror 外掛程式
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
 Comment[ca@valencia]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
+Comment[da]=Simpel KDE4-skabelon baseret på CMake. Den arver fra KParts::Plugin og demonstrerer hvordan et konqueror-plugin skrives
 Comment[de]=Einfache KDE-4-Vorlage basierend auf CMake. Abgeleitet von KParts::Plugin und demonstriert, wie ein Konqueror-Modul zu schreiben ist
 Comment[en_GB]=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
 Comment[it]=Un modello semplice per KDE 4 basato su CMake; eredita da KParts::Plugin e dimostra come scrivere un'estensione di Konqueror.
