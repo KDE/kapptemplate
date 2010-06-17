@@ -13,6 +13,7 @@ Name[pt_BR]=Plug-in do Konqueror para o KDE 4 em Ruby
 Name[sv]=KDE 4 Ruby Konqueror insticksprogram
 Name[uk]=Додаток до Konqueror KDE 4 мовою Ruby
 Name[x-test]=xxKDE 4 Ruby Konqueror pluginxx
+Name[zh_CN]=KDE 4 Ruby Konqueror 插件
 Name[zh_TW]=KDE 4 Ruby Konqueror 外掛程式
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby
