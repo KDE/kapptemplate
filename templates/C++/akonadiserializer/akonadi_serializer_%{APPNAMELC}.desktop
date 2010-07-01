@@ -51,6 +51,7 @@ Comment[gl]=Unha extensión se serialización de Akonadi para %{APPNAMELC}
 Comment[hu]=%{APPNAMELC} Akonadi-kezelő modul
 Comment[it]=Un'estensione di serializzazione di Akonadi per %{APPNAMELC}
 Comment[ja]=%{APPNAMELC} のための Akonadi シリアライザ・プラグイン
+Comment[km]=An Akonadi serializer កម្មវិធីជំនួយ​សម្រាប់​  %{APPNAMELC}
 Comment[lv]=Akonadi serializēšanas spraudnis %{APPNAMELC}
 Comment[nb]=Et Akonadi-serialisatortillegg for %{APPNAMELC}
 Comment[nds]=En Akonadi-Reegmodul för %{APPNAMELC}
