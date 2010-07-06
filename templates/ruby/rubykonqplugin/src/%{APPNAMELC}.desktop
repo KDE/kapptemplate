@@ -25,6 +25,7 @@ Comment[et]=%{APPNAME} - võimalus kirjutada Konquerori pluginaid Ruby abil
 Comment[fr]=%{APPNAME} - Vous pouvez écrire des modules externes Konqueror en Ruby
 Comment[it]=%{APPNAME} - Puoi scrivere estensioni per Konqueror in Ruby
 Comment[nds]=%{APPNAME} - Du kannst Modulen för Konqueror in Ruby schrieven
+Comment[nl]=%{APPNAME} - U kunt Konqueror-plugins schrijven in Ruby
 Comment[pt]=%{APPNAME} - Poderá criar 'plugins' do Konqueror em Ruby
 Comment[pt_BR]=%{APPNAME} - Você pode criar plug-ins do Konqueror em Ruby
 Comment[sr]=%{APPNAME} — напишите прикључак за К‑освајач на рубију
