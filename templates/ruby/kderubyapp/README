@@ -14,7 +14,7 @@ make install
 
 Run it
 ------
-krubyapplication your_app your-app/main.rb
+krubyapplication your-app/main.rb
 
 
 Tutorials
