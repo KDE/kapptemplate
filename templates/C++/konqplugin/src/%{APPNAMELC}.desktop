@@ -108,6 +108,7 @@ GenericName[sr@ijekavian]=%{APPNAME}
 GenericName[sr@ijekavianlatin]=%{APPNAME}
 GenericName[sr@latin]=%{APPNAME}
 GenericName[sv]=%{APPNAME}
+GenericName[tr]=%{APPNAME}
 GenericName[uk]=%{APPNAME}
 GenericName[x-test]=xx%{APPNAME}xx
 GenericName[zh_CN]=%{APPNAME}
