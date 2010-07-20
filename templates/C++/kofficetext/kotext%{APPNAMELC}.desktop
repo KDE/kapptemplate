@@ -27,6 +27,7 @@ Name[sr@ijekavian]=Прикључак за %{APPNAME}
 Name[sr@ijekavianlatin]=Priključak za %{APPNAME}
 Name[sr@latin]=Priključak za %{APPNAME}
 Name[sv]=%{APPNAME}-insticksprogram
+Name[tr]=%{APPNAME} eklentisi
 Name[uk]=Додаток %{APPNAME}
 Name[x-test]=xx%{APPNAME} pluginxx
 Name[zh_CN]=%{APPNAME} 插件
