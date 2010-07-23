@@ -34,6 +34,7 @@ Comment[de]=Einfache KDE-4-Vorlage basierend auf CMake. Abgeleitet von KParts::P
 Comment[en_GB]=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[et]=Lihtne KDE4 mall CMake'i põhjal, KParts::Plugin järglane, mis näitab, kuidas kirjutada Konquerori pluginat Ruby abil
 Comment[fr]=Modèle simple pour KDE4 reposant sur CMake, hérite de KParts::Plugin et montre comment écrire un module externe pour Konqueror en Ruby
+Comment[ga]=Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar KParts::Plugin agus a léiríonn conas a scríobhtar breiseán konqueror i Ruby
 Comment[it]=Un modello semplice per KDE 4 basato su CMake; eredita da KParts::Plugin e dimostra come scrivere un'estensione di Konqueror in Ruby.
 Comment[km]=ពុម្ព​ធម្មតារបស់ KDE4 មាន​មូលដ្ឋាន​លើ CMake ទទួល​ពី KParts::Plugin និងបង្ហាញ​របៀបត្រូវសរសេរកម្មវិធី​ជំនួយ​​ konqueror ក្នុង​​ Ruby​
 Comment[nb]=Enkel KDE4-mal basert på CMake, arver fra KParts::Plugin og viser hvordan du kan skrive et programtillegg for konqueror i Ruby

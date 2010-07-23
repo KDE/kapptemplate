@@ -51,6 +51,7 @@ Comment[es]=Plantilla PyQt que usa un archivo de Designer (necesita PyQt4)
 Comment[et]=PyQt mall Disaineri faili põhjal - vajalik on PyQt4
 Comment[fi]=Designer-tiedostoa käyttävä PyQt-mallipohja, vaatii PyQt4:ää
 Comment[fr]=Modèle pour PyQt utilisant un fichier Designer - nécessite PyQt4
+Comment[ga]=Teimpléad PyQt a úsáideann comhad Designer - PyQt4 de dhíth
 Comment[gl]=Modelo de PyQt que emprega un ficheiro do Designer, precisa de PyQt4
 Comment[hu]=PyQt sablon Designer-fájllal - a PyQt4 szükséges hozzá
 Comment[it]=Modello PyQt che usa un file di Designer - richiede PyQt4
