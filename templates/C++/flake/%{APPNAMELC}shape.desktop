@@ -51,6 +51,7 @@ Comment[nb]=%{APPNAME}-flakform
 Comment[nds]=%{APPNAME}-Flakeform
 Comment[nl]=%{APPNAME}-vlokkenvorm
 Comment[nn]=%{APPNAME}-Flake-form
+Comment[pa]=%{APPNAME} ਫਲਕੀ ਸ਼ਕਲ
 Comment[pt]=Forma do Flake %{APPNAME}
 Comment[pt_BR]=Forma do Flake %{APPNAME}
 Comment[sr]=Облик за %{APPNAME} (Флејк)
