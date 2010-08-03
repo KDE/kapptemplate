@@ -276,7 +276,7 @@ The template will give you the following application:
 
 <para>You need korundum4 from &kde; 4 kdebindings module or from your distribution to run this template.</para>
 
-<para>To run the template, after building and installing the project (see the <filename>README</filename>), type in konsole: <userinput>krubyapplication your_app your-app/main.rb</userinput>.</para>
+<para>To run the template, after building and installing the project (see the <filename>README</filename>), type in konsole: <userinput>krubyapplication your-app/main.rb</userinput>.</para>
 </sect1>
 
 </chapter>
