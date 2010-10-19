@@ -31,7 +31,7 @@ install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
-install( FILES kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
 install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/C++/kapp4/kapp4.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
