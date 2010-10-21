@@ -17,7 +17,7 @@ if(RBUIC4)
         add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/ui_%{APPNAMELC}view_base.rb COMMAND ${RBUIC4} -tr KDE::tr2i18n ${UI_%{APPNAMEUC}_VIEW_BASE} -o ${CMAKE_CURRENT_BINARY_DIR}/ui_%{APPNAMELC}view_base.rb COMMENT "Generating ui_%{APPNAMELC}view_base.rb")
         add_custom_target(%{APPNAMELC}view_base ALL DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/ui_%{APPNAMELC}view_base.rb)
 
-        install( FILES %{APPNAMELC}.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
+        install( PROGRAMS %{APPNAMELC}.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
         install( FILES %{APPNAMELC}ui.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC} )
 
         install(FILES ${CMAKE_CURRENT_BINARY_DIR}/ui_prefs_base.rb DESTINATION ${DATA_INSTALL_DIR}/%{APPNAMELC})

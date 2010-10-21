@@ -9,7 +9,7 @@ target_link_libraries(%{APPNAMELC} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS})
 
 ########### install files ###############
 install(TARGETS %{APPNAMELC} ${INSTALL_TARGETS_DEFAULT_ARGS} )
-install( FILES %{APPNAMELC}.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS %{APPNAMELC}.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES %{APPNAMELC}_shell.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC} )
 
 
@@ -25,7 +25,7 @@ kde4_add_plugin(%{APPNAMELC}part WITH_PREFIX ${%{APPNAMELC}_PART_SRCS})
 
 target_link_libraries(%{APPNAMELC}part ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS} )
 
-install( FILES %{APPNAMELC}_part.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS %{APPNAMELC}_part.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
 install( FILES %{APPNAMELC}_part.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC}part )
 
 install(TARGETS %{APPNAMELC}part  DESTINATION ${PLUGIN_INSTALL_DIR} )
