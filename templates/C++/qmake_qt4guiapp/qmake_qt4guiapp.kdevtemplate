@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Qt4 GUI Application
+Name[ast]=Aplicación Qt4 pa interface gráfica
 Name[ca]=Aplicació IGU Qt4
 Name[ca@valencia]=Aplicació IGU Qt4
 Name[cs]=GUI aplikace Qt4
@@ -43,6 +44,7 @@ Name[zh_CN]=Qt4 图形用户界面应用程序
 Name[zh_TW]=Qt4 圖形介面應用程式
 Category=C++/Qt (qmake)
 Comment=Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
+Comment[ast]=Xenera una aplicación basada en QMake/Qt4 con interface gráfica d'usuariu (compatible multiplataforma)
 Comment[ca]=Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[ca@valencia]=Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[da]=Genererer et QMake-/Qt4-baseret program med grafisk brugerflade (kompatibel på tværs af platforme)

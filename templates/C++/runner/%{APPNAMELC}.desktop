@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=%{APPNAME}
+Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
@@ -43,6 +44,7 @@ Name[x-test]=xx%{APPNAME}xx
 Name[zh_CN]=%{APPNAME}
 Name[zh_TW]=%{APPNAME}
 Comment=%{APPNAME} runner
+Comment[ast]=Llanzador pa %{APPNAME}
 Comment[ca]=Llançador de %{APPNAME}
 Comment[ca@valencia]=Llançador de %{APPNAME}
 Comment[cs]=%{APPNAME} runner

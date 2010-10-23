@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=%{APPNAME}
+Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
@@ -47,6 +48,7 @@ Icon=%{APPNAMELC}
 Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Application
+GenericName[ast]=Una aplicación de KDE4
 GenericName[bg]=Програма за KDE4
 GenericName[ca]=Una aplicació del KDE4
 GenericName[ca@valencia]=Una aplicació del KDE4
