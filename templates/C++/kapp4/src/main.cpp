@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2010 by %{AUTHOR} <%{EMAIL}>                            *
+ *   Copyright (C) %{CURRENT_YEAR} by %{AUTHOR} <%{EMAIL}>                            *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -31,7 +31,7 @@ static const char version[] = "%{VERSION}";
 int main(int argc, char **argv)
 {
     KAboutData about("%{APPNAMELC}", 0, ki18n("%{APPNAME}"), version, ki18n(description),
-                     KAboutData::License_GPL, ki18n("(C) 2010 %{AUTHOR}"), KLocalizedString(), 0, "%{EMAIL}");
+                     KAboutData::License_GPL, ki18n("(C) %{CURRENT_YEAR} %{AUTHOR}"), KLocalizedString(), 0, "%{EMAIL}");
     about.addAuthor( ki18n("%{AUTHOR}"), KLocalizedString(), "%{EMAIL}" );
     KCmdLineArgs::init(argc, argv, &about);
 

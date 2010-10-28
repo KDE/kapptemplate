@@ -36,6 +36,8 @@
 #include "generatepage.h"
 #include "prefs.h"
 
+const QString current_year  = QString().setNum(QDate::currentDate().year());
+
 GeneratePage::GeneratePage(QWidget *parent)
     : QWizardPage(parent)
 {
@@ -169,6 +171,7 @@ void GeneratePage::initializePage()
     QString version = field("version").toString();
     KUrl dest(field("url").toString()+"/"+appName.toLower());
     m_variables.clear();
+    m_variables["CURRENT_YEAR"]=current_year;
     m_variables["APPNAME"] = appName;
     m_variables["APPNAMEUC"] = appName.toUpper();
     m_variables["APPNAMELC"] = appName.toLower();
