@@ -12,7 +12,7 @@ if(RBUIC4)
 
 		install(PROGRAMS %{APPNAME}.rb DESTINATION ${DATA_INSTALL_DIR}/%{APPNAME})
 		install(FILES ${%{APPNAMEUC}_FILES} DESTINATION ${DATA_INSTALL_DIR}/%{APPNAME} )
-		install(FILES %{APPNAMELC}.rc %{APPNAMELC}.desktop ${DATA_INSTALL_DIR}/khtml/kpartplugins)
+		install(FILES %{APPNAMELC}.rc %{APPNAMELC}.desktop DESTINATION ${DATA_INSTALL_DIR}/khtml/kpartplugins)
 		
 	else(RBKCONFIG_COMPILER4)
 		message(STATUS "rbkconfig_compiler4 not found, %{APPNAMELC} will not be created")
