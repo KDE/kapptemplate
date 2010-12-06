@@ -54,6 +54,7 @@ Comment[es]=Sencilla plantilla para KDE 4 basada en CMake, que hereda de XMLGuiW
 Comment[et]=Lihtne KDE4 mall CMake'i põhjal, XMLGuiWindow järglane, mis näitab, kuidas kasutada KConfig XT-d
 Comment[fi]=CMakeen perustuvan yksinkertainen KDE4-mallipohja, periytyy XMLGuiWindow’sta. Esittelee, miten käyttää KConfig XT:tä.
 Comment[fr]=Modèle simple pour KDE4 reposant sur CMake, hérite de XMLGuiWindow et montre comment utiliser KConfig XT
+Comment[ga]=Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar XMLGuiWindow agus a léiríonn conas a úsáidtear KConfig XT
 Comment[gl]=Modelo simple para KDE4 baseado en CMake, herda de XMLGuiWindow e demostra como empregar KConfig XT
 Comment[hu]=Egyszerű KDE4-sablon a CMake használatával, az XMLGuiWindow osztályból származtatva, bemutatja a KConfig XT használatát
 Comment[it]=Un modello semplice per KDE 4 basato su CMake; eredita da XMLGuiWindow e dimostra come usare KConfig XT.

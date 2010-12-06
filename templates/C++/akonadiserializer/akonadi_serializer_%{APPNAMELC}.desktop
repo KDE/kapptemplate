@@ -50,6 +50,7 @@ Comment[es]=Un complemento serializador de Akonadi para %{APPNAMELC}
 Comment[et]=Akonadi %{APPNAMELC} jadasti plugin
 Comment[fi]=Akonadi-sarjoittajaliitännäinen ohjelmalle %{APPNAMELC}
 Comment[fr]=Un module externe de sérialisation Akonadi pour %{APPNAMELC}
+Comment[ga]=Breiseán srathóra Akonadi le haghaidh %{APPNAMELC}
 Comment[gl]=Unha extensión se serialización de Akonadi para %{APPNAMELC}
 Comment[hu]=%{APPNAMELC} Akonadi-kezelő modul
 Comment[it]=Un'estensione di serializzazione di Akonadi per %{APPNAMELC}
