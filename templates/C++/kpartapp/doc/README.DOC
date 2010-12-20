@@ -1,0 +1,13 @@
+How to add a documentation to your project:
+
+* copy a template from kdelibs/kdoctools/ to this directory
+  - article-template.docbook -> article for a short documentation e.g. for a plugin
+  - template.docbook -> book template for an application
+  rename the template to index.docbook
+  edit the content of index.docbook, never use an unmodified template
+  if you need help with the docbook format mail to the documentation team (kde-doc-english@kde.org)
+
+* if your documentation is finished, add the doc directory to the CMakeLists.txt in the parent dir
+  (uncomment the line "#add_subdirectory( doc )"
+ 
+* to get your documentation into the translation process, mail to the translation team (kde-i18n-doc@kde.org)

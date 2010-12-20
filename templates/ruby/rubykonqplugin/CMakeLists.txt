@@ -7,6 +7,6 @@ add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
 
 
 
-add_subdirectory( doc )
+#add_subdirectory( doc )
 add_subdirectory( src )
 add_subdirectory( icons )
