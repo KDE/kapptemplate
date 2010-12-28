@@ -25,6 +25,7 @@ Name[pa]=%{APPNAME} ਸ਼ਕਲ
 Name[pl]=Kształt %{APPNAME}
 Name[pt]=Forma %{APPNAME}
 Name[pt_BR]=Forma %{APPNAME}
+Name[ru]=Объект %{APPNAME}
 Name[sr]=Облик за %{APPNAME}
 Name[sr@ijekavian]=Облик за %{APPNAME}
 Name[sr@ijekavianlatin]=Oblik za %{APPNAME}
