@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=KDE 4 Ruby Konqueror plugin
+Name[bs]=KDE 4 Ruby Konqueror dodatak
 Name[ca]=Un connector Ruby del Konqueror del KDE 4
 Name[ca@valencia]=Un connector Ruby del Konqueror del KDE 4
 Name[da]=KDE 4 Ruby Konqueror-plugin
@@ -32,6 +33,7 @@ Name[x-test]=xxKDE 4 Ruby Konqueror pluginxx
 Name[zh_CN]=KDE 4 Ruby Konqueror 插件
 Name[zh_TW]=KDE 4 Ruby Konqueror 外掛程式
 Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
+Comment[bs]=KDE4 obični predložak baziran na CMake-u, nasljedjuje od KParts::Plugin i demonstrira kako pisati glavni dodatak u Ruby-u
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby
 Comment[ca@valencia]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby
 Comment[da]=Simpel KDE4-skabelon baseret på CMake. Den arver fra KParts::Plugin og demonstrerer hvordan et konqueror-plugin skrives i Ruby

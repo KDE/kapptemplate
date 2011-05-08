@@ -2,6 +2,7 @@
 [General]
 Name=KDE 4 Ruby GUI Application
 Name[ast]=Aplicación Ruby pa KDE 4 con interface gráfica
+Name[bs]=KDE 4 Ruby GUI aplikacija
 Name[ca]=Aplicació IGU en Ruby del KDE 4
 Name[ca@valencia]=Aplicació IGU en Ruby del KDE 4
 Name[da]=Grafisk KDE 4 Ruby-program
@@ -42,6 +43,7 @@ Name[zh_CN]=KDE 4 Ruby 图形用户界面应用程序
 Name[zh_TW]=KDE4 Ruby 圖形介面應用程式
 Comment=KDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4
 Comment[ast]=Cenciella plantía Ruby pa KDE4, qu'herieda de XMLGuiWindow (necesita korundum4)
+Comment[bs]=KDE4 obični ruby predložak, naslijedjen iz XMLGuiWindow - treba korundum4
 Comment[ca]=Plantilla ruby senzilla del KDE4, hereva del XMLGuiWindow - necessita el «korundum4»
 Comment[ca@valencia]=Plantilla ruby senzilla del KDE4, hereva del XMLGuiWindow - necessita el «korundum4»
 Comment[da]=Simpel Ruby-skabelon til KDE 4. Den efterfølger XMLGuiWindows - kræver korundum4

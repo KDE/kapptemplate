@@ -2,6 +2,7 @@
 [General]
 Name=Akonadi Serializer Template
 Name[ast]=Plantía de serializador d'Akonadi
+Name[bs]=Akonadi serijalizer predložaka
 Name[ca]=Plantilla de serialitzador de l'Akonadi
 Name[ca@valencia]=Plantilla de serialitzador de l'Akonadi
 Name[da]=Akonadi serializer-skabelon
@@ -40,6 +41,7 @@ Name[zh_CN]=Akonadi 转换器模板
 Name[zh_TW]=Aknoadi 序列器樣本
 Comment=A template for an Akonadi data serializer plugin
 Comment[ast]=Una plantía para un complementu serializador de datos d'Akonadi
+Comment[bs]=Predložak za serijalizer dodatak za Akonadi
 Comment[ca]=Una plantilla per un connector de serialització de dades de l'Akonadi
 Comment[ca@valencia]=Una plantilla per un connector de serialització de dades de l'Akonadi
 Comment[da]=En skabelon til et Akonadi data-serializer-plugin

@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=KOffice Text-Plugin Template
+Name[bs]=KOffice predložak za dodatak tekstu
 Name[ca]=Plantilla de connector de text del KOffice
 Name[ca@valencia]=Plantilla de connector de text del KOffice
 Name[da]=KOffice skabelon til tekst-plugin
@@ -33,6 +34,7 @@ Name[x-test]=xxKOffice Text-Plugin Templatexx
 Name[zh_CN]=KOffice 文本插件模板
 Name[zh_TW]=KOffice 文字外掛程式樣本
 Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment[bs]=KOffice dodatni predložak tekstu za dodavanje novih svojstava za modifikovanje teksta (koristi OvajFormat za ime projekta)
 Comment[ca]=Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)
 Comment[da]=En skabelon til KOffice-plugin til at tilføje nye funktioner og ændre tekst (brug DetteFormat til projektnavnet)

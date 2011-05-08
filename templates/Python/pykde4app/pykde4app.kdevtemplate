@@ -2,6 +2,7 @@
 [General]
 Name=PyKDE4 GUI Application
 Name[ast]=Aplicación PyKDE4 con interface gráfica
+Name[bs]=PyKDE4 GUI aplikacija
 Name[ca]=Aplicació IGU PyKDE4
 Name[ca@valencia]=Aplicació IGU PyKDE4
 Name[cs]=GUI aplikace PyKDE4
@@ -44,6 +45,7 @@ Name[zh_CN]=PyKDE4 图形用户界面应用程序
 Name[zh_TW]=PyKDE4 圖形介面應用程式
 Comment=PyKDE4 template  - needs PyKDE4
 Comment[ast]=Plantía PyKDE4 (necesita PyKDE4)
+Comment[bs]=PyKDE4 predložak  - treba PyKDE4
 Comment[ca]=Plantilla PyKDE4 - necessita el PyKDE4
 Comment[ca@valencia]=Plantilla PyKDE4 - necessita el PyKDE4
 Comment[da]=PyKDE4-skabelon  - kræver PyKDE4

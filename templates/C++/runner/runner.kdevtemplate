@@ -2,6 +2,7 @@
 [General]
 Name=Plasma Runner Template
 Name[ast]=Plantía de llanzador pa Plasma
+Name[bs]=Plazma izvršni predložak
 Name[ca]=Plantilla de llançador per Plasma
 Name[ca@valencia]=Plantilla de llançador per Plasma
 Name[da]=Skabelon til Plasma-runner
@@ -42,6 +43,7 @@ Name[zh_CN]=Plasma 启动器模板
 Name[zh_TW]=Plasma 執行器樣本
 Comment=A plasma runner template
 Comment[ast]=Una plantía de llanzador pa Plasma
+Comment[bs]=Plazma izvršni predložak
 Comment[ca]=Una plantilla de llançador per Plasma
 Comment[ca@valencia]=Una plantilla de llançador per Plasma
 Comment[da]=En skabelon til plasma-runner

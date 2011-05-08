@@ -2,6 +2,7 @@
 Name=%{APPNAME}
 Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
+Name[bs]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
 Name[cs]=%{APPNAME}
@@ -49,6 +50,7 @@ Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE KPart Application
 GenericName[ast]=Una aplicación KPart de KDE
+GenericName[bs]=KDE KPart program
 GenericName[ca]=Una aplicació KPart del KDE
 GenericName[ca@valencia]=Una aplicació KPart del KDE
 GenericName[cs]=Aplikace KDE KPart

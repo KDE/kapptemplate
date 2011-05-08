@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=KOffice Shape Template (Flake)
+Name[bs]=KOffice predložak oblika (Pahuljica)
 Name[ca]=Plantilla de forma del KOffice (biblioteca Flake)
 Name[ca@valencia]=Plantilla de forma del KOffice (biblioteca Flake)
 Name[da]=KOffice form-skabelon (Flake)
@@ -32,6 +33,7 @@ Name[x-test]=xxKOffice Shape Template (Flake)xx
 Name[zh_CN]=KOffice 形状模板(基于 Flake 框架)
 Name[zh_TW]=KOffice 元件樣本（Flake）
 Comment=A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
+Comment[bs]=A KOffice predložak sa oblikom,  alatkom i odredištem (molimo koristite ThisFormat za ime projekta)
 Comment[ca]=Una plantilla de connector del KOffice amb una forma, una eina i un acoblador (si us plau, useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Una plantilla de connector del KOffice amb una forma, una eina i un acoblador (per favor, useu AquestFormat pel nom del projecte)
 Comment[da]=En skabelon til KOffice-plugin med en form, et værktøj og en dokker (brug venligst DetteFormat til projektnavnet)

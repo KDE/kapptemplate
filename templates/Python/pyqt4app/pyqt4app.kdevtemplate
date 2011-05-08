@@ -2,6 +2,7 @@
 [General]
 Name=PyQt4 GUI Application
 Name[ast]=Aplicación PyQt4 con interface gráfica
+Name[bs]=PyQt4 GUI aplikacija
 Name[ca]=Aplicació IGU PyQt4
 Name[ca@valencia]=Aplicació IGU PyQt4
 Name[cs]=GUI aplikace PyQt4
@@ -44,6 +45,7 @@ Name[zh_CN]=PyQt4 图形用户界面应用程序
 Name[zh_TW]=PyQt4 圖形介面應用程式
 Comment=PyQt template using a Designer file - needs PyQt4
 Comment[ast]=Plantía PyQt qu'usa un ficheru de Designer (necesita PyQt4)
+Comment[bs]=PyQt predložak koji koristi dizajnersku datoteku - treba PyQt4
 Comment[ca]=Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[ca@valencia]=Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[da]=PyQt-skabelon som bruger en Designer-fil - kræver PyQt4

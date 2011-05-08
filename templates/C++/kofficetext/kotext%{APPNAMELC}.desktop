@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=%{APPNAME} plugin
+Name[bs]=%{APPNAME} dodatak
 Name[ca]=Connector %{APPNAME}
 Name[ca@valencia]=Connector %{APPNAME}
 Name[cs]=%{APPNAME} modul
