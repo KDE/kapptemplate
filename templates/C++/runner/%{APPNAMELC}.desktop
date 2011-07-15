@@ -58,6 +58,7 @@ Comment[el]=εκτελεστής %{APPNAME}
 Comment[en_GB]=%{APPNAME} runner
 Comment[es]=Lanzador para %{APPNAME}
 Comment[et]=%{APPNAME} käivitaja
+Comment[fi]=%{APPNAME}-suoritusohjelma
 Comment[fr]=Lanceur %{APPNAME}
 Comment[ga]=Feidhmitheoir %{APPNAME}
 Comment[gl]=Executor %{APPNAME}
