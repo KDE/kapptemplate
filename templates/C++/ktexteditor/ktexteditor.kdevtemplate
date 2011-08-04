@@ -57,6 +57,7 @@ Comment[nb]=En KTextEditor-mal for programtillegg som utfører spesielle handlin
 Comment[nds]=En KTextEditor-Moduulvörlaag mit de sik in KWrite, Kate, KDevelop usw. besünner Textakschonen utföhren laat. (Bruuk DitFormaat as Projektnaam.)
 Comment[nl]=Een plug-in-sjabloon voor KTextEditor voor het doen van speciale tekstbewerkingen in KWrite, Kate, KDevelop etc. (gaarne DezeOpmaak gebruiken voor de projectnaam)
 Comment[nn]=Programtillegg-mal for KTextEditor, for tekstoperasjonar i KWrite, Kate, KDevelop osv. (bruk DetteFormatet for namnet på prosjektet)
+Comment[pl]=Wtyczka szablonu dla KTextEditor do wykonywania specjalnych operacji na tekście w  KWrite, Kate, KDevelop itp. (proszę użyć TegoFormatu jako nazwy projektu)
 Comment[pt]=Um modelo de 'plugin' do KTextEditor para efectuar operações especiais sobre o texto no KWrite, Kate, KDevelop, etc. (use por favor EsteFormato como nome do projecto)
 Comment[pt_BR]=Um modelo de 'plugin' do KTextEditor para efetuar operações especiais sobre o texto no KWrite, Kate, KDevelop, etc. (use por favor EsteFormato como nome do projeto)
 Comment[sr]=Шаблон прикључка за KTextEditor за извођење специјалних поступака у К‑писању, Кејт, К‑девелопу, итд. (име пројекта треба да буде OvogOblika)
