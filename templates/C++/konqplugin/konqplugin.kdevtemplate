@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KDE 4 Konqueror plugin
+Name=C++
 Name[bs]=KDE 4 Konqueror dodatak
 Name[ca]=Un connector del Konqueror del KDE 4
 Name[ca@valencia]=Un connector del Konqueror del KDE 4
@@ -35,7 +35,7 @@ Name[uk]=Додаток до Konqueror KDE 4
 Name[x-test]=xxKDE 4 Konqueror pluginxx
 Name[zh_CN]=KDE 4 Konqueror 插件
 Name[zh_TW]=KDE4 Konqueror 外掛程式
-Comment=KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
+Comment=KDE 4 Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
 Comment[bs]=KDE4 jednostavan predložak temeljen na CMake-u, nasljeđuje od KParts::Plugin i pokazuje kako napisati glavni dodatak
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
 Comment[ca@valencia]=Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
@@ -67,6 +67,6 @@ Comment[uk]=Простий шаблон програми для KDE4, засно
 Comment[x-test]=xxKDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror pluginxx
 Comment[zh_CN]=基于 CMake，继承自 KParts::Plugin 类，用于演示如何使用 KPart 的 KDE4 简单模板
 Comment[zh_TW]=基於 CMake 的 KDE4 簡單樣本，從 KParts::Plugin 繼承而來，用於展示如何撰寫 konqueror 外掛程式
-Category=C++/KDE
+Category=KDE/Konqueror Plugin
 Icon=konqplugin.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp

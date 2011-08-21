@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KDE 4 Ruby GUI Application
+Name=Ruby
 Name[ast]=Aplicación Ruby pa KDE 4 con interface gráfica
 Name[bs]=KDE 4 Ruby GUI aplikacija
 Name[ca]=Aplicació IGU en Ruby del KDE 4
@@ -41,7 +41,7 @@ Name[uk]=Програма з графічним інтерфейсом для KD
 Name[x-test]=xxKDE 4 Ruby GUI Applicationxx
 Name[zh_CN]=KDE 4 Ruby 图形用户界面应用程序
 Name[zh_TW]=KDE4 Ruby 圖形介面應用程式
-Comment=KDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4
+Comment=KDE 4 Ruby GUI Application. KDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4
 Comment[ast]=Cenciella plantía Ruby pa KDE4, qu'herieda de XMLGuiWindow (necesita korundum4)
 Comment[bs]=KDE4 obični ruby predložak, naslijedjen iz XMLGuiWindow - treba korundum4
 Comment[ca]=Plantilla ruby senzilla del KDE4, hereva del XMLGuiWindow - necessita el «korundum4»
@@ -80,6 +80,6 @@ Comment[uk]=Простий шаблон KDE4 на ruby, успадковує к�
 Comment[x-test]=xxKDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4xx
 Comment[zh_CN]=KDE4 简单 ruby 模板，继承自 XMLGuiWindow - 需要 korundum4
 Comment[zh_TW]=KDE4 的簡單 ruby 樣本，從 XMLGuiWindow 繼承而來─需要 korundum4
-Category=Ruby
+Category=KDE/Graphical
 Icon=kderubyapp.png
 ShowFilesAfterGeneration=%{dest}/src/main.rb

@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=Plasma Applet Template
+Name=C++
 Name[ast]=Plantía de miniaplicación pa Plasma
 Name[bs]=Plasma predložak za dio koda korišten za GUI
 Name[ca]=Plantilla de miniaplicació Plasma
@@ -44,7 +44,7 @@ Name[uk]=Шаблон аплету Плазми
 Name[x-test]=xxPlasma Applet Templatexx
 Name[zh_CN]=Plasma 小程序模板
 Name[zh_TW]=Plasma 小程式樣本
-Comment=A plasma applet template displaying an icon and a text
+Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text
 Comment[ast]=Una plantía de miniaplicación pa Plasma qu'amuesa un iconu y un testu
 Comment[bs]=Plasma predložak za dio koda korišten za GUI prikazuje ikonu i tekst
 Comment[ca]=Una plantilla de miniaplicació plasma que mostra una icona i un text
@@ -86,5 +86,5 @@ Comment[uk]=Шаблон аплету Плазми, який показу пік
 Comment[x-test]=xxA plasma applet template displaying an icon and a textxx
 Comment[zh_CN]=显示图标和文本的 plasma 小程序模板
 Comment[zh_TW]=Plasma 小程式樣本，用於顯示圖示與文字
-Category=C++/KDE
+Category=KDE/Plasmoid
 Icon=plasma-applet.png

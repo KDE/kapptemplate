@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KTextEditor Plugin Template
+Name=C++
 Name[bs]=KTextEditor predložak za dodatke
 Name[ca]=Plantilla de connector del KTextEditor
 Name[ca@valencia]=Plantilla de connector del KTextEditor
@@ -37,7 +37,7 @@ Name[uk]=Шаблон додатка KTextEditor
 Name[x-test]=xxKTextEditor Plugin Templatexx
 Name[zh_CN]=KTextEditor 插件模板
 Name[zh_TW]=KTextEditor 外掛程式樣本
-Comment=A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
+Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
 Comment[bs]=A KTextEditor predložak za dodatke za izvršavanje specijalnih operacija sa tekstom u KWrite-u, Kate-u, KDevelop-u itd. (koristite ovaj format za ime projekta)
 Comment[ca]=Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
@@ -69,4 +69,4 @@ Comment[uk]=Шаблон додатка KTextEditor, призначений дл
 Comment[x-test]=xxA KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)xx
 Comment[zh_CN]=KTextEditor 插件模板，用于向 KWrite、Kate、KDevelop 中的文本进行特殊操作(工程名称请使用 ThisFormat)
 Comment[zh_TW]=KTextEditor 外掛程式樣本，用於 KWrite、Kate、KDevelop 等對文字的特殊操作。（專案名稱請使用此格式）
-Category=C++/KDE
+Category=KDE/Kate Plugin

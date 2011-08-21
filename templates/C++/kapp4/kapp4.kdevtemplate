@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KDE 4 GUI Application
+Name=C++ KDE
 Name[ast]=Una aplicación pal entornu gráficu de KDE 4
 Name[bs]=KDE 4 GUI aplikacija
 Name[ca]=Aplicació IGU del KDE 4
@@ -44,7 +44,7 @@ Name[uk]=Програма з графічним інтерфейсом для KD
 Name[x-test]=xxKDE 4 GUI Applicationxx
 Name[zh_CN]=KDE 4 图形用户界面应用程序
 Name[zh_TW]=KDE 4 圖形介面應用程式
-Comment=KDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KConfig XT
+Comment=KDE 4 GUI Application. KDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KConfig XT
 Comment[ast]=Cenciella plantía pa KDE 4 basada en CMake, qu'herieda de XMLGuiWindow y amosa cómo usar KConfig XT
 Comment[bs]=KDE4 jednostavan predložak temeljen na CMake-u, nasljeđuje od XMLGuiWindow-a i pokazuje kako koristiti KConfig XT
 Comment[ca]=Plantilla simple del KDE4 basada en el CMake, hereva del XMLGuiWindow i que demostra com usar el KConfig XT
@@ -84,6 +84,6 @@ Comment[uk]=Простий шаблон програми для KDE4, засно
 Comment[x-test]=xxKDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KConfig XTxx
 Comment[zh_CN]=基于 CMake，继承自 XMLGuiWindow 和演示如何使用 KConfig XT 的 KDE4 简单模板
 Comment[zh_TW]=基於 CMake 的 KDE4 簡單應用程式樣本，從 XMLGuiWindow 繼承而來，用於展示如何使用 KConfig XT
-Category=C++/KDE
+Category=KDE/Graphical
 Icon=kapp4.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp

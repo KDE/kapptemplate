@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=PyQt4 GUI Application
+Name=Python Qt-only
 Name[ast]=Aplicación PyQt4 con interface gráfica
 Name[bs]=PyQt4 GUI aplikacija
 Name[ca]=Aplicació IGU PyQt4
@@ -44,7 +44,7 @@ Name[x-test]=xxPyQt4 GUI Applicationxx
 Name[zh_CN]=PyQt4 图形用户界面应用程序
 Name[zh_TW]=PyQt4 圖形介面應用程式
 Category=Python
-Comment=PyQt template using a Designer file - needs PyQt4
+Comment=PyQt4 GUI Application. PyQt tempate using a Designer file - needs PyQt4
 Comment[ast]=Plantía PyQt qu'usa un ficheru de Designer (necesita PyQt4)
 Comment[bs]=PyQt predložak koji koristi dizajnersku datoteku - treba PyQt4
 Comment[ca]=Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
@@ -85,3 +85,4 @@ Comment[x-test]=xxPyQt template using a Designer file - needs PyQt4xx
 Comment[zh_CN]=使用 Designer 文件的 PyQt 模板 - 需要 PyQt4
 Comment[zh_TW]=使用設計家檔案的 PyQt 樣本─需要 PyQt4
 Icon=pyqt4app.png
+Category=KDE/Graphical

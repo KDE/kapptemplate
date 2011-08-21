@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KOffice Text-Plugin Template
+Name=C++
 Name[bs]=KOffice predložak za dodatak tekstu
 Name[ca]=Plantilla de connector de text del KOffice
 Name[ca@valencia]=Plantilla de connector de text del KOffice
@@ -34,7 +34,7 @@ Name[uk]=Шаблон текстового додатка KOffice
 Name[x-test]=xxKOffice Text-Plugin Templatexx
 Name[zh_CN]=KOffice 文本插件模板
 Name[zh_TW]=KOffice 文字外掛程式樣本
-Comment=A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
+Comment=KOffice Text-Plugin Template. A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[bs]=KOffice dodatni predložak tekstu za dodavanje novih svojstava za modifikovanje teksta (koristi OvajFormat za ime projekta)
 Comment[ca]=Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)
@@ -66,4 +66,4 @@ Comment[uk]=Шаблон додатка KOffice, призначений для �
 Comment[x-test]=xxA KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)xx
 Comment[zh_CN]=KOffice 插件模板，用于向文件修改功能加入新特性(工程名称请使用 ThisFormat)
 Comment[zh_TW]=KOffice 外掛程式樣本，用於新增變更文字的功能（專案名稱請使用此格式）
-Category=C++/KDE
+Category=KDE/KOffice

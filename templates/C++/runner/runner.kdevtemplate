@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=Plasma Runner Template
+Name=C++
 Name[ast]=Plantía de llanzador pa Plasma
 Name[bs]=Plazma izvršni predložak
 Name[ca]=Plantilla de llançador per Plasma
@@ -41,7 +41,7 @@ Name[uk]=Шаблон засобу запуску Плазми
 Name[x-test]=xxPlasma Runner Templatexx
 Name[zh_CN]=Plasma 启动器模板
 Name[zh_TW]=Plasma 執行器樣本
-Comment=A plasma runner template
+Comment=Plasma Runner Template. A plasma runner template
 Comment[ast]=Una plantía de llanzador pa Plasma
 Comment[bs]=Plazma izvršni predložak
 Comment[ca]=Una plantilla de llançador per Plasma
@@ -82,5 +82,5 @@ Comment[uk]=Шаблон засобу запуску Плазми
 Comment[x-test]=xxA plasma runner templatexx
 Comment[zh_CN]=一个 plasma 启动器模板
 Comment[zh_TW]=Plasma 執行器樣本
-Category=C++/KDE
+Category=KDE/KRunner
 Icon=runner.png

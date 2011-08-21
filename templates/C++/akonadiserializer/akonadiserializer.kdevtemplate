@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=Akonadi Serializer Template
+Name=C++
 Name[ast]=Plantía de serializador d'Akonadi
 Name[bs]=Akonadi serijalizer predložaka
 Name[ca]=Plantilla de serialitzador de l'Akonadi
@@ -40,7 +40,7 @@ Name[uk]=Шаблон перетворювача у послідовну фор�
 Name[x-test]=xxAkonadi Serializer Templatexx
 Name[zh_CN]=Akonadi 转换器模板
 Name[zh_TW]=Aknoadi 序列器樣本
-Comment=A template for an Akonadi data serializer plugin
+Comment=Akonadi Serializer Template. A template for an Akonadi data serializer plugin
 Comment[ast]=Una plantía para un complementu serializador de datos d'Akonadi
 Comment[bs]=Predložak za serijalizer dodatak za Akonadi
 Comment[ca]=Una plantilla per un connector de serialització de dades de l'Akonadi
@@ -79,5 +79,5 @@ Comment[uk]=Шаблон для додатка перетворення дани
 Comment[x-test]=xxA template for an Akonadi data serializer pluginxx
 Comment[zh_CN]=Akonadi 数据转换器插件模板
 Comment[zh_TW]=Akonadi 資料序列器外掛程式樣本
-Category=C++/KDE
+Category=KDE/Akonadi Serializer
 Icon=akonadi-serializer.png

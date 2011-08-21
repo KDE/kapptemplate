@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=Akonadi Resource Template
+Name=C++
 Name[ast]=Plantía de recursos d'Akonadi
 Name[bs]=Akonadi predložak resursa
 Name[ca]=Plantilla de recurs de l'Akonadi
@@ -42,7 +42,7 @@ Name[uk]=Шаблон ресурсу Akonadi
 Name[x-test]=xxAkonadi Resource Templatexx
 Name[zh_CN]=Akonadi 资源模板
 Name[zh_TW]=Aknoadi 資源樣本
-Comment=A template for an Akonadi PIM data resource
+Comment=Akonadi Resource Template. A template for an Akonadi PIM data resource
 Comment[ast]=Una plantía pa un recursu de datos PIM d'Akonadi
 Comment[bs]=Predložak za Akonadi PIM resurs podataka
 Comment[ca]=Una plantilla per un recurs de dades PIM de l'Akonadi
@@ -82,5 +82,5 @@ Comment[uk]=Шаблон для ресурсу даних PIM Akonadi
 Comment[x-test]=xxA template for an Akonadi PIM data resourcexx
 Comment[zh_CN]=Akonadi 个人信息管理数据资源模板
 Comment[zh_TW]=Akonadi PIM 資料資源樣本
-Category=C++/KDE
+Category=KDE/Akonadi Resource
 Icon=akonadi-resources.png
