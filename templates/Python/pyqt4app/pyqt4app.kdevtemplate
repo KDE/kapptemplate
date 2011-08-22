@@ -2,6 +2,6 @@
 [General]
 Name=Python Qt-only
 Category=Python
-Comment=PyQt4 GUI Application. PyQt tempate using a Designer file - needs PyQt4
+Comment=PyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4
 Icon=pyqt4app.png
 Category=KDE/Graphical
