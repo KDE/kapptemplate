@@ -1,5 +1,15 @@
 # KDE Config File
 [General]
 Name=C++
+Name[nl]=C++
+Name[pt]=C++
+Name[pt_BR]=C++
+Name[uk]=C++
+Name[x-test]=xxC++xx
 Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
+Comment[nl]=Sjabloon voor KTextEditor-plug-in. Een plug-in-sjabloon voor KTextEditor voor het doen van speciale tekstbewerkingen in KWrite, Kate, KDevelop etc. (gaarne DezeOpmaak gebruiken voor de projectnaam)
+Comment[pt]=Modelo de 'Plugin' do KTextEditor. Um modelo de 'plugin' do KTextEditor para efectuar operações especiais sobre o texto no KWrite, Kate, KDevelop, etc. (use por favor EsteFormato como nome do projecto)
+Comment[pt_BR]=Modelo de plugin do KTextEditor. Um modelo de plugin do KTextEditor para efetuar operações especiais sobre o texto no KWrite, Kate, KDevelop, etc. (use por favor EsteFormato como nome do projeto)
+Comment[uk]=Шаблон додатка KTextEditor. Шаблон додатка KTextEditor, призначений для виконання дій над текстом у KWrite, Kate, KDevelop тощо. Будь ласка, використовуйте назву проекту у форматі ThisFormat.
+Comment[x-test]=xxKTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)xx
 Category=KDE/Kate Plugin

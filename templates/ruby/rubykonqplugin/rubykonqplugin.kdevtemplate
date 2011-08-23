@@ -1,7 +1,17 @@
 # KDE Config File
 [General]
 Name=Ruby
+Name[nl]=Ruby
+Name[pt]=Ruby
+Name[pt_BR]=Ruby
+Name[uk]=Ruby
+Name[x-test]=xxRubyxx
 Comment=KDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
+Comment[nl]=KDE 4 Ruby plugin voor Konqueror. Eenvoudig KDE4 sjabloon gebaseerd op CMake, krijgt zaken van KParts::Plugin en demonstreert hoe een konqueror-plug-in in Ruby te schrijven
+Comment[pt]='Plugin' do Konqueror em Ruby para o KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror em Ruby
+Comment[pt_BR]=Plugin do Konqueror em Ruby para o KDE4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um plug-in para o Konqueror em Ruby
+Comment[uk]=Додаток до Konqueror з KDE 4 на Ruby. Простий шаблон програми для KDE4, заснований на CMake, успадковує клас KParts::Plugin і є зразком додатка до Konqueror мовою Ruby.
+Comment[x-test]=xxKDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Rubyxx
 Category=KDE/Konqueror Plugin
 Icon=konqplugin.png
 ShowFilesAfterGeneration=%{dest}/%{APPNAME}/%{APPNAME}.rb

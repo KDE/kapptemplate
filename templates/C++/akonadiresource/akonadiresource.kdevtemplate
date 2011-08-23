@@ -1,6 +1,16 @@
 # KDE Config File
 [General]
 Name=C++
+Name[nl]=C++
+Name[pt]=C++
+Name[pt_BR]=C++
+Name[uk]=C++
+Name[x-test]=xxC++xx
 Comment=Akonadi Resource Template. A template for an Akonadi PIM data resource
+Comment[nl]=Akonadi sjabloon voor hulpbron. Een sjabloon voor een Akonadi PIM gegevenshulpbron
+Comment[pt]=Modelo de Recurso do Akonadi. Um modelo para um recurso de dados PIM do Akonadi
+Comment[pt_BR]=Modelo de recurso do Akonadi. Um modelo para um recurso de dados PIM do Akonadi
+Comment[uk]=Шаблон ресурсу Akonadi. Шаблон для ресурсу даних PIM Akonadi
+Comment[x-test]=xxAkonadi Resource Template. A template for an Akonadi PIM data resourcexx
 Category=KDE/Akonadi Resource
 Icon=akonadi-resources.png

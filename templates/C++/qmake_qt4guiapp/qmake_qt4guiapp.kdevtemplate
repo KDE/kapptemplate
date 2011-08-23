@@ -1,6 +1,11 @@
 # KDE Config File
 [General]
 Name=Qt - QMake C++
+Name[nl]=Qt - QMake C++
+Name[pt]=Qt - QMake C++
+Name[pt_BR]=Qt - QMake C++
+Name[uk]=Qt — QMake C++
+Name[x-test]=xxQt - QMake C++xx
 Comment=Qt4 GUI Application. Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
 Icon=qmake4gui.png

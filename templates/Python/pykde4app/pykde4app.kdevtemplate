@@ -1,6 +1,16 @@
 # KDE Config File
 [General]
 Name=Python
+Name[nl]=Python
+Name[pt]=Python
+Name[pt_BR]=Python
+Name[uk]=Python
+Name[x-test]=xxPythonxx
 Comment=PyKDE4 GUI Application. PyKDE4 template - needs PyKDE4
+Comment[nl]=PyKDE4 GUI toepassing. PyKDE4-sjabloon - heeft PyKDE4 nodig
+Comment[pt]=Aplicação Gráfica em PyKDE4. Modelo do PyKDE4 - necessita do PyKDE4
+Comment[pt_BR]=Aplicativo gráfico do PyKDE4. Modelo do PyKDE4 - requer o PyKDE4
+Comment[uk]=Програма PyKDE4 з графічним інтерфейсом. Шаблон PyKDE4 — потрібен PyKDE4
+Comment[x-test]=xxPyKDE4 GUI Application. PyKDE4 template - needs PyKDE4xx
 Icon=pykde4.png
 Category=KDE/Graphical
