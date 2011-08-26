@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
