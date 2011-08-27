@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text

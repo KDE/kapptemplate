@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)

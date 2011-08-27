@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=KDE 4 Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin

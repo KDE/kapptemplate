@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=Akonadi Serializer Template. A template for an Akonadi data serializer plugin

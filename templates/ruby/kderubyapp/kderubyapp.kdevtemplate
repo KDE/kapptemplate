@@ -4,6 +4,7 @@ Name=Ruby
 Name[nl]=Ruby
 Name[pt]=Ruby
 Name[pt_BR]=Ruby
+Name[ug]=Ruby
 Name[uk]=Ruby
 Name[x-test]=xxRubyxx
 Comment=KDE 4 Ruby GUI Application. KDE4 simple ruby template, inherits from XMLGuiWindow - needs korundum4

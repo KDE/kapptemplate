@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=KOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)

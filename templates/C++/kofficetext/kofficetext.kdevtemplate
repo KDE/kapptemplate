@@ -5,6 +5,7 @@ Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
 Name[pt_BR]=C++
+Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=KOffice Text-Plugin Template. A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)

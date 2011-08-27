@@ -4,6 +4,7 @@ Name=Ruby
 Name[nl]=Ruby
 Name[pt]=Ruby
 Name[pt_BR]=Ruby
+Name[ug]=Ruby
 Name[uk]=Ruby
 Name[x-test]=xxRubyxx
 Comment=KDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
