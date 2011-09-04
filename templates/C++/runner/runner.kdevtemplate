@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[nb]=C++
 Name[nds]=C++
 Name[nl]=C++
 Name[pt]=C++
@@ -10,6 +11,7 @@ Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
 Comment=Plasma Runner Template. A plasma runner template
+Comment[nb]=Plasma kjørermal. En Plasma-kjørermal
 Comment[nl]=Sjabloon voor Plasma-runner. Een plasma-starter sjabloon
 Comment[pt]=Modelo de Módulo de Execução do Plasma. Um modelo de módulos de execução do Plasma
 Comment[pt_BR]=Modelo de módulo de execução do Plasma. Um modelo de módulos de execução do Plasma
