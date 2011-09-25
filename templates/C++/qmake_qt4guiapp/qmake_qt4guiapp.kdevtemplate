@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Qt - QMake C++
+Name[ca]=Qt - QMake C++
 Name[nb]=Qt – QMake C++
 Name[nl]=Qt - QMake C++
 Name[pt]=Qt - QMake C++
@@ -10,6 +11,7 @@ Name[uk]=Qt — QMake C++
 Name[x-test]=xxQt - QMake C++xx
 Name[zh_TW]=Qt - QMake C++
 Comment=Qt4 GUI Application. Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
+Comment[ca]=Aplicació IGU Qt4. Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[nb]=Qt4 GUI-program. Lag et QMake/Qt4-basert program med grafisk brukergrensesnitt (kryssplattform)
 Comment[nl]=Qt4 GUI-toepassing. Genereert een toepassing gebaseerd op QMake/Qt4 met een grafische interface (crossplatform compatibel)
 Comment[pt]=Aplicação Gráfica do Qt4. Gera uma aplicação baseada no QMake/Qt4 com uma interface gráfica (compatível com várias plataformas)

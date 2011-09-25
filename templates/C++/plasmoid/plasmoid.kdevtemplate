@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[ca]=C++
 Name[nb]=C++
 Name[nds]=C++
 Name[nl]=C++
@@ -12,6 +13,7 @@ Name[uk]=C++
 Name[x-test]=xxC++xx
 Name[zh_TW]=C++
 Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text
+Comment[ca]=Plantilla de miniaplicació del Plasma, Una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[nb]=Plasma-mal. En mal for et Plasma-element som viser et ikon og en tekst
 Comment[nl]=Sjabloon voor Plasma-applet. Een sjabloon voor een plasma-applet dat een pictogram en tekst toont
 Comment[pt]=Modelo de 'Applet' do Plasma. Um modelo de 'applet' do Plasma que mostra um ícone e algum texto

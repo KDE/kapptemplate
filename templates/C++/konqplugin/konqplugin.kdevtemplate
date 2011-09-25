@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[ca]=C++
 Name[nb]=C++
 Name[nds]=C++
 Name[nl]=C++
@@ -12,6 +13,7 @@ Name[uk]=C++
 Name[x-test]=xxC++xx
 Name[zh_TW]=C++
 Comment=KDE 4 Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
+Comment[ca]=Connector del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
 Comment[nb]=KDE 4 Konqueror programtillegg. Enkel KDE 4-mal basert på CMake, arver fra KParts::Plugin og viser hvordan du kan skrive et programtillegg for konqueror
 Comment[nl]=KDE 4 plugin voor Konqueror. Eenvoudig KDE4 sjabloon gebaseerd op CMake, krijgt zaken van KParts::Plug-in en demonstreert hoe een konqueror-plug-in te schrijven
 Comment[pt]='Plugin' do Konqueror para o KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror
