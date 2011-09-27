@@ -1,0 +1,1 @@
+install( FILES main.qml  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAMELC}/qml/ )

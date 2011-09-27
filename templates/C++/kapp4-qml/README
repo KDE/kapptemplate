@@ -1,0 +1,47 @@
+How To Build This Template (don't forget to remove this file from your released project)
+-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+--- On Unix:
+
+cd <project_name_path>
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
+make
+make install or su -c 'make install'
+
+where $KDEDIRS points to your KDE installation prefix.
+
+to uninstall the project:
+make uninstall or su -c 'make uninstall'
+
+Note: you can use another build path. Then cd in your build dir and:
+export KDE_SRC=path_to_your_src
+cmake $KDE_SRC -DCMAKE_INSTALL_PREFIX=$KDEDIRS -DCMAKE_BUILD_TYPE=Debug
+
+--- On Windows:
+
+cd <project_name_path>
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=%KDEDIRS% -DCMAKE_BUILD_TYPE=Debug ..      <- do not forget the ..
+[n]make
+[n]make install
+
+where %KDEDIRS% points to your KDE installation prefix.
+
+to uninstall the project:
+[n]make uninstall
+
+Note: use nmake if you're building with the Visual Studio compiler, or make
+if you're using the minGW compiler
+
+----------------------------
+This template shows how one method on how to use QML and C++ with KDE and KConfig XT.
+----------------------------
+
+Please send all comments to:
+Anne-Marie Mahfouf
+annma@kde.org
+
+Last update: September 2011

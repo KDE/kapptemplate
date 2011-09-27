@@ -1,5 +1,6 @@
 set(apptemplate_DIRS
     kapp4
+    kapp4-qml
     plasmoid
     runner
     flake
