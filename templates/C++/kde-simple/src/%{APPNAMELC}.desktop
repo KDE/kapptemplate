@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=%{APPNAME}
+Exec=%{APPNAMELC} %i -caption "%c"
+Icon=%{APPNAMELC}
+Type=Application
+X-DocPath=%{APPNAMELC}/index.html
+GenericName=A Simple KDE Application
