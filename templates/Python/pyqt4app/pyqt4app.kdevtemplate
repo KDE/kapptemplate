@@ -2,6 +2,7 @@
 [General]
 Name=Python Qt-only
 Name[ca]=Python només Qt
+Name[lt]=Python tik Qt
 Name[nb]=Python bare Qt
 Name[nl]=Alleen Python Qt
 Name[pt]=Python apenas-Qt

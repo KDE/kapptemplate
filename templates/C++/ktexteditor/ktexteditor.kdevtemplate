@@ -2,6 +2,8 @@
 [General]
 Name=C++
 Name[ca]=C++
+Name[cs]=C++
+Name[lt]=C++
 Name[nb]=C++
 Name[nds]=C++
 Name[nl]=C++

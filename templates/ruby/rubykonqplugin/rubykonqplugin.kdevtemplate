@@ -2,6 +2,8 @@
 [General]
 Name=Ruby
 Name[ca]=Ruby
+Name[cs]=Ruby
+Name[lt]=Ruby
 Name[nb]=Ruby
 Name[nl]=Ruby
 Name[pt]=Ruby
