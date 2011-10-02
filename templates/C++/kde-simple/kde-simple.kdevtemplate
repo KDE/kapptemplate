@@ -1,14 +1,18 @@
 # KDE Config File
 [General]
 Name=Minimal C++ KDE
+Name[ca]=C++ KDE mínima
 Name[nl]=Minimale C++ KDE
 Name[pt]=C++ para KDE Mínima
+Name[pt_BR]=C++ para KDE mínima
 Name[sv]=Minimal C++ KDE
 Name[uk]=Мінімальна C++, KDE
 Name[x-test]=xxMinimal C++ KDExx
 Comment=A very basic KDE GUI Application in C++
+Comment[ca]=Una aplicació IGU del KDE molt bàsica en C++
 Comment[nl]=Een zeer basale KDE GUI-toepassing in C++
 Comment[pt]=Uma aplicação gráfica muito básica do KDE em C++
+Comment[pt_BR]=Um aplicativo gráfico muito básico do KDE em C++
 Comment[sv]=Ett mycket enkelt KDE-program med grafiskt gränssnitt i C++
 Comment[uk]=Мінімалістична програма з графічним інтерфейсом KDE на C++
 Comment[x-test]=xxA very basic KDE GUI Application in C++xx
