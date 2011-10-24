@@ -14,6 +14,7 @@ Name[fi]=%{APPNAME}-liitännäinen
 Name[fr]=Module externe %{APPNAME}
 Name[ga]=Breiseán %{APPNAME}
 Name[gl]=Extensión para %{APPNAME}
+Name[hu]=%{APPNAME} bővítmény
 Name[it]=Estensione di %{APPNAME}
 Name[kk]=%{APPNAME} плагині
 Name[km]=កម្មវិធី​ជំនួយ​ %{APPNAME} ​
