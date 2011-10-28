@@ -26,4 +26,4 @@ Comment[sv]=Mall för Koffice-textinsticksprogram. En Koffice-insticksmodulmall 
 Comment[uk]=Шаблон додатка роботи з текстом KOffice. Шаблон додатка KOffice, призначений для додавання нових можливостей зміни тексту (будь ласка, використовуйте назву проекту у форматі ThisFormat)
 Comment[x-test]=xxKOffice Text-Plugin Template. A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)xx
 Comment[zh_TW]=KOffice 文字外掛程式樣本。是一套 KOffice 外掛程式樣本，用於新增變更文字的功能（專案名稱請使用此格式）
-Category=KDE/KOffice
+Category=KOffice/Text-Plugin

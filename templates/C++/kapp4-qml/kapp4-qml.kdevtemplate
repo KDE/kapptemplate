@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
-Name=KDE 4 QML Application
+Name=QML Application
 Name[ca]=Una aplicació QML del KDE4
 Name[cs]=Aplikace KDE 4 QML
 Name[hu]=KDE 4 QML alkalmazás

@@ -26,4 +26,4 @@ Comment[sv]=Koffice-formmall (flinga). En Koffice-insticksmall med en form, ett 
 Comment[uk]=Шаблон форми KOffice (Flake). Шаблон додатка KOffice з формою, інструментом або панеллю (будь ласка, використовуйте назву проекту у форматі ThisFormat)
 Comment[x-test]=xxKOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)xx
 Comment[zh_TW]=KOffice 元件樣本（Flake）。是一套 KOffice 樣本，包含元件、工具與嵌入器（專案名稱請使用此格式）
-Category=KDE/KOffice
+Category=KOffice/Flake
