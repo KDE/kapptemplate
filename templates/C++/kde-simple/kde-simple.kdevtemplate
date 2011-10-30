@@ -10,6 +10,7 @@ Name[pt_BR]=C++ para KDE mínima
 Name[sv]=Minimal C++ KDE
 Name[uk]=Мінімальна C++, KDE
 Name[x-test]=xxMinimal C++ KDExx
+Name[zh_CN]=最小 C++ KDE
 Name[zh_TW]=Minimal C++ KDE
 Comment=A very basic KDE GUI Application in C++
 Comment[ca]=Una aplicació IGU del KDE molt bàsica en C++

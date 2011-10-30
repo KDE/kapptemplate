@@ -10,6 +10,7 @@ Name[pt_BR]=Python somente para Qt
 Name[sv]=Python, bara Qt
 Name[uk]=Python, лише Qt
 Name[x-test]=xxPython Qt-onlyxx
+Name[zh_CN]=仅 Python Qt
 Name[zh_TW]=Python Qt-only
 Category=Python
 Comment=PyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4

@@ -14,6 +14,7 @@ Name[sv]=Ruby
 Name[ug]=Ruby
 Name[uk]=Ruby
 Name[x-test]=xxRubyxx
+Name[zh_CN]=Ruby
 Name[zh_TW]=Ruby
 Comment=KDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
 Comment[ca]=Connector Ruby del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby

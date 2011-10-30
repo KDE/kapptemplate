@@ -15,6 +15,7 @@ Name[sv]=C++
 Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
+Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Akonadi Serializer Template. A template for an Akonadi data serializer plugin
 Comment[ca]=Plantilla de serialitzador de l'Akonadi. Una plantilla per un connector de serialització de dades de l'Akonadi

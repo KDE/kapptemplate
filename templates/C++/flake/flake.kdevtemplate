@@ -15,6 +15,7 @@ Name[sv]=C++
 Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
+Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
 Comment[ca]=Plantilla de forma del KOffice (floc). Una plantilla de connector del KOffice (amb una forma, una eina i un acoblador (si us plau, useu AquestFormat pel nom del projecte)

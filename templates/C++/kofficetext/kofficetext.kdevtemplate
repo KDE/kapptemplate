@@ -15,6 +15,7 @@ Name[sv]=C++
 Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
+Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KOffice Text-Plugin Template. A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)
 Comment[ca]=Plantilla de connector de text del KOffice. Una plantilla de connector del KOffice per afegir noves característiques per modificar text (useu AquestFormat pel nom del projecte)

@@ -15,6 +15,7 @@ Name[sv]=C++
 Name[ug]=C++
 Name[uk]=C++
 Name[x-test]=xxC++xx
+Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
 Comment[ca]=Plantilla de connector del KTextEditor. Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
