@@ -2,6 +2,7 @@
 [General]
 Name=QML Application
 Name[pt]=Aplicação em QML
+Name[pt_BR]=Aplicativo QML
 Name[sv]=QML-program
 Name[uk]=Програма мовою QML
 Name[x-test]=xxQML Applicationxx
