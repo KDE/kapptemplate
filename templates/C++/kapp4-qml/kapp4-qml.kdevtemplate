@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=QML Application
+Name[ca]=Una aplicació QML
 Name[cs]=Aplikace QML
 Name[nl]=QML-toepassing
 Name[pt]=Aplicação em QML
