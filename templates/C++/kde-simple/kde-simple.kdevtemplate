@@ -15,6 +15,7 @@ Name[zh_TW]=Minimal C++ KDE
 Comment=A very basic KDE GUI Application in C++
 Comment[ca]=Una aplicació IGU del KDE molt bàsica en C++
 Comment[cs]=Úplně základní GUI aplikace KDE v C++
+Comment[de]=Eine sehr einfache KDE-Anwendung mit grafischer Oberfläche in C++
 Comment[nb]=Et svært enkelt KDE GUI-program i C++
 Comment[nl]=Een zeer basale KDE GUI-toepassing in C++
 Comment[pt]=Uma aplicação gráfica muito básica do KDE em C++
