@@ -18,6 +18,7 @@ Name[zh_CN]=Python
 Name[zh_TW]=Python
 Comment=PyKDE4 GUI Application. PyKDE4 template - needs PyKDE4
 Comment[ca]=Aplicació IGU PyKDE4. Plantilla PyKDE4 - necessita el PyKDE4
+Comment[de]=Grafische PyKDE4-Anwendung. Vorlage für PyKDE4 – benötigt PyKDE4
 Comment[nb]=PyKDE4 GUI-program. PyKDE4-mal – trenger PyKDE4
 Comment[nl]=PyKDE4 GUI toepassing. PyKDE4-sjabloon - heeft PyKDE4 nodig
 Comment[pt]=Aplicação Gráfica em PyKDE4. Modelo do PyKDE4 - necessita do PyKDE4
