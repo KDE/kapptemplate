@@ -23,6 +23,7 @@ Comment[pt_BR]=Um aplicativo gráfico muito básico do KDE em C++
 Comment[sv]=Ett mycket enkelt KDE-program med grafiskt gränssnitt i C++
 Comment[uk]=Мінімалістична програма з графічним інтерфейсом KDE на C++
 Comment[x-test]=xxA very basic KDE GUI Application in C++xx
+Comment[zh_CN]=非常简单的 C++ KDE GUI 应用程序
 Comment[zh_TW]=最基本的 C++ KDE 圖形介面應用程式
 Category=KDE/Graphical
 Icon=kde-simple.png

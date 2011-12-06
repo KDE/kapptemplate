@@ -26,6 +26,7 @@ Comment[pt_BR]=Modelo de miniaplicativo do Plasma. Um modelo de miniaplicativo d
 Comment[sv]=Mall för Plasma-miniprogram. En mall för ett Plasma-miniprogram som visar en ikon och en text
 Comment[uk]=Шаблон аплету Плазми. Шаблон аплету Плазми, який показу піктограму і текст
 Comment[x-test]=xxPlasma Applet Template. A plasma applet template displaying an icon and a textxx
+Comment[zh_CN]=Plasma 小程序模板。显示图标和文本的 plasma 小程序模板
 Comment[zh_TW]=Plasma 小程式樣本，用於顯示圖示與文字
 Category=KDE/Plasmoid
 Icon=plasma-applet.png

@@ -27,6 +27,7 @@ Comment[pt_BR]=Modelo de módulo de execução do Plasma. Um modelo de módulos 
 Comment[sv]=Plasma-mall för körning av program. Mall för Plasma körning av program
 Comment[uk]=Шаблон засобу запуску Плазми
 Comment[x-test]=xxPlasma Runner Template. A plasma runner templatexx
+Comment[zh_CN]=Plasma 启动器模板。plasma 启动器模板
 Comment[zh_TW]=Plasma 執行器樣本。
 Category=KDE/KRunner
 Icon=runner.png

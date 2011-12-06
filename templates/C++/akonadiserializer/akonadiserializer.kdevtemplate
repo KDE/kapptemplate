@@ -27,6 +27,7 @@ Comment[pt_BR]=Modelo de serialização do Akonadi. Um modelo para um plugin de 
 Comment[sv]=Akonadi-serialiseringsmall. En mall för ett Akonadi insticksprogram för dataserialisering
 Comment[uk]=Шаблон серіалізатора Akonadi. Шаблон для додатка перетворення даних у послідовну форму Akonadi
 Comment[x-test]=xxAkonadi Serializer Template. A template for an Akonadi data serializer pluginxx
+Comment[zh_CN]=Akonadi 数据转换器模板。Akonadi 数据转换器插件的模板
 Comment[zh_TW]=Akonadi 序列器樣本。Akonadi 資料序列器外掛程式樣本
 Category=KDE/Akonadi Serializer
 Icon=akonadi-serializer.png

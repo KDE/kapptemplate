@@ -26,5 +26,6 @@ Comment[pt_BR]=Modelo de forma do KOffice (Flake). Um modelo de plugin do KOffic
 Comment[sv]=Koffice-formmall (flinga). En Koffice-insticksmall med en form, ett verktyg och en panel (använd projektnamnet ThisFormat)
 Comment[uk]=Шаблон форми KOffice (Flake). Шаблон додатка KOffice з формою, інструментом або панеллю (будь ласка, використовуйте назву проекту у форматі ThisFormat)
 Comment[x-test]=xxKOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)xx
+Comment[zh_CN]=KOffice 形状模板(Flake)。包含形状、工具和停靠部件的 KOffice 插件模板(工程名称请使用 ThisFormat)
 Comment[zh_TW]=KOffice 元件樣本（Flake）。是一套 KOffice 樣本，包含元件、工具與嵌入器（專案名稱請使用此格式）
 Category=KOffice/Flake

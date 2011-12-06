@@ -26,6 +26,7 @@ Comment[pt_BR]=Aplicativo KPart do KDE 4. Um modelo simples para KDE4 com base n
 Comment[sv]=KDE 4 KPart-program. Enkel KDE4-mall baserad på CMake, ärver XMLGuiWindow och demonstrerar hur man använder KPart
 Comment[uk]=Модуль KPart KDE 4. Простий шаблон програми для KDE4, заснований на CMake, успадковує клас XMLGuiWindow і демонструє використання KPart
 Comment[x-test]=xxKDE 4 KPart Application. KDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KPartxx
+Comment[zh_CN]=KDE 4 KPart 应用程序。基于 CMake，继承自 XMLGuiWindow 和演示如何使用 KPart 的 KDE4 简单模板
 Comment[zh_TW]=KDE4 KPart 應用程式，是一套基於 CMake 的 KDE4 簡單應用程式樣本，從 XMLGuiWindow 繼承而來，用於展示如何使用 KPart
 Category=KDE/KPart
 Icon=kpartapp.png

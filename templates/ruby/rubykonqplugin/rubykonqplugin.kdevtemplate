@@ -25,6 +25,7 @@ Comment[pt_BR]=Plugin do Konqueror em Ruby para o KDE4. Um modelo simples para K
 Comment[sv]=KDE 4 Ruby-insticksprogram för Konqueror. Enkel KDE4-mall baserad på CMake, ärver KParts::Plugin och demonstrerar hur man använder skriver ett insticksprogram för Konqueror i Ruby
 Comment[uk]=Додаток до Konqueror з KDE 4 на Ruby. Простий шаблон програми для KDE4, заснований на CMake, успадковує клас KParts::Plugin і є зразком додатка до Konqueror мовою Ruby.
 Comment[x-test]=xxKDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Rubyxx
+Comment[zh_CN]=KDE 4 Ruby Konqueror 插件。基于 CMake，继承自 KParts::Plugin，用于演示如何用 Ruby 语言编写 Konqueror 插件的简单模板
 Comment[zh_TW]=KDE4 Ruby Konqueror 外掛程式。基於 CMake 的 KDE4 簡單樣本，從 KParts::Plugin 繼承而來，用於展示如何以 Ruby 撰寫 konqueror 外掛程式
 Category=KDE/Konqueror Plugin
 Icon=konqplugin.png

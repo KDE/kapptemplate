@@ -23,6 +23,7 @@ Comment[pt_BR]=Aplicativo gráfico PyQt4. Um modelo para o PyQt que usa um arqui
 Comment[sv]=PyQt4-program med grafiskt användargränssnitt. Mall för PyKDE4 som använder en Designer-fil - kräver PyKDE4
 Comment[uk]=Програма PyQt4 з графічним інтерфейсом. Шаблон PyQt, з використанням файла Designer — потрібен PyQt4
 Comment[x-test]=xxPyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4xx
+Comment[zh_CN]=PyQt4 GUI 应用程序。使用 Designer 文件的 PyQt 模板 - 需要 PyQt4
 Comment[zh_TW]=PyQt4 使用者介面應用程式。使用設計家檔案的 PyQt 樣本─需要 PyQt4
 Icon=pyqt4app.png
 Category=KDE/Graphical

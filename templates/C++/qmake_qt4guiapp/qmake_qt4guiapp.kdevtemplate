@@ -23,6 +23,7 @@ Comment[pt_BR]=Aplicativo com interface Qt4. Gera um aplicativo baseado no QMake
 Comment[sv]=Qt4-program med grafiskt användargränssnitt. Skapar en QMake/Qt4-baserat program med grafiskt användargränssnitt (kompatibelt mellan plattformar)
 Comment[uk]=Програма Qt4 з графічним інтерфейсом. Створення програми, заснованої на QMake/Qt4, з графічним інтерфейсом (годиться для декількох платформ)
 Comment[x-test]=xxQt4 GUI Application. Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)xx
+Comment[zh_CN]=Qt4 GUI 应用程序。生成一个基于 QMake/Qt4 的图形用户界面应用程序(跨平台兼容)
 Comment[zh_TW]=Qt4 使用者介面應用程式。產生以 QMake/Qt4 為基礎的應用程式，含圖形介面，並且跨平台
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
 Icon=qmake4gui.png

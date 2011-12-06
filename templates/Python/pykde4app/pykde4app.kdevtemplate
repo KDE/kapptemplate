@@ -26,6 +26,7 @@ Comment[pt_BR]=Aplicativo gráfico do PyKDE4. Modelo do PyKDE4 - requer o PyKDE4
 Comment[sv]=PyKDE4-program med grafiskt användargränssnitt. Mall för PyKDE4 - kräver PyKDE4
 Comment[uk]=Програма PyKDE4 з графічним інтерфейсом. Шаблон PyKDE4 — потрібен PyKDE4
 Comment[x-test]=xxPyKDE4 GUI Application. PyKDE4 template - needs PyKDE4xx
+Comment[zh_CN]=PyKDE4 GUI 应用程序。PyKDE4 模板 - 需要 PyKDE4
 Comment[zh_TW]=PyKDE4 使用者介面應用程式。PyKDE4 樣本─需要 PyKDE4
 Icon=pykde4.png
 Category=KDE/Graphical
