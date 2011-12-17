@@ -2,6 +2,8 @@
 [General]
 Name=Python Qt-only
 Name[ca]=Python només Qt
+Name[es]=Python (solo Qt)
+Name[it]=Python con solo Qt
 Name[kk]=Python тек Qt ғана
 Name[lt]=Python tik Qt
 Name[nb]=Python bare Qt
@@ -17,6 +19,8 @@ Category=Python
 Comment=PyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4
 Comment[ca]=Aplicació IGU PyQt4. Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[de]=Grafische PyQt4-Anwendung. Vorlage für PyQt mit Qt-Designer-Datei – benötigt PyQt4
+Comment[es]=Aplicación con interfaz gráfica en PyQt4. Plantilla PyQt que usa un archivo de Designer (necesita PyQt4)
+Comment[it]=Applicazione grafica di PyQt4. Modello PyQt che usa un file di Designer - richiede PyQt4
 Comment[kk]=PyQt4 GUI қолданбасы. Designer файлын қолданатын PyQT4 үлгсі  - PyKQT4-ті қажет етеді
 Comment[nb]=PyQt4 GUI-program.PyQt-mal som bruker en Designer-fil – trenger PyQt4
 Comment[nl]=PyQt4 GUI-toepassing. PyQt-sjabloon met een Designer-bestand - heeft PyQt4 nodig
