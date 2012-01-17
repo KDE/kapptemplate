@@ -21,17 +21,10 @@
 #define %{APPNAMEUC}VIEW_H
 
 #include <QtGui/QWidget>
-#include <QGraphicsView>
-#include <KStandardDirs>
-
 #include <QtGui/QLabel>
 #include <QtDeclarative/QDeclarativeView>
 
-class QPainter;
-class KUrl;
-class QGraphicsObject;
 class QDeclarativeView;
-class QObject;
 
 /**
  * This is the main view class for %{APPNAME}.  Most of the non-menu,

@@ -47,7 +47,6 @@
 
 %{APPNAME}View::~%{APPNAME}View()
 {
-
 }
 
 void %{APPNAME}View::settingsChanged()
@@ -76,4 +75,5 @@ void %{APPNAME}View::switchColors()
 
     settingsChanged();
 }
+
 #include "%{APPNAMELC}view.moc"

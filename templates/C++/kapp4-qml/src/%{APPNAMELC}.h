@@ -22,10 +22,8 @@
 
 #include <KXmlGuiWindow>
 
-#include "ui_prefs_base.h"
-
+namespace Ui { class prefs_base; }
 class %{APPNAME}View;
-class QPrinter;
 class KToggleAction;
 class KUrl;
 
@@ -62,7 +60,6 @@ private:
     Ui::prefs_base ui_prefs_base ;
     %{APPNAME}View *m_view;
 
-    QPrinter   *m_printer;
     KToggleAction *m_toolbarAction;
     KToggleAction *m_statusbarAction;
 };

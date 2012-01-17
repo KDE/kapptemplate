@@ -20,10 +20,9 @@
 #include "%{APPNAMELC}.h"
 #include "%{APPNAMELC}view.h"
 #include "settings.h"
+#include "ui_prefs_base.h"
 
 #include <QtGui/QDropEvent>
-#include <QtGui/QPainter>
-#include <QtGui/QPrinter>
 
 #include <KConfigDialog>
 #include <KStatusBar>
@@ -36,8 +35,7 @@
 
 %{APPNAME}::%{APPNAME}()
     : KXmlGuiWindow(),
-      m_view(new %{APPNAME}View(this)),
-      m_printer(0)
+      m_view(new %{APPNAME}View(this))
 {
     // accept dnd
     setAcceptDrops(true);
