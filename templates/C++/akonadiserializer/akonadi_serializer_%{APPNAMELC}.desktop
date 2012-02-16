@@ -31,6 +31,7 @@ Name[pl]=Serializacja %{APPNAME}
 Name[pt]=Serialização do %{APPNAME}
 Name[pt_BR]=Serialização do %{APPNAME}
 Name[ru]=Сериализатор %{APPNAME}
+Name[sk]=%{APPNAME} Serializer
 Name[sr]=%{APPNAME} серијализатор
 Name[sr@ijekavian]=%{APPNAME} серијализатор
 Name[sr@ijekavianlatin]=%{APPNAME} serijalizator
