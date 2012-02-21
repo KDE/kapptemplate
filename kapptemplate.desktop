@@ -5,6 +5,7 @@ Exec=kapptemplate
 Icon=kapptemplate
 X-DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator
+GenericName[ar]=مولّد قوالب كدي
 GenericName[ast]=Xenerador de plantíes pa KDE
 GenericName[bs]=KDE generator predložaka
 GenericName[ca]=Generador de plantilles del KDE

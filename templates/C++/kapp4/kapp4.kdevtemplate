@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++ KDE
+Name[ar]=C++ KDE
 Name[ca]=C++ KDE
 Name[ca@valencia]=C++ KDE
 Name[de]=C++ KDE

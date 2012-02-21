@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Python
+Name[ar]=بايثون
 Name[ca]=Python
 Name[ca@valencia]=Python
 Name[cs]=Python
