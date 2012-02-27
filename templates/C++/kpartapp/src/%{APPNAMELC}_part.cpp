@@ -21,25 +21,26 @@
 
 #include "%{APPNAMELC}_part.moc"
 
+#include <kaboutdata.h>
 #include <kaction.h>
 #include <kactioncollection.h>
 #include <kcomponentdata.h>
 #include <kfiledialog.h>
-#include <kparts/genericfactory.h>
+#include <kpluginfactory.h>
 #include <kstandardaction.h>
 
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
 #include <QtGui/QTextEdit>
 
-typedef KParts::GenericFactory<%{APPNAME}Part> %{APPNAME}PartFactory;
-K_EXPORT_COMPONENT_FACTORY( lib%{APPNAMELC}part, %{APPNAME}PartFactory )
+K_PLUGIN_FACTORY(%{APPNAME}PartFactory, registerPlugin<%{APPNAME}Part>();)
+K_EXPORT_PLUGIN(%{APPNAME}PartFactory)
 
-%{APPNAME}Part::%{APPNAME}Part( QWidget *parentWidget, QObject *parent, const QStringList & /*args*/ )
+%{APPNAME}Part::%{APPNAME}Part(QWidget *parentWidget, QObject *parent, const QVariantList & /*args*/)
     : KParts::ReadWritePart(parent)
 {
-    // we need an instance
-    setComponentData( %{APPNAME}PartFactory::componentData() );
+    // we need a component data
+    setComponentData(%{APPNAME}PartFactory::componentData());
 
     // this should be your custom internal widget
     m_widget = new QTextEdit( parentWidget);

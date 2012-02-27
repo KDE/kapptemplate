@@ -44,7 +44,7 @@ public:
     /**
      * Default constructor
      */
-    %{APPNAME}Part(QWidget *parentWidget,QObject *parent, const QStringList &);
+    %{APPNAME}Part(QWidget *parentWidget, QObject *parent, const QVariantList &);
 
     /**
      * Destructor
