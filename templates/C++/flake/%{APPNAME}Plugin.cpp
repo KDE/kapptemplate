@@ -3,12 +3,12 @@
 #include <KoToolRegistry.h>
 #include "%{APPNAME}ShapeFactory.h"
 #include "%{APPNAME}ToolFactory.h"
-#include <KGenericFactory>
+#include <KPluginFactory>
 
-K_EXPORT_COMPONENT_FACTORY(%{APPNAMELC}shape,
-                           KGenericFactory<%{APPNAME}Plugin>( "%{APPNAME}" ) )
+K_PLUGIN_FACTORY(%{APPNAME}PluginFactory, registerPlugin<%{APPNAME}Plugin>(); )
+K_EXPORT_PLUGIN(%{APPNAME}PluginFactory("%{APPNAME}"))
 
-%{APPNAME}Plugin::%{APPNAME}Plugin(QObject *parent, const QStringList&) : QObject(parent)
+%{APPNAME}Plugin::%{APPNAME}Plugin(QObject *parent, const QVariantList&) : QObject(parent)
 {
     KoShapeRegistry::instance()->add(new %{APPNAME}ShapeFactory(parent));
     KoToolRegistry::instance()->add(new %{APPNAME}ToolFactory(parent));

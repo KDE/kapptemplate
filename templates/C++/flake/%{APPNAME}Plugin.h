@@ -3,12 +3,12 @@
 
 #include <QObject>
 
-#include <QStringList>
+class QVariantList;
 
 class %{APPNAME}Plugin : public QObject
 {
 public:
-    %{APPNAME}Plugin(QObject *parent = 0, const QStringList& args = QStringList());
+    %{APPNAME}Plugin(QObject *parent, const QVariantList& args);
 };
 
 #endif // %{APPNAME}Plugin.h
