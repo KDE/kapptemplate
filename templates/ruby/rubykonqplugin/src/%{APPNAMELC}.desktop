@@ -35,6 +35,7 @@ Comment[ko]=%{APPNAME} - Konqueror 플러그인을 루비로 작성할 수 있�
 Comment[nb]=%{APPNAME} – Du kan skrive Konqueror-programtillegg i Ruby
 Comment[nds]=%{APPNAME} - Du kannst Modulen för Konqueror in Ruby schrieven
 Comment[nl]=%{APPNAME} - U kunt Konqueror-plug-ins schrijven in Ruby
+Comment[pa]=%{APPNAME} - ਤੁਸੀਂ ਰੂਬੀ ਵਿੱਚ ਕੋਨਕਿਉਰੋਰ-ਪਲੱਗਇਨ ਲਿਖ ਸਕਦੇ ਹੋ
 Comment[pl]=%{APPNAME} - Możesz napisać wtyczki do Konquerora w Ruby
 Comment[pt]=%{APPNAME} - Poderá criar 'plugins' do Konqueror em Ruby
 Comment[pt_BR]=%{APPNAME} - Você pode criar plugins do Konqueror em Ruby
