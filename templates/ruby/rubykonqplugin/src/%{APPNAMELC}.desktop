@@ -43,6 +43,7 @@ Comment[sr@ijekavian]=%{APPNAME} — напишите прикључак за К
 Comment[sr@ijekavianlatin]=%{APPNAME} — napišite priključak za K‑osvajač na Rubyju
 Comment[sr@latin]=%{APPNAME} — napišite priključak za K‑osvajač na Rubyju
 Comment[sv]=%{APPNAME} - Du kan skriva insticksprogram för Konqueror i Ruby
+Comment[tr]=%{APPNAME} - Ruby ile Konqueror-Eklentileri yazabilirsiniz
 Comment[uk]=%{APPNAME} — ви можете писати додатки до Konqueror мовою Ruby
 Comment[x-test]=xx%{APPNAME} - You can write Konqueror-Plugins in Rubyxx
 Comment[zh_CN]=%{APPNAME} - 您可以用 Ruby 语言编写 Konqueror 插件

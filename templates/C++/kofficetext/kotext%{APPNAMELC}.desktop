@@ -29,6 +29,7 @@ Name[pl]=Wtyczka %{APPNAME}
 Name[pt]='Plugin' do %{APPNAME}
 Name[pt_BR]=Plugin do %{APPNAME}
 Name[ru]=Расширение %{APPNAME}
+Name[sk]=%{APPNAME} plugin
 Name[sr]=Прикључак за %{APPNAME}
 Name[sr@ijekavian]=Прикључак за %{APPNAME}
 Name[sr@ijekavianlatin]=Priključak za %{APPNAME}
