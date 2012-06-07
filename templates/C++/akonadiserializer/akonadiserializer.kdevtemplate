@@ -54,6 +54,7 @@ Comment[sr@ijekavian]=Шаблон прикључка Аконадијевог �
 Comment[sr@ijekavianlatin]=Šablon priključka Akonadijevog serijalizatora
 Comment[sr@latin]=Šablon priključka Akonadijevog serijalizatora
 Comment[sv]=Akonadi-serialiseringsmall. En mall för ett Akonadi insticksprogram för dataserialisering
+Comment[tr]=Akonadi Sıralandırıcı Kaynağı. Akonadi veri sıralandırıcı eklentisi için bir şablon
 Comment[uk]=Шаблон серіалізатора Akonadi. Шаблон для додатка перетворення даних у послідовну форму Akonadi
 Comment[x-test]=xxAkonadi Serializer Template. A template for an Akonadi data serializer pluginxx
 Comment[zh_CN]=Akonadi 数据转换器模板。Akonadi 数据转换器插件的模板

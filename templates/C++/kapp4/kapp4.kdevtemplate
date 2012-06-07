@@ -53,6 +53,7 @@ Comment[sr@ijekavian]=Једноставан КДЕ‑4 шаблон на осн
 Comment[sr@ijekavianlatin]=Jednostavan KDE4 šablon na osnovu CMakea, nasljeđuje XMLGuiWindow i pokazuje upotrebu KConfigXT‑a
 Comment[sr@latin]=Jednostavan KDE4 šablon na osnovu CMakea, nasleđuje XMLGuiWindow i pokazuje upotrebu KConfigXT‑a
 Comment[sv]=KDE 4-program med grafiskt användargränssnitt. Enkel KDE4-mall baserad på CMake, ärver XMLGuiWindow och demonstrerar hur man använder KConfig XT
+Comment[tr]=KDE 4 GUI Uygulaması. CMake temelli basit bir KDE4 şablonu, XMLGuiWindow'dan miras alınır ve KConfig XT kullanımını gösterir
 Comment[uk]=Програма KDE 4 з графічним інтерфейсом. Простий шаблон програми для KDE4, заснований на CMake, успадковує клас XMLGuiWindow і демонструє використання KConfig XT
 Comment[x-test]=xxKDE 4 GUI Application. KDE4 simple template based on CMake, inherits from XMLGuiWindow and demonstrates how to use KConfig XTxx
 Comment[zh_CN]=KDE 4 GUI 应用程序。基于 CMake，继承自 XMLGuiWindow 和演示如何使用 KConfig XT 的 KDE4 简单模板
