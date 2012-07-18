@@ -50,6 +50,7 @@ Comment[nl]=KDE 4 Ruby plugin voor Konqueror. Eenvoudig KDE4 sjabloon gebaseerd 
 Comment[pl]=Wtyczka Konqueror Ruby dla KDE 4. Prosty szablon KDE4 oparty o CMake, dziedziczy zKParts::Plugin i demonstruje sposób pisania wtyczki do konquerora w Ruby
 Comment[pt]='Plugin' do Konqueror em Ruby para o KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um 'plugin' para o Konqueror em Ruby
 Comment[pt_BR]=Plugin do Konqueror em Ruby para o KDE4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um plugin para o Konqueror em Ruby
+Comment[sk]=KDE 4 Ruby plugin Konquerora. Jednoduchá šablóna KDE4 založená na CMake, dedí od KParts::Plugin a demonštruje ako písať pluginy konquerora v Ruby
 Comment[sr]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, наслеђује KParts::Plugin и показује како се пишу прикључци за К‑освајач на рубију.
 Comment[sr@ijekavian]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, насљеђује KParts::Plugin и показује како се пишу прикључци за К‑освајач на рубију.
 Comment[sr@ijekavianlatin]=Jednostavan KDE4 šablon na osnovu CMakea, nasljeđuje KParts::Plugin i pokazuje kako se pišu priključci za K‑osvajač na Rubyju.

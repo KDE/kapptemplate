@@ -51,6 +51,7 @@ Comment[nl]=KDE 4 KPart toepassing. Eenvoudig KDE4 sjabloon gebaseerd op CMake, 
 Comment[pl]=Program KPart dla KDE 4. Prosty szablon dla KDE4 oparty o CMake, dziedziczy zXMLGuiWindow i demonstruje sposób użycia KPart
 Comment[pt]=Aplicação KPart do KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do XMLGuiWindow e demonstra como utilizar o KPart
 Comment[pt_BR]=Aplicativo KPart do KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do XMLGuiWindow e demonstra como utilizar o KPart
+Comment[sk]=Aplikácia KDE 4 KPart. Jednoduchá šablóna KDE4 založená na CMake, dedí od XMLGuiWindow a demonštruje, ako používať KPart
 Comment[sr]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, наслеђује XMLGuiWindow и показује извођење К‑дела
 Comment[sr@ijekavian]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, насљеђује XMLGuiWindow и показује извођење К‑дијела
 Comment[sr@ijekavianlatin]=Jednostavan KDE4 šablon na osnovu CMakea, nasljeđuje XMLGuiWindow i pokazuje izvođenje K‑dijela

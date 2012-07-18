@@ -72,6 +72,7 @@ Comment[pl]=Wtyczka serializacji Akonadi dla %{APPNAMELC}
 Comment[pt]=Um 'plugin' de serialização do Akonadi para o %{APPNAMELC}
 Comment[pt_BR]=Um plugin de serialização do Akonadi para o %{APPNAMELC}
 Comment[ru]=Модуль сохранения записей %{APPNAMELC} для Akonadi
+Comment[sk]=Plugin Akonadi serializátora pre %{APPNAMELC}
 Comment[sr]=Прикључак Аконадијевог серијализатора за %{APPNAMELC}
 Comment[sr@ijekavian]=Прикључак Аконадијевог серијализатора за %{APPNAMELC}
 Comment[sr@ijekavianlatin]=Priključak Akonadijevog serijalizatora za %{APPNAMELC}
