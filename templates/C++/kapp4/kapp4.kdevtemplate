@@ -44,6 +44,7 @@ Comment[es]=Aplicación de interfaz gráfica para KDE 4. Sencilla plantilla para
 Comment[et]=KDE4 GUI rakendus. Lihtne KDE4 mall CMake'i põhjal, XMLGuiWindow järglane, mis näitab, kuidas kasutada KConfig XT-d
 Comment[fr]=Application avec interface graphique pour KDE4. Un modèle simple pour KDE4 reposant sur CMake, qui hérite de XMLGuiWindow et montre comment utiliser KConfig XT
 Comment[ga]=Feidhmchlár grafach KDE 4. Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar XMLGuiWindow agus a léiríonn conas a úsáidtear KConfig XT
+Comment[hu]=KDE 4 grafikus felületű alkalmazás. Egyszerű KDE4-sablon a CMake alapján, amely az XMLGuiWindow osztályból származik és bemutatja a KConfig XT használatát
 Comment[it]=Applicazione grafica di KDE. Un modello semplice per KDE 4 basato su CMake; eredita da XMLGuiWindow e dimostra come usare KConfig XT.
 Comment[kk]=KDE4 GUI қолданбасы. KDE4-тің CMake негіздеген қарапайым үлгісі, XMLGuiWindow-ды туындайды, KConfig XT пайдалануын көрсетеді
 Comment[nb]=KDE 4 GUI-program. Enkel KDE4-mal basert på CMake, arver fra XMLGuiWindow og viser hvordan du kan bruke KConfig XT.

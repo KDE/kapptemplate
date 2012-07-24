@@ -45,6 +45,7 @@ Comment[es]=Aplicación KPart para KDE 4. Sencilla plantilla para KDE4 basada en
 Comment[et]=KDE4 KParti rakendus. Lihtne KDE4 rakendus CMake'i põhjal, XMLGuiWindow järglane, mis näitab, kuidas kasutada KParti
 Comment[fr]=Application KPart pour KDE4. Modèle KDE4 simple reposant sur CMake, qui hérite de XMLGuiWindow et montre comment utiliser KPart
 Comment[ga]=Feidhmchlár KPart KDE4. Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar XMLGuiWindow agus a léiríonn úsáid KPart
+Comment[hu]=KDE 4 KPart alkalmazás. Egyszerű KDE4-sablon a CMake alapján, amely az XMLGuiWindow osztályból származik és bemutatja a KPart használatát
 Comment[it]=Applicazione KPart di KDE 4. Un modello semplice per KDE 4 basato su CMake; eredita da XMLGuiWindow e dimostra come usare KPart.
 Comment[kk]=KDE 4 KPart қолданбасы. KDE4-тің CMake негіздеген қарапайым үлгісі, XMLGuiWindow-ды туындайды,  KPart-ты пайдалануын көрсетеді
 Comment[nb]=KDE 4 KPart-program. Enkel KDE4-mal basert på CMake, arver fra XMLGuiWindow og viser hvordan du kan bruke KPart
