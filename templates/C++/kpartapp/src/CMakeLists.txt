@@ -16,12 +16,11 @@ install( FILES %{APPNAMELC}_shell.rc  DESTINATION  ${DATA_INSTALL_DIR}/%{APPNAME
 #########################################################################
 # KPART SECTION
 #########################################################################
-#kde_module_LTLIBRARIES = lib%{APPNAMELC}part.la
 set(%{APPNAMELC}_PART_SRCS
    %{APPNAMELC}_part.cpp
  )
 
-kde4_add_plugin(%{APPNAMELC}part WITH_PREFIX ${%{APPNAMELC}_PART_SRCS})
+kde4_add_plugin(%{APPNAMELC}part ${%{APPNAMELC}_PART_SRCS})
 
 target_link_libraries(%{APPNAMELC}part ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS} )
 

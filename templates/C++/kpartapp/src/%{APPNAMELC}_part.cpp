@@ -34,7 +34,7 @@
 #include <QtGui/QTextEdit>
 
 K_PLUGIN_FACTORY(%{APPNAME}PartFactory, registerPlugin<%{APPNAME}Part>();)
-K_EXPORT_PLUGIN(%{APPNAME}PartFactory)
+K_EXPORT_PLUGIN(%{APPNAME}PartFactory("%{APPNAMELC}part"))
 
 %{APPNAME}Part::%{APPNAME}Part(QWidget *parentWidget, QObject *parent, const QVariantList & /*args*/)
     : KParts::ReadWritePart(parent)
