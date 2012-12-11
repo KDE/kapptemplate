@@ -22,7 +22,8 @@
 
 #include <KXmlGuiWindow>
 
-namespace Ui { class prefs_base; }
+#include "ui_prefs_base.h"
+
 class %{APPNAME}View;
 class KToggleAction;
 class KUrl;
