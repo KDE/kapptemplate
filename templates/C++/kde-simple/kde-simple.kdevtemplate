@@ -64,7 +64,3 @@ Comment[zh_TW]=最基本的 C++ KDE 圖形介面應用程式
 Category=KDE/Graphical
 Icon=kde-simple.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
-
-
-
--
