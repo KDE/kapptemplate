@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 
 project(kapptemplate)
 
-set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
@@ -16,6 +16,7 @@ include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${
 
 include(KAppTemplateMacro)
 
+add_subdirectory(doc)
 add_subdirectory(icons)
 add_subdirectory(templates)
 add_subdirectory(tests)
