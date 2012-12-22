@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -36,6 +37,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text
+Comment[bs]=Predložak za Plasma aplete. Predložak za plasma aplete koji prikazuju ikonu i tekst
 Comment[ca]=Plantilla de miniaplicació del Plasma, Una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[ca@valencia]=Plantilla de miniaplicació del Plasma, Una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[da]=Skabelon til Plasma-applet. En skabelon til en Plasma-applet, som viser et ikon og en tekst

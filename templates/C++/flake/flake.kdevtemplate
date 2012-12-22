@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -36,6 +37,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)
+Comment[bs]=KOffice predložak likova (pahuljica). KOffice predložak priključaka s likom, alatom i dokerom (koristite OvakavFormat za ime projekta)
 Comment[ca]=Plantilla de forma del KOffice (floc). Una plantilla de connector del KOffice (amb una forma, una eina i un acoblador (si us plau, useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Plantilla de forma del KOffice (floc). Una plantilla de connector del KOffice (amb una forma, una eina i un acoblador (per favor, useu AquestFormat pel nom del projecte)
 Comment[da]=Skabelon til KOffice-form (flake). En skabelon til KOffice-plugin med en form, et værktøj og en dokker (brug venligst DetteFormat til projektnavnet)
