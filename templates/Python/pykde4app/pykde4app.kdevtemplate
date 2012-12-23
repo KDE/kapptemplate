@@ -2,7 +2,6 @@
 [General]
 Name=Python
 Name[ar]=بايثون
-Name[bs]=Python
 Name[ca]=Python
 Name[ca@valencia]=Python
 Name[cs]=Python
@@ -37,7 +36,6 @@ Name[x-test]=xxPythonxx
 Name[zh_CN]=Python
 Name[zh_TW]=Python
 Comment=PyKDE4 GUI Application. PyKDE4 template - needs PyKDE4
-Comment[bs]=PyKDE4 grafiča aplikacija. PyKDE4 predložak - zahtijeva PyKDE4
 Comment[ca]=Aplicació IGU PyKDE4. Plantilla PyKDE4 - necessita el PyKDE4
 Comment[ca@valencia]=Aplicació IGU PyKDE4. Plantilla PyKDE4 - necessita el PyKDE4
 Comment[da]=Grafisk PyKDE4-program. PyKDE4-skabelon - kræver PyKDE4

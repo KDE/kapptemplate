@@ -1,7 +1,6 @@
 # KDE Config File
 [General]
 Name=C++
-Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -37,7 +36,6 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
-Comment[bs]=Predložak za KTextEditor priključke. Predložak za KTextEditor priključke koji obavlja specijalne operacije nad tekstom u KWrite, Kate, KDevelop itd.  (koristi OvajFormat za ime projekta)
 Comment[ca]=Plantilla de connector del KTextEditor. Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Plantilla de connector del KTextEditor. Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[da]=Skabelon til KTextEditor-plugin. En skabelon til KTextEditor-plugin til at udføre særlige handlinger på tekst i KWrite, Kate, KDevelop osv. (brug DetteFormat til projektnavnet)

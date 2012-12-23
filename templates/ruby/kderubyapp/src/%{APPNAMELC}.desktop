@@ -2,7 +2,6 @@
 Name=%{APPNAME}
 Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
-Name[bs]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
 Name[cs]=%{APPNAME}
@@ -54,7 +53,6 @@ Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Ruby Application
 GenericName[ast]=Una aplicación Ruby de KDE4
-GenericName[bs]=KDE4 Ruby aplikacija
 GenericName[ca]=Una aplicació Ruby del KDE4
 GenericName[ca@valencia]=Una aplicació Ruby del KDE4
 GenericName[da]=Et KDE4 Ruby-program
