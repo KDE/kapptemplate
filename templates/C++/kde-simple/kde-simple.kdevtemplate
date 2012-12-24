@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Minimal C++ KDE
+Name[bs]=Minimalni C++ KDE
 Name[ca]=C++ KDE mínima
 Name[ca@valencia]=C++ KDE mínima
 Name[da]=Minimalt C++ KDE
@@ -31,6 +32,7 @@ Name[x-test]=xxMinimal C++ KDExx
 Name[zh_CN]=最小 C++ KDE
 Name[zh_TW]=Minimal C++ KDE
 Comment=A very basic KDE GUI Application in C++
+Comment[bs]=Osnovna KDE GUI Aplikacija u C++
 Comment[ca]=Una aplicació IGU del KDE molt bàsica en C++
 Comment[ca@valencia]=Una aplicació IGU del KDE molt bàsica en C++
 Comment[cs]=Úplně základní GUI aplikace KDE v C++

@@ -2,6 +2,7 @@
 Name=%{APPNAME}
 Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
+Name[bs]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
 Name[cs]=%{APPNAME}
@@ -49,6 +50,7 @@ Name[zh_CN]=%{APPNAME}
 Name[zh_TW]=%{APPNAME}
 Comment=Plasma %{APPNAME}
 Comment[ast]=Plasma %{APPNAME}
+Comment[bs]=Plazma %{APPNAME}
 Comment[ca]=Plasma %{APPNAME}
 Comment[ca@valencia]=Plasma %{APPNAME}
 Comment[cs]=Plasma %{APPNAME}

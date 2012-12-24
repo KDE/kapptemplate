@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -36,6 +37,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Plasma Runner Template. A plasma runner template
+Comment[bs]=Plasma Runner predložak. Predložak za Plasma pokrenute programe
 Comment[ca]=Plantilla d'executor de Plasma. Una plantilla d'executor per Plasma
 Comment[ca@valencia]=Plantilla d'executor de Plasma. Una plantilla d'executor per Plasma
 Comment[da]=Skabelon til Plasma-runner. En skabelon til plasma-runner

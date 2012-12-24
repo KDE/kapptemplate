@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Python Qt-only
+Name[bs]=Python Qt-samo
 Name[ca]=Python només Qt
 Name[ca@valencia]=Python només Qt
 Name[da]=Python, kun Qt
@@ -32,6 +33,7 @@ Name[zh_CN]=仅 Python Qt
 Name[zh_TW]=Python Qt-only
 Category=Python
 Comment=PyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4
+Comment[bs]=PyQt4 grafička aplikacija. PyQt predložak koji koristi Designer datoteku - zahtijeva PyQt4
 Comment[ca]=Aplicació IGU PyQt4. Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[ca@valencia]=Aplicació IGU PyQt4. Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[da]=Grafisk PyQt-program. PyQt-skabelon som bruger en Designer-fil - kræver PyQt4

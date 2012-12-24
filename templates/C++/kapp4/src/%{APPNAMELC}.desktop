@@ -2,6 +2,7 @@
 Name=%{APPNAME}
 Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
+Name[bs]=%{APPNAME}
 Name[ca]=%{APPNAME}
 Name[ca@valencia]=%{APPNAME}
 Name[cs]=%{APPNAME}
@@ -54,6 +55,7 @@ X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE4 Application
 GenericName[ast]=Una aplicación de KDE4
 GenericName[bg]=Програма за KDE4
+GenericName[bs]=KDE4 aplikacija
 GenericName[ca]=Una aplicació del KDE4
 GenericName[ca@valencia]=Una aplicació del KDE4
 GenericName[cs]=Aplikace prostředí KDE

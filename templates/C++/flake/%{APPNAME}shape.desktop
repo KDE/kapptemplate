@@ -2,6 +2,7 @@
 X-SuSE-translate=true
 Encoding=UTF-8
 Name=%{APPNAME} Shape
+Name[bs]=%{APPNAME} oblik
 Name[ca]=Forma %{APPNAME}
 Name[ca@valencia]=Forma %{APPNAME}
 Name[da]=%{APPNAME} Form
@@ -41,6 +42,7 @@ Name[x-test]=xx%{APPNAME} Shapexx
 Name[zh_CN]=%{APPNAME} 形状
 Name[zh_TW]=%{APPNAME} 元件
 Comment=%{APPNAME} Flake Shape
+Comment[bs]=%{APPNAME} pahuljasti oblik
 Comment[ca]=Forma de Flake %{APPNAME}
 Comment[ca@valencia]=Forma de Flake %{APPNAME}
 Comment[da]=%{APPNAME} Flake-form
