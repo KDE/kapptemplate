@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Qt - QMake C++
+Name[bs]=Qt - QMake C++
 Name[ca]=Qt - QMake C++
 Name[ca@valencia]=Qt - QMake C++
 Name[cs]=Qt - QMake C++
@@ -11,6 +12,7 @@ Name[es]=Qt - QMake C++
 Name[et]=Qt - QMake C++
 Name[fr]=Qt - QMake C++
 Name[ga]=Qt - QMake C++
+Name[gl]=Qt — QMake e C++
 Name[hu]=Qt - QMake C++
 Name[it]=C++ con Qt e QMake
 Name[kk]=Qt - QMake C++
@@ -32,6 +34,7 @@ Name[x-test]=xxQt - QMake C++xx
 Name[zh_CN]=Qt - QMake C++
 Name[zh_TW]=Qt - QMake C++
 Comment=Qt4 GUI Application. Generate a QMake/Qt4 based application with graphical user interface (crossplatform compatible)
+Comment[bs]=Qt4 grafička aplikacija . Generiše QMake/Qt4 baziranu aplikaciju s grafičkim korisničkim interfejsom (višeplatformski kompatibilna)
 Comment[ca]=Aplicació IGU Qt4. Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[ca@valencia]=Aplicació IGU Qt4. Genera una aplicació basada en QMake/Qt4 amb una interfície gràfica d'usuari (compatible amb multiplataforma)
 Comment[da]=Grafisk Qt4-program. Genererer et QMake-/Qt4-baseret program med grafisk brugerflade (kompatibel på tværs af platforme)
@@ -41,6 +44,7 @@ Comment[es]=Aplicación con interfaz gráfica en Qt4. Genera una aplicación bas
 Comment[et]=Qt4 GUI rakendus. QMake/Qt4 põhise rakenduse loomine graafilise kasutajaliidesega (ühildub paljude platvormidega)
 Comment[fr]=Application avec interface graphique en Qt4. Génère une application reposant sur QMake / Qt4 comportant une interface graphique (compatible multi-plateforme)
 Comment[ga]=Feidhmchlar grafach Qt4. Cruthaigh feidhmchlár bunaithe ar QMake/Qt4 a bhfuil comhéadan grafach aige (feidhmchlár trasardáin)
+Comment[gl]=Aplicativo gráfico con Qt 4. Xerar un aplicativo baseado en QMake e Qt 4 cunha interface gráfica de usuario, e compatibilidade con moitas plataformas.
 Comment[hu]=Qt4 grafikus felületű alkalmazás. QMake/Qt4 alapú alkalmazás létrehozása grafikus felhasználói felülettel (keresztplatform kompatibilis)
 Comment[it]=Applicazione grafica di Qt4. Genera un'applicazione basata su QMake/Qt4 con interfaccia utente grafica (compatibile su più piattaforme)
 Comment[kk]=Qt4 GUI қолданбасы. QMake/Qt4 негіздейтін графикалық интерфейсті ( кроссплатформалық үйлесімді) қолданбасын құрып береді

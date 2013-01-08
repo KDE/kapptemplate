@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Python Qt-only
+Name[bs]=Python Qt-samo
 Name[ca]=Python només Qt
 Name[ca@valencia]=Python només Qt
 Name[da]=Python, kun Qt
@@ -10,6 +11,7 @@ Name[es]=Python (solo Qt)
 Name[et]=Python Qt-only
 Name[fr]=Python Qt seul
 Name[ga]=Python Qt-amháin
+Name[gl]=Python e Qt
 Name[hu]=Python csak Qt
 Name[it]=Python con solo Qt
 Name[kk]=Python тек Qt ғана
@@ -32,6 +34,7 @@ Name[zh_CN]=仅 Python Qt
 Name[zh_TW]=Python Qt-only
 Category=Python
 Comment=PyQt4 GUI Application. PyQt template using a Designer file - needs PyQt4
+Comment[bs]=PyQt4 grafička aplikacija. PyQt predložak koji koristi Designer datoteku - zahtijeva PyQt4
 Comment[ca]=Aplicació IGU PyQt4. Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[ca@valencia]=Aplicació IGU PyQt4. Plantilla PyQt que usa un fitxer de Designer - necessita el PyQt4
 Comment[da]=Grafisk PyQt-program. PyQt-skabelon som bruger en Designer-fil - kræver PyQt4
@@ -41,6 +44,7 @@ Comment[es]=Aplicación con interfaz gráfica en PyQt4. Plantilla PyQt que usa u
 Comment[et]=PyQt4 GUI rakendus. PyQt mall Disaineri faili põhjal - vajalik on PyQt4
 Comment[fr]=Application avec interface graphique en PyQt4. Modèle PyQt4 utilisant un fichier Designer - nécessite PyQt4
 Comment[ga]=Feidhmchlár grafach PyQt4. Teimpléad PyQt a úsáideann comhad Designer - PyQt4 de dhíth
+Comment[gl]=Aplicativo gráfico con PyQt 4. Modelo con PyQt e usando un ficheiro de Qt Designer.
 Comment[hu]=PyQt4 grafikus felületű alkalmazás. PyQt sablon Designer-fájllal - a PyQt4 szükséges hozzá
 Comment[it]=Applicazione grafica di PyQt4. Modello PyQt che usa un file di Designer - richiede PyQt4
 Comment[kk]=PyQt4 GUI қолданбасы. Designer файлын қолданатын PyQT4 үлгсі  - PyKQT4-ті қажет етеді

@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -12,6 +13,7 @@ Name[et]=C++
 Name[fi]=C++
 Name[fr]=C++
 Name[ga]=C++
+Name[gl]=C++
 Name[hu]=C++
 Name[it]=C++
 Name[kk]=C++
@@ -36,6 +38,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Akonadi Serializer Template. A template for an Akonadi data serializer plugin
+Comment[bs]=Predložak akonadi serijalizer, Predložak za dodatak akonadi serijalizer podataka
 Comment[ca]=Plantilla de serialitzador de l'Akonadi. Una plantilla per un connector de serialització de dades de l'Akonadi
 Comment[ca@valencia]=Plantilla de serialitzador de l'Akonadi. Una plantilla per un connector de serialització de dades de l'Akonadi
 Comment[da]=Skabelon til Akonadi-serializer. En skabelon til et Akonadi data-serializer-plugin
@@ -44,6 +47,7 @@ Comment[el]=Akonadi Serializer Template. Ένα πρότυπο για ένα π�
 Comment[es]=Plantilla de serializador de Akonadi. Una plantilla para un complemento serializador de datos de Akonadi
 Comment[et]=Akonadi jadasti mall. Akonadi andmete jadasti plugina mall
 Comment[fr]=Modèle de sérialiseur Akonadi. Un modèle pour un module externe de sérialiseur de données pour Akonadi
+Comment[gl]=Modelo de serializador de Akonadi. Modelo para un complemento de serialización de datos de Akonadi.
 Comment[hu]=Akonadi sorosító sablon. Sablon az Akonadi adatsorosító bővítményhez
 Comment[it]=Modello di serializzatore Akonadi. Un modello per un'estensione di serializzazione di dati di Akonadi
 Comment[kk]=Akonadi тізбектеуіш үлгісі. Akonadi дерек тізбектеуіш плагинің үлгісі

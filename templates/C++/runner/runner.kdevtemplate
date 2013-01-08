@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -12,6 +13,7 @@ Name[et]=C++
 Name[fi]=C++
 Name[fr]=C++
 Name[ga]=C++
+Name[gl]=C++
 Name[hu]=C++
 Name[it]=C++
 Name[kk]=C++
@@ -36,6 +38,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Plasma Runner Template. A plasma runner template
+Comment[bs]=Plasma Runner predložak. Predložak za Plasma pokrenute programe
 Comment[ca]=Plantilla d'executor de Plasma. Una plantilla d'executor per Plasma
 Comment[ca@valencia]=Plantilla d'executor de Plasma. Una plantilla d'executor per Plasma
 Comment[da]=Skabelon til Plasma-runner. En skabelon til plasma-runner
@@ -44,6 +47,7 @@ Comment[es]=Plantilla de lanzador para Plasma. Una plantilla de lanzador para Pl
 Comment[et]=Plasma käivitaja mall. Plasma käivitaja mall
 Comment[fr]=Modèle de lanceur pour Plasma. Un modèle de lanceur Plasma
 Comment[ga]=Teimpléad Fheidhmitheoir Plasma. Teimpléad d'fheidhmitheoirí Plasma
+Comment[gl]=Modelo de executor de Plasma. Un modelo de executor de Plasma.
 Comment[hu]=Plasma futtató sablon. Sablon Plasma futtatóhoz
 Comment[it]=Modello di esecutore Plasma. Un modello di esecutore Plasma
 Comment[kk]=Plasma жеккіш үлгісі. Plasma-ның бір жеккіш үлгісі

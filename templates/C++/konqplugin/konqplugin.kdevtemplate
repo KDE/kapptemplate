@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -12,6 +13,7 @@ Name[et]=C++
 Name[fi]=C++
 Name[fr]=C++
 Name[ga]=C++
+Name[gl]=C++
 Name[hu]=C++
 Name[it]=C++
 Name[kk]=C++
@@ -36,6 +38,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KDE 4 Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin
+Comment[bs]=Priključak za KDE 4 Konqueror. KDE4 prosti predložak baziran na CMake, nasljeđuje iz KParts::Plugin i demonstrira kako napisati konqueror priključak
 Comment[ca]=Connector del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
 Comment[ca@valencia]=Connector del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror
 Comment[da]=KDE 4 Konqueror-plugin. Simpel KDE4-skabelon baseret på CMake. Den nedarver fra KParts::Plugin og demonstrerer hvordan et konqueror-plugin skrives
@@ -45,6 +48,7 @@ Comment[es]=Complemento de Konqueror para KDE 4. Sencilla plantilla para KDE4 ba
 Comment[et]=KDE4 Konquerori plugin. Lihtne KDE4 mall CMake'i põhjal, KParts::Plugin järglane, mis näitab, kuidas kirjutada Konquerori pluginat
 Comment[fr]=Modèle externe Konqueror pour KDE4. Modèle KDE4 simple reposant sur CMake, qui hérite de KParts::Plugin et montre comment écrire un module externe pour Konqueror
 Comment[ga]=Breiseán Konqueror KDE4. Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar KParts::Plugin agus a léiríonn conas a scríobhtar breiseán konqueror
+Comment[gl]=Complemento para Konqueror e KDE 4. Modelo simple para KDE 4 baseado en CMake, herda de KParts::Plugin e demostra como escribir un complemento para Konqueror.
 Comment[hu]=KDE 4 Konqueror bővítmény. Egyszerű KDE4-sablon a CMake alapján, amely a KParts::Plugin osztályból származik és bemutatja a konqueror bővítmény írását
 Comment[it]=Estensione di Konqueror per KDE 4. Un modello semplice per KDE 4 basato su CMake; eredita da KParts::Plugin e dimostra come scrivere un'estensione di Konqueror.
 Comment[kk]=KDE4 Konqueror плагині. KDE4-тің CMake негіздеген қарапайым үлгісі, Parts::Plugin-ды туындайды, konqueror плагинің қалай жазуыды көрсетеді

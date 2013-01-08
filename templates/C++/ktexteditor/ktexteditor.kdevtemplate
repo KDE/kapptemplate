@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -12,6 +13,7 @@ Name[et]=C++
 Name[fi]=C++
 Name[fr]=C++
 Name[ga]=C++
+Name[gl]=C++
 Name[hu]=C++
 Name[it]=C++
 Name[kk]=C++
@@ -36,6 +38,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=KTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)
+Comment[bs]=Predložak za KTextEditor priključke. Predložak za KTextEditor priključke koji obavlja specijalne operacije nad tekstom u KWrite, Kate, KDevelop itd.  (koristi OvajFormat za ime projekta)
 Comment[ca]=Plantilla de connector del KTextEditor. Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[ca@valencia]=Plantilla de connector del KTextEditor. Una plantilla de connector del KTextEditor per realitzar operacions especials de text en KWrite, Kate, KDevelop, etc... (useu AquestFormat pel nom del projecte)
 Comment[da]=Skabelon til KTextEditor-plugin. En skabelon til KTextEditor-plugin til at udføre særlige handlinger på tekst i KWrite, Kate, KDevelop osv. (brug DetteFormat til projektnavnet)
@@ -44,6 +47,7 @@ Comment[el]=KTextEditor Plugin Template. Ένα πρότυπο προσθέτο�
 Comment[es]=Plantilla de complemento para KTextEditor. Un complemento de KTextEditor para realizar operaciones especiales sobre el texto en KWrite, Kate, KDevelop, etc. (use EsteFormato para el nombre del proyecto)
 Comment[et]=KTextEditori plugina mall. KTextEditori plugina mall eritoimingute sooritamiseks tekstiga rakendustes KWrite, Kate, KDevelop jne. (palun kasuta projekti nime puhul kuju SeeVorming)
 Comment[fr]=Modèle de module externe pour KTextEditor. Un modèle de module externe KTextEditor pour effectuer des opérations spéciales sur du texte dans KWrite, Kate, KDevelop etc. (utilisez CeFormat pour le nom du projet)
+Comment[gl]=Modelo de complemento de KTextEditor. Modelo de complemento de KTextEditor para realizar operación especiais entexto en KWrite, Kate, KDevelop etc. Use EsteFormato para o nome do proxecto.
 Comment[hu]=KTextEditor bővítmény sablon. Egy KTextEditor bővítmény sablon szövegek speciális műveleteinek végrehajtásához a KWrite, Kate, KDevelop, stb. alkalmazásokban. (IlyenFormátumot használjon a projektnévhez)
 Comment[it]=Modello di estensione di KTextEditor. Un modello di estensioni di KTextEditor per effettuare operazioni speciali in KWrite, Kate, KDevelop eccetera (usa questo formato per il nome del progetto).
 Comment[kk]=KTextEditor плагинінің үлгісі. Write, Kate, KDevelop т.б. бағдарламаларында мәтінмен арнаулы амалдар істейтін KTextEditor плагиннің үлгісі (ThisFormat пішімді жоба атауын пайдаланыңыз)

@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Ruby
+Name[bs]=Ruby
 Name[ca]=Ruby
 Name[ca@valencia]=Ruby
 Name[cs]=Ruby
@@ -12,6 +13,7 @@ Name[et]=Ruby
 Name[fi]=Ruby
 Name[fr]=Ruby
 Name[ga]=Ruby
+Name[gl]=Ruby
 Name[hu]=Ruby
 Name[it]=Ruby
 Name[kk]=Ruby
@@ -35,6 +37,7 @@ Name[x-test]=xxRubyxx
 Name[zh_CN]=Ruby
 Name[zh_TW]=Ruby
 Comment=KDE 4 Ruby Konqueror plugin. KDE4 simple template based on CMake, inherits from KParts::Plugin and demonstrates how to write a konqueror plugin in Ruby
+Comment[bs]=KDE 4 Ruby Konqueror priključak. KDE4 prosti predložak baziran na CMake, nasljeđuje KParts::Plugin i demonstrira kako napisati konqueror priključak u Ruby
 Comment[ca]=Connector Ruby del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby
 Comment[ca@valencia]=Connector Ruby del Konqueror de KDE 4. Plantilla simple del KDE4 basada en el CMake, hereva de KParts::Plugin i que demostra com escriure un connector del konqueror en Ruby
 Comment[da]=KDE 4 Konqueror-plugin i Ruby. Simpel KDE4-skabelon baseret på CMake. Den nedarver fra KParts::Plugin og demonstrerer hvordan et konqueror-plugin skrives i Ruby
@@ -44,6 +47,7 @@ Comment[es]=Complemento de Konqueror en Ruby para KDE 4. Sencilla plantilla para
 Comment[et]=KDE4 Ruby Konquerori plugin. Lihtne KDE4 mall CMake'i põhjal, KParts::Plugin järglane, mis näitab, kuidas kirjutada Konquerori pluginat Ruby abil
 Comment[fr]=Module externe Konqueror en Ruby pour KDE4. Modèle simple pour KDE4 reposant sur CMake, qui hérite de KParts::Plugin et montre comment écrire un module externe Konqueror en Ruby
 Comment[ga]=Breiseán Konqueror Ruby KDE4. Teimpléad simplí KDE4 bunaithe ar CMake, a thagann in oidhreacht ar KParts::Plugin agus a léiríonn conas a scríobhtar breiseán konqueror i Ruby
+Comment[gl]=Complemento para Konqueror e KDE 4 en Ruby. Modelo simple para KDE 4 baseado en CMake, herda de KParts::Plugin e demostra como escribir un complemento para Konqueror en Ruby.
 Comment[hu]=KDE 4 Ruby Konqueror bővítmény. Egyszerű KDE4-sablon a CMake alapján, amely a KParts::Plugin osztályból származik és bemutatja a konqueror bővítmény írását Ruby nyelven
 Comment[it]=Estensione di Konqueror per KDE 4 in Ruby. Un modello semplice per KDE 4 basato su CMake; eredita da KParts::Plugin e dimostra come scrivere un'estensione di Konqueror in Ruby.
 Comment[kk]=KDE 4 Ruby Konqueror плагині. KDE4-тің CMake негіздеген қарапайым үлгісі, KParts::Plugin-ды туындайды, konqueror плагинің Ruby-де қалай жазуыды көрсетеді

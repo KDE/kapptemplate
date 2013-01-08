@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=C++
+Name[bs]=C++
 Name[ca]=C++
 Name[ca@valencia]=C++
 Name[cs]=C++
@@ -12,6 +13,7 @@ Name[et]=C++
 Name[fi]=C++
 Name[fr]=C++
 Name[ga]=C++
+Name[gl]=C++
 Name[hu]=C++
 Name[it]=C++
 Name[kk]=C++
@@ -36,6 +38,7 @@ Name[x-test]=xxC++xx
 Name[zh_CN]=C++
 Name[zh_TW]=C++
 Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text
+Comment[bs]=Predložak za Plasma aplete. Predložak za plasma aplete koji prikazuju ikonu i tekst
 Comment[ca]=Plantilla de miniaplicació del Plasma, Una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[ca@valencia]=Plantilla de miniaplicació del Plasma, Una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[da]=Skabelon til Plasma-applet. En skabelon til en Plasma-applet, som viser et ikon og en tekst
@@ -45,6 +48,7 @@ Comment[es]=Plantilla de miniaplicación para Plasma. Una plantilla de miniaplic
 Comment[et]=Plasma apleti mall. Plasma apleti mall, näitab ikooni ja teksti
 Comment[fr]=Modèle d'applet Plasma. Un modèle d'applet Plasma affichant une icône et un texte
 Comment[ga]=Teimpléad Feidhmchláirín Plasma. Teimpléad feidhmchláirín plasma a thaispeánann deilbhín agus téacs
+Comment[gl]=Modelo de applet para Plasma. Un modelo de applet para Plasma que mostra unha icona e un texto.
 Comment[hu]=Plasma kisalkalmazás sablon. Egy Plasma kisalkalmazás sablon, amely megjelenít egy ikont és egy szöveget
 Comment[it]=Modello di applet Plasma. Un modello di programmino Plasma che visualizza un'icona e del testo
 Comment[kk]=Plasma апплет үлгісі. Таңбаша мен мәтінді көрсететін Plasma апплет үлгісі
