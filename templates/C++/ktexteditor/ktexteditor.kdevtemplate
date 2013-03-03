@@ -63,6 +63,7 @@ Comment[sr@ijekavian]=Шаблон прикључка за KTextEditor за из
 Comment[sr@ijekavianlatin]=Šablon priključka za KTextEditor za izvođenje specijalnih postupaka u K‑pisanju, Kate, KDevelopu, itd. (ime projekta treba da bude OvogOblika)
 Comment[sr@latin]=Šablon priključka za KTextEditor za izvođenje specijalnih postupaka u K‑pisanju, Kate, KDevelopu, itd. (ime projekta treba da bude OvogOblika)
 Comment[sv]=Mall för Ktexteditor-insticksprogram. En Ktexteditor-insticksmodulmall för att utföra åtgärder med text i Kwrite, Kate, Kdevlop, etc. (använd projektnamnet ThisFormat)
+Comment[tr]=KTextEditor Eklenti Şablonu. KWrite, Kate, KDevelop vb. gibi uygulamalarda metinde özel işlemler uygulayabilmek için bir KTextEditor eklenti şablonu (lütfen proje adı için BuBiçimi kullanın)
 Comment[uk]=Шаблон додатка KTextEditor. Шаблон додатка KTextEditor, призначений для виконання дій над текстом у KWrite, Kate, KDevelop тощо. Будь ласка, використовуйте назву проекту у форматі ThisFormat.
 Comment[x-test]=xxKTextEditor Plugin Template. A KTextEditor plugin template to perform special operations on text in KWrite, Kate, KDevelop etc.  (use ThisFormat for the project name)xx
 Comment[zh_CN]=KTextEditor 插件模板。用于向 KWrite、Kate、KDevelop 中的文本进行特殊操作的 KTextEditor 插件模板(工程名称请使用 ThisFormat)
