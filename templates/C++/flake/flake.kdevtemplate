@@ -64,6 +64,7 @@ Comment[sr@ijekavian]=Шаблон прикључка за К‑офис са о
 Comment[sr@ijekavianlatin]=Šablon priključka za KOffice sa oblikom, alatkom i sidrištem (ime projekta treba da bude OvogOblika)
 Comment[sr@latin]=Šablon priključka za KOffice sa oblikom, alatkom i sidrištem (ime projekta treba da bude OvogOblika)
 Comment[sv]=Koffice-formmall (flinga). En Koffice-insticksmall med en form, ett verktyg och en panel (använd projektnamnet ThisFormat)
+Comment[tr]=KOffice Şekil Şablonu (Flake). Bir şekil, araç ve tutturucu ile bir KOffice eklenti şablonu (lütfen proje adı için BuBiçimi kullanın)
 Comment[uk]=Шаблон форми KOffice (Flake). Шаблон додатка KOffice з формою, інструментом або панеллю (будь ласка, використовуйте назву проекту у форматі ThisFormat)
 Comment[x-test]=xxKOffice Shape Template (Flake). A KOffice plugin template with a shape, a tool and a docker (please use ThisFormat for the project name)xx
 Comment[zh_CN]=KOffice 形状模板(Flake)。包含形状、工具和停靠部件的 KOffice 插件模板(工程名称请使用 ThisFormat)

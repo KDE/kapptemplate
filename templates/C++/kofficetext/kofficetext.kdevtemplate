@@ -64,6 +64,7 @@ Comment[sr@ijekavian]=Шаблон прикључка за К‑офис за д
 Comment[sr@ijekavianlatin]=Šablon priključka za KOffice za dodavanje novih mogućnosti menjanja teksta (ime projekta treba da bude OvogOblika)
 Comment[sr@latin]=Šablon priključka za KOffice za dodavanje novih mogućnosti menjanja teksta (ime projekta treba da bude OvogOblika)
 Comment[sv]=Mall för Koffice-textinsticksprogram. En Koffice-insticksmodulmall för att lägga till nya funktioner för textmodifiering (använd projektnamnet ThisFormat)
+Comment[tr]=KOffice Metin Eklenti Şablonu. Metni düzenlemede yeni özellikler eklemek için bir KOffice eklenti şablonu (lütfen proje adı için BuBiçimi kullanın)
 Comment[uk]=Шаблон додатка роботи з текстом KOffice. Шаблон додатка KOffice, призначений для додавання нових можливостей зміни тексту (будь ласка, використовуйте назву проекту у форматі ThisFormat)
 Comment[x-test]=xxKOffice Text-Plugin Template. A KOffice plugin template to add new features for modifying text (use ThisFormat for the project name)xx
 Comment[zh_CN]=KOffice 文本插件模板。用于向修改文本功能加入新特性的 KOffice 插件模板(工程名称请使用 ThisFormat)
