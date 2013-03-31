@@ -1,8 +1,6 @@
 Plasma Applet Template
 ----------------------
 
-You need KDE 4.2
-
 -- Build instructions --
 
 cd /where/your/applet/is/installed
