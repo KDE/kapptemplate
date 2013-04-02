@@ -25,16 +25,31 @@ import org.kde.locale 0.1 as Locale
 Item {
     id: main;
 
-    property int minimumWidth: 200;
-    property int minimumHeight: 300;
+    property int minimumWidth: 210;
+    property int minimumHeight: 210;
 
+    PlasmaCore.Svg {
+      //Instantiate a svg instance, set the svg image path
+      id: mySvg
+      imagePath: plasmoid.file("images", "pairs.svgz")
+      
+    }
+    
     Column {
-        focus: true;
-        spacing: 4;
-	
-	PlasmaComponents.Label {
-	  text: i18n("This is a Plasma label")
-	  color: "blue"
+      spacing: 10;
+      id:column
+      
+      PlasmaCore.SvgItem {
+	id: mySvgItem
+	width: 180; height: 180
+	anchors { horizontalCenter: column.horizontalCenter }
+	svg: mySvg //use the svg instanciated above
+      }
+      
+      PlasmaComponents.Label {
+	  text: i18n("A column with a SVG and a label")
+	  anchors { horizontalCenter: column.horizontalCenter }
+	  //the text color is set by the plasma theme
       }
     }
 }
