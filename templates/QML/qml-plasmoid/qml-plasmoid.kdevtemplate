@@ -1,6 +1,6 @@
 # KDE Config File
 [General]
 Name=Plasma QML Applet
-Comment=Plasma Applet Template. A plasma applet template displaying an icon and a text
+Comment=Plasma Applet Template: a plasma applet template displaying a svg picture and a text.
 Category=KDE/Plasmoid
-Icon=plasma-applet.png
+Icon=qml-plasmoid.png
