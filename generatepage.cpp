@@ -25,8 +25,10 @@
 #include <QTextCodec>
 
 #include <KDebug>
+#include <kio/copyjob.h>
 #include <kmacroexpander.h>
 #include <kmessagebox.h>
+#include <kmimetype.h>
 #include <kstandarddirs.h>
 #include <ktempdir.h>
 #include <ktar.h>
@@ -84,7 +86,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             const KArchiveFile *file = (KArchiveFile *)dir->entry(entry);
             file->copyTo(tdir.name());
             QString destName = dest + '/' + file->name();
-	    if (!destName.contains("/icons/")) {
+            if (!destName.contains("/icons/")) {
 		if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
                     KMacroExpander::expandMacros(destName, m_variables))) {
 		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
@@ -119,8 +121,13 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
     if (inputFile.open(QFile::ReadOnly) && outputFile.open(QFile::WriteOnly))
     {
-        if(temp.suffix().compare("png",Qt::CaseInsensitive) == 0)
-        {
+        if( KMimeType::isBinaryData(source) ) {
+            KIO::CopyJob* job = KIO::copy( KUrl(source), KUrl(dest), KIO::Overwrite );
+            if( !job->exec() ) {
+                return false;
+            }
+            return true;
+        } else if(temp.suffix().compare("png",Qt::CaseInsensitive) == 0) {
             QDataStream input(&inputFile);
             QDataStream output(&outputFile);
 
