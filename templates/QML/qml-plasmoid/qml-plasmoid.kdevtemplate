@@ -1,6 +1,13 @@
 # KDE Config File
 [General]
 Name=Plasma QML Applet
+Name[de]=Plasma-QML-Miniprogramm
+Name[nl]=Plasma QML-applet
+Name[pt]='Applet' do Plasma em QML
+Name[pt_BR]=Miniaplicativo do Plasma em QML
+Name[sv]=Plasma QML-miniprogram
+Name[uk]=Аплет Плазми мовою QML
+Name[x-test]=xxPlasma QML Appletxx
 Comment=Plasma QML Applet Template: a plasma applet template displaying a svg picture and a text.
 Category=KDE/Plasmoid
 Icon=qml-plasmoid.png
