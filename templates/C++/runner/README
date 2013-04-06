@@ -1,8 +1,6 @@
 Runner Template
 ----------------------
 
-You need KDE 4.2
-
 -- Build instructions --
 
 cd /where/your/runner/is/installed
@@ -14,12 +12,18 @@ make install
 
 (your $KDEDIRS is where you install your KDE 4)
 
-Restart plasma to load the runner 
-kquitapp plasma
-plasma
+Restart plasma to load the runner: in a terminal, run the 2 following commands:
+kquitapp plasma-desktop
+plasma-desktop
 
 Alt-F2 to launch KRunner and in the runners list you will find your runner.
 
 You might need to run kbuildsycoca4
 in order to get the .desktop file recognized.
 
+More information on how to develop a runner:
+http://techbase.kde.org/Development/Tutorials/Plasma/AbstractRunner
+
+Last update: April 2013
+Anne-Marie Mahfouf
+annma@kde.org
