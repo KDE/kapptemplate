@@ -37,11 +37,13 @@ Note: use nmake if you're building with the Visual Studio compiler, or make
 if you're using the minGW compiler
 
 ----------------------------
-This template shows how one method on how to use QML and C++ with KDE and KConfig XT.
+This template shows one method on how to use QML and C++ with KDE and KConfig XT.
 ----------------------------
+
+You can read more about QML and C++ on http://qt-project.org/doc/qt-4.8/qtbinding.html
 
 Please send all comments to:
 Anne-Marie Mahfouf
 annma@kde.org
 
-Last update: September 2011
+Last update: April 2013
