@@ -55,6 +55,7 @@ Comment[ca]=Llançador de %{APPNAME}
 Comment[ca@valencia]=Llançador de %{APPNAME}
 Comment[cs]=%{APPNAME} runner
 Comment[da]=%{APPNAME}-runner
+Comment[de]=%{APPNAME}-Starter
 Comment[el]=εκτελεστής %{APPNAME}
 Comment[en_GB]=%{APPNAME} runner
 Comment[es]=Lanzador para %{APPNAME}

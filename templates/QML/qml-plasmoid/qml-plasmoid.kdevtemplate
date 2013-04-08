@@ -13,6 +13,7 @@ Name[sv]=Plasma QML-miniprogram
 Name[uk]=Аплет Плазми мовою QML
 Name[x-test]=xxPlasma QML Appletxx
 Comment=Plasma QML Applet Template: a plasma applet template displaying a svg picture and a text.
+Comment[nl]=Sjabloon voor Plasma-QML-applet: Een sjabloon voor een plasma-applet dat een svg-afbeelding en een tekst toont
 Comment[pt]=Modelo de 'Applet' do Plasma. Um modelo de 'applet' do Plasma que mostra uma imagem SVG e algum texto.
 Comment[pt_BR]=Modelo de miniaplicativo do Plasma em QML: Um modelo de miniaplicativo do Plasma que mostra uma imagem SVG e texto.
 Comment[sr]=Шаблон за плазма КуМЛ аплет који даје СВГ слику и текст
