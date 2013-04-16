@@ -1,0 +1,9 @@
+# KDE Config File
+[General]
+Name=Qt5 QML2 Application
+
+Comment=A Qt5 and QML2 basic application using QMake. Warning, you need Qt5 for it, not Qt4.
+
+Category=Qt/Graphical
+Icon=qt5-qml2.png
+ShowFilesAfterGeneration=%{dest}/src/main.cpp

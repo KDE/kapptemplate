@@ -60,5 +60,6 @@ install(FILES templates/C++/akonadiserializer/akonadi-serializer.png DESTINATION
 install(FILES templates/C++/runner/runner.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/C++/konqplugin/konqplugin.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/QML/qml-plasmoid/qml-plasmoid.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
+install(FILES templates/QML/qt5-qml2/qt5-qml2.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 
 macro_display_feature_log()
