@@ -17,39 +17,36 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 1.0;
+import QtQuick 1.1
 import org.kde.plasma.core 0.1 as PlasmaCore
 import org.kde.plasma.components 0.1 as PlasmaComponents
-import org.kde.locale 0.1 as Locale
 
 Item {
-    id: main;
-
-    property int minimumWidth: 210;
-    property int minimumHeight: 210;
+    property int minimumWidth: 210
+    property int minimumHeight: 210
 
     PlasmaCore.Svg {
-      //Instantiate a svg instance, set the svg image path
-      id: mySvg
-      imagePath: plasmoid.file("images", "pairs.svgz")
-      
+        //Instantiate a svg, set the svg image path
+        id: mySvg
+        imagePath: plasmoid.file("images", "pairs.svgz")
     }
-    
+
     Column {
-      spacing: 10;
-      id:column
-      
-      PlasmaCore.SvgItem {
-	id: mySvgItem
-	width: 180; height: 180
-	anchors { horizontalCenter: column.horizontalCenter }
-	svg: mySvg //use the svg instanciated above
-      }
-      
-      PlasmaComponents.Label {
-	  text: i18n("A column with a SVG and a label")
-	  anchors { horizontalCenter: column.horizontalCenter }
-	  //the text color is set by the plasma theme
-      }
+        spacing: 10
+
+        PlasmaCore.SvgItem {
+            id: mySvgItem
+            width: 180
+            height: 180
+            anchors.horizontalCenter: parent.horizontalCenter
+            svg: mySvg //use the svg instanciated above
+        }
+
+        PlasmaComponents.Label {
+            text: i18n("A column with a SVG and a label")
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+            }
+        }
     }
 }
