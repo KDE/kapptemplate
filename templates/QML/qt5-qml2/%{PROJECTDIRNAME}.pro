@@ -1,8 +1,8 @@
 SOURCES += \
-    main.cpp
+    src/main.cpp
  
 OTHER_FILES += \
-    qml/main.qml
+    src/qml/main.qml
  
 QT += quick declarative
  
