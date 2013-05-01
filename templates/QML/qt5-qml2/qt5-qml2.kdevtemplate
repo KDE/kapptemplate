@@ -3,6 +3,7 @@
 Name=Qt5 QML2 Application
 Name[cs]=Aplikace Qt5 QML2
 Name[de]=Qt5-QML2-Anwendung
+Name[es]=Aplicación QML2 para Qt5
 Name[fr]=Application QML2 Qt5
 Name[nl]=Qt5 QML2-toepassing
 Name[pt]=Aplicação em QML2 do Qt5
@@ -17,6 +18,7 @@ Name[uk]=Програма мовою QML2 для Qt5
 Name[x-test]=xxQt5 QML2 Applicationxx
 
 Comment=A Qt5 and QML2 basic application using QMake. Warning, you need Qt5 for it, not Qt4.
+Comment[es]=Una aplicación QML2 básica para Qt5 que usa QMake. Advertencia: necesita Qt5 para ella, no Qt4.
 Comment[fr]=Une application de base Qt5 et QML2 utilisant QMake. Attention, il vous faut Qt5 pour ce faire, pas Qt4.
 Comment[nl]=Een Qt5 en QML2 basistoepassing met QMake. Waarschuwing, u hebt er Qt5 voor nodug, niet Qt4.
 Comment[pt]=Uma aplicação básica em Qt5 e QML2 que usa o QMake. Atenção: é necessário o Qt5 para tal, não o Qt4.
