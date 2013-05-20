@@ -48,6 +48,7 @@ Comment[de]=Vorlage für KTextEditor-Modul. Eine Vorlage für KTextEditor-Module
 Comment[el]=KTextEditor Plugin Template. Ένα πρότυπο προσθέτου KTextEditor για την πραγματοποίηση ειδικών λειτουργιών σε κείμενο με KWrite, Kate, KDevelop κτλ. (χρησιμοποιήστε ThisFormat ως όνομα του έργου)
 Comment[es]=Plantilla de complemento para KTextEditor. Un complemento de KTextEditor para realizar operaciones especiales sobre el texto en KWrite, Kate, KDevelop, etc. (use EsteFormato para el nombre del proyecto)
 Comment[et]=KTextEditori plugina mall. KTextEditori plugina mall eritoimingute sooritamiseks tekstiga rakendustes KWrite, Kate, KDevelop jne. (palun kasuta projekti nime puhul kuju SeeVorming)
+Comment[fi]=KTextEditor-liitännäismalli. KTextEditor-liitännäismalli erikoistoimintojen suorittamiseksi KWritessa, Katessa, KDevelopissa jne. (kirjoita projektin nimi TälläTavalla).
 Comment[fr]=Modèle de module externe pour KTextEditor. Un modèle de module externe KTextEditor pour effectuer des opérations spéciales sur du texte dans KWrite, Kate, KDevelop etc. (utilisez CeFormat pour le nom du projet)
 Comment[gl]=Modelo de complemento de KTextEditor. Modelo de complemento de KTextEditor para realizar operación especiais entexto en KWrite, Kate, KDevelop etc. Use EsteFormato para o nome do proxecto.
 Comment[hu]=KTextEditor bővítmény sablon. Egy KTextEditor bővítmény sablon szövegek speciális műveleteinek végrehajtásához a KWrite, Kate, KDevelop, stb. alkalmazásokban. (IlyenFormátumot használjon a projektnévhez)
