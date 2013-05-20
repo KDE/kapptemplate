@@ -48,6 +48,7 @@ Comment[de]=Vorlage für KOffice-Text-Modul. Eine Vorlage für KOffice-Module zu
 Comment[el]=KOffice Text-Plugin Template. Ένα πρότυπο πρόσθετου του KOffice για την προσθήκη νέων λειτουργιών τροποποίησης κειμένου (χρησιμοποιήστε ThisFormat ως όνομα του έργου)
 Comment[es]=Plantilla de complemento de texto para KOffice. Una plantilla de complemento para KOffice que añade nuevas funciones de modificación de texto (use EsteFormato en el nombre del proyecto)
 Comment[et]=KOffice'i tekstiplugina mall. KOffice'i plugina mall uute omaduste lisamiseks teksti muutmiseks (palun kasuta projekti nime puhul kuju SeeVorming)
+Comment[fi]=KOffice tekstiliitännäismalli. KOffice-liitännäismalli uusien tekstin muokkaamisominaisuuksien lisäämiseksi (kirjoita projektin nimi TälläTavalla).
 Comment[fr]=Modèle de module externe de texte pour KOffice. Un modèle de module externe KOffice permettant d'ajouter de nouvelles fonctionnalités pour modifier du texte (utilisez CeFormat pour le nom du projet)
 Comment[ga]=Teimpléad Breiseáin Téacs KOffice. Teimpléad breiseáin KOffice chun téacs a mhionathrú (úsáid ThisFormat mar ainm an tionscadail)
 Comment[gl]=Modelo de complemento de texto para KOffice. Un modelo de complemento para KOffice para engadir novas funcionalidades para modificar texto. Empregue EsteFormato para o nome do proxecto.
