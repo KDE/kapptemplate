@@ -67,6 +67,7 @@ Comment[sv]=vad programmet gör med några få ord
 Comment[tr]=uygulamanızın birkaç kelime ile ne yaptığı
 Comment[uk]=призначення вашої програми у декількох словах
 Comment[x-test]=xxwhat your app does in a few wordsxx
+Comment[zh_TW]=簡單說明您的程式做什麼事情
 
 Icon=applications-system
 Type=Service
