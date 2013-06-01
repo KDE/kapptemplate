@@ -49,6 +49,7 @@ Name[x-test]=xx%{APPNAME}xx
 Name[zh_CN]=%{APPNAME}
 Name[zh_TW]=%{APPNAME}
 Comment=what your app does in a few words
+Comment[ca]=Què fa la vostra aplicació en poques paraules
 Comment[de]=Kurze Bescheibung, was Ihre Anwendung tut
 Comment[es]=lo que hace su aplicación, en pocas palabras
 Comment[fi]=ohjelmasi toiminta muutamalla sanalla

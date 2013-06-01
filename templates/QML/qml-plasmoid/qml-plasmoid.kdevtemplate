@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Plasma QML Applet
+Name[ca]=Miniaplicació QML del Plasma
 Name[de]=Plasma-QML-Miniprogramm
 Name[es]=Miniaplicación QML para Plasma
 Name[fi]=Plasma QML-sovelma
@@ -21,6 +22,7 @@ Name[uk]=Аплет Плазми мовою QML
 Name[x-test]=xxPlasma QML Appletxx
 Name[zh_TW]=Plasma QML 小程式
 Comment=Plasma QML Applet Template: a plasma applet template displaying a svg picture and a text.
+Comment[ca]=Plantilla de miniaplicació del Plasma: una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[de]=Vorlage für Plasma-QML-Miniprogramm. Eine Vorlage für ein Plasma-Miniprogramm, das ein SVG-Symbol und einen Text anzeigt
 Comment[es]=Plantilla de miniaplicación QML para Plasma: una plantilla de miniaplicación para Plasma que muestra una imagen SVG y un texto.
 Comment[fi]=Plasman QML-sovelmamalli: Plasma-sovelmamalli, joka näyttää kuvakkeen ja tekstiä.
