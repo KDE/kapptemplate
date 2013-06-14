@@ -71,6 +71,7 @@ Comment[pa]=%{APPNAME} ਫਲਕੀ ਸ਼ਕਲ
 Comment[pl]=Kształt Flake %{APPNAME}
 Comment[pt]=Forma do Flake %{APPNAME}
 Comment[pt_BR]=Forma do Flake %{APPNAME}
+Comment[ru]=Объект Flake: %{APPNAME}
 Comment[sk]=%{APPNAME} tvar vločky
 Comment[sr]=Облик за %{APPNAME} (Флејк)
 Comment[sr@ijekavian]=Облик за %{APPNAME} (Флејк)
