@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Qt5 QML2 Application
+Name[bs]=Qt5 QML2 aplikacija
 Name[ca]=Una aplicació QML2 per Qt5
 Name[cs]=Aplikace Qt5 QML2
 Name[da]=Qt5 QML2-applikation
