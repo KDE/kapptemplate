@@ -3,6 +3,7 @@
 Name=Plasma QML Applet
 Name[bs]=Plasma QML Applet
 Name[ca]=Miniaplicació QML del Plasma
+Name[ca@valencia]=Miniaplicació QML del Plasma
 Name[da]=Plasma QML-applet
 Name[de]=Plasma-QML-Miniprogramm
 Name[es]=Miniaplicación QML para Plasma
@@ -31,6 +32,7 @@ Name[zh_TW]=Plasma QML 小程式
 Comment=Plasma QML Applet Template: a plasma applet template displaying a svg picture and a text.
 Comment[bs]=Predložak za QML aplete. Predložak za plasma aplete koji prikazuju SVG sliku i tekst
 Comment[ca]=Plantilla de miniaplicació del Plasma: una plantilla de miniaplicació del plasma que mostra una icona i un text
+Comment[ca@valencia]=Plantilla de miniaplicació del Plasma: una plantilla de miniaplicació del plasma que mostra una icona i un text
 Comment[da]=Skabelon til Plasma QML-applet. En skabelon til en Plasma-applet, som viser et SVG-billede og en tekst.
 Comment[de]=Vorlage für Plasma-QML-Miniprogramm. Eine Vorlage für ein Plasma-Miniprogramm, das ein SVG-Symbol und einen Text anzeigt
 Comment[es]=Plantilla de miniaplicación QML para Plasma: una plantilla de miniaplicación para Plasma que muestra una imagen SVG y un texto.

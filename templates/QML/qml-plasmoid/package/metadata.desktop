@@ -51,6 +51,7 @@ Name[zh_TW]=%{APPNAME}
 Comment=what your app does in a few words
 Comment[bs]=šta vaš program radi u nekoliko riječi
 Comment[ca]=Què fa la vostra aplicació en poques paraules
+Comment[ca@valencia]=Què fa la vostra aplicació en poques paraules
 Comment[da]=nogle få ord om hvad din app gør
 Comment[de]=Kurze Bescheibung, was Ihre Anwendung tut
 Comment[es]=lo que hace su aplicación, en pocas palabras
