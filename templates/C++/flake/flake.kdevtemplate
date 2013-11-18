@@ -63,6 +63,7 @@ Comment[pt]=Modelo de Forma do KOffice (Flake). Um modelo de 'plugin' do KOffice
 Comment[pt_BR]=Modelo de forma do KOffice (Flake). Um modelo de plugin do KOffice com uma forma, uma ferramenta e uma área acoplável (use EsteFormato como nome do projeto)
 Comment[ru]=Графический объект KOffice (Flake). Шаблон расширения KOffice с изображением, инструментарием и панелью (дайте проекту имя вида ProjectName)
 Comment[sk]=Šablóna KOffice tvar (vločka). Šablóna KOffice pluginu s tvarom, nástroj a docker (prosím použite TentoFormát pre názov projektu)
+Comment[sl]=Vstavek predloge KOffice z obliko, orodjem in sidriščem (za ime projekta uporabite "ToObliko")
 Comment[sr]=Шаблон прикључка за К‑офис са обликом, алатком и сидриштем (име пројекта треба да буде OvogOblika)
 Comment[sr@ijekavian]=Шаблон прикључка за К‑офис са обликом, алатком и сидриштем (име пројекта треба да буде OvogOblika)
 Comment[sr@ijekavianlatin]=Šablon priključka za KOffice sa oblikom, alatkom i sidrištem (ime projekta treba da bude OvogOblika)

@@ -62,6 +62,7 @@ Comment[pt]=Aplicação Gráfica para o KDE4. Um modelo simples para KDE4 com ba
 Comment[pt_BR]=Aplicativo com interface KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do XMLGuiWindow e demonstra como utilizar o KConfig XT
 Comment[ru]=Графическое приложение для KDE 4. Простой шаблон для KDE4 (рассчитанный на CMake), с наследованием от XMLGuiWindow, демонстрирующий использование KConfig XT
 Comment[sk]=KDE 4 GUI aplikácia. Jednoduchá KDE4 šablóna založená na CMake, dedí od XMLGuiWindow a dekmonštruje ako používať KConfig XT
+Comment[sl]=Preprosta predloga programa z grafičnim uporabniškim vmesnikom za KDE4, temelječa na CMake. Deduje od XMLGuiWindow in prikazuje kako uporabiti KConfig XT
 Comment[sr]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, наслеђује XMLGuiWindow и показује употребу К‑конфиг‑ИксТ‑а
 Comment[sr@ijekavian]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, насљеђује XMLGuiWindow и показује употребу К‑конфиг‑ИксТ‑а
 Comment[sr@ijekavianlatin]=Jednostavan KDE4 šablon na osnovu CMakea, nasljeđuje XMLGuiWindow i pokazuje upotrebu KConfigXT‑a
