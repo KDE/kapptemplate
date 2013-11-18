@@ -63,6 +63,7 @@ Comment[pt]='Plugin' do Konqueror para o KDE 4. Um modelo simples para KDE4 com 
 Comment[pt_BR]=Plugin do Konqueror do KDE 4. Um modelo simples para KDE4 com base no CMake, que herda do KParts::Plugin e demonstra como criar um plugin para o Konqueror
 Comment[ru]=Расширение KDE 4 Konqueror. Простой шаблон для KDE4 (рассчитанный на CMake), с наследованием от KParts::Plugin, показывающий, как написать расширение Konqueror
 Comment[sk]=KDE 4 plugin Konquerora. Jednoduchá šablóna KDE4 založená na CMake, dedí od KParts::Plugin a demonštruje ako písať pluginy konquerora
+Comment[sl]=Preprosta predloga za KDE 4 za Konqueror, temelječa na CMake. Deduje od KParts::Plugin in prikazuje kako spisati vstavek za Konqueror
 Comment[sr]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, наслеђује KParts::Plugin и показује како се пишу прикључци за К‑освајач.
 Comment[sr@ijekavian]=Једноставан КДЕ‑4 шаблон на основу ц‑мејка, насљеђује KParts::Plugin и показује како се пишу прикључци за К‑освајач.
 Comment[sr@ijekavianlatin]=Jednostavan KDE4 šablon na osnovu CMakea, nasljeđuje KParts::Plugin i pokazuje kako se pišu priključci za K‑osvajač.

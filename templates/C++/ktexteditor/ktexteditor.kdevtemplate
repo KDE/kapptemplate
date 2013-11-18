@@ -62,6 +62,7 @@ Comment[pt]=Modelo de 'Plugin' do KTextEditor. Um modelo de 'plugin' do KTextEdi
 Comment[pt_BR]=Modelo de plugin do KTextEditor. Um modelo de plugin do KTextEditor para efetuar operações especiais sobre o texto no KWrite, Kate, KDevelop, etc. (use por favor EsteFormato como nome do projeto)
 Comment[ru]=Расширение для KTextEditor. Шаблон расширения KTextEditor для выполнения специальных операций с текстом в KWrite, Kate, KDevelop и т.д. (дайте проекту имя вида ProjectName)
 Comment[sk]=Šablóna pluginu KTextEditor. Šablóna pluginu KTextEditor na vykonanie špeciálnych operácií s textom v KWrite, Kate, KDevelop atď. (použite TentoFormát pre názov projektu)
+Comment[sl]=Vstavek predloge za KTextEditor, ki omogoča izvajanje posebnih dejanj na besedilu v KWrite, Kate, KDevelop, itn. (za ime projekta uporabite "ToObliko")
 Comment[sr]=Шаблон прикључка за KTextEditor за извођење специјалних поступака у К‑писању, Кејт, К‑девелопу, итд. (име пројекта треба да буде OvogOblika)
 Comment[sr@ijekavian]=Шаблон прикључка за KTextEditor за извођење специјалних поступака у К‑писању, Кејт, К‑девелопу, итд. (име пројекта треба да буде OvogOblika)
 Comment[sr@ijekavianlatin]=Šablon priključka za KTextEditor za izvođenje specijalnih postupaka u K‑pisanju, Kate, KDevelopu, itd. (ime projekta treba da bude OvogOblika)
