@@ -30,9 +30,7 @@ macro(kapptemplate_add_app_templates _templateNames)
 
         if(WIN32)
             add_custom_command(OUTPUT ${_template}
-                COMMAND zip ARGS -r
-                    ${_template} ${CMAKE_CURRENT_SOURCE_DIR}/${_templateName}
-                    -x .svn _svn .kdev_ignore
+                COMMAND 7za ARGS a -r -tzip ${_template} ${CMAKE_CURRENT_SOURCE_DIR}/${_templateName}/*
                 DEPENDS ${_deps}
             )
         else(WIN32)
