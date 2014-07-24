@@ -9,7 +9,6 @@ Name[de]=%{APPNAME}-Modul
 Name[el]=%{APPNAME} πρόσθετο
 Name[en_GB]=%{APPNAME} plugin
 Name[es]=Complemento %{APPNAME}
-Name[et]=%{APPNAME} plugin
 Name[fi]=%{APPNAME}-liitännäinen
 Name[fr]=Module externe %{APPNAME}
 Name[ga]=Breiseán %{APPNAME}
