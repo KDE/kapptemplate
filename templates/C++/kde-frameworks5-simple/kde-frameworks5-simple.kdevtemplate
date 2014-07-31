@@ -1,19 +1,25 @@
 # KDE Config File
 [General]
 Name=Minimal C++ KDE Frameworks
+Name[ca]=C++ mínim de KDE Frameworks
 Name[en_GB]=Minimal C++ KDE Frameworks
+Name[fi]=Minimaalinen C++ KDE Frameworks -sovellus
 Name[nl]=Minimale C++ KDE Frameworks
 Name[pt]=C++ para as Plataformas do KDE Mínima
 Name[pt_BR]=C++ mínimo para KDE Frameworks
+Name[sk]=Minimálne C++ KDE Frameworks
 Name[sv]=Minimal C++ KDE Ramverk
 Name[uk]=Мінімальна C++, KDE Frameworks
 Name[x-test]=xxMinimal C++ KDE Frameworksxx
 Comment=A very basic KDE Frameworks 5 GUI Application in C++
+Comment[ca]=Una aplicació IGU molt bàsica de les Frameworks 5 del KDE en C++
 Comment[cs]=Úplně základní GUI aplikace KDE Frameworks 5 v C++
 Comment[en_GB]=A very basic KDE Frameworks 5 GUI Application in C++
+Comment[fi]=Erittäin yksinkertainen KDE Frameworks 5 GUI-sovellus C++:lla
 Comment[nl]=Een zeer basale KDE Frameworks 5 GUI-toepassing in C++
 Comment[pt]=Uma aplicação gráfica muito básica das Plataformas do KDE em C++
 Comment[pt_BR]=Um aplicativo gráfico muito básico do KDE Frameworks 5 em C++
+Comment[sk]=Veľmi základná KDE Frameworks 5 GUI aplikácia v C++
 Comment[sv]=Ett mycket enkelt KDE Ramverk 5 grafiskt gränssnitt i C++
 Comment[uk]=Мінімалістична програма з графічним інтерфейсом KDE Frameworks 5 на C++
 Comment[x-test]=xxA very basic KDE Frameworks 5 GUI Application in C++xx
