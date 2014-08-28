@@ -38,7 +38,7 @@ int main(int argc, char **argv)
                           i18n("(c) 20013-2014, %{AUTHOR} <%{EMAIL}>"));
 
     aboutData.addAuthor(i18n("%{AUTHOR}"),i18n("Author"), QStringLiteral("%{EMAIL}"));
-    aboutData.setProgramIconName("%{APPNAMELC}");
+    application.setWindowIcon(QIcon::fromTheme("%{APPNAMELC}"));
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addVersionOption();
