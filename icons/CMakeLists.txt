@@ -8,4 +8,4 @@ set(kapptemplate_ICONS
   hisc-apps-kapptemplate.svg
 )
 
-ecm_install_icons(ICONS ${kapptemplate_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hi)
+ecm_install_icons(ICONS ${kapptemplate_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hicolor)
