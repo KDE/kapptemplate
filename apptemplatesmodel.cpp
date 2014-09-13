@@ -18,6 +18,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
+#include <QDir>
 #include <QFileInfo>
 
 #include <kconfiggroup.h>
@@ -32,15 +33,24 @@
 #include "apptemplateitem.h"
 
 AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
-    :QStandardItemModel(parent), m_choicePage(parent)
+    :QStandardItemModel(parent)
 {
 }
 
-void extractTemplateDescriptions( KStandardDirs* dirs )
+void extractTemplateDescriptions()
 {
-    const QStringList templateArchives = dirs->findAllResources("apptemplates");
+    QStringList templateArchives;
+    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    foreach(const QString &templatePath, templatePaths) {
+        foreach(const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+            templateArchives.append(templatePath + templateArchive);
+        }
+    }
 
-    const QString localDescriptionsDir = dirs->saveLocation("apptemplate_descriptions");
+    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
+    QDir dir(localDescriptionsDir);
+    if(!dir.exists())
+        dir.mkpath(".");
 
     foreach (const QString &archName, templateArchives)
     {
@@ -49,12 +59,11 @@ void extractTemplateDescriptions( KStandardDirs* dirs )
         KZip templateArchive(archName);
 #else
         KTar templateArchive(archName, "application/x-bzip");
-#endif //Q_WS_WIN
+#endif // Q_WS_WIN
         if (templateArchive.open(QIODevice::ReadOnly))
         {
             QFileInfo templateInfo(archName);
-            const KArchiveEntry *templateEntry =
-                templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
+            const KArchiveEntry *templateEntry = templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
             if (!templateEntry || !templateEntry->isFile())
             {
                 kDebug(9010) << "template" << archName << "does not contain .kdevtemplate file";
@@ -75,10 +84,14 @@ void AppTemplatesModel::refresh()
     m_templateItems.clear();
     m_templateItems[""] = invisibleRootItem();
 
-    extractTemplateDescriptions( KGlobal::dirs() );
+    extractTemplateDescriptions();
 
-    //find all .kdevtemplate files on the system
-    const QStringList templateArchives = KGlobal::dirs()->findAllResources("apptemplate_descriptions");
+    QStringList templateArchives;
+    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
+    foreach(const QString &templateFile, QDir(localDescriptionsDir).entryList(QDir::Files)) {
+        templateArchives.append(localDescriptionsDir + templateFile);
+    }
+
     foreach (const QString &templateArchive, templateArchives)
     {
 	QFileInfo archiveInfo(templateArchive);
@@ -140,4 +153,3 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
     }
     return QVariant();
 }
-

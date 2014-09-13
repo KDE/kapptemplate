@@ -48,4 +48,3 @@ void AppTemplateItem::init()
 {
     setFlags(Qt::ItemIsEnabled);
 }
-

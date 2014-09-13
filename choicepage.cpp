@@ -20,10 +20,13 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
+#include <QDir>
 #include <QString>
 #include <QPixmap>
 #include <QStandardItem>
 
+#include <KUrl>
+#include <KLocale>
 #include <KDebug>
 #include <kstandarddirs.h>
 
@@ -39,7 +42,7 @@ ChoicePage::ChoicePage( QWidget *parent)
     //Get the model
     templatesModel = new AppTemplatesModel(this);
     templatesModel->refresh();
-    ui_choice.appTree->setModel(templatesModel); 
+    ui_choice.appTree->setModel(templatesModel);
     ui_choice.appTree->expandAll();
     connect(ui_choice.kcfg_appName, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
@@ -68,15 +71,23 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 {
     if (!index.isValid()){
         emit completeChanged();
-	return;
+        return;
     }
-    //get picture 
-    KStandardDirs* dirs = KGlobal::dirs();
-    kDebug() << index.data(Qt::UserRole+2);
-    QString picPath = dirs->findResource("apptemplate_previews", index.data(Qt::UserRole+2).toString());
-    if (index.data(Qt::UserRole+2).toString().isEmpty()) {
-	picPath = dirs->findResource("apptemplate_previews", "default.png");//default if none
+
+    QString picPath;
+    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/template_previews/", QStandardPaths::LocateDirectory);
+    foreach(const QString &templatePath, templatePaths) {
+        foreach(const QString &templatePreview, QDir(templatePath).entryList(QDir::Files)) {
+            if(templatePreview.compare(index.data(Qt::UserRole + 2).toString()) == 0) {
+                picPath = templatePath + templatePreview;
+                break;
+            }
+        }
     }
+
+    if(picPath.isEmpty())
+        return;
+
     QPixmap pixmap(picPath);
     ui_choice.pictureLabel->setPixmap(pixmap);
     //and description
@@ -87,8 +98,6 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 	description = index.data(Qt::UserRole+1).toString();
     }
     ui_choice.descriptionLabel->setText(description);
-    //Template view name
-    QStandardItem *item = templatesModel->itemFromIndex(index);
 
     m_baseName = index.data(Qt::UserRole+3).toString();
     //baseName can check if an item is selected.
@@ -99,5 +108,3 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     setField("tempName", m_baseName);
     emit completeChanged();
 }
-
-#include "choicepage.moc"

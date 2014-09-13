@@ -1,9 +1,2 @@
-set(namevalidatortest_SOURCES namevalidatortest.cpp)
-
-kde4_add_unit_test(namevalidatortest ${namevalidatortest_SOURCES})
-target_link_libraries(namevalidatortest ${KDE4_KDECORE_LIBS} ${QT_QTTEST_LIBRARY})
-
-set(macrosubstitutiontest_SOURCES macrosubstitutiontest.cpp)
-
-kde4_add_unit_test(macrosubstitutiontest ${macrosubstitutiontest_SOURCES})
-target_link_libraries(macrosubstitutiontest ${KDE4_KDECORE_LIBS} ${QT_QTTEST_LIBRARY})
+ecm_add_test(namevalidatortest.cpp LINK_LIBRARIES Qt5::Core Qt5::Test)
+ecm_add_test(macrosubstitutiontest.cpp LINK_LIBRARIES KF5::CoreAddons Qt5::Core Qt5::Test)

@@ -24,6 +24,7 @@
 #include <KLocale>
 #include <KDebug>
 #include <ktoolinvocation.h>
+#include <KHelpClient>
 
 #include "choicepage.h"
 #include "generatepage.h"
@@ -50,7 +51,7 @@ KAppTemplate::~KAppTemplate()
 
 void KAppTemplate::showHelp()
 {
-    KToolInvocation::invokeHelp( "kapptemplate-index", "kapptemplate" );
+    KHelpClient::invokeHelp( "kapptemplate-index", "kapptemplate" );
 }
 
 
@@ -103,11 +104,3 @@ void PropertiesPage::saveConfig()
     Prefs::setAppName(appNameString);
     Prefs::self()->writeConfig();
 }
-
-
-
-
-
-
-
-

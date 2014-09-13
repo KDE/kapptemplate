@@ -19,13 +19,10 @@
  ***************************************************************************/
 
 #include "macrosubstitutiontest.h"
-#include <qtest_kde.h>
-#include <kmacroexpander.h>
-#include <kstandarddirs.h>
+#include <KMacroExpander>
+#include <QTest>
 #include <QString>
 #include <QTextStream>
-
-QTEST_KDEMAIN_CORE(MacroSubstitutionTest)
 
 // This is a test to check the validity of the macros
 // substitution.
@@ -70,4 +67,4 @@ void MacroSubstitutionTest::substitute()
     QCOMPARE(  outputString, right);
 }
 
-#include "macrosubstitutiontest.moc"
+QTEST_MAIN(MacroSubstitutionTest)

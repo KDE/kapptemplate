@@ -1,20 +1,21 @@
-cmake_minimum_required(VERSION 2.6)
-
+cmake_minimum_required(VERSION 2.8.12)
 project(kapptemplate)
 
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
+find_package(ECM REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
-# search packages used by KDE
-find_package(KDE4 REQUIRED)
-include(KDE4Defaults)
-include(MacroLibrary)
-
-add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
-add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
-
-include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${KDEPIMLIBS_INCLUDE_DIR})
-
+include(ECMInstallIcons)
+include(ECMAddTests)
+include(KDEInstallDirs)
+include(KDECompilerSettings)
+include(KDECMakeSettings)
+include(FeatureSummary)
 include(KAppTemplateMacro)
+
+find_package(Qt5 REQUIRED COMPONENTS Test)
+find_package(KF5 REQUIRED COMPONENTS KDELibs4Support CoreAddons ConfigWidgets Archive KIO)
+
+add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 
 add_subdirectory(doc)
 add_subdirectory(icons)
@@ -28,24 +29,22 @@ set(kapptemplate_SRCS
    apptemplateitem.cpp
    generatepage.cpp
    choicepage.cpp
- )
+)
 
-kde4_add_ui_files(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
+qt5_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
 
-kde4_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
+kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
 
-kde4_add_app_icon(kapptemplate_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/hi*-app-kapptemplate.png")
+# TODO: Install the application icon
+# kde4_add_app_icon(kapptemplate_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/hi*-app-kapptemplate.png")
 
-kde4_add_executable(kapptemplate ${kapptemplate_SRCS})
+add_executable(kapptemplate ${kapptemplate_SRCS})
 
-target_link_libraries(kapptemplate ${KDE4_KIO_LIBS})
+target_link_libraries(kapptemplate KF5::KDELibs4Support KF5::CoreAddons KF5::ConfigWidgets KF5::Archive KF5::KIOCore)
 
-install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS} )
-
-########### install files ###############
-
-install( PROGRAMS kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-install( FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
+install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(PROGRAMS kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR})
+install(FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR})
 install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/C++/kapp4/kapp4.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/C++/kde-simple/kde-simple.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
@@ -62,5 +61,3 @@ install(FILES templates/C++/runner/runner.png DESTINATION ${DATA_INSTALL_DIR}/kd
 install(FILES templates/C++/konqplugin/konqplugin.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/QML/qml-plasmoid/qml-plasmoid.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES templates/QML/qt5-qml2/qt5-qml2.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
-
-macro_display_feature_log()

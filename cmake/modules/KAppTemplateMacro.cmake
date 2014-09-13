@@ -42,13 +42,8 @@ macro(kapptemplate_add_app_templates _templateNames)
             )
         endif(WIN32)
 
-
-        #install( FILES ${_templateName}/${_templateName}.kdevtemplate
-        #    DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/templates )
-        #install( FILES ${_templateName}/${_templateName}.png
-        #    DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard )
         install( FILES ${_template} DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/templates )
-        macro_additional_clean_files(${_template})
+        set_property(DIRECTORY APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES "${_template}")
 
     endforeach(_templateName)
 endmacro(kapptemplate_add_app_templates)

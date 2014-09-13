@@ -24,6 +24,8 @@
 #include <QFileInfo>
 #include <QTextCodec>
 
+#include <KUrl>
+#include <KLocale>
 #include <KDebug>
 #include <kio/copyjob.h>
 #include <kmacroexpander.h>
@@ -69,7 +71,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
     {
         progress++;
         ui_generate.progressBar->setValue( (progress / entries.size()) * 100);
-	//don't copy .kdevtemplate 
+	//don't copy .kdevtemplate
         if (entry.endsWith(".kdevtemplate"))
             continue;
 	if (entry == templateName+".png")
@@ -141,10 +143,10 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
             input.setCodec(QTextCodec::codecForName("UTF-8"));
             QTextStream output(&outputFile);
             output.setCodec(QTextCodec::codecForName("UTF-8"));
-    
+
             while(!input.atEnd())  {
                 QString line = input.readLine();
-    
+
                 output << KMacroExpander::expandMacros(line, m_variables) << "\n";
             }
         }
@@ -169,10 +171,27 @@ void GeneratePage::initializePage()
     if (templateName.isEmpty())  {
 	templateName = "kde4";
     }
-    QString templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.zip").arg(templateName));
-    if( templateArchive.isEmpty() )  {
-        templateArchive = KGlobal::dirs()->findResource("data", QString("kdevappwizard/templates/%1.tar.bz2").arg(templateName));
+
+    QString archName;
+    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    foreach(const QString &templatePath, templatePaths) {
+        foreach(const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+            const QString baseName = QFileInfo(templateArchive).baseName();
+            if(templateName.compare(baseName) == 0) {
+                archName = templatePath + templateArchive;
+                break;
+            }
+        }
     }
+
+    if(archName.isEmpty())
+        return;
+
+    QString archivePath = QFileInfo(archName).absolutePath();
+    QDir dir(archivePath);
+    if(!dir.exists())
+        dir.mkpath(archivePath);
+
     //create dir where template project will be copied
     QString appName = field("appName").toString();
     QString version = field("version").toString();
@@ -191,10 +210,10 @@ void GeneratePage::initializePage()
     m_variables["PROJECTDIRNAME"] = appName.toLower()+"-"+version;// TODO what for? change "dest" to that?
 
     KArchive* arch = 0;
-    if( templateArchive.endsWith(".zip") )  {
-        arch = new KZip(templateArchive);
+    if( archName.endsWith(".zip") )  {
+        arch = new KZip(archName);
     }  else  {
-        arch = new KTar(templateArchive, "application/x-bzip");
+        arch = new KTar(archName, "application/x-bzip");
     }
     if (arch->open(QIODevice::ReadOnly))  {
 	if( !QFileInfo( dest.toLocalFile() ).exists() )  {
@@ -215,5 +234,3 @@ void GeneratePage::initializePage()
     resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", url+'/'+appName.toLower()));
     ui_generate.summaryLabel->setText(resume);
 }
-
-#include "generatepage.moc"

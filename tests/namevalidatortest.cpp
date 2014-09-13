@@ -19,11 +19,9 @@
  ***************************************************************************/
 
 #include "namevalidatortest.h"
-#include <qtest_kde.h>
+#include <QTest>
 #include <QRegExp>
 #include <QString>
-
-QTEST_KDEMAIN_CORE(NameValidatorTest)
 
 // This is a test to check the validity of the validator we use
 // for entering a project application name. Foreign characters should be excluded
@@ -37,4 +35,4 @@ void NameValidatorTest::testAppName()
     QVERIFY(ok);
 }
 
-#include "namevalidatortest.moc"
+QTEST_MAIN(NameValidatorTest)
