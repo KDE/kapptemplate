@@ -35,9 +35,6 @@ qt5_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.u
 
 kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
 
-# TODO: Install the application icon
-# kde4_add_app_icon(kapptemplate_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/icons/hi*-app-kapptemplate.png")
-
 add_executable(kapptemplate ${kapptemplate_SRCS})
 
 target_link_libraries(kapptemplate KF5::KDELibs4Support KF5::CoreAddons KF5::ConfigWidgets KF5::Archive KF5::KIOCore)
