@@ -32,7 +32,7 @@ void NameValidatorTest::testAppName()
     QRegExp rx("[a-zA-Z0-9_.\\-]*");
     QString myAppName = "KTry_App-0.1" ;
     bool ok = true;
-    QCOMPARE( rx.exactMatch(myAppName), ok);
+    QCOMPARE(rx.exactMatch(myAppName), ok);
     QVERIFY(ok);
 }
 

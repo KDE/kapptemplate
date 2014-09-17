@@ -45,27 +45,27 @@ void MacroSubstitutionTest::substitute()
     QString line = "File=%{APPNAME}.kcfg";
     outputString = KMacroExpander::expandMacros(line, m_variables);
     QString right = "File=KTryApp.kcfg";
-    QCOMPARE(  outputString, right);
+    QCOMPARE(outputString, right);
 
     line = "#ifndef %{APPNAMEUC}_H";
     outputString = KMacroExpander::expandMacros(line, m_variables);
     right = "#ifndef KTRYAPP_H";
-    QCOMPARE(  outputString, right);
+    QCOMPARE(outputString, right);
 
     line = "$XGETTEXT *.cpp -o $podir/%{APPNAMELC}.pot";
     outputString = KMacroExpander::expandMacros(line, m_variables);
     right = "$XGETTEXT *.cpp -o $podir/ktryapp.pot";
-    QCOMPARE(  outputString, right);
+    QCOMPARE(outputString, right);
 
     line = "Copyright (C) 2007 %{AUTHOR} <%{EMAIL}>";
     outputString = KMacroExpander::expandMacros(line, m_variables);
     right = "Copyright (C) 2007 Foo Bar <foo@bar.org>";
-    QCOMPARE(  outputString, right);
+    QCOMPARE(outputString, right);
 
     line = "Exec=%{APPNAMELC} %i -caption \"%c\"";
     outputString = KMacroExpander::expandMacros(line, m_variables);
     right = "Exec=ktryapp %i -caption \"%c\"";
-    QCOMPARE(  outputString, right);
+    QCOMPARE(outputString, right);
 }
 
 QTEST_MAIN(MacroSubstitutionTest)
