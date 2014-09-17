@@ -21,25 +21,25 @@
 #include "apptemplateitem.h"
 
 AppTemplateItem::AppTemplateItem()
-    :QStandardItem()
+    : QStandardItem()
 {
     init();
 }
 
 AppTemplateItem::AppTemplateItem(const QIcon & icon, const QString & text)
-    :QStandardItem(icon, text)
+    : QStandardItem(icon, text)
 {
     init();
 }
 
 AppTemplateItem::AppTemplateItem(const QString & text)
-    :QStandardItem(text)
+    : QStandardItem(text)
 {
     init();
 }
 
 AppTemplateItem::AppTemplateItem(int rows, int columns)
-    :QStandardItem(rows, columns)
+    : QStandardItem(rows, columns)
 {
     init();
 }

@@ -19,13 +19,13 @@
  ***************************************************************************/
 
 #include "macrosubstitutiontest.h"
+
 #include <KMacroExpander>
 #include <QTest>
 #include <QString>
 #include <QTextStream>
 
-// This is a test to check the validity of the macros
-// substitution.
+// This is a test to check the validity of the macros substitution.
 void MacroSubstitutionTest::substitute()
 {
     QString appName = "KTryApp";

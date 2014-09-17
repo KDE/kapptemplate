@@ -40,8 +40,6 @@
 #include "generatepage.h"
 #include "prefs.h"
 
-const QString current_year  = QString().setNum(QDate::currentDate().year());
-
 GeneratePage::GeneratePage(QWidget *parent)
     : QWizardPage(parent)
 {
@@ -60,26 +58,25 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
     bool ret = true;
 
     //create path were we want copy files to
-    if(!QDir::root().mkpath(dest)){
+    if (!QDir::root().mkpath(dest)){
         KMessageBox::sorry(0, i18n("%1 cannot be created.", dest));
         return false;
     }
 
     int progress = 0;
 
-    foreach (const QString &entry, entries)
-    {
+    foreach (const QString &entry, entries) {
         progress++;
         ui_generate.progressBar->setValue( (progress / entries.size()) * 100);
-	//don't copy .kdevtemplate
+        //don't copy .kdevtemplate
         if (entry.endsWith(".kdevtemplate"))
             continue;
-	if (entry == templateName+".png")
-	    continue;
+        if (entry == templateName + ".png")
+            continue;
         if (dir->entry(entry)->isDirectory())  {
             const KArchiveDirectory *file = (KArchiveDirectory *)dir->entry(entry);
-            QString newdest = dest+"/"+file->name();
-            if( !QFileInfo( newdest ).exists() )  {
+            QString newdest = dest + "/" + file->name();
+            if ( !QFileInfo( newdest ).exists() )  {
                 QDir::root().mkdir( newdest  );
             }
             ret |= unpackArchive(file, newdest);
@@ -89,24 +86,22 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             file->copyTo(tdir.name());
             QString destName = dest + '/' + file->name();
             if (!destName.contains("/icons/")) {
-		if (!copyFile(QDir::cleanPath(tdir.name()+'/'+file->name()),
-                    KMacroExpander::expandMacros(destName, m_variables))) {
-		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
-		    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
-		    ui_generate.label->setText(feedback);
-		    return false;
-		}
-	    }
-	    else  {
-		//do not parse .png but parse filemanes for placeholders
-		if (!QFile(QDir::cleanPath(tdir.name()+'/'+file->name())).copy(KMacroExpander::expandMacros(destName, m_variables))) {
-		    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
-		    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
-		    ui_generate.label->setText(feedback);
-		    return false;
-		}
-	    kDebug() << "after copying.... " << endl;
-	    }
+                if (!copyFile(QDir::cleanPath(tdir.name() + '/' + file->name()), KMacroExpander::expandMacros(destName, m_variables))) {
+                    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+                    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
+                    ui_generate.label->setText(feedback);
+                    return false;
+                }
+            } else  {
+                //do not parse .png but parse filemanes for placeholders
+                if (!QFile(QDir::cleanPath(tdir.name() + '/' + file->name())).copy(KMacroExpander::expandMacros(destName, m_variables))) {
+                    KMessageBox::sorry(0, i18n("The file %1 cannot be created.", dest));
+                    feedback.append(i18n("\n\nThe file %1 cannot be created.", dest));
+                    ui_generate.label->setText(feedback);
+                    return false;
+                }
+                kDebug() << "after copying.... " << endl;
+            }
         }
     }
     tdir.unlink();
@@ -123,9 +118,9 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
 
     if (inputFile.open(QFile::ReadOnly) && outputFile.open(QFile::WriteOnly))
     {
-        if( KMimeType::isBinaryData(source) ) {
+        if (KMimeType::isBinaryData(source)) {
             KIO::CopyJob* job = KIO::copy( KUrl(source), KUrl(dest), KIO::Overwrite );
-            if( !job->exec() ) {
+            if (!job->exec()) {
                 return false;
             }
             return true;
@@ -133,7 +128,7 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
             QDataStream input(&inputFile);
             QDataStream output(&outputFile);
 
-            while(!input.atEnd())  {
+            while (!input.atEnd()) {
                 qint8 t;
                 input >> t;
                 output << t;
@@ -144,7 +139,7 @@ bool GeneratePage::copyFile(const QString &source, const QString &dest)
             QTextStream output(&outputFile);
             output.setCodec(QTextCodec::codecForName("UTF-8"));
 
-            while(!input.atEnd())  {
+            while (!input.atEnd())  {
                 QString line = input.readLine();
 
                 output << KMacroExpander::expandMacros(line, m_variables) << "\n";
@@ -169,35 +164,35 @@ void GeneratePage::initializePage()
     ui_generate.label->setText(feedback);
     templateName = field("tempName").toString();
     if (templateName.isEmpty())  {
-	templateName = "kde4";
+        templateName = "kde4";
     }
 
     QString archName;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    foreach(const QString &templatePath, templatePaths) {
-        foreach(const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+    foreach (const QString &templatePath, templatePaths) {
+        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
             const QString baseName = QFileInfo(templateArchive).baseName();
-            if(templateName.compare(baseName) == 0) {
+            if (templateName.compare(baseName) == 0) {
                 archName = templatePath + templateArchive;
                 break;
             }
         }
     }
 
-    if(archName.isEmpty())
+    if (archName.isEmpty())
         return;
 
     QString archivePath = QFileInfo(archName).absolutePath();
     QDir dir(archivePath);
-    if(!dir.exists())
+    if (!dir.exists())
         dir.mkpath(archivePath);
 
     //create dir where template project will be copied
     QString appName = field("appName").toString();
     QString version = field("version").toString();
-    KUrl dest(field("url").toString()+"/"+appName.toLower());
+    KUrl dest(field("url").toString() + "/" + appName.toLower());
     m_variables.clear();
-    m_variables["CURRENT_YEAR"]=current_year;
+    m_variables["CURRENT_YEAR"] = QString().setNum(QDate::currentDate().year());
     m_variables["APPNAME"] = appName;
     m_variables["APPNAMEUC"] = appName.toUpper();
     m_variables["APPNAMELC"] = appName.toLower();
@@ -207,17 +202,17 @@ void GeneratePage::initializePage()
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
     m_variables["VERSIONCONTROLPLUGIN"] = version;
-    m_variables["PROJECTDIRNAME"] = appName.toLower()+"-"+version;// TODO what for? change "dest" to that?
+    m_variables["PROJECTDIRNAME"] = appName.toLower() + "-" + version; // TODO what for? change "dest" to that?
 
     KArchive* arch = 0;
-    if( archName.endsWith(".zip") )  {
+    if (archName.endsWith(".zip"))  {
         arch = new KZip(archName);
-    }  else  {
+    } else  {
         arch = new KTar(archName, "application/x-bzip");
     }
     if (arch->open(QIODevice::ReadOnly))  {
-	if( !QFileInfo( dest.toLocalFile() ).exists() )  {
-                QDir::root().mkdir( dest.toLocalFile() );
+        if (!QFileInfo( dest.toLocalFile()).exists())  {
+            QDir::root().mkdir( dest.toLocalFile() );
         }
         unpackArchive(arch->directory(), dest.toLocalFile());
     }
@@ -231,6 +226,6 @@ void GeneratePage::initializePage()
     resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
     resume.append(i18n("Version: %1 <br /><br />", version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
-    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", url+'/'+appName.toLower()));
+    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", url + '/' + appName.toLower()));
     ui_generate.summaryLabel->setText(resume);
 }

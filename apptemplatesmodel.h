@@ -18,8 +18,8 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
-#ifndef _APPTEMPLATESMODEL_H_
-#define _APPTEMPLATESMODEL_H_
+#ifndef APPTEMPLATESMODEL_H
+#define APPTEMPLATESMODEL_H
 
 #include <QMap>
 #include <QStandardItemModel>
@@ -34,8 +34,8 @@ class AppTemplateItem;
  * @author Anne-Marie Mahfouf <annma@kde.org>
  * @version 0.1
  */
-
-class AppTemplatesModel: public QStandardItemModel {
+class AppTemplatesModel: public QStandardItemModel
+{
 public:
     AppTemplatesModel(ChoicePage *parent);
     // Refresh the model data
@@ -49,5 +49,5 @@ private:
     QMap<QString, QStandardItem*> m_templateItems;
 };
 
-#endif
+#endif // APPTEMPLATESMODEL_H
 

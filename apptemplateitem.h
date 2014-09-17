@@ -23,7 +23,8 @@
 
 #include <QStandardItem>
 
-class AppTemplateItem: public QStandardItem {
+class AppTemplateItem: public QStandardItem
+{
 public:
     AppTemplateItem();
     AppTemplateItem(const QString &text);
@@ -32,8 +33,7 @@ public:
 
 private:
     void init();
-
 };
 
-#endif
+#endif // APPTEMPLATEITEM_H
 

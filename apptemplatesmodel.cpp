@@ -33,7 +33,7 @@
 #include "apptemplateitem.h"
 
 AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
-    :QStandardItemModel(parent)
+    : QStandardItemModel(parent)
 {
 }
 
@@ -41,31 +41,28 @@ void extractTemplateDescriptions()
 {
     QStringList templateArchives;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    foreach(const QString &templatePath, templatePaths) {
-        foreach(const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+    foreach (const QString &templatePath, templatePaths) {
+        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
             templateArchives.append(templatePath + templateArchive);
         }
     }
 
     const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
     QDir dir(localDescriptionsDir);
-    if(!dir.exists())
-        dir.mkpath(".");
+    if (!dir.exists())
+        dir.mkpath(localDescriptionsDir);
 
-    foreach (const QString &archName, templateArchives)
-    {
+    foreach (const QString &archName, templateArchives) {
         kDebug(9010) << "processing template" << archName;
 #ifdef Q_WS_WIN
         KZip templateArchive(archName);
 #else
         KTar templateArchive(archName, "application/x-bzip");
 #endif // Q_WS_WIN
-        if (templateArchive.open(QIODevice::ReadOnly))
-        {
+        if (templateArchive.open(QIODevice::ReadOnly)) {
             QFileInfo templateInfo(archName);
             const KArchiveEntry *templateEntry = templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
-            if (!templateEntry || !templateEntry->isFile())
-            {
+            if (!templateEntry || !templateEntry->isFile()) {
                 kDebug(9010) << "template" << archName << "does not contain .kdevtemplate file";
                 continue;
             }
@@ -73,9 +70,9 @@ void extractTemplateDescriptions()
 
             kDebug(9010) << "copy template description to" << localDescriptionsDir;
             templateFile->copyTo(localDescriptionsDir);
-        }
-        else
+        } else {
             kDebug(9010) << "could not open template" << archName;
+        }
     }
 }
 
@@ -88,25 +85,24 @@ void AppTemplatesModel::refresh()
 
     QStringList templateArchives;
     const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
-    foreach(const QString &templateFile, QDir(localDescriptionsDir).entryList(QDir::Files)) {
+    foreach (const QString &templateFile, QDir(localDescriptionsDir).entryList(QDir::Files)) {
         templateArchives.append(localDescriptionsDir + templateFile);
     }
 
-    foreach (const QString &templateArchive, templateArchives)
-    {
-	QFileInfo archiveInfo(templateArchive);
-	QString baseName = archiveInfo.baseName();
+    foreach (const QString &templateArchive, templateArchives) {
+        QFileInfo archiveInfo(templateArchive);
+        QString baseName = archiveInfo.baseName();
         KConfig templateConfig(templateArchive);
         KConfigGroup general(&templateConfig, "General");
         QString name = general.readEntry("Name");
         QString category = general.readEntry("Category");
-	kDebug() << "category " << category << endl;
-	QString description = general.readEntry("Comment");
-	QString picture = general.readEntry("Icon");
-	AppTemplateItem *templateItem = createItem(name, category);
-	templateItem->setData(description, Qt::UserRole+1);
-	templateItem->setData(picture, Qt::UserRole+2);
-	templateItem->setData(baseName, Qt::UserRole+3);
+        kDebug() << "category " << category << endl;
+        QString description = general.readEntry("Comment");
+        QString picture = general.readEntry("Icon");
+        AppTemplateItem *templateItem = createItem(name, category);
+        templateItem->setData(description, Qt::UserRole + 1);
+        templateItem->setData(picture, Qt::UserRole + 2);
+        templateItem->setData(baseName, Qt::UserRole + 3);
     }
 }
 
@@ -116,20 +112,18 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
 
     QStandardItem *parent = invisibleRootItem();
     QStringList currentPath;
-    foreach (const QString &entry, path)
-    {
+    foreach (const QString &entry, path) {
         currentPath << entry;
-	kDebug() << "current path " << currentPath << endl;
-        if (!m_templateItems.contains(currentPath.join("/")))
-        {
-	    kDebug() << "in if " << endl;
+        kDebug() << "current path " << currentPath << endl;
+        if (!m_templateItems.contains(currentPath.join("/"))) {
+            kDebug() << "in if " << endl;
             AppTemplateItem *item = new AppTemplateItem(entry);
             parent->appendRow(item);
             m_templateItems[currentPath.join("/")] = item;
             parent = item;
-        }
-        else
+        } else {
             parent = m_templateItems[currentPath.join("/")];
+        }
     }
 
     AppTemplateItem *templateItem = new AppTemplateItem(name);
@@ -143,13 +137,13 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
 {
     Q_UNUSED(orientation);
     if (role != Qt::DisplayRole)
-	return QVariant();
+        return QVariant();
 
     switch (section) {
-    case 0:
-	return i18n("Templates Projects");
-    default:
-	break;
+        case 0:
+            return i18n("Templates Projects");
+        default:
+            break;
     }
     return QVariant();
 }

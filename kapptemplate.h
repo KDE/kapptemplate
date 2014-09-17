@@ -41,7 +41,7 @@ public:
     /**
      * Default Constructor
      */
-    KAppTemplate(QWidget *parent );
+    KAppTemplate(QWidget *parent);
 
     /**
      * Default Destructor
@@ -60,38 +60,37 @@ class IntroPage : public QWizardPage
 {
     Q_OBJECT
 
-    public:
-	IntroPage(QWidget *parent = 0);
-    private:
-	Ui::introduction ui_introduction;
+public:
+    IntroPage(QWidget *parent = 0);
+
+private:
+    Ui::introduction ui_introduction;
 };
 
 class PropertiesPage : public QWizardPage
 {
     Q_OBJECT
 
-    public:
-	PropertiesPage(QWidget *parent = 0);
+public:
+    PropertiesPage(QWidget *parent = 0);
 
-    private:
-	Ui::properties ui_properties;
-	QString appNameString;
+private:
+    Ui::properties ui_properties;
+    QString appNameString;
 
-    private slots:
-	/**
-	* Saves all changed fields values in config file
-	*/
-	void saveConfig();
+private slots:
+    /**
+    * Saves all changed fields values in config file
+    */
+    void saveConfig();
 
-    	void initializePage();
+    void initializePage();
 
-    Q_SIGNALS:
-	/**
-	* Emitted when the text in any field changes.
-	*/
-	void completeChanged();
+Q_SIGNALS:
+    /**
+    * Emitted when the text in any field changes.
+    */
+    void completeChanged();
 };
 
-
-
-#endif // _KAPPTEMPLATE_H_
+#endif // KAPPTEMPLATE_H

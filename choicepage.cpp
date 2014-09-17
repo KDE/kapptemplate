@@ -54,10 +54,9 @@ ChoicePage::ChoicePage( QWidget *parent)
 }
 
 bool ChoicePage::isComplete () const{
-    if(!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()){
+    if (!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()) {
         return true;
     }
-
     return false;
 }
 
@@ -76,30 +75,32 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 
     QString picPath;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/template_previews/", QStandardPaths::LocateDirectory);
-    foreach(const QString &templatePath, templatePaths) {
-        foreach(const QString &templatePreview, QDir(templatePath).entryList(QDir::Files)) {
-            if(templatePreview.compare(index.data(Qt::UserRole + 2).toString()) == 0) {
+    foreach (const QString &templatePath, templatePaths) {
+        foreach (const QString &templatePreview, QDir(templatePath).entryList(QDir::Files)) {
+            if (templatePreview.compare(index.data(Qt::UserRole + 2).toString()) == 0) {
                 picPath = templatePath + templatePreview;
                 break;
             }
         }
     }
 
-    if(picPath.isEmpty())
+    if (picPath.isEmpty())
         return;
 
     QPixmap pixmap(picPath);
     ui_choice.pictureLabel->setPixmap(pixmap);
+
     //and description
     QString description;
-    if (index.data(Qt::UserRole+1).toString().isEmpty())  {
-	description = i18n("Template description");//default if none
+    if (index.data(Qt::UserRole + 1).toString().isEmpty())  {
+        description = i18n("Template description"); //default if none
     } else {
-	description = index.data(Qt::UserRole+1).toString();
+        description = index.data(Qt::UserRole + 1).toString();
     }
+
     ui_choice.descriptionLabel->setText(description);
 
-    m_baseName = index.data(Qt::UserRole+3).toString();
+    m_baseName = index.data(Qt::UserRole + 3).toString();
     //baseName can check if an item is selected.
     if (!m_baseName.isEmpty())  {
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);

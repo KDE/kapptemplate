@@ -35,19 +35,19 @@ class GeneratePage : public QWizardPage
 {
     Q_OBJECT
 
-    public:
-	GeneratePage(QWidget *parent = 0);
+public:
+    GeneratePage(QWidget *parent = 0);
 
-    private:
-	Ui::generate ui_generate;
-	QHash<QString, QString> m_variables;
-	bool copyFile(const QString &source, const QString &dest);
-	bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
+private:
+    Ui::generate ui_generate;
+    QHash<QString, QString> m_variables;
+    bool copyFile(const QString &source, const QString &dest);
+    bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
 
-	void initializePage();
+    void initializePage();
 
-	QString templateName;
-	QString feedback;
+    QString templateName;
+    QString feedback;
 };
 
-#endif // _GENERATEPAGE_H_
+#endif // GENERATEPAGE_H

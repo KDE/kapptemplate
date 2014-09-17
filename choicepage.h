@@ -33,23 +33,23 @@ class ChoicePage : public QWizardPage
 {
     Q_OBJECT
 
-    public:
-	ChoicePage( QWidget *parent = 0);
-	AppTemplatesModel *templatesModel;
-	QString m_baseName;
-        bool isComplete () const;
+public:
+    ChoicePage( QWidget *parent = 0);
+    AppTemplatesModel *templatesModel;
+    QString m_baseName;
+    bool isComplete () const;
 
-    private:
-	Ui::choice ui_choice;
+private:
+    Ui::choice ui_choice;
 
-    private slots:
-	/**
-	* Saves project name in config file
-	*/
-	void saveConfig();
+private slots:
+    /**
+    * Saves project name in config file
+    */
+    void saveConfig();
 
-    protected slots:
-	void itemSelected(const QModelIndex &index);
+protected slots:
+    void itemSelected(const QModelIndex &index);
 };
 
-#endif // _CHOICEPAGE_H_
+#endif // CHOICEPAGE_H

@@ -8,42 +8,42 @@
   <kcfgfile name="kapptemplaterc"/>
   <group name="Project">
     <entry name="appName" type="String">
-	    <label>Name of the project</label>
-	    <default>KApp4</default>
+      <label>Name of the project</label>
+      <default>KApp4</default>
     </entry>
     <entry name="appVersion" type="String">
-	    <label>Project version</label>
-	    <default>0.1</default>
+      <label>Project version</label>
+      <default>0.1</default>
     </entry>
     <entry name="url" type="String">
-	    <label>Home dir of the user</label>
-	    <code>QString defaultDir = KUser().homeDir()+"/src";
-	    </code>
-	    <default code="true">defaultDir</default>
+      <label>Home dir of the user</label>
+      <code>QString defaultDir = KUser().homeDir()+"/src";
+      </code>
+      <default code="true">defaultDir</default>
     </entry>
   </group>
   <group name="User">
     <entry name="name" type="String">
-	    <label>Name of the user</label>
-	    <code>QString name;
-	{
-	    KEMailSettings emailConfig;
-	    emailConfig.setProfile( emailConfig.defaultProfileName() );
-	    name = emailConfig.getSetting( KEMailSettings::RealName );
-	}
-	    </code>
-	    <default code="true">name</default>
+      <label>Name of the user</label>
+      <code>QString name;
+      {
+        KEMailSettings emailConfig;
+        emailConfig.setProfile( emailConfig.defaultProfileName() );
+        name = emailConfig.getSetting( KEMailSettings::RealName );
+      }
+      </code>
+      <default code="true">name</default>
     </entry>
     <entry name="email" type="String">
-	    <label>Email of the user</label>
-	    <code>QString address;
-	{
-	    KEMailSettings emailConfig;
-	    emailConfig.setProfile( emailConfig.defaultProfileName() );
-	    address = emailConfig.getSetting( KEMailSettings::EmailAddress );
-	}
-	    </code>
-	    <default code="true">address</default>
+      <label>Email of the user</label>
+      <code>QString address;
+      {
+        KEMailSettings emailConfig;
+        emailConfig.setProfile( emailConfig.defaultProfileName() );
+        address = emailConfig.getSetting( KEMailSettings::EmailAddress );
+      }
+      </code>
+      <default code="true">address</default>
     </entry>
   </group>
 </kcfg>
