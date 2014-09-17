@@ -35,4 +35,4 @@ private Q_SLOTS:
     void substitute();
 };
 
-#endif
+#endif // MACROSUBSTITUTIONTEST_H

@@ -31,4 +31,4 @@ private Q_SLOTS:
     void testAppName();
 };
 
-#endif
+#endif // NAMEVALIDATORTEST_H
