@@ -20,21 +20,20 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#include <QDir>
-#include <QFileInfo>
-#include <QTextCodec>
-
 #include <KUrl>
 #include <KLocale>
 #include <KDebug>
 #include <kio/copyjob.h>
-#include <kmacroexpander.h>
-#include <kmessagebox.h>
-#include <kmimetype.h>
-#include <kstandarddirs.h>
-#include <ktempdir.h>
-#include <ktar.h>
-#include <kzip.h>
+#include <KMacroExpander>
+#include <KMessageBox>
+#include <KMimeType>
+#include <KTempDir>
+#include <KTar>
+#include <KZip>
+
+#include <QDir>
+#include <QFileInfo>
+#include <QTextCodec>
 
 #include "kapptemplate.h"
 #include "generatepage.h"

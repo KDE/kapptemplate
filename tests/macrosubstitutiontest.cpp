@@ -18,12 +18,13 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
-#include "macrosubstitutiontest.h"
-
 #include <KMacroExpander>
+
 #include <QTest>
 #include <QString>
 #include <QTextStream>
+
+#include "macrosubstitutiontest.h"
 
 // This is a test to check the validity of the macros substitution.
 void MacroSubstitutionTest::substitute()

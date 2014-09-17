@@ -20,15 +20,13 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
+#include <KLocale>
+#include <KDebug>
+
 #include <QDir>
 #include <QString>
 #include <QPixmap>
 #include <QStandardItem>
-
-#include <KUrl>
-#include <KLocale>
-#include <KDebug>
-#include <kstandarddirs.h>
 
 #include "choicepage.h"
 #include "prefs.h"

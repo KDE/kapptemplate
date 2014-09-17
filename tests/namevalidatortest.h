@@ -21,7 +21,7 @@
 #ifndef NAMEVALIDATORTEST_H
 #define NAMEVALIDATORTEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 
 class NameValidatorTest : public QObject
 {

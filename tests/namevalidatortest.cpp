@@ -18,10 +18,11 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
-#include "namevalidatortest.h"
 #include <QTest>
 #include <QRegExp>
 #include <QString>
+
+#include "namevalidatortest.h"
 
 // This is a test to check the validity of the validator we use
 // for entering a project application name. Foreign characters should be excluded

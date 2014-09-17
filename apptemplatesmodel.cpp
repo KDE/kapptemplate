@@ -18,15 +18,14 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
+#include <KConfigGroup>
+#include <KDebug>
+#include <KLocale>
+#include <KTar>
+#include <KZip>
+
 #include <QDir>
 #include <QFileInfo>
-
-#include <kconfiggroup.h>
-#include <KDebug>
-#include <klocale.h>
-#include <kstandarddirs.h>
-#include <ktar.h>
-#include <kzip.h>
 
 #include "choicepage.h"
 #include "apptemplatesmodel.h"

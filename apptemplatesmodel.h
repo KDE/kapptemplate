@@ -21,7 +21,6 @@
 #ifndef APPTEMPLATESMODEL_H
 #define APPTEMPLATESMODEL_H
 
-#include <QMap>
 #include <QStandardItemModel>
 #include <QVariant>
 #include <QMap>

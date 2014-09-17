@@ -21,7 +21,7 @@
 #ifndef MACROSUBSTITUTIONTEST_H
 #define MACROSUBSTITUTIONTEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 #include <QHash>
 
 class MacroSubstitutionTest : public QObject

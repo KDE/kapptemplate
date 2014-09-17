@@ -18,11 +18,10 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
-#include <klocale.h>
-#include <kapplication.h>
-#include <kstandarddirs.h>
+#include <KAboutData>
+#include <KLocale>
+
+#include <QApplication>
 
 #include "kapptemplate.h"
 

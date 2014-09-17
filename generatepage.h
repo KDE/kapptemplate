@@ -23,10 +23,10 @@
 #ifndef GENERATEPAGE_H
 #define GENERATEPAGE_H
 
-#include <QHash>
-#include <QWizardPage>
+#include <KArchiveDirectory>
 
-#include <karchive.h>
+#include <QWizardPage>
+#include <QHash>
 
 #include "kapptemplate.h"
 #include "ui_generate.h"

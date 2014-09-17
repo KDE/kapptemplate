@@ -17,20 +17,18 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#include <QPixmap>
-#include <QRegExpValidator>
-
-#include <kapplication.h>
 #include <KLocale>
 #include <KDebug>
-#include <ktoolinvocation.h>
+#include <KToolInvocation>
 #include <KHelpClient>
+
+#include <QPixmap>
+#include <QRegExpValidator>
 
 #include "choicepage.h"
 #include "generatepage.h"
 #include "kapptemplate.h"
 #include "prefs.h"
-
 
 KAppTemplate::KAppTemplate( QWidget *parent )
     : QWizard()
