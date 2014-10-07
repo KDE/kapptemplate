@@ -3,6 +3,7 @@ set(apptemplate_DIRS
     kapp4-qml
     kde-simple
     kde-frameworks5-simple
+    kde-frameworks5
     plasmoid
     runner
     flake
