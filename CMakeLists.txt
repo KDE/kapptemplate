@@ -13,7 +13,7 @@ include(FeatureSummary)
 include(KAppTemplateMacro)
 
 find_package(Qt5 REQUIRED COMPONENTS Test)
-find_package(KF5 REQUIRED COMPONENTS KDELibs4Support CoreAddons ConfigWidgets Archive KIO)
+find_package(KF5 REQUIRED COMPONENTS KDELibs4Support CoreAddons ConfigWidgets Archive KIO Bookmarks Solid JobWidgets)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 
