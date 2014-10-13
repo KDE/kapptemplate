@@ -34,7 +34,7 @@ KAppTemplate::KAppTemplate( QWidget *parent )
     : QWizard()
 {
     Q_UNUSED(parent);
-    setWindowTitle(i18n("KDE 4 Template Generator"));
+    setWindowTitle(i18n("KDE and Qt Template Generator"));
     setOption(HaveHelpButton, true);
     connect(this, SIGNAL(helpRequested()), this, SLOT(showHelp()));
     addPage(new IntroPage);
