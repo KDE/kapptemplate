@@ -33,7 +33,7 @@ set(kapptemplate_SRCS
 
 qt5_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
 
-kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc )
+kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc)
 
 add_executable(kapptemplate ${kapptemplate_SRCS})
 
