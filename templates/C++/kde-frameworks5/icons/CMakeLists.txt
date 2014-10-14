@@ -1,12 +1,9 @@
-ecm_install_icons(
-    ICONS
-        16-apps-%{APPNAMELC}.png
-        22-apps-%{APPNAMELC}.png
-        32-apps-%{APPNAMELC}.png
-        48-apps-%{APPNAMELC}.png
-        sc-apps-%{APPNAMELC}.svgz
-    DESTINATION
-        ${ICON_INSTALL_DIR}
-    THEME
-        hicolor
+set(%{APPNAMELC}_ICONS
+  hi16-apps-%{APPNAMELC}.png
+  hi22-apps-%{APPNAMELC}.png
+  hi32-apps-%{APPNAMELC}.png
+  hi48-apps-%{APPNAMELC}.png
+  hisc-apps-%{APPNAMELC}.svgz
 )
+
+ecm_install_icons(ICONS ${%{APPNAMELC}_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hicolor)
