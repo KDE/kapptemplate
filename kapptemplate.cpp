@@ -17,8 +17,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#include <KLocale>
-#include <KDebug>
+#include <KLocalizedString>
 #include <KToolInvocation>
 #include <KHelpClient>
 
@@ -100,5 +99,5 @@ void PropertiesPage::saveConfig()
     Prefs::setName(ui_properties.kcfg_name->text());
     Prefs::setEmail(ui_properties.kcfg_email->text());
     Prefs::setAppName(appNameString);
-    Prefs::self()->writeConfig();
+    Prefs::self()->save();
 }

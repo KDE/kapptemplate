@@ -20,8 +20,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-#include <KLocale>
-#include <KDebug>
+#include <KLocalizedString>
 
 #include <QDir>
 #include <QString>
@@ -29,8 +28,8 @@
 #include <QStandardItem>
 
 #include "choicepage.h"
-#include "prefs.h"
 #include "apptemplatesmodel.h"
+#include "prefs.h"
 
 ChoicePage::ChoicePage( QWidget *parent)
     : QWizardPage(parent)
@@ -61,7 +60,7 @@ bool ChoicePage::isComplete () const{
 void ChoicePage::saveConfig()
 {
     Prefs::setAppName(ui_choice.kcfg_appName->text());
-    Prefs::self()->writeConfig();
+    Prefs::self()->save();
 }
 
 void ChoicePage::itemSelected(const QModelIndex &index)
@@ -90,7 +89,7 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 
     //and description
     QString description;
-    if (index.data(Qt::UserRole + 1).toString().isEmpty())  {
+    if (index.data(Qt::UserRole + 1).toString().isEmpty()) {
         description = i18n("Template description"); //default if none
     } else {
         description = index.data(Qt::UserRole + 1).toString();
@@ -100,7 +99,7 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 
     m_baseName = index.data(Qt::UserRole + 3).toString();
     //baseName can check if an item is selected.
-    if (!m_baseName.isEmpty())  {
+    if (!m_baseName.isEmpty()) {
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
     }
     registerField("tempName", this);

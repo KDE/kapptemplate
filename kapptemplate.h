@@ -85,12 +85,6 @@ private slots:
     void saveConfig();
 
     void initializePage();
-
-Q_SIGNALS:
-    /**
-    * Emitted when the text in any field changes.
-    */
-    void completeChanged();
 };
 
 #endif // KAPPTEMPLATE_H

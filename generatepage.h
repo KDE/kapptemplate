@@ -23,6 +23,7 @@
 #ifndef GENERATEPAGE_H
 #define GENERATEPAGE_H
 
+#include <KArchive>
 #include <KArchiveDirectory>
 
 #include <QWizardPage>
@@ -41,10 +42,11 @@ public:
 private:
     Ui::generate ui_generate;
     QHash<QString, QString> m_variables;
-    bool copyFile(const QString &source, const QString &dest);
     bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
+    bool extractFileMacros(const QString &entry);
 
     void initializePage();
+    void displayError(const QString &error);
 
     QString templateName;
     QString feedback;

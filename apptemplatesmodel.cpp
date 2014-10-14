@@ -18,18 +18,20 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *
  ***************************************************************************/
 
+#include <KConfig>
 #include <KConfigGroup>
-#include <KDebug>
-#include <KLocale>
+#include <KLocalizedString>
 #include <KTar>
 #include <KZip>
 
+#include <QStandardPaths>
 #include <QDir>
 #include <QFileInfo>
 
 #include "choicepage.h"
 #include "apptemplatesmodel.h"
 #include "apptemplateitem.h"
+#include "logging.h"
 
 AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
     : QStandardItemModel(parent)
@@ -52,7 +54,7 @@ void extractTemplateDescriptions()
         dir.mkpath(localDescriptionsDir);
 
     foreach (const QString &archName, templateArchives) {
-        kDebug(9010) << "processing template" << archName;
+        qCDebug(KAPPTEMPLATE) << "processing template" << archName;
 #ifdef Q_WS_WIN
         KZip templateArchive(archName);
 #else
@@ -62,15 +64,15 @@ void extractTemplateDescriptions()
             QFileInfo templateInfo(archName);
             const KArchiveEntry *templateEntry = templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
             if (!templateEntry || !templateEntry->isFile()) {
-                kDebug(9010) << "template" << archName << "does not contain .kdevtemplate file";
+                qCDebug(KAPPTEMPLATE) << "template" << archName << "does not contain .kdevtemplate file";
                 continue;
             }
             const KArchiveFile *templateFile = (KArchiveFile*)templateEntry;
 
-            kDebug(9010) << "copy template description to" << localDescriptionsDir;
+            qCDebug(KAPPTEMPLATE) << "copy template description to" << localDescriptionsDir;
             templateFile->copyTo(localDescriptionsDir);
         } else {
-            kDebug(9010) << "could not open template" << archName;
+            qCDebug(KAPPTEMPLATE) << "could not open template" << archName;
         }
     }
 }
@@ -95,7 +97,7 @@ void AppTemplatesModel::refresh()
         KConfigGroup general(&templateConfig, "General");
         QString name = general.readEntry("Name");
         QString category = general.readEntry("Category");
-        kDebug() << "category " << category << endl;
+        qCDebug(KAPPTEMPLATE) << "category " << category;
         QString description = general.readEntry("Comment");
         QString picture = general.readEntry("Icon");
         AppTemplateItem *templateItem = createItem(name, category);
@@ -113,9 +115,8 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
     QStringList currentPath;
     foreach (const QString &entry, path) {
         currentPath << entry;
-        kDebug() << "current path " << currentPath << endl;
+        qCDebug(KAPPTEMPLATE) << "current path " << currentPath;
         if (!m_templateItems.contains(currentPath.join("/"))) {
-            kDebug() << "in if " << endl;
             AppTemplateItem *item = new AppTemplateItem(entry);
             parent->appendRow(item);
             m_templateItems[currentPath.join("/")] = item;

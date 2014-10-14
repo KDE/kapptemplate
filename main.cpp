@@ -18,20 +18,23 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
+#include <KLocalizedString>
 #include <KAboutData>
-#include <KLocale>
 
 #include <QApplication>
 
 #include "kapptemplate.h"
+#include "logging.h"
+
+Q_LOGGING_CATEGORY(KAPPTEMPLATE, "kapptemplate")
 
 int main(int argc, char **argv)
 {
     QApplication application(argc, argv);
 
     KAboutData about("kapptemplate", i18n("KAppTemplate"), "0.1", i18n("KAppTemplate is a KDE project template generator"), KAboutLicense::GPL, i18n("(C) 2008 Anne-Marie Mahfouf"), QString(), 0, "submit@bugs.kde.org");
-    about.addAuthor( i18n("Anne-Marie Mahfouf"), QString(), "annma AT kde DOT org");
-    about.addAuthor( i18n("Sean Wilson"), i18n("Icons from Oxygen Team icons"), "suseux AT googlemail DOT com");
+    about.addAuthor(i18n("Anne-Marie Mahfouf"), QString(), "annma AT kde DOT org");
+    about.addAuthor(i18n("Sean Wilson"), i18n("Icons from Oxygen Team icons"), "suseux AT googlemail DOT com");
 
     KAboutData::setApplicationData(about);
 
