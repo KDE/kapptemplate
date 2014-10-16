@@ -31,7 +31,7 @@
 #include "apptemplatesmodel.h"
 #include "prefs.h"
 
-ChoicePage::ChoicePage( QWidget *parent)
+ChoicePage::ChoicePage(QWidget *parent)
     : QWizardPage(parent)
 {
     setTitle(i18n("Choose your project template"));
@@ -50,7 +50,8 @@ ChoicePage::ChoicePage( QWidget *parent)
     registerField("appName*", ui_choice.kcfg_appName);
 }
 
-bool ChoicePage::isComplete () const{
+bool ChoicePage::isComplete () const
+{
     if (!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()) {
         return true;
     }

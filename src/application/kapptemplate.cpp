@@ -29,7 +29,7 @@
 #include "kapptemplate.h"
 #include "prefs.h"
 
-KAppTemplate::KAppTemplate( QWidget *parent )
+KAppTemplate::KAppTemplate(QWidget *parent)
     : QWizard()
 {
     Q_UNUSED(parent);
@@ -48,7 +48,7 @@ KAppTemplate::~KAppTemplate()
 
 void KAppTemplate::showHelp()
 {
-    KHelpClient::invokeHelp( "kapptemplate-index", "kapptemplate" );
+    KHelpClient::invokeHelp("kapptemplate-index", "kapptemplate");
 }
 
 
