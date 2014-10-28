@@ -65,6 +65,6 @@ Comment[x-test]=xxQt5 CMake Gui application. Generate a CMake/Qt5 based GUI appl
 Comment[zh_CN]=生成基于 CMake/Qt5 的图形应用程序(跨平台兼容)
 Comment[zh_TW]=Qt5 CMake 使用者介面應用程式。產生一個 CMake/Qt5 為基礎的使用者介面應用程式（跨平台相容）
 ShowFilesAfterGeneration=%{PROJECTDIR}/src/%{APPNAMELC}.cpp
-Category=Qt5/Graphical
+Category=Qt/Graphical
 Icon=cmake_qt5guiapp.png
 ValidProjectName=^[a-zA-Z_][a-zA-Z0-9_]+$
