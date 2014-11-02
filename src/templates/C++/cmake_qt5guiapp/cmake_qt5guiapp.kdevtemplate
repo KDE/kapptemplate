@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=CMake Qt5 - C++
+Name[de]=CMake Qt5 - C++
 Name[en_GB]=CMake Qt5 - C++
 Name[nl]=CMake Qt5 - C++
 Name[pl]=CMake Qt5 - C++
