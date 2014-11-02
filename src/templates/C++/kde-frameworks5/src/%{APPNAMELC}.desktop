@@ -1,21 +1,7 @@
 [Desktop Entry]
 Name=%{APPNAMELC}
-Name[cs]=%{APPNAMELC}
-Name[en_GB]=%{APPNAMELC}
-Name[nl]=%{APPNAMELC}
-Name[pt]=%{APPNAMELC}
-Name[sk]=%{APPNAMELC}
-Name[uk]=%{APPNAMELC}
-Name[x-test]=xx%{APPNAMELC}xx
 Exec=%{APPNAMELC}
 Icon=%{APPNAMELC}
 Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE Application
-GenericName[cs]=Aplikace prostředí KDE
-GenericName[en_GB]=A KDE Application
-GenericName[nl]=Een KDE-toepassing
-GenericName[pt]=Uma Aplicação do KDE
-GenericName[sk]=KDE Aplikácia
-GenericName[uk]=Програма для KDE
-GenericName[x-test]=xxA KDE Applicationxx
