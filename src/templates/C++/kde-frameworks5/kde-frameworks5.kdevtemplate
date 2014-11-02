@@ -1,25 +1,7 @@
 # KDE Config File
 [General]
 Name=C++ KDE Frameworks
-Name[cs]=KDE Frameworks C++
-Name[en_GB]=C++ KDE Frameworks
-Name[nl]=C++ KDE Frameworks
-Name[pl]=Szkielety KDE C++
-Name[pt]=C++ para as Plataformas do KDE
-Name[pt_BR]=C++ mínimo para KDE Frameworks
-Name[sk]=Minimálne C++ KDE Frameworks
-Name[uk]=C++, KDE Frameworks
-Name[x-test]=xxC++ KDE Frameworksxx
 Comment=A KDE Frameworks 5 GUI Application in C++
-Comment[cs]=Aplikace GUI z KDE Frameworks 5 v C++
-Comment[en_GB]=A KDE Frameworks 5 GUI Application in C++
-Comment[nl]=Een KDE Frameworks 5 GUI-toepassing in C++
-Comment[pl]=Program graficznego interfejsu użytkownika dla Szkieletów KDE 5 w C++
-Comment[pt]=Uma aplicação gráfica para as Plataformas do KDE 5 em C++
-Comment[pt_BR]=Um aplicativo gráfico do KDE Frameworks 5 em C++
-Comment[sk]=Veľmi základná KDE Frameworks 5 GUI aplikácia v C++
-Comment[uk]=Програма з графічним інтерфейсом KDE Frameworks 5 на C++
-Comment[x-test]=xxA KDE Frameworks 5 GUI Application in C++xx
 Category=KDE/Graphical
 Icon=kde-frameworks5.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
