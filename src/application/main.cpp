@@ -22,6 +22,7 @@
 #include <KAboutData>
 
 #include <QApplication>
+#include <QCommandLineParser>
 
 #include "kapptemplate.h"
 #include "logging.h"
@@ -39,6 +40,13 @@ int main(int argc, char **argv)
     KAboutData::setApplicationData(about);
 
     KAppTemplate appTemplate(0);
+    QCommandLineParser parser;
+    about.setupCommandLine(&parser);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.process(application);
+    about.processCommandLine(&parser);
+
     appTemplate.show();
 
     return application.exec();
