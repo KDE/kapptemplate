@@ -1,13 +1,10 @@
-# Project Needs a name ofcourse
+cmake_minimum_required(VERSION 2.8.12)
+
 project(plasma-%{APPNAMELC})
  
-# Find the required Libaries
-find_package(KDE4 REQUIRED)
-include(KDE4Defaults)
+find_package(ECM 1.4.0 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
-install(DIRECTORY package/
-        DESTINATION ${DATA_INSTALL_DIR}/plasma/plasmoids/%{APPNAMELC})
+find_package(KF5Plasma REQUIRED)
 
-install(FILES package/metadata.desktop
-        DESTINATION ${SERVICES_INSTALL_DIR}
-        RENAME plasma-applet-%{APPNAMELC}.desktop)
+plasma_install_package(package org.kde.%{APPNAMELC})

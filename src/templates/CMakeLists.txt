@@ -9,7 +9,6 @@ install(FILES C++/kapp4/kapp4.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/
 install(FILES C++/kde-simple/kde-simple.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES C++/kde-frameworks5-simple/kde-frameworks5-simple.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES C++/kde-frameworks5/kde-frameworks5.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
-install(FILES C++/plasmoid/plasma-applet.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES ruby/kderubyapp/kderubyapp.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES Python/pyqt4app/pyqt4app.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES Python/pykde4app/pykde4.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
