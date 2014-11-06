@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<component type="desktop">
+  <id>kapptemplate.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KAppTemplate</name>
+  <summary>KDE Template Generator</summary>
+  <description>
+    <p>
+      KAppTemplate is an application to start development quickly using existing templates providing basic
+      repeatedly written code and a proper structure.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Templates for C++, Ruby, Python and PHP</li>
+      <li>Categories</li>
+      <li>Templates for different build-systems and frameworks</li>
+      <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li>It is easy to create new templates using space holders and a simple CMake-command</li>
+      <li>Integrated into KDevelop</li>
+    </ul>
+  </description>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kapptemplate</url>
+  <url type="help">http://docs.kde.org/development/en/kdesdk/kapptemplate/index.html</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>http://kde.org/images/screenshots/kapptemplate.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>kapptemplate</binary>
+  </provides>
+</component>
