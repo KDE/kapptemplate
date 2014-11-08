@@ -1,23 +1,43 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <component type="desktop">
   <id>kapptemplate.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KAppTemplate</name>
+  <name xml:lang="uk">KAppTemplate</name>
+  <name xml:lang="x-test">xxKAppTemplatexx</name>
   <summary>KDE Template Generator</summary>
+  <summary xml:lang="uk">Генератор шаблонів для KDE</summary>
+  <summary xml:lang="x-test">xxKDE Template Generatorxx</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
+    <p xml:lang="uk">KAppTemplate — програма для пришвидшення початкового етапу розробки на основі наявних шаблонів, у яких міститься стандартний код та відповідна структура проекту.</p>
+    <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
     <p>Features:</p>
+    <p xml:lang="uk">Можливості:</p>
+    <p xml:lang="x-test">xxFeatures:xx</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
+      <li xml:lang="uk">Шаблони для C++, Ruby, Python та PHP.</li>
+      <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
       <li>Categories</li>
+      <li xml:lang="uk">Категорії.</li>
+      <li xml:lang="x-test">xxCategoriesxx</li>
       <li>Templates for different build-systems and frameworks</li>
+      <li xml:lang="uk">Шаблони для різних систем збирання та комплексів.</li>
+      <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)xx</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
+      <li xml:lang="uk">Простота створення нових шаблонів на основі заповнювачів та простої команди CMake.</li>
+      <li xml:lang="x-test">xxIt is easy to create new templates using space holders and a simple CMake-commandxx</li>
       <li>Integrated into KDevelop</li>
+      <li xml:lang="uk">Інтеграція з KDevelop.</li>
+      <li xml:lang="x-test">xxIntegrated into KDevelopxx</li>
     </ul>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kapptemplate</url>
