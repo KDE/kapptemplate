@@ -16,6 +16,7 @@ Name[sr]=Ц‑мејк за КуТ‑5 — Ц++
 Name[sr@ijekavian]=Ц‑мејк за КуТ‑5 — Ц++
 Name[sr@ijekavianlatin]=CMake za Qt5 — C++
 Name[sr@latin]=CMake za Qt5 — C++
+Name[tr]=CMake Qt5 - C++
 Name[uk]=CMake Qt5 – C++
 Name[x-test]=xxCMake Qt5 - C++xx
 Comment=Qt5 CMake Gui application. Generate a CMake/Qt5 based GUI application (crossplatform compatible)
