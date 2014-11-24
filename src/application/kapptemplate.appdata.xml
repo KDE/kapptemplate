@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KAppTemplate</name>
+  <name xml:lang="ca">KAppTemplate</name>
   <name xml:lang="cs">KAppTemplate</name>
   <name xml:lang="de">KAppTemplate</name>
   <name xml:lang="en-GB">KAppTemplate</name>
@@ -22,6 +23,7 @@
   <name xml:lang="uk">KAppTemplate</name>
   <name xml:lang="x-test">xxKAppTemplatexx</name>
   <summary>KDE Template Generator</summary>
+  <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
   <summary xml:lang="de">KDE-Vorlagengenerator</summary>
   <summary xml:lang="en-GB">KDE Template Generator</summary>
@@ -44,6 +46,7 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
+    <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit escrit i una estructura adequada.</p>
     <p xml:lang="en-GB">KAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.</p>
     <p xml:lang="es">KAppTemplate es una aplicación para comenzar a desarrollar rápidamente usando plantillas existentes que proporcionan un código básico que se suele escribir repetidamente y una estructura correcta.</p>
     <p xml:lang="fi">KAppTemplate on sovellus kehityksen nopeaan aloittamiseen käyttämällä valmiita malleja, joissa on jo tehty jatkuvasti toistuvat perusasiat sekä kunnollinen rakenne.</p>
@@ -60,6 +63,7 @@
     <p xml:lang="uk">KAppTemplate — програма для пришвидшення початкового етапу розробки на основі наявних шаблонів, у яких міститься стандартний код та відповідна структура проекту.</p>
     <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
     <p>Features:</p>
+    <p xml:lang="ca">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="de">Funktionen:</p>
     <p xml:lang="en-GB">Features:</p>
@@ -79,6 +83,7 @@
     <p xml:lang="x-test">xxFeatures:xx</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
+      <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
       <li xml:lang="de">Vorlagen für C++, Ruby, Python und PHP</li>
       <li xml:lang="en-GB">Templates for C++, Ruby, Python and PHP</li>
@@ -97,6 +102,7 @@
       <li xml:lang="uk">Шаблони для C++, Ruby, Python та PHP.</li>
       <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
       <li>Categories</li>
+      <li xml:lang="ca">Categories</li>
       <li xml:lang="cs">Kategorie</li>
       <li xml:lang="de">Kategorien</li>
       <li xml:lang="en-GB">Categories</li>
@@ -115,6 +121,7 @@
       <li xml:lang="uk">Категорії.</li>
       <li xml:lang="x-test">xxCategoriesxx</li>
       <li>Templates for different build-systems and frameworks</li>
+      <li xml:lang="ca">Plantilles per sistemes de construcció i entorns de treball diferents</li>
       <li xml:lang="en-GB">Templates for different build-systems and frameworks</li>
       <li xml:lang="es">Plantillas para distintos sistemas de compilación e infraestructuras</li>
       <li xml:lang="fi">Malleja useille koostamisjärjestelmille ja sovelluskehyksille</li>
@@ -131,6 +138,7 @@
       <li xml:lang="uk">Шаблони для різних систем збирання та комплексів.</li>
       <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ca">Plantilles pels desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="en-GB">Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, KOffice-, KTextEditor-, KRunner ja Akonadi-liitännäiset)</li>
@@ -147,6 +155,7 @@
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)xx</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
+      <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="en-GB">It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="es">Resulta fácil crear nuevas plantillas usando parámetros de sustitución y órdenes CMake sencillas</li>
       <li xml:lang="fi">Uusia malleja voi luoda helposti käyttämällä paikanvarauksia ja yksinkertaisia CMake-komentoja.</li>
@@ -163,6 +172,7 @@
       <li xml:lang="uk">Простота створення нових шаблонів на основі заповнювачів та простої команди CMake.</li>
       <li xml:lang="x-test">xxIt is easy to create new templates using space holders and a simple CMake-commandxx</li>
       <li>Integrated into KDevelop</li>
+      <li xml:lang="ca">S'integra en el KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
       <li xml:lang="en-GB">Integrated into KDevelop</li>
       <li xml:lang="es">Integrado en KDevelop</li>
