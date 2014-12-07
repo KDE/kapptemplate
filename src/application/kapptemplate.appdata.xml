@@ -17,6 +17,7 @@
   <name xml:lang="pt">KAppTemplate</name>
   <name xml:lang="pt-BR">KAppTemplate</name>
   <name xml:lang="sk">KAppTemplate</name>
+  <name xml:lang="sl">KAppTemplate</name>
   <name xml:lang="sr">К‑шаблон-програма</name>
   <name xml:lang="sr-Latn">K‑šablon-programa</name>
   <name xml:lang="sr-ijekavian">К‑шаблон-програма</name>
@@ -36,6 +37,7 @@
   <summary xml:lang="pt">Gerador de Modelos do KDE</summary>
   <summary xml:lang="pt-BR">Gerador de modelos do KDE</summary>
   <summary xml:lang="sk">Generátor šablón KDE</summary>
+  <summary xml:lang="sl">Ustvarjalnik predlog KDE</summary>
   <summary xml:lang="sr">КДЕ генератор шаблона</summary>
   <summary xml:lang="sr-Latn">KDE generator šablona</summary>
   <summary xml:lang="sr-ijekavian">КДЕ генератор шаблона</summary>
@@ -57,6 +59,7 @@
     <p xml:lang="pt">O KAppTemplate é uma aplicação para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem algum do código escrito repetitivo e uma estrutura adequada.</p>
     <p xml:lang="pt-BR">KAppTemplate é um aplicativo para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem código escrito de forma repetitiva e uma estrutura adequada.</p>
     <p xml:lang="sk">KAppTemplate je aplikácia na rýchle začatie vývoja pomocou existujúcich šablón poskytujúcich základný opakovateľné písaný kód a správnu štruktúru.</p>
+    <p xml:lang="sl">KAppTemplate je program za hiter začetek razvoja z uporabo obstoječih predlog, ki ponujajo osnovno, pogosto uporabljeno kodo in strukturo.</p>
     <p xml:lang="sr">К‑шаблон-програма је програм за брзо започињање развоја, преко постојећих шаблона који дају основни, често писани код и правилну структуру.</p>
     <p xml:lang="sr-Latn">K‑šablon-programa je program za brzo započinjanje razvoja, preko postojećih šablona koji daju osnovni, često pisani kod i pravilnu strukturu.</p>
     <p xml:lang="sr-ijekavian">К‑шаблон-програма је програм за брзо започињање развоја, преко постојећих шаблона који дају основни, често писани код и правилну структуру.</p>
@@ -76,6 +79,7 @@
     <p xml:lang="pt">Funcionalidades:</p>
     <p xml:lang="pt-BR">Funcionalidades:</p>
     <p xml:lang="sk">Funkcie:</p>
+    <p xml:lang="sl">Zmožnosti:</p>
     <p xml:lang="sr">Могућности:</p>
     <p xml:lang="sr-Latn">Mogućnosti:</p>
     <p xml:lang="sr-ijekavian">Могућности:</p>
@@ -96,6 +100,7 @@
       <li xml:lang="pt">Modelos para o C++, Ruby, Python e PHP</li>
       <li xml:lang="pt-BR">Modelos para C++, Ruby, Python e PHP</li>
       <li xml:lang="sk">Šablóny pre C++, Ruby, Python a PHP</li>
+      <li xml:lang="sl">Predloge za C++, Ruby, Python in PHP</li>
       <li xml:lang="sr">шаблони за Ц++, руби, питон и ПХП</li>
       <li xml:lang="sr-Latn">šabloni za C++, Ruby, Python i PHP</li>
       <li xml:lang="sr-ijekavian">шаблони за Ц++, руби, питон и ПХП</li>
@@ -115,6 +120,7 @@
       <li xml:lang="pt">Categorias</li>
       <li xml:lang="pt-BR">Categorias</li>
       <li xml:lang="sk">Kategórie</li>
+      <li xml:lang="sl">Kategorije</li>
       <li xml:lang="sr">категорије</li>
       <li xml:lang="sr-Latn">kategorije</li>
       <li xml:lang="sr-ijekavian">категорије</li>
@@ -132,6 +138,7 @@
       <li xml:lang="pt">Modelos para diferentes sistemas de compilação e plataformas</li>
       <li xml:lang="pt-BR">Modelos para diferentes sistemas de compilação e plataformas</li>
       <li xml:lang="sk">Šablóny pre rôzne systémy zostavenia a frameworky</li>
+      <li xml:lang="sl">Predloge za različne sisteme za izgradnjo in ogrodja</li>
       <li xml:lang="sr">шаблони за различите системе градње и радне оквире</li>
       <li xml:lang="sr-Latn">šabloni za različite sisteme gradnje i radne okvire</li>
       <li xml:lang="sr-ijekavian">шаблони за различите системе градње и радне оквире</li>
@@ -149,6 +156,7 @@
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sk">Šablóny špeciálne pre vývoj KDE (pluginy pre Plasma, KOffice, KTextEditor, KRunnet, Akonadi)</li>
+      <li xml:lang="sl">Predloge za razvoj KDE (vstavki za Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sr">шаблони посебно за КДЕ развој (прикључци за Плазму, Калигру, Кејт, К‑извођач, Аконади)</li>
       <li xml:lang="sr-Latn">šabloni posebno za KDE razvoj (priključci za Plasmu, Calligru, Kate, K‑izvođač, Akonadi)</li>
       <li xml:lang="sr-ijekavian">шаблони посебно за КДЕ развој (прикључци за Плазму, Калигру, Кејт, К‑извођач, Аконади)</li>
@@ -166,6 +174,7 @@
       <li xml:lang="pt">É fácil de criar modelos novos com blocos de substituição e um comando simples de CMake</li>
       <li xml:lang="pt-BR">É fácil criar modelos novos usando blocos de substituição e um comando simples de CMake</li>
       <li xml:lang="sk">Je jednoduché vytvoriť nové šablóny pomocou space holderov a jednoduchého príkazu CMake</li>
+      <li xml:lang="sl">Nove predloge lahko enostavno ustvarite s pomočjo vsebnikov in preprostega ukaza CMake</li>
       <li xml:lang="sr">лако стварање нових шаблона, преко местодржача и једноставне ц‑мејк наредбе</li>
       <li xml:lang="sr-Latn">lako stvaranje novih šablona, preko mestodržača i jednostavne CMake naredbe</li>
       <li xml:lang="sr-ijekavian">лако стварање нових шаблона, преко местодржача и једноставне ц‑мејк наредбе</li>
@@ -184,6 +193,7 @@
       <li xml:lang="pt">Integrado no KDevelop</li>
       <li xml:lang="pt-BR">Integrado ao KDevelop</li>
       <li xml:lang="sk">Integrované do KDevelop</li>
+      <li xml:lang="sl">Vgrajen v KDevelop</li>
       <li xml:lang="sr">уклапање у К‑девелоп</li>
       <li xml:lang="sr-Latn">uklapanje u KDevelop</li>
       <li xml:lang="sr-ijekavian">уклапање у К‑девелоп</li>
