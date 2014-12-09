@@ -24,6 +24,7 @@
   <name xml:lang="sr-ijekavianlatin">K‑šablon-programa</name>
   <name xml:lang="uk">KAppTemplate</name>
   <name xml:lang="x-test">xxKAppTemplatexx</name>
+  <name xml:lang="zh-CN">KAppTemplate</name>
   <summary>KDE Template Generator</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
@@ -44,6 +45,7 @@
   <summary xml:lang="sr-ijekavianlatin">KDE generator šablona</summary>
   <summary xml:lang="uk">Генератор шаблонів для KDE</summary>
   <summary xml:lang="x-test">xxKDE Template Generatorxx</summary>
+  <summary xml:lang="zh-CN">KDE 模板生成器</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
@@ -86,6 +88,7 @@
     <p xml:lang="sr-ijekavianlatin">Mogućnosti:</p>
     <p xml:lang="uk">Можливості:</p>
     <p xml:lang="x-test">xxFeatures:xx</p>
+    <p xml:lang="zh-CN">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
       <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
@@ -127,6 +130,7 @@
       <li xml:lang="sr-ijekavianlatin">kategorije</li>
       <li xml:lang="uk">Категорії.</li>
       <li xml:lang="x-test">xxCategoriesxx</li>
+      <li xml:lang="zh-CN">分类</li>
       <li>Templates for different build-systems and frameworks</li>
       <li xml:lang="ca">Plantilles per sistemes de construcció i entorns de treball diferents</li>
       <li xml:lang="en-GB">Templates for different build-systems and frameworks</li>
