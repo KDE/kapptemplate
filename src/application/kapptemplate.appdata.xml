@@ -13,6 +13,7 @@
   <name xml:lang="fi">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
   <name xml:lang="ko">KAppTemplate</name>
+  <name xml:lang="lt">KAppTemplate</name>
   <name xml:lang="nl">KAppTemplate</name>
   <name xml:lang="pl">KAppTemplate</name>
   <name xml:lang="pt">KAppTemplate</name>
@@ -36,6 +37,7 @@
   <summary xml:lang="fi">KDE:n mallintuottamisohjelma</summary>
   <summary xml:lang="it">Generatore di modelli di KDE</summary>
   <summary xml:lang="ko">KDE 템플릿 생성기</summary>
+  <summary xml:lang="lt">KDE šablonų generatorius</summary>
   <summary xml:lang="nl">KDE sjabloongeneratie</summary>
   <summary xml:lang="pl">Generator szablonów dla KDE</summary>
   <summary xml:lang="pt">Gerador de Modelos do KDE</summary>
@@ -83,6 +85,7 @@
     <p xml:lang="fi">Ominaisuuksia:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="ko">기능:</p>
+    <p xml:lang="lt">Ypatybės:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
     <p xml:lang="pl">Możliwości:</p>
     <p xml:lang="pt">Funcionalidades:</p>
@@ -129,6 +132,7 @@
       <li xml:lang="fi">Luokat</li>
       <li xml:lang="it">Categorie</li>
       <li xml:lang="ko">분류</li>
+      <li xml:lang="lt">Kategorijos</li>
       <li xml:lang="nl">Categorieën</li>
       <li xml:lang="pl">Kategorie</li>
       <li xml:lang="pt">Categorias</li>
