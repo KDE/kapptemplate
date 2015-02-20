@@ -2,6 +2,7 @@
 Name=%{APPNAMELC}
 Name[ca]=%{APPNAMELC}
 Name[cs]=%{APPNAMELC}
+Name[da]=%{APPNAMELC}
 Name[de]=%{APPNAMELC}
 Name[en_GB]=%{APPNAMELC}
 Name[es]=%{APPNAMELC}
@@ -29,6 +30,7 @@ X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE Application
 GenericName[ca]=Una aplicació del KDE
 GenericName[cs]=Aplikace prostředí KDE
+GenericName[da]=Et KDE-program
 GenericName[de]=Eine KDE-Anwendung
 GenericName[en_GB]=A KDE Application
 GenericName[es]=Una aplicación para KDE
