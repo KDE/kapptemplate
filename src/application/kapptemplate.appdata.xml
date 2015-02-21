@@ -29,6 +29,7 @@
   <name xml:lang="uk">KAppTemplate</name>
   <name xml:lang="x-test">xxKAppTemplatexx</name>
   <name xml:lang="zh-CN">KAppTemplate</name>
+  <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>KDE Template Generator</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
@@ -54,6 +55,7 @@
   <summary xml:lang="uk">Генератор шаблонів для KDE</summary>
   <summary xml:lang="x-test">xxKDE Template Generatorxx</summary>
   <summary xml:lang="zh-CN">KDE 模板生成器</summary>
+  <summary xml:lang="zh-TW">KDE 樣本產生器</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
@@ -79,6 +81,7 @@
     <p xml:lang="tr">KAppTemplate mevcut şablonları kullanarak tekrarlanan kodları ve uygun yapıyı sağlayan ve hızlıca geliştirmeye başlayabileceğiniz bir araçtır.</p>
     <p xml:lang="uk">KAppTemplate — програма для пришвидшення початкового етапу розробки на основі наявних шаблонів, у яких міститься стандартний код та відповідна структура проекту.</p>
     <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
+    <p xml:lang="zh-TW">KAppTemplate 是一套讓您用現有的樣本快速開發的應用程式。樣本裡已包括基本常用的程式碼，以及適當的程式結構。</p>
     <p>Features:</p>
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
@@ -104,6 +107,7 @@
     <p xml:lang="uk">Можливості:</p>
     <p xml:lang="x-test">xxFeatures:xx</p>
     <p xml:lang="zh-CN">功能：</p>
+    <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
       <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
@@ -128,6 +132,7 @@
       <li xml:lang="tr">C++, Ruby, Python ve PHP için şablonlar</li>
       <li xml:lang="uk">Шаблони для C++, Ruby, Python та PHP.</li>
       <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
+      <li xml:lang="zh-TW">C++, Ruby, Python 與 PHP 的樣本</li>
       <li>Categories</li>
       <li xml:lang="ca">Categories</li>
       <li xml:lang="cs">Kategorie</li>
@@ -153,6 +158,7 @@
       <li xml:lang="uk">Категорії.</li>
       <li xml:lang="x-test">xxCategoriesxx</li>
       <li xml:lang="zh-CN">分类</li>
+      <li xml:lang="zh-TW">類別</li>
       <li>Templates for different build-systems and frameworks</li>
       <li xml:lang="ca">Plantilles per sistemes de construcció i entorns de treball diferents</li>
       <li xml:lang="en-GB">Templates for different build-systems and frameworks</li>
@@ -174,6 +180,7 @@
       <li xml:lang="tr">Farklı inşa sistemleri ve çatılar için şablonlar</li>
       <li xml:lang="uk">Шаблони для різних систем збирання та комплексів.</li>
       <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
+      <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ca">Plantilles pels desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="en-GB">Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
@@ -195,6 +202,7 @@
       <li xml:lang="tr">KDE-geliştirmek için şablonlar (Plasma, KOffice, KTextEditor, KRunner, Akonadi için eklentiler)</li>
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)xx</li>
+      <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如Plasma, KOffice, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="en-GB">It is easy to create new templates using space holders and a simple CMake-command</li>
@@ -216,6 +224,7 @@
       <li xml:lang="tr">Yer tutucular ve basit CMake komutları kullanarak yeni şablonlar oluşturmak çok kolaydır</li>
       <li xml:lang="uk">Простота створення нових шаблонів на основі заповнювачів та простої команди CMake.</li>
       <li xml:lang="x-test">xxIt is easy to create new templates using space holders and a simple CMake-commandxx</li>
+      <li xml:lang="zh-TW">只要用空間符與簡單的 CMake 指令即可建立新的樣本</li>
       <li>Integrated into KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
@@ -238,6 +247,7 @@
       <li xml:lang="tr">KDevelop ile tümleşik çalışır</li>
       <li xml:lang="uk">Інтеграція з KDevelop.</li>
       <li xml:lang="x-test">xxIntegrated into KDevelopxx</li>
+      <li xml:lang="zh-TW">整合進 KDevelop</li>
     </ul>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kapptemplate</url>
