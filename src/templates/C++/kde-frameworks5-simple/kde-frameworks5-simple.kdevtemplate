@@ -1,6 +1,7 @@
 # KDE Config File
 [General]
 Name=Minimal C++ KDE Frameworks
+Name[bs]=Minimalni C++ KDE Frameworks
 Name[ca]=C++ mínim de KDE Frameworks
 Name[da]=Minimalt C++ KDE Frameworks
 Name[de]=Einfache KDE-Frameworks C++-Anwendung
@@ -8,6 +9,7 @@ Name[en_GB]=Minimal C++ KDE Frameworks
 Name[es]=KDE Frameworks en C++ mínimo
 Name[et]=Minimaalne C++ KDE Frameworks
 Name[fi]=Minimaalinen C++ KDE Frameworks -sovellus
+Name[gl]=Infraestrutura de KDE para C++ (minimalista)
 Name[it]=C++ KDE Frameworks minimo
 Name[ko]=최소 C++ KDE 프레임워크
 Name[nl]=Minimale C++ KDE Frameworks
@@ -26,6 +28,7 @@ Name[uk]=Мінімальна C++, KDE Frameworks
 Name[x-test]=xxMinimal C++ KDE Frameworksxx
 Name[zh_TW]=最基本的 C++ KDE Frameworks
 Comment=A very basic KDE Frameworks 5 GUI Application in C++
+Comment[bs]=Veoma elementarna KDE Frameworks 5 GUI aplikacija u C++
 Comment[ca]=Una aplicació IGU molt bàsica de les Frameworks 5 del KDE en C++
 Comment[cs]=Úplně základní GUI aplikace KDE Frameworks 5 v C++
 Comment[da]=Et meget basalt grafisk KDE Frameworks 5-program i C++
@@ -34,6 +37,7 @@ Comment[en_GB]=A very basic KDE Frameworks 5 GUI Application in C++
 Comment[es]=Una aplicación en C++ muy básica con interfaz gráfica de KDE Frameworks 5
 Comment[et]=Väga lihtne KDE Frameworks 5 GUI rakendus C++ keeles
 Comment[fi]=Erittäin yksinkertainen KDE Frameworks 5 GUI-sovellus C++:lla
+Comment[gl]=Un programa gráfico moi básico baseado na versión 5 da infraestrutura de KDE e escrito en C++.
 Comment[it]=Una semplicissima applicazione grafica di KDE Frameworks in C++
 Comment[ko]=기본적인 C++ KDE 프레임워크 5 GUI 프로그램
 Comment[nl]=Een zeer basale KDE Frameworks 5 GUI-toepassing in C++
