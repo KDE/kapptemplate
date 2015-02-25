@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KAppTemplate</name>
+  <name xml:lang="bs">KAppTemplate</name>
   <name xml:lang="ca">KAppTemplate</name>
   <name xml:lang="cs">KAppTemplate</name>
   <name xml:lang="da">KAppTemplate</name>
@@ -32,6 +33,7 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>KDE Template Generator</summary>
+  <summary xml:lang="bs">KDE generator predložaka</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
   <summary xml:lang="de">KDE-Vorlagengenerator</summary>
@@ -86,6 +88,7 @@
     <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
     <p xml:lang="zh-TW">KAppTemplate 是一套讓您用現有的樣本快速開發的應用程式。樣本裡已包括基本常用的程式碼，以及適當的程式結構。</p>
     <p>Features:</p>
+    <p xml:lang="bs">Svojstva:</p>
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="de">Funktionen:</p>
@@ -139,6 +142,7 @@
       <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
       <li xml:lang="zh-TW">C++, Ruby, Python 與 PHP 的樣本</li>
       <li>Categories</li>
+      <li xml:lang="bs">Kategorije</li>
       <li xml:lang="ca">Categories</li>
       <li xml:lang="cs">Kategorie</li>
       <li xml:lang="de">Kategorien</li>
