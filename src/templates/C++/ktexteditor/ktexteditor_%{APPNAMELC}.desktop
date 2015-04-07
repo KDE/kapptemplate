@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Service
 Comment=%{APPNAME}
-Comment[ast]=%{APPNAME}
 Comment[bg]=%{APPNAME}
 Comment[bs]=%{APPNAME}
 Comment[ca]=%{APPNAME}
@@ -47,7 +46,6 @@ Comment[x-test]=xx%{APPNAME}xx
 Comment[zh_CN]=%{APPNAME}
 Comment[zh_TW]=%{APPNAME}
 Name=%{APPNAME}
-Name[ast]=%{APPNAME}
 Name[bg]=%{APPNAME}
 Name[bs]=%{APPNAME}
 Name[ca]=%{APPNAME}
@@ -97,7 +95,6 @@ Name[x-test]=xx%{APPNAME}xx
 Name[zh_CN]=%{APPNAME}
 Name[zh_TW]=%{APPNAME}
 GenericName=%{APPNAME}
-GenericName[ast]=%{APPNAME}
 GenericName[bg]=%{APPNAME}
 GenericName[bs]=%{APPNAME}
 GenericName[ca]=%{APPNAME}
