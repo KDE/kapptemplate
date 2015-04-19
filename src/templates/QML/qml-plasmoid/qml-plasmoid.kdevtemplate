@@ -34,6 +34,7 @@ Name[sv]=Plasma QML-miniprogram
 Name[tr]=Plasma QML Programcığı
 Name[uk]=Аплет Плазми мовою QML
 Name[x-test]=xxPlasma QML Appletxx
+Name[zh_CN]=Plasma QML 小程序
 Name[zh_TW]=Plasma QML 小程式
 Comment=Plasma QML Applet Template: a plasma applet template displaying a svg picture and a text.
 Comment[bs]=Predložak za QML aplete. Predložak za plasma aplete koji prikazuju SVG sliku i tekst.
