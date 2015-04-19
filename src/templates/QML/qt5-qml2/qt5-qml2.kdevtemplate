@@ -34,6 +34,7 @@ Name[sv]=Qt5 QML2-program
 Name[tr]=Qt5 QML2 Uygulaması
 Name[uk]=Програма мовою QML2 для Qt5
 Name[x-test]=xxQt5 QML2 Applicationxx
+Name[zh_CN]=Qt5 QML2 应用程序
 Name[zh_TW]=Qt5 QML2 應用程式
 
 Comment=A Qt5 and QML2 basic application using QMake. Warning, you need Qt5 for it, not Qt4.
