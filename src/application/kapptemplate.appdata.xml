@@ -67,7 +67,7 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
-    <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit escrit i una estructura adequada.</p>
+    <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="en-GB">KAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.</p>
     <p xml:lang="es">KAppTemplate es una aplicación para comenzar a desarrollar rápidamente usando plantillas existentes que proporcionan un código básico que se suele escribir repetidamente y una estructura correcta.</p>
     <p xml:lang="fi">KAppTemplate on sovellus kehityksen nopeaan aloittamiseen käyttämällä valmiita malleja, joissa on jo tehty jatkuvasti toistuvat perusasiat sekä kunnollinen rakenne.</p>
@@ -200,7 +200,7 @@
       <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
-      <li xml:lang="ca">Plantilles pels desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ca">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="en-GB">Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, KOffice-, KTextEditor-, KRunner ja Akonadi-liitännäiset)</li>
