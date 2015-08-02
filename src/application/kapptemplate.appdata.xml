@@ -250,10 +250,10 @@
       <li xml:lang="ru">Легко создавать новые шаблоны</li>
       <li xml:lang="sk">Je jednoduché vytvoriť nové šablóny pomocou space holderov a jednoduchého príkazu CMake</li>
       <li xml:lang="sl">Nove predloge lahko enostavno ustvarite s pomočjo vsebnikov in preprostega ukaza CMake</li>
-      <li xml:lang="sr">лако стварање нових шаблона, преко местодржача и једноставне ц‑мејк наредбе</li>
-      <li xml:lang="sr-Latn">lako stvaranje novih šablona, preko mestodržača i jednostavne CMake naredbe</li>
-      <li xml:lang="sr-ijekavian">лако стварање нових шаблона, преко местодржача и једноставне ц‑мејк наредбе</li>
-      <li xml:lang="sr-ijekavianlatin">lako stvaranje novih šablona, preko mestodržača i jednostavne CMake naredbe</li>
+      <li xml:lang="sr">лако стварање нових шаблона, преко местодржача и једноставне наредбе Ц‑мејка</li>
+      <li xml:lang="sr-Latn">lako stvaranje novih šablona, preko mestodržača i jednostavne naredbe CMakea</li>
+      <li xml:lang="sr-ijekavian">лако стварање нових шаблона, преко местодржача и једноставне наредбе Ц‑мејка</li>
+      <li xml:lang="sr-ijekavianlatin">lako stvaranje novih šablona, preko mestodržača i jednostavne naredbe CMakea</li>
       <li xml:lang="sv">Det är enkelt att skapa nya mallar genom att använda platsmarkörer och ett enkelt CMake-kommando</li>
       <li xml:lang="tr">Yer tutucular ve basit CMake komutları kullanarak yeni şablonlar oluşturmak çok kolaydır</li>
       <li xml:lang="uk">Простота створення нових шаблонів на основі заповнювачів та простої команди CMake.</li>
