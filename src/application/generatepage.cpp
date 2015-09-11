@@ -62,6 +62,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
 
     int progress = 0;
 
+    bool failed = false;
     foreach (const QString &entry, entries) {
         progress++;
         ui_generate.progressBar->setValue((progress / entries.size()) * 100);
@@ -92,12 +93,21 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
                     displayError(i18n("Failed to integrate your project information into "
                                       "the file %1. The project has not be generated and "
                                       "all temporary files will be removed.", destName));
+                    failed = true;
+                    break;
                 }
             } else {
                 displayError(i18n("Could not copy template file to %1.", destName));
+                failed = true;
+                break;
             }
         }
     }
+
+    if (failed && !QDir(dest).removeRecursively()) {
+        qCDebug(KAPPTEMPLATE) << "Failed to remove incomplete destination directory" << dest;
+    }
+
     return ret;
 }
 
