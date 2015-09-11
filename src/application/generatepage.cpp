@@ -89,7 +89,9 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             QString destName = KMacroExpander::expandMacros(dest + '/' + file->name(), m_variables);
             if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
                 if (!extractFileMacros(destName)) {
-                    displayError(i18n("The extraction of your personal information in file %1 was not successful", destName));
+                    displayError(i18n("Failed to integrate your project information into "
+                                      "the file %1. The project has not be generated and "
+                                      "all temporary files will be removed.", destName));
                 }
             } else {
                 displayError(i18n("Could not copy template file to %1.", destName));
