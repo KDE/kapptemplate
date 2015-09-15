@@ -73,7 +73,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             continue;
 
         if (dir->entry(entry)->isDirectory()) {
-            const KArchiveDirectory *file = (KArchiveDirectory *)dir->entry(entry);
+            const KArchiveDirectory *file = dynamic_cast<const KArchiveDirectory *>(dir->entry(entry));
             QString newdest = dest + "/" + file->name();
             if (!QFileInfo(newdest).exists()) {
                 if (!QDir::root().mkdir(newdest)) {
@@ -84,7 +84,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             ret |= unpackArchive(file, newdest);
         }
         else if (dir->entry(entry)->isFile()) {
-            const KArchiveFile *file = (KArchiveFile *)dir->entry(entry);
+            const KArchiveFile *file = dynamic_cast<const KArchiveFile *>(dir->entry(entry));
             file->copyTo(tdir.path());
             QString destName = KMacroExpander::expandMacros(dest + '/' + file->name(), m_variables);
             if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
