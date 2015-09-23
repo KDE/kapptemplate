@@ -1,11 +1,11 @@
 set(kapptemplate_ICONS
-  hi16-apps-kapptemplate.png
-  hi22-apps-kapptemplate.png
-  hi32-apps-kapptemplate.png
-  hi48-apps-kapptemplate.png
-  hi64-apps-kapptemplate.png
-  hi128-apps-kapptemplate.png
-  hisc-apps-kapptemplate.svg
+  16-apps-kapptemplate.png
+  22-apps-kapptemplate.png
+  32-apps-kapptemplate.png
+  48-apps-kapptemplate.png
+  64-apps-kapptemplate.png
+  128-apps-kapptemplate.png
+  sc-apps-kapptemplate.svg
 )
 
 ecm_install_icons(ICONS ${kapptemplate_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hicolor)
