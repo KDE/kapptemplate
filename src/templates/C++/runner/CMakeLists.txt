@@ -1,26 +1,31 @@
 project(plasma-%{APPNAMELC})
 
-# Find the required Libaries
-find_package(KDE4 REQUIRED)
-include(KDE4Defaults)
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
-add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
-include_directories(
-   ${CMAKE_SOURCE_DIR}
-   ${CMAKE_BINARY_DIR}
-   ${KDE4_INCLUDES}
-   )
+set(QT_MIN_VERSION "5.4.0")
+set(KF5_MIN_VERSION "5.14.0")
+set(INSTALL_SDDM_THEME TRUE)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets )
+find_package(ECM 1.8.0 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Runner)
 
-# We add our source code here
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDECompilerSettings)
+include(ECMPackageConfigHelpers)
+include(ECMMarkNonGuiExecutable)
+include(CMakePackageConfigHelpers)
+include(WriteBasicConfigVersionFile)
+include(CheckIncludeFiles)
+include(FeatureSummary)
+include(ECMOptionalAddSubdirectory)
+
 set(%{APPNAMELC}_SRCS %{APPNAMELC}.cpp)
 
-kde4_add_plugin(krunner_%{APPNAMELC} ${%{APPNAMELC}_SRCS})
-target_link_libraries(krunner_%{APPNAMELC}
-                      ${KDE4_PLASMA_LIBS} ${KDE4_KDEUI_LIBS})
+add_library(krunner_%{APPNAMELC} MODULE ${%{APPNAMELC}_SRCS})
+target_link_libraries(krunner_%{APPNAMELC} KF5::Runner)
 
-install(TARGETS krunner_%{APPNAMELC}
-        DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS krunner_%{APPNAMELC} DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
-install(FILES %{APPNAMELC}.desktop
-        DESTINATION ${SERVICES_INSTALL_DIR})
-
+install(FILES %{APPNAMELC}.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})

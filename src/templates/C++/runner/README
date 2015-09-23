@@ -6,24 +6,24 @@ Runner Template
 cd /where/your/runner/is/installed
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS .. 
+cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS .. (-DKDE_INSTALL_USE_QT_SYS_PATHS=ON)
 make 
 make install
 
 (your $KDEDIRS is where you install your KDE 4)
+(depending on the platform you have to use the Qt installation paths)
 
-Restart plasma to load the runner: in a terminal, run the 2 following commands:
-kquitapp plasma-desktop
-plasma-desktop
+Restart plasma to load the runner: in a terminal, run the following command:
 
-Alt-F2 to launch KRunner and in the runners list you will find your runner.
+kbuildsycoca5
 
-You might need to run kbuildsycoca4
-in order to get the .desktop file recognized.
+After this you should see your runner in the system settings:
+
+systemsettings5 (Head to "Search")
+
+You can also launch KRunner via Alt-F2 and you will find your runner.
 
 More information on how to develop a runner:
 http://techbase.kde.org/Development/Tutorials/Plasma/AbstractRunner
 
-Last update: April 2013
-Anne-Marie Mahfouf
-annma@kde.org
+Last update: September 2015
