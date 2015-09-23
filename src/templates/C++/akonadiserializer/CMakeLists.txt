@@ -1,27 +1,27 @@
+cmake_minimum_required(VERSION 3.1)
+
 project(%{APPNAMELC})
 
-# search packages used by KDE
-find_package (KDE4 REQUIRED)
-include(KDE4Defaults)
-include(MacroLibrary)
-include(MacroOptionalAddSubdirectory)
-include(CheckIncludeFiles)
-find_package (KdepimLibs REQUIRED)
+############ ECM setup ###########
+find_package(ECM 5.13.0 CONFIG REQUIRED)
 
-if(WIN32)
-    set(LIB_INSTALL_DIR ${LIB_INSTALL_DIR}
-                        RUNTIME DESTINATION ${BIN_INSTALL_DIR}
-                        LIBRARY DESTINATION ${LIB_INSTALL_DIR}
-                        ARCHIVE DESTINATION ${LIB_INSTALL_DIR} )
-endif(WIN32)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
 
-include_directories(
-    ${KDE4_INCLUDES}
-    ${KDEPIMLIBS_INCLUDE_DIRS}
-)
+include(FeatureSummary)
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings)
 
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KDE4_ENABLE_EXCEPTIONS}" )
+########### Dependencies ###########
 
+set(KF5_VERSION "5.13.0")
+set(AKONADI_VERSION "5.0")
+set(QT_REQUIRED_VERSION "5.3.0")
+
+find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Core Network Gui)
+
+find_package(KF5Config ${KF5_VERSION} CONFIG REQUIRED)
+find_package(KF5Akonadi ${AKONADI_MIN_VERSION} CONFIG REQUIRED)
 
 ########### next target ###############
 
@@ -29,14 +29,16 @@ set( akonadi_serializer_%{APPNAMELC}_SRCS
   akonadi_serializer_%{APPNAMELC}.cpp
 )
 
-kde4_add_plugin(akonadi_serializer_%{APPNAMELC} ${akonadi_serializer_%{APPNAMELC}_SRCS})
+add_library(akonadi_serializer_%{APPNAMELC} MODULE ${akonadi_serializer_%{APPNAMELC}_SRCS})
+target_link_libraries(akonadi_serializer_%{APPNAMELC}
+    KF5::AkonadiCore
+)
 
-target_link_libraries(akonadi_serializer_%{APPNAMELC} ${KDE4_AKONADI_LIBS} ${QT_QTCORE_LIBRARY} ${KDE4_KDECORE_LIBS})
-
-install(TARGETS akonadi_serializer_%{APPNAMELC} DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS akonadi_serializer_%{APPNAMELC}
+        DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 
-install( FILES
-  akonadi_serializer_%{APPNAMELC}.desktop
-  DESTINATION ${DATA_INSTALL_DIR}/akonadi/plugins/serializer)
+install(FILES akonadi_serializer_%{APPNAMELC}.desktop
+        DESTINATION ${KDE_INSTALL_DATADIR}/akonadi/plugins/serializer
+)

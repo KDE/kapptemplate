@@ -1,64 +1,92 @@
+cmake_minimum_required(VERSION 3.1)
+
 project(%{APPNAMELC})
 
-# search packages used by KDE
-find_package (KDE4 REQUIRED)
-include(KDE4Defaults)
-include(MacroLibrary)
-include(MacroOptionalAddSubdirectory)
-include(CheckIncludeFiles)
-find_package (KdepimLibs REQUIRED)
+############ ECM setup ###########
+find_package(ECM 5.13.0 CONFIG REQUIRED)
 
-find_program(XSLTPROC_EXECUTABLE xsltproc)
-macro_log_feature(XSLTPROC_EXECUTABLE "xsltproc" "The command line XSLT processor from libxslt" "http://xmlsoft.org/XSLT/" FALSE "" "Needed for building Akonadi resources. Recommended.")
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
 
-if (XSLTPROC_EXECUTABLE)
-  # generates a D-Bus interface description from a KConfigXT file
-  macro( kcfg_generate_dbus_interface _kcfg _name )
-    add_custom_command(
-      OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-      COMMAND ${XSLTPROC_EXECUTABLE} --stringparam interfaceName ${_name}
-              ${KDEPIMLIBS_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
-              ${_kcfg}
-              > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-      DEPENDS ${KDEPIMLIBS_DATA_DIR}/akonadi-kde/kcfg2dbus.xsl
-              ${_kcfg}
-    )
-  endmacro( kcfg_generate_dbus_interface )
-endif (XSLTPROC_EXECUTABLE)
+include(FeatureSummary)
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings)
+include(ECMQtDeclareLoggingCategory)
 
-if(WIN32)
-    set(LIB_INSTALL_DIR ${LIB_INSTALL_DIR}
-                        RUNTIME DESTINATION ${BIN_INSTALL_DIR}
-                        LIBRARY DESTINATION ${LIB_INSTALL_DIR}
-                        ARCHIVE DESTINATION ${LIB_INSTALL_DIR} )
-endif(WIN32)
+########### Dependencies ###########
 
-set(KDE4_ICON_DIR ${KDE4_INSTALL_DIR}/share/icons)
+set(KF5_VERSION "5.13.0")
+set(AKONADI_VERSION "5.0")
+set(QT_REQUIRED_VERSION "5.3.0")
 
-include_directories(
-    ${KDE4_INCLUDES}
-    ${KDEPIMLIBS_INCLUDE_DIRS}
-)
+find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Core Network Gui)
 
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KDE4_ENABLE_EXCEPTIONS}" )
+find_package(KF5Config ${KF5_VERSION} CONFIG REQUIRED)
+find_package(KF5Akonadi ${AKONADI_MIN_VERSION} CONFIG REQUIRED)
 
+find_program(XSLTPROC_EXECUTABLE xsltproc DOC "Path to xslt executable")
+
+if(XSLTPROC_EXECUTABLE)
+    # We depend on kdepimlibs, make sure it's found
+    if(NOT DEFINED KF5Akonadi_DATA_DIR)
+        find_package(KF5Akonadi REQUIRED)
+    endif()
+
+    # Macro to generate a D-Bus interface description from a KConfigXT file
+    macro(kcfg_generate_dbus_interface _kcfg _name)
+        add_custom_command(
+            OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
+            COMMAND ${XSLTPROC_EXECUTABLE} --stringparam interfaceName ${_name}
+                    ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl
+                    ${_kcfg}
+                    > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
+            DEPENDS ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl
+            ${_kcfg}
+        )
+    endmacro()
+endif()
 
 ########### next target ###############
 
-set( %{APPNAMELC}resource_SRCS
-  %{APPNAMELC}resource.cpp
+set(%{APPNAMELC}resource_SRCS
+    %{APPNAMELC}resource.cpp
 )
 
-install( FILES %{APPNAMELC}resource.desktop DESTINATION "${CMAKE_INSTALL_PREFIX}/share/akonadi/agents" )
-
-kde4_add_kcfg_files(%{APPNAMELC}resource_SRCS settings.kcfgc)
-kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/%{APPNAMELC}resource.kcfg org.kde.Akonadi.%{APPNAME}.Settings)
-qt4_add_dbus_adaptor(%{APPNAMELC}resource_SRCS
-  ${CMAKE_CURRENT_BINARY_DIR}/org.kde.Akonadi.%{APPNAME}.Settings.xml settings.h Settings
+ecm_qt_declare_logging_category(%{APPNAMELC}resource_SRCS
+    HEADER debug.h
+    IDENTIFIER log_%{APPNAMELC}resource
+    CATEGORY_NAME log_%{APPNAMELC}resource
 )
 
-kde4_add_executable(akonadi_%{APPNAMELC}_resource RUN_UNINSTALLED ${%{APPNAMELC}resource_SRCS})
+kconfig_add_kcfg_files(%{APPNAMELC}resource_SRCS
+    ${CMAKE_CURRENT_SOURCE_DIR}/settings.kcfgc
+)
 
-target_link_libraries(akonadi_%{APPNAMELC}_resource ${KDE4_AKONADI_LIBS} ${QT_QTCORE_LIBRARY} ${QT_QTDBUS_LIBRARY} ${KDE4_KDECORE_LIBS})
+kcfg_generate_dbus_interface(
+    ${CMAKE_CURRENT_SOURCE_DIR}/%{APPNAMELC}resource.kcfg
+    org.kde.Akonadi.%{APPNAME}.Settings
+)
 
-install(TARGETS akonadi_%{APPNAMELC}_resource ${INSTALL_TARGETS_DEFAULT_ARGS})
+qt5_add_dbus_adaptor(%{APPNAMELC}resource_SRCS
+    ${CMAKE_CURRENT_BINARY_DIR}/org.kde.Akonadi.%{APPNAME}.Settings.xml
+    ${CMAKE_CURRENT_BINARY_DIR}/settings.h
+    Settings
+)
+
+
+add_executable(akonadi_%{APPNAMELC}_resource ${%{APPNAMELC}resource_SRCS})
+target_link_libraries(akonadi_%{APPNAMELC}_resource
+    Qt5::DBus
+    KF5::AkonadiAgentBase
+    KF5::ConfigCore
+)
+
+install(TARGETS akonadi_%{APPNAMELC}_resource ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+install(FILES %{APPNAMELC}resource.desktop
+        DESTINATION "${KDE_INSTALL_DATAROOTDIR}/share/akonadi/agents"
+)
+
+########### summary ############
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

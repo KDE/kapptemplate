@@ -79,18 +79,12 @@ Documentation
 -=-=-=-=-=-=-
 
 The Akonadi-KDE API documentation can be found here:
-http://api.kde.org/4.x-api/kdepimlibs-apidocs/akonadi/html/index.html
+http://api.kde.org/stable/kdepimlibs-apidocs/akonadi/html/index.html
 
 General developer information, e.g. tutorials can be found here:
 http://techbase.kde.org/Projects/PIM/Akonadi
 
-Project homepage is http://www.akonadi-project.org/
+The contact site can be found here:
+https://community.kde.org/KDE_PIM/Contact
 
-IRC: #akonadi on freenode network
-
-----------------------------
-Please send all comments to:
-Kevin Krammer
-kevin@akonadi-project.org
-
-Last update: July 2009
+Last update: September 2015
