@@ -7,6 +7,7 @@
   <name xml:lang="ast">KAppTemplate</name>
   <name xml:lang="bs">KAppTemplate</name>
   <name xml:lang="ca">KAppTemplate</name>
+  <name xml:lang="ca-valencia">KAppTemplate</name>
   <name xml:lang="cs">KAppTemplate</name>
   <name xml:lang="da">KAppTemplate</name>
   <name xml:lang="de">KAppTemplate</name>
@@ -38,6 +39,7 @@
   <summary xml:lang="ast">Xenerador de plantíes KDE</summary>
   <summary xml:lang="bs">KDE generator predložaka</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
+  <summary xml:lang="ca-valencia">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
   <summary xml:lang="de">KDE-Vorlagengenerator</summary>
   <summary xml:lang="en-GB">KDE Template Generator</summary>
@@ -71,6 +73,7 @@
     </p>
     <p xml:lang="ast">KAppTemplate ye una aplicación p'aniciar aína'l desendolcu usando plantíes esistentes qu'apurren  y una cadarma afayadiza.</p>
     <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
+    <p xml:lang="ca-valencia">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
     <p xml:lang="en-GB">KAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.</p>
     <p xml:lang="es">KAppTemplate es una aplicación para comenzar a desarrollar rápidamente usando plantillas existentes que proporcionan un código básico que se suele escribir repetidamente y una estructura correcta.</p>
@@ -98,6 +101,7 @@
     <p xml:lang="ast">Carauterístiques:</p>
     <p xml:lang="bs">Svojstva:</p>
     <p xml:lang="ca">Característiques:</p>
+    <p xml:lang="ca-valencia">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="de">Funktionen:</p>
     <p xml:lang="en-GB">Features:</p>
@@ -128,6 +132,7 @@
       <li>Templates for C++, Ruby, Python and PHP</li>
       <li xml:lang="ast">Plantíes pa C++, Ruby, Python y PHP</li>
       <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
+      <li xml:lang="ca-valencia">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
       <li xml:lang="de">Vorlagen für C++, Ruby, Python und PHP</li>
       <li xml:lang="en-GB">Templates for C++, Ruby, Python and PHP</li>
@@ -156,6 +161,7 @@
       <li xml:lang="ast">Estayes</li>
       <li xml:lang="bs">Kategorije</li>
       <li xml:lang="ca">Categories</li>
+      <li xml:lang="ca-valencia">Categories</li>
       <li xml:lang="cs">Kategorie</li>
       <li xml:lang="de">Kategorien</li>
       <li xml:lang="en-GB">Categories</li>
@@ -185,6 +191,7 @@
       <li>Templates for different build-systems and frameworks</li>
       <li xml:lang="ast">Plantíes pa sistemes de construcción y frameworks estremaos</li>
       <li xml:lang="ca">Plantilles per sistemes de construcció i entorns de treball diferents</li>
+      <li xml:lang="ca-valencia">Plantilles per sistemes de construcció i entorns de treball diferents</li>
       <li xml:lang="de">Vorlagen für verschiedene Erstellungs-Systeme und Frameworks</li>
       <li xml:lang="en-GB">Templates for different build-systems and frameworks</li>
       <li xml:lang="es">Plantillas para distintos sistemas de compilación e infraestructuras</li>
@@ -211,6 +218,7 @@
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ast">Plantíes especialmente pal desendolcu KDE (complementos pa Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ca">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ca-valencia">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="de">Spezielle Vorlagen für KDE-Entwicklung (Module für Plasma, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="en-GB">Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
@@ -236,6 +244,7 @@
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如Plasma, KOffice, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
+      <li xml:lang="ca-valencia">És fàcil crear plantilles noves usant espais variables i una orde CMake senzilla</li>
       <li xml:lang="de">Neue Vorlagen können leicht mit Platzhaltern und einfachen CMake-Befehlen erstellt werden</li>
       <li xml:lang="en-GB">It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="es">Resulta fácil crear nuevas plantillas usando parámetros de sustitución y órdenes CMake sencillas</li>
@@ -262,6 +271,7 @@
       <li>Integrated into KDevelop</li>
       <li xml:lang="ast">Integráu en KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
+      <li xml:lang="ca-valencia">S'integra en el KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
       <li xml:lang="en-GB">Integrated into KDevelop</li>
       <li xml:lang="es">Integrado en KDevelop</li>
