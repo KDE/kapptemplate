@@ -2,6 +2,7 @@
 [General]
 Name=C++ KDE Frameworks
 Name[ca]=C++ de KDE Frameworks
+Name[ca@valencia]=C++ de KDE Frameworks
 Name[cs]=KDE Frameworks C++
 Name[da]=C++ KDE Frameworks
 Name[de]=C++ KDE Frameworks
@@ -29,6 +30,7 @@ Name[x-test]=xxC++ KDE Frameworksxx
 Name[zh_TW]=C++ KDE Frameworks
 Comment=A KDE Frameworks 5 GUI Application in C++
 Comment[ca]=Una aplicació IGU de les Frameworks 5 del KDE en C++
+Comment[ca@valencia]=Una aplicació IGU de les Frameworks 5 del KDE en C++
 Comment[cs]=Aplikace GUI z KDE Frameworks 5 v C++
 Comment[da]=Et grafisk KDE Frameworks 5-program i C++
 Comment[de]=Eine  KDE Frameworks 5 Anwendung mit grafischer Oberfläche in C++

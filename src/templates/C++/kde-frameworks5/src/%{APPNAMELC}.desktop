@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=%{APPNAMELC}
 Name[ca]=%{APPNAMELC}
+Name[ca@valencia]=%{APPNAMELC}
 Name[cs]=%{APPNAMELC}
 Name[da]=%{APPNAMELC}
 Name[de]=%{APPNAMELC}
@@ -32,6 +33,7 @@ Type=Application
 X-DocPath=%{APPNAMELC}/index.html
 GenericName=A KDE Application
 GenericName[ca]=Una aplicació del KDE
+GenericName[ca@valencia]=Una aplicació del KDE
 GenericName[cs]=Aplikace prostředí KDE
 GenericName[da]=Et KDE-program
 GenericName[de]=Eine KDE-Anwendung
