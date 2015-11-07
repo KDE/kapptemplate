@@ -2,8 +2,8 @@
 [General]
 Name=Minimal C++ KDE
 Name[bs]=Minimalni C++ KDE
-Name[ca]=C++ KDE mínima
-Name[ca@valencia]=C++ KDE mínima
+Name[ca]=C++ mínim pel KDE
+Name[ca@valencia]=C++ mínim pel KDE
 Name[da]=Minimalt C++ KDE
 Name[de]=Einfache KDE-C++-Anwendung
 Name[el]=Minimal C++ KDE
@@ -39,8 +39,8 @@ Name[zh_CN]=最小 C++ KDE
 Name[zh_TW]=Minimal C++ KDE
 Comment=A very basic KDE GUI Application in C++
 Comment[bs]=Osnovna KDE GUI Aplikacija u C++
-Comment[ca]=Una aplicació IGU del KDE molt bàsica en C++
-Comment[ca@valencia]=Una aplicació IGU del KDE molt bàsica en C++
+Comment[ca]=Una aplicació IGU pel KDE molt bàsica en C++
+Comment[ca@valencia]=Una aplicació IGU pel KDE molt bàsica en C++
 Comment[cs]=Úplně základní GUI aplikace KDE v C++
 Comment[da]=Et meget basalt grafisk KDE-program i C++
 Comment[de]=Eine sehr einfache KDE-Anwendung mit grafischer Oberfläche in C++

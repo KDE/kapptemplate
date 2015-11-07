@@ -2,8 +2,8 @@
 [General]
 Name=Qt5 QML2 Application
 Name[bs]=Qt5 QML2 aplikacija
-Name[ca]=Una aplicació QML2 per Qt5
-Name[ca@valencia]=Una aplicació QML2 per Qt5
+Name[ca]=Una aplicació en QML2 per a les Qt5
+Name[ca@valencia]=Una aplicació en QML2 per a les Qt5
 Name[cs]=Aplikace Qt5 QML2
 Name[da]=Qt5 QML2-applikation
 Name[de]=Qt5-QML2-Anwendung
@@ -39,8 +39,8 @@ Name[zh_TW]=Qt5 QML2 應用程式
 
 Comment=A Qt5 and QML2 basic application using QMake. Warning, you need Qt5 for it, not Qt4.
 Comment[bs]=Qt5 i QML2 osnovna aplikacija koristeći QMake. Pažnja, za ovo vam treba Qt5 a, ne Qt4.
-Comment[ca]=Una aplicació bàsica en Qt5 i QML2 usant el QMake. Avís: Cal les Qt5, no Qt4.
-Comment[ca@valencia]=Una aplicació bàsica en Qt5 i QML2 usant el QMake. Avís: Cal les Qt5, no Qt4.
+Comment[ca]=Una aplicació bàsica en QML2 i les Qt5 usant el QMake. Avís: Calen les Qt5, no les Qt4.
+Comment[ca@valencia]=Una aplicació bàsica en QML2 i les Qt5 usant el QMake. Avís: Calen les Qt5, no les Qt4.
 Comment[da]=Et basalt Qt5- og QML2-program med brug af QMake. Advarsel, du skal bruge Qt5 til det, ikke Qt4.
 Comment[de]=Eine einfache Qt5- und QML2-Anwendung basierend auf QMake. Achtung: Sie benötigen hier Qt5.
 Comment[el]=Μια βασική εφαρμογή Qt5 και QML2 με το QMake. Προειδοποίηση, χρειάζεστε το Qt5 για αυτό, όχι το Qt4.
