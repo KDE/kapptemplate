@@ -14,5 +14,4 @@ install(FILES C++/akonadiserializer/akonadi-serializer.png DESTINATION ${DATA_IN
 install(FILES C++/runner/runner.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES C++/konqplugin/konqplugin.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES C++/cmake_qt5guiapp/cmake_qt5guiapp.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
-install(FILES QML/qml-plasmoid/qml-plasmoid.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
 install(FILES QML/qt5-qml2/qt5-qml2.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
