@@ -91,7 +91,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
                 if (!extractFileMacros(destName)) {
                     displayError(i18n("Failed to integrate your project information into "
-                                      "the file %1. The project has not be generated and "
+                                      "the file %1. The project has not been generated and "
                                       "all temporary files will be removed.", destName));
                     failed = true;
                     break;
