@@ -1,6 +1,5 @@
 set(apptemplate_DIRS
     kapp4-qml
-    cpp-plasmoid
     kde-simple
     kde-frameworks5-simple
     kde-frameworks5
