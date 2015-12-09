@@ -103,6 +103,7 @@
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="ca-valencia">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
+    <p xml:lang="da">Funktioner:</p>
     <p xml:lang="de">Funktionen:</p>
     <p xml:lang="en-GB">Features:</p>
     <p xml:lang="es">Funcionalidades:</p>
@@ -163,6 +164,7 @@
       <li xml:lang="ca">Categories</li>
       <li xml:lang="ca-valencia">Categories</li>
       <li xml:lang="cs">Kategorie</li>
+      <li xml:lang="da">Kategorier</li>
       <li xml:lang="de">Kategorien</li>
       <li xml:lang="en-GB">Categories</li>
       <li xml:lang="es">Categorías</li>
