@@ -61,10 +61,10 @@ void %{APPNAME}::settingsConfigure()
     if (KConfigDialog::showDialog("settings")) {
         return;
     }
-    KConfigDialog *dialog = new KConfigDialog(this, "settings", %{APPNAME}Settings::self());
+    KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), %{APPNAME}Settings::self());
     QWidget *generalSettingsDialog = new QWidget;
     settingsBase.setupUi(generalSettingsDialog);
-    dialog->addPage(generalSettingsDialog, i18n("General"), "package_setting");
+    dialog->addPage(generalSettingsDialog, i18n("General"), QStringLiteral("package_setting"));
     connect(dialog, SIGNAL(settingsChanged(QString)), m_%{APPNAMELC}View, SLOT(slotSettingsChanged()));
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
