@@ -18,17 +18,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+// application headers
 #include "%{APPNAMELC}.h"
+
+// KDE headers
 #include <KActionCollection>
 #include <KConfigDialog>
-#include <QDebug>
 
 %{APPNAME}::%{APPNAME}()
     : KXmlGuiWindow()
 {
     m_%{APPNAMELC}View = new %{APPNAME}View(this);
     setCentralWidget(m_%{APPNAMELC}View);
-    m_switchAction = actionCollection()->addAction( "switch_action", this, SLOT(slotSwitchColors()) );
+    m_switchAction = actionCollection()->addAction("switch_action", this, SLOT(slotSwitchColors()));
     m_switchAction->setText(i18n("Switch Colors"));
     m_switchAction->setIcon(QIcon::fromTheme("fill-color"));
     connect(m_switchAction, SIGNAL(triggered(bool)), m_%{APPNAMELC}View, SLOT(slotSwitchColors()));
@@ -63,8 +65,8 @@ void %{APPNAME}::settingsConfigure()
     QWidget *generalSettingsDialog = new QWidget;
     settingsBase.setupUi(generalSettingsDialog);
     dialog->addPage(generalSettingsDialog, i18n("General"), "package_setting");
-    connect( dialog, SIGNAL(settingsChanged(QString)), m_%{APPNAMELC}View, SLOT(slotSettingsChanged()) );
-    dialog->setAttribute( Qt::WA_DeleteOnClose );
+    connect(dialog, SIGNAL(settingsChanged(QString)), m_%{APPNAMELC}View, SLOT(slotSettingsChanged()));
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
 }
 

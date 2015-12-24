@@ -31,8 +31,8 @@ Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
  * menus, toolbars and status bars.
  *
  * @short Main window class
- * @author Your Name <mail@example.com>
- * @version 0.1
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{VERSION}
  */
 class %{APPNAME}View : public QWidget
 {
@@ -41,7 +41,7 @@ public:
     /**
      * Default Constructor
      */
-    %{APPNAME}View(QWidget *parent);
+    explicit %{APPNAME}View(QWidget *parent);
 
     /**
      * Default Destructor
@@ -69,4 +69,4 @@ private:
     Ui::%{APPNAMELC}ViewBase m_ui;
 };
 
-#endif // _%{APPNAMEUC}_H_
+#endif // %{APPNAMEUC}VIEW_H

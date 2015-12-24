@@ -36,8 +36,8 @@ Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
  * menus, toolbars and status bars.
  *
  * @short Main window class
- * @author Your Name <mail@example.com>
- * @version 0.1
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{VERSION}
  */
 class %{APPNAME} : public KXmlGuiWindow
 {
@@ -73,4 +73,4 @@ private:
     %{APPNAME}View *m_%{APPNAMELC}View;
 };
 
-#endif // _%{APPNAMEUC}_H_
+#endif // %{APPNAMEUC}_H

@@ -18,6 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+// application headers
 #include "%{APPNAMELC}view.h"
 #include "%{APPNAME}Settings.h"
 
@@ -36,8 +37,8 @@ void %{APPNAME}View::slotSwitchColors()
 {
     // switch the foreground/background colours of the label
     QColor color = %{APPNAME}Settings::color_background();
-    %{APPNAME}Settings::setColor_background( %{APPNAME}Settings::color_foreground() );
-    %{APPNAME}Settings::setColor_foreground( color );
+    %{APPNAME}Settings::setColor_background(%{APPNAME}Settings::color_foreground());
+    %{APPNAME}Settings::setColor_foreground(color);
 
     slotSettingsChanged();
 }
@@ -46,13 +47,13 @@ void %{APPNAME}View::slotSettingsChanged()
 {
     qCDebug(%{APPNAMEUC}) << "%{APPNAME}View::slotSettingsChanged()";
     QPalette palette;
-    palette.setColor( QPalette::Window, %{APPNAME}Settings::color_background());
-    palette.setColor( QPalette::WindowText, %{APPNAME}Settings::color_foreground());
-    m_ui.templateLabel->setPalette( palette );
+    palette.setColor(QPalette::Window, %{APPNAME}Settings::color_background());
+    palette.setColor(QPalette::WindowText, %{APPNAME}Settings::color_foreground());
+    m_ui.templateLabel->setPalette(palette);
 
     // i18n : internationalization
-    m_ui.templateLabel->setText( i18n("This project is %1 days old", %{APPNAME}Settings::val_time()) );
-    emit signalChangeStatusbar( i18n("Settings changed") );
+    m_ui.templateLabel->setText(i18n("This project is %1 days old", %{APPNAME}Settings::val_time()));
+    emit signalChangeStatusbar(i18n("Settings changed"));
 }
 
 #include "%{APPNAMELC}view.moc"

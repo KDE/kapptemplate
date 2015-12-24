@@ -22,18 +22,17 @@
 #define %{APPNAMEUC}_H
 
 
-#include <QMainWindow>
-
 #include "ui_%{APPNAMELC}.h"
 
+#include <QMainWindow>
 
 /**
  * This class serves as the main window for %{APPNAME}.  It handles the
  * menus, toolbars and status bars.
  *
  * @short Main window class
- * @author Your Name <mail@example.com>
- * @version 0.1
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{VERSION}
  */
 class %{APPNAME} : public QMainWindow
 {
@@ -55,4 +54,4 @@ private:
     Ui::mainWidget m_ui;
 };
 
-#endif // _%{APPNAMEUC}_H_
+#endif // %{APPNAMEUC}_H

@@ -20,13 +20,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // application header
 #include "%{APPNAMELC}.h"
+
 // KDE headers
+#include <KAboutData>
+#include <KLocalizedString>
+
+// Qt headers
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QIcon>
-#include <KAboutData>
-#include <KLocalizedString>
-#include <QtCore/QLoggingCategory>
+#include <QLoggingCategory>
 
 Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
 Q_LOGGING_CATEGORY(%{APPNAMEUC}, "%{APPNAMELC}")
@@ -37,7 +40,7 @@ int main(int argc, char **argv)
     KLocalizedString::setApplicationDomain("%{APPNAMELC}");
     KAboutData aboutData( QStringLiteral("%{APPNAMELC}"),
                           i18n("Simple App"),
-                          QStringLiteral("0.1"),
+                          QStringLiteral("%{VERSION}"),
                           i18n("A Simple Application written with KDE Frameworks"),
                           KAboutLicense::GPL,
                           i18n("(c) %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));

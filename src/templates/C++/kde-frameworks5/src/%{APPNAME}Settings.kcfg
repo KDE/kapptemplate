@@ -14,7 +14,7 @@
 	    <default>yellow</default>
     </entry>
     <entry name="val_time" type="Int">
-	    <label>size of a ball</label>
+	    <label>age of the project</label>
 	    <default>2</default>
     </entry>
   </group>

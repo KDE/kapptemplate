@@ -27,8 +27,8 @@
  * statusbar but relies on the "Part" to do all the real work.
  *
  * @short Application Shell
- * @author ${AUTHOR} <${EMAIL}>
- * @version ${APP_VERSION}
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{VERSION}
  */
 class %{APPNAME} : public KParts::MainWindow
 {

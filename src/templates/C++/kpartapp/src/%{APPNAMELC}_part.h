@@ -35,7 +35,7 @@ class KAction;
  *
  * @short Main Part
  * @author %{AUTHOR} <%{EMAIL}>
- * @version ${APP_VERSION}
+ * @version %${VERSION}
  */
 class %{APPNAME}Part : public KParts::ReadWritePart
 {
