@@ -30,9 +30,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 {
     m_%{APPNAMELC}View = new %{APPNAME}View(this);
     setCentralWidget(m_%{APPNAMELC}View);
-    m_switchAction = actionCollection()->addAction("switch_action", this, SLOT(slotSwitchColors()));
+    m_switchAction = actionCollection()->addAction(QStringLiteral("switch_action"), this, SLOT(slotSwitchColors()));
     m_switchAction->setText(i18n("Switch Colors"));
-    m_switchAction->setIcon(QIcon::fromTheme("fill-color"));
+    m_switchAction->setIcon(QIcon::fromTheme(QStringLiteral("fill-color")));
     connect(m_switchAction, SIGNAL(triggered(bool)), m_%{APPNAMELC}View, SLOT(slotSwitchColors()));
     KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
     KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
