@@ -58,7 +58,7 @@ void %{APPNAME}::settingsConfigure()
     // compare the names of the widgets in the .ui file
     // to the names of the variables in the .kcfg file
     //avoid to have 2 dialogs shown
-    if (KConfigDialog::showDialog("settings")) {
+    if (KConfigDialog::showDialog(QStringLiteral("settings"))) {
         return;
     }
     KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), %{APPNAME}Settings::self());
