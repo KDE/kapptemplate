@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 void %{APPNAME}View::slotSwitchColors()
 {
-    // switch the foreground/background colours of the label
+    // switch the foreground/background colors of the label
     QColor color = %{APPNAME}Settings::color_background();
     %{APPNAME}Settings::setColor_background(%{APPNAME}Settings::color_foreground());
     %{APPNAME}Settings::setColor_foreground(color);

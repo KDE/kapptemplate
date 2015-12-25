@@ -52,7 +52,7 @@ void %{APPNAME}::fileNew()
 
 void %{APPNAME}::settingsConfigure()
 {
-    qCDebug(%{APPNAMEUC}) << "%{APPNAME}:settingsConfigure()";
+    qCDebug(%{APPNAMEUC}) << "%{APPNAME}::settingsConfigure()";
     // The preference dialog is derived from prefs_base.ui
     //
     // compare the names of the widgets in the .ui file
