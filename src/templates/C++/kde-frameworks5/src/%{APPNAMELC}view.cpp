@@ -56,4 +56,3 @@ void %{APPNAME}View::slotSettingsChanged()
     emit signalChangeStatusbar(i18n("Settings changed"));
 }
 
-#include "%{APPNAMELC}view.moc"

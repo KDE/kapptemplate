@@ -70,4 +70,3 @@ void %{APPNAME}::settingsConfigure()
     dialog->show();
 }
 
-#include "%{APPNAMELC}.moc"

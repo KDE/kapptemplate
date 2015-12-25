@@ -32,4 +32,3 @@
 {
 }
 
-#include "%{APPNAMELC}.moc"
