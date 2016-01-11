@@ -34,6 +34,7 @@ X-DocPath=%{APPNAMELC}/index.html
 GenericName=A Simple Application written with KDE Frameworks
 GenericName[ca]=Una aplicació senzilla escrita amb els Frameworks del KDE
 GenericName[ca@valencia]=Una aplicació senzilla escrita amb els Frameworks del KDE
+GenericName[en_GB]=A Simple Application written with KDE Frameworks
 GenericName[es]=Una aplicación sencilla escrita con KDE Frameworks
 GenericName[fi]=Yksinkertainen KDE Frameworksillä kirjoitettu sovellus
 GenericName[gl]=Un programa sinxelo creado coas infraestruturas de KDE
