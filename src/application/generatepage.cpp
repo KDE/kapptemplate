@@ -177,7 +177,11 @@ void GeneratePage::initializePage()
         arch = new KTar(archName, "application/x-bzip");
     }
 
-    QString dest(field("url").toString() + '/' + appName.toLower());
+    QString url = field("url").toString();
+    if (url.endsWith(QLatin1Char('/'))) {
+        url.chop(1);
+    }
+    QString dest(url + '/' + appName.toLower());
     if (arch->open(QIODevice::ReadOnly)) {
         if (!QFileInfo(dest).exists()) {
             QDir::root().mkdir(dest);
@@ -191,7 +195,6 @@ void GeneratePage::initializePage()
     ui_generate.label->setText(feedback);
 
     QString resume;
-    QString url = field("url").toString();
     resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
     resume.append(i18n("Version: %1 <br /><br />", version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
