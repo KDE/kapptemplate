@@ -3,7 +3,6 @@ set(apptemplate_DIRS
     kde-simple
     kde-frameworks5-simple
     kde-frameworks5
-    runner
     ktexteditor
     konqplugin
     kpartapp
