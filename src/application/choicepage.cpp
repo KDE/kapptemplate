@@ -83,8 +83,7 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     }
 
     if (picPath.isEmpty()) {
-        // TODO: i18n
-        ui_choice.pictureLabel->setText("No sample picture available.");
+        ui_choice.pictureLabel->setText(i18n("No sample picture available."));
     } else {
         QPixmap pixmap(picPath);
         ui_choice.pictureLabel->setPixmap(pixmap);
