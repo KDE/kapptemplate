@@ -7,7 +7,7 @@ set(kapptemplate_SRCS
    choicepage.cpp
 )
 
-qt5_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
+ki18n_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
 
 kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc)
 
