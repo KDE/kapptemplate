@@ -1,0 +1,10 @@
+{
+    "KPlugin": {
+        "Description": "A simple Kate plugin",
+        "Icon": "task-delegate",
+        "Name": "%{APPNAMELC}",
+        "ServiceTypes": [
+            "KTextEditor/Plugin"
+        ]
+    }
+}

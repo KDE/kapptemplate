@@ -1,19 +1,30 @@
-project(ktexteditor_%{APPNAMELC})
+cmake_minimum_required(VERSION 2.8.12)
+project(%{APPNAMELC})
 
-find_package(KDE4 REQUIRED)
-include(KDE4Defaults)
-include_directories(${KDE4_INCLUDES} ${QT_INCLUDES})
-add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
+find_package(ECM REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
-set(ktexteditor_%{APPNAMELC}_SRCS %{APPNAMELC}plugin.cpp)
+include(ECMInstallIcons)
+include(ECMAddTests)
+include(KDEInstallDirs)
+include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDECMakeSettings)
+include(FeatureSummary)
 
-kde4_add_plugin(ktexteditor_%{APPNAMELC} ${ktexteditor_%{APPNAMELC}_SRCS})
+find_package(Qt5 REQUIRED COMPONENTS Test)
+find_package(KF5 REQUIRED COMPONENTS CoreAddons TextEditor I18n Parts)
 
-target_link_libraries(ktexteditor_%{APPNAMELC} ${KDE4_KDEUI_LIBS} ${KDE4_KTEXTEDITOR_LIBS})
+add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+add_definitions(-DTRANSLATION_DOMAIN=\"%{APPNAMELC}\")
 
-install(TARGETS ktexteditor_%{APPNAMELC} DESTINATION ${PLUGIN_INSTALL_DIR})
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-install(FILES %{APPNAMELC}ui.rc DESTINATION ${DATA_INSTALL_DIR}/ktexteditor_%{APPNAMELC})
+set(%{APPNAMELC}_SRCS
+    %{APPNAMELC}.cpp
+)
 
-install(FILES ktexteditor_%{APPNAMELC}.desktop DESTINATION ${SERVICES_INSTALL_DIR})
- 
+add_library(%{APPNAMELC} MODULE ${%{APPNAMELC}_SRCS})
+
+target_link_libraries(%{APPNAMELC} KF5::TextEditor)
+
+install(TARGETS %{APPNAMELC} DESTINATION ${PLUGIN_INSTALL_DIR}/ktexteditor)
