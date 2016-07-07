@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-  <!ENTITY kappname "&kapptemplate;">
-  <!ENTITY package "kdesdk">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE">
 ]>
@@ -30,12 +28,12 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 
-<date>2008-04-28</date>
-<releaseinfo>0.1</releaseinfo>
+<date>2016-06-06</date>
+<releaseinfo>0.1 (Applications 16.08)</releaseinfo>
 
 <abstract>
 <para>
-&kapptemplate; is a &kde; 4 templates generator.
+&kapptemplate; is a &kde; templates generator.
 </para>
 </abstract>
 
@@ -59,23 +57,22 @@
 <chapter id="introduction"> 
 <title>Introduction</title> 
 <para>
-&kapptemplate; generates &kde; templates to help you start easily &kde;
-programming.</para> 
+&kapptemplate;  is an application to start development quickly using existing templates providing basic
+repeatedly written code and a proper structure.</para>
 
 <para>
-&kapptemplate; offers you a few basic templates projects and also picks up KDevelop templates if some are installed on your machine.
+&kapptemplate; offers you a few basic templates projects and also picks up Plasma and KDevelop templates if some are installed on your machine.
 </para>
 <para>
 As default you will find:</para>
 
 <itemizedlist>
-<listitem><para>A simple &kde; 4 &GUI; template</para> </listitem>
+<listitem><para>A QML Application template</para> </listitem>
 <listitem><para>A &kde; 4 KPart template</para> </listitem>
-<listitem><para>A Qt4 main window based template</para></listitem>
-<listitem><para>A PyQt4 application</para></listitem>
-<listitem><para>A Py&kde;4 application</para></listitem>
-<listitem><para>A Ruby (korundum4) template</para></listitem>
-<listitem><para>A plasma applet template</para></listitem>
+<listitem><para>A C++ KDE Frameworks template</para></listitem>
+<listitem><para>A Minimal C++ KDE Frameworks template</para></listitem>
+<listitem><para>An Akonadi resource template</para></listitem>
+<listitem><para>An Akonadi serializer plugin</para></listitem>
 </itemizedlist>
 
 <para>Answer the wizard questions on each page and generate your template.</para>
@@ -139,12 +136,16 @@ As default you will find:</para>
 
 <chapter id="templates-description">
 <title>What template do you need?</title>
-<para>This chapter describes the templates so you can choose the one that
- is the best adapted to your needs.</para>
 
-<sect1 id="kde4-gui-app">
+<sect1 id="default-templates">
+
+<title>Default Templates</title>
+<para>This chapter describes the templates so you can choose the one that
+is the best adapted to your needs.</para>
+
+<sect2 id="kde4-gui-app">
 <title>The C++ &kde; 4 &GUI; application template</title>
-<para>This is a CMake based &kde; 4 &GUI; template using KXMLGuiWindow and KConfig XT. This is a &kde; 4 standard application.</para>
+<para>This is a &cmake; based &kde; 4 &GUI; template using KXMLGuiWindow and KConfig XT. This is a &kde; 4 standard application.</para>
 <screenshot>
 <screeninfo>Here's a screenshot of the C++ &kde; 4 &GUI; application template</screeninfo>
 	<mediaobject>
@@ -162,12 +163,12 @@ how to use KConfig XT to change settings using the <menuchoice>
 <guimenuitem>Configure &lt;AppName&gt;</guimenuitem>
 </menuchoice>.</para>
 
-<para>Don't forget to read the <filename>README</filename> in the project directory. You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
-</sect1>
+<para>You can find some great tutorials for &kde; 4 on <ulink url="http://techbase.kde.org/Development/Tutorials">http://techbase.kde.org/Development/Tutorials</ulink>.</para>
+</sect2>
 
-<sect1 id="kpart-app">
+<sect2 id="kpart-app">
 <title>The C++ &kde; 4 KPart application template</title>
-<para>This is a CMake based &kde; 4 KPart template.</para>
+<para>This is a &cmake; based &kde; 4 KPart template.</para>
 <screenshot>
 <screeninfo>Here's a screenshot of the C++ &kde; 4 Kpart template</screeninfo>
 	<mediaobject>
@@ -180,103 +181,43 @@ how to use KConfig XT to change settings using the <menuchoice>
 	</mediaobject>
 </screenshot>
 
-<para>Don't forget to read the <filename>README</filename> in the project directory.</para>
-</sect1>
+<para>This template inherits from XMLGuiWindow and demonstrates how to use KPart.</para>
+</sect2>
 
-<sect1 id="plasmoid">
-<title>The plasmoid application</title>
-<para>This template generates a simple plasma applet with an icon and some text on it.</para>
-
+<sect2 id="kf5-app">
+<title>C++ &kde-frameworks; application template</title>
+<para>A &kf5-full; &GUI; Application in C++.</para>
 <screenshot>
-<screeninfo>&kde; 4 plasma applet template</screeninfo>
+<screeninfo>C++ &kde-frameworks;</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="plasma-applet.png" format="PNG"/>
+	    <imagedata fileref="kde-frameworks5.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>&kde; 4 plasma applet template</phrase>
-	  </textobject>
-	</mediaobject>
-</screenshot>
-<para>You need &kde; 4.1 to build this template and it uses CMake. You can read more about it on <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted">http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink>, all methods are explained here.</para>
-<para>Restart plasma to load the applet by issuing <userinput>kquitapp plasma &amp;&amp; plasma</userinput> or view it with <userinput>plasmoidviewer YourAppletName</userinput>.</para>
-</sect1>
-
-<sect1 id="pyqt4-template">
-<title>The PyQT4 application</title>
-
-<para>
-The template will give you the following application:
-</para>
-
-<screenshot>
-<screeninfo>The PyQT4 application</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="pyqt4app.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase>The PyQT4 application</phrase>
+	    <phrase>C++ &kde-frameworks;</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
-<para>You need PyQt4 from your distribution.</para>
+</sect2>
 
-<para>To run the template, first generate the python module from the Designer myCalendar.ui file by typing
-<userinput>pyuic4 -o myCalendar.py myCalendar.ui</userinput> in your project folder and then start your project:
-<userinput>python APPNAME.py</userinput>.</para>
-</sect1>
-
-
-<sect1 id="pyKDE4-template">
-<title>The PyKDE4 application</title>
-
-<para>
-The template will give you the following application:
-</para>
-
+<sect2 id="kf5simple-app">
+<title>Minimal C++ &kde-frameworks; application template</title>
+<para>A very basic &kf5-full; &GUI; Application in C++.</para>
 <screenshot>
-<screeninfo>The PyKDE4 application</screeninfo>
+<screeninfo>Minimal C++ &kde-frameworks;</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="pykde4.png" format="PNG"/>
+	    <imagedata fileref="kde-frameworks5-simple.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase>The PyKDE4 application</phrase>
+	    <phrase>Minimal C++ &kde-frameworks;</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
-<para>You need PyKDE 4 from your distribution.</para>
+</sect2>
 
-<para>To run the template, first generate the python module from the Designer myCalendar.ui file by typing
-<userinput>pyuic4 -o myCalendar.py myCalendar.ui</userinput> in your project folder and then start your project:
-<userinput>python APPNAME.py</userinput>.</para>
-</sect1>
-
-<sect1 id="ruby-template">
-<title>The Ruby &kde; application</title>
-
-<para>
-The template will give you the following application:
-</para>
-
-<screenshot>
-<screeninfo>The &kde; Ruby application</screeninfo>
-	<mediaobject>
-	  <imageobject>
-	    <imagedata fileref="kderubyapp.png" format="PNG"/>
-	  </imageobject>
-	    <textobject>
-	    <phrase>The &kde; Ruby application</phrase>
-	  </textobject>
-	</mediaobject>
-</screenshot>
-
-<para>You need korundum4 from &kde; 4 kdebindings module or from your distribution to run this template.</para>
-
-<para>To run the template, after building and installing the project (see the <filename>README</filename>), type in konsole: <userinput>krubyapplication your-app/main.rb</userinput>.</para>
 </sect1>
 
 </chapter>
@@ -313,25 +254,6 @@ Documentation copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
 
 </chapter>
 
-
-<appendix id="installation">
-<title>Installation</title>
-
-<sect1 id="getting-kapptemplate">
-<title>How to obtain &kapptemplate;</title>
-
-&install.intro.documentation;
-
-</sect1>
-
-<sect1 id="compilation">
-<title>Compilation and installation</title>
-
-&install.compile.documentation;
-
-</sect1>
-
-</appendix>
 &documentation.index; 
 </book>
 
