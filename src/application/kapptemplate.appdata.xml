@@ -41,6 +41,7 @@
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="ca-valencia">Generador de plantilles del KDE</summary>
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
+  <summary xml:lang="da">KDE skabelongenerator</summary>
   <summary xml:lang="de">KDE-Vorlagengenerator</summary>
   <summary xml:lang="en-GB">KDE Template Generator</summary>
   <summary xml:lang="es">Generador de plantillas para KDE</summary>
@@ -274,6 +275,7 @@
       <li xml:lang="ast">Integráu en KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
       <li xml:lang="ca-valencia">S'integra en el KDevelop</li>
+      <li xml:lang="da">Integreret med KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
       <li xml:lang="en-GB">Integrated into KDevelop</li>
       <li xml:lang="es">Integrado en KDevelop</li>
