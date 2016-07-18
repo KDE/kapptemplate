@@ -17,6 +17,6 @@ target_link_libraries(kapptemplate KF5::CoreAddons KF5::ConfigWidgets KF5::Compl
 
 install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR})
-install(FILES kapptemplate.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFO})
+install(FILES kapptemplate.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFODIR})
 install(FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR})
 install(FILES default.png DESTINATION ${DATA_INSTALL_DIR}/kdevappwizard/template_previews)
