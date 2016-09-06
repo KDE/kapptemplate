@@ -78,3 +78,4 @@ Comment[x-test]=xxKTextEditor Plugin Template. A KTextEditor plugin template to 
 Comment[zh_CN]=KTextEditor 插件模板。用于向 KWrite、Kate、KDevelop 中的文本进行特殊操作的 KTextEditor 插件模板(工程名称请使用 ThisFormat)
 Comment[zh_TW]=KTextEditor 外掛程式樣本，用於 KWrite、Kate、KDevelop 等對文字的特殊操作。（專案名稱請使用此格式）
 Category=KDE/Kate Plugin
+Icon=ktexteditor.png

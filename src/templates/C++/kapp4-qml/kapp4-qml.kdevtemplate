@@ -76,5 +76,5 @@ Comment[x-test]=xxKDE4 simple template based on CMake, inherits from XMLGuiWindo
 Comment[zh_CN]=基于 CMake，继承自 XMLGuiWindow 和演示如何使用 KConfig XT 和 QML 的 KDE4 简单模板
 Comment[zh_TW]=KDE4 使用者介面的應用程式。基於 CMake 的 KDE4 簡單應用程式樣本，從 XMLGuiWindow 繼承而來，用於展示如何使用 KConfig XT 與 QML
 Category=KDE/Graphical
-Icon=kapp4.png
+Icon=kapp4-qml.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp

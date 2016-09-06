@@ -80,4 +80,4 @@ Comment[x-test]=xxAkonadi Resource Template. A template for an Akonadi PIM data 
 Comment[zh_CN]=Akonadi 资源模板。Akonadi 个人信息管理数据资源的模板
 Comment[zh_TW]=Akonadi 資源樣本。Akonadi PIM 資料資源的樣本。
 Category=KDE/Akonadi Resource
-Icon=akonadi-resources.png
+Icon=akonadiresource.png

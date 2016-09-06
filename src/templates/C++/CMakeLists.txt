@@ -1,4 +1,4 @@
-set(apptemplate_DIRS
+set(APPTEMPLATE_DIRS
     kapp4-qml
     kde-frameworks5-simple
     kde-frameworks5
@@ -8,4 +8,4 @@ set(apptemplate_DIRS
     akonadiserializer
 )
 
-kapptemplate_add_app_templates(${apptemplate_DIRS})
+kde_package_app_templates(TEMPLATES ${APPTEMPLATE_DIRS} INSTALL_DIR ${KDE_INSTALL_KTEMPLATESDIR})
