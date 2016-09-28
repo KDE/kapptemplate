@@ -1,8 +1,29 @@
 {
     "KPlugin": {
-        "Description": "A simple Kate plugin",
-        "Icon": "task-delegate",
-        "Name": "%{APPNAMELC}",
+        "Description": "A simple Kate plugin", 
+        "Description[ca@valencia]": "Un connector senzill del Kate", 
+        "Description[ca]": "Un connector senzill del Kate", 
+        "Description[cs]": "Jednoduchý modul Kate", 
+        "Description[de]": "Ein einfaches Kate-Modul", 
+        "Description[es]": "Un complemento de Kate sencillo", 
+        "Description[et]": "Lihtne Kate plugin", 
+        "Description[it]": "Una semplice estensione di Kate", 
+        "Description[nl]": "Een eenvoudige Kate-plug-in", 
+        "Description[pl]": "Prosta wtyczka Kate", 
+        "Description[pt]": "Um 'plugin' simples do Kate", 
+        "Description[pt_BR]": "Um plug-in simples do Kate", 
+        "Description[sk]": "Jednoduchý Kate plugin", 
+        "Description[sl]": "Preprost vstavek za Kate", 
+        "Description[sr@ijekavian]": "Једноставан прикључак за Кејт", 
+        "Description[sr@ijekavianlatin]": "Jednostavan priključak za Kate", 
+        "Description[sr@latin]": "Jednostavan priključak za Kate", 
+        "Description[sr]": "Једноставан прикључак за Кејт", 
+        "Description[sv]": "Ett enkelt insticksprogram för Kate", 
+        "Description[uk]": "Простий додаток до Kate", 
+        "Description[x-test]": "xxA simple Kate pluginxx", 
+        "Icon": "task-delegate", 
+        "Name": "%{APPNAMELC}", 
+        "Name[x-test]": "xx%{APPNAMELC}xx", 
         "ServiceTypes": [
             "KTextEditor/Plugin"
         ]
