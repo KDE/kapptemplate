@@ -21,6 +21,7 @@
         "Description[sv]": "Ett enkelt insticksprogram för Kate", 
         "Description[uk]": "Простий додаток до Kate", 
         "Description[x-test]": "xxA simple Kate pluginxx", 
+        "Description[zh_CN]": "一个简单的 Kate 插件", 
         "Icon": "task-delegate", 
         "Name": "%{APPNAMELC}", 
         "Name[x-test]": "xx%{APPNAMELC}xx", 
