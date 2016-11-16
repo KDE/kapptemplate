@@ -14,4 +14,5 @@ target_link_libraries( %{APPNAMELC}
 )
 
 install( TARGETS %{APPNAMELC} ${INSTALL_TARGETS_DEFAULT_ARGS} )
-install( PROGRAMS %{APPNAMELC}.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS org.example.%{APPNAMELC}.desktop DESTINATION ${XDG_APPS_INSTALL_DIR} )
+install( FILES org.example.%{APPNAMELC}.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR} )
