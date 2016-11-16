@@ -23,6 +23,7 @@
         "Description[uk]": "Простий додаток до Kate", 
         "Description[x-test]": "xxA simple Kate pluginxx", 
         "Description[zh_CN]": "一个简单的 Kate 插件", 
+        "Description[zh_TW]": "一個簡單的 Kate 外掛程式", 
         "Icon": "task-delegate", 
         "Name": "%{APPNAMELC}", 
         "Name[x-test]": "xx%{APPNAMELC}xx", 
