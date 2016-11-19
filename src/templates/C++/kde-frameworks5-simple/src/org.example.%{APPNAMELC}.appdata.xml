@@ -4,11 +4,20 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license </project_license>
   <name>%{APPNAMELC}</name>
+  <name xml:lang="sk">%{APPNAMELC}</name>
+  <name xml:lang="sv">%{APPNAMELC}</name>
+  <name xml:lang="uk">%{APPNAMELC}</name>
   <name xml:lang="x-test">xx%{APPNAMELC}xx</name>
   <summary> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary </summary>
+  <summary xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summaryxx</summary>
   <description>
     <p> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description </p>
+    <p xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-descriptionxx</p>
   </description>
   <url type="homepage">https://www.example.org</url>
@@ -24,6 +33,9 @@
   </screenshots>
   <provides>
     <binary>%{APPNAMELC}</binary>
+    <binary xml:lang="sk">%{APPNAMELC}</binary>
+    <binary xml:lang="sv">%{APPNAMELC}</binary>
+    <binary xml:lang="uk">%{APPNAMELC}</binary>
     <binary xml:lang="x-test">xx%{APPNAMELC}xx</binary>
   </provides>
   <project_group>KDE</project_group>
