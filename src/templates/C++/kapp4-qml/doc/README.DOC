@@ -1,6 +1,6 @@
 How to add a documentation to your project:
 
-* copy a template from kdelibs/kdoctools/ to this directory
+* copy a template from frameworks/kdoctools/src to this directory
   - article-template.docbook -> article for a short documentation e.g. for a plugin
   - template.docbook -> book template for an application
   rename the template to index.docbook
