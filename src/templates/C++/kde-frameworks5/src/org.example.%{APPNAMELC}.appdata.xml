@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license </project_license>
   <name>%{APPNAMELC}</name>
+  <name xml:lang="ast">%{APPNAMELC}</name>
   <name xml:lang="ca">%{APPNAMELC}</name>
   <name xml:lang="ca-valencia">%{APPNAMELC}</name>
   <name xml:lang="cs">%{APPNAMELC}</name>
@@ -17,6 +18,7 @@
   <name xml:lang="uk">%{APPNAMELC}</name>
   <name xml:lang="x-test">xx%{APPNAMELC}xx</name>
   <summary> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary </summary>
+  <summary xml:lang="ast">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="ca-valencia">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="cs">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
@@ -31,6 +33,7 @@
   <summary xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summaryxx</summary>
   <description>
     <p> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description </p>
+    <p xml:lang="ast">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="ca-valencia">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="cs">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
@@ -57,6 +60,7 @@
   </screenshots>
   <provides>
     <binary>%{APPNAMELC}</binary>
+    <binary xml:lang="ast">%{APPNAMELC}</binary>
     <binary xml:lang="ca">%{APPNAMELC}</binary>
     <binary xml:lang="ca-valencia">%{APPNAMELC}</binary>
     <binary xml:lang="cs">%{APPNAMELC}</binary>
