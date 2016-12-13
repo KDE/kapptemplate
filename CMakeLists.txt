@@ -5,11 +5,11 @@ find_package(ECM 5.17.0 NO_MODULE REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
 include(ECMInstallIcons)
-include(ECMAddTests)
 include(KDEInstallDirs)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 include(KDEPackageAppTemplates)
+include(ECMAddTests)
 include(FeatureSummary)
 
 find_package(Qt5 REQUIRED COMPONENTS Test)
