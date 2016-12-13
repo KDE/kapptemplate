@@ -1,6 +1,7 @@
 {
     "KPlugin": {
         "Description": "A simple Kate plugin", 
+        "Description[ast]": "Un complementu cencillu de Kate", 
         "Description[ca@valencia]": "Un connector senzill del Kate", 
         "Description[ca]": "Un connector senzill del Kate", 
         "Description[cs]": "Jednoduchý modul Kate", 
