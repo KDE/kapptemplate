@@ -37,7 +37,6 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>KDE Template Generator</summary>
-  <summary xml:lang="ast">Xenerador de plantíes KDE</summary>
   <summary xml:lang="bs">KDE generator predložaka</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="ca-valencia">Generador de plantilles del KDE</summary>
@@ -74,7 +73,6 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
-    <p xml:lang="ast">KAppTemplate ye una aplicación p'aniciar aína'l desendolcu usando plantíes esistentes qu'apurren  y una cadarma afayadiza.</p>
     <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="ca-valencia">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
@@ -102,7 +100,6 @@
     <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
     <p xml:lang="zh-TW">KAppTemplate 是一套讓您用現有的樣本快速開發的應用程式。樣本裡已包括基本常用的程式碼，以及適當的程式結構。</p>
     <p>Features:</p>
-    <p xml:lang="ast">Carauterístiques:</p>
     <p xml:lang="bs">Svojstva:</p>
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="ca-valencia">Característiques:</p>
@@ -136,7 +133,6 @@
     <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
-      <li xml:lang="ast">Plantíes pa C++, Ruby, Python y PHP</li>
       <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="ca-valencia">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
@@ -165,7 +161,6 @@
       <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
       <li xml:lang="zh-TW">C++, Ruby, Python 與 PHP 的樣本</li>
       <li>Categories</li>
-      <li xml:lang="ast">Estayes</li>
       <li xml:lang="bs">Kategorije</li>
       <li xml:lang="ca">Categories</li>
       <li xml:lang="ca-valencia">Categories</li>
@@ -198,7 +193,6 @@
       <li xml:lang="zh-CN">分类</li>
       <li xml:lang="zh-TW">類別</li>
       <li>Templates for different build-systems and frameworks</li>
-      <li xml:lang="ast">Plantíes pa sistemes de construcción y frameworks estremaos</li>
       <li xml:lang="ca">Plantilles per a sistemes de construcció i marcs de treball diferents</li>
       <li xml:lang="ca-valencia">Plantilles per a sistemes de construcció i marcs de treball diferents</li>
       <li xml:lang="de">Vorlagen für verschiedene Erstellungs-Systeme und Frameworks</li>
@@ -226,7 +220,6 @@
       <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
-      <li xml:lang="ast">Plantíes especialmente pal desendolcu KDE (complementos pa Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ca">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ca-valencia">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="de">Spezielle Vorlagen für KDE-Entwicklung (Module für Plasma, KTextEditor, KRunner, Akonadi)</li>
@@ -281,7 +274,6 @@
       <li xml:lang="x-test">xxIt is easy to create new templates using space holders and a simple CMake-commandxx</li>
       <li xml:lang="zh-TW">只要用空間符與簡單的 CMake 指令即可建立新的樣本</li>
       <li>Integrated into KDevelop</li>
-      <li xml:lang="ast">Integráu en KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
       <li xml:lang="ca-valencia">S'integra en el KDevelop</li>
       <li xml:lang="da">Integreret med KDevelop</li>
