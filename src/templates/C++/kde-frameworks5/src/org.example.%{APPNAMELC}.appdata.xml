@@ -13,6 +13,7 @@
   <name xml:lang="es">%{APPNAMELC}</name>
   <name xml:lang="et">%{APPNAMELC}</name>
   <name xml:lang="gl">%{APPNAMELC}</name>
+  <name xml:lang="nl">%{APPNAMELC}</name>
   <name xml:lang="pl">%{APPNAMELC}</name>
   <name xml:lang="pt">%{APPNAMELC}</name>
   <name xml:lang="sk">%{APPNAMELC}</name>
@@ -28,6 +29,7 @@
   <summary xml:lang="es">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="et">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="gl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="nl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="pl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="pt">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
@@ -44,6 +46,7 @@
     <p xml:lang="es">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="et">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="gl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="nl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="pl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="pt">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
@@ -73,6 +76,7 @@
     <binary xml:lang="es">%{APPNAMELC}</binary>
     <binary xml:lang="et">%{APPNAMELC}</binary>
     <binary xml:lang="gl">%{APPNAMELC}</binary>
+    <binary xml:lang="nl">%{APPNAMELC}</binary>
     <binary xml:lang="pl">%{APPNAMELC}</binary>
     <binary xml:lang="pt">%{APPNAMELC}</binary>
     <binary xml:lang="sk">%{APPNAMELC}</binary>
