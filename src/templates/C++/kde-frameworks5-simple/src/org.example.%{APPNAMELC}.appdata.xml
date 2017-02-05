@@ -21,6 +21,7 @@
   <name xml:lang="sv">%{APPNAMELC}</name>
   <name xml:lang="uk">%{APPNAMELC}</name>
   <name xml:lang="x-test">xx%{APPNAMELC}xx</name>
+  <name xml:lang="zh-CN">%{APPNAMELC}</name>
   <summary> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary </summary>
   <summary xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="ca-valencia">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
@@ -38,6 +39,7 @@
   <summary xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <summary xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summaryxx</summary>
+  <summary xml:lang="zh-CN">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
   <description>
     <p> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description </p>
     <p xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
@@ -56,6 +58,7 @@
     <p xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
     <p xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-descriptionxx</p>
+    <p xml:lang="zh-CN">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
   </description>
   <url type="homepage">https://www.example.org</url>
   <url type="bugtracker">https://bugs.example.org</url>
@@ -87,6 +90,7 @@
     <binary xml:lang="sv">%{APPNAMELC}</binary>
     <binary xml:lang="uk">%{APPNAMELC}</binary>
     <binary xml:lang="x-test">xx%{APPNAMELC}xx</binary>
+    <binary xml:lang="zh-CN">%{APPNAMELC}</binary>
   </provides>
   <project_group>KDE</project_group>
 </component>
