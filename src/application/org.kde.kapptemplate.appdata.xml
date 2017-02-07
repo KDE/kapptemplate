@@ -11,6 +11,7 @@
   <name xml:lang="cs">KAppTemplate</name>
   <name xml:lang="da">KAppTemplate</name>
   <name xml:lang="de">KAppTemplate</name>
+  <name xml:lang="el">Πρότυπο KApp</name>
   <name xml:lang="en-GB">KAppTemplate</name>
   <name xml:lang="es">KAppTemplate</name>
   <name xml:lang="et">KAppTemplate</name>
@@ -43,6 +44,7 @@
   <summary xml:lang="cs">Generátor šablon pro KDE</summary>
   <summary xml:lang="da">KDE skabelongenerator</summary>
   <summary xml:lang="de">KDE-Vorlagengenerator</summary>
+  <summary xml:lang="el">Γεννήτρια προτύπων του KDE</summary>
   <summary xml:lang="en-GB">KDE Template Generator</summary>
   <summary xml:lang="es">Generador de plantillas para KDE</summary>
   <summary xml:lang="et">KDE malligeneraator</summary>
@@ -106,6 +108,7 @@
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="da">Funktioner:</p>
     <p xml:lang="de">Funktionen:</p>
+    <p xml:lang="el">Χαρακτηριστικά:</p>
     <p xml:lang="en-GB">Features:</p>
     <p xml:lang="es">Funcionalidades:</p>
     <p xml:lang="et">Omadused:</p>
@@ -137,6 +140,7 @@
       <li xml:lang="ca-valencia">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
       <li xml:lang="de">Vorlagen für C++, Ruby, Python und PHP</li>
+      <li xml:lang="el">Πρότυπα για C++, Ruby, Python και PHP</li>
       <li xml:lang="en-GB">Templates for C++, Ruby, Python and PHP</li>
       <li xml:lang="es">Plantillas para C++, Ruby, Python y PHP</li>
       <li xml:lang="et">C++, Ruby, Pythoni ja PHP mallid</li>
@@ -167,6 +171,7 @@
       <li xml:lang="cs">Kategorie</li>
       <li xml:lang="da">Kategorier</li>
       <li xml:lang="de">Kategorien</li>
+      <li xml:lang="el">Κατηγορίες</li>
       <li xml:lang="en-GB">Categories</li>
       <li xml:lang="es">Categorías</li>
       <li xml:lang="et">Kategooriad</li>
@@ -278,6 +283,7 @@
       <li xml:lang="ca-valencia">S'integra en el KDevelop</li>
       <li xml:lang="da">Integreret med KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
+      <li xml:lang="el">Ενσωμάτωση στο KDevelop</li>
       <li xml:lang="en-GB">Integrated into KDevelop</li>
       <li xml:lang="es">Integrado en KDevelop</li>
       <li xml:lang="et">Lõimimine KDevelopiga</li>
