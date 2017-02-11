@@ -1,5 +1,4 @@
 set(APPTEMPLATE_DIRS
-    kapp4-qml
     kde-frameworks5-simple
     kde-frameworks5
     ktexteditor
