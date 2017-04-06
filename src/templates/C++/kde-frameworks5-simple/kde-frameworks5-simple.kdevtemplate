@@ -61,6 +61,6 @@ Comment[tr]=C++ ile yazılmış çok basit bir KDE Frameworks 5 GUI Uygulaması
 Comment[uk]=Мінімалістична програма з графічним інтерфейсом KDE Frameworks 5 на C++
 Comment[x-test]=xxA very basic KDE Frameworks 5 GUI Application in C++xx
 Comment[zh_TW]=最基本的 C++ KDE Frameworks 5 圖形介面應用程式
-Category=KDE/Graphical
+Category=Qt/Graphical
 Icon=kde-frameworks5-simple.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp

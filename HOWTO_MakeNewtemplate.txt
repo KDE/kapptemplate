@@ -34,7 +34,7 @@ Example: Comment=Generate a QMake/Qt4 based application with graphical user inte
 
 ** Template Category
 The template category as it'll appear in the Tree View is extracted from the Category= line in the .kdevtemplate file.
-Example: Category=KDE/Graphical
+Example: Category=Qt/Graphical
 
 ** Template preview
 A screenshot will help the user preview the template. This screenshot name will be indicated as Icon= . This icon should be installed in ${DATA_INSTALL_DIR}/kapptemplate/pics to make it found by the program and should have a different name from any other one. Screenshot prefered size: 200 pixels width.

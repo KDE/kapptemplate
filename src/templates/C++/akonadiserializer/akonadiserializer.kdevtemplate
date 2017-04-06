@@ -79,5 +79,5 @@ Comment[uk]=Шаблон серіалізатора Akonadi. Шаблон для
 Comment[x-test]=xxAkonadi Serializer Template. A template for an Akonadi data serializer pluginxx
 Comment[zh_CN]=Akonadi 数据转换器模板。Akonadi 数据转换器插件的模板
 Comment[zh_TW]=Akonadi 序列器樣本。Akonadi 資料序列器外掛程式樣本
-Category=KDE/Akonadi Serializer
+Category=Akonadi/Serializer
 Icon=akonadiserializer.png
