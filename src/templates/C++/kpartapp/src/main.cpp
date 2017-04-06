@@ -18,51 +18,63 @@
  ***************************************************************************/
 
 #include "%{APPNAMELC}.h"
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
-#include <klocale.h>
 
-static const char description[] =
-    I18N_NOOP("A KDE KPart Application");
+// KF headers
+#include <KCrash>
+#include <KDBusService>
+#include <KAboutData>
+#include <KLocalizedString>
 
-static const char version[] = "%{VERSION}";
+// Qt headers
+#include <QApplication>
+#include <QCommandLineParser>
+#include <QUrl>
+#include <QDir>
+#include <QIcon>
 
 int main(int argc, char **argv)
 {
-    KAboutData about("%{APPNAMELC}", 0, ki18n("%{APPNAME}"), version, ki18n(description), KAboutData::License_GPL, ki18n("(C) %{CURRENT_YEAR} %{AUTHOR}"), KLocalizedString(), 0, "%{EMAIL}");
-    about.addAuthor( ki18n("%{AUTHOR}"), KLocalizedString(), "%{EMAIL}" );
-    KCmdLineArgs::init(argc, argv, &about);
+    QApplication app(argc, argv);
 
-    KCmdLineOptions options;
-    options.add("+[URL]", ki18n( "Document to open" ));
-    KCmdLineArgs::addCmdLineOptions( options );
-    KApplication app;
+    KLocalizedString::setApplicationDomain("%{APPNAMELC}");
+    KCrash::initialize();
 
-    // see if we are starting with session management
-    if (app.isSessionRestored())
-        RESTORE(%{APPNAME})
-    else
-    {
-        // no session.. just start up normally
-        KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
+    KAboutData aboutData(QStringLiteral("%{APPNAMELC}"),
+        i18n("%{APPNAME}"),
+        QStringLiteral("%{VERSION}"),
+        i18n("A KPart Application"),
+        KAboutLicense::GPL,
+        i18n("Copyright %{CURRENT_YEAR} %{AUTHOR}"));
+    aboutData.addAuthor(i18n("%{AUTHOR}"), i18n("Author"), QStringLiteral("%{EMAIL}"));
+    aboutData.setOrganizationDomain("example.org");
+    aboutData.setDesktopFileName(QStringLiteral("org.example.%{APPNAMELC}"));
 
-        if ( args->count() == 0 )
-        {
-        %{APPNAME} *widget = new %{APPNAME};
+    KAboutData::setApplicationData(aboutData);
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("%{APPNAMELC}")));
+
+    QCommandLineParser parser;
+    parser.addHelpOption();
+    parser.addVersionOption();
+    aboutData.setupCommandLine(&parser);
+    parser.addPositionalArgument( QStringLiteral("urls"), i18n("Document(s) to load."), QStringLiteral("[urls...]") );
+
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
+
+    KDBusService appDBusService(KDBusService::Multiple | KDBusService::NoExitOnFailure);
+
+    // no session.. just start up normally
+    const QStringList urls = parser.positionalArguments();
+
+    if (urls.isEmpty()) {
+        %{APPNAME}* widget = new %{APPNAME};
         widget->show();
+    } else {
+        foreach (const QString &url, urls) {
+            %{APPNAME}* widget = new %{APPNAME};
+            widget->show();
+            widget->load(QUrl::fromUserInput(url, QDir::currentPath(), QUrl::AssumeLocalFile));
         }
-        else
-        {
-            int i = 0;
-            for (; i < args->count(); i++ )
-            {
-                %{APPNAME} *widget = new %{APPNAME};
-                widget->show();
-                widget->load( args->url( i ) );
-            }
-        }
-        args->clear();
     }
 
     return app.exec();

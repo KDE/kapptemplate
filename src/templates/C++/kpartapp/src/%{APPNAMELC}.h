@@ -20,15 +20,18 @@
 #ifndef %{APPNAMEUC}_H
 #define %{APPNAMEUC}_H
 
-#include <kparts/mainwindow.h>
+// KF headers
+#include <KParts/MainWindow>
+
+namespace KParts {
+class ReadWritePart;
+}
 
 /**
  * This is the application "Shell".  It has a menubar, toolbar, and
  * statusbar but relies on the "Part" to do all the real work.
  *
  * @short Application Shell
- * @author %{AUTHOR} <%{EMAIL}>
- * @version %{VERSION}
  */
 class %{APPNAME} : public KParts::MainWindow
 {
@@ -42,34 +45,30 @@ public:
     /**
      * Default Destructor
      */
-    virtual ~%{APPNAME}();
+    ~%{APPNAME}() override;
 
     /**
      * Use this method to load whatever file/URL you have
      */
-    void load(const KUrl& url);
+    void load(const QUrl& url);
 
 protected:
     /**
      * This method is called when it is time for the app to save its
      * properties for session management purposes.
      */
-    void saveProperties(KConfigGroup &);
+    void saveProperties(KConfigGroup &) override;
 
     /**
      * This method is called when this app is restored.  The KConfig
      * object points to the session management config file that was saved
      * with @ref saveProperties
      */
-    void readProperties(const KConfigGroup &);
+    void readProperties(const KConfigGroup &) override;
 
-private slots:
+private Q_SLOTS:
     void fileNew();
     void fileOpen();
-    void optionsConfigureKeys();
-    void optionsConfigureToolbars();
-
-    void applyNewToolbarConfig();
 
 private:
     void setupActions();

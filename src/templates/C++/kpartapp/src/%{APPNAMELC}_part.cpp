@@ -19,38 +19,37 @@
 
 #include "%{APPNAMELC}_part.h"
 
-#include "%{APPNAMELC}_part.moc"
+// KF headers
+#include <KAboutData>
+#include <KLocalizedString>
+#include <KActionCollection>
+#include <KPluginFactory>
+#include <KStandardAction>
 
-#include <kaboutdata.h>
-#include <kaction.h>
-#include <kactioncollection.h>
-#include <kcomponentdata.h>
-#include <kfiledialog.h>
-#include <kpluginfactory.h>
-#include <kstandardaction.h>
-
-#include <QtCore/QFile>
-#include <QtCore/QTextStream>
-#include <QtGui/QTextEdit>
+// Qt headers
+#include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QTextEdit>
+#include <QTextDocument>
 
 K_PLUGIN_FACTORY(%{APPNAME}PartFactory, registerPlugin<%{APPNAME}Part>();)
-K_EXPORT_PLUGIN(%{APPNAME}PartFactory)
 
 %{APPNAME}Part::%{APPNAME}Part(QWidget *parentWidget, QObject *parent, const QVariantList & /*args*/)
     : KParts::ReadWritePart(parent)
 {
     // we need a component data
-    setComponentData(%{APPNAME}PartFactory::componentData());
+    setComponentData(createAboutData());
 
     // this should be your custom internal widget
-    m_widget = new QTextEdit( parentWidget);
+    m_widget = new QTextEdit(parentWidget);
 
     // notify the part that this is our internal widget
     setWidget(m_widget);
 
     // create our actions
     KStandardAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
-    save = KStandardAction::save(this, SLOT(save()), actionCollection());
+    m_saveAction = KStandardAction::save(this, SLOT(save()), actionCollection());
 
     // set our XML-UI resource file
     setXMLFile("%{APPNAMELC}_part.rc");
@@ -70,13 +69,14 @@ void %{APPNAME}Part::setReadWrite(bool rw)
 {
     // notify your internal widget of the read-write state
     m_widget->setReadOnly(!rw);
-    if (rw)
-        connect(m_widget, SIGNAL(textChanged()),
-                this,     SLOT(setModified()));
-    else
-    {
-        disconnect(m_widget, SIGNAL(textChanged()),
-                   this,     SLOT(setModified()));
+
+    QTextDocument* document = m_widget->document();
+    if (rw) {
+        connect(document, &QTextDocument::modificationChanged,
+                this,     &%{APPNAME}Part::setModified);
+    } else {
+        disconnect(document, &QTextDocument::modificationChanged,
+                   this,     &%{APPNAME}Part::setModified);
     }
 
     ReadWritePart::setReadWrite(rw);
@@ -85,43 +85,42 @@ void %{APPNAME}Part::setReadWrite(bool rw)
 void %{APPNAME}Part::setModified(bool modified)
 {
     // get a handle on our Save action and make sure it is valid
-    if (!save)
+    if (!m_saveAction) {
         return;
+    }
 
     // if so, we either enable or disable it based on the current
     // state
-    if (modified)
-        save->setEnabled(true);
-    else
-        save->setEnabled(false);
+    m_saveAction->setEnabled(modified);
 
     // in any event, we want our parent to do it's thing
     ReadWritePart::setModified(modified);
 }
 
-KAboutData *%{APPNAME}Part::createAboutData()
+KAboutData %{APPNAME}Part::createAboutData()
 {
-    // the non-i18n name here must be the same as the directory in
-    // which the part's rc file is installed ('partrcdir' in the
-    // Makefile)
-    KAboutData *aboutData = new KAboutData("%{APPNAMELC}part", "%{APPNAMELC}", ki18n("%{APPNAME}Part"), "%{VERSION}");
-    aboutData->addAuthor(ki18n("%{AUTHOR}"), KLocalizedString(), "%{EMAIL}");
+    // the first arg here must be the same as the subdirectory in
+    // which the part's rc file is installed
+    KAboutData aboutData("%{APPNAMELC}part", i18n("%{APPNAME}Part"), QStringLiteral("%{VERSION}"));
+    aboutData.addAuthor(i18n("%{AUTHOR}"), i18n("Author"), QStringLiteral("%{EMAIL}"));
     return aboutData;
 }
 
 bool %{APPNAME}Part::openFile()
 {
-    // m_file is always local so we can use QFile on it
-    QFile file("m_file");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    // localFilePath() is always local so we can use QFile on it
+    QFile file(localFilePath());
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         return false;
+    }
 
     // our example widget is text-based, so we use QTextStream instead
     // of a raw QDataStream
     QTextStream stream(&file);
     QString str;
-    while (!stream.atEnd())
+    while (!stream.atEnd()) {
         str += stream.readLine() + "\n";
+    }
 
     file.close();
 
@@ -137,13 +136,15 @@ bool %{APPNAME}Part::openFile()
 bool %{APPNAME}Part::saveFile()
 {
     // if we aren't read-write, return immediately
-    if (isReadWrite() == false)
+    if (!isReadWrite()) {
         return false;
+    }
 
-    // m_file is always local, so we use QFile
-    QFile file("m_file");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    // localFilePath() is always local, so we use QFile
+    QFile file(localFilePath());
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         return false;
+    }
 
     // use QTextStream to dump the text to the file
     QTextStream stream(&file);
@@ -151,14 +152,19 @@ bool %{APPNAME}Part::saveFile()
 
     file.close();
 
+    m_widget->document()->setModified(false);
+
     return true;
 }
 
 void %{APPNAME}Part::fileSaveAs()
 {
     // this slot is called whenever the File->Save As menu is selected,
-    QString file_name = KFileDialog::getSaveFileName();
-    if (file_name.isEmpty() == false)
+    const QUrl file_name = QFileDialog::getSaveFileUrl();
+    if (file_name.isValid()) {
         saveAs(file_name);
+    }
 }
 
+// needed for K_PLUGIN_FACTORY
+#include "%{APPNAMELC}_part.moc"

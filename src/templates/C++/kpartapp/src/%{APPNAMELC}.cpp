@@ -18,28 +18,27 @@
  ***************************************************************************/
 
 #include "%{APPNAMELC}.h"
-#include "%{APPNAMELC}.moc"
 
-#include <kaction.h>
-#include <kactioncollection.h>
-#include <kconfig.h>
-#include <kedittoolbar.h>
-#include <kfiledialog.h>
-#include <kshortcutsdialog.h>
-#include <klibloader.h>
-#include <kmessagebox.h>
-#include <kstandardaction.h>
-#include <kstatusbar.h>
-#include <kurl.h>
-#include <klocale.h>
+// KF headers
+#include <KParts/ReadWritePart>
+#include <KPluginLoader>
+#include <KPluginFactory>
+#include <KActionCollection>
+#include <KConfigGroup>
+#include <KMessageBox>
+#include <KStandardAction>
+#include <KLocalizedString>
 
+// Qt headers
 #include <QApplication>
+#include <QFileDialog>
+#include <QAction>
 
 %{APPNAME}::%{APPNAME}()
     : KParts::MainWindow( )
 {
     // set the shell's ui resource file
-    setXMLFile("%{APPNAMELC}_shell.rc");
+    setXMLFile(QStringLiteral("%{APPNAMELC}_shell.rc"));
 
     // then, setup our actions
     setupActions();
@@ -47,25 +46,22 @@
     // this routine will find and load our Part.  it finds the Part by
     // name which is a bad idea usually.. but it's alright in this
     // case since our Part is made for this Shell
-    KLibFactory *factory = KLibLoader::self()->factory("lib%{APPNAMELC}part");
-    if (factory)
-    {
+    KPluginLoader loader(QStringLiteral("%{APPNAMELC}part"));
+    KPluginFactory* factory = loader.factory();
+    if (factory) {
         // now that the Part is loaded, we cast it to a Part to get
         // our hands on it
-        m_part = static_cast<KParts::ReadWritePart *>(factory->create(this,
-                                "%{APPNAME}Part" ));
+        m_part = factory->create<KParts::ReadWritePart>(this);
 
-        if (m_part)
-        {
+        if (m_part) {
             // tell the KParts::MainWindow that this is indeed the main widget
             setCentralWidget(m_part->widget());
 
             // and integrate the part's GUI with the shell's
-            setupGUI();
+            setupGUI(ToolBar | Keys | StatusBar | Save);
+            createGUI(m_part);
         }
-    }
-    else
-    {
+    } else {
         // if we couldn't find our Part, we exit since the Shell by
         // itself can't do anything useful
         KMessageBox::error(this, i18n("Could not find our Part!"));
@@ -85,9 +81,9 @@
 {
 }
 
-void %{APPNAME}::load(const KUrl& url)
+void %{APPNAME}::load(const QUrl& url)
 {
-    m_part->openUrl( url );
+    m_part->openUrl(url);
 }
 
 void %{APPNAME}::setupActions()
@@ -99,9 +95,6 @@ void %{APPNAME}::setupActions()
 
     createStandardStatusBarAction();
     setStandardToolBarMenuEnabled(true);
-
-    //KStandardAction::keyBindings(this, SLOT(optionsConfigureKeys()), actionCollection());
-    //KStandardAction::configureToolbars(this, SLOT(optionsConfigureToolbars()), actionCollection());
 }
 
 void %{APPNAME}::saveProperties(KConfigGroup & /*config*/)
@@ -129,34 +122,9 @@ void %{APPNAME}::fileNew()
     // http://developer.kde.org/documentation/standards/kde/style/basics/index.html )
     // says that it should open a new window if the document is _not_
     // in its initial state.  This is what we do here..
-    if ( ! m_part->url().isEmpty() || m_part->isModified() )
-    {
+    if (!m_part->url().isValid() || m_part->isModified()) {
         (new %{APPNAME})->show();
     };
-}
-
-void %{APPNAME}::optionsConfigureKeys()
-{
-  /*KShortcutsDialog dlg( KKeyChooser::AllActions, KKeyChooser::LetterShortcutsDisallowed, this );
-  dlg.insert( actionCollection(), "%{APPNAMELC}_shell.rc" );
-  dlg.insert( m_part->actionCollection(), "%{APPNAMELC}_part.rc" );
-  (void) dlg.configure( true );*/
-}
-
-void %{APPNAME}::optionsConfigureToolbars()
-{
-    //saveMainWindowSettings(KGlobal::config(), autoSaveGroup());
-
-    // use the standard toolbar editor
-    /*KEditToolBar dlg(factory());
-    connect(&dlg, SIGNAL(newToolbarConfig()),
-            this, SLOT(applyNewToolbarConfig()));
-    dlg.exec();*/
-}
-
-void %{APPNAME}::applyNewToolbarConfig()
-{
-    //applyMainWindowSettings(KGlobal::config(), autoSaveGroup());
 }
 
 void %{APPNAME}::fileOpen()
@@ -164,25 +132,20 @@ void %{APPNAME}::fileOpen()
     // this slot is called whenever the File->Open menu is selected,
     // the Open shortcut is pressed (usually CTRL+O) or the Open toolbar
     // button is clicked
-    KUrl url =
-        KFileDialog::getOpenUrl( KUrl(), QString(), this );
+    const QUrl url = QFileDialog::getOpenFileUrl(this);
 
-    if (url.isEmpty() == false)
-    {
+    if (url.isValid()) {
         // About this function, the style guide (
         // http://developer.kde.org/documentation/standards/kde/style/basics/index.html )
         // says that it should open a new window if the document is _not_
         // in its initial state.  This is what we do here..
-        if ( m_part->url().isEmpty() && ! m_part->isModified() )
-        {
+        if (m_part->url().isEmpty() && ! m_part->isModified()) {
             // we open the file in this window...
-            load( url );
-        }
-        else
-        {
+            load(url);
+        } else {
             // we open the file in a new window...
             %{APPNAME}* newWin = new %{APPNAME};
-            newWin->load( url );
+            newWin->load(url);
             newWin->show();
         }
     }
