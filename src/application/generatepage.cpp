@@ -166,7 +166,7 @@ void GeneratePage::initializePage()
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
     m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
-    m_variables["PROJECTDIRNAME"] = appName.toLower() + "-" + version; // TODO what for? change "dest" to that?
+    m_variables["PROJECTDIRNAME"] = appName.toLower(); // TODO what for? change "dest" to that?
 
 
     KArchive* arch = 0;

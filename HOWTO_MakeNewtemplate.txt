@@ -1,6 +1,6 @@
 KAppTemplate and KDevelop placeholders
 
-%{PROJECTDIRNAME} = %{APPNAMELC}-%{VERSION} for KAppTemplate
+%{PROJECTDIRNAME} = %{APPNAMELC} for KAppTemplate
 %{APPNAME}    used in .kdev4, project name as entered by user ex: MyKApp
 %{APPNAMELC}  project name in lower case ex: mykapp
 %{APPNAMEUC}  project name in upper case ex: MYKAPP
