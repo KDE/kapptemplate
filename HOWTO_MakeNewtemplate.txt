@@ -12,8 +12,6 @@ KAppTemplate and KDevelop placeholders
 %{EMAIL}	 author email ex: foo@bar.org
 %{VERSION}       project version ex: 0.1
 
-%{VERSIONCONTROLPLUGIN}  used in .kdev4
-
 %{dest}   used in .kdevtemplate
 %{src}
 
