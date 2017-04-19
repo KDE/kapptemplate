@@ -11,6 +11,7 @@ KAppTemplate and KDevelop placeholders
 %{AUTHOR}        author name ex: George Ignacious
 %{EMAIL}	 author email ex: foo@bar.org
 %{VERSION}       project version ex: 0.1
+%{CURRENT_YEAR}  year at generation time ex: 2017
 
 %{dest}   used in .kdevtemplate
 
