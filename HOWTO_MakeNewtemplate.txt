@@ -13,7 +13,6 @@ KAppTemplate and KDevelop placeholders
 %{VERSION}       project version ex: 0.1
 
 %{dest}   used in .kdevtemplate
-%{src}
 
 
 ***** In the view that lists the templates *****
