@@ -1,6 +1,6 @@
 KAppTemplate and KDevelop placeholders
 
-%{PROJECTDIRNAME} = %{APPNAMELC}-%{VERSION} for KAppTemplate
+%{PROJECTDIRNAME} = %{APPNAMELC} for KAppTemplate
 %{APPNAME}    used in .kdev4, project name as entered by user ex: MyKApp
 %{APPNAMELC}  project name in lower case ex: mykapp
 %{APPNAMEUC}  project name in upper case ex: MYKAPP
@@ -11,11 +11,10 @@ KAppTemplate and KDevelop placeholders
 %{AUTHOR}        author name ex: George Ignacious
 %{EMAIL}	 author email ex: foo@bar.org
 %{VERSION}       project version ex: 0.1
+%{CURRENT_YEAR}  year at generation time ex: 2017
 
-%{VERSIONCONTROLPLUGIN}  used in .kdev4
-
-%{dest}   used in .kdevtemplate
-%{src}
+Deprecated:
+%{dest}          used in .kdevtemplate with ShowFilesAfterGeneration entry, since KDevelop 5.1.1 supports relative paths (again)
 
 
 ***** In the view that lists the templates *****
