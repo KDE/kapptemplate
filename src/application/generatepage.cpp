@@ -161,12 +161,13 @@ void GeneratePage::initializePage()
     m_variables["APPNAME"] = appName;
     m_variables["APPNAMEUC"] = appName.toUpper();
     m_variables["APPNAMELC"] = appName.toLower();
-    m_variables["APPNAMEFU"] = appName.replace(0, 1, appName.toUpper().at(0));
     m_variables["AUTHOR"] = field("author").toString();
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
-    m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
     m_variables["PROJECTDIRNAME"] = appName.toLower(); // TODO what for? change "dest" to that?
+    // undocumented & deprecated
+    m_variables["APPNAMEFU"] = appName.replace(0, 1, appName.toUpper().at(0));
+    m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
 
 
     KArchive* arch = 0;
