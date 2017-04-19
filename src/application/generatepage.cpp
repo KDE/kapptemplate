@@ -171,7 +171,7 @@ void GeneratePage::initializePage()
     m_variables["AUTHOR"] = field("author").toString();
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
-    m_variables["PROJECTDIRNAME"] = appName.toLower(); // TODO what for? change "dest" to that?
+    m_variables["PROJECTDIRNAME"] = appName.toLower();
     // deprecated
     m_variables["dest"] = dest;
     // undocumented & deprecated
