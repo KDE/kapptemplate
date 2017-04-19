@@ -156,6 +156,13 @@ void GeneratePage::initializePage()
     //create dir where template project will be copied
     QString appName = field("appName").toString();
     QString version = field("version").toString();
+
+    QString url = field("url").toString();
+    if (url.endsWith(QLatin1Char('/'))) {
+        url.chop(1);
+    }
+    QString dest(url + '/' + appName.toLower());
+
     m_variables.clear();
     m_variables["CURRENT_YEAR"] = QString().setNum(QDate::currentDate().year());
     m_variables["APPNAME"] = appName;
@@ -165,6 +172,8 @@ void GeneratePage::initializePage()
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
     m_variables["PROJECTDIRNAME"] = appName.toLower(); // TODO what for? change "dest" to that?
+    // deprecated
+    m_variables["dest"] = dest;
     // undocumented & deprecated
     m_variables["APPNAMEFU"] = appName.replace(0, 1, appName.toUpper().at(0));
     m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
@@ -177,11 +186,6 @@ void GeneratePage::initializePage()
         arch = new KTar(archName, "application/x-bzip");
     }
 
-    QString url = field("url").toString();
-    if (url.endsWith(QLatin1Char('/'))) {
-        url.chop(1);
-    }
-    QString dest(url + '/' + appName.toLower());
     if (arch->open(QIODevice::ReadOnly)) {
         if (!QFileInfo(dest).exists()) {
             QDir::root().mkdir(dest);

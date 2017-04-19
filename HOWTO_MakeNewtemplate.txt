@@ -13,7 +13,8 @@ KAppTemplate and KDevelop placeholders
 %{VERSION}       project version ex: 0.1
 %{CURRENT_YEAR}  year at generation time ex: 2017
 
-%{dest}   used in .kdevtemplate
+Deprecated:
+%{dest}          used in .kdevtemplate with ShowFilesAfterGeneration entry, since KDevelop 5.1.1 supports relative paths (again)
 
 
 ***** In the view that lists the templates *****
