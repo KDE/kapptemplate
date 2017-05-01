@@ -192,6 +192,16 @@ void GeneratePage::initializePage()
         const KArchiveEntry *templateEntry =
             arch->directory()->entry(templateName + QLatin1String(".kdevtemplate"));
 
+        // but could be different name, if e.g. downloaded, so make a guess
+        if (!templateEntry || !templateEntry->isFile()) {
+            for (const auto& entryName : arch->directory()->entries()) {
+                if (entryName.endsWith(QLatin1String(".kdevtemplate"))) {
+                    templateEntry = arch->directory()->entry(entryName);
+                    break;
+                }
+            }
+        }
+
         if (templateEntry && templateEntry->isFile()) {
             metaDataFileNames << templateEntry->name();
 

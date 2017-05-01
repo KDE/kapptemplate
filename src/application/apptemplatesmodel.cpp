@@ -69,6 +69,16 @@ void extractTemplateDescriptions()
         if (templateArchive.open(QIODevice::ReadOnly)) {
             QFileInfo templateInfo(archName);
             const KArchiveEntry *templateEntry = templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
+            // but could be different name, if e.g. downloaded, so make a guess
+            if (!templateEntry || !templateEntry->isFile()) {
+                for (const auto& entryName : templateArchive.directory()->entries()) {
+                    if (entryName.endsWith(QLatin1String(".kdevtemplate"))) {
+                        templateEntry = templateArchive.directory()->entry(entryName);
+                        break;
+                    }
+                }
+            }
+
             if (!templateEntry || !templateEntry->isFile()) {
                 qCDebug(KAPPTEMPLATE) << "template" << archName << "does not contain .kdevtemplate file";
                 continue;
