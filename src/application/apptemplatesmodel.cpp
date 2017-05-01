@@ -48,7 +48,7 @@ void extractTemplateDescriptions()
         }
     }
 
-    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
+    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_descriptions/";
     QDir dir(localDescriptionsDir);
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
@@ -85,7 +85,7 @@ void AppTemplatesModel::refresh()
     extractTemplateDescriptions();
 
     QStringList templateArchives;
-    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_description/";
+    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_descriptions/";
     foreach (const QString &templateFile, QDir(localDescriptionsDir).entryList(QDir::Files)) {
         templateArchives.append(localDescriptionsDir + templateFile);
     }
