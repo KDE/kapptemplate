@@ -44,7 +44,7 @@ GeneratePage::GeneratePage(QWidget *parent)
     ui_generate.setupUi(this);
 }
 
-bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest)
+bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList& skipList)
 {
     qCDebug(KAPPTEMPLATE) << "unpacking dir:" << dir->name() << "to" << dest;
     QStringList entries = dir->entries();
@@ -67,11 +67,9 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
         progress++;
         ui_generate.progressBar->setValue((progress / entries.size()) * 100);
 
-        if (entry.endsWith(".kdevtemplate"))
+        if (skipList.contains(entry)) {
             continue;
-
-        if (entry == templateName + ".png")
-            continue;
+        }
 
         if (dir->entry(entry)->isDirectory()) {
             const KArchiveDirectory *file = dynamic_cast<const KArchiveDirectory *>(dir->entry(entry));
@@ -187,11 +185,47 @@ void GeneratePage::initializePage()
     }
 
     if (arch->open(QIODevice::ReadOnly)) {
+        // estimate metadata files which should not be copied
+        QStringList metaDataFileNames;
+
+        // try by same name
+        const KArchiveEntry *templateEntry =
+            arch->directory()->entry(templateName + QLatin1String(".kdevtemplate"));
+
+        // but could be different name, if e.g. downloaded, so make a guess
+        if (!templateEntry || !templateEntry->isFile()) {
+            for (const auto& entryName : arch->directory()->entries()) {
+                if (entryName.endsWith(QLatin1String(".kdevtemplate"))) {
+                    templateEntry = arch->directory()->entry(entryName);
+                    break;
+                }
+            }
+        }
+
+        if (templateEntry && templateEntry->isFile()) {
+            metaDataFileNames << templateEntry->name();
+
+            // check if a preview file is to be ignored
+            const KArchiveFile *templateFile = static_cast<const KArchiveFile*>(templateEntry);
+            QTemporaryDir temporaryDir;
+            templateFile->copyTo(temporaryDir.path());
+
+            KConfig config(temporaryDir.path() + QLatin1Char('/') + templateEntry->name());
+            KConfigGroup group(&config, "General");
+            if (group.hasKey("Icon")) {
+                const KArchiveEntry* iconEntry = arch->directory()->entry(group.readEntry("Icon"));
+                if (iconEntry && iconEntry->isFile()) {
+                    metaDataFileNames << iconEntry->name();
+                }
+            }
+        }
+
         if (!QFileInfo(dest).exists()) {
             QDir::root().mkdir(dest);
             qCDebug(KAPPTEMPLATE) << "Creating output directory:" << dest;
         }
-        unpackArchive(arch->directory(), dest);
+
+        unpackArchive(arch->directory(), dest, metaDataFileNames);
     }
     delete arch;
 

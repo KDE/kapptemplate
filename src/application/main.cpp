@@ -39,6 +39,7 @@ int main(int argc, char **argv)
     about.addAuthor(i18n("Sean Wilson"), i18n("Icons from Oxygen Team icons"), "suseux AT googlemail DOT com");
 
     KAboutData::setApplicationData(about);
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kapptemplate")));
 
     KAppTemplate appTemplate(0);
     QCommandLineParser parser;

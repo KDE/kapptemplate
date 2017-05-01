@@ -42,7 +42,7 @@ public:
 private:
     Ui::generate ui_generate;
     QHash<QString, QString> m_variables;
-    bool unpackArchive(const KArchiveDirectory *dir, const QString &dest);
+    bool unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList& skipList = QStringList());
     bool extractFileMacros(const QString &entry);
 
     void initializePage();
