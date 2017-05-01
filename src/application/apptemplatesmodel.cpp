@@ -48,10 +48,16 @@ void extractTemplateDescriptions()
         }
     }
 
-    const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_descriptions/";
+    const QString templateDataBasePath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/";
+    const QString localDescriptionsDir = templateDataBasePath + "template_descriptions/";
     QDir dir(localDescriptionsDir);
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
+
+    const QString localPreviewDir = templateDataBasePath + "template_previews/";
+    QDir previewDir(localPreviewDir);
+    if (!previewDir.exists())
+        previewDir.mkpath(localPreviewDir);
 
     foreach (const QString &archName, templateArchives) {
         qCDebug(KAPPTEMPLATE) << "processing template" << archName;
@@ -71,6 +77,18 @@ void extractTemplateDescriptions()
 
             qCDebug(KAPPTEMPLATE) << "copy template description to" << localDescriptionsDir;
             templateFile->copyTo(localDescriptionsDir);
+
+            // TODO: instead of creating copies on the filesystem, read them on-demand directly from the archive
+            KConfig config(localDescriptionsDir + QLatin1Char('/') + templateEntry->name());
+            KConfigGroup group(&config, "General");
+            if (group.hasKey("Icon")) {
+                const KArchiveEntry* iconEntry = templateArchive.directory()->entry(group.readEntry("Icon"));
+                if (iconEntry && iconEntry->isFile()) {
+                    const KArchiveFile *iconFile = static_cast<const KArchiveFile*>(iconEntry);
+                    qCDebug(KAPPTEMPLATE) << "copy template preview to" << localPreviewDir;
+                    iconFile->copyTo(localPreviewDir);
+                }
+            }
         } else {
             qCDebug(KAPPTEMPLATE) << "could not open template" << archName;
         }
