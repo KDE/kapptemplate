@@ -52,6 +52,7 @@ ChoicePage::ChoicePage(QWidget *parent)
     QValidator *validator = new QRegExpValidator(rx, this);
     ui_choice.kcfg_appName->setValidator(validator);
     registerField("appName*", ui_choice.kcfg_appName);
+    registerField("tempName", this, "templateName", "templateNameChanged");
 }
 
 bool ChoicePage::isComplete () const
@@ -158,7 +159,7 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     if (!m_baseName.isEmpty()) {
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
     }
-    registerField("tempName", this);
-    setField("tempName", m_baseName);
+
+    emit templateNameChanged(m_baseName);
     emit completeChanged();
 }
