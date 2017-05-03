@@ -137,7 +137,7 @@ void ChoicePage::itemSelected(const QModelIndex &index)
         return;
     }
 
-    QPixmap picture = generateTemplatePreviewPicture(index.data(Qt::UserRole + 2).toString(), index.data(Qt::UserRole + 3).toString());
+    QPixmap picture = generateTemplatePreviewPicture(index.data(AppTemplatesModel::PictureNameRole).toString(), index.data(AppTemplatesModel::BaseNameRole).toString());
 
     if (picture.isNull()) {
         ui_choice.pictureLabel->setText(i18n("No sample picture available."));
@@ -146,16 +146,14 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     }
 
     //and description
-    QString description;
-    if (index.data(Qt::UserRole + 1).toString().isEmpty()) {
+    QString description = index.data(AppTemplatesModel::DescriptionFileRole).toString();
+    if (description.isEmpty()) {
         description = i18n("Template description"); //default if none
-    } else {
-        description = index.data(Qt::UserRole + 1).toString();
     }
 
     ui_choice.descriptionLabel->setText(description);
 
-    m_baseName = index.data(Qt::UserRole + 3).toString();
+    m_baseName = index.data(AppTemplatesModel::BaseNameRole).toString();
     //baseName can check if an item is selected.
     if (!m_baseName.isEmpty()) {
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);

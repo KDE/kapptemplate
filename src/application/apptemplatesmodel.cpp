@@ -112,9 +112,9 @@ void AppTemplatesModel::refresh()
         QString description = general.readEntry("Comment");
         QString picture = general.readEntry("Icon");
         AppTemplateItem *templateItem = createItem(name, category);
-        templateItem->setData(description, Qt::UserRole + 1);
-        templateItem->setData(picture, Qt::UserRole + 2);
-        templateItem->setData(baseName, Qt::UserRole + 3);
+        templateItem->setData(description, DescriptionFileRole);
+        templateItem->setData(picture, PictureNameRole);
+        templateItem->setData(baseName, BaseNameRole);
     }
 }
 
