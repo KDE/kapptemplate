@@ -27,9 +27,13 @@
 #include <QPixmap>
 #include <QStandardItem>
 
+#include <KTar>
+#include <KZip>
+
 #include "choicepage.h"
 #include "apptemplatesmodel.h"
 #include "prefs.h"
+#include "logging.h"
 
 ChoicePage::ChoicePage(QWidget *parent)
     : QWizardPage(parent)
@@ -64,6 +68,68 @@ void ChoicePage::saveConfig()
     Prefs::self()->save();
 }
 
+static
+QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& archiveBaseName)
+{
+    if (iconName.isEmpty()) {
+        return QPixmap();
+    }
+
+    // find archive
+    QString archivePath;
+    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    foreach (const QString &templatePath, templatePaths) {
+        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+            const QString baseName = QFileInfo(templateArchive).baseName();
+            if (archiveBaseName.compare(baseName) == 0) {
+                archivePath = templatePath + templateArchive;
+                break;
+            }
+        }
+    }
+
+    // read icon from archive
+    if (!archivePath.isEmpty()) {
+        QScopedPointer<KArchive> templateArchive;
+        if (QFileInfo(archivePath).completeSuffix() == QLatin1String("zip")) {
+            templateArchive.reset(new KZip(archivePath));
+        } else {
+            templateArchive.reset(new KTar(archivePath));
+        }
+
+        if (templateArchive->open(QIODevice::ReadOnly)) {
+            const KArchiveFile* iconFile = templateArchive->directory()->file(iconName);
+            if (iconFile) {
+                const auto data = iconFile->data();
+                QPixmap pixmap;
+                const bool loadSuccess = pixmap.loadFromData(iconFile->data());
+                if (loadSuccess) {
+                    return pixmap;
+                }
+                qCWarning(KAPPTEMPLATE) << "Could not load preview icon" << iconName << "from" << archivePath;
+            }
+        }
+    }
+
+
+    // support legacy templates with image files installed separately in the filesystem
+    const QString iconFilePath = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("/kdevappwizard/template_previews/") + iconName);
+    if (!iconFilePath.isEmpty()) {
+        QPixmap pixmap(iconFilePath);
+        if (!pixmap.isNull()) {
+            return pixmap;
+        }
+        qCWarning(KAPPTEMPLATE) << "Could not load preview icon" << iconFilePath << "as wanted for" << archivePath;
+    }
+
+    // try theme icon (inofficial feature)
+    if (QIcon::hasThemeIcon(iconName)) {
+        return QIcon::fromTheme(iconName).pixmap(128, 128);
+    }
+
+    return QPixmap();
+}
+
 void ChoicePage::itemSelected(const QModelIndex &index)
 {
     if (!index.isValid()){
@@ -71,22 +137,12 @@ void ChoicePage::itemSelected(const QModelIndex &index)
         return;
     }
 
-    QString picPath;
-    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/template_previews/", QStandardPaths::LocateDirectory);
-    foreach (const QString &templatePath, templatePaths) {
-        foreach (const QString &templatePreview, QDir(templatePath).entryList(QDir::Files)) {
-            if (templatePreview.compare(index.data(Qt::UserRole + 2).toString()) == 0) {
-                picPath = templatePath + templatePreview;
-                break;
-            }
-        }
-    }
+    QPixmap picture = generateTemplatePreviewPicture(index.data(Qt::UserRole + 2).toString(), index.data(Qt::UserRole + 3).toString());
 
-    if (picPath.isEmpty()) {
+    if (picture.isNull()) {
         ui_choice.pictureLabel->setText(i18n("No sample picture available."));
     } else {
-        QPixmap pixmap(picPath);
-        ui_choice.pictureLabel->setPixmap(pixmap);
+        ui_choice.pictureLabel->setPixmap(picture);
     }
 
     //and description
