@@ -40,5 +40,5 @@ A screenshot will help the user to preview the template. This screenshot file wi
 Example: Icon=qt5gui.png
 
 KDevelop: templates are tarred using the CMake kdevplatform_add_app_templates macro and installed in kdevappwizard/templates.
-Model untars it and extracts the .kdevtemplate files locally in $XDG_DATA_HOME/kdevappwizard/template_descriptions, the previews to $XDG_DATA_HOME/kdevappwizard/template_previews (void ProjectTemplatesModel::extractTemplateDescriptions())
+Model untars it and extracts the .kdevtemplate files locally in $XDG_DATA_HOME/kdevappwizard/template_descriptions (void ProjectTemplatesModel::extractTemplateDescriptions())
 Model then read the name and description from there (void ProjectTemplatesModel::refresh()).

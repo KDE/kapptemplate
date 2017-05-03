@@ -36,6 +36,13 @@ class AppTemplateItem;
 class AppTemplatesModel: public QStandardItemModel
 {
 public:
+    enum TemplateRole
+    {
+        DescriptionFileRole = Qt::UserRole + 1,
+        PictureNameRole = Qt::UserRole + 2,
+        BaseNameRole = Qt::UserRole + 3
+    };
+
     AppTemplatesModel(ChoicePage *parent);
     // Refresh the model data
     void refresh();

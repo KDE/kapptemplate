@@ -27,7 +27,11 @@
 #include "kapptemplate.h"
 #include "logging.h"
 
+#if QT_VERSION >= 0x050500
+Q_LOGGING_CATEGORY(KAPPTEMPLATE, "kapptemplate", QtInfoMsg)
+#else
 Q_LOGGING_CATEGORY(KAPPTEMPLATE, "kapptemplate")
+#endif
 
 int main(int argc, char **argv)
 {

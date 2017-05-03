@@ -54,11 +54,6 @@ void extractTemplateDescriptions()
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
 
-    const QString localPreviewDir = templateDataBasePath + "template_previews/";
-    QDir previewDir(localPreviewDir);
-    if (!previewDir.exists())
-        previewDir.mkpath(localPreviewDir);
-
     foreach (const QString &archName, templateArchives) {
         qCDebug(KAPPTEMPLATE) << "processing template" << archName;
 #ifdef Q_WS_WIN
@@ -87,18 +82,6 @@ void extractTemplateDescriptions()
 
             qCDebug(KAPPTEMPLATE) << "copy template description to" << localDescriptionsDir;
             templateFile->copyTo(localDescriptionsDir);
-
-            // TODO: instead of creating copies on the filesystem, read them on-demand directly from the archive
-            KConfig config(localDescriptionsDir + QLatin1Char('/') + templateEntry->name());
-            KConfigGroup group(&config, "General");
-            if (group.hasKey("Icon")) {
-                const KArchiveEntry* iconEntry = templateArchive.directory()->entry(group.readEntry("Icon"));
-                if (iconEntry && iconEntry->isFile()) {
-                    const KArchiveFile *iconFile = static_cast<const KArchiveFile*>(iconEntry);
-                    qCDebug(KAPPTEMPLATE) << "copy template preview to" << localPreviewDir;
-                    iconFile->copyTo(localPreviewDir);
-                }
-            }
         } else {
             qCDebug(KAPPTEMPLATE) << "could not open template" << archName;
         }
@@ -129,9 +112,9 @@ void AppTemplatesModel::refresh()
         QString description = general.readEntry("Comment");
         QString picture = general.readEntry("Icon");
         AppTemplateItem *templateItem = createItem(name, category);
-        templateItem->setData(description, Qt::UserRole + 1);
-        templateItem->setData(picture, Qt::UserRole + 2);
-        templateItem->setData(baseName, Qt::UserRole + 3);
+        templateItem->setData(description, DescriptionFileRole);
+        templateItem->setData(picture, PictureNameRole);
+        templateItem->setData(baseName, BaseNameRole);
     }
 }
 

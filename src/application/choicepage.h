@@ -32,12 +32,17 @@ class AppTemplatesModel;
 class ChoicePage : public QWizardPage
 {
     Q_OBJECT
+    Q_PROPERTY(QString templateName READ templateName NOTIFY templateNameChanged)
 
 public:
     ChoicePage( QWidget *parent = 0);
     AppTemplatesModel *templatesModel;
     QString m_baseName;
     bool isComplete () const;
+    QString templateName() const { return m_baseName; }
+
+Q_SIGNALS:
+    void templateNameChanged(const QString&);
 
 private:
     Ui::choice ui_choice;
