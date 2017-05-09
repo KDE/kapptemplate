@@ -19,9 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 // application header
-#include "%{APPNAMELC}.h"
+#include "%{APPNAMELC}window.h"
+#include "%{APPNAMELC}debug.h"
 
-// KDE headers
+// KF headers
+#include <KCrash>
+#include <KDBusService>
 #include <KAboutData>
 #include <KLocalizedString>
 
@@ -31,31 +34,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QIcon>
 #include <QLoggingCategory>
 
-Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
-Q_LOGGING_CATEGORY(%{APPNAMEUC}, "%{APPNAMELC}")
+
 int main(int argc, char **argv)
 {
     QApplication application(argc, argv);
 
     KLocalizedString::setApplicationDomain("%{APPNAMELC}");
+    KCrash::initialize();
+
     KAboutData aboutData( QStringLiteral("%{APPNAMELC}"),
                           i18n("Simple App"),
                           QStringLiteral("%{VERSION}"),
                           i18n("A Simple Application written with KDE Frameworks"),
                           KAboutLicense::GPL,
-                          i18n("(c) %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));
+                          i18n("Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));
 
     aboutData.addAuthor(i18n("%{AUTHOR}"),i18n("Author"), QStringLiteral("%{EMAIL}"));
-    application.setWindowIcon(QIcon::fromTheme("%{APPNAMELC}"));
+    aboutData.setOrganizationDomain("example.org");
+    aboutData.setDesktopFileName(QStringLiteral("org.example.%{APPNAMELC}"));
+
+    KAboutData::setApplicationData(aboutData);
+    application.setWindowIcon(QIcon::fromTheme(QStringLiteral("%{APPNAMELC}")));
+
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
+
     parser.process(application);
     aboutData.processCommandLine(&parser);
-    KAboutData::setApplicationData(aboutData);
 
-    %{APPNAME} *appwindow = new %{APPNAME};
-    appwindow->show();
+    KDBusService appDBusService(KDBusService::Multiple | KDBusService::NoExitOnFailure);
+
+    %{APPNAME}Window *window = new %{APPNAME}Window;
+    window->show();
+
     return application.exec();
 }

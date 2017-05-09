@@ -6,4 +6,4 @@ set(%{APPNAMELC}_ICONS
   sc-apps-%{APPNAMELC}.svgz
 )
 
-ecm_install_icons(ICONS ${%{APPNAMELC}_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hicolor)
+ecm_install_icons(ICONS ${%{APPNAMELC}_ICONS} DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor)
