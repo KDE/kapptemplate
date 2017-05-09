@@ -18,18 +18,16 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef %{APPNAMEUC}_H
-#define %{APPNAMEUC}_H
+#ifndef %{APPNAMEUC}WINDOW_H
+#define %{APPNAMEUC}WINDOW_H
 
-#include <QLoggingCategory>
 #include <KXmlGuiWindow>
 
 #include "ui_%{APPNAMELC}ViewBase.h"
 #include "ui_settingsBase.h"
 #include "%{APPNAME}Settings.h"
-#include "%{APPNAMELC}view.h"
 
-Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
+class %{APPNAME}View;
 
 /**
  * This class serves as the main window for %{APPNAMELC}.  It handles the
@@ -39,21 +37,21 @@ Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
  * @author %{AUTHOR} <%{EMAIL}>
  * @version %{VERSION}
  */
-class %{APPNAME} : public KXmlGuiWindow
+class %{APPNAME}Window : public KXmlGuiWindow
 {
     Q_OBJECT
 public:
     /**
      * Default Constructor
      */
-    %{APPNAME}();
+    %{APPNAME}Window();
 
     /**
      * Default Destructor
      */
-    virtual ~%{APPNAME}();
+    ~%{APPNAME}Window() override;
 
-private slots:
+private Q_SLOTS:
     /**
      * Create a new window
      */
@@ -73,4 +71,4 @@ private:
     %{APPNAME}View *m_%{APPNAMELC}View;
 };
 
-#endif // %{APPNAMEUC}_H
+#endif // %{APPNAMEUC}WINDOW_H

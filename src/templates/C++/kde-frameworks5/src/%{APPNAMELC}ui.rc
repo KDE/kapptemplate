@@ -6,18 +6,15 @@
      xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0
                          http://www.kde.org/standards/kxmlgui/1.0/kxmlgui.xsd">
 <MenuBar>
-  <Menu name="move">
-    <text>&amp;Move</text>
+  <Menu name="edit">
     <Action name="switch_action"/>
   </Menu>
-  <ToolBar name="mainToolBar" noEdit="true">
-    <text>About System Settings</text>
-    <ActionList name="viewActions"/>
-    <Separator/>
-    <ActionList name="configure"/>
-    <Action name="help_toolbar_menu"/>
-    <ActionList name="quit"/>
-    <ActionList name="search"/>
-  </ToolBar>
 </MenuBar>
+
+<ToolBar name="mainToolBar" noMerge="1">
+    <text>Main Toolbar</text>
+    <Action name="switch_action"/>
+    <Separator/>
+    <Action name="options_configure"/>
+</ToolBar>
 </gui>

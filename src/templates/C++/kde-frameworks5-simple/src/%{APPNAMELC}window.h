@@ -18,17 +18,40 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "%{APPNAMELC}.h"
+#ifndef %{APPNAMEUC}WINDOW_H
+#define %{APPNAMEUC}WINDOW_H
 
-%{APPNAME}::%{APPNAME}()
-    : QMainWindow()
+
+#include "ui_%{APPNAMELC}.h"
+
+#include <QMainWindow>
+
+/**
+ * This class serves as the main window for %{APPNAME}.  It handles the
+ * menus, toolbars and status bars.
+ *
+ * @short Main window class
+ * @author %{AUTHOR} <%{EMAIL}>
+ * @version %{VERSION}
+ */
+class %{APPNAME}Window : public QMainWindow
 {
-    QWidget *widget = new QWidget(this);
-    setCentralWidget(widget);
-    m_ui.setupUi(widget);
-}
+    Q_OBJECT
+public:
+    /**
+     * Default Constructor
+     */
+    %{APPNAME}Window();
 
-%{APPNAME}::~%{APPNAME}()
-{
-}
+    /**
+     * Default Destructor
+     */
+    ~%{APPNAME}Window() override;
 
+private:
+    // this is the name of the root widget inside our Ui file
+    // you can rename it in designer and then change it here
+    Ui::mainWidget m_ui;
+};
+
+#endif // %{APPNAMEUC}WINDOW_H

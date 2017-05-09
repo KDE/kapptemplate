@@ -3,4 +3,4 @@ File=%{APPNAME}Settings.kcfg
 ClassName=%{APPNAME}Settings
 Singleton=true
 # will create the necessary code for setting those variables
-Mutators=color_background,color_foreground
+Mutators=colorBackground,colorForeground

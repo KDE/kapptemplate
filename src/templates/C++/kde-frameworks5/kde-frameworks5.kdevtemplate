@@ -62,4 +62,4 @@ Comment[x-test]=xxA KDE Frameworks 5 GUI Application in C++xx
 Comment[zh_TW]=C++ KDE Frameworks 5 圖形介面應用程式
 Category=Qt/Graphical
 Icon=kde-frameworks5.png
-ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}.cpp
+ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}window.cpp

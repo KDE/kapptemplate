@@ -19,40 +19,48 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 // application headers
-#include "%{APPNAMELC}.h"
+#include "%{APPNAMELC}window.h"
 
-// KDE headers
+#include "%{APPNAMELC}view.h"
+#include "%{APPNAMELC}debug.h"
+
+// KF headers
 #include <KActionCollection>
 #include <KConfigDialog>
 
-%{APPNAME}::%{APPNAME}()
+
+%{APPNAME}Window::%{APPNAME}Window()
     : KXmlGuiWindow()
 {
     m_%{APPNAMELC}View = new %{APPNAME}View(this);
     setCentralWidget(m_%{APPNAMELC}View);
-    m_switchAction = actionCollection()->addAction(QStringLiteral("switch_action"), this, SLOT(slotSwitchColors()));
+
+    KActionCollection* actionCollection = this->actionCollection();
+    m_switchAction = actionCollection->addAction(QStringLiteral("switch_action"));
     m_switchAction->setText(i18n("Switch Colors"));
     m_switchAction->setIcon(QIcon::fromTheme(QStringLiteral("fill-color")));
-    connect(m_switchAction, SIGNAL(triggered(bool)), m_%{APPNAMELC}View, SLOT(slotSwitchColors()));
-    KStandardAction::openNew(this, SLOT(fileNew()), actionCollection());
-    KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
-    KStandardAction::preferences(this, SLOT(settingsConfigure()), actionCollection());
+    connect(m_switchAction, &QAction::triggered, m_%{APPNAMELC}View, &%{APPNAME}View::switchColors);
+
+    KStandardAction::openNew(this, SLOT(fileNew()), actionCollection);
+    KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection);
+    KStandardAction::preferences(this, SLOT(settingsConfigure()), actionCollection);
+
     setupGUI();
 }
 
-%{APPNAME}::~%{APPNAME}()
+%{APPNAME}Window::~%{APPNAME}Window()
 {
 }
 
-void %{APPNAME}::fileNew()
+void %{APPNAME}Window::fileNew()
 {
-    qCDebug(%{APPNAMEUC}) << "%{APPNAME}::fileNew()";
-    (new %{APPNAME})->show();
+    qCDebug(%{APPNAMEUC}) << "%{APPNAME}Window::fileNew()";
+    (new %{APPNAME}Window)->show();
 }
 
-void %{APPNAME}::settingsConfigure()
+void %{APPNAME}Window::settingsConfigure()
 {
-    qCDebug(%{APPNAMEUC}) << "%{APPNAME}::settingsConfigure()";
+    qCDebug(%{APPNAMEUC}) << "%{APPNAME}Window::settingsConfigure()";
     // The preference dialog is derived from prefs_base.ui
     //
     // compare the names of the widgets in the .ui file
@@ -61,12 +69,12 @@ void %{APPNAME}::settingsConfigure()
     if (KConfigDialog::showDialog(QStringLiteral("settings"))) {
         return;
     }
+
     KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), %{APPNAME}Settings::self());
-    QWidget *generalSettingsDialog = new QWidget;
-    settingsBase.setupUi(generalSettingsDialog);
-    dialog->addPage(generalSettingsDialog, i18n("General"), QStringLiteral("package_setting"));
-    connect(dialog, SIGNAL(settingsChanged(QString)), m_%{APPNAMELC}View, SLOT(slotSettingsChanged()));
+    QWidget *generalSettingsPage = new QWidget;
+    settingsBase.setupUi(generalSettingsPage);
+    dialog->addPage(generalSettingsPage, i18n("General"), QStringLiteral("package_setting"));
+    connect(dialog, &KConfigDialog::settingsChanged, m_%{APPNAMELC}View, &%{APPNAME}View::handleSettingsChanged);
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
 }
-

@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(%{APPNAMELC})
 
-set(QT_MIN_VERSION "5.3.0")
-
 find_package(ECM 1.0.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -11,16 +9,21 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
+include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 
+set(QT_MIN_VERSION "5.5.0")
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
-find_package(KF5 REQUIRED COMPONENTS
+set(REQUIRED_KF5_VERSION "5.18.0")
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS
+    ConfigWidgets
     CoreAddons
+    Crash
+    DBusAddons
+    DocTools
     I18n
     XmlGui
-    ConfigWidgets
-    DocTools
 )
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

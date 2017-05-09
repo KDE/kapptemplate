@@ -21,10 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef %{APPNAMEUC}VIEW_H
 #define %{APPNAMEUC}VIEW_H
 
-#include <QLoggingCategory>
-Q_DECLARE_LOGGING_CATEGORY(%{APPNAMEUC})
-
 #include "ui_%{APPNAMELC}ViewBase.h"
+
 
 /**
  * This class serves as the main window for %{APPNAMELC}.  It handles the
@@ -46,22 +44,11 @@ public:
     /**
      * Default Destructor
      */
-    virtual ~%{APPNAME}View();
+    ~%{APPNAME}View() override;
 
-private slots:
-    void slotSettingsChanged();
-    void slotSwitchColors();
-
-signals:
-    /**
-     * Use this signal to change the content of the statusbar
-     */
-    void signalChangeStatusbar(const QString& text);
-
-    /**
-     * Use this signal to change the content of the caption
-     */
-    void signalChangeCaption(const QString& text);
+public Q_SLOTS:
+    void switchColors();
+    void handleSettingsChanged();
 
 private:
     // this is the name of the root widget inside our Ui file
