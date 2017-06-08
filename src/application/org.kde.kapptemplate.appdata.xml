@@ -16,6 +16,7 @@
   <name xml:lang="es">KAppTemplate</name>
   <name xml:lang="et">KAppTemplate</name>
   <name xml:lang="fi">KAppTemplate</name>
+  <name xml:lang="fr">KAppTemplate</name>
   <name xml:lang="gl">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
   <name xml:lang="ko">KAppTemplate</name>
@@ -49,6 +50,7 @@
   <summary xml:lang="es">Generador de plantillas para KDE</summary>
   <summary xml:lang="et">KDE malligeneraator</summary>
   <summary xml:lang="fi">KDE:n mallintuottamisohjelma</summary>
+  <summary xml:lang="fr">Générateur de modèles pour KDE</summary>
   <summary xml:lang="gl">Xerador de modelos de KDE</summary>
   <summary xml:lang="it">Generatore di modelli di KDE</summary>
   <summary xml:lang="ko">KDE 템플릿 생성기</summary>
@@ -83,6 +85,7 @@
     <p xml:lang="es">KAppTemplate es una aplicación para comenzar a desarrollar rápidamente usando plantillas existentes que proporcionan un código básico que se suele escribir repetidamente y una estructura correcta.</p>
     <p xml:lang="et">KAppTemplate on rakendus arendustegevuse kiireks käivitamiseks olemasolevate mallide alusel, mis pakuvad peamist korduvat koodi ja vajalikku struktuuri.</p>
     <p xml:lang="fi">KAppTemplate on sovellus kehityksen nopeaan aloittamiseen käyttämällä valmiita malleja, joissa on jo tehty jatkuvasti toistuvat perusasiat sekä kunnollinen rakenne.</p>
+    <p xml:lang="fr">KAppTemplate est une application permettant de commencer rapidement de nouveaux développements en utilisant des modèles existants fournissant une structure appropriée et le code répétitif de base.</p>
     <p xml:lang="gl">KAppTemplate é un aplicativo para comezar a desenvolver rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
     <p xml:lang="ko">KAppTemplate은 반복적으로 작성되는 코드와 구조를 기반으로 한 템플릿을 제공하여 프로그램 개발을 빠르게 시작하도록 도와 줍니다.</p>
@@ -114,6 +117,7 @@
     <p xml:lang="es">Funcionalidades:</p>
     <p xml:lang="et">Omadused:</p>
     <p xml:lang="fi">Ominaisuuksia:</p>
+    <p xml:lang="fr">Fonctionnalités :</p>
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="ko">기능:</p>
@@ -146,6 +150,7 @@
       <li xml:lang="es">Plantillas para C++, Ruby, Python y PHP</li>
       <li xml:lang="et">C++, Ruby, Pythoni ja PHP mallid</li>
       <li xml:lang="fi">Malleja C++:lle, Rubylle, Pythonille ja PHP:lle</li>
+      <li xml:lang="fr">Modèles pour C++, Ruby, Python et PHP</li>
       <li xml:lang="gl">Modelos para C++, Ruby, Python e PHP.</li>
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
       <li xml:lang="ko">C++, Ruby, 파이썬, PHP 템플릿</li>
@@ -177,6 +182,7 @@
       <li xml:lang="es">Categorías</li>
       <li xml:lang="et">Kategooriad</li>
       <li xml:lang="fi">Luokat</li>
+      <li xml:lang="fr">Catégories</li>
       <li xml:lang="gl">Categorías</li>
       <li xml:lang="it">Categorie</li>
       <li xml:lang="ko">분류</li>
@@ -207,6 +213,7 @@
       <li xml:lang="es">Plantillas para distintos sistemas de compilación e infraestructuras</li>
       <li xml:lang="et">Eri ehitussüsteemide ja raamistike mallid</li>
       <li xml:lang="fi">Malleja useille koostamisjärjestelmille ja sovelluskehyksille</li>
+      <li xml:lang="fr">Modèles pour différents systèmes de compilations et environnements</li>
       <li xml:lang="gl">Modelos para diferentes sistemas de construción e infraestruturas.</li>
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
       <li xml:lang="ko">다양한 빌드 시스템과 프레임워크 템플릿</li>
@@ -235,6 +242,7 @@
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="et">Spetsiaalselt KDE arendamiseks mõeldud mallid (Plasma, KOffice'i, KTextEditori, KRunneri, Akonadi pluginad)</li>
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, KOffice-, KTextEditor-, KRunner ja Akonadi-liitännäiset)</li>
+      <li xml:lang="fr">Modèles dédiés au développement KDE (modules externes pour Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="gl">Modelos para os desenvolvedores de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, KOffice, KTextEditor, KRunner, Akonadi 플러그인)</li>
@@ -263,6 +271,7 @@
       <li xml:lang="es">Resulta fácil crear nuevas plantillas usando parámetros de sustitución y órdenes CMake sencillas</li>
       <li xml:lang="et">Hõlpus uute mallide loomine kohatäitjate ja lihtsa CMake'i käsu abil</li>
       <li xml:lang="fi">Uusia malleja voi luoda helposti käyttämällä paikanvarauksia ja yksinkertaisia CMake-komentoja.</li>
+      <li xml:lang="fr">Vous pouvez facilement créer de nouveaux modèles en utilisant des caractères spéciaux et une simple commande CMake</li>
       <li xml:lang="gl">É doado crear novos modelos usando marcas e ordes sinxelas de CMake.</li>
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
       <li xml:lang="ko">자리 비움자와 CMake 명령을 통한 새 템플릿 생성</li>
@@ -292,6 +301,7 @@
       <li xml:lang="es">Integrado en KDevelop</li>
       <li xml:lang="et">Lõimimine KDevelopiga</li>
       <li xml:lang="fi">KDevelop-integraatio</li>
+      <li xml:lang="fr">Intégré à KDevelop</li>
       <li xml:lang="gl">Integrado con KDevelop.</li>
       <li xml:lang="it">Integrato con KDevelop</li>
       <li xml:lang="ko">KDevelop 통합</li>
