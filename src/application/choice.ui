@@ -26,7 +26,22 @@
    <item>
     <layout class="QHBoxLayout">
      <item>
-      <widget class="QTreeView" name="appTree"/>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QTreeView" name="appTree"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="installButton">
+         <property name="text">
+          <string>Install Template From File</string>
+         </property>
+         <property name="icon">
+          <iconset theme="application-x-archive">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
       <widget class="QFrame" name="descriptionFrame">

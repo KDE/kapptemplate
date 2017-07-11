@@ -90,6 +90,7 @@ void extractTemplateDescriptions()
 
 void AppTemplatesModel::refresh()
 {
+    clear();
     m_templateItems.clear();
     m_templateItems[""] = invisibleRootItem();
 

@@ -26,6 +26,9 @@
 #include <QString>
 #include <QPixmap>
 #include <QStandardItem>
+#include <QStandardPaths>
+#include <QFileDialog>
+#include <QPointer>
 
 #include <KTar>
 #include <KZip>
@@ -48,6 +51,7 @@ ChoicePage::ChoicePage(QWidget *parent)
     connect(ui_choice.kcfg_appName, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
     connect(ui_choice.appTree->selectionModel(), SIGNAL(currentChanged(QModelIndex, QModelIndex)), this, SLOT(itemSelected(QModelIndex)));
+    connect(ui_choice.installButton, &QPushButton::clicked, this, &ChoicePage::loadFromFile);
     QRegExp rx("[a-zA-Z0-9_]*");
     QValidator *validator = new QRegExpValidator(rx, this);
     ui_choice.kcfg_appName->setValidator(validator);
@@ -167,4 +171,39 @@ void ChoicePage::itemSelected(const QModelIndex &index)
 
     emit templateNameChanged(m_baseName);
     emit completeChanged();
+}
+
+void ChoicePage::loadFromFile()
+{
+    QPointer<QFileDialog> fileDialog = new QFileDialog(this);
+
+    fileDialog->setMimeTypeFilters(QStringList()
+        << QStringLiteral("application/x-bzip-compressed-tar")
+        << QStringLiteral("application/zip"));
+    fileDialog->setFileMode(QFileDialog::ExistingFiles);
+
+    if (!fileDialog->exec()) {
+        delete fileDialog;
+        return;
+    }
+
+    const QStringList selectedFiles = fileDialog->selectedFiles();
+    delete fileDialog;
+
+    const QString saveLocation = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kdevappwizard/templates/");
+
+    QDir dir(saveLocation);
+    if (!dir.exists()) {
+        dir.mkpath(QStringLiteral("."));
+    }
+
+    foreach (const QString& fileName, selectedFiles) {
+        qCDebug(KAPPTEMPLATE) << "Copying" << fileName << "to" << saveLocation;
+        QFileInfo info(fileName);
+        QFile::copy(fileName, saveLocation + info.fileName());
+    }
+
+    templatesModel->refresh();
+    ui_choice.appTree->expandAll();
+    ui_choice.appTree->setFocus(Qt::OtherFocusReason);
 }
