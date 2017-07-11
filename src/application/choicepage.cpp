@@ -143,6 +143,11 @@ void ChoicePage::itemSelected(const QModelIndex &index)
     if (picture.isNull()) {
         ui_choice.pictureLabel->setText(i18n("No sample picture available."));
     } else {
+        const QSize labelSize = ui_choice.pictureLabel->minimumSize();
+        if ((labelSize.height() < picture.height() || labelSize.width() < picture.width()) ||
+            (labelSize.height() > picture.height()*2 || labelSize.width() > picture.width()*2)) {
+            picture = picture.scaled(labelSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        }
         ui_choice.pictureLabel->setPixmap(picture);
     }
 
