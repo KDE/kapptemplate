@@ -30,6 +30,7 @@
 #include <QFileDialog>
 #include <QPointer>
 
+#include <KNS3/DownloadDialog>
 #include <KTar>
 #include <KZip>
 
@@ -52,6 +53,7 @@ ChoicePage::ChoicePage(QWidget *parent)
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
     connect(ui_choice.appTree->selectionModel(), SIGNAL(currentChanged(QModelIndex, QModelIndex)), this, SLOT(itemSelected(QModelIndex)));
     connect(ui_choice.installButton, &QPushButton::clicked, this, &ChoicePage::loadFromFile);
+    connect(ui_choice.getNewButton, &QPushButton::clicked, this, &ChoicePage::getMoreTemplates);
     QRegExp rx("[a-zA-Z0-9_]*");
     QValidator *validator = new QRegExpValidator(rx, this);
     ui_choice.kcfg_appName->setValidator(validator);
@@ -206,4 +208,23 @@ void ChoicePage::loadFromFile()
     templatesModel->refresh();
     ui_choice.appTree->expandAll();
     ui_choice.appTree->setFocus(Qt::OtherFocusReason);
+}
+
+void ChoicePage::getMoreTemplates()
+{
+    QPointer<KNS3::DownloadDialog> dialog = new KNS3::DownloadDialog(QStringLiteral("kapptemplate.knsrc"), this);
+
+    if (!dialog->exec()) {
+        delete dialog;
+        return;
+    }
+
+    const bool hasChangedEntries = !dialog->changedEntries().isEmpty();
+    delete dialog;
+
+    if (hasChangedEntries) {
+        templatesModel->refresh();
+        ui_choice.appTree->expandAll();
+        ui_choice.appTree->setFocus(Qt::OtherFocusReason);
+    }
 }

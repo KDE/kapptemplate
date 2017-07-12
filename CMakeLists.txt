@@ -13,7 +13,16 @@ include(KDEPackageAppTemplates)
 include(FeatureSummary)
 
 find_package(Qt5 REQUIRED COMPONENTS Test)
-find_package(KF5 REQUIRED COMPONENTS CoreAddons ConfigWidgets Completion Archive KIO I18n DocTools)
+find_package(KF5 REQUIRED COMPONENTS
+    CoreAddons
+    ConfigWidgets
+    Completion
+    Archive
+    KIO
+    I18n
+    DocTools
+    NewStuff
+)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 

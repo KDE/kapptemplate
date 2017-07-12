@@ -31,6 +31,18 @@
         <widget class="QTreeView" name="appTree"/>
        </item>
        <item>
+        <widget class="QPushButton" name="getNewButton">
+         <property name="text">
+          <string>Get More Templates</string>
+         </property>
+         <property name="icon">
+          <iconset theme="get-hot-new-stuff">
+           <normaloff/>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="installButton">
          <property name="text">
           <string>Install Template From File</string>

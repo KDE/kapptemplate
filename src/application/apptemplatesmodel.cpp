@@ -27,6 +27,7 @@
 #include <QStandardPaths>
 #include <QDir>
 #include <QFileInfo>
+#include <QTemporaryDir>
 
 #include "choicepage.h"
 #include "apptemplatesmodel.h"
@@ -63,7 +64,8 @@ void extractTemplateDescriptions()
 #endif // Q_WS_WIN
         if (templateArchive.open(QIODevice::ReadOnly)) {
             QFileInfo templateInfo(archName);
-            const KArchiveEntry *templateEntry = templateArchive.directory()->entry(templateInfo.baseName() + ".kdevtemplate");
+            const QString descriptionFileName = templateInfo.baseName() + QStringLiteral(".kdevtemplate");
+            const KArchiveEntry *templateEntry = templateArchive.directory()->entry(descriptionFileName);
             // but could be different name, if e.g. downloaded, so make a guess
             if (!templateEntry || !templateEntry->isFile()) {
                 for (const auto& entryName : templateArchive.directory()->entries()) {
@@ -81,7 +83,18 @@ void extractTemplateDescriptions()
             const KArchiveFile *templateFile = (KArchiveFile*)templateEntry;
 
             qCDebug(KAPPTEMPLATE) << "copy template description to" << localDescriptionsDir;
-            templateFile->copyTo(localDescriptionsDir);
+            if (templateFile->name() == descriptionFileName) {
+                templateFile->copyTo(localDescriptionsDir);
+            } else {
+                // Rename the extracted description
+                // so that its basename matches the basename of the template archive
+                // Use temporary dir to not overwrite other files with same name
+                QTemporaryDir dir;
+                templateFile->copyTo(dir.path());
+                const QString destinationPath = localDescriptionsDir + descriptionFileName;
+                QFile::remove(destinationPath);
+                QFile::rename(dir.path() + QLatin1Char('/') + templateEntry->name(), destinationPath);
+            }
         } else {
             qCDebug(KAPPTEMPLATE) << "could not open template" << archName;
         }

@@ -54,6 +54,7 @@ private slots:
     void saveConfig();
 
     void loadFromFile();
+    void getMoreTemplates();
 
 protected slots:
     void itemSelected(const QModelIndex &index);
