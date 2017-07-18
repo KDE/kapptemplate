@@ -27,4 +27,4 @@ add_library(%{APPNAMELC} MODULE ${%{APPNAMELC}_SRCS})
 
 target_link_libraries(%{APPNAMELC} KF5::TextEditor)
 
-install(TARGETS %{APPNAMELC} DESTINATION ${PLUGIN_INSTALL_DIR}/ktexteditor)
+install(TARGETS %{APPNAMELC} DESTINATION ${KDE_INSTALL_PLUGINDIR}/ktexteditor)

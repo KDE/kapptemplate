@@ -24,8 +24,8 @@ target_link_libraries(kapptemplate
     KF5::NewStuff
 )
 
-install(TARGETS kapptemplate ${INSTALL_TARGETS_DEFAULT_ARGS})
-install(PROGRAMS org.kde.kapptemplate.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR})
+install(TARGETS kapptemplate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(PROGRAMS org.kde.kapptemplate.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kapptemplate.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFODIR})
-install(FILES kapptemplate.kcfg  DESTINATION  ${KCFG_INSTALL_DIR})
+install(FILES kapptemplate.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR})
 install(FILES kapptemplate.knsrc  DESTINATION  ${KDE_INSTALL_CONFDIR})

@@ -8,4 +8,4 @@ set(kapptemplate_ICONS
   sc-apps-kapptemplate.svg
 )
 
-ecm_install_icons(ICONS ${kapptemplate_ICONS} DESTINATION ${ICON_INSTALL_DIR} THEME hicolor)
+ecm_install_icons(ICONS ${kapptemplate_ICONS} DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor)
