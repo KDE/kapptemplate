@@ -84,7 +84,7 @@ target_link_libraries(akonadi_%{APPNAMELC}_resource
 install(TARGETS akonadi_%{APPNAMELC}_resource ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES %{APPNAMELC}resource.desktop
-        DESTINATION "${KDE_INSTALL_DATAROOTDIR}/share/akonadi/agents"
+        DESTINATION "${KDE_INSTALL_DATAROOTDIR}/akonadi/agents"
 )
 
 ########### summary ############

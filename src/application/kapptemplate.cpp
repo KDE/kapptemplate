@@ -63,7 +63,10 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     : QWizardPage(parent)
 {
     setTitle(i18n("Set the project properties"));
+    setCommitPage(true);
+    setButtonText(QWizard::CommitButton, i18n("Generate"));
     ui_properties.setupUi(this);
+
     //float version = Prefs::appVersion().toFloat();
     ui_properties.kcfg_appVersion->setText(Prefs::appVersion());//TODO appVersion+0.1 if already exists
     ui_properties.kcfg_url->setMode(KFile::Directory);

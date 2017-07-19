@@ -20,14 +20,13 @@
 #ifndef %{APPNAMEUC}PART_H
 #define %{APPNAMEUC}PART_H
 
-#include <kparts/part.h>
+// KF headers
+#include <KParts/ReadWritePart>
 
 class QWidget;
-class QPainter;
-class KUrl;
 class QTextEdit;
 class KAboutData;
-class KAction;
+class QAction;
 
 /**
  * This is a "Part".  It does all the real work in a KPart
@@ -49,39 +48,39 @@ public:
     /**
      * Destructor
      */
-    virtual ~%{APPNAME}Part();
+    ~%{APPNAME}Part() override;
 
     /**
      * This is a virtual function inherited from KParts::ReadWritePart.
      * A shell will use this to inform this Part if it should act
      * read-only
      */
-    virtual void setReadWrite(bool rw);
+    void setReadWrite(bool rw) override;
 
     /**
      * Reimplemented to disable and enable Save action
      */
-    virtual void setModified(bool modified);
+    void setModified(bool modified) override;
 
-    static KAboutData *createAboutData();
+    static KAboutData createAboutData();
 
 protected:
     /**
      * This must be implemented by each part
      */
-    virtual bool openFile();
+    bool openFile() override;
 
     /**
      * This must be implemented by each read-write part
      */
-    virtual bool saveFile();
-    KAction *save;
+    bool saveFile() override;
 
-protected slots:
+protected Q_SLOTS:
     void fileSaveAs();
 
 private:
     QTextEdit *m_widget;
+    QAction *m_saveAction;
 };
 
 #endif // %{APPNAMEUC}PART_H

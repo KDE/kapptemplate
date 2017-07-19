@@ -93,7 +93,7 @@ void extractTemplateDescriptions()
                 templateFile->copyTo(dir.path());
                 const QString destinationPath = localDescriptionsDir + descriptionFileName;
                 QFile::remove(destinationPath);
-                QFile::rename(dir.path() + QLatin1Char('/') + templateEntry->name(), destinationPath);
+                QFile::rename(dir.path() + QLatin1Char('/') + templateFile->name(), destinationPath);
             }
         } else {
             qCDebug(KAPPTEMPLATE) << "could not open template" << archName;

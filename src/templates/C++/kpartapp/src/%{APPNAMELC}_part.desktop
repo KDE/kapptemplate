@@ -1,4 +1,6 @@
 [Desktop Entry]
+Type=Service
+Icon=%{APPNAMELC}
 Name=%{APPNAME}Part
 Name[bg]=%{APPNAME}Part
 Name[bs]=%{APPNAME}Part
@@ -47,6 +49,5 @@ Name[x-test]=xx%{APPNAME}Partxx
 Name[zh_CN]=%{APPNAME}Part
 Name[zh_TW]=%{APPNAME}Part
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
-ServiceTypes=KParts/ReadOnlyPart,KParts/ReadWritePart
-X-KDE-Library=lib%{APPNAMELC}part
-Type=Service
+X-KDE-ServiceTypes=KParts/ReadOnlyPart,KParts/ReadWritePart
+X-KDE-Library=%{APPNAMELC}part
