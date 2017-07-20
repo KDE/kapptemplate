@@ -40,9 +40,10 @@ if you're using the minGW compiler
 Tutorials
 -=-=-=-=-
 Kpart docs
-http://techbase.kde.org/index.php?title=Development/Architecture/KDE4/KParts
+https://techbase.kde.org/Development/Architecture/KDE4/KParts
+https://api.kde.org/frameworks/kparts/html/index.html
 Tutorial
-http://techbase.kde.org/Development/Architecture/KDE3/KParts
+https://techbase.kde.org/Development/Tutorials/Using_KParts
 
 ----------------------------
 Please send all comments to:

@@ -25,7 +25,6 @@
 
 class QWidget;
 class QTextEdit;
-class KAboutData;
 class QAction;
 
 /**
@@ -62,8 +61,6 @@ public:
      */
     void setModified(bool modified) override;
 
-    static KAboutData createAboutData();
-
 protected:
     /**
      * This must be implemented by each part
@@ -76,6 +73,7 @@ protected:
     bool saveFile() override;
 
 protected Q_SLOTS:
+    void fileSave();
     void fileSaveAs();
 
 private:

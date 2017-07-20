@@ -70,11 +70,6 @@
         // next time we enter the event loop...
         return;
     }
-
-    // apply the saved mainwindow settings, if any, and ask the mainwindow
-    // to automatically save settings if changed: window size, toolbar
-    // position, icon size, etc.
-    setAutoSaveSettings();
 }
 
 %{APPNAME}::~%{APPNAME}()
@@ -92,9 +87,6 @@ void %{APPNAME}::setupActions()
     KStandardAction::open(this, SLOT(fileOpen()), actionCollection());
 
     KStandardAction::quit(qApp, SLOT(closeAllWindows()), actionCollection());
-
-    createStandardStatusBarAction();
-    setStandardToolBarMenuEnabled(true);
 }
 
 void %{APPNAME}::saveProperties(KConfigGroup & /*config*/)

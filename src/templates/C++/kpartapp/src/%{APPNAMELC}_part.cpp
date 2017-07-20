@@ -39,7 +39,11 @@ K_PLUGIN_FACTORY(%{APPNAME}PartFactory, registerPlugin<%{APPNAME}Part>();)
     : KParts::ReadWritePart(parent)
 {
     // we need a component data
-    setComponentData(createAboutData());
+    // the first arg here must be the same as the subdirectory in
+    // which the part's rc file is installed
+    KAboutData aboutData("%{APPNAMELC}part", i18n("%{APPNAME}Part"), QStringLiteral("%{VERSION}"));
+    aboutData.addAuthor(i18n("%{AUTHOR}"), i18n("Author"), QStringLiteral("%{EMAIL}"));
+    setComponentData(aboutData);
 
     // this should be your custom internal widget
     m_widget = new QTextEdit(parentWidget);
@@ -48,8 +52,8 @@ K_PLUGIN_FACTORY(%{APPNAME}PartFactory, registerPlugin<%{APPNAME}Part>();)
     setWidget(m_widget);
 
     // create our actions
+    m_saveAction = KStandardAction::save(this, SLOT(fileSave()), actionCollection());
     KStandardAction::saveAs(this, SLOT(fileSaveAs()), actionCollection());
-    m_saveAction = KStandardAction::save(this, SLOT(save()), actionCollection());
 
     // set our XML-UI resource file
     setXMLFile("%{APPNAMELC}_part.rc");
@@ -97,15 +101,6 @@ void %{APPNAME}Part::setModified(bool modified)
     ReadWritePart::setModified(modified);
 }
 
-KAboutData %{APPNAME}Part::createAboutData()
-{
-    // the first arg here must be the same as the subdirectory in
-    // which the part's rc file is installed
-    KAboutData aboutData("%{APPNAMELC}part", i18n("%{APPNAME}Part"), QStringLiteral("%{VERSION}"));
-    aboutData.addAuthor(i18n("%{AUTHOR}"), i18n("Author"), QStringLiteral("%{EMAIL}"));
-    return aboutData;
-}
-
 bool %{APPNAME}Part::openFile()
 {
     // localFilePath() is always local so we can use QFile on it
@@ -142,19 +137,28 @@ bool %{APPNAME}Part::saveFile()
 
     // localFilePath() is always local, so we use QFile
     QFile file(localFilePath());
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
         return false;
     }
 
     // use QTextStream to dump the text to the file
     QTextStream stream(&file);
-    stream << m_widget->document();
+    stream << m_widget->toPlainText();
 
     file.close();
 
     m_widget->document()->setModified(false);
 
     return true;
+}
+
+void %{APPNAME}Part::fileSave()
+{
+    if (url().isValid()) {
+        save();
+    } else {
+        fileSaveAs();
+    }
 }
 
 void %{APPNAME}Part::fileSaveAs()
