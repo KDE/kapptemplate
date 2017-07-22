@@ -2,13 +2,17 @@
 [General]
 Name=KPart Application
 Name[ca]=Aplicació KPart
+Name[es]=Aplicación KPart
 Name[nl]=KPart-toepassing
 Name[pt]=Aplicação KPart
+Name[sv]=KPart-program
 Name[x-test]=xxKPart Applicationxx
 Comment=KPart Application. Simple template based on CMake, inherits from KParts/MainWindow and demonstrates how to use KPart
 Comment[ca]=Aplicació KPart. Plantilla simple basada en el CMake, hereva del KParts/MainWindow i que demostra com usar la KPart
+Comment[es]=Aplicación KPart. Sencilla plantilla basada en CMake, que hereda de KParts/MainWindow y demuestra cómo usar KPart
 Comment[nl]=KPart-toepassing. Eenvoudig sjabloon gebaseerd op CMake, afkomstig van KParts/MainWindow en demonstreert hoe u KPart kunt gebruiken
 Comment[pt]=Aplicação KPart. Um modelo simples com base no CMake, que herda do KParts/MainWindow e demonstra como utilizar o KPart
+Comment[sv]=KPart-program. Enkel mall baserad på CMake, ärver KParts/MainWindow och demonstrerar hur man använder KPart
 Comment[x-test]=xxKPart Application. Simple template based on CMake, inherits from KParts/MainWindow and demonstrates how to use KPartxx
 Category=Qt/Graphical
 Icon=kpartapp.png
