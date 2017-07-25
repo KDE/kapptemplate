@@ -1,7 +1,6 @@
 set(APPTEMPLATE_DIRS
     kde-frameworks5-simple
     kde-frameworks5
-    ktexteditor
     kpartapp
     akonadiresource
     akonadiserializer
