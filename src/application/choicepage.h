@@ -54,7 +54,9 @@ private slots:
     void saveConfig();
 
     void loadFromFile();
+#ifdef KAPPTEMLATE_SOLVEDGHNS
     void getMoreTemplates();
+#endif
 
 protected slots:
     void itemSelected(const QModelIndex &index);
