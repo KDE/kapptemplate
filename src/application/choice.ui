@@ -30,6 +30,7 @@
        <item>
         <widget class="QTreeView" name="appTree"/>
        </item>
+       <!-- Disable until there is cooperation with kdevplatform/plugins/appwizard/kdevappwizard.knsrc
        <item>
         <widget class="QPushButton" name="getNewButton">
          <property name="text">
@@ -42,6 +43,7 @@
          </property>
         </widget>
        </item>
+       -->
        <item>
         <widget class="QPushButton" name="installButton">
          <property name="text">

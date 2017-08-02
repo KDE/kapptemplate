@@ -30,7 +30,9 @@
 #include <QFileDialog>
 #include <QPointer>
 
+#ifdef KAPPTEMLATE_SOLVEDGHNS
 #include <KNS3/DownloadDialog>
+#endif
 #include <KTar>
 #include <KZip>
 
@@ -53,7 +55,12 @@ ChoicePage::ChoicePage(QWidget *parent)
     connect(this, SIGNAL(completeChanged()), this, SLOT(saveConfig()));
     connect(ui_choice.appTree->selectionModel(), SIGNAL(currentChanged(QModelIndex, QModelIndex)), this, SLOT(itemSelected(QModelIndex)));
     connect(ui_choice.installButton, &QPushButton::clicked, this, &ChoicePage::loadFromFile);
+    // TODO: GHNS disabled for now, until there is a solution for shared management of
+    // TargetDir=kdevappwizard/templates
+    // like already managed by kdevplatform/plugins/appwizard/kdevappwizard.knsrc
+#ifdef KAPPTEMLATE_SOLVEDGHNS
     connect(ui_choice.getNewButton, &QPushButton::clicked, this, &ChoicePage::getMoreTemplates);
+#endif
     QRegExp rx("[a-zA-Z0-9_]*");
     QValidator *validator = new QRegExpValidator(rx, this);
     ui_choice.kcfg_appName->setValidator(validator);
@@ -210,6 +217,7 @@ void ChoicePage::loadFromFile()
     ui_choice.appTree->setFocus(Qt::OtherFocusReason);
 }
 
+#ifdef KAPPTEMLATE_SOLVEDGHNS
 void ChoicePage::getMoreTemplates()
 {
     QPointer<KNS3::DownloadDialog> dialog = new KNS3::DownloadDialog(QStringLiteral("kapptemplate.knsrc"), this);
@@ -228,3 +236,4 @@ void ChoicePage::getMoreTemplates()
         ui_choice.appTree->setFocus(Qt::OtherFocusReason);
     }
 }
+#endif

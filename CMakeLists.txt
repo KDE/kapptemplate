@@ -21,7 +21,7 @@ find_package(KF5 REQUIRED COMPONENTS
     KIO
     I18n
     DocTools
-    NewStuff
+    # NewStuff
 )
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
