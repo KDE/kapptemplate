@@ -2,21 +2,36 @@
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!-- Define an entity for your application if it is not part of KDE
        Git -->
-  <!ENTITY %{APPNAMELC} "<application>%{APPNAME}</application>">
-  <!ENTITY %{APPNAMELC} "&%{APPNAMELC};"><!-- replace %{APPNAMELC} here
-                                            do *not* replace kappname-->
-  <!ENTITY package "kde-module"><!-- kdebase, kdeadmin, etc.  Leave
-                                     this unchanged if your
-                                     application is not maintained in KDE source archiv -->
+  <!ENTITY kmyapplication "<application>%{APPNAMELC}</application>">
+  <!ENTITY i18n-translatable-entity "<application>Translatable Entity</application>">
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % English "INCLUDE"> <!-- ONLY If you are writing non-English
-                                     original documentation, change
-                                     the language here -->
+  <!ENTITY % English "INCLUDE">
 
   <!-- Do not define any other entities; instead, use the entities
        from entities/general.entities and en/user.entities. -->
 ]>
-<!-- kdoctemplate v0.10.0 2014-04-02 ltoscano
+
+<!--
+Use this template for application docbooks
+For kioslave, systemsettings (kcontrol) modules and simple/short application docbooks use article-template.docbook
+Rename this template to index.docbook and place into the directory doc/ or doc/appname if you have several applications in one doc directory
+-->
+
+<!-- kdoctemplate v0.13.0 2017-07-31 ltoscano
+     add CC BY-SA 4.0 International and set as default
+
+     kdoctemplate v0.12.0 2016-04-23 lueck
+     add translatable entities
+     remove help.menu.documentation entity
+     and add some examples how to use the common menus Settings and Help
+
+     kdoctemplate v0.11.0 2015-04-03 lueck
+     updated instructions for date + releaseinfo
+     remove ENTITY package - not used anymore
+     add info about KDE Games special chapters
+     Appendix Installation is now optional
+
+     kdoctemplate v0.10.0 2014-04-02 ltoscano
      updated to KF5/kdoctools
      references to KDE reworded
 
@@ -64,13 +79,13 @@ thanks ;-).
 <!-- If you are writing original documentation in a language other -->
 <!-- than English, change the language above ONLY, not here -->
 <!-- Change the value of id to the name of your application -->
-<book id="%{APPNAMELC}" lang="&language;">
+<book id="kmyapplication" lang="&language;">
 
 <!-- This header contains all of the meta-information for the document such
 as Authors, publish date, the abstract, and Keywords -->
 
 <bookinfo>
-<title>The &%{APPNAMELC}; Handbook</title>
+<title>The &kmyapplication; Handbook</title>
 
 <authorgroup>
 <author>
@@ -91,27 +106,36 @@ and use `&George.N.Ugnacious; &George.N.Ugnacious.mail;' in the author element.
 </authorgroup>
 
 <copyright>
-<year>2014</year>
+<year>2015</year>
 <holder>George N. Ugnacious</holder>
 </copyright>
-<legalnotice>&FDLNotice;</legalnotice>
+<legalnotice>&CCBYSA4Notice;</legalnotice>
 
 <!-- Date of the documentation
+Change date/releaseinfo only if
+   docbook is updated and verified to be valid for the current app version
+   or
+   docbook is proofread and verified to be valid for the current app version
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2014-04-03</date>
+<date>2016-04-23</date>
 
-<!--version information of the application and kde this documentation is valid for.
-for example 'xx.yy.zz'
+<!--version information of Frameworks/Plasma/Applications this documentation is valid for.
+Example:
+Frameworks xx.yy for docbooks in frameworks
+Plasma xx.yy for docbooks in plasma workspace
+Applications xx.yy for docbooks released as Applications
+xx.yy (Applications xx.yy) for docbooks with own version released as Applications
+$applicationname xx.yy for applications with independent release schedule (extragear/playground)
 -->
-<releaseinfo>1.01.00</releaseinfo>
+<releaseinfo>Frameworks xx.yy or Plasma xx.yy or Applications xx.yy or xx.yy (Applications xx.yy) or $applicationname xx.yy</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
 <abstract>
 <para>
-&%{APPNAMELC}; is an application specially designed to do nothing you would
+&kmyapplication; is an application specially designed to do nothing you would
 ever want.
 </para>
 </abstract>
@@ -139,6 +163,24 @@ system. Any chapter labelled (OPTIONAL) may be left out at the author's
 discretion. Other chapters should not be left out in order to maintain a
 consistent documentation style across all KDE apps. -->
 
+
+<!-- KDE Games have special chapters
+
+Introduction
+
+How to play
+
+Game Rules, Strategies and Tips
+
+Interface Overview
+
+Frequently asked questions
+
+Credits and License
+
+Please use one of index.docbook files from kdegames
+
+-->
 <chapter id="introduction">
 <title>Introduction</title>
 
@@ -148,13 +190,13 @@ problems. Basically a long version of the abstract.  Don't include a
 revision history. (see installation appendix comment) -->
 
 <para>
-&%{APPNAMELC}; is a program that lets you do absolutely nothing. Please report
+&kmyapplication; is a program that lets you do absolutely nothing. Please report
 any problems or feature requests to the &kde; mailing lists.
 </para>
 </chapter>
 
 <chapter id="using-kapp">
-<title>Using &%{APPNAMELC};</title>
+<title>Using &kmyapplication;</title>
 
 <!-- This chapter should tell the user how to use your app. You should use as
 many sections (Chapter, Sect1, Sect3, etc...) as is necessary to fully document
@@ -166,7 +208,7 @@ your application. -->
 patent issues. -->
 
 <screenshot>
-<screeninfo>Here's a screenshot of &%{APPNAMELC};</screeninfo>
+<screeninfo>Here's a screenshot of &kmyapplication;</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="screenshot.png" format="PNG"/>
@@ -180,7 +222,7 @@ patent issues. -->
 
 
 <sect1 id="kapp-features">
-<title>More &%{APPNAMELC}; features</title>
+<title>More &kmyapplication; features</title>
 
 <para>It slices! It dices! and it comes with a free toaster!</para>
 <para>
@@ -192,7 +234,7 @@ The Squiggle Tool <guiicon><inlinemediaobject>
 	    <phrase>Squiggle</phrase>
 	  </textobject>
 </inlinemediaobject></guiicon> is used to draw squiggly lines all over
-the &%{APPNAMELC}; main window. It's not a bug, it's a feature!
+the &kmyapplication; main window. It's not a bug, it's a feature!
 </para>
 
 </sect1>
@@ -227,7 +269,7 @@ Use variablelist markup for this
 -->
 
 <sect1 id="kapp-mainwindow">
-<title>The main &%{APPNAMELC}; window</title>
+<title>The main &kmyapplication; window</title>
 
 <sect2>
 <title>The File Menu</title>
@@ -248,7 +290,8 @@ which will be expanded to:
 </menuchoice></term>
 <listitem><para><action>Creates a new document</action></para></listitem>
 </varlistentry>
-<varlistentry>
+
+<varlistentry  id="file-save">
 <term><menuchoice>
 <shortcut>
 <keycombo action="simul">&Ctrl;<keycap>S</keycap></keycombo>
@@ -258,7 +301,8 @@ which will be expanded to:
 </menuchoice></term>
 <listitem><para><action>Saves the document</action></para></listitem>
 </varlistentry>
-<varlistentry>
+
+<varlistentry  id="file-quit">
 <term><menuchoice>
 <shortcut>
 <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo>
@@ -266,37 +310,61 @@ which will be expanded to:
 <guimenu>File</guimenu>
 <guimenuitem>Quit</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Quits</action> &%{APPNAMELC};</para></listitem>
+<listitem><para><action>Quits</action> &kmyapplication;</para></listitem>
 </varlistentry>
 </variablelist>
 </para>
 
 </sect2>
 
-<sect2>
+<!-- Examples how to use the common menus Settings and Help -->
+
+<sect2 id="settings-help-menu">
+<title>The Settings and Help Menu</title>
+<para>
+&kmyapplication; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</guimenu>
+menu items, for more information read the sections about the <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Settings Menu</ulink> and <ulink url="help:/fundamentals/ui.html#menus-help">Help Menu</ulink>
+of the &kde; Fundamentals.
+</para>
+</sect2>
+
+<sect2 id="help-menu1">
 <title>The Help Menu</title>
+<para>
+&kmyapplication; has the common &kde; <guimenu>Help</guimenu> menu item, for more information read the section
+about the <ulink url="help:/fundamentals/ui.html#menus-help">Help Menu</ulink> of the &kde; Fundamentals.
+</para>
+</sect2>
 
-<!-- Assuming you have a standard help menu (help, what's this, about -->
-<!-- &%{APPNAMELC};, about KDE) then the documentation is already written. -->
-<!-- The following entity is valid anywhere that a variablelist is -->
-<!-- valid.  -->
+<sect2 id="menu-commands">
+<title>Menu Items</title>
+<para>Apart from the common &kde; menus described in the <ulink url="help:/fundamentals/ui.html#menus">Menu</ulink>
+chapter of the &kde; Fundamentals documentation &kmyapplication; has these application specific menu entries:
+</para>
+<!-- variablelist -->
+</sect2>
 
-&help.menu.documentation;
-
+<sect2 id="help-menu2">
+<title>The Help Menu</title>
+<para>&kmyapplication; has a default &kde; <guimenu>Help</guimenu> menu as described in the
+<ulink url="help:/fundamentals/ui.html#menus-help">&kde; Fundamentals</ulink>
+with two additional entries:</para>
+<!-- variablelist -->
 </sect2>
 
 </sect1>
 </chapter>
 
 <chapter id="developers">
-<title>Developer's Guide to &%{APPNAMELC};</title>
+<title>Developer's Guide to &kmyapplication;</title>
 
 <!-- (OPTIONAL) A Programming/Scripting reference chapter should be
 used for apps that use plugins or that provide their own scripting hooks
 and/or development libraries. -->
 
 <para>
-Programming &%{APPNAMELC}; plugins is a joy to behold.
+Programming &kmyapplication; plugins is a joy to behold.
 </para>
 
 
@@ -315,13 +383,10 @@ This is also a great place to provide pointers to other FAQ's if your users
 must do some complicated configuration on other programs in order for your
 application work. -->
 
-&reporting.bugs;
-&updating.documentation;
-
 <qandaset id="faqlist">
 <qandaentry>
 <question>
-<para>My Mouse doesn't work. How do I quit &%{APPNAMELC};?</para>
+<para>My Mouse doesn't work. How do I quit &kmyapplication;?</para>
 </question>
 <answer>
 <para>You silly goose! Check out the <link linkend="commands">Commands
@@ -350,7 +415,7 @@ distribution. -->
 <title>Credits and License</title>
 
 <para>
-&%{APPNAMELC};
+&kmyapplication;
 </para>
 <para>
 Program copyright 2010-2014 John Q. Hacker <email>jqh@kde.org</email>
@@ -371,12 +436,19 @@ Documentation Copyright &copy; 2012-2014 George N. Ugnacious <email>gnu@kde.org<
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
 
-&underFDL;               <!-- FDL: do not remove -->
+<!-- License for new documents after 2017-07-27 (or relicensed) -->
+
+&underCCBYSA4;           <!-- CC BY-SA 4.0: do not remove -->
+
+<!-- FDL: old license; only for reference (and old documents) -->
+<!--
+&underFDL;
+-->
 
 <!-- Determine which license your application is licensed under,
      and delete all the remaining licenses below:
 
-     (NOTE:  All documentation are licensed under the FDL,
+     (NOTE:  All documentation are licensed under the CC BY-SA 4.0,
      regardless of what license the application uses) -->
 
 &underGPL;        	 <!-- GPL License -->
@@ -386,11 +458,17 @@ Documentation Copyright &copy; 2012-2014 George N. Ugnacious <email>gnu@kde.org<
 
 </chapter>
 
+<!-- Appendix Installation is optional, usually not required
+
+Entities &install.intro.documentation; + &install.compile.documentation; will be removed in later kdoctools
+
+-->
+
 <appendix id="installation">
 <title>Installation</title>
 
 <sect1 id="getting-kapp">
-<title>How to obtain &%{APPNAMELC};</title>
+<title>How to obtain &kmyapplication;</title>
 
 <!-- This first entity contains boiler plate for applications that are
 part of KDE archive.  You should remove it if you are releasing your
@@ -414,16 +492,16 @@ information here.
 -->
 
 <para>
-In order to successfully use &%{APPNAMELC};, you need few libraries from
+In order to successfully use &kmyapplication;, you need few libraries from
 &kf5; 5.1 (bar, baz). Foobar.lib is
-required in order to support the advanced &%{APPNAMELC}; features. &%{APPNAMELC}; uses
+required in order to support the advanced &kmyapplication; features. &kmyapplication; uses
 about 5 megs of memory to run, but this may vary depending on your
 platform and configuration.
 </para>
 
 <para>
-All required libraries as well as &%{APPNAMELC}; itself can be found
-on <ulink url="ftp://ftp.kapp.org">The &%{APPNAMELC}; home page</ulink>.
+All required libraries as well as &kmyapplication; itself can be found
+on <ulink url="ftp://ftp.kapp.org">The &kmyapplication; home page</ulink>.
 </para>
 
 <!-- For a list of updates, you may refer to the application web site
@@ -449,7 +527,7 @@ url="http://apps.kde.org/kapp">http://apps.kde.org/kapp</ulink>.
 <title>Configuration</title>
 
 <para>Don't forget to tell your system to start the <filename>dtd</filename>
-dicer-toaster daemon first, or &%{APPNAMELC}; won't work!</para>
+dicer-toaster daemon first, or &kmyapplication; won't work!</para>
 
 </sect1>
 

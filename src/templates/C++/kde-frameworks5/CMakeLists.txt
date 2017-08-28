@@ -15,7 +15,7 @@ include(FeatureSummary)
 set(QT_MIN_VERSION "5.5.0")
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
-set(REQUIRED_KF5_VERSION "5.18.0")
+set(REQUIRED_KF5_VERSION "5.37.0")
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS
     ConfigWidgets
     CoreAddons
