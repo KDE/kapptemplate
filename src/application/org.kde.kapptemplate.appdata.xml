@@ -86,7 +86,7 @@
     <p xml:lang="et">KAppTemplate on rakendus arendustegevuse kiireks käivitamiseks olemasolevate mallide alusel, mis pakuvad peamist korduvat koodi ja vajalikku struktuuri.</p>
     <p xml:lang="fi">KAppTemplate on sovellus kehityksen nopeaan aloittamiseen käyttämällä valmiita malleja, joissa on jo tehty jatkuvasti toistuvat perusasiat sekä kunnollinen rakenne.</p>
     <p xml:lang="fr">KAppTemplate est une application permettant de commencer rapidement de nouveaux développements en utilisant des modèles existants fournissant une structure appropriée et le code répétitif de base.</p>
-    <p xml:lang="gl">KAppTemplate é un aplicativo para comezar a desenvolver rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
+    <p xml:lang="gl">KAppTemplate é un aplicativo para comezar calquera desenvolvemento rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
     <p xml:lang="ko">KAppTemplate은 반복적으로 작성되는 코드와 구조를 기반으로 한 템플릿을 제공하여 프로그램 개발을 빠르게 시작하도록 도와 줍니다.</p>
     <p xml:lang="nl">KAppTemplate is een toepassing om ontwikkelen snel te laten starten met bestaande sjablonen die basis herhaald geschreven code en een juiste structuur leveren.</p>
@@ -243,7 +243,7 @@
       <li xml:lang="et">Spetsiaalselt KDE arendamiseks mõeldud mallid (Plasma, KOffice'i, KTextEditori, KRunneri, Akonadi pluginad)</li>
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, KOffice-, KTextEditor-, KRunner ja Akonadi-liitännäiset)</li>
       <li xml:lang="fr">Modèles dédiés au développement KDE (modules externes pour Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
-      <li xml:lang="gl">Modelos para os desenvolvedores de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, e Akonadi).</li>
+      <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, KOffice, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
