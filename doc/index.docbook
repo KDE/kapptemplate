@@ -28,8 +28,8 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 
-<date>2016-06-06</date>
-<releaseinfo>0.1 (Applications 16.08)</releaseinfo>
+<date>2017-11-01</date>
+<releaseinfo>0.1 (Applications 17.12)</releaseinfo>
 
 <abstract>
 <para>
@@ -51,7 +51,7 @@
 repeatedly written code and a proper structure.</para>
 
 <para>
-&kapptemplate; picks up templates which are installed on your machine. Those are often part of the development files for libraries or can be downloaded e.g. from the website store.kde.org.
+&kapptemplate; picks up templates which are installed on your machine. Those are often part of the development files for libraries or can be downloaded &eg; from the website <ulink url="https://store.kde.org">store.kde.org</ulink>.
 </para>
 
 <para>Answer the wizard questions on each page and generate your template.</para>
