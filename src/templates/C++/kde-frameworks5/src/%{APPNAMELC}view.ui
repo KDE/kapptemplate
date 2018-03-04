@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>%{APPNAMELC}ViewBase</class>
- <widget class="QWidget" name="%{APPNAMELC}ViewBase">
+ <class>%{APPNAME}View</class>
+ <widget class="QWidget" name="%{APPNAME}View">
   <property name="geometry">
    <rect>
     <x>0</x>

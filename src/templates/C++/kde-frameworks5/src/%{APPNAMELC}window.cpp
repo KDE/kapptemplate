@@ -72,7 +72,7 @@ void %{APPNAME}Window::settingsConfigure()
 
     KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), %{APPNAME}Settings::self());
     QWidget *generalSettingsPage = new QWidget;
-    settingsBase.setupUi(generalSettingsPage);
+    m_settings.setupUi(generalSettingsPage);
     dialog->addPage(generalSettingsPage, i18n("General"), QStringLiteral("package_setting"));
     connect(dialog, &KConfigDialog::settingsChanged, m_%{APPNAMELC}View, &%{APPNAME}View::handleSettingsChanged);
     dialog->setAttribute(Qt::WA_DeleteOnClose);

@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef %{APPNAMEUC}VIEW_H
 #define %{APPNAMEUC}VIEW_H
 
-#include "ui_%{APPNAMELC}ViewBase.h"
+#include "ui_%{APPNAMELC}view.h"
 
 
 /**
@@ -53,7 +53,7 @@ public Q_SLOTS:
 private:
     // this is the name of the root widget inside our Ui file
     // you can rename it in designer and then change it here
-    Ui::%{APPNAMELC}ViewBase m_ui;
+    Ui::%{APPNAME}View m_ui;
 };
 
 #endif // %{APPNAMEUC}VIEW_H

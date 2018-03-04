@@ -11,8 +11,8 @@ ecm_qt_declare_logging_category(%{APPNAMELC}_SRCS
 )
 kconfig_add_kcfg_files(%{APPNAMELC}_SRCS %{APPNAME}Settings.kcfgc)
 ki18n_wrap_ui(%{APPNAMELC}_SRCS
-    %{APPNAMELC}ViewBase.ui
-    settingsBase.ui
+    %{APPNAMELC}view.ui
+    settings.ui
 )
 
 add_executable(%{APPNAMELC} ${%{APPNAMELC}_SRCS})

@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <KXmlGuiWindow>
 
-#include "ui_%{APPNAMELC}ViewBase.h"
-#include "ui_settingsBase.h"
+#include "ui_%{APPNAMELC}view.h"
+#include "ui_settings.h"
 #include "%{APPNAME}Settings.h"
 
 class %{APPNAME}View;
@@ -65,8 +65,7 @@ private Q_SLOTS:
 private:
     // this is the name of the root widget inside our Ui file
     // you can rename it in designer and then change it here
-    Ui::settingsBase settingsBase;
-    Ui::%{APPNAMELC}ViewBase %{APPNAMELC}ViewBase;
+    Ui::Settings m_settings;
     QAction *m_switchAction;
     %{APPNAME}View *m_%{APPNAMELC}View;
 };
