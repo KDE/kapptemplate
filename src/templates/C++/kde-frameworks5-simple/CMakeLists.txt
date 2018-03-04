@@ -24,4 +24,7 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
 add_subdirectory(src)
 add_subdirectory(icons)
 
+# Make it possible to use the po files fetched by the fetch-translations step
+ki18n_install(po)
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
