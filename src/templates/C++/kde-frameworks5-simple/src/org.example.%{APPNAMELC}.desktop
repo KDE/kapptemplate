@@ -3,5 +3,4 @@ Name=%{APPNAME}
 Exec=%{APPNAMELC}
 Icon=%{APPNAMELC}
 Type=Application
-X-DocPath=%{APPNAMELC}/index.html
 GenericName=A Simple KDE Application
