@@ -3,7 +3,7 @@
   <id>org.example.%{APPNAMELC}.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license </project_license>
-  <name>%{APPNAMELC}</name>
+  <name>%{APPNAME}</name>
   <summary> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary </summary>
   <description>
     <p> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description </p>

@@ -43,7 +43,7 @@ int main(int argc, char **argv)
     KCrash::initialize();
 
     KAboutData aboutData( QStringLiteral("%{APPNAMELC}"),
-                          i18n("Simple App"),
+                          i18n("%{APPNAME}"),
                           QStringLiteral("%{VERSION}"),
                           i18n("A Simple Application written with KDE Frameworks"),
                           KAboutLicense::GPL,
@@ -57,8 +57,6 @@ int main(int argc, char **argv)
     application.setWindowIcon(QIcon::fromTheme(QStringLiteral("%{APPNAMELC}")));
 
     QCommandLineParser parser;
-    parser.addHelpOption();
-    parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
 
     parser.process(application);

@@ -23,7 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <KXmlGuiWindow>
 
-#include "ui_%{APPNAMELC}view.h"
 #include "ui_settings.h"
 #include "%{APPNAME}Settings.h"
 
