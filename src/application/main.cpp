@@ -48,8 +48,7 @@ int main(int argc, char **argv)
     KAppTemplate appTemplate(0);
     QCommandLineParser parser;
     about.setupCommandLine(&parser);
-    parser.addVersionOption();
-    parser.addHelpOption();
+
     parser.process(application);
     about.processCommandLine(&parser);
 

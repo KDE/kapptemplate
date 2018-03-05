@@ -50,8 +50,6 @@ int main(int argc, char **argv)
     application.setWindowIcon(QIcon::fromTheme(QStringLiteral("%{APPNAMELC}")));
 
     QCommandLineParser parser;
-    parser.addHelpOption();
-    parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
 
     parser.process(application);
