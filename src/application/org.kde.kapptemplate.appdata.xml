@@ -264,7 +264,7 @@
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如Plasma, KOffice, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
-      <li xml:lang="ca-valencia">És fàcil crear plantilles noves usant espais variables i una orde CMake senzilla</li>
+      <li xml:lang="ca-valencia">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="de">Neue Vorlagen können leicht mit Platzhaltern und einfachen CMake-Befehlen erstellt werden</li>
       <li xml:lang="el">Είναι εύκολο να δημιουργήσετε νέα πρότυπα χρησιμοποιώντας space holders και μία απλή CMake-εντολή</li>
       <li xml:lang="en-GB">It is easy to create new templates using space holders and a simple CMake-command</li>
