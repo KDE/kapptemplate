@@ -22,6 +22,7 @@
   <name xml:lang="ko">KAppTemplate</name>
   <name xml:lang="lt">KAppTemplate</name>
   <name xml:lang="nl">KAppTemplate</name>
+  <name xml:lang="nn">KAppTemplate</name>
   <name xml:lang="pl">KAppTemplate</name>
   <name xml:lang="pt">KAppTemplate</name>
   <name xml:lang="pt-BR">KAppTemplate</name>
@@ -56,6 +57,7 @@
   <summary xml:lang="ko">KDE 템플릿 생성기</summary>
   <summary xml:lang="lt">KDE šablonų generatorius</summary>
   <summary xml:lang="nl">KDE sjabloongeneratie</summary>
+  <summary xml:lang="nn">KDE-malgenerator</summary>
   <summary xml:lang="pl">Generator szablonów dla KDE</summary>
   <summary xml:lang="pt">Gerador de Modelos do KDE</summary>
   <summary xml:lang="pt-BR">Gerador de modelos do KDE</summary>
@@ -90,6 +92,7 @@
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
     <p xml:lang="ko">KAppTemplate은 반복적으로 작성되는 코드와 구조를 기반으로 한 템플릿을 제공하여 프로그램 개발을 빠르게 시작하도록 도와 줍니다.</p>
     <p xml:lang="nl">KAppTemplate is een toepassing om ontwikkelen snel te laten starten met bestaande sjablonen die basis herhaald geschreven code en een juiste structuur leveren.</p>
+    <p xml:lang="nn">KAppTemplate er eit program som hjelper deg å raskt komma i gang med utvikling, basert på malar med hyppig brukt kode og ein skikkeleg struktur.</p>
     <p xml:lang="pl">KAppTemplate jest programem do szybkiego rozpoczynania programowania przy użyciu istniejących szablonów, który zapewnia podstawowy, często pisany kod i właściwą strukturę.</p>
     <p xml:lang="pt">O KAppTemplate é uma aplicação para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem algum do código escrito repetitivo e uma estrutura adequada.</p>
     <p xml:lang="pt-BR">KAppTemplate é um aplicativo para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem código escrito de forma repetitiva e uma estrutura adequada.</p>
@@ -124,6 +127,7 @@
     <p xml:lang="ko">기능:</p>
     <p xml:lang="lt">Ypatybės:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
+    <p xml:lang="nn">Funksjonar:</p>
     <p xml:lang="pl">Możliwości:</p>
     <p xml:lang="pt">Funcionalidades:</p>
     <p xml:lang="pt-BR">Funcionalidades:</p>
@@ -156,6 +160,7 @@
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
       <li xml:lang="ko">C++, Ruby, 파이썬, PHP 템플릿</li>
       <li xml:lang="nl">Sjablonen voor C++, Ruby, Python en PHP</li>
+      <li xml:lang="nn">Malar for C++, Ruby, Python og PHP</li>
       <li xml:lang="pl">Szablony dla C++, Ruby, Python oraz PHP</li>
       <li xml:lang="pt">Modelos para o C++, Ruby, Python e PHP</li>
       <li xml:lang="pt-BR">Modelos para C++, Ruby, Python e PHP</li>
@@ -190,6 +195,7 @@
       <li xml:lang="ko">분류</li>
       <li xml:lang="lt">Kategorijos</li>
       <li xml:lang="nl">Categorieën</li>
+      <li xml:lang="nn">Kategoriar</li>
       <li xml:lang="pl">Kategorie</li>
       <li xml:lang="pt">Categorias</li>
       <li xml:lang="pt-BR">Categorias</li>
@@ -220,6 +226,7 @@
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
       <li xml:lang="ko">다양한 빌드 시스템과 프레임워크 템플릿</li>
       <li xml:lang="nl">Sjablonen voor verschillende bouwsystemen en frameworks</li>
+      <li xml:lang="nn">Malar for forskjellige byggjesystem og rammeverk</li>
       <li xml:lang="pl">Szablony dla różnych systemów budowania i szkieletów</li>
       <li xml:lang="pt">Modelos para diferentes sistemas de compilação e plataformas</li>
       <li xml:lang="pt-BR">Modelos para diferentes sistemas de compilação e plataformas</li>
@@ -250,6 +257,7 @@
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, KOffice, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="nn">Malar laga for KDE-utvikling (programtillegg for Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pl">Szablony szczególnie dla programowania dla KDE (wtyczki dla Plazmy, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
@@ -280,6 +288,7 @@
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
       <li xml:lang="ko">자리 비움자와 CMake 명령을 통한 새 템플릿 생성</li>
       <li xml:lang="nl">Het is gemakkelijk om nieuwe sjablonen te genereren met variabelen voor ruimten en een eenvoudig CMake-commando</li>
+      <li xml:lang="nn">Det er lett å laga nye malar med plasshaldarar og ein enkel CMake-kommando</li>
       <li xml:lang="pl">Tworzenie nowych szablonów jest łatwe poprzez używanie pól wieloznacznych i prostych poleceń CMake</li>
       <li xml:lang="pt">É fácil de criar modelos novos com blocos de substituição e um comando simples de CMake</li>
       <li xml:lang="pt-BR">É fácil criar modelos novos usando blocos de substituição e um comando simples de CMake</li>
@@ -311,6 +320,7 @@
       <li xml:lang="it">Integrato con KDevelop</li>
       <li xml:lang="ko">KDevelop 통합</li>
       <li xml:lang="nl">Geïntegreerd in KDevelop</li>
+      <li xml:lang="nn">Integrert i KDevelop</li>
       <li xml:lang="pl">Integracja z KDevelop</li>
       <li xml:lang="pt">Integrado no KDevelop</li>
       <li xml:lang="pt-BR">Integrado ao KDevelop</li>
