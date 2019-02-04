@@ -1,6 +1,9 @@
 [Desktop Entry]
-Name=%{APPNAME}
-Exec=%{APPNAMELC}
-Icon=%{APPNAMELC}
 Type=Application
+
+Name=%{APPNAME}
 GenericName=A Simple KDE Application
+Icon=%{APPNAMELC}
+
+Exec=%{APPNAMELC}
+StartupWMClass=%{APPNAMELC}
