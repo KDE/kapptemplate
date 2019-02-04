@@ -2,6 +2,7 @@
 [Desktop Entry]
 Type=Application
 Exec=kapptemplate
+StartupWMClass=kapptemplate
 Icon=kapptemplate
 X-DocPath=kapptemplate/index.html
 GenericName=KDE Template Generator

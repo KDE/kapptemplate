@@ -1,7 +1,10 @@
 [Desktop Entry]
-Name=%{APPNAME}
-Exec=%{APPNAMELC}
-Icon=%{APPNAMELC}
 Type=Application
-X-DocPath=%{APPNAMELC}/index.html
+
+Name=%{APPNAME}
 GenericName=A Simple Application written with KDE Frameworks
+Icon=%{APPNAMELC}
+
+Exec=%{APPNAMELC}
+StartupWMClass=%{APPNAMELC}
+X-DocPath=%{APPNAMELC}/index.html
