@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.0)
 
 project(kapptemplate)
 
-find_package(ECM 5.17.0 NO_MODULE REQUIRED)
+set(QT_MIN_VERSION "5.9.0")
+set(KF_MIN_VERSION "5.53.0")
+
+find_package(ECM ${KF_MIN_VERSION} NO_MODULE REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 
 include(KDEInstallDirs)
@@ -13,8 +16,8 @@ include(ECMAddTests)
 include(KDEPackageAppTemplates)
 include(FeatureSummary)
 
-find_package(Qt5 REQUIRED COMPONENTS Test)
-find_package(KF5 REQUIRED COMPONENTS
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
+find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     ConfigWidgets
     Completion
