@@ -70,7 +70,7 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     //float version = Prefs::appVersion().toFloat();
     ui_properties.kcfg_appVersion->setText(Prefs::appVersion());//TODO appVersion+0.1 if already exists
     ui_properties.kcfg_url->setMode(KFile::Directory);
-    ui_properties.kcfg_url->setUrl(Prefs::url());
+    ui_properties.kcfg_url->setUrl(QUrl(Prefs::url()));
     ui_properties.kcfg_name->setText(Prefs::name());
     ui_properties.kcfg_email->setText(Prefs::email());
 
