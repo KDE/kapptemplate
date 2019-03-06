@@ -47,7 +47,7 @@ GeneratePage::GeneratePage(QWidget *parent)
 bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList& skipList)
 {
     qCDebug(KAPPTEMPLATE) << "unpacking dir:" << dir->name() << "to" << dest;
-    QStringList entries = dir->entries();
+    const QStringList entries = dir->entries();
     qCDebug(KAPPTEMPLATE) << "entries:" << entries.join(",");
 
     QTemporaryDir tdir;
@@ -63,7 +63,7 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
     int progress = 0;
 
     bool failed = false;
-    foreach (const QString &entry, entries) {
+    for (const QString &entry : entries) {
         progress++;
         ui_generate.progressBar->setValue((progress / entries.size()) * 100);
 
@@ -138,8 +138,9 @@ void GeneratePage::initializePage()
 
     QString archName;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    foreach (const QString &templatePath, templatePaths) {
-        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+    for (const QString &templatePath : templatePaths) {
+        const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
+        for (const QString &templateArchive : templateArchives) {
             const QString baseName = QFileInfo(templateArchive).baseName();
             if (templateName.compare(baseName) == 0) {
                 archName = templatePath + templateArchive;

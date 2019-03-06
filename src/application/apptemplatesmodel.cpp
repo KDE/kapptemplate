@@ -43,8 +43,9 @@ void extractTemplateDescriptions()
 {
     QStringList templateArchives;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    foreach (const QString &templatePath, templatePaths) {
-        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+    for (const QString &templatePath : qAsConst(templatePaths)) {
+        const auto templateFiles = QDir(templatePath).entryList(QDir::Files);
+        for (const QString &templateArchive : templateFiles) {
             templateArchives.append(templatePath + templateArchive);
         }
     }
@@ -55,7 +56,7 @@ void extractTemplateDescriptions()
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
 
-    foreach (const QString &archName, templateArchives) {
+    for (const QString &archName : qAsConst(templateArchives)) {
         qCDebug(KAPPTEMPLATE) << "processing template" << archName;
 #ifdef Q_WS_WIN
         KZip templateArchive(archName);
@@ -111,11 +112,12 @@ void AppTemplatesModel::refresh()
 
     QStringList templateArchives;
     const QString localDescriptionsDir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/template_descriptions/";
-    foreach (const QString &templateFile, QDir(localDescriptionsDir).entryList(QDir::Files)) {
+    const auto templateFiles = QDir(localDescriptionsDir).entryList(QDir::Files);
+    for (const QString &templateFile : templateFiles) {
         templateArchives.append(localDescriptionsDir + templateFile);
     }
 
-    foreach (const QString &templateArchive, templateArchives) {
+    for (const QString &templateArchive : qAsConst(templateArchives)) {
         QFileInfo archiveInfo(templateArchive);
         QString baseName = archiveInfo.baseName();
         KConfig templateConfig(templateArchive);
@@ -134,11 +136,11 @@ void AppTemplatesModel::refresh()
 
 AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QString &category)
 {
-    QStringList path = category.split("/");
+    const QStringList path = category.split(QLatin1Char('/'));
 
     QStandardItem *parent = invisibleRootItem();
     QStringList currentPath;
-    foreach (const QString &entry, path) {
+    for (const QString &entry : path) {
         currentPath << entry;
         qCDebug(KAPPTEMPLATE) << "current path " << currentPath;
         if (!m_templateItems.contains(currentPath.join("/"))) {

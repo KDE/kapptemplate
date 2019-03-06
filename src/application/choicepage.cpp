@@ -92,8 +92,9 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
     // find archive
     QString archivePath;
     const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    foreach (const QString &templatePath, templatePaths) {
-        foreach (const QString &templateArchive, QDir(templatePath).entryList(QDir::Files)) {
+    for (const QString &templatePath : templatePaths) {
+        const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
+        for (const QString &templateArchive : templateArchives) {
             const QString baseName = QFileInfo(templateArchive).baseName();
             if (archiveBaseName.compare(baseName) == 0) {
                 archivePath = templatePath + templateArchive;
@@ -206,7 +207,7 @@ void ChoicePage::loadFromFile()
         dir.mkpath(QStringLiteral("."));
     }
 
-    foreach (const QString& fileName, selectedFiles) {
+    for (const QString& fileName : selectedFiles) {
         qCDebug(KAPPTEMPLATE) << "Copying" << fileName << "to" << saveLocation;
         QFileInfo info(fileName);
         QFile::copy(fileName, saveLocation + info.fileName());
