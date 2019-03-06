@@ -16,7 +16,10 @@ include(ECMAddTests)
 include(KDEPackageAppTemplates)
 include(FeatureSummary)
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
+if (BUILD_TESTING)
+    find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
+endif()
+
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     ConfigWidgets
@@ -33,6 +36,9 @@ add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 add_subdirectory(doc)
 add_subdirectory(icons)
 add_subdirectory(src)
-add_subdirectory(tests)
+
+if (BUILD_TESTING)
+    add_subdirectory(tests)
+endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
