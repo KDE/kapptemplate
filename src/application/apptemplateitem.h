@@ -27,7 +27,7 @@ class AppTemplateItem: public QStandardItem
 {
 public:
     AppTemplateItem();
-    AppTemplateItem(const QString &text);
+    explicit AppTemplateItem(const QString &text);
     AppTemplateItem(const QIcon &icon, const QString &text);
     explicit AppTemplateItem(int rows, int columns = 1);
 

@@ -61,7 +61,7 @@ class IntroPage : public QWizardPage
     Q_OBJECT
 
 public:
-    IntroPage(QWidget *parent = nullptr);
+    explicit IntroPage(QWidget *parent = nullptr);
 
 private:
     Ui::introduction ui_introduction;
@@ -72,7 +72,7 @@ class PropertiesPage : public QWizardPage
     Q_OBJECT
 
 public:
-    PropertiesPage(QWidget *parent = nullptr);
+    explicit PropertiesPage(QWidget *parent = nullptr);
 
 private:
     Ui::properties ui_properties;

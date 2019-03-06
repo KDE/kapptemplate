@@ -43,7 +43,7 @@ public:
         BaseNameRole = Qt::UserRole + 3
     };
 
-    AppTemplatesModel(ChoicePage *parent);
+    explicit AppTemplatesModel(ChoicePage *parent);
     // Refresh the model data
     void refresh();
     // Display the header

@@ -35,7 +35,8 @@ class ChoicePage : public QWizardPage
     Q_PROPERTY(QString templateName READ templateName NOTIFY templateNameChanged)
 
 public:
-    ChoicePage( QWidget *parent = nullptr);
+    explicit ChoicePage( QWidget *parent = nullptr);
+
     AppTemplatesModel *templatesModel;
     QString m_baseName;
     bool isComplete () const override;
