@@ -48,7 +48,7 @@ public:
      */
     ~KAppTemplate() override;
 
-private slots:
+private Q_SLOTS:
     /**
      * Display KAppTemplate handbook when Help button is clicked
      */
@@ -78,7 +78,7 @@ private:
     Ui::properties ui_properties;
     QString appNameString;
 
-private slots:
+private Q_SLOTS:
     /**
     * Saves all changed fields values in config file
     */

@@ -47,7 +47,7 @@ Q_SIGNALS:
 private:
     Ui::choice ui_choice;
 
-private slots:
+private Q_SLOTS:
     /**
     * Saves project name in config file
     */
@@ -58,7 +58,7 @@ private slots:
     void getMoreTemplates();
 #endif
 
-protected slots:
+protected Q_SLOTS:
     void itemSelected(const QModelIndex &index);
 };
 
