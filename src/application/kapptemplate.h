@@ -46,7 +46,7 @@ public:
     /**
      * Default Destructor
      */
-    virtual ~KAppTemplate();
+    ~KAppTemplate() override;
 
 private slots:
     /**
@@ -84,7 +84,7 @@ private slots:
     */
     void saveConfig();
 
-    void initializePage();
+    void initializePage() override;
 };
 
 #endif // KAPPTEMPLATE_H

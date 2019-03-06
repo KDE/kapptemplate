@@ -47,7 +47,7 @@ public:
     // Refresh the model data
     void refresh();
     // Display the header
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const;
+    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 
 private:
     // Based on QStandardItem, create a model item

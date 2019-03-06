@@ -45,7 +45,7 @@ private:
     bool unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList& skipList = QStringList());
     bool extractFileMacros(const QString &entry);
 
-    void initializePage();
+    void initializePage() override;
     void displayError(const QString &error);
 
     QString templateName;

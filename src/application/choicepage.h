@@ -38,7 +38,7 @@ public:
     ChoicePage( QWidget *parent = nullptr);
     AppTemplatesModel *templatesModel;
     QString m_baseName;
-    bool isComplete () const;
+    bool isComplete () const override;
     QString templateName() const { return m_baseName; }
 
 Q_SIGNALS:
