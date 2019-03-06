@@ -41,7 +41,7 @@ public:
     /**
      * Default Constructor
      */
-    KAppTemplate(QWidget *parent);
+    explicit KAppTemplate(QWidget *parent = nullptr);
 
     /**
      * Default Destructor
@@ -61,7 +61,7 @@ class IntroPage : public QWizardPage
     Q_OBJECT
 
 public:
-    IntroPage(QWidget *parent = 0);
+    IntroPage(QWidget *parent = nullptr);
 
 private:
     Ui::introduction ui_introduction;
@@ -72,7 +72,7 @@ class PropertiesPage : public QWizardPage
     Q_OBJECT
 
 public:
-    PropertiesPage(QWidget *parent = 0);
+    PropertiesPage(QWidget *parent = nullptr);
 
 private:
     Ui::properties ui_properties;

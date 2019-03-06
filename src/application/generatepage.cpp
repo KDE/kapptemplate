@@ -177,7 +177,7 @@ void GeneratePage::initializePage()
     m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
 
 
-    KArchive* arch = 0;
+    KArchive* arch = nullptr;
     if (archName.endsWith(".zip")) {
         arch = new KZip(archName);
     } else {
@@ -242,7 +242,7 @@ void GeneratePage::initializePage()
 
 void GeneratePage::displayError(const QString &error)
 {
-    KMessageBox::sorry(0, error, i18n("Error"));
+    KMessageBox::sorry(nullptr, error, i18n("Error"));
     feedback.append("\n\n" + error);
     ui_generate.label->setText(feedback);
 }

@@ -37,7 +37,7 @@ class GeneratePage : public QWizardPage
     Q_OBJECT
 
 public:
-    GeneratePage(QWidget *parent = 0);
+    GeneratePage(QWidget *parent = nullptr);
 
 private:
     Ui::generate ui_generate;
