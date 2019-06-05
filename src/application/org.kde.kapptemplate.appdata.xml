@@ -40,7 +40,7 @@
   <name xml:lang="x-test">xxKAppTemplatexx</name>
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
-  <summary>KDE Template Generator</summary>
+  <summary>App Code Template Generator</summary>
   <summary xml:lang="bs">KDE generator predložaka</summary>
   <summary xml:lang="ca">Generador de plantilles del KDE</summary>
   <summary xml:lang="ca-valencia">Generador de plantilles del KDE</summary>
