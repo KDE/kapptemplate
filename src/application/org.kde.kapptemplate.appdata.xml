@@ -41,42 +41,6 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
-  <summary xml:lang="bs">KDE generator predložaka</summary>
-  <summary xml:lang="ca">Generador de plantilles del KDE</summary>
-  <summary xml:lang="ca-valencia">Generador de plantilles del KDE</summary>
-  <summary xml:lang="cs">Generátor šablon pro KDE</summary>
-  <summary xml:lang="da">KDE skabelongenerator</summary>
-  <summary xml:lang="de">KDE-Vorlagengenerator</summary>
-  <summary xml:lang="el">Γεννήτρια προτύπων του KDE</summary>
-  <summary xml:lang="en-GB">KDE Template Generator</summary>
-  <summary xml:lang="es">Generador de plantillas para KDE</summary>
-  <summary xml:lang="et">KDE malligeneraator</summary>
-  <summary xml:lang="eu">KDE txantiloi sortzailea</summary>
-  <summary xml:lang="fi">KDE:n mallintuottamisohjelma</summary>
-  <summary xml:lang="fr">Générateur de modèles pour KDE</summary>
-  <summary xml:lang="gl">Xerador de modelos de KDE</summary>
-  <summary xml:lang="id">Penghasil Template KDE</summary>
-  <summary xml:lang="it">Generatore di modelli di KDE</summary>
-  <summary xml:lang="ko">KDE 템플릿 생성기</summary>
-  <summary xml:lang="lt">KDE šablonų generatorius</summary>
-  <summary xml:lang="nl">KDE sjabloongeneratie</summary>
-  <summary xml:lang="nn">KDE-malgenerator</summary>
-  <summary xml:lang="pl">Generator szablonów dla KDE</summary>
-  <summary xml:lang="pt">Gerador de Modelos do KDE</summary>
-  <summary xml:lang="pt-BR">Gerador de modelos do KDE</summary>
-  <summary xml:lang="ru">Генератор шаблонов приложений от KDE</summary>
-  <summary xml:lang="sk">Generátor šablón KDE</summary>
-  <summary xml:lang="sl">Ustvarjalnik predlog KDE</summary>
-  <summary xml:lang="sr">КДЕ генератор шаблона</summary>
-  <summary xml:lang="sr-Latn">KDE generator šablona</summary>
-  <summary xml:lang="sr-ijekavian">КДЕ генератор шаблона</summary>
-  <summary xml:lang="sr-ijekavianlatin">KDE generator šablona</summary>
-  <summary xml:lang="sv">KDE-mallgenerator</summary>
-  <summary xml:lang="tr">KDE Şablon Oluşturucu</summary>
-  <summary xml:lang="uk">Генератор шаблонів для KDE</summary>
-  <summary xml:lang="x-test">xxKDE Template Generatorxx</summary>
-  <summary xml:lang="zh-CN">KDE 模板生成器</summary>
-  <summary xml:lang="zh-TW">KDE 樣本產生器</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
