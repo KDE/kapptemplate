@@ -41,6 +41,13 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
+  <summary xml:lang="ca">Generador de plantilles de codi d'aplicació</summary>
+  <summary xml:lang="es">Generador de plantillas de código de aplicaciones</summary>
+  <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
+  <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
+  <summary xml:lang="sv">Generering av programkodsmallar</summary>
+  <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
+  <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
