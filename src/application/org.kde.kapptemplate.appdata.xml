@@ -268,7 +268,7 @@
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, KOffice-, KTextEditor-, KRunner ja Akonadi-liitännäiset)</li>
       <li xml:lang="fr">Modèles dédiés au développement KDE (modules externes pour Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, KOffice, KTextEditor, KRunner, e Akonadi).</li>
-      <li xml:lang="id">Template khususnya untuk KDE pengembangan (plugins untuk Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, KOffice, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, KOffice, KTextEditor, KRunner, Akonadi)</li>
@@ -301,7 +301,7 @@
       <li xml:lang="fi">Uusia malleja voi luoda helposti käyttämällä paikanvarauksia ja yksinkertaisia CMake-komentoja.</li>
       <li xml:lang="fr">Vous pouvez facilement créer de nouveaux modèles en utilisant des caractères spéciaux et une simple commande CMake</li>
       <li xml:lang="gl">É doado crear novos modelos usando marcas e ordes sinxelas de CMake.</li>
-      <li xml:lang="id">Ini mudah untuk menciptakan template baru menggunakan space holders dan CMake-command yang sederhana</li>
+      <li xml:lang="id">Ini mudah untuk menciptakan template baru menggunakan space holders dan perintah CMake yang sederhana</li>
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
       <li xml:lang="ko">자리 비움자와 CMake 명령을 통한 새 템플릿 생성</li>
       <li xml:lang="nl">Het is gemakkelijk om nieuwe sjablonen te genereren met variabelen voor ruimten en een eenvoudig CMake-commando</li>
