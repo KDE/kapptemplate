@@ -42,8 +42,10 @@
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
   <summary xml:lang="ca">Generador de plantilles de codi d'aplicació</summary>
+  <summary xml:lang="ca-valencia">Generador de plantilles de codi d'aplicació</summary>
   <summary xml:lang="es">Generador de plantillas de código de aplicaciones</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
+  <summary xml:lang="ko">앱 코드 템플릿 생성기</summary>
   <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
