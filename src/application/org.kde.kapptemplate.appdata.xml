@@ -41,6 +41,12 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
+  <summary xml:lang="ca">Generador de plantilles de codi d'aplicació</summary>
+  <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
+  <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
+  <summary xml:lang="sv">Mallgenerator av programkod</summary>
+  <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
+  <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
   <description>
     <p>
       KAppTemplate is an application to start development quickly using existing templates providing basic
@@ -221,6 +227,12 @@
       <li xml:lang="zh-CN">不同构建系统和框架的模板</li>
       <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ca">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
+      <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)xx</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="ca-valencia">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
