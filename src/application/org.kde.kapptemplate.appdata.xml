@@ -47,8 +47,10 @@
   <summary xml:lang="es">Generador de plantillas de código de aplicaciones</summary>
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
+  <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
   <summary xml:lang="ko">앱 코드 템플릿 생성기</summary>
   <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
+  <summary xml:lang="pl">Twórca szablonów kodu aplikacji</summary>
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
@@ -242,8 +244,10 @@
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, QtQuick, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="pl">Szablony szczególnie dla programowania dla KDE (wtyczki dla Plazmy, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
