@@ -50,6 +50,7 @@
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
   <summary xml:lang="ko">앱 코드 템플릿 생성기</summary>
   <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
+  <summary xml:lang="nn">Malgenerator for programkode</summary>
   <summary xml:lang="pl">Twórca szablonów kodu aplikacji</summary>
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
@@ -248,6 +249,7 @@
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ko">KDE 개발을 위한 템플릿(Plasma, QtQuick, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="nn">Malar laga for KDE-utvikling (programtillegg for Plasma, Qt Quick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pl">Szablony szczególnie dla programowania dla KDE (wtyczki dla Plazmy, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
