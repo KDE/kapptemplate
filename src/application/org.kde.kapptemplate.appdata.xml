@@ -46,6 +46,7 @@
   <summary xml:lang="de">Vorlagengenerator für Programmcode</summary>
   <summary xml:lang="en-GB">App Code Template Generator</summary>
   <summary xml:lang="es">Generador de plantillas de código de aplicaciones</summary>
+  <summary xml:lang="fr">Générateur de modèles de code d'application</summary>
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
@@ -245,6 +246,7 @@
       <li xml:lang="de">Spezielle Vorlagen für KDE-Entwicklung (Module für Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="en-GB">Templates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="es">Plantillas especiales para el desarrollo de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="fr">Modèles dédiés au développement KDE (modules externes pour Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
