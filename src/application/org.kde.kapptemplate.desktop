@@ -25,6 +25,7 @@ GenericName[ru]=Генератор шаблонов приложений
 GenericName[sv]=Generering av programkodsmallar
 GenericName[uk]=Створення шаблонів коду програм
 GenericName[x-test]=xxApp Code Template Generatorxx
+GenericName[zh_CN]=应用代码模板生成器
 GenericName[zh_TW]=App 程式碼範本產生器
 Terminal=false
 Name=KAppTemplate
