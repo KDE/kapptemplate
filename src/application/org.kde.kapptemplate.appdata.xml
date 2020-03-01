@@ -334,10 +334,10 @@
     </ul>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kapptemplate</url>
-  <url type="help">http://docs.kde.org/development/en/kdesdk/kapptemplate/index.html</url>
+  <url type="help">https://docs.kde.org/?application=kapptemplate</url>
   <screenshots>
     <screenshot type="default">
-      <image>http://cdn.kde.org/screenshots/kapptemplate/kapptemplate.png</image>
+      <image>https://cdn.kde.org/screenshots/kapptemplate/kapptemplate.png</image>
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
