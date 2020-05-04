@@ -23,7 +23,7 @@
 
     KActionCollection* actionCollection = this->actionCollection();
     m_switchAction = actionCollection->addAction(QStringLiteral("switch_action"));
-    m_switchAction->setText(i18n("Switch Colors"));
+    m_switchAction->setText(i18nc("@action", "Switch Colors"));
     m_switchAction->setIcon(QIcon::fromTheme(QStringLiteral("fill-color")));
     connect(m_switchAction, &QAction::triggered, m_%{APPNAMELC}View, &%{APPNAME}View::switchColors);
 
@@ -59,7 +59,7 @@ void %{APPNAME}Window::settingsConfigure()
     KConfigDialog *dialog = new KConfigDialog(this, QStringLiteral("settings"), %{APPNAME}Settings::self());
     QWidget *generalSettingsPage = new QWidget;
     m_settings.setupUi(generalSettingsPage);
-    dialog->addPage(generalSettingsPage, i18n("General"), QStringLiteral("package_setting"));
+    dialog->addPage(generalSettingsPage, i18nc("@title:tab", "General"), QStringLiteral("package_setting"));
     connect(dialog, &KConfigDialog::settingsChanged, m_%{APPNAMELC}View, &%{APPNAME}View::handleSettingsChanged);
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();

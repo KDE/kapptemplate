@@ -168,7 +168,7 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
 
     switch (section) {
         case 0:
-            return i18n("Templates Projects");
+            return i18nc("@title:column", "Templates Projects");
         default:
             break;
     }

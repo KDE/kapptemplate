@@ -33,7 +33,7 @@ KAppTemplate::KAppTemplate(QWidget *parent)
     : QWizard()
 {
     Q_UNUSED(parent);
-    setWindowTitle(i18n("KDE and Qt Template Generator"));
+    setWindowTitle(i18nc("@title:window", "KDE and Qt Template Generator"));
     setOption(HaveHelpButton, true);
     connect(this, SIGNAL(helpRequested()), this, SLOT(showHelp()));
     addPage(new IntroPage);
@@ -55,7 +55,7 @@ void KAppTemplate::showHelp()
 IntroPage::IntroPage(QWidget *parent)
     : QWizardPage(parent)
 {
-    setTitle(i18n("Introduction"));
+    setTitle(i18nc("@title:tab", "Introduction"));
     ui_introduction.setupUi(this);
 }
 
@@ -64,7 +64,7 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
 {
     setTitle(i18n("Set the project properties"));
     setCommitPage(true);
-    setButtonText(QWizard::CommitButton, i18n("Generate"));
+    setButtonText(QWizard::CommitButton, i18nc("@action:button", "Generate"));
     ui_properties.setupUi(this);
 
     //float version = Prefs::appVersion().toFloat();
@@ -91,7 +91,7 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
 void PropertiesPage::initializePage()
 {
     appNameString = field("appName").toString();
-    QString message = i18n("Your project name is : %1", appNameString);
+    QString message = i18n("Your project name is: %1", appNameString);
     ui_properties.appNameLabel->setText(message);
 }
 
