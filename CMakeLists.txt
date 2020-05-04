@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.0)
 
 project(kapptemplate)
 
-set(QT_MIN_VERSION "5.9.0")
-set(KF_MIN_VERSION "5.53.0")
+set(QT_MIN_VERSION "5.12.0")
+set(KF_MIN_VERSION "5.66.0")
 
 find_package(ECM ${KF_MIN_VERSION} NO_MODULE REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
@@ -42,8 +42,7 @@ add_definitions(
     -DQT_NO_URL_CAST_FROM_STRING
     -DQT_NO_SIGNALS_SLOTS_KEYWORDS
     -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT
-    # re-enable if all min deps also fulfil this
-#     -DQT_NO_FOREACH
+    -DQT_NO_FOREACH
 )
 
 add_subdirectory(doc)
