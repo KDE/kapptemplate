@@ -343,6 +343,10 @@
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
+  <categories>
+    <category>Development</category>
+  </categories>
+  <launchable type="desktop-id">org.kde.kapptemplate.desktop</launchable>
   <provides>
     <binary>kapptemplate</binary>
   </provides>
