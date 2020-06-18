@@ -37,6 +37,7 @@
   <name xml:lang="sv">Kapptemplate</name>
   <name xml:lang="tr">KAppTemplate</name>
   <name xml:lang="uk">KAppTemplate</name>
+  <name xml:lang="x-test">xxKAppTemplatexx</name>
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
@@ -60,6 +61,7 @@
   <summary xml:lang="ru">Генератор шаблонов приложений</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
   <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
+  <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
   <summary xml:lang="zh-TW">App 程式碼範本產生器</summary>
   <description>
     <p>
@@ -95,6 +97,7 @@
     <p xml:lang="sv">KDE-mallgenerator är ett program för att snabbt påbörja utveckling med befintliga mallar som tillhandahåller grundläggande kod som skrivs upprepade gånger och en lämplig struktur.</p>
     <p xml:lang="tr">KAppTemplate mevcut şablonları kullanarak tekrarlanan kodları ve uygun yapıyı sağlayan ve hızlıca geliştirmeye başlayabileceğiniz bir araçtır.</p>
     <p xml:lang="uk">KAppTemplate — програма для пришвидшення початкового етапу розробки на основі наявних шаблонів, у яких міститься стандартний код та відповідна структура проєкту.</p>
+    <p xml:lang="x-test">xxKAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.xx</p>
     <p xml:lang="zh-CN">KAppTemplate 是使用已有模板开始快速开发的应用程序，它提供了可重用的代码和良好的结构。</p>
     <p xml:lang="zh-TW">KAppTemplate 是一套讓您用現有的樣本快速開發的應用程式。樣本裡已包括基本常用的程式碼，以及適當的程式結構。</p>
     <p>Features:</p>
@@ -131,6 +134,7 @@
     <p xml:lang="sv">Funktioner:</p>
     <p xml:lang="tr">Özellikler:</p>
     <p xml:lang="uk">Можливості:</p>
+    <p xml:lang="x-test">xxFeatures:xx</p>
     <p xml:lang="zh-CN">功能：</p>
     <p xml:lang="zh-TW">功能：</p>
     <ul>
@@ -165,6 +169,7 @@
       <li xml:lang="sv">Mallar för C++, Ruby, Python och PHP</li>
       <li xml:lang="tr">C++, Ruby, Python ve PHP için şablonlar</li>
       <li xml:lang="uk">Шаблони для C++, Ruby, Python та PHP.</li>
+      <li xml:lang="x-test">xxTemplates for C++, Ruby, Python and PHPxx</li>
       <li xml:lang="zh-CN">C++，Ruby，Python 和 PHP 的模板</li>
       <li xml:lang="zh-TW">C++, Ruby, Python 與 PHP 的樣本</li>
       <li>Categories</li>
@@ -201,6 +206,7 @@
       <li xml:lang="sv">Kategorier</li>
       <li xml:lang="tr">Kategoriler</li>
       <li xml:lang="uk">Категорії.</li>
+      <li xml:lang="x-test">xxCategoriesxx</li>
       <li xml:lang="zh-CN">分类</li>
       <li xml:lang="zh-TW">類別</li>
       <li>Templates for different build-systems and frameworks</li>
@@ -233,6 +239,7 @@
       <li xml:lang="sv">Mallar för olika byggsystem och ramverk</li>
       <li xml:lang="tr">Farklı inşa sistemleri ve çatılar için şablonlar</li>
       <li xml:lang="uk">Шаблони для різних систем збирання та комплексів.</li>
+      <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li xml:lang="zh-CN">不同构建系统和框架的模板</li>
       <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
@@ -255,6 +262,7 @@
       <li xml:lang="ru">Специальные шаблоны для разработки с использованием технологий KDE (модули для Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)xx</li>
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如 Plasma, QtQuick, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
@@ -286,6 +294,7 @@
       <li xml:lang="sv">Det är enkelt att skapa nya mallar genom att använda platsmarkörer och ett enkelt CMake-kommando</li>
       <li xml:lang="tr">Yer tutucular ve basit CMake komutları kullanarak yeni şablonlar oluşturmak çok kolaydır</li>
       <li xml:lang="uk">Простота створення нових шаблонів на основі заповнювачів та простої команди CMake.</li>
+      <li xml:lang="x-test">xxIt is easy to create new templates using space holders and a simple CMake-commandxx</li>
       <li xml:lang="zh-CN">创建新模板非常简单，只需使用占位符和简单的 CMake 命令</li>
       <li xml:lang="zh-TW">只要用空間符與簡單的 CMake 指令即可建立新的樣本</li>
       <li>Integrated into KDevelop</li>
@@ -319,6 +328,7 @@
       <li xml:lang="sv">Integrerad med KDevelop</li>
       <li xml:lang="tr">KDevelop ile tümleşik çalışır</li>
       <li xml:lang="uk">Інтеграція з KDevelop.</li>
+      <li xml:lang="x-test">xxIntegrated into KDevelopxx</li>
       <li xml:lang="zh-CN">集成到 KDevelop</li>
       <li xml:lang="zh-TW">整合進 KDevelop</li>
     </ul>
