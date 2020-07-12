@@ -59,6 +59,7 @@
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
   <summary xml:lang="ru">Генератор шаблонов приложений</summary>
+  <summary xml:lang="sl">Generator predlog kode</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
   <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
   <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
@@ -68,7 +69,7 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
-    <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
+    <p xml:lang="ca">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="ca-valencia">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
     <p xml:lang="el">KAppTemplate είναι μια εφαρμογή για να ξεκινήσετε την ανάπτυξη γρήγορα χρησιμοποιώντας τα υπάρχονταπρότυπα που παρέχουν βασικό επανειλημμένο γραμμένο κώδικα και μια κατάλληλη δομή.</p>
@@ -139,7 +140,7 @@
     <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
-      <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
+      <li xml:lang="ca">Plantilles per a C++, Ruby, Python i PHP</li>
       <li xml:lang="ca-valencia">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
       <li xml:lang="de">Vorlagen für C++, Ruby, Python und PHP</li>
@@ -260,6 +261,7 @@
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ru">Специальные шаблоны для разработки с использованием технологий KDE (модули для Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="sl">Predloge, posebej za razvoj KDE (vtičniki za Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)xx</li>
