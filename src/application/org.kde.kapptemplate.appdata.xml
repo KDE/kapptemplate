@@ -69,7 +69,7 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
-    <p xml:lang="ca">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
+    <p xml:lang="ca">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="ca-valencia">El KAppTemplate és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
     <p xml:lang="el">KAppTemplate είναι μια εφαρμογή για να ξεκινήσετε την ανάπτυξη γρήγορα χρησιμοποιώντας τα υπάρχονταπρότυπα που παρέχουν βασικό επανειλημμένο γραμμένο κώδικα και μια κατάλληλη δομή.</p>
@@ -140,7 +140,7 @@
     <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
-      <li xml:lang="ca">Plantilles per C++, Ruby, Python i PHP</li>
+      <li xml:lang="ca">Plantilles per a C++, Ruby, Python i PHP</li>
       <li xml:lang="ca-valencia">Plantilles per C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
       <li xml:lang="de">Vorlagen für C++, Ruby, Python und PHP</li>
