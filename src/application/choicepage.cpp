@@ -135,7 +135,7 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
 void ChoicePage::itemSelected(const QModelIndex &index)
 {
     if (!index.isValid()){
-        emit completeChanged();
+        Q_EMIT completeChanged();
         return;
     }
 
@@ -166,8 +166,8 @@ void ChoicePage::itemSelected(const QModelIndex &index)
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
     }
 
-    emit templateNameChanged(m_baseName);
-    emit completeChanged();
+    Q_EMIT templateNameChanged(m_baseName);
+    Q_EMIT completeChanged();
 }
 
 void ChoicePage::loadFromFile()
