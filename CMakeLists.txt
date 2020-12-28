@@ -1,6 +1,16 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
-project(kapptemplate)
+# Release Service version, managed by release script
+set (RELEASE_SERVICE_VERSION_MAJOR "21")
+set (RELEASE_SERVICE_VERSION_MINOR "03")
+set (RELEASE_SERVICE_VERSION_MICRO "70")
+set (RELEASE_SERVICE_COMPACT_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}${RELEASE_SERVICE_VERSION_MINOR}${RELEASE_SERVICE_VERSION_MICRO}")
+
+# Bump KAPPTEMPLATE_BASE_VERSION once new features are added
+set(KAPPTEMPLATE_BASE_VERSION "0.1")
+set(KAPPTEMPLATE_VERSION "${KAPPTEMPLATE_BASE_VERSION}.${RELEASE_SERVICE_COMPACT_VERSION}")
+
+project(kapptemplate VERSION ${KAPPTEMPLATE_VERSION})
 
 set(QT_MIN_VERSION "5.12.0")
 set(KF_MIN_VERSION "5.66.0")
@@ -12,6 +22,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
+include(ECMSetupVersion)
 include(ECMAddTests)
 include(KDEPackageAppTemplates)
 include(FeatureSummary)

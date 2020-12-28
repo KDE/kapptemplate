@@ -1,3 +1,8 @@
+ecm_setup_version(${KAPPTEMPLATE_VERSION}
+    VARIABLE_PREFIX KAPPTEMPLATE
+    VERSION_HEADER kapptemplate_version.h
+)
+
 set(kapptemplate_SRCS
    kapptemplate.cpp
    main.cpp
