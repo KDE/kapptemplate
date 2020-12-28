@@ -12,6 +12,14 @@ set(kapptemplate_SRCS
    choicepage.cpp
 )
 
+ecm_qt_declare_logging_category(kapptemplate_SRCS
+    HEADER logging.h
+    IDENTIFIER KAPPTEMPLATE
+    CATEGORY_NAME kapptemplate
+    DESCRIPTION "KAppTemplate"
+    EXPORT KAPPTEMPLATE
+)
+
 ki18n_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
 
 kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc)
@@ -33,6 +41,12 @@ install(TARGETS kapptemplate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS org.kde.kapptemplate.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.kapptemplate.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFODIR})
 install(FILES kapptemplate.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR})
+
+ecm_qt_install_logging_categories(
+    EXPORT KAPPTEMPLATE
+    FILE kapptemplate.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)
 
 # don't install for now, needs to cooperate somehow with kdevplatform/plugins/appwizard/kdevappwizard.knsrc
 # install(FILES kapptemplate.knsrc  DESTINATION  ${KDE_INSTALL_CONFDIR})

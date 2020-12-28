@@ -24,6 +24,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMAddTests)
+include(ECMQtDeclareLoggingCategory)
 include(KDEPackageAppTemplates)
 include(FeatureSummary)
 
