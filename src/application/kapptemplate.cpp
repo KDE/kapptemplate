@@ -5,7 +5,6 @@
 */
 
 #include <KLocalizedString>
-#include <KToolInvocation>
 #include <KHelpClient>
 
 #include <QPixmap>
