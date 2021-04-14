@@ -20,4 +20,7 @@
     <binary>%{APPNAMELC}</binary>
   </provides>
   <project_group>KDE</project_group>
+  <releases>
+    <release version="0.1.21040" date="2021-04-22"/>
+  </releases>
 </component>
