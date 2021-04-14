@@ -354,4 +354,7 @@
   <provides>
     <binary>kapptemplate</binary>
   </provides>
+  <releases>
+    <release version="0.1.21040" date="2021-04-22"/>
+  </releases>
 </component>
