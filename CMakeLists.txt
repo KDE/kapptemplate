@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.16)
 
 # Release Service version, managed by release script
 set (RELEASE_SERVICE_VERSION_MAJOR "21")
@@ -12,8 +12,8 @@ set(KAPPTEMPLATE_VERSION "${KAPPTEMPLATE_BASE_VERSION}.${RELEASE_SERVICE_COMPACT
 
 project(kapptemplate VERSION ${KAPPTEMPLATE_VERSION})
 
-set(QT_MIN_VERSION "5.12.0")
-set(KF_MIN_VERSION "5.66.0")
+set(QT_MIN_VERSION "5.15.0")
+set(KF_MIN_VERSION "5.83.0")
 
 find_package(ECM ${KF_MIN_VERSION} NO_MODULE REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
@@ -21,6 +21,7 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modul
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+
 include(ECMInstallIcons)
 include(ECMSetupVersion)
 include(ECMAddTests)
@@ -45,7 +46,7 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
 
 add_definitions(
     -DQT_DEPRECATED_WARNINGS
-    -DQT_DISABLE_DEPRECATED_BEFORE=0x050900
+    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F00
     -DQT_USE_QSTRINGBUILDER
     -DQT_NO_CAST_TO_ASCII
 #     -DQT_NO_CAST_FROM_ASCII
