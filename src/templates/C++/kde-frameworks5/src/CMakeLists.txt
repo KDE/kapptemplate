@@ -1,21 +1,21 @@
-set(%{APPNAMELC}_SRCS
+add_executable(%{APPNAMELC})
+
+target_sources(%{APPNAMELC} PRIVATE
     main.cpp
     %{APPNAMELC}window.cpp
     %{APPNAMELC}view.cpp
 )
 
-ecm_qt_declare_logging_category(%{APPNAMELC}_SRCS
+ecm_qt_declare_logging_category(%{APPNAMELC}
     HEADER %{APPNAMELC}debug.h
     IDENTIFIER %{APPNAMEUC}
     CATEGORY_NAME "%{APPNAMELC}"
 )
-kconfig_add_kcfg_files(%{APPNAMELC}_SRCS %{APPNAME}Settings.kcfgc)
-ki18n_wrap_ui(%{APPNAMELC}_SRCS
+kconfig_add_kcfg_files(%{APPNAMELC} %{APPNAME}Settings.kcfgc)
+ki18n_wrap_ui(%{APPNAMELC}
     %{APPNAMELC}view.ui
     settings.ui
 )
-
-add_executable(%{APPNAMELC} ${%{APPNAMELC}_SRCS})
 
 target_link_libraries(%{APPNAMELC}
     KF5::CoreAddons

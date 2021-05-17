@@ -1,13 +1,13 @@
-set( %{APPNAMELC}_SRCS
+add_executable(%{APPNAMELC})
+
+target_sources(%{APPNAMELC} PRIVATE
     main.cpp
     %{APPNAMELC}window.cpp
 )
 
-ki18n_wrap_ui(%{APPNAMELC}_SRCS %{APPNAMELC}.ui)
+ki18n_wrap_ui(%{APPNAMELC} %{APPNAMELC}.ui)
 
-add_executable( %{APPNAMELC} ${%{APPNAMELC}_SRCS} )
-
-target_link_libraries( %{APPNAMELC}
+target_link_libraries(%{APPNAMELC}
     KF5::CoreAddons
     KF5::I18n
     Qt5::Widgets

@@ -3,7 +3,9 @@ ecm_setup_version(${KAPPTEMPLATE_VERSION}
     VERSION_HEADER kapptemplate_version.h
 )
 
-set(kapptemplate_SRCS
+add_executable(kapptemplate)
+
+target_sources(kapptemplate PRIVATE
    kapptemplate.cpp
    main.cpp
    apptemplatesmodel.cpp
@@ -12,7 +14,7 @@ set(kapptemplate_SRCS
    choicepage.cpp
 )
 
-ecm_qt_declare_logging_category(kapptemplate_SRCS
+ecm_qt_declare_logging_category(kapptemplate
     HEADER logging.h
     IDENTIFIER KAPPTEMPLATE
     CATEGORY_NAME kapptemplate
@@ -20,11 +22,14 @@ ecm_qt_declare_logging_category(kapptemplate_SRCS
     EXPORT KAPPTEMPLATE
 )
 
-ki18n_wrap_ui(kapptemplate_SRCS introduction.ui choice.ui properties.ui generate.ui)
+ki18n_wrap_ui(kapptemplate
+    introduction.ui
+    choice.ui
+    properties.ui
+    generate.ui
+)
 
-kconfig_add_kcfg_files(kapptemplate_SRCS prefs.kcfgc)
-
-add_executable(kapptemplate ${kapptemplate_SRCS})
+kconfig_add_kcfg_files(kapptemplate prefs.kcfgc)
 
 target_link_libraries(kapptemplate
     KF5::CoreAddons
