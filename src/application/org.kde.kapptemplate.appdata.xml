@@ -65,6 +65,7 @@
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
   <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
   <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
+  <summary xml:lang="zh-CN">应用代码模板生成器</summary>
   <summary xml:lang="zh-TW">App 程式碼範本產生器</summary>
   <description>
     <p>
@@ -269,6 +270,7 @@
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)xx</li>
+      <li xml:lang="zh-CN">专为 KDE 开发使用的模板 (Plasma 插件，QtOffice，KTextEditor，KRunner，Akonadi)</li>
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如 Plasma, QtQuick, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
