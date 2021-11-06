@@ -30,32 +30,40 @@ kdevplatform -> plugins -> appwizard -> ProjectSelectionPage
 
 The name of the template is the name you write in English in the .kdevtemplate file in Name= and which is translated in other languages. This appears in the Tree View.
 
+Example:
+
 ```ini
-Example: Name=Qt5 GUI Application
+Name=Qt5 GUI Application
 ```
 
 ### Template description
 
 The description of the template is the comment you write in English in the .kdevtemplate file in Comment= and which is translated in other languages.
 
+Example:
+
 ```ini
-Example: Comment=Generate a QMake/Qt5 based application with graphical user interface (cross-platform)
+Comment=Generate a QMake/Qt5 based application with graphical user interface (cross-platform)
 ```
 
 ### Template Category
 
 The template category as it'll appear in the Tree View is extracted from the Category= line in the .kdevtemplate file.
 
+Example:
+
 ```ini
-Example: Category=Qt/Graphical
+Category=Qt/Graphical
 ```
 
 ### Template preview
 
 A screenshot will help the user to preview the template. This screenshot file will be passed as value for the entry Icon= . The file needs to be stored next to the .kdevtemplate file and ideally has the same basename as the .kdevtemplate file. Screenshot preferred size: 200 pixels width.
 
+Example:
+
 ```ini
-Example: Icon=qt5gui.png
+Icon=qt5gui.png
 ```
 
 KDevelop: templates are tarred using the CMake kdevplatform_add_app_templates macro and installed in kdevappwizard/templates.
