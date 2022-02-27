@@ -52,7 +52,7 @@
   <summary xml:lang="eu">Aplikazio kodearen txantiloi sortzailea</summary>
   <summary xml:lang="fr">Générateur de modèles de code d'application</summary>
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
-  <summary xml:lang="id">Penghasil Template Kode Apl</summary>
+  <summary xml:lang="id">Penghasil Template Kode Aplikasi</summary>
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
   <summary xml:lang="ko">앱 코드 템플릿 생성기</summary>
   <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
@@ -155,7 +155,7 @@
       <li xml:lang="fi">Malleja C++:lle, Rubylle, Pythonille ja PHP:lle</li>
       <li xml:lang="fr">Modèles pour C++, Ruby, Python et PHP</li>
       <li xml:lang="gl">Modelos para C++, Ruby, Python e PHP.</li>
-      <li xml:lang="id">Template untuk C++, Ruby, Python dan PHP</li>
+      <li xml:lang="id">Templat untuk C++, Ruby, Python dan PHP</li>
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
       <li xml:lang="ko">C++, Ruby, 파이썬, PHP 템플릿</li>
       <li xml:lang="nl">Sjablonen voor C++, Ruby, Python en PHP</li>
@@ -225,7 +225,7 @@
       <li xml:lang="fi">Malleja useille koostamisjärjestelmille ja sovelluskehyksille</li>
       <li xml:lang="fr">Modèles pour différents systèmes de compilations et environnements</li>
       <li xml:lang="gl">Modelos para distintos sistemas de construción e infraestruturas.</li>
-      <li xml:lang="id">Template untuk kerangka-kerja dan bangun-sistem yang berbeda</li>
+      <li xml:lang="id">Templat untuk kerangka-kerja dan bangun-sistem yang berbeda</li>
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
       <li xml:lang="ko">다양한 빌드 시스템과 프레임워크 템플릿</li>
       <li xml:lang="nl">Sjablonen voor verschillende bouwsystemen en frameworks</li>
