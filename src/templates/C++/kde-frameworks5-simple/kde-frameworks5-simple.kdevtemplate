@@ -3,7 +3,7 @@
 Name=Minimal C++ KDE Frameworks
 Name[bs]=Minimalni C++ KDE Frameworks
 Name[ca]=C++ mínim pels Frameworks del KDE
-Name[ca@valencia]=C++ mínim pels Frameworks del KDE
+Name[ca@valencia]=C++ mínim pels Frameworks de KDE
 Name[da]=Minimalt C++ KDE Frameworks
 Name[de]=Einfache KDE-Frameworks C++-Anwendung
 Name[el]=Ελάχιστο πλαίσιο εργασίας C++ KDE
@@ -38,7 +38,7 @@ Name[zh_TW]=最基本的 C++ KDE Frameworks
 Comment=A very basic KDE Frameworks 5 GUI Application in C++
 Comment[bs]=Veoma elementarna KDE Frameworks 5 GUI aplikacija u C++
 Comment[ca]=Una aplicació IGU molt bàsica per a les Frameworks 5 del KDE en C++
-Comment[ca@valencia]=Una aplicació IGU molt bàsica per a les Frameworks 5 del KDE en C++
+Comment[ca@valencia]=Una aplicació IGU molt bàsica per a les Frameworks 5 de KDE en C++
 Comment[cs]=Úplně základní GUI aplikace KDE Frameworks 5 v C++
 Comment[da]=Et meget basalt grafisk KDE Frameworks 5-program i C++
 Comment[de]=Eine sehr einfache KDE Frameworks 5 mit grafischer Oberfläche in C++
