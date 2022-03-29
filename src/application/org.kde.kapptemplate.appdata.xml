@@ -63,6 +63,7 @@
   <summary xml:lang="ru">Генератор шаблонов приложений</summary>
   <summary xml:lang="sl">Generator predlog kode</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
+  <summary xml:lang="tr">Uygulama Kod Şablonu Oluşturucu</summary>
   <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
   <summary xml:lang="x-test">xxApp Code Template Generatorxx</summary>
   <summary xml:lang="zh-CN">应用代码模板生成器</summary>
@@ -73,7 +74,7 @@
       repeatedly written code and a proper structure.
     </p>
     <p xml:lang="ca">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
-    <p xml:lang="ca-valencia">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
+    <p xml:lang="ca-valencia">KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
     <p xml:lang="el">KAppTemplate είναι μια εφαρμογή για να ξεκινήσετε την ανάπτυξη γρήγορα χρησιμοποιώντας τα υπάρχονταπρότυπα που παρέχουν βασικό επανειλημμένο γραμμένο κώδικα και μια κατάλληλη δομή.</p>
     <p xml:lang="en-GB">KAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.</p>
@@ -241,7 +242,7 @@
       <li xml:lang="sr-ijekavian">шаблони за различите системе градње и радне оквире</li>
       <li xml:lang="sr-ijekavianlatin">šabloni za različite sisteme gradnje i radne okvire</li>
       <li xml:lang="sv">Mallar för olika byggsystem och ramverk</li>
-      <li xml:lang="tr">Farklı inşa sistemleri ve çatılar için şablonlar</li>
+      <li xml:lang="tr">Farklı yapı sistemleri ve kod kitaplıkları için şablonlar</li>
       <li xml:lang="uk">Шаблони для різних систем збирання та комплексів.</li>
       <li xml:lang="x-test">xxTemplates for different build-systems and frameworksxx</li>
       <li xml:lang="zh-CN">不同构建系统和框架的模板</li>
@@ -268,6 +269,7 @@
       <li xml:lang="ru">Специальные шаблоны для разработки с использованием технологий KDE (модули для Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sl">Predloge, posebej za razvoj KDE (vtičniki za Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
+      <li xml:lang="tr">KDE geliştirmesi için şablonlar (Plasma, KOffice, KTextEditor, KRunner, Akonadi için eklentiler)</li>
       <li xml:lang="uk">Особливі шаблони для розробників KDE (додатки до Плазми, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="x-test">xxTemplates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)xx</li>
       <li xml:lang="zh-CN">专为 KDE 开发使用的模板 (Plasma 插件，QtOffice，KTextEditor，KRunner，Akonadi)</li>
@@ -307,7 +309,7 @@
       <li xml:lang="zh-TW">只要用空間符與簡單的 CMake 指令即可建立新的樣本</li>
       <li>Integrated into KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
-      <li xml:lang="ca-valencia">S'integra en el KDevelop</li>
+      <li xml:lang="ca-valencia">S'integra en KDevelop</li>
       <li xml:lang="da">Integreret med KDevelop</li>
       <li xml:lang="de">Integriert in KDevelop</li>
       <li xml:lang="el">Ενσωμάτωση στο KDevelop</li>
