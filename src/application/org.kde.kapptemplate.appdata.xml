@@ -61,6 +61,7 @@
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
   <summary xml:lang="ru">Генератор шаблонов приложений</summary>
+  <summary xml:lang="sk">Generátor šablón aplikačného kódu</summary>
   <summary xml:lang="sl">Generator predlog kode</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
   <summary xml:lang="tr">Uygulama Kod Şablonu Oluşturucu</summary>
@@ -267,6 +268,7 @@
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ru">Специальные шаблоны для разработки с использованием технологий KDE (модули для Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="sk">Šablóny špeciálne pre vývoj KDE (pluginy pre Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sl">Predloge, posebej za razvoj KDE (vtičniki za Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
       <li xml:lang="tr">KDE geliştirmesi için şablonlar (Plasma, KOffice, KTextEditor, KRunner, Akonadi için eklentiler)</li>
