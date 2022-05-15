@@ -75,7 +75,7 @@
       repeatedly written code and a proper structure.
     </p>
     <p xml:lang="ca">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
-    <p xml:lang="ca-valencia">KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
+    <p xml:lang="ca-valencia">KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament utilitzant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
     <p xml:lang="el">KAppTemplate είναι μια εφαρμογή για να ξεκινήσετε την ανάπτυξη γρήγορα χρησιμοποιώντας τα υπάρχονταπρότυπα που παρέχουν βασικό επανειλημμένο γραμμένο κώδικα και μια κατάλληλη δομή.</p>
     <p xml:lang="en-GB">KAppTemplate is an application to start development quickly using existing templates providing basic repeatedly written code and a proper structure.</p>
@@ -278,7 +278,7 @@
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如 Plasma, QtQuick, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
-      <li xml:lang="ca-valencia">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
+      <li xml:lang="ca-valencia">És fàcil crear plantilles noves utilitzant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="de">Neue Vorlagen können leicht mit Platzhaltern und einfachen CMake-Befehlen erstellt werden</li>
       <li xml:lang="el">Είναι εύκολο να δημιουργήσετε νέα πρότυπα χρησιμοποιώντας space holders και μία απλή CMake-εντολή</li>
       <li xml:lang="en-GB">It is easy to create new templates using space holders and a simple CMake-command</li>
