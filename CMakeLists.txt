@@ -12,8 +12,8 @@ set(KAPPTEMPLATE_VERSION "${KAPPTEMPLATE_BASE_VERSION}.${RELEASE_SERVICE_COMPACT
 
 project(kapptemplate VERSION ${KAPPTEMPLATE_VERSION})
 
-set(QT_MIN_VERSION "5.15.0")
-set(KF_MIN_VERSION "5.85.0")
+set(QT_MIN_VERSION "5.15.2")
+set(KF_MIN_VERSION "5.91.0")
 
 find_package(ECM ${KF_MIN_VERSION} NO_MODULE REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
@@ -27,10 +27,11 @@ include(ECMSetupVersion)
 include(ECMAddTests)
 include(ECMQtDeclareLoggingCategory)
 include(KDEPackageAppTemplates)
+include(ECMDeprecationSettings)
 include(FeatureSummary)
 
 if (BUILD_TESTING)
-    find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
 
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
@@ -44,12 +45,11 @@ find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     # NewStuff
 )
 
-add_definitions(
-    -DQT_DISABLE_DEPRECATED_BEFORE=0x050F00
-    -DQT_DEPRECATED_WARNINGS_SINCE=0x060000
-    -DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055500
-    -DKF_DEPRECATED_WARNINGS_SINCE=0x060000
+ecm_set_disabled_deprecation_versions(
+    QT 5.15.2
+    KF 5.91
 )
+
 # aded by KDE_COMPILERSETTINGS_LEVEL 5.85
 remove_definitions(
     -DQT_NO_CAST_FROM_ASCII
