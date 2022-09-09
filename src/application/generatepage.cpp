@@ -230,7 +230,7 @@ void GeneratePage::initializePage()
 
 void GeneratePage::displayError(const QString &error)
 {
-    KMessageBox::sorry(nullptr, error, i18nc("@title:window", "Error"));
+    KMessageBox::error(nullptr, error, i18nc("@title:window", "Error"));
     feedback.append("\n\n" + error);
     ui_generate.label->setText(feedback);
 }
