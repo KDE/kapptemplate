@@ -8,7 +8,6 @@
 #include <KHelpClient>
 
 #include <QPixmap>
-#include <QRegExpValidator>
 
 #include "choicepage.h"
 #include "generatepage.h"
