@@ -5,7 +5,7 @@
 */
 
 #include <QTest>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QString>
 
 #include "namevalidatortest.h"
@@ -15,11 +15,10 @@
 // as well as weird characters except _ . and -
 void NameValidatorTest::testAppName()
 {
-    QRegExp rx("[a-zA-Z0-9_.\\-]*");
+    QRegularExpression rx("^[a-zA-Z0-9_.\\-]*$");
     QString myAppName = "KTry_App-0.1" ;
-    bool ok = true;
-    QCOMPARE(rx.exactMatch(myAppName), ok);
-    QVERIFY(ok);
+    QRegularExpressionMatch match = rx.match(myAppName);
+    QVERIFY(match.hasMatch());
 }
 
 QTEST_MAIN(NameValidatorTest)

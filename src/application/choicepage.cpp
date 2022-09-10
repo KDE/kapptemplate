@@ -16,6 +16,7 @@
 #include <QStandardPaths>
 #include <QFileDialog>
 #include <QPointer>
+#include <QRegularExpression>
 
 #ifdef KAPPTEMLATE_SOLVEDGHNS
 #include <KNS3/DownloadDialog>
@@ -48,8 +49,8 @@ ChoicePage::ChoicePage(QWidget *parent)
 #ifdef KAPPTEMLATE_SOLVEDGHNS
     connect(ui_choice.getNewButton, &QPushButton::clicked, this, &ChoicePage::getMoreTemplates);
 #endif
-    QRegExp rx("[a-zA-Z0-9_]*");
-    QValidator *validator = new QRegExpValidator(rx, this);
+    QRegularExpression rx("[a-zA-Z0-9_]*");
+    auto *validator = new QRegularExpressionValidator(rx, this);
     ui_choice.kcfg_appName->setValidator(validator);
     registerField("appName*", ui_choice.kcfg_appName);
     registerField("tempName", this, "templateName", "templateNameChanged");
