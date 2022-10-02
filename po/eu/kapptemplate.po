@@ -1,0 +1,337 @@
+# Translation for kapptemplate.po to Euskara/Basque (eu).
+# Copyright (C) 2018, Free Software Foundation.
+# Copyright (C) 2019-2020, This file is copyright:
+# This file is distributed under the same license as the kapptemplate package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2018, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"PO-Revision-Date: 2020-07-29 09:23+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.04.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@euskalnet.net"
+
+#: src/application/apptemplatesmodel.cpp:158
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Txantiloien proiektuak"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Lortu txantiloi gehiago"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Instalatu txantiloia fitxategitik"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Proiektuaren izena:"
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "Hautatu zure proiektuaren txantiloia"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "Ez dago lagin-irudi erabilgarririk."
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "Txantiloiaren azalpena"
+
+#: src/application/generatepage.cpp:30
+#, kde-format
+msgid "Generating your project"
+msgstr "Zure proiektua sortzea"
+
+#: src/application/generatepage.cpp:46
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "%1 ezin da sortu."
+
+#: src/application/generatepage.cpp:66
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "%1 bide-izena ezin izan da sortu."
+
+#: src/application/generatepage.cpp:78
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Huts egin du zure proiektuaren informazioa %1 fitxategira bateratzea. "
+"Proiektua ez da sortu eta aldi baterako fitxategi guztiak kenduko dira."
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Ezin izan da kopiatu txantiloi fitxategia %1-(e)ra."
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Sorreraren aurrerapena\n"
+
+#: src/application/generatepage.cpp:220
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Arrakasta izan du.\n"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr ""
+"Zure proiektuaren izana da: <b>%1</b>, %2 txantiloian oinarritua.<br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "Bertsioa: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:226
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "Hemen instalatua: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"«README» bat aurkituko duzu zure proiektuaren karpetan <b>%1</b> zure "
+"proiektuaren hastapenean lagunduko dizuna."
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Errorea"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Morroi honek proiektu berri bat sortzen lagunduko dizu.\n"
+"Zuk egindako softwarea garatzen hasteko gauza izango zara Qt eta KDE "
+"teknologiak erabiliz."
+
+#: src/application/kapptemplate.cpp:21
+#, kde-format
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "KDE eta Qt txantiloi sortzailea"
+
+#: src/application/kapptemplate.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Sarrerakoa"
+
+#: src/application/kapptemplate.cpp:50
+#, kde-format
+msgid "Set the project properties"
+msgstr "Ezarri proiektuaren propietateak"
+
+#: src/application/kapptemplate.cpp:52
+#, kde-format
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Sortu"
+
+#: src/application/kapptemplate.cpp:79
+#, kde-format
+msgid "Your project name is: %1"
+msgstr "Zure proiektuaren izena: %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Proiektuaren izena"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Proiektuaren bertsioa"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Erabiltzailearen etxeko direktorioa"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Erabiltzailearen izena"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Erabiltzailearen e-posta"
+
+#: src/application/main.cpp:25
+#, kde-format
+msgid "KAppTemplate"
+msgstr "KAppTemplate"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "KAppTemplate KDE proiektuen txantiloi sortzaile bat da"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "(C) 2008 Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:30
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:31
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:31
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Ikonoak Oxygen taldeko ikonoetatik"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Bertsio zenbakia:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Proiektuaren bertsio zenbakia"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Ezarri zure proiektuaren bertsio zenbakia. Lehendabiziko proiektua 0.1 "
+"bertsioarekin hasi beharko litzateke."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "In&stalatzeko direktorioa:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Zure proiektua eraikitzeko erabiliko duzun direktorioa"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Hautatu zure proiektua eraikitzeko erabiliko duzun direktorioa. Zure etxeko /"
+"src kokaleku lehenetsi on bat da."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Egilearen ize&na:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Zure izena eta abizenak"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Honek egile eskubidea, «copyright», izen honetara ezarriko du"
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "E&gilearen e-posta:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "Zure e-posta helbidea"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"E-posta helbide hau zure izenaren ondoren egongo da proiektuko fitxategien "
+"egile eskubide, «copyright», atribuzioan."

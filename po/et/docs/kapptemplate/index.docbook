@@ -1,0 +1,505 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kapptemplate;">
+  <!ENTITY package "kdesdk">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Estonian  "INCLUDE">
+]>
+
+<book id="kapptemplate" lang="&language;">
+
+<bookinfo>
+<title
+>&kapptemplate; käsiraamat</title>
+
+<authorgroup>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Marek</firstname
+><surname
+>Laane</surname
+><affiliation
+><address
+><email
+>bald@starman.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>2008-04-28</date>
+<releaseinfo
+>0.1</releaseinfo>
+
+<abstract>
+<para
+>&kapptemplate; on &kde; 4 malligeneraator. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdesdk</keyword>
+<keyword
+>KDE 4</keyword>
+<keyword
+>programmeerimine</keyword>
+<keyword
+>mall</keyword>
+<keyword
+>C++</keyword>
+<keyword
+>python</keyword>
+<keyword
+>ruby</keyword>
+<keyword
+>pyqt4</keyword>
+<keyword
+>pykde4</keyword>
+<keyword
+>plasma</keyword>
+<keyword
+>Qt 4</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>Sissejuhatus</title
+> 
+<para
+>&kapptemplate; genereerib &kde; malle, mis aitab vähese vaevaga alustada &kde; programmeerimist.</para
+> 
+
+<para
+>&kapptemplate; pakub mõningaid põhilisi malliprojekte ning suudab kasutada ka KDevelopi malle, kui neid peaks masinas leiduma. </para>
+<para
+>Vaikimisi leiate järgmist:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Lihtne &kde; 4 &GUI; mall</para
+> </listitem>
+<listitem
+><para
+>&kde; 4 KPart mall</para
+> </listitem>
+<listitem
+><para
+>Qt4 mallipõhine peaaken</para
+></listitem>
+<listitem
+><para
+>PyQt4 rakendus</para
+></listitem>
+<listitem
+><para
+>Py&kde;4 rakendus</para
+></listitem>
+<listitem
+><para
+>Ruby (korundum4) mall</para
+></listitem>
+<listitem
+><para
+>Plasma apleti mall</para
+></listitem>
+</itemizedlist>
+
+<para
+>Vasta igal leheküljel nõustaja küsimustele ja loo oma mall.</para>
+
+<note
+><para
+>Kõigi mallide <filename
+>README</filename
+>-fail selgitab täpsemalt, kuidas antud malli ehitada. Samuti leiab sealt lingid projektiga seotud õppematerjalidele. Pärast projekti loomist on &kapptemplate; töö tehtud ning ehitamine juba sinu enda kätes.</para
+></note>
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title
+>&kapptemplate; kasutamine</title>
+<para
+>&kapptemplate; on nõustaja. Selle esimesel leheküljel selgitatakse, et &kapptemplate; loob alusprojekti. Projekti loomise alustamiseks klõpsa nupule <guibutton
+>Järgmine</guibutton
+>. Klõps nupule <guibutton
+>Loobu</guibutton
+> lõpetab programmi töö. Klõps nupule <guibutton
+>Abi</guibutton
+> avab KDE abikeskuses käesoleva käsiraamatu.</para>
+<screenshot>
+<screeninfo
+>&kapptemplate; esimene lehekülg</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kapptemplate; esimene lehekülg</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Teisel leheküljel näeb saadaolevaid malle. Paremal on näha malli eelvaade ning all malli kirjeldus. Pärast malli valimist palutakse all anda projektile nimi.</para>
+<screenshot>
+<screeninfo
+>&kapptemplate; teine lehekülg</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kapptemplate; teine lehekülg</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Kolmandal leheküljel soovitakse teada projekti versiooni, lähtekoodi kataloogi ning autori nime ja e-posti aadressi. Kui oled andnud Süsteemi seadistustes andmed oma isiku kohta, kasutatakse vaikimisi neid.</para>
+<screenshot>
+<screeninfo
+>&kapptemplate; kolmas lehekülg</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kapptemplate; kolmas lehekülg</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Neljandal ja viimasel leheküljel antakse projekti loomise kohta veidi tagasisidet.</para>
+<screenshot>
+<screeninfo
+>&kapptemplate; neljas lehekülg</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kapptemplate; neljas lehekülg</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Seejärel klõpsa &kapptemplate; sulgemiseks nupule <guibutton
+>Lõpeta</guibutton
+>.</para>
+</chapter>
+
+<chapter id="templates-description">
+<title
+>Millist malli kasutada?</title>
+<para
+>Käesolevas peatükis kirjeldatakse malle, mis võimaldab valida sinu vajadusi kõige paremini rahuldava malli.</para>
+
+<sect1 id="kde4-gui-app">
+<title
+>C++ &kde; 4 &GUI; rakenduse mall</title>
+<para
+>See on CMake'i põhine &kde; 4 &GUI; mall, milles on kasutusel KXMLGuiWindow ja KConfig XT. See on &kde; 4 standardrakendus.</para>
+<screenshot>
+<screeninfo
+>C++ &kde; 4 &GUI; rakenduse malli pilt</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kapp4.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>C++ &kde; 4 &GUI; rakenduse mall</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>See mall näitab, kuidas luua &kde; menüüd XMLGui vahendusel ja kuidas kasutada KConfigXT'd seadistuste muutmiseks menüükäsuga <menuchoice
+><guimenu
+>Seadistused</guimenu
+><guimenuitem
+>&lt;RakenduseNimi&gt; seadistamine</guimenuitem
+></menuchoice
+>.</para>
+
+<para
+>Ära unusta lugemast projekti kataloogis asuvat faili <filename
+>README</filename
+>. &kde; 4 väga häid õppematerjale leiab aadressil <ulink url="http://techbase.kde.org/Development/Tutorials"
+>http://techbase.kde.org/Development/Tutorials</ulink
+>.</para>
+</sect1>
+
+<sect1 id="kpart-app">
+<title
+>C++ &kde; 4 KPart rakenduse mall</title>
+<para
+>See on CMake'i põhine &kde; 4 KPart mall.</para>
+<screenshot>
+<screeninfo
+>C++ &kde; 4 KPart rakenduse malli pilt</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kpartapp.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>C++ &kde; 4 KPart rakenduse mall</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Ära unusta lugemast projekti kataloogis asuvat faili <filename
+>README</filename
+>.</para>
+</sect1>
+
+<sect1 id="plasmoid">
+<title
+>Plasmoidi rakendus</title>
+<para
+>See mall loob lihtsa Plasma apleti ikooni ja teatava tekstiga.</para>
+
+<screenshot>
+<screeninfo
+>&kde; 4 Plasma apleti mall</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="plasma-applet.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kde; 4 Plasma apleti mall</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Selle malli ehitamiseks on vajalik &kde; 4.1 ja see kasutab CMake'i. Selle kohta leiab täpsemat teavet aadressilt <ulink url="http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted"
+>http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted</ulink
+>.</para>
+<para
+>Taaskäivita Plasma apleti laadimiseks käsuga <userinput
+>kquitapp plasma &amp;&amp; plasma</userinput
+> või vaata seda käsuga <userinput
+>plasmoidviewer SinuApletiNimi</userinput
+>.</para>
+</sect1>
+
+<sect1 id="pyqt4-template">
+<title
+>PyQT4 rakendus</title>
+
+<para
+>See mall loob järgmise rakenduse: </para>
+
+<screenshot>
+<screeninfo
+>PyQT4 rakendus</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="pyqt4app.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>PyQT4 rakendus</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Selleks on vajalik sinu distributsiooni pakutav PyQt4.</para>
+
+<para
+>Malli käivitamiseks loo kõigepealt Pythoni moodul Disaineri myCalendar.ui faili põhjal, andes projektikaustas käsu <userinput
+>pyuic4 -o myCalendar.py myCalendar.ui</userinput
+>, ning seejärel käivitades projekti: <userinput
+>python RAKENDUSENIMI.py</userinput
+>.</para>
+</sect1>
+
+
+<sect1 id="pyKDE4-template">
+<title
+>PyKDE4 rakendus</title>
+
+<para
+>See mall loob järgmise rakenduse: </para>
+
+<screenshot>
+<screeninfo
+>PyKDE4 rakendus</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="pykde4.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>PyKDE4 rakendus</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Selleks on vajalik sinu distributsiooni pakutav PyKDE 4.</para>
+
+<para
+>Malli käivitamiseks loo kõigepealt Pythoni moodul Disaineri myCalendar.ui faili põhjal, andes projektikaustas käsu <userinput
+>pyuic4 -o myCalendar.py myCalendar.ui</userinput
+>, ning seejärel käivitades projekti: <userinput
+>python RAKENDUSENIMI.py</userinput
+>.</para>
+</sect1>
+
+<sect1 id="ruby-template">
+<title
+>Ruby &kde; rakendus</title>
+
+<para
+>See mall loob järgmise rakenduse: </para>
+
+<screenshot>
+<screeninfo
+>&kde; Ruby rakendus</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kderubyapp.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>&kde; Ruby rakendus</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Selle malli käivitamiseks on vajalik korundum4 &kde; 4 moodulist kdebindings või sinu distributsioonist.</para>
+
+<para
+>Malli käivitamiseks anna pärast ehitamist ja paigaldamist (vaata faili <filename
+>README</filename
+>) konsoolis käsk: <userinput
+>krubyapplication sinu-rakendus/main.rb</userinput
+>.</para>
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+<title
+>Autorid ja litsents</title>
+
+<itemizedlist>
+<listitem
+><para
+>Rakenduse autoriõigus 1998-2003: &Kurt.Granroth;</para
+> </listitem>
+<listitem
+><para
+>Rakenduse autoriõigus 2006-2008: &Anne-Marie.Mahfouf;</para
+></listitem>
+<listitem
+><para
+>Rakenduse autoriõigus 2008: Beat Wolf</para>
+</listitem>
+</itemizedlist>
+<para
+>Kaasautorid: <itemizedlist>
+<listitem
+><para
+>Abi koodi juures: Beat Wolf <email
+>asraniel@fryx.ch</email
+></para
+> </listitem>
+<listitem
+><para
+>Ruby mall: Cyrille Berger <email
+>cberger@cberger.net</email
+></para
+> </listitem>
+<listitem
+><para
+>Ruby mall: Richard Dale <email
+>Richard_Dale@tipitina.demon.co.uk
+></email
+></para
+> </listitem>
+<listitem
+><para
+>Py&kde;4 mall: Christoph Burgmer <email
+>chrislb@gmx.de</email
+></para
+> </listitem>
+</itemizedlist>
+</para>
+<para
+>Dokumentatsiooni autoriõigus 2008: &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para>
+
+<para
+>Tõlge eesti keelde: Marek Laane <email
+>bald@starman.ee</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="getting-kapptemplate">
+<title
+>&kapptemplate; hankimine</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

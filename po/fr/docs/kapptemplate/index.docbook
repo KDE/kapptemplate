@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % French "INCLUDE">
+]>
+
+<book id="kapptemplate" lang="&language;">
+
+<bookinfo>
+<title
+>Manuel du &kapptemplate;</title>
+
+<authorgroup>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+&traducteurJoelleCornavin; 
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>01-11-2017</date>
+<releaseinfo
+>0.1 (Applications 17.12)</releaseinfo>
+
+<abstract>
+<para
+>&kapptemplate; est un générateur de projets logiciels nouveaux en utilisant des modèles. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>programmation</keyword>
+<keyword
+>modèle</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>Introduction</title
+> 
+<para
+>&kapptemplate; est une application pour démarrer un développement rapide en utilisant des modèles existants fournissant du code basique souvent écrit et avec une structure correcte.</para>
+
+<para
+>&kapptemplate; utilise des modèles installés sur mon ordinateur. Ceux-ci sont souvent fournis comme comme des fichiers de développement de bibliothèques ou peuvent être téléchargés, par exemple, à partir du site Internet <ulink url="https://store.kde.org"
+>store.kde.org</ulink
+>. </para>
+
+<para
+>Répondez aux questions de l'assistant de chaque page et générez votre modèle.</para>
+
+<note
+><para
+>Dans chaque modèle, un fichier <filename
+>README</filename
+> permet de savoir comment construire le modèle. Il vous donne également des liens pour des tutoriels relatifs au projet. Après avoir généré le projet, la tâche de &kapptemplate; est terminée et vous êtes à même de le compiler.</para
+></note>
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title
+>Utilisation de &kapptemplate;</title>
+<para
+>&kapptemplate; est un assistant. Le première page de l'assistant explique que &kapptemplate; va générer un projet de base. Cliquez sur <guibutton
+>Suivant</guibutton
+> pour commencer à générer votre projet. <guibutton
+>Annuler</guibutton
+> arrêtera le programme et le quittera. <guibutton
+>Aide</guibutton
+> affichera ce manuel d'aide dans &khelpcenter;.</para>
+<screenshot>
+<screeninfo
+>La première page de &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>La première page de &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La deuxième page dresse la liste des modèles disponibles. Sur la droite on peut voirl'aperçu du modèle et au-dessous la description du modèle. Après avoir choisi votre modèle, vous êtes invité à saisir le nom du projet dans le champ situé en bas.</para>
+<screenshot>
+<screeninfo
+>La deuxième page de &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>La deuxième page de &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Sur la troisième page, une boîte de dialogue vous demande la version du projet, le dossier source et le nom de l'auteur ainsi que son adresse électronique. Si vous avez rempli l'onglet concernant vos informations personnelles dans la &configurationDuSysteme;, celles-ci en seront tirées par défaut.</para>
+<screenshot>
+<screeninfo
+>La troisième page de &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>La troisième page de &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>La quatrième et dernière page donne quelques réaction sur la génération du projet.</para>
+<screenshot>
+<screeninfo
+>Quatrième page de &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Quatrième page de &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Cliquez ensuite sur <guibutton
+>Terminer</guibutton
+> pour fermer &kapptemplate;.</para>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Remerciements et licence</title>
+
+<itemizedlist>
+<listitem
+><para
+>Programme sous copyright 1998-2003 &Kurt.Granroth;</para
+> </listitem>
+<listitem
+><para
+>Programme sous copyright 2006-2008 &Anne-Marie.Mahfouf;</para
+></listitem>
+<listitem
+><para
+>Programme sous copyright 2008 Beat Wolf</para>
+</listitem>
+</itemizedlist>
+<para
+>Contributeurs : <itemizedlist>
+<listitem
+><para
+>Beat Wolf <email
+>asraniel@fryx.ch</email
+> : codage de l'aide</para
+> </listitem>
+<listitem
+><para
+>Cyrille Berger <email
+>cberger@cberger.net</email
+> : modèle Ruby</para
+> </listitem>
+<listitem
+><para
+>Richard Dale <email
+>Richard_Dale@tipitina.demon.co.uk
+></email
+> : modèle Ruby</para
+> </listitem>
+<listitem
+><para
+>Christoph Burgmer <email
+>chrislb@gmx.de</email
+> : modèle Py&kde;4</para
+> </listitem>
+</itemizedlist>
+</para>
+<para
+>Documentation sous copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para>
+
+<para
+>Traduction française par &JoelleCornavin;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

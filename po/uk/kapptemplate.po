@@ -1,0 +1,362 @@
+# Translation of kapptemplate.po to Ukrainian
+# Copyright (C) 2008-2020 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2012, 2014, 2015, 2016, 2017, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"PO-Revision-Date: 2020-05-05 08:28+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.07.70\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
+
+#: src/application/apptemplatesmodel.cpp:158
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Шаблони проєктів"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Отримати інші шаблони"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Встановити шаблон з файла"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Назва проєкту:"
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "Оберіть ваш шаблон проєкту"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "Немає взірцевого зображення."
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "Опис шаблону"
+
+#: src/application/generatepage.cpp:30
+#, kde-format
+msgid "Generating your project"
+msgstr "Створення вашого проєкту"
+
+#: src/application/generatepage.cpp:46
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "%1 не вдалося створити."
+
+#: src/application/generatepage.cpp:66
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "Не вдалося створити шлях %1."
+
+#: src/application/generatepage.cpp:78
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Не вдалося інтегрувати дані вашого проєкту до файла %1. Проєкт не буде "
+"створено, усі тимчасові файли буде вилучено."
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Не вдалося скопіювати файл шаблона до %1."
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Поступ створення\n"
+
+#: src/application/generatepage.cpp:220
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Успіх.\n"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "Назва вашого проєкту: <b>%1</b>, його засновано на шаблоні %2.<br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "Версія: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:226
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "Встановлено у: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"У теці вашого проєкту <b>%1</b><br /> ви можете знайти файл README, який "
+"допоможе вам почати роботу з вашим проєктом."
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Помилка"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Цей майстер допоможе вам створити новий проєкт.\n"
+"Ви зможете почати розробку вашого власного проєкту програмного забезпечення "
+"за допомогою технологій Qt та KDE на основі цього шаблона."
+
+#: src/application/kapptemplate.cpp:21
+#, kde-format
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "Створення шаблонів для KDE та Qt"
+
+#: src/application/kapptemplate.cpp:43
+#, kde-format
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Вступ"
+
+#: src/application/kapptemplate.cpp:50
+#, kde-format
+msgid "Set the project properties"
+msgstr "Встановіть властивості проєкту"
+
+#: src/application/kapptemplate.cpp:52
+#, kde-format
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Створити"
+
+#: src/application/kapptemplate.cpp:79
+#, kde-format
+msgid "Your project name is: %1"
+msgstr "Назва вашого проєкту: %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Назва проєкту"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Версія проєкту"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Домашня тека користувача"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Ім’я користувача"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Адреса ел.пошти користувача"
+
+#: src/application/main.cpp:25
+#, kde-format
+msgid "KAppTemplate"
+msgstr "KAppTemplate"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "KAppTemplate — це програма для створення шаблонів для KDE"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "© Anne-Marie Mahfouf, 2008"
+
+#: src/application/main.cpp:30
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:31
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:31
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Піктограми з піктограм Команди Oxygen"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Номер версії:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Номер версії проєкту"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Встановіть номер версії вашого проєкту. Перший проєкт слід починати з версії "
+"0.1."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0,0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0,1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "Тека для вс&тановлення:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Тека, де ви збиратимете ваш проєкт"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Виберіть теку, де ви збиратимете ваш проєкт. Підтека /src вашої домашньої "
+"теки буде непоганим типовим вибором."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Ім’я &автора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Ваше ім’я та прізвище"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Цей пункт встановить авторські права для цього імені"
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "Адреса ел. по&шти автора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "Адреса вашої електронної пошти"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"Цю адресу електронної пошти буде розташовано за вашим ім’ям у інформації про "
+"авторські права на файли проєкту."
+
+#~ msgctxt "Do not translate"
+#~ msgid "Preview"
+#~ msgstr "Перегляд"
+
+#~ msgctxt "Do not translate"
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid ""
+#~ "The extraction of your personal information in file %1 was not successful"
+#~ msgstr "Не вдалося видобути ваші особисті дані з файла %1"
+
+#~ msgid "The file %1 cannot be created."
+#~ msgstr "Не вдалося створити файл %1."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "The file %1 cannot be created."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Файл %1 не вдалося створити."
+
+#~ msgid "TextLabel"
+#~ msgstr "TextLabel"

@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Ukrainian "INCLUDE">
+]>
+
+<book id="kapptemplate" lang="&language;">
+
+<bookinfo>
+<title
+>Підручник з &kapptemplate;</title>
+
+<authorgroup>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>1 листопада 2017 року</date>
+<releaseinfo
+>0.1 (Програми 17.12)</releaseinfo>
+
+<abstract>
+<para
+>&kapptemplate; — програма для створення нових проєктів програмного забезпечення на основі шаблонів. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>програмування</keyword>
+<keyword
+>шаблон</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>Вступ</title
+> 
+<para
+>&kapptemplate; — програма для пришвидшення початкового етапу розробки на основі наявних шаблонів, у яких міститься стандартний код та відповідна структура проєкту.</para>
+
+<para
+>&kapptemplate; показує шаблони, які встановлено у вашій системі. Ці шаблони часто є частиною пакунків бібліотек для розробки. Їх також можна отримати з інтернету, наприклад, з сайта <ulink url="https://store.kde.org"
+>store.kde.org</ulink
+>. </para>
+
+<para
+>Дайте відповідь на питання майстра на кожній зі сторінок і створіть ваш шаблон.</para>
+
+<note
+><para
+>За допомогою файла <filename
+>README</filename
+> у кожному з шаблонів ви зможете дізнатися про те, які зібрати шаблон. Там також наведено посилання на підручники, пов’язані з проєктом. Після створення проєкту завдання &kapptemplate; буде виконано і ви зможете зібрати проєкт власноруч.</para
+></note>
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title
+>Користування &kapptemplate;</title>
+<para
+>&kapptemplate; — це програма-майстер. На першій сторінці майстра наведено пояснення щодо того, як &kapptemplate; створює базовий проєкт. Натисніть кнопку <guibutton
+>Далі</guibutton
+>, щоб розпочати створення проєкту. Кнопка <guibutton
+>Скасувати</guibutton
+> зупинить програму і завершить її роботу. За допомогою кнопки <guibutton
+>Довідка</guibutton
+> можна переглянути цей підручник у &khelpcenter;.</para>
+<screenshot>
+<screeninfo
+>Перша сторінка &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Перша сторінка &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>На другій сторінці наведено список можливих шаблонів. У правій частині сторінки ви побачите попередній перегляд шаблону, а під ним опис шаблону. Після того, як ви оберете шаблон, програма запросить вас ввести назву проєкту у поле, розташоване внизу сторінки.</para>
+<screenshot>
+<screeninfo
+>Друга сторінка &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Друга сторінка &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>На третій сторінці майстер запитає вас про версію проєкту, назву теки кодів, ім’я та адресу електронної пошти автора. Якщо ви вказали відповідну інформацію на вкладці Системних параметрів, ці відомості буде використано як типові значення.</para>
+<screenshot>
+<screeninfo
+>Третя сторінка &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Третя сторінка &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>На четвертій і останній інформації ви зможете ознайомитися з резюме щодо створення проєкту.</para>
+<screenshot>
+<screeninfo
+>Четверта сторінка &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Четверта сторінка &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Після цього натисніть кнопку <guibutton
+>Завершити</guibutton
+>, щоб закрити вікно &kapptemplate;.</para>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Подяки і ліцензія</title>
+
+<itemizedlist>
+<listitem
+><para
+>Авторські права на програму належать &Kurt.Granroth;, ©1998-2003</para
+> </listitem>
+<listitem
+><para
+>Авторські права на програму належать &Anne-Marie.Mahfouf;, ©2006–2008</para
+></listitem>
+<listitem
+><para
+>Авторські права на програму належать Beat Wolf, ©2008</para>
+</listitem>
+</itemizedlist>
+<para
+>Учасники розробки: <itemizedlist>
+<listitem
+><para
+>Допомога у програмуванні: Beat Wolf <email
+>asraniel@fryx.ch</email
+></para
+> </listitem>
+<listitem
+><para
+>Шаблон для Ruby: Cyrille Berger <email
+>cberger@cberger.net</email
+></para
+> </listitem>
+<listitem
+><para
+>Шаблон для Ruby: Richard Dale <email
+>Richard_Dale@tipitina.demon.co.uk
+></email
+></para
+> </listitem>
+<listitem
+><para
+>Шаблон Py&kde;4: Christoph Burgmer <email
+>chrislb@gmx.de</email
+></para
+> </listitem>
+</itemizedlist>
+</para>
+<para
+>Авторські права на документацію належать &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;, ©2008 </para>
+
+<para
+>Переклад українською: Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

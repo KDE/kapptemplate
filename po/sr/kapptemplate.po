@@ -1,0 +1,344 @@
+# Translation of kapptemplate.po into Serbian.
+# Slobodan Simic <slsimic@gmail.com>, 2009.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2014, 2015, 2016, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-05 03:19+0200\n"
+"PO-Revision-Date: 2017-07-24 00:24+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Слободан Симић"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "slsimic@gmail.com"
+
+#: src/application/apptemplatesmodel.cpp:171
+#, fuzzy, kde-format
+#| msgid "Templates Projects"
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Шаблонски пројекти"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Добави још шаблона"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Инсталирај шаблон из фајла"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Име пројекта:"
+
+# >> @title:window
+#: src/application/choicepage.cpp:47
+#, kde-format
+msgid "Choose your project template"
+msgstr "Избор шаблона за пројекат"
+
+#: src/application/choicepage.cpp:158
+#, kde-format
+msgid "No sample picture available."
+msgstr "Узорак слике није доступан."
+
+#: src/application/choicepage.cpp:171
+#, kde-format
+msgid "Template description"
+msgstr "Опис шаблона"
+
+# >> @title:window
+#: src/application/generatepage.cpp:43
+#, kde-format
+msgid "Generating your project"
+msgstr "Стварање пројекта"
+
+#: src/application/generatepage.cpp:59
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "%1 не може да се направи."
+
+#: src/application/generatepage.cpp:79
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "Путања %1 не може да се направи."
+
+#: src/application/generatepage.cpp:91
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Не могу да уклопим дате податке о пројекту у фајл %1. Пројекат није "
+"генерисан и сви привремени фајлови ће бити уклоњени."
+
+#: src/application/generatepage.cpp:98
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Не могу да копирам шаблонски фајл у %1."
+
+#: src/application/generatepage.cpp:132
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Напредак стварања\n"
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Успех.\n"
+
+#: src/application/generatepage.cpp:237
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "Име пројекта је: <b>%1</b>, на основу шаблона %2.<br />"
+
+#: src/application/generatepage.cpp:238
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "<html>Издање: %1 <br /><br /></html>"
+
+#: src/application/generatepage.cpp:239
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "<html>Инсталира се у: %1 <br /><br /></html>"
+
+#: src/application/generatepage.cpp:240
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"Погледајте README у фасцикли пројекта <b>%1</b><br />за помоћ у првим "
+"корацима са пројектом."
+
+#: src/application/generatepage.cpp:246
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Грешка"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Овај чаробњак вас води кроз стварање новог пројекта.\n"
+"Преко овог шаблона моћи ћете да започнете развој сопственог софтвера "
+"користећи КуТ и КДЕ технологије."
+
+#: src/application/kapptemplate.cpp:36
+#, fuzzy, kde-format
+#| msgid "KDE and Qt Template Generator"
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "Генератор шаблона за КДЕ и КуТ"
+
+# >> @title:window
+#: src/application/kapptemplate.cpp:58
+#, fuzzy, kde-format
+#| msgid "Introduction"
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Увод"
+
+# >> @title:window
+#: src/application/kapptemplate.cpp:65
+#, kde-format
+msgid "Set the project properties"
+msgstr "Постављање својстава пројекта"
+
+#: src/application/kapptemplate.cpp:67
+#, fuzzy, kde-format
+#| msgid "Generate"
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Генериши"
+
+#: src/application/kapptemplate.cpp:94
+#, fuzzy, kde-format
+#| msgid "Your project name is : %1"
+msgid "Your project name is: %1"
+msgstr "Име пројекта: %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Име пројекта"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Издање пројекта"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Домаћа фасцикла корисника"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Име корисника"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Е‑пошта корисника"
+
+#: src/application/main.cpp:41
+#, kde-format
+msgid "KAppTemplate"
+msgstr "К‑шаблон-програма"
+
+#: src/application/main.cpp:41
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "К‑шаблон-програма је генератор шаблона за КДЕ пројекте"
+
+#: src/application/main.cpp:41
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "© 2008, Ан Мари Мафу"
+
+#: src/application/main.cpp:42
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Ан Мари Мафу"
+
+#: src/application/main.cpp:43
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Шон Вилсон"
+
+#: src/application/main.cpp:43
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Иконице према Кисеонику"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Број издања:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Број издања пројекта"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Овде унесите број издања пројекта. Први пројекат треба да почне издањем 0.1."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "Фасцикла &инсталације:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Фасцикла у којој ћете градити пројекат."
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Изаберите фасциклу у којој ћете градити пројекат. /src у вашој домаћој "
+"фасцикли је добра подразумевана локација."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Име &аутора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Ваше име и презиме."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Овим постављате носиоца ауторског права."
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "&Е‑пошта аутора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "Ваша адреса е‑поште."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"Ова адреса е‑поште стајаће поред вашег имена, у навођењу ауторског права у "
+"фајловима пројекта."
