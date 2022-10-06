@@ -278,7 +278,7 @@ msgstr "0.1"
 #: src/application/properties.ui:56
 #, kde-format
 msgid "In&stallation directory:"
-msgstr "Directori d'in&stalació:"
+msgstr "Directori d'in&stal·lació:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
 #: src/application/properties.ui:66
