@@ -20,6 +20,7 @@
   <name xml:lang="gl">KAppTemplate</name>
   <name xml:lang="id">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
+  <name xml:lang="ka">KAppTemplate</name>
   <name xml:lang="ko">KAppTemplate</name>
   <name xml:lang="lt">KAppTemplate</name>
   <name xml:lang="nl">KAppTemplate</name>
@@ -55,6 +56,7 @@
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
+  <summary xml:lang="ka">აპის კოდის შაბლონის გენერატორი</summary>
   <summary xml:lang="ko">앱 코드 템플릿 생성기</summary>
   <summary xml:lang="nl">Sjabloongenerator van App Code</summary>
   <summary xml:lang="nn">Malgenerator for programkode</summary>
@@ -124,6 +126,7 @@
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="it">Funzionalità:</p>
+    <p xml:lang="ka">თვისებები:</p>
     <p xml:lang="ko">기능:</p>
     <p xml:lang="lt">Ypatybės:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
@@ -196,6 +199,7 @@
       <li xml:lang="gl">Categorías</li>
       <li xml:lang="id">Kategori</li>
       <li xml:lang="it">Categorie</li>
+      <li xml:lang="ka">კატეგორიები</li>
       <li xml:lang="ko">분류</li>
       <li xml:lang="lt">Kategorijos</li>
       <li xml:lang="nl">Categorieën</li>
