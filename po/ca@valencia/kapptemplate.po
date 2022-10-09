@@ -131,7 +131,7 @@ msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
-"Trobareu un fitxer README en la carpeta del projecte <b>%1</b><br /> per "
+"Trobareu un fitxer README en la carpeta del projecte <b>%1</b><br /> per a "
 "ajudar-vos a iniciar el projecte."
 
 #: src/application/generatepage.cpp:233
