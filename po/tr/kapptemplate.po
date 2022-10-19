@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kdesdk-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-11 00:47+0000\n"
-"PO-Revision-Date: 2022-03-28 13:37+0300\n"
+"PO-Revision-Date: 2022-10-18 05:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -195,7 +195,7 @@ msgstr "Proje sürümü"
 #: src/application/kapptemplate.kcfg:19
 #, kde-format
 msgid "Home dir of the user"
-msgstr "Kullanıcının ev dizini"
+msgstr "Kullanıcının ana dizini"
 
 #. i18n: ectx: label, entry (name), group (User)
 #: src/application/kapptemplate.kcfg:27
@@ -282,7 +282,7 @@ msgstr "Kuru&lum dizini:"
 #: src/application/properties.ui:66
 #, kde-format
 msgid "The directory where you will build your project"
-msgstr "Projenizin oluşturulacağı dizin"
+msgstr "Projenizi yapacağınız dizin"
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
 #: src/application/properties.ui:69
@@ -291,7 +291,7 @@ msgid ""
 "Choose the directory where you will build your project. Your home /src is a "
 "good default location."
 msgstr ""
-"Projenizi inşa edeceğiniz dizini seçin. Ev dizininiz /src uygun bir "
+"Projenizi yapacağınız dizini seçin. Ana dizininizdeki /src klasörü uygun bir "
 "öntanımlı konumdur."
 
 #. i18n: ectx: property (text), widget (QLabel, authorLabel)
