@@ -13,7 +13,7 @@
 
 <!--
 Use this template for application docbooks
-For kioslave, systemsettings (kcontrol) modules and simple/short application docbooks use article-template.docbook
+For KIO workers, systemsettings (kcontrol) modules and simple/short application docbooks use article-template.docbook
 Rename this template to index.docbook and place into the directory doc/ or doc/appname if you have several applications in one doc directory
 -->
 
