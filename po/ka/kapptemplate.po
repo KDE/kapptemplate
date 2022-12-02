@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-11 00:47+0000\n"
-"PO-Revision-Date: 2022-10-07 09:06+0200\n"
+"PO-Revision-Date: 2022-12-01 09:34+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -88,6 +88,8 @@ msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
+"ფაილში %1 თქვენი პროექტის ინფორმაციის ინტეგრირების შეცდომა. პროექტი არ "
+"დაგენერირებულა და ყველა დროებითი ფაილები წაიშლება."
 
 #: src/application/generatepage.cpp:85
 #, kde-format
@@ -107,7 +109,7 @@ msgstr "წარმატებულია.\n"
 #: src/application/generatepage.cpp:224
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
-msgstr ""
+msgstr "პროექტის სახელია: <b>%1</b>, ეფუძნება %2 შაბლონს.<br />"
 
 #: src/application/generatepage.cpp:225
 #, kde-format
@@ -125,6 +127,8 @@ msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
+"თქვენი პროექტის საქაღალდეში <b>%1</b><br /> README ფაილს იპოვით, რომელიც "
+"პროექტთან მუშაობის დაწყებაში დაგეხმარებათ."
 
 #: src/application/generatepage.cpp:233
 #, kde-format
@@ -140,12 +144,14 @@ msgid ""
 "You will be able to start developing your own software using Qt and KDE "
 "technologies from this template."
 msgstr ""
+"ეს ოსტატი ახალი პროექტის გენერაციაში დაგეხმარებათ.\n"
+"შეძლებთ ამ შაბლონით KDE/Qt ტექნოლოგიებით თქვენი პროგრამის დაწერა დაიწყოთ."
 
 #: src/application/kapptemplate.cpp:21
 #, kde-format
 msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
-msgstr ""
+msgstr "KDE -ის და Qt -ის შაბლონების გენერატორი"
 
 #: src/application/kapptemplate.cpp:43
 #, kde-format
@@ -156,7 +162,7 @@ msgstr "შესავალი"
 #: src/application/kapptemplate.cpp:50
 #, kde-format
 msgid "Set the project properties"
-msgstr ""
+msgstr "დააყენეთ პროექტის თვისებები"
 
 #: src/application/kapptemplate.cpp:52
 #, kde-format
@@ -207,12 +213,12 @@ msgstr "KAppTemplate"
 #: src/application/main.cpp:26
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr ""
+msgstr "KAppTemplate -ი KDE -ის პროექტის შაბლონის გენერატორია"
 
 #: src/application/main.cpp:28
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
-msgstr ""
+msgstr "(C) 2008 Anne-Marie Mahfouf"
 
 #: src/application/main.cpp:30
 #, kde-format
@@ -227,7 +233,7 @@ msgstr "Sean Wilson"
 #: src/application/main.cpp:31
 #, kde-format
 msgid "Icons from Oxygen Team icons"
-msgstr ""
+msgstr "ხატულები Oxygen -ის გუნდის ხატულებიდან"
 
 #. i18n: ectx: property (text), widget (QLabel, versionLabel)
 #: src/application/properties.ui:30
@@ -248,6 +254,8 @@ msgid ""
 "Set your project version number. A first project should start with version "
 "0.1."
 msgstr ""
+"დააყენეთ პროექტის ვერსიის ნომერი. პირველი პროექტი წესით 0.1 ვერსიით უნდა "
+"დაიწყოს."
 
 #. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:46
@@ -271,7 +279,7 @@ msgstr "&დაყენების საქაღალდე:"
 #: src/application/properties.ui:66
 #, kde-format
 msgid "The directory where you will build your project"
-msgstr ""
+msgstr "საქაღალდე, სადაც პროექტის აგებას გეგმავთ"
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
 #: src/application/properties.ui:69
@@ -280,6 +288,8 @@ msgid ""
 "Choose the directory where you will build your project. Your home /src is a "
 "good default location."
 msgstr ""
+"აირჩიეთ საქაღალდე, სადაც თქვენი პროექტის აგება მოხდება. საქაღალდე src თქვენს "
+"საწყის საქაღალდეში, ნაგულისხმები მდებარეობაა."
 
 #. i18n: ectx: property (text), widget (QLabel, authorLabel)
 #: src/application/properties.ui:76
@@ -318,3 +328,5 @@ msgid ""
 "This email address will be next to your name in the copyright credit of the "
 "project files."
 msgstr ""
+"პროექტის ფაილის საავტორო უფლებებში თქვენი ელფოსტა თქვენი სახელის შემდეგ "
+"ჩაისმება."
