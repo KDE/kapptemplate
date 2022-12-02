@@ -163,6 +163,7 @@
       <li xml:lang="gl">Modelos para C++, Ruby, Python e PHP.</li>
       <li xml:lang="id">Template untuk C++, Ruby, Python dan PHP</li>
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
+      <li xml:lang="ka">შაბლონები ენებისთვის C++, Ruby, Python და PHP</li>
       <li xml:lang="ko">C++, Ruby, 파이썬, PHP 템플릿</li>
       <li xml:lang="nl">Sjablonen voor C++, Ruby, Python en PHP</li>
       <li xml:lang="nn">Malar for C++, Ruby, Python og PHP</li>
@@ -234,6 +235,7 @@
       <li xml:lang="gl">Modelos para distintos sistemas de construción e infraestruturas.</li>
       <li xml:lang="id">Template untuk kerangka-kerja dan bangun-sistem yang berbeda</li>
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
+      <li xml:lang="ka">შაბლონების სხვადასხვა აგები სისტემებისა და Framework-ებისთვის</li>
       <li xml:lang="ko">다양한 빌드 시스템과 프레임워크 템플릿</li>
       <li xml:lang="nl">Sjablonen voor verschillende bouwsystemen en frameworks</li>
       <li xml:lang="nn">Malar for forskjellige byggjesystem og rammeverk</li>
@@ -267,6 +269,7 @@
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ka">KDE-ის აპლიკაციების შაბლონები (დამატებები Plasma, QtQuick, KTextEditor, KRunner, Akonadi-სთვის)</li>
       <li xml:lang="ko">KDE 개발용 템플릿(Plasma, QtQuick, KTextEditor, KRunner, Akonadi 플러그인)</li>
       <li xml:lang="nl">Sjablonen speciaal voor KDE-ontwikkeling (plug-ins voor Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="nn">Malar laga for KDE-utvikling (programtillegg for Plasma, Qt Quick, KTextEditor, KRunner, Akonadi)</li>
@@ -330,6 +333,7 @@
       <li xml:lang="gl">Integrado con KDevelop.</li>
       <li xml:lang="id">Terintegrasi ke dalam KDevelop</li>
       <li xml:lang="it">Integrato con KDevelop</li>
+      <li xml:lang="ka">ინტეგრირებულია KDevelop-ში</li>
       <li xml:lang="ko">KDevelop 통합</li>
       <li xml:lang="nl">Geïntegreerd in KDevelop</li>
       <li xml:lang="nn">Integrert i KDevelop</li>
