@@ -90,6 +90,7 @@
     <p xml:lang="gl">KAppTemplate é unha aplicación para comezar calquera desenvolvemento rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
     <p xml:lang="id">KAppTemplate adalah sebuah aplikasi untuk memulai pengembangan secara cepat menggunakan template yang ada menyediakan kode yang ditulis secara bertubi-tubi dan struktur yang layak.</p>
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
+    <p xml:lang="ka">KAppTemplate აპლიკაციაა, რომელიც არსებული შაბლონების გამოყენებით, რომელიც კოდს და მის სწორ სტრუქტურას გაჩვენებთ, პროგრამირებას გასწავლით.</p>
     <p xml:lang="ko">KAppTemplate은 반복적으로 작성되는 코드와 구조를 기반으로 한 템플릿을 제공하여 프로그램 개발을 빠르게 시작하도록 도와 줍니다.</p>
     <p xml:lang="nl">KAppTemplate is een toepassing om ontwikkelen snel te laten starten met bestaande sjablonen die basis herhaald geschreven code en een juiste structuur leveren.</p>
     <p xml:lang="nn">KAppTemplate er eit program som hjelper deg å raskt komma i gang med utvikling, basert på malar med hyppig brukt kode og ein skikkeleg struktur.</p>
@@ -299,6 +300,7 @@
       <li xml:lang="gl">É doado crear novos modelos usando marcas e ordes sinxelas de CMake.</li>
       <li xml:lang="id">Ini mudah untuk menciptakan template baru menggunakan space holders dan perintah CMake yang sederhana</li>
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
+      <li xml:lang="ka">ახალი შაბლონების ადგილმჭერებისა და მარტივი CMake ბრძანებით შექმნა უადვილესია</li>
       <li xml:lang="ko">자리 비움자와 CMake 명령을 통한 새 템플릿 생성</li>
       <li xml:lang="nl">Het is gemakkelijk om nieuwe sjablonen te genereren met variabelen voor ruimten en een eenvoudig CMake-commando</li>
       <li xml:lang="nn">Det er lett å laga nye malar med plasshaldarar og ein enkel CMake-kommando</li>
