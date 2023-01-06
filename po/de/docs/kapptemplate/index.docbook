@@ -1,229 +1,150 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % German "INCLUDE">
+  <!ENTITY % English "INCLUDE">
 ]>
 
 <book id="kapptemplate" lang="&language;">
 
 <bookinfo>
-<title
->Das Handbuch zu &kapptemplate;</title>
+<title>The &kapptemplate; Handbook</title>
 
 <authorgroup>
-<author
-><firstname
->Anne-Marie</firstname
-> <surname
->Mahfouf</surname
-> <affiliation
-> <address
->&Anne-Marie.Mahfouf.mail;</address>
+<author>
+<firstname>Anne-Marie</firstname>
+<surname>Mahfouf</surname>
+<affiliation>
+<address>&Anne-Marie.Mahfouf.mail;</address>
 </affiliation>
 </author>
-<othercredit role="translator"
-><firstname
->Burkhard</firstname
-><surname
->Lück</surname
-><affiliation
-><address
-><email
->lueck@hube-lueck.de</email
-></address
-></affiliation
-><contrib
->Übersetzung</contrib
-></othercredit
-> 
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
 <copyright>
-<year
->2008</year>
-<holder
->&Anne-Marie.Mahfouf;</holder>
+<year>2008</year>
+<holder>&Anne-Marie.Mahfouf;</holder>
 </copyright>
 
-<legalnotice
->&FDLNotice;</legalnotice>
+<legalnotice>&FDLNotice;</legalnotice>
 
 
-<date
->2017-11-01</date>
-<releaseinfo
->0.1 (Anwendungen 17.12)</releaseinfo>
+<date>2017-11-01</date>
+<releaseinfo>0.1 (Applications 17.12)</releaseinfo>
 
 <abstract>
-<para
->&kapptemplate; generiert neue Software-Projekte auf der Basis von Vorlagen. </para>
+<para>
+&kapptemplate; is a generator of new software projects using templates.
+</para>
 </abstract>
 
 <keywordset>
-<keyword
->Programmierung</keyword>
-<keyword
->Vorlage</keyword>
+<keyword>programming</keyword>
+<keyword>template</keyword>
 </keywordset>
 
 </bookinfo>
 
-<chapter id="introduction"
-> 
-<title
->Einleitung</title
-> 
-<para
->&kapptemplate; ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</para>
+<chapter id="introduction"> 
+<title>Introduction</title> 
+<para>
+&kapptemplate;  is an application to start development quickly using existing templates providing basic
+repeatedly written code and a proper structure.</para>
 
-<para
->&kapptemplate; benutzt alle Vorlagen, die auf Ihrem Rechner installiert sind. Diese Vorlagen sind meistens in Entwicklungsdateien von Bibliotheken enthalten oder können &eg; von der Webseite <ulink url="https://store.kde.org"
->store.kde.org</ulink
-> heruntergeladen werden. </para>
+<para>
+&kapptemplate; picks up templates which are installed on your machine. Those are often part of the development files for libraries or can be downloaded &eg; from the website <ulink url="https://store.kde.org">store.kde.org</ulink>.
+</para>
 
-<para
->Füllen Sie auf jeder Seite des Assistenten alle Felder aus, damit erstellen Sie Ihre Vorlage.</para>
+<para>Answer the wizard questions on each page and generate your template.</para>
 
-<note
-><para
->Jede Vorlage enthält eine <filename
->README</filename
->-Datei mit Anleitungen zum Erstellen Ihres Projektes und Verknüpfungen zu weiteren Anleitungen für diesen Projekttyp. Mit der Generierung des Projekts ist die Aufgabe von &kapptemplate; beendet, jetzt müssen Sie allein das Projekt kompilieren und erstellen.</para
-></note>
+<note><para>A <filename>README</filename> file in each template will allow you to find out how to build the template. It will also give you links for tutorials related to the project. After the project is generated, &kapptemplate;'s job is finished and you are on your own to build it.</para></note>
 </chapter>
 
 <chapter id="using-kapptemplate">
-<title
->Arbeiten mit &kapptemplate;</title>
-<para
->&kapptemplate; ist ein Assistent zur Erstellung von Projekten aus Vorlagen. Dies wird auf der ersten Seite des Assistenten als Aufgabe von &kapptemplate; genannt. Klicken Sie auf <guibutton
->Weiter</guibutton
-> um mit der Generierung Ihres Projekts zu beginnen. <guibutton
->Abbrechen</guibutton
-> beendet das Programm, <guibutton
->Hilfe</guibutton
-> zeigt dieses Handbuch im &khelpcenter-de;</para>
+<title>Using &kapptemplate;</title>
+<para>&kapptemplate; is a wizard. The first page of the wizard explains you that &kapptemplate; will generate a base project. Click <guibutton>Next</guibutton> to start generating your project. <guibutton>Cancel</guibutton> will stop the program and quit it. <guibutton>Help</guibutton> will display this help handbook in &khelpcenter;.</para>
 <screenshot>
-<screeninfo
->Erste Seite von &kapptemplate;</screeninfo>
+<screeninfo>&kapptemplate; first page</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="first-page.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase
->Erste Seite von &kapptemplate;</phrase>
+	    <phrase>&kapptemplate; first page</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
 
-<para
->Die zweite Seite zeigt alle verfügbaren Vorlagen an. Rechts sehen Sie eine Vorschau der Vorlage, darunter die Beschreibung. Nachdem Sie eine Vorlage ausgewählt haben, geben Sie den Projektnamen im unten im Feld ein.</para>
+<para>The second page lists the available templates. On the right you can see the template preview and below the template description. After you chose your template, you are invited to enter the project name in the field at the bottom.</para>
 <screenshot>
-<screeninfo
->Zweite Seite von &kapptemplate;</screeninfo>
+<screeninfo>&kapptemplate; second page</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="second-page.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase
->Zweite Seite von &kapptemplate;</phrase>
+	    <phrase>&kapptemplate; second page</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para
->Auf der dritten Seite geben Sie die Version, das Installationsverzeichnis und Ihren Namen sowie die E-Mailadresse ein. Wenn Sie Ihre persönlichen Daten in den &systemsettings; eingetragen haben, werden diese als Voreinstellung übernommen.</para>
+<para>On the third page, you are asked for the project version, the source folder and the author name and email. If you filled &systemsettings; tab about your personal information, it will be taken from there as default.</para>
 <screenshot>
-<screeninfo
->Dritte Seite von &kapptemplate;</screeninfo>
+<screeninfo>&kapptemplate; third page</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="third-page.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase
->Dritte Seite von &kapptemplate;</phrase>
+	    <phrase>&kapptemplate; third page</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para
->Auf der vierten und letzten Seite des Assistenten werden Ihnen Informationen über die Generierung des Projekts gegeben.</para>
+<para>The fourth and last page gives you some feedback about the project generation.</para>
 <screenshot>
-<screeninfo
->Vierte Seite von &kapptemplate;</screeninfo>
+<screeninfo>&kapptemplate; fourth page</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="fourth-page.png" format="PNG"/>
 	  </imageobject>
 	    <textobject>
-	    <phrase
->Vierte Seite von &kapptemplate;</phrase>
+	    <phrase>&kapptemplate; fourth page</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
-<para
->Klicken Sie dann auf <guibutton
->Fertigstellen</guibutton
->, um &kapptemplate; zu beenden.</para>
+<para>Then click <guibutton>Finish</guibutton> to close &kapptemplate;.</para>
 </chapter>
 
 
 <chapter id="credits">
-<title
->Danksagungen und Lizenz</title>
+<title>Credits and License</title>
 
 <itemizedlist>
-<listitem
-><para
->Programm Copyright 1998-2003 &Kurt.Granroth;</para
-> </listitem>
-<listitem
-><para
->Programm Copyright 2006-2008 &Anne-Marie.Mahfouf;</para
-></listitem>
-<listitem
-><para
->Programm Copyright 2008 Beat Wolf</para>
+<listitem><para>Program copyright 1998-2003 &Kurt.Granroth;</para> </listitem>
+<listitem><para>Program copyright 2006-2008 &Anne-Marie.Mahfouf;</para></listitem>
+<listitem><para>Program copyright 2008 Beat Wolf</para>
 </listitem>
 </itemizedlist>
-<para
->Mitwirkende: <itemizedlist>
-<listitem
-><para
->Programmierung: Beat Wolf <email
->asraniel@fryx.ch</email
-></para
-> </listitem>
-<listitem
-><para
->Ruby Vorlage: Cyrille Berger <email
->cberger@cberger.net</email
-></para
-> </listitem>
-<listitem
-><para
->Ruby-Vorlage: Richard Dale <email
->Richard_Dale@tipitina.demon.co.uk
-></email
-></para
-> </listitem>
-<listitem
-><para
->Py&kde;4-Vorlage: Christoph Burgmer <email
->chrislb@gmx.de</email
-></para
-> </listitem>
+<para>
+Contributors:
+<itemizedlist>
+<listitem><para>Coding help: Beat Wolf
+<email>asraniel@fryx.ch</email></para> </listitem>
+<listitem><para>Ruby template: Cyrille Berger
+<email>cberger@cberger.net</email></para> </listitem>
+<listitem><para>Ruby template: Richard Dale
+<email>Richard_Dale@tipitina.demon.co.uk></email></para> </listitem>
+<listitem><para>Py&kde;4 template: Christoph Burgmer 
+<email>chrislb@gmx.de</email></para> </listitem>
 </itemizedlist>
 </para>
-<para
->Dokumentation Copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para>
+<para>
+Documentation copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
+</para>
 
-<para
->Übersetzung Burkhard Lück<email
->lueck@hube-lueck.de</email
-></para
-> &underFDL; &underGPL; </chapter>
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+&underFDL;               <!-- FDL: do not remove -->
+&underGPL;        	 <!-- GPL License -->
+
+</chapter>
 
 &documentation.index; 
 </book>
