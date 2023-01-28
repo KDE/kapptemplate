@@ -34,6 +34,8 @@ if (BUILD_TESTING)
     find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
 
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets)
+
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     ConfigWidgets
