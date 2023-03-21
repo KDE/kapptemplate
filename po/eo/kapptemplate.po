@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-11 00:47+0000\n"
-"PO-Revision-Date: 2009-11-15 12:06+0100\n"
-"Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
+"PO-Revision-Date: 2023-03-20 22:31+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -146,8 +146,7 @@ msgid "KDE and Qt Template Generator"
 msgstr ""
 
 #: src/application/kapptemplate.cpp:43
-#, fuzzy, kde-format
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Enkonduko"
@@ -250,10 +249,9 @@ msgstr ""
 
 #. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:46
-#, fuzzy, kde-format
-#| msgid "0.0; "
+#, kde-format
 msgid "0.0"
-msgstr "0.0; "
+msgstr "0.0"
 
 #. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:49
@@ -283,11 +281,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, authorLabel)
 #: src/application/properties.ui:76
-#, fuzzy, kde-format
-#| msgctxt "NAME OF TRANSLATORS"
-#| msgid "Your names"
+#, kde-format
 msgid "Author &name:"
-msgstr "Axel Rousseau"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
 #: src/application/properties.ui:86
@@ -303,19 +299,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, emailLabel)
 #: src/application/properties.ui:102
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgid "A&uthor email:"
-msgstr "axel@esperanto-jeunes.org"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
 #: src/application/properties.ui:112
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgid "Your email address"
-msgstr "axel@esperanto-jeunes.org"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
 #: src/application/properties.ui:115
