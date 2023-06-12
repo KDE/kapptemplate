@@ -12,6 +12,7 @@
   <name xml:lang="de">KAppTemplate</name>
   <name xml:lang="el">Πρότυπο KApp</name>
   <name xml:lang="en-GB">KAppTemplate</name>
+  <name xml:lang="eo">KAppTemplate</name>
   <name xml:lang="es">KAppTemplate</name>
   <name xml:lang="et">KAppTemplate</name>
   <name xml:lang="eu">KAppTemplate</name>
@@ -48,6 +49,7 @@
   <summary xml:lang="de">Vorlagengenerator für Programmcode</summary>
   <summary xml:lang="el">Γεννήτρια προτύπων κώδικα εφαρμογών</summary>
   <summary xml:lang="en-GB">App Code Template Generator</summary>
+  <summary xml:lang="eo">Ap-koda Ŝablongenerilo</summary>
   <summary xml:lang="es">Generador de plantillas de código de aplicaciones</summary>
   <summary xml:lang="et">Rakenduse koodi malli generaator</summary>
   <summary xml:lang="eu">Aplikazio kodearen txantiloi sortzailea</summary>
@@ -119,6 +121,7 @@
     <p xml:lang="de">Funktionen:</p>
     <p xml:lang="el">Χαρακτηριστικά:</p>
     <p xml:lang="en-GB">Features:</p>
+    <p xml:lang="eo">Trajtoj:</p>
     <p xml:lang="es">Funcionalidades:</p>
     <p xml:lang="et">Omadused:</p>
     <p xml:lang="eu">Ezaugarriak:</p>
@@ -193,6 +196,7 @@
       <li xml:lang="de">Kategorien</li>
       <li xml:lang="el">Κατηγορίες</li>
       <li xml:lang="en-GB">Categories</li>
+      <li xml:lang="eo">Kategorioj</li>
       <li xml:lang="es">Categorías</li>
       <li xml:lang="et">Kategooriad</li>
       <li xml:lang="eu">Kategoriak</li>
@@ -327,6 +331,7 @@
       <li xml:lang="de">Integriert in KDevelop</li>
       <li xml:lang="el">Ενσωμάτωση στο KDevelop</li>
       <li xml:lang="en-GB">Integrated into KDevelop</li>
+      <li xml:lang="eo">Integrita en KDevelop</li>
       <li xml:lang="es">Integrado en KDevelop</li>
       <li xml:lang="et">Lõimimine KDevelopiga</li>
       <li xml:lang="eu">KDevelop-en integratua</li>
