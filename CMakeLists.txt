@@ -28,6 +28,8 @@ include(ECMAddTests)
 include(ECMQtDeclareLoggingCategory)
 include(KDEPackageAppTemplates)
 include(ECMDeprecationSettings)
+include(KDEClangFormat)
+include(KDEGitCommitHooks)
 include(FeatureSummary)
 
 if (BUILD_TESTING)
@@ -67,5 +69,15 @@ endif()
 
 ki18n_install(po)
 kdoctools_install(po)
+
+# Excluding templates, because clang-format doesn't know how to handle ${templated} code
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
+    ${PROJECT_SOURCE_DIR}/src/application/*.cpp
+    ${PROJECT_SOURCE_DIR}/src/application*.h
+    ${PROJECT_SOURCE_DIR}/tests/*.cpp
+    ${PROJECT_SOURCE_DIR}/tests/*.h
+)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
