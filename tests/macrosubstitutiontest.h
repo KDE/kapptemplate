@@ -7,8 +7,8 @@
 #ifndef MACROSUBSTITUTIONTEST_H
 #define MACROSUBSTITUTIONTEST_H
 
-#include <QObject>
 #include <QHash>
+#include <QObject>
 
 class MacroSubstitutionTest : public QObject
 {

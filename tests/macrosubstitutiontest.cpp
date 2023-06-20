@@ -6,8 +6,8 @@
 
 #include <KMacroExpander>
 
-#include <QTest>
 #include <QString>
+#include <QTest>
 #include <QTextStream>
 
 #include "macrosubstitutiontest.h"

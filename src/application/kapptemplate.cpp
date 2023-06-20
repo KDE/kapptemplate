@@ -4,8 +4,8 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include <KLocalizedString>
 #include <KHelpClient>
+#include <KLocalizedString>
 
 #include <QPixmap>
 
@@ -36,7 +36,6 @@ void KAppTemplate::showHelp()
     KHelpClient::invokeHelp("kapptemplate-index", "kapptemplate");
 }
 
-
 IntroPage::IntroPage(QWidget *parent)
     : QWizardPage(parent)
 {
@@ -44,7 +43,7 @@ IntroPage::IntroPage(QWidget *parent)
     ui_introduction.setupUi(this);
 }
 
-PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
+PropertiesPage::PropertiesPage(QWidget *parent) // in its own file?
     : QWizardPage(parent)
 {
     setTitle(i18n("Set the project properties"));
@@ -52,19 +51,19 @@ PropertiesPage::PropertiesPage(QWidget *parent) //in its own file?
     setButtonText(QWizard::CommitButton, i18nc("@action:button", "Generate"));
     ui_properties.setupUi(this);
 
-    //float version = Prefs::appVersion().toFloat();
-    ui_properties.kcfg_appVersion->setText(Prefs::appVersion());//TODO appVersion+0.1 if already exists
+    // float version = Prefs::appVersion().toFloat();
+    ui_properties.kcfg_appVersion->setText(Prefs::appVersion()); // TODO appVersion+0.1 if already exists
     ui_properties.kcfg_url->setMode(KFile::Directory);
     ui_properties.kcfg_url->setUrl(QUrl(Prefs::url()));
     ui_properties.kcfg_name->setText(Prefs::name());
     ui_properties.kcfg_email->setText(Prefs::email());
 
-    registerField("author",  ui_properties.kcfg_name);
+    registerField("author", ui_properties.kcfg_name);
     registerField("email", ui_properties.kcfg_email);
     registerField("version", ui_properties.kcfg_appVersion);
     registerField("url", ui_properties.kcfg_url->lineEdit());
 
-    //get from emaildefaults [PROFILE_Default]
+    // get from emaildefaults [PROFILE_Default]
     connect(ui_properties.kcfg_appVersion, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(ui_properties.kcfg_url, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));
     connect(ui_properties.kcfg_name, SIGNAL(textChanged(const QString &)), this, SIGNAL(completeChanged()));

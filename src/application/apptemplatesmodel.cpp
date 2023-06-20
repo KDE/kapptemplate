@@ -11,14 +11,14 @@
 #include <KTar>
 #include <KZip>
 
-#include <QStandardPaths>
 #include <QDir>
 #include <QFileInfo>
+#include <QStandardPaths>
 #include <QTemporaryDir>
 
-#include "choicepage.h"
-#include "apptemplatesmodel.h"
 #include "apptemplateitem.h"
+#include "apptemplatesmodel.h"
+#include "choicepage.h"
 #include "logging.h"
 
 AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
@@ -29,7 +29,8 @@ AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
 void extractTemplateDescriptions()
 {
     QStringList templateArchives;
-    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    const QStringList templatePaths =
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
     for (const QString &templatePath : qAsConst(templatePaths)) {
         const auto templateFiles = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateFiles) {
@@ -56,7 +57,7 @@ void extractTemplateDescriptions()
             const KArchiveEntry *templateEntry = templateArchive.directory()->entry(descriptionFileName);
             // but could be different name, if e.g. downloaded, so make a guess
             if (!templateEntry || !templateEntry->isFile()) {
-                for (const auto& entryName : templateArchive.directory()->entries()) {
+                for (const auto &entryName : templateArchive.directory()->entries()) {
                     if (entryName.endsWith(QLatin1String(".kdevtemplate"))) {
                         templateEntry = templateArchive.directory()->entry(entryName);
                         break;
@@ -68,7 +69,7 @@ void extractTemplateDescriptions()
                 qCDebug(KAPPTEMPLATE) << "template" << archName << "does not contain .kdevtemplate file";
                 continue;
             }
-            const KArchiveFile *templateFile = (KArchiveFile*)templateEntry;
+            const KArchiveFile *templateFile = (KArchiveFile *)templateEntry;
 
             qCDebug(KAPPTEMPLATE) << "copy template description to" << localDescriptionsDir;
             if (templateFile->name() == descriptionFileName) {
@@ -154,10 +155,10 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
         return QVariant();
 
     switch (section) {
-        case 0:
-            return i18nc("@title:column", "Templates Projects");
-        default:
-            break;
+    case 0:
+        return i18nc("@title:column", "Templates Projects");
+    default:
+        break;
     }
     return QVariant();
 }

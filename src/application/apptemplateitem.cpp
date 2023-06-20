@@ -13,13 +13,13 @@ AppTemplateItem::AppTemplateItem()
     init();
 }
 
-AppTemplateItem::AppTemplateItem(const QIcon & icon, const QString & text)
+AppTemplateItem::AppTemplateItem(const QIcon &icon, const QString &text)
     : QStandardItem(icon, text)
 {
     init();
 }
 
-AppTemplateItem::AppTemplateItem(const QString & text)
+AppTemplateItem::AppTemplateItem(const QString &text)
     : QStandardItem(text)
 {
     init();

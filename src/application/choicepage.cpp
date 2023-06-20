@@ -10,13 +10,13 @@
 #include <KLocalizedString>
 
 #include <QDir>
-#include <QString>
-#include <QPixmap>
-#include <QStandardItem>
-#include <QStandardPaths>
 #include <QFileDialog>
+#include <QPixmap>
 #include <QPointer>
 #include <QRegularExpression>
+#include <QStandardItem>
+#include <QStandardPaths>
+#include <QString>
 
 #ifdef KAPPTEMLATE_SOLVEDGHNS
 #include <KNS3/DownloadDialog>
@@ -24,17 +24,17 @@
 #include <KTar>
 #include <KZip>
 
-#include "choicepage.h"
 #include "apptemplatesmodel.h"
-#include "prefs.h"
+#include "choicepage.h"
 #include "logging.h"
+#include "prefs.h"
 
 ChoicePage::ChoicePage(QWidget *parent)
     : QWizardPage(parent)
 {
     setTitle(i18n("Choose your project template"));
     ui_choice.setupUi(this);
-    //Get the model
+    // Get the model
     templatesModel = new AppTemplatesModel(this);
     templatesModel->refresh();
     ui_choice.appTree->setModel(templatesModel);
@@ -56,7 +56,7 @@ ChoicePage::ChoicePage(QWidget *parent)
     registerField("tempName", this, "templateName", "templateNameChanged");
 }
 
-bool ChoicePage::isComplete () const
+bool ChoicePage::isComplete() const
 {
     if (!m_baseName.isEmpty() && !ui_choice.kcfg_appName->text().isEmpty()) {
         return true;
@@ -70,8 +70,7 @@ void ChoicePage::saveConfig()
     Prefs::self()->save();
 }
 
-static
-QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& archiveBaseName)
+static QPixmap generateTemplatePreviewPicture(const QString &iconName, const QString &archiveBaseName)
 {
     if (iconName.isEmpty()) {
         return QPixmap();
@@ -79,7 +78,8 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
 
     // find archive
     QString archivePath;
-    const QStringList templatePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    const QStringList templatePaths =
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
     for (const QString &templatePath : templatePaths) {
         const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateArchives) {
@@ -101,7 +101,7 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
         }
 
         if (templateArchive->open(QIODevice::ReadOnly)) {
-            const KArchiveFile* iconFile = templateArchive->directory()->file(iconName);
+            const KArchiveFile *iconFile = templateArchive->directory()->file(iconName);
             if (iconFile) {
                 const auto data = iconFile->data();
                 QPixmap pixmap;
@@ -113,7 +113,6 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
             }
         }
     }
-
 
     // support legacy templates with image files installed separately in the filesystem
     const QString iconFilePath = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("/kdevappwizard/template_previews/") + iconName);
@@ -135,34 +134,35 @@ QPixmap generateTemplatePreviewPicture(const QString& iconName, const QString& a
 
 void ChoicePage::itemSelected(const QModelIndex &index)
 {
-    if (!index.isValid()){
+    if (!index.isValid()) {
         Q_EMIT completeChanged();
         return;
     }
 
-    QPixmap picture = generateTemplatePreviewPicture(index.data(AppTemplatesModel::PictureNameRole).toString(), index.data(AppTemplatesModel::BaseNameRole).toString());
+    QPixmap picture =
+        generateTemplatePreviewPicture(index.data(AppTemplatesModel::PictureNameRole).toString(), index.data(AppTemplatesModel::BaseNameRole).toString());
 
     if (picture.isNull()) {
         ui_choice.pictureLabel->setText(i18n("No sample picture available."));
     } else {
         const QSize labelSize = ui_choice.pictureLabel->minimumSize();
-        if ((labelSize.height() < picture.height() || labelSize.width() < picture.width()) ||
-            (labelSize.height() > picture.height()*2 || labelSize.width() > picture.width()*2)) {
+        if ((labelSize.height() < picture.height() || labelSize.width() < picture.width())
+            || (labelSize.height() > picture.height() * 2 || labelSize.width() > picture.width() * 2)) {
             picture = picture.scaled(labelSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
         }
         ui_choice.pictureLabel->setPixmap(picture);
     }
 
-    //and description
+    // and description
     QString description = index.data(AppTemplatesModel::DescriptionFileRole).toString();
     if (description.isEmpty()) {
-        description = i18n("Template description"); //default if none
+        description = i18n("Template description"); // default if none
     }
 
     ui_choice.descriptionLabel->setText(description);
 
     m_baseName = index.data(AppTemplatesModel::BaseNameRole).toString();
-    //baseName can check if an item is selected.
+    // baseName can check if an item is selected.
     if (!m_baseName.isEmpty()) {
         ui_choice.kcfg_appName->setFocus(Qt::MouseFocusReason);
     }
@@ -175,9 +175,7 @@ void ChoicePage::loadFromFile()
 {
     QPointer<QFileDialog> fileDialog = new QFileDialog(this);
 
-    fileDialog->setMimeTypeFilters(QStringList()
-        << QStringLiteral("application/x-bzip-compressed-tar")
-        << QStringLiteral("application/zip"));
+    fileDialog->setMimeTypeFilters(QStringList() << QStringLiteral("application/x-bzip-compressed-tar") << QStringLiteral("application/zip"));
     fileDialog->setFileMode(QFileDialog::ExistingFiles);
 
     if (!fileDialog->exec()) {
@@ -195,7 +193,7 @@ void ChoicePage::loadFromFile()
         dir.mkpath(QStringLiteral("."));
     }
 
-    for (const QString& fileName : selectedFiles) {
+    for (const QString &fileName : selectedFiles) {
         qCDebug(KAPPTEMPLATE) << "Copying" << fileName << "to" << saveLocation;
         QFileInfo info(fileName);
         QFile::copy(fileName, saveLocation + info.fileName());

@@ -4,9 +4,9 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include <QTest>
 #include <QRegularExpression>
 #include <QString>
+#include <QTest>
 
 #include "namevalidatortest.h"
 
@@ -16,7 +16,7 @@
 void NameValidatorTest::testAppName()
 {
     QRegularExpression rx("^[a-zA-Z0-9_.\\-]*$");
-    QString myAppName = "KTry_App-0.1" ;
+    QString myAppName = "KTry_App-0.1";
     QRegularExpressionMatch match = rx.match(myAppName);
     QVERIFY(match.hasMatch());
 }
