@@ -17,7 +17,7 @@
     </entry>
     <entry name="url" type="String">
       <label>Home dir of the user</label>
-      <code>QString defaultDir = KUser().homeDir()+"/src";
+      <code>QString defaultDir = KUser().homeDir() + "/src";
       </code>
       <default code="true">defaultDir</default>
     </entry>
@@ -28,8 +28,8 @@
       <code>QString name;
       {
         KEMailSettings emailConfig;
-        emailConfig.setProfile( emailConfig.defaultProfileName() );
-        name = emailConfig.getSetting( KEMailSettings::RealName );
+        emailConfig.setProfile(emailConfig.defaultProfileName());
+        name = emailConfig.getSetting(KEMailSettings::RealName);
       }
       </code>
       <default code="true">name</default>
@@ -39,8 +39,8 @@
       <code>QString address;
       {
         KEMailSettings emailConfig;
-        emailConfig.setProfile( emailConfig.defaultProfileName() );
-        address = emailConfig.getSetting( KEMailSettings::EmailAddress );
+        emailConfig.setProfile(emailConfig.defaultProfileName());
+        address = emailConfig.getSetting(KEMailSettings::EmailAddress);
       }
       </code>
       <default code="true">address</default>

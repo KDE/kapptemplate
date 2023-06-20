@@ -43,9 +43,9 @@ target_link_libraries(kapptemplate
 )
 
 install(TARGETS kapptemplate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(PROGRAMS org.kde.kapptemplate.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
-install(FILES org.kde.kapptemplate.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFODIR})
-install(FILES kapptemplate.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR})
+install(PROGRAMS org.kde.kapptemplate.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.kapptemplate.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES kapptemplate.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 ecm_qt_install_logging_categories(
     EXPORT KAPPTEMPLATE
@@ -54,4 +54,4 @@ ecm_qt_install_logging_categories(
 )
 
 # don't install for now, needs to cooperate somehow with kdevplatform/plugins/appwizard/kdevappwizard.knsrc
-# install(FILES kapptemplate.knsrc  DESTINATION  ${KDE_INSTALL_CONFDIR})
+# install(FILES kapptemplate.knsrc DESTINATION ${KDE_INSTALL_CONFDIR})

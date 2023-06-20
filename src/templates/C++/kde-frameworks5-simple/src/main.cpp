@@ -21,12 +21,12 @@ int main(int argc, char **argv)
 
     KLocalizedString::setApplicationDomain("%{APPNAMELC}");
 
-    KAboutData aboutData( QStringLiteral("%{APPNAMELC}"),
-                          i18n("%{APPNAME}"),
-                          QStringLiteral("%{VERSION}"),
-                          i18n("A Simple Application written with KDE Frameworks"),
-                          KAboutLicense::GPL,
-                          i18n("Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));
+    KAboutData aboutData(QStringLiteral("%{APPNAMELC}"),
+                         i18n("%{APPNAME}"),
+                         QStringLiteral("%{VERSION}"),
+                         i18n("A Simple Application written with KDE Frameworks"),
+                         KAboutLicense::GPL,
+                         i18n("Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));
 
     aboutData.addAuthor(i18n("%{AUTHOR}"),i18n("Author"), QStringLiteral("%{EMAIL}"));
     aboutData.setOrganizationDomain("example.org");
