@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"POT-Creation-Date: 2023-06-21 00:49+0000\n"
 "PO-Revision-Date: 2020-05-05 08:28+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: src/application/apptemplatesmodel.cpp:158
+#: src/application/apptemplatesmodel.cpp:159
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -93,12 +93,12 @@ msgstr ""
 "Не вдалося інтегрувати дані вашого проєкту до файла %1. Проєкт не буде "
 "створено, усі тимчасові файли буде вилучено."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Не вдалося скопіювати файл шаблона до %1."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Поступ створення\n"
@@ -123,7 +123,7 @@ msgstr "Версія: %1 <br /><br />"
 msgid "Installed in: %1 <br /><br />"
 msgstr "Встановлено у: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:228
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -132,7 +132,7 @@ msgstr ""
 "У теці вашого проєкту <b>%1</b><br /> ви можете знайти файл README, який "
 "допоможе вам почати роботу з вашим проєктом."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
@@ -156,24 +156,24 @@ msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
 msgstr "Створення шаблонів для KDE та Qt"
 
-#: src/application/kapptemplate.cpp:43
+#: src/application/kapptemplate.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Вступ"
 
-#: src/application/kapptemplate.cpp:50
+#: src/application/kapptemplate.cpp:49
 #, kde-format
 msgid "Set the project properties"
 msgstr "Встановіть властивості проєкту"
 
-#: src/application/kapptemplate.cpp:52
+#: src/application/kapptemplate.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
 msgstr "Створити"
 
-#: src/application/kapptemplate.cpp:79
+#: src/application/kapptemplate.cpp:78
 #, kde-format
 msgid "Your project name is: %1"
 msgstr "Назва вашого проєкту: %1"
@@ -208,7 +208,7 @@ msgstr "Ім’я користувача"
 msgid "Email of the user"
 msgstr "Адреса ел.пошти користувача"
 
-#: src/application/main.cpp:25
+#: src/application/main.cpp:24
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
@@ -223,17 +223,17 @@ msgstr "KAppTemplate — це програма для створення шаб�
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "© Anne-Marie Mahfouf, 2008"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:32
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Піктограми з піктограм Команди Oxygen"

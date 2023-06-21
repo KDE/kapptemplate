@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"POT-Creation-Date: 2023-06-21 00:49+0000\n"
 "PO-Revision-Date: 2020-09-14 13:31+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -33,7 +33,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sng@hellug.gr, manolis@koppermind.homelinux.org, pvidalis@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:158
+#: src/application/apptemplatesmodel.cpp:159
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -96,12 +96,12 @@ msgstr ""
 "Αποτυχία ενσωμάτωσης πληροφοριών του έργου σας στο αρχείο %1. Η εργασίαδεν "
 "έχει δημιουργηθεί και όλα τα προσωρινά αρχεία θα πρέπει να αφαιρεθούν."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Αδυναμία αντιγραφής πρότυπου αρχείου στο %1."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Πρόοδος δημιουργίας\n"
@@ -126,7 +126,7 @@ msgstr "Έκδοση: %1 <br /><br />"
 msgid "Installed in: %1 <br /><br />"
 msgstr "Εγκατάσταση: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:228
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -135,7 +135,7 @@ msgstr ""
 "Θα βρείτε ένα αρχείο README στο φάκελο του έργου σας <b>%1</b><br /> το "
 "οποίο θα σας βοηθήσει να ξεκινήσετε με το έργο σας."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
@@ -159,24 +159,24 @@ msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
 msgstr "Δημιουργία προτύπου KDE και Qt"
 
-#: src/application/kapptemplate.cpp:43
+#: src/application/kapptemplate.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Εισαγωγή"
 
-#: src/application/kapptemplate.cpp:50
+#: src/application/kapptemplate.cpp:49
 #, kde-format
 msgid "Set the project properties"
 msgstr "Ορισμός ιδιοτήτων του έργου"
 
-#: src/application/kapptemplate.cpp:52
+#: src/application/kapptemplate.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
 msgstr "Δημιουργία"
 
-#: src/application/kapptemplate.cpp:79
+#: src/application/kapptemplate.cpp:78
 #, kde-format
 msgid "Your project name is: %1"
 msgstr "Το όνομα του έργου σας είναι: %1"
@@ -211,7 +211,7 @@ msgstr "Όνομα του χρήστη"
 msgid "Email of the user"
 msgstr "Email του χρήστη"
 
-#: src/application/main.cpp:25
+#: src/application/main.cpp:24
 #, kde-format
 msgid "KAppTemplate"
 msgstr "Πρότυπο KApp"
@@ -226,17 +226,17 @@ msgstr "Το KAppTemplate είναι ένας δημιουργός προτύπ�
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:32
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Εικονίδια από την ομάδα εικονιδίων του Oxygen"

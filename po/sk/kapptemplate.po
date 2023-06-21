@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"POT-Creation-Date: 2023-06-21 00:49+0000\n"
 "PO-Revision-Date: 2022-04-09 19:28+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -26,7 +26,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:158
+#: src/application/apptemplatesmodel.cpp:159
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -89,12 +89,12 @@ msgstr ""
 "Zlyhalo integrovanie vašich informácií projektu do súboru %1. Projekt nebol "
 "integrovaný a všetky dočasné súbory sa odstránia."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Nemôžem kopírovať súbor šablóny do %1."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Priebeh generovania\n"
@@ -119,7 +119,7 @@ msgstr "Verzia: %1 <br /><br />"
 msgid "Installed in: %1 <br /><br />"
 msgstr "Nainštalované v: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:228
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -128,7 +128,7 @@ msgstr ""
 "README nájdete v priečinku projektu <b>%1</b><br /> na pomoc pri začiatkoch "
 "s vašim projektom."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
@@ -151,24 +151,24 @@ msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
 msgstr "Generátor šablón KDE a Qt"
 
-#: src/application/kapptemplate.cpp:43
+#: src/application/kapptemplate.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Úvod"
 
-#: src/application/kapptemplate.cpp:50
+#: src/application/kapptemplate.cpp:49
 #, kde-format
 msgid "Set the project properties"
 msgstr "Nastaviť vlastnosti projektu"
 
-#: src/application/kapptemplate.cpp:52
+#: src/application/kapptemplate.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
 msgstr "Generovať"
 
-#: src/application/kapptemplate.cpp:79
+#: src/application/kapptemplate.cpp:78
 #, kde-format
 msgid "Your project name is: %1"
 msgstr "Názov vášho projektu je: %1"
@@ -203,7 +203,7 @@ msgstr "Meno používateľa"
 msgid "Email of the user"
 msgstr "E-mail používateľa"
 
-#: src/application/main.cpp:25
+#: src/application/main.cpp:24
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
@@ -218,17 +218,17 @@ msgstr "KAppTemplate je generátor šablón projektov KDE"
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:32
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikony z tímu Oxygen"

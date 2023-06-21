@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"POT-Creation-Date: 2023-06-21 00:49+0000\n"
 "PO-Revision-Date: 2020-05-05 07:39+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -28,7 +28,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@bredband.net"
 
-#: src/application/apptemplatesmodel.cpp:158
+#: src/application/apptemplatesmodel.cpp:159
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -91,12 +91,12 @@ msgstr ""
 "Misslyckades integrera din projektinformation i filen %1. Projektet har inte "
 "skapats och alla tillfälliga filer kommer att tas bort."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Kunde inte kopiera mallfil till %1"
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Genereringsförlopp\n"
@@ -121,7 +121,7 @@ msgstr "Version: %1 <br /><br />"
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installeras i: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:228
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -130,7 +130,7 @@ msgstr ""
 "Du hittar filen README i projektkatalogen <b>%1</b><br /> för att hjälpa dig "
 "komma igång med ditt projekt."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
@@ -154,24 +154,24 @@ msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
 msgstr "KDE- och Qt-mallgenerator"
 
-#: src/application/kapptemplate.cpp:43
+#: src/application/kapptemplate.cpp:42
 #, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Inledning"
 
-#: src/application/kapptemplate.cpp:50
+#: src/application/kapptemplate.cpp:49
 #, kde-format
 msgid "Set the project properties"
 msgstr "Ange projektegenskaper"
 
-#: src/application/kapptemplate.cpp:52
+#: src/application/kapptemplate.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
 msgstr "Generera"
 
-#: src/application/kapptemplate.cpp:79
+#: src/application/kapptemplate.cpp:78
 #, kde-format
 msgid "Your project name is: %1"
 msgstr "Projektets namn är: %1"
@@ -206,7 +206,7 @@ msgstr "Användarens namn"
 msgid "Email of the user"
 msgstr "Användarens e-postadress"
 
-#: src/application/main.cpp:25
+#: src/application/main.cpp:24
 #, kde-format
 msgid "KAppTemplate"
 msgstr "Kapptemplate"
@@ -221,17 +221,17 @@ msgstr "Kapptemplate är en mallgenerator för KDE-projekt"
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "© 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:32
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikoner från Oxygen-gruppens ikoner"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-11 00:47+0000\n"
+"POT-Creation-Date: 2023-06-21 00:49+0000\n"
 "PO-Revision-Date: 2009-06-04 11:50+0300\n"
 "Last-Translator: Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "viesturs.zarins@mi.lu.lv"
 
-#: src/application/apptemplatesmodel.cpp:158
+#: src/application/apptemplatesmodel.cpp:159
 #, fuzzy, kde-format
 #| msgid "Templates Projects"
 msgctxt "@title:column"
@@ -93,12 +93,12 @@ msgid ""
 "has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Generēšanas progress\n"
@@ -123,7 +123,7 @@ msgstr "Versija: %1 <br /> <br />"
 msgid "Installed in: %1 <br /><br />"
 msgstr "Instalēts: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:228
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -132,7 +132,7 @@ msgstr ""
 "Projekta mapē <b> %1</b> atradīsiet README failu <br />, tas jums palīdzēs "
 "sākt projektu."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:234
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
@@ -160,25 +160,25 @@ msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
 msgstr "KDE 4 sagatavju ģenerators"
 
-#: src/application/kapptemplate.cpp:43
+#: src/application/kapptemplate.cpp:42
 #, fuzzy, kde-format
 #| msgid "Introduction"
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Ievads"
 
-#: src/application/kapptemplate.cpp:50
+#: src/application/kapptemplate.cpp:49
 #, kde-format
 msgid "Set the project properties"
 msgstr "Iestatīt projekta īpašības"
 
-#: src/application/kapptemplate.cpp:52
+#: src/application/kapptemplate.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
 msgstr ""
 
-#: src/application/kapptemplate.cpp:79
+#: src/application/kapptemplate.cpp:78
 #, fuzzy, kde-format
 #| msgid "Your project name is : %1"
 msgid "Your project name is: %1"
@@ -214,7 +214,7 @@ msgstr "Lietotāja vārds"
 msgid "Email of the user"
 msgstr "Lietotāja e-pasts"
 
-#: src/application/main.cpp:25
+#: src/application/main.cpp:24
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
@@ -230,17 +230,17 @@ msgstr "KAppTemplate ir KDE 4 projektu sagatavju ģenerators"
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:32
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:31
+#: src/application/main.cpp:33
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikonas no Oxygen komandas ikonām"
