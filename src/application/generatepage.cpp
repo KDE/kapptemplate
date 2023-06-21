@@ -17,7 +17,6 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QTemporaryDir>
-#include <QTextCodec>
 
 #include "generatepage.h"
 #include "kapptemplate.h"
