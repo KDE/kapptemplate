@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-21 00:49+0000\n"
+"POT-Creation-Date: 2023-06-22 00:50+0000\n"
 "PO-Revision-Date: 2023-06-17 04:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -66,22 +66,22 @@ msgstr "没有可用的示例图片。"
 msgid "Template description"
 msgstr "模板描述"
 
-#: src/application/generatepage.cpp:30
+#: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
 msgstr "正在生成您的项目"
 
-#: src/application/generatepage.cpp:46
+#: src/application/generatepage.cpp:45
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "无法创建 %1。"
 
-#: src/application/generatepage.cpp:66
+#: src/application/generatepage.cpp:65
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "路径 %1 无法创建。"
 
-#: src/application/generatepage.cpp:78
+#: src/application/generatepage.cpp:77
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -89,37 +89,37 @@ msgid ""
 msgstr ""
 "未能将项目信息集成到文件\"%1\"中。尚未生成项目，并且将删除所有临时文件。"
 
-#: src/application/generatepage.cpp:86
+#: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
-#: src/application/generatepage.cpp:120
+#: src/application/generatepage.cpp:119
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "生成进度\n"
 
-#: src/application/generatepage.cpp:220
+#: src/application/generatepage.cpp:219
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "成功。\n"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:223
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "您的项目名称是：<b>%1</b>，基于 %2 模板。<br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:224
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "版本：%1 <br /><br />"
 
-#: src/application/generatepage.cpp:226
+#: src/application/generatepage.cpp:225
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "安装在：%1 <br /><br />"
 
-#: src/application/generatepage.cpp:228
+#: src/application/generatepage.cpp:227
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -127,7 +127,7 @@ msgid ""
 msgstr ""
 "您可在您项目的文件夹 <b>%1</b><br /> 中找到 README 文件以帮助您开始您的项目。"
 
-#: src/application/generatepage.cpp:234
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

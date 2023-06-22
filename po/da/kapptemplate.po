@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-21 00:49+0000\n"
+"POT-Creation-Date: 2023-06-22 00:50+0000\n"
 "PO-Revision-Date: 2016-07-11 21:40+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -67,22 +67,22 @@ msgstr ""
 msgid "Template description"
 msgstr "Skabelonbeskrivelse"
 
-#: src/application/generatepage.cpp:30
+#: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
 msgstr "Genererer dit projekt"
 
-#: src/application/generatepage.cpp:46
+#: src/application/generatepage.cpp:45
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 kan ikke oprettes."
 
-#: src/application/generatepage.cpp:66
+#: src/application/generatepage.cpp:65
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Stien %1 kunne ikke oprettes."
 
-#: src/application/generatepage.cpp:78
+#: src/application/generatepage.cpp:77
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -91,37 +91,37 @@ msgstr ""
 "Kunne ikke integrere din projektinformation ind i filen %1. Projektet er "
 "ikke blevet genereret og alle midlertidige filer vil blive fjernet."
 
-#: src/application/generatepage.cpp:86
+#: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Kunne ikke kopiere skabelonfilen til %1."
 
-#: src/application/generatepage.cpp:120
+#: src/application/generatepage.cpp:119
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Genereringsfremgang\n"
 
-#: src/application/generatepage.cpp:220
+#: src/application/generatepage.cpp:219
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Gennemført.\n"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:223
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "Dit projektnavn er: <b>%1</b>, baseret på skabelonen %2.<br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:224
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Version: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:226
+#: src/application/generatepage.cpp:225
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installeret i: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:228
+#: src/application/generatepage.cpp:227
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -130,7 +130,7 @@ msgstr ""
 "Du kan finde en README i din projektmappe <b>%1</b><br /> til at hjælpe dig "
 "med at komme i gang med dit projekt."
 
-#: src/application/generatepage.cpp:234
+#: src/application/generatepage.cpp:233
 #, fuzzy, kde-format
 #| msgid "Error"
 msgctxt "@title:window"

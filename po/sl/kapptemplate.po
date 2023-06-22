@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-21 00:49+0000\n"
+"POT-Creation-Date: 2023-06-22 00:50+0000\n"
 "PO-Revision-Date: 2020-06-08 11:48+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -69,22 +69,22 @@ msgstr "Ni razpoložljive vzorčne slike."
 msgid "Template description"
 msgstr "Opis predloge"
 
-#: src/application/generatepage.cpp:30
+#: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
 msgstr "Ustvarjanje vašega projekta"
 
-#: src/application/generatepage.cpp:46
+#: src/application/generatepage.cpp:45
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 ni mogoče ustvariti."
 
-#: src/application/generatepage.cpp:66
+#: src/application/generatepage.cpp:65
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Poti %1 ni bilo mogoče ustvariti."
 
-#: src/application/generatepage.cpp:78
+#: src/application/generatepage.cpp:77
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -93,37 +93,37 @@ msgstr ""
 "V datoteko %1 ni bilo mogoče vključiti podatkov o vašem projektu. Projekt ni "
 "bil ustvarjen, zato bodo odstranjene tudi vse začasne datoteke."
 
-#: src/application/generatepage.cpp:86
+#: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Ni bilo mogoče kopirati datoteke predloge v %1."
 
-#: src/application/generatepage.cpp:120
+#: src/application/generatepage.cpp:119
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Napredek ustvarjanja\n"
 
-#: src/application/generatepage.cpp:220
+#: src/application/generatepage.cpp:219
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Uspelo.\n"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:223
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "Ime vašega projekta je: <b>%1</b>, temelji na predlogi %2.<br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:224
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Različica: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:226
+#: src/application/generatepage.cpp:225
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Nameščen v: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:228
+#: src/application/generatepage.cpp:227
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -132,7 +132,7 @@ msgstr ""
 "V mapi vašega projekta boste našli datoteko PREBERI ME <b>%1</b><br />, ki "
 "vam bo pomagala začeti s projektom."
 
-#: src/application/generatepage.cpp:234
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

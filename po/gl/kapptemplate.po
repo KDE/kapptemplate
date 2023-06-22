@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-21 00:49+0000\n"
+"POT-Creation-Date: 2023-06-22 00:50+0000\n"
 "PO-Revision-Date: 2023-04-28 17:41+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -70,22 +70,22 @@ msgstr "Non hai unha imaxe de exemplo dispoñíbel."
 msgid "Template description"
 msgstr "Descrición do modelo"
 
-#: src/application/generatepage.cpp:30
+#: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
 msgstr "Estase a xerar o proxecto"
 
-#: src/application/generatepage.cpp:46
+#: src/application/generatepage.cpp:45
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "Non se pode crear %1."
 
-#: src/application/generatepage.cpp:66
+#: src/application/generatepage.cpp:65
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Non se puido crear a ruta %1."
 
-#: src/application/generatepage.cpp:78
+#: src/application/generatepage.cpp:77
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -94,37 +94,37 @@ msgstr ""
 "Non se puido integrar a información do proxecto no ficheiro %1. Non se puido "
 "xerar o proxecto, e retiráronse todos os ficheiros temporais."
 
-#: src/application/generatepage.cpp:86
+#: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Non se puido copiar o ficheiro de modelo a %1."
 
-#: src/application/generatepage.cpp:120
+#: src/application/generatepage.cpp:119
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Progreso da xeración\n"
 
-#: src/application/generatepage.cpp:220
+#: src/application/generatepage.cpp:219
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Completouse con éxito.\n"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:223
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "O nome do proxecto é <b>%1</b>, está baseado no modelo %2.<br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:224
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versión: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:226
+#: src/application/generatepage.cpp:225
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Instalado en: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:228
+#: src/application/generatepage.cpp:227
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -133,7 +133,7 @@ msgstr ""
 "Atopará un ficheiro README no cartafol <b>%1</b><br />para axudalo a comezar "
 "co proxecto."
 
-#: src/application/generatepage.cpp:234
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
