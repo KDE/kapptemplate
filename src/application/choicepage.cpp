@@ -224,3 +224,5 @@ void ChoicePage::getMoreTemplates()
     }
 }
 #endif
+
+#include "moc_choicepage.cpp"

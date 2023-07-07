@@ -88,3 +88,5 @@ void PropertiesPage::saveConfig()
     Prefs::setAppName(appNameString);
     Prefs::self()->save();
 }
+
+#include "moc_kapptemplate.cpp"

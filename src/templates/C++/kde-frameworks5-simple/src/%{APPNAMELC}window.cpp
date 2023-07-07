@@ -17,3 +17,5 @@
 %{APPNAME}Window::~%{APPNAME}Window()
 {
 }
+
+#include "moc_%{APPNAMELC}window.cpp"

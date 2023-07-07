@@ -22,3 +22,5 @@ void NameValidatorTest::testAppName()
 }
 
 QTEST_MAIN(NameValidatorTest)
+
+#include "moc_namevalidatortest.cpp"

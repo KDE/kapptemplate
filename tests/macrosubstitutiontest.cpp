@@ -55,3 +55,5 @@ void MacroSubstitutionTest::substitute()
 }
 
 QTEST_MAIN(MacroSubstitutionTest)
+
+#include "moc_macrosubstitutiontest.cpp"

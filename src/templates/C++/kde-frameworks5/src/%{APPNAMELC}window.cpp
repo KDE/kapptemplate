@@ -64,3 +64,5 @@ void %{APPNAME}Window::settingsConfigure()
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
 }
+
+#include "moc_%{APPNAMELC}window.cpp"

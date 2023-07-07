@@ -234,3 +234,5 @@ void GeneratePage::displayError(const QString &error)
     feedback.append("\n\n" + error);
     ui_generate.label->setText(feedback);
 }
+
+#include "moc_generatepage.cpp"

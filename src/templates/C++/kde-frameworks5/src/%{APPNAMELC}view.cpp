@@ -43,3 +43,5 @@ void %{APPNAME}View::handleSettingsChanged()
     // i18n : internationalization
     m_ui.templateLabel->setText(i18n("This project is %1 days old", %{APPNAME}Settings::ageInDays()));
 }
+
+#include "moc_%{APPNAMELC}view.cpp"
