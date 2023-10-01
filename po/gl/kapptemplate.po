@@ -73,17 +73,17 @@ msgstr "Descrición do modelo"
 #: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
-msgstr "Estase a xerar o proxecto"
+msgstr "Xerando o proxecto"
 
 #: src/application/generatepage.cpp:45
 #, kde-format
 msgid "%1 cannot be created."
-msgstr "Non se pode crear %1."
+msgstr "Non é posíbel crear %1."
 
 #: src/application/generatepage.cpp:65
 #, kde-format
 msgid "Path %1 could not be created."
-msgstr "Non se puido crear a ruta %1."
+msgstr "Non foi posíbel crear a ruta %1."
 
 #: src/application/generatepage.cpp:77
 #, kde-format
@@ -91,13 +91,13 @@ msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
-"Non se puido integrar a información do proxecto no ficheiro %1. Non se puido "
-"xerar o proxecto, e retiráronse todos os ficheiros temporais."
+"Non foi posíbel integrar a información do proxecto no ficheiro %1. Non se "
+"puido xerar o proxecto, e retiráronse todos os ficheiros temporais."
 
 #: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr "Non se puido copiar o ficheiro de modelo a %1."
+msgstr "Non foi posíbel copiar o ficheiro de modelo a %1."
 
 #: src/application/generatepage.cpp:119
 #, kde-format
