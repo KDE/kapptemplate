@@ -33,7 +33,7 @@ The name of the template is the name you write in English in the .kdevtemplate f
 Example:
 
 ```ini
-Name=Qt5 GUI Application
+Name=Qt GUI Application
 ```
 
 ### Template description
@@ -43,7 +43,7 @@ The description of the template is the comment you write in English in the .kdev
 Example:
 
 ```ini
-Comment=Generate a QMake/Qt5 based application with graphical user interface (cross-platform)
+Comment=Generate a QMake/Qt based application with graphical user interface (cross-platform)
 ```
 
 ### Template Category
@@ -63,7 +63,7 @@ A screenshot will help the user to preview the template. This screenshot file wi
 Example:
 
 ```ini
-Icon=qt5gui.png
+Icon=qtgui.png
 ```
 
 KDevelop: templates are tarred using the CMake kdevplatform_add_app_templates macro and installed in kdevappwizard/templates.
