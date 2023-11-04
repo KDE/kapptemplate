@@ -18,13 +18,13 @@ ki18n_wrap_ui(%{APPNAMELC}
 )
 
 target_link_libraries(%{APPNAMELC}
-    KF5::CoreAddons
-    KF5::I18n
-    KF5::XmlGui
-    KF5::ConfigWidgets
-    KF5::DBusAddons
-    KF5::Crash
-    Qt5::Widgets
+    KF6::CoreAddons
+    KF6::I18n
+    KF6::XmlGui
+    KF6::ConfigWidgets
+    KF6::DBusAddons
+    KF6::Crash
+    Qt6::Widgets
 )
 
 install(TARGETS %{APPNAMELC} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

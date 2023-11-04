@@ -1,7 +1,6 @@
-# KDE Config File
 [General]
 Name=C++ KDE Frameworks
-Comment=A KDE Frameworks 5 GUI Application in C++
+Comment=A KDE Frameworks 6 GUI Application in C++
 Category=Qt/Graphical
-Icon=kde-frameworks5.png
+Icon=kde-frameworks6.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}window.cpp

@@ -483,7 +483,7 @@ application -->
 
 <!--
 List any special requirements for your application here. This should include:
-.Libraries or other software that is not included in kdesupport or kf5
+.Libraries or other software that is not included in kdesupport or KF6
 .Hardware requirements like amount of RAM, disk space, graphics card
 capabilities, screen resolution, special expansion cards, etc.
 .Operating systems the app will run on. If your app is designed only for a
@@ -493,7 +493,7 @@ information here.
 
 <para>
 In order to successfully use &kmyapplication;, you need few libraries from
-&kf5; 5.1 (bar, baz). Foobar.lib is
+&kde-frameworks; 6.0 (bar, baz). Foobar.lib is
 required in order to support the advanced &kmyapplication; features. &kmyapplication; uses
 about 5 megs of memory to run, but this may vary depending on your
 platform and configuration.

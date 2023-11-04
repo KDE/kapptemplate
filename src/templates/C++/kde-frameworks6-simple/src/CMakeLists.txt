@@ -8,9 +8,9 @@ target_sources(%{APPNAMELC} PRIVATE
 ki18n_wrap_ui(%{APPNAMELC} %{APPNAMELC}.ui)
 
 target_link_libraries(%{APPNAMELC}
-    KF5::CoreAddons
-    KF5::I18n
-    Qt5::Widgets
+    KF6::CoreAddons
+    KF6::I18n
+    Qt6::Widgets
 )
 
 install( TARGETS %{APPNAMELC} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
