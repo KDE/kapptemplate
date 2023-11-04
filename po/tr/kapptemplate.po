@@ -1,0 +1,359 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# H. İbrahim Güngör <ibrahim@pardus.org.tr>, 2011.
+# obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
+# Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdesdk-kde4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"PO-Revision-Date: 2023-05-08 10:54+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 23.03.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Serdar Soytetir"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tulliana@gmail.com"
+
+#: src/application/apptemplatesmodel.cpp:159
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Şablonlar Projeleri"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Daha Fazla Şablon Getir"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Şablonu Dosyadan Kur"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Projenin adı:"
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "Proje şablonunuzu seçin"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "Kullanılabilir örnek resim yok."
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "Şablon açıklaması"
+
+#: src/application/generatepage.cpp:29
+#, kde-format
+msgid "Generating your project"
+msgstr "Projeniz oluşturuluyor"
+
+#: src/application/generatepage.cpp:45
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "%1 oluşturulamaz."
+
+#: src/application/generatepage.cpp:65
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "%1 yolu oluşturulamadı."
+
+#: src/application/generatepage.cpp:77
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Proje bilgileriniz %1 dosyasıyla bütünleştirilemedi. Proje oluşturulamadı ve "
+"tüm geçici dosyalar silindi."
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Şablon dosyası %1 konumuna kopyalanamadı."
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Oluşturulma Süreci\n"
+
+#: src/application/generatepage.cpp:219
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Başarılı oldu.\n"
+
+#: src/application/generatepage.cpp:223
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "Projenizin adı: <b>%1</b>, %2 şablonunu temal aldı.<br />"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "Sürüm: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "Kurulduğu yer: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"<b>%1</b> proje dizininizde, projenize başlamanıza yardım edecek<br />bir "
+"README dosyası bulacaksınız."
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Hata"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Bu sihirbaz bir proje oluşturmanıza yardım edecektir.\n"
+"Bu şablon ile Qt ve KDE teknolojilerini kullanarak kendi yazılımınızı "
+"geliştirmeye başlayabileceksiniz."
+
+#: src/application/kapptemplate.cpp:21
+#, kde-format
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "KDE ve Qt Şablon Oluşturucu"
+
+#: src/application/kapptemplate.cpp:42
+#, kde-format
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Giriş"
+
+#: src/application/kapptemplate.cpp:49
+#, kde-format
+msgid "Set the project properties"
+msgstr "Proje özelliklerini ayarla"
+
+#: src/application/kapptemplate.cpp:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Oluştur"
+
+#: src/application/kapptemplate.cpp:78
+#, kde-format
+msgid "Your project name is: %1"
+msgstr "Projenizin adı: %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Projenin adı"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Proje sürümü"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Kullanıcının ana dizini"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Kullanıcının adı"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Kullanıcının e-posta adresi"
+
+#: src/application/main.cpp:24
+#, kde-format
+msgid "KAppTemplate"
+msgstr "K Uygulama Şablonu"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "K Uygulama Şablonu, bir KDE proje şablonu oluşturucusudur"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "(C) 2008 Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:32
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Oxygen Takımından Simgeler"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Sürüm numarası:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Projenin sürüm numarası"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Projenizin sürüm numarasını ayarlayın. İlk proje 0.1 sürümü ile başlamalıdır."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "Kuru&lum dizini:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Projenizi yapacağınız dizin"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Projenizi yapacağınız dizini seçin. Ana dizininizdeki /src klasörü uygun bir "
+"öntanımlı konumdur."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Yazarın &adı:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Adınız ve soyadınız"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Bu seçenek, bu ad için telif haklarını ayarlar"
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "Yazarın &eposta adresi:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "E-posta adresiniz"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"Bu e-posta adresi proje dosyalarına, adınızdan sonra telif hakları kısmına "
+"eklenecektir."
+
+#~ msgctxt "Do not translate"
+#~ msgid "Preview"
+#~ msgstr "Önizleme"
+
+#~ msgctxt "Do not translate"
+#~ msgid "Description"
+#~ msgstr "Açıklama"
+
+#~ msgid ""
+#~ "The extraction of your personal information in file %1 was not successful"
+#~ msgstr "%1 dosyasından kişisel bilgileriniz başarıyla çıkartılamadı"
+
+#~ msgid "The file %1 cannot be created."
+#~ msgstr "%1 dosyası oluşturulamaz."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "The file %1 cannot be created."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "%1 dosyası oluşturulamaz."

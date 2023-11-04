@@ -1,0 +1,362 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Artem Sereda <overmind88@gmail.com>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2011, 2015, 2019.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2019.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"PO-Revision-Date: 2023-04-10 08:59+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 22.12.2\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Павел Малеев,Олеся Герасименко"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "rolland39@gmail.com,gammaray@basealt.ru"
+
+#: src/application/apptemplatesmodel.cpp:159
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Шаблоны проектов"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Получить другие шаблоны"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Установить шаблон из файла"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Имя проекта:"
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "Выберите шаблон проекта"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "Образец изображения отсутствует."
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "Описание шаблона"
+
+#: src/application/generatepage.cpp:29
+#, kde-format
+msgid "Generating your project"
+msgstr "Генерация проекта"
+
+#: src/application/generatepage.cpp:45
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "Не удалось создать %1."
+
+#: src/application/generatepage.cpp:65
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "Не удалось создать путь %1."
+
+#: src/application/generatepage.cpp:77
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Не удалось встроить информацию о проекте в файл «%1». Проект не был создан, "
+"все временные файлы будут удалены."
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Не удалось скопировать файл шаблона в %1."
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Процесс генерации\n"
+
+#: src/application/generatepage.cpp:219
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Успешно.\n"
+
+#: src/application/generatepage.cpp:223
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "Имя проекта: <b>%1</b>, основано на шаблоне %2.<br />"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "Версия: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "Установлено в: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"Начать работу с проектом поможет файл README, который располагается в папке "
+"проекта <b>%1</b><br />."
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Ошибка"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Этот мастер поможет создать новый проект.\n"
+"Из получившегося шаблона можно начать разрабатывать своё ПО на основе "
+"технологий Qt и KDE."
+
+#: src/application/kapptemplate.cpp:21
+#, kde-format
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "Генератор шаблонов KDE и Qt"
+
+#: src/application/kapptemplate.cpp:42
+#, kde-format
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Введение"
+
+#: src/application/kapptemplate.cpp:49
+#, kde-format
+msgid "Set the project properties"
+msgstr "Установите свойства проекта"
+
+#: src/application/kapptemplate.cpp:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Создать"
+
+#: src/application/kapptemplate.cpp:78
+#, kde-format
+msgid "Your project name is: %1"
+msgstr "Имя проекта : %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Имя проекта"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Версия проекта"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Домашний каталог пользователя"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Имя пользователя"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Адрес электронной почты пользователя"
+
+#: src/application/main.cpp:24
+#, kde-format
+msgid "KAppTemplate"
+msgstr "KAppTemplate"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "KAppTemplate — генератор шаблонов проектов от KDE"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "© Anne-Marie Mahfouf, 2008"
+
+#: src/application/main.cpp:32
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Значки от Oxygen Team"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Номер версии:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Номер версии проекта"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Укажите номер версии проекта. Первый проект должен начинаться с версии 0.1."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "&Каталог установки:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Каталог для сборки проекта"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Выберите каталог для сборки проекта. Рекомендуется выбрать каталог «/src» в "
+"домашнем каталоге."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Имя &автора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Ваше имя"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Авторские права будут установлены на указанное имя."
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "Адрес &электронной почты автора:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "Ваш адрес электронной почты"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"Этот адрес электронной почты будет написан после имени в авторском праве на "
+"проект."
+
+#~ msgctxt "Do not translate"
+#~ msgid "Preview"
+#~ msgstr "Предпросмотр"
+
+#~ msgctxt "Do not translate"
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid ""
+#~ "The extraction of your personal information in file %1 was not successful"
+#~ msgstr "Не удалось заполнить файл %1 информацией о проекте."
+
+#~ msgid "The file %1 cannot be created."
+#~ msgstr "Файл %1 не может быть создан."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "The file %1 cannot be created."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Файл %1 не может быть создан."

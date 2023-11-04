@@ -1,0 +1,221 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE">
+]>
+
+<book id="kapptemplate" lang="&language;">
+
+<bookinfo>
+<title
+>Het handboek van &kapptemplate;</title>
+
+<authorgroup>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+&Freek.de.Kruijf; 
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>2017-11-01</date>
+<releaseinfo
+>0.1 (Applications 17.12)</releaseinfo>
+
+<abstract>
+<para
+>&kapptemplate; is een generator van nieuwe software projecten met behulp van sjablonen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>programmeren</keyword>
+<keyword
+>sjabloon</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>Inleiding</title
+> 
+<para
+>&kapptemplate; is een toepassing om ontwikkelen snel te laten starten met bestaande sjablonen die basis herhaald geschreven code en een juiste structuur leveren.</para>
+
+<para
+>&kapptemplate; pakt sjablonen die op uw machine zijn geïnstalleerd. Deze zijn vaak onderdeel van de ontwikkelbestanden voor bibliotheken of kunnen gedownload worden bijv. vanaf de website <ulink url="https://store.kde.org"
+>store.kde.org</ulink
+>. </para>
+
+<para
+>Beantwoordt de vragen van de assistent op elke pagina en genereer uw sjabloon.</para>
+
+<note
+><para
+>Een <filename
+>README</filename
+> bestand in elk sjabloon stelt u in staat om uit te vinden hoe het sjabloon te bouwen. Het geeft u ook koppelingen naar inleidingen gerelateerd naar het project. Nadat het project is gegenereerd, is de taak van &kapptemplate; gereed en moet u zelf verder om het te bouwen.</para
+></note>
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title
+>&kapptemplate; gebruiken</title>
+<para
+>&kapptemplate; is een assistent. De eerste pagina van de assistent legt uit dat &kapptemplate; een  basis project zal genereren. Klik op <guibutton
+>Volgende</guibutton
+> om te starten met het genereren van uw project. <guibutton
+>Annuleren</guibutton
+> stopt het programma en breekt het af. <guibutton
+>Help</guibutton
+> toont dit handbook in &khelpcenter;.</para>
+<screenshot>
+<screeninfo
+>Eerste pagina van &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Eerste pagina &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>De tweede pagina geeft een lijst met de beschikbare sjablonen. Rechts ziet u het voorbeeld van het sjabloon en onderaan de beschrijving van het sjabloon. Nadat u uw sjabloon hebt gekozen, wordt u uitgenodigd om de projectnaam in het veld onderaan.</para>
+<screenshot>
+<screeninfo
+>Tweede pagina van &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Tweede pagina van &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Op de derde pagian wordt u gevraagd naar de projectversie, de map met broncode en de naam en het e-mailadres van de auteur. Als u het tabblad &systemsettings; hebt ingevuld met uw persoonlijke informatie, dan wordt het vandaar gehaald als standaard.</para>
+<screenshot>
+<screeninfo
+>Derde pagina van &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Derde pagina van &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>de vierde en laatste pagina geeft u enige terugkoppeling over de generatie van het project.</para>
+<screenshot>
+<screeninfo
+>Vierde pagina van &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Vierde pagina van &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Klik daarna op <guibutton
+>Eindigen</guibutton
+> om &kapptemplate; te sluiten.</para>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Dankbetuiging en licentie</title>
+
+<itemizedlist>
+<listitem
+><para
+>Programma copyright 1998-2003 &Kurt.Granroth;</para
+> </listitem>
+<listitem
+><para
+>Programma copyright 2006-2008 &Anne-Marie.Mahfouf;</para
+></listitem>
+<listitem
+><para
+>Programma copyright 2008 Beat Wolf</para>
+</listitem>
+</itemizedlist>
+<para
+>Met dank aan: <itemizedlist>
+<listitem
+><para
+>Hulp bij het coderen: Beat Wolf <email
+>asraniel@fryx.ch</email
+></para
+> </listitem>
+<listitem
+><para
+>Ruby sjabloon: Cyrille Berger <email
+>cberger@cberger.net</email
+></para
+> </listitem>
+<listitem
+><para
+>Ruby sjabloon: Richard Dale <email
+>Richard_Dale@tipitina.demon.co.uk
+></email
+></para
+> </listitem>
+<listitem
+><para
+>Py&kde;4 sjabloon: Christoph Burgmer <email
+>chrislb@gmx.de</email
+></para
+> </listitem>
+</itemizedlist>
+</para>
+<para
+>Documentatie copyright 2008 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para>
+
+&meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
+
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

@@ -1,0 +1,334 @@
+# translation of kapptemplate.po to Chinese Traditional
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008, 2009.
+# Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009, 2015.
+# Jeff Huang <s8321414@gmail.com>, 2016.
+# pan93412 <pan93412@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"PO-Revision-Date: 2018-03-24 22:11+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"dot tw>\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Franklin Weng, Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+
+#: src/application/apptemplatesmodel.cpp:159
+#, fuzzy, kde-format
+#| msgid "Templates Projects"
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "樣本專案"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "取得更多範本"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "從檔案安裝範本"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "專案名稱："
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "選擇您的專案樣本"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "沒有範例圖片可用。"
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "樣本描述"
+
+#: src/application/generatepage.cpp:29
+#, kde-format
+msgid "Generating your project"
+msgstr "產生您的專案"
+
+#: src/application/generatepage.cpp:45
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "無法建立 %1。"
+
+#: src/application/generatepage.cpp:65
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "無法建立路徑 %1。"
+
+#: src/application/generatepage.cpp:77
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"整合您的專案資訊到檔案 %1 中失敗。專案無法生成，所有的暫存檔都將會被移除。"
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "無法複製樣本檔到 %1"
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "產生進度\n"
+
+#: src/application/generatepage.cpp:219
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "成功。\n"
+
+#: src/application/generatepage.cpp:223
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "您的專案名稱為：<b>%1</b>，基於樣本 %2。<br />"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "版本：%1<br /><br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "安裝於：%1<br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"在您的專案資料夾 <b>%1</b> 中會找到一個 README 檔<br /> 以協助您開始專案。"
+
+#: src/application/generatepage.cpp:233
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "@title:window"
+msgid "Error"
+msgstr "錯誤"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"此精靈會協助您產生新的專案。\n"
+"您可以用此樣本開始開發使用 Qt 與 KDE 技術的應用程式。"
+
+#: src/application/kapptemplate.cpp:21
+#, fuzzy, kde-format
+#| msgid "KDE and Qt Template Generator"
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "KDE 與 Qt 樣本產生器"
+
+#: src/application/kapptemplate.cpp:42
+#, fuzzy, kde-format
+#| msgid "Introduction"
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "介紹"
+
+#: src/application/kapptemplate.cpp:49
+#, kde-format
+msgid "Set the project properties"
+msgstr "設定專案屬性"
+
+#: src/application/kapptemplate.cpp:51
+#, fuzzy, kde-format
+#| msgid "Generate"
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "生成"
+
+#: src/application/kapptemplate.cpp:78
+#, fuzzy, kde-format
+#| msgid "Your project name is : %1"
+msgid "Your project name is: %1"
+msgstr "您的專案名稱為：%1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "專案名稱"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "專案版本"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "使用者家目錄"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "使用者名稱"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "使用者電子郵件地址"
+
+#: src/application/main.cpp:24
+#, kde-format
+msgid "KAppTemplate"
+msgstr "KAppTemplate"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "KAppTemplate 是一個 KDE 專案樣本產生器"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "(C) 2008 Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:32
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "從 Oxygen 團隊取得圖示"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "版本號 (&V)："
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "專案版本號"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr "設定您的專案版本號。通常從 0.1 開始。"
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "安裝目錄 (&S)："
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "您要編譯您的專案的目錄"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr "選擇您要在哪裡編譯您的專案。比方說在家目錄下的 src 目錄。"
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "作者名稱 (&N)："
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "您的姓名"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "會將版權宣告給此人"
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "作者電子郵件地址 (&U)："
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "您的電子郵件地址"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr "此電子郵件地址會放在版權宣告處，您的姓名之後。"

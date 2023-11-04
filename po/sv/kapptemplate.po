@@ -1,0 +1,357 @@
+# translation of kapptemplate.po to Swedish
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2008, 2009, 2014, 2015, 2016, 2017, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"PO-Revision-Date: 2020-05-05 07:39+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@bredband.net"
+
+#: src/application/apptemplatesmodel.cpp:159
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "Mallprojekt"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: src/application/choice.ui:37
+#, kde-format
+msgid "Get More Templates"
+msgstr "Hämta fler mallar"
+
+#. i18n: ectx: property (text), widget (QPushButton, installButton)
+#: src/application/choice.ui:50
+#, kde-format
+msgid "Install Template From File"
+msgstr "Installera mall från fil"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/application/choice.ui:111
+#, kde-format
+msgid "Project name:"
+msgstr "Projektnamn:"
+
+#: src/application/choicepage.cpp:35
+#, kde-format
+msgid "Choose your project template"
+msgstr "Välj mall för ditt projekt"
+
+#: src/application/choicepage.cpp:146
+#, kde-format
+msgid "No sample picture available."
+msgstr "Ingen exempelbild tillgänglig."
+
+#: src/application/choicepage.cpp:159
+#, kde-format
+msgid "Template description"
+msgstr "Mallbeskrivning"
+
+#: src/application/generatepage.cpp:29
+#, kde-format
+msgid "Generating your project"
+msgstr "Skapa ditt projekt"
+
+#: src/application/generatepage.cpp:45
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "%1 kan inte skapas."
+
+#: src/application/generatepage.cpp:65
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "Sökvägen %1 kan inte skapas."
+
+#: src/application/generatepage.cpp:77
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"Misslyckades integrera din projektinformation i filen %1. Projektet har inte "
+"skapats och alla tillfälliga filer kommer att tas bort."
+
+#: src/application/generatepage.cpp:85
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "Kunde inte kopiera mallfil till %1"
+
+#: src/application/generatepage.cpp:119
+#, kde-format
+msgid "Generation Progress\n"
+msgstr "Genereringsförlopp\n"
+
+#: src/application/generatepage.cpp:219
+#, kde-format
+msgid "Succeeded.\n"
+msgstr "Lyckades.\n"
+
+#: src/application/generatepage.cpp:223
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgstr "Projektnamnet är: <b>%1</b>, baserat på mallen %2.<br />"
+
+#: src/application/generatepage.cpp:224
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "Version: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:225
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "Installeras i: %1 <br /><br />"
+
+#: src/application/generatepage.cpp:227
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"Du hittar filen README i projektkatalogen <b>%1</b><br /> för att hjälpa dig "
+"komma igång med ditt projekt."
+
+#: src/application/generatepage.cpp:233
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Fel"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/application/introduction.ui:17
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project.\n"
+"You will be able to start developing your own software using Qt and KDE "
+"technologies from this template."
+msgstr ""
+"Den här guiden hjälper dig att skapa ett nytt projekt.\n"
+"Du kommer att kunna börja utveckla din egen programvara med användning av "
+"Qt- och KDE-teknologi från mallen."
+
+#: src/application/kapptemplate.cpp:21
+#, kde-format
+msgctxt "@title:window"
+msgid "KDE and Qt Template Generator"
+msgstr "KDE- och Qt-mallgenerator"
+
+#: src/application/kapptemplate.cpp:42
+#, kde-format
+msgctxt "@title:tab"
+msgid "Introduction"
+msgstr "Inledning"
+
+#: src/application/kapptemplate.cpp:49
+#, kde-format
+msgid "Set the project properties"
+msgstr "Ange projektegenskaper"
+
+#: src/application/kapptemplate.cpp:51
+#, kde-format
+msgctxt "@action:button"
+msgid "Generate"
+msgstr "Generera"
+
+#: src/application/kapptemplate.cpp:78
+#, kde-format
+msgid "Your project name is: %1"
+msgstr "Projektets namn är: %1"
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "Projektets namn"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "Projektversion"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "Användarens hemkatalog"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "Användarens namn"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "Användarens e-postadress"
+
+#: src/application/main.cpp:24
+#, kde-format
+msgid "KAppTemplate"
+msgstr "Kapptemplate"
+
+#: src/application/main.cpp:26
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "Kapptemplate är en mallgenerator för KDE-projekt"
+
+#: src/application/main.cpp:28
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "© 2008 Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:32
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "Anne-Marie Mahfouf"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Sean Wilson"
+msgstr "Sean Wilson"
+
+#: src/application/main.cpp:33
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "Ikoner från Oxygen-gruppens ikoner"
+
+#. i18n: ectx: property (text), widget (QLabel, versionLabel)
+#: src/application/properties.ui:30
+#, kde-format
+msgid "&Version number:"
+msgstr "&Versionsnummer:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:40
+#, kde-format
+msgid "Project's version number"
+msgstr "Projektets versionsnummer"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:43
+#, kde-format
+msgid ""
+"Set your project version number. A first project should start with version "
+"0.1."
+msgstr ""
+"Ange ditt projekts versionsnummer. Projektet bör först starta med version "
+"0.1."
+
+#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:46
+#, kde-format
+msgid "0.0"
+msgstr "0.0"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
+#: src/application/properties.ui:49
+#, kde-format
+msgid "0.1"
+msgstr "0.1"
+
+#. i18n: ectx: property (text), widget (QLabel, installLabel)
+#: src/application/properties.ui:56
+#, kde-format
+msgid "In&stallation directory:"
+msgstr "In&stallationskatalog:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:66
+#, kde-format
+msgid "The directory where you will build your project"
+msgstr "Katalogen där du bygger ditt projekt"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
+#: src/application/properties.ui:69
+#, kde-format
+msgid ""
+"Choose the directory where you will build your project. Your home /src is a "
+"good default location."
+msgstr ""
+"Välj katalog där du kommer att bygga ditt projekt. Hemkatalogen ~/src är en "
+"bra standardplats."
+
+#. i18n: ectx: property (text), widget (QLabel, authorLabel)
+#: src/application/properties.ui:76
+#, kde-format
+msgid "Author &name:"
+msgstr "Upphovsmannens &namn:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:86
+#, kde-format
+msgid "Your first name and name"
+msgstr "Ditt förnamn och efternamn"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
+#: src/application/properties.ui:89
+#, kde-format
+msgid "This will set the copyright to this name"
+msgstr "Detta ger copyright till angivet namn"
+
+#. i18n: ectx: property (text), widget (QLabel, emailLabel)
+#: src/application/properties.ui:102
+#, kde-format
+msgid "A&uthor email:"
+msgstr "&Upphovsmannens e-postadress:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:112
+#, kde-format
+msgid "Your email address"
+msgstr "Din e-postadress"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
+#: src/application/properties.ui:115
+#, kde-format
+msgid ""
+"This email address will be next to your name in the copyright credit of the "
+"project files."
+msgstr ""
+"E-postadressen läggs till efter namnet i projektfilernas "
+"copyrightinformation."
+
+#~ msgctxt "Do not translate"
+#~ msgid "Preview"
+#~ msgstr "Förhandsgranskning"
+
+#~ msgctxt "Do not translate"
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#~ msgid ""
+#~ "The extraction of your personal information in file %1 was not successful"
+#~ msgstr "Extraktion av personlig information från filen %1 lyckades inte"
+
+#~ msgid "The file %1 cannot be created."
+#~ msgstr "Filen %1 kan inte skapas."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "The file %1 cannot be created."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Filen %1 kan inte skapas."
