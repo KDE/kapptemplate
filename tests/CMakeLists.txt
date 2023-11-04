@@ -1,12 +1,12 @@
 ecm_add_test(namevalidatortest.cpp
     LINK_LIBRARIES
-        Qt${QT_MAJOR_VERSION}::Core
-        Qt${QT_MAJOR_VERSION}::Test
+        Qt6::Core
+        Qt6::Test
 )
 
 ecm_add_test(macrosubstitutiontest.cpp
     LINK_LIBRARIES
-        KF${KF_MAJOR_VERSION}::CoreAddons
-        Qt${QT_MAJOR_VERSION}::Core
-        Qt${QT_MAJOR_VERSION}::Test
+        KF6::CoreAddons
+        Qt6::Core
+        Qt6::Test
 )

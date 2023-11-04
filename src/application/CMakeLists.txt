@@ -32,14 +32,14 @@ ki18n_wrap_ui(kapptemplate
 kconfig_add_kcfg_files(kapptemplate prefs.kcfgc)
 
 target_link_libraries(kapptemplate
-    KF${KF_MAJOR_VERSION}::CoreAddons
-    KF${KF_MAJOR_VERSION}::ConfigWidgets
-    KF${KF_MAJOR_VERSION}::Completion
-    KF${KF_MAJOR_VERSION}::KIOWidgets
-    KF${KF_MAJOR_VERSION}::Archive
-    KF${KF_MAJOR_VERSION}::KIOCore
-    KF${KF_MAJOR_VERSION}::I18n
-    # KF${KF_MAJOR_VERSION}::NewStuff
+    KF6::CoreAddons
+    KF6::ConfigWidgets
+    KF6::Completion
+    KF6::KIOWidgets
+    KF6::Archive
+    KF6::KIOCore
+    KF6::I18n
+    # KF6::NewStuff
 )
 
 install(TARGETS kapptemplate ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
