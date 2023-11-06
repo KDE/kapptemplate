@@ -31,7 +31,7 @@ void extractTemplateDescriptions()
     QStringList templateArchives;
     const QStringList templatePaths =
         QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    for (const QString &templatePath : qAsConst(templatePaths)) {
+    for (const QString &templatePath : std::as_const(templatePaths)) {
         const auto templateFiles = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateFiles) {
             templateArchives.append(templatePath + templateArchive);
@@ -44,7 +44,7 @@ void extractTemplateDescriptions()
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
 
-    for (const QString &archName : qAsConst(templateArchives)) {
+    for (const QString &archName : std::as_const(templateArchives)) {
         qCDebug(KAPPTEMPLATE) << "processing template" << archName;
 #ifdef Q_WS_WIN
         KZip templateArchive(archName);
@@ -105,7 +105,7 @@ void AppTemplatesModel::refresh()
         templateArchives.append(localDescriptionsDir + templateFile);
     }
 
-    for (const QString &templateArchive : qAsConst(templateArchives)) {
+    for (const QString &templateArchive : std::as_const(templateArchives)) {
         QFileInfo archiveInfo(templateArchive);
         QString baseName = archiveInfo.baseName();
         KConfig templateConfig(templateArchive);
