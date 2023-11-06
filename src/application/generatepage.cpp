@@ -198,7 +198,7 @@ void GeneratePage::initializePage()
             templateFile->copyTo(temporaryDir.path());
 
             KConfig config(temporaryDir.path() + QLatin1Char('/') + templateEntry->name());
-            KConfigGroup group(&config, "General");
+            KConfigGroup group(&config, QStringLiteral("General"));
             if (group.hasKey("Icon")) {
                 const KArchiveEntry *iconEntry = arch->directory()->entry(group.readEntry("Icon"));
                 if (iconEntry && iconEntry->isFile()) {

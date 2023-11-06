@@ -109,7 +109,7 @@ void AppTemplatesModel::refresh()
         QFileInfo archiveInfo(templateArchive);
         QString baseName = archiveInfo.baseName();
         KConfig templateConfig(templateArchive);
-        KConfigGroup general(&templateConfig, "General");
+        KConfigGroup general(&templateConfig, QStringLiteral("General"));
         QString name = general.readEntry("Name");
         QString category = general.readEntry("Category");
         qCDebug(KAPPTEMPLATE) << "category " << category;
