@@ -60,7 +60,7 @@
 >Introducció</title
 > 
 <para
->El &kapptemplate; és una aplicació per iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</para>
+>El &kapptemplate; és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</para>
 
 <para
 >El &kapptemplate; pren les plantilles instal·lades a la vostra màquina. Aquestes sovint formen part dels fitxers de desenvolupament de les biblioteques o es poden baixar, &pex;, de la pàgina web <ulink url="https://store.kde.org"
@@ -84,7 +84,7 @@
 <para
 >&kapptemplate; és un assistent. La primera pàgina de l'assistent us explica que &kapptemplate; generarà un projecte base. Cliqueu <guibutton
 >Següent</guibutton
-> per començar a generar el vostre projecte. <guibutton
+> per a començar a generar el vostre projecte. <guibutton
 >Cancel·la</guibutton
 > aturarà el programa i sortirà. <guibutton
 >Ajuda</guibutton
@@ -151,7 +151,7 @@
 <para
 >A continuació cliqueu <guibutton
 >Acaba</guibutton
-> per tancar &kapptemplate;.</para>
+> per a tancar &kapptemplate;.</para>
 </chapter>
 
 
