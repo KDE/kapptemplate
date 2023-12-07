@@ -104,7 +104,7 @@
 </screenshot>
 
 <para
->La deuxième page dresse la liste des modèles disponibles. Sur la droite on peut voirl'aperçu du modèle et au-dessous la description du modèle. Après avoir choisi votre modèle, vous êtes invité à saisir le nom du projet dans le champ situé en bas.</para>
+>La deuxième page dresse la liste des modèles disponibles. Sur la droite, il possible de voir l'aperçu du modèle et au-dessous la description du modèle. Après avoir choisi votre modèle, vous êtes invité à saisir le nom du projet dans le champ situé en bas.</para>
 <screenshot>
 <screeninfo
 >La deuxième page de &kapptemplate;</screeninfo>
@@ -170,7 +170,7 @@
 ></listitem>
 <listitem
 ><para
->Programme sous copyright 2008 Beat Wolf</para>
+>Programme sous copyright 2008 de Beat Wolf</para>
 </listitem>
 </itemizedlist>
 <para
@@ -179,7 +179,7 @@
 ><para
 >Beat Wolf <email
 >asraniel@fryx.ch</email
-> : codage de l'aide</para
+> : aide au codage</para
 > </listitem>
 <listitem
 ><para
