@@ -55,6 +55,7 @@ Comment[sl]=Program v C++ z grafičnim vmesnikom za KDE Frameworks 6
 Comment[tr]=C++ ile yazılan KDE Frameworks 6 GUI Uygulaması
 Comment[uk]=Програма з графічним інтерфейсом KDE Frameworks 6 на C++
 Comment[x-test]=xxA KDE Frameworks 6 GUI Application in C++xx
+Comment[zh_TW]=C++ KDE Frameworks 6 圖形介面應用程式
 Category=Qt/Graphical
 Icon=kde-frameworks6.png
 ShowFilesAfterGeneration=%{dest}/src/%{APPNAMELC}window.cpp
