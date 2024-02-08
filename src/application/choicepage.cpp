@@ -79,7 +79,7 @@ static QPixmap generateTemplatePreviewPicture(const QString &iconName, const QSt
     // find archive
     QString archivePath;
     const QStringList templatePaths =
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
     for (const QString &templatePath : templatePaths) {
         const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateArchives) {
@@ -115,7 +115,7 @@ static QPixmap generateTemplatePreviewPicture(const QString &iconName, const QSt
     }
 
     // support legacy templates with image files installed separately in the filesystem
-    const QString iconFilePath = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("/kdevappwizard/template_previews/") + iconName);
+    const QString iconFilePath = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("kdevappwizard/template_previews/") + iconName);
     if (!iconFilePath.isEmpty()) {
         QPixmap pixmap(iconFilePath);
         if (!pixmap.isNull()) {

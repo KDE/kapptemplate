@@ -125,7 +125,7 @@ void GeneratePage::initializePage()
 
     QString archName;
     const QStringList templatePaths =
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
     for (const QString &templatePath : templatePaths) {
         const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateArchives) {

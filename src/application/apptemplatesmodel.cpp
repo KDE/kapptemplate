@@ -30,7 +30,7 @@ void extractTemplateDescriptions()
 {
     QStringList templateArchives;
     const QStringList templatePaths =
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "/kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
     for (const QString &templatePath : std::as_const(templatePaths)) {
         const auto templateFiles = QDir(templatePath).entryList(QDir::Files);
         for (const QString &templateArchive : templateFiles) {
