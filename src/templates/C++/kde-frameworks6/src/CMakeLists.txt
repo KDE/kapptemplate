@@ -4,6 +4,7 @@ target_sources(%{APPNAMELC} PRIVATE
     main.cpp
     %{APPNAMELC}window.cpp
     %{APPNAMELC}view.cpp
+    %{APPNAMELC}.qrc
 )
 
 ecm_qt_declare_logging_category(%{APPNAMELC}
@@ -30,4 +31,3 @@ target_link_libraries(%{APPNAMELC}
 install(TARGETS %{APPNAMELC} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS org.example.%{APPNAMELC}.desktop  DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.example.%{APPNAMELC}.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES %{APPNAMELC}ui.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/%{APPNAMELC})
