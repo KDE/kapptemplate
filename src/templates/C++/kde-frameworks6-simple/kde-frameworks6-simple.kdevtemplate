@@ -50,6 +50,7 @@ Comment[fr]=Une application très basique en C++ d'interface graphique pour l'en
 Comment[he]=יישום ממשק גרפי עם תשתיות KDE 6 ב־C++‎
 Comment[it]=Una semplicissima applicazione grafica di KDE Frameworks 6 in C++
 Comment[ka]=KDE Frameworks 6-ის უმარტივესი GUI აპლიკაცია C++-ში
+Comment[ko]=기본적인 C++ KDE 프레임워크 6 GUI 앱
 Comment[nl]=Een zeer basale KDE Frameworks 6 GUI-toepassing in C++
 Comment[pl]=Bardzo podstawowy program graficznego interfejsu użytkownika dla Szkieletów KDE 6 w C++
 Comment[pt_BR]=Um aplicativo gráfico muito básico do KDE Frameworks 6 em C++
