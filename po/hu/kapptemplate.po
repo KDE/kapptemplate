@@ -3,34 +3,34 @@
 #
 # Tamas Szanto <tszanto@interware.hu>, 2008.
 # Tamas Krutki, 2011.
+# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-04 12:21+0000\n"
-"PO-Revision-Date: 2011-04-22 17:34+0000\n"
-"Last-Translator: Tamas Krutki\n"
+"PO-Revision-Date: 2024-03-04 21:41+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-i18n-doc@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Szántó Tamás"
+msgstr "Kiszel Kristóf,Szántó Tamás"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tszanto@interware.hu"
+msgstr "ulysses@fsf.hu,tszanto@interware.hu"
 
 #: src/application/apptemplatesmodel.cpp:159
-#, fuzzy, kde-format
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
 msgstr "Projektsablonok"
@@ -39,13 +39,13 @@ msgstr "Projektsablonok"
 #: src/application/choice.ui:37
 #, kde-format
 msgid "Get More Templates"
-msgstr ""
+msgstr "További sablonok letöltése"
 
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
 #: src/application/choice.ui:50
 #, kde-format
 msgid "Install Template From File"
-msgstr ""
+msgstr "Sablon telepítése fájlból"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: src/application/choice.ui:111
@@ -61,7 +61,7 @@ msgstr "Válasszon ki egy sablont"
 #: src/application/choicepage.cpp:146
 #, kde-format
 msgid "No sample picture available."
-msgstr ""
+msgstr "Nem érhető el mintakép."
 
 #: src/application/choicepage.cpp:159
 #, kde-format
@@ -71,7 +71,7 @@ msgstr "A sablon leírása"
 #: src/application/generatepage.cpp:29
 #, kde-format
 msgid "Generating your project"
-msgstr "Új projekt készítése"
+msgstr "Új projekt előállítása"
 
 #: src/application/generatepage.cpp:45
 #, kde-format
@@ -79,10 +79,9 @@ msgid "%1 cannot be created."
 msgstr "Nem sikerült létrehozni: %1."
 
 #: src/application/generatepage.cpp:65
-#, fuzzy, kde-format
-#| msgid "%1 cannot be created."
+#, kde-format
 msgid "Path %1 could not be created."
-msgstr "Nem sikerült létrehozni: %1."
+msgstr "A(z) %1 elérési út nem hozható létre."
 
 #: src/application/generatepage.cpp:77
 #, kde-format
@@ -90,16 +89,18 @@ msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
+"Nem sikerült integrálni a projektinformációkat a(z) %1 fájlba. A projekt nem "
+"lett előállítva, és minden átmeneti fájl törlésre került."
 
 #: src/application/generatepage.cpp:85
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr ""
+msgstr "Nem sikerült másolni a sablonfájlt ide: %1."
 
 #: src/application/generatepage.cpp:119
 #, kde-format
 msgid "Generation Progress\n"
-msgstr "Létrehozás...\n"
+msgstr "Előállítás…\n"
 
 #: src/application/generatepage.cpp:219
 #, kde-format
@@ -134,33 +135,28 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/application/introduction.ui:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a KDE 4 project template.\n"
-#| "You will be able to start developing you own KDE 4 project from this "
-#| "template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project.\n"
 "You will be able to start developing your own software using Qt and KDE "
 "technologies from this template."
 msgstr ""
-"Ez a varázsló létrehoz egy kiindulási KDE 4-es projektet.\n"
-"A sablonból kiindulva azonnal elkezdheti a projekt fejlesztését."
+"Ez a varázsló segít egy új projekt előállításában.\n"
+"Elkezdheti saját szoftvere fejlesztését a Qt és a KDE technológiáival ezt a "
+"sablont használva."
 
 #: src/application/kapptemplate.cpp:21
-#, fuzzy, kde-format
-#| msgid "KDE 4 Template Generator"
+#, kde-format
 msgctxt "@title:window"
 msgid "KDE and Qt Template Generator"
-msgstr "KDE 4 sablongenerátor"
+msgstr "KDE és Qt sablongenerátor"
 
 #: src/application/kapptemplate.cpp:42
-#, fuzzy, kde-format
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title:tab"
 msgid "Introduction"
 msgstr "Bevezetés"
@@ -174,11 +170,10 @@ msgstr "Projektjellemzők"
 #, kde-format
 msgctxt "@action:button"
 msgid "Generate"
-msgstr ""
+msgstr "Előállítás"
 
 #: src/application/kapptemplate.cpp:78
-#, fuzzy, kde-format
-#| msgid "Your project name is : %1"
+#, kde-format
 msgid "Your project name is: %1"
 msgstr "Projektnév: %1"
 
@@ -218,10 +213,9 @@ msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
 #: src/application/main.cpp:26
-#, fuzzy, kde-format
-#| msgid "KAppTemplate is a KDE 4 project template generator"
+#, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr "KAppTemplate projektgenerátor a KDE4-hez"
+msgstr "A KAppTemplate egy projektsablon-készítő a KDE-hez"
 
 #: src/application/main.cpp:28
 #, kde-format
@@ -245,10 +239,9 @@ msgstr "Ikonok az Oxygent készítő csapattól"
 
 #. i18n: ectx: property (text), widget (QLabel, versionLabel)
 #: src/application/properties.ui:30
-#, fuzzy, kde-format
-#| msgid "Version number:"
+#, kde-format
 msgid "&Version number:"
-msgstr "Verziószám:"
+msgstr "&Verziószám:"
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:40
@@ -266,10 +259,9 @@ msgstr "Beállítja a projekt verziószámát, az alapérték: 0.1"
 
 #. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:46
-#, fuzzy, kde-format
-#| msgid "0.0; "
+#, kde-format
 msgid "0.0"
-msgstr "0.0; "
+msgstr "0.0"
 
 #. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
 #: src/application/properties.ui:49
@@ -279,10 +271,9 @@ msgstr "0.1"
 
 #. i18n: ectx: property (text), widget (QLabel, installLabel)
 #: src/application/properties.ui:56
-#, fuzzy, kde-format
-#| msgid "Installation directory:"
+#, kde-format
 msgid "In&stallation directory:"
-msgstr "Telepítési mappa:"
+msgstr "Telepíté&si mappa:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
 #: src/application/properties.ui:66
@@ -302,10 +293,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, authorLabel)
 #: src/application/properties.ui:76
-#, fuzzy, kde-format
-#| msgid "Author name:"
+#, kde-format
 msgid "Author &name:"
-msgstr "Szerző neve:"
+msgstr "Szerző &neve:"
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
 #: src/application/properties.ui:86
@@ -321,10 +311,9 @@ msgstr "A szerzői jog tulajdonosa"
 
 #. i18n: ectx: property (text), widget (QLabel, emailLabel)
 #: src/application/properties.ui:102
-#, fuzzy, kde-format
-#| msgid "Author email:"
+#, kde-format
 msgid "A&uthor email:"
-msgstr "Szerző e-mail címe:"
+msgstr "Sze&rző e-mail címe:"
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
 #: src/application/properties.ui:112
