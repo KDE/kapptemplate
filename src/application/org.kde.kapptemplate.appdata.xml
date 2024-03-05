@@ -20,6 +20,7 @@
   <name xml:lang="fi">KAppTemplate</name>
   <name xml:lang="fr">KAppTemplate</name>
   <name xml:lang="gl">KAppTemplate</name>
+  <name xml:lang="hu">KAppTemplate</name>
   <name xml:lang="id">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
   <name xml:lang="ka">KAppTemplate</name>
@@ -57,6 +58,7 @@
   <summary xml:lang="fi">Sovelluskoodimallin luontiohjelma</summary>
   <summary xml:lang="fr">Générateur de modèles de code d'application</summary>
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
+  <summary xml:lang="hu">Alkalmazáskód sablonkészítő</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
   <summary xml:lang="ka">აპის კოდის შაბლონის გენერატორი</summary>
@@ -92,6 +94,7 @@
     <p xml:lang="fi">KAppTemplate on sovellus kehityksen nopeaan aloittamiseen käyttämällä valmiita malleja, joissa on jo tehty jatkuvasti toistuvat perusasiat sekä kunnollinen rakenne.</p>
     <p xml:lang="fr">KAppTemplate est une application permettant de commencer rapidement de nouveaux développements en utilisant des modèles existants fournissant une structure appropriée et le code répétitif de base.</p>
     <p xml:lang="gl">KAppTemplate é unha aplicación para comezar calquera desenvolvemento rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
+    <p xml:lang="hu">A KAppTemplate egy olyan alkalmazás, amellyel gyorsan elkezdheti a fejlesztést a meglévő sablonok segítségével, amelyek alapvető, többször megírt kódot és megfelelő struktúrát biztosítanak.</p>
     <p xml:lang="id">KAppTemplate adalah sebuah aplikasi untuk memulai pengembangan secara cepat menggunakan template yang ada menyediakan kode yang ditulis secara bertubi-tubi dan struktur yang layak.</p>
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
     <p xml:lang="ka">KAppTemplate აპლიკაციაა, რომელიც არსებული შაბლონების გამოყენებით, რომელიც კოდს და მის სწორ სტრუქტურას გაჩვენებთ, პროგრამირებას გასწავლით.</p>
@@ -130,6 +133,7 @@
     <p xml:lang="fi">Ominaisuuksia:</p>
     <p xml:lang="fr">Fonctionnalités :</p>
     <p xml:lang="gl">Funcionalidades:</p>
+    <p xml:lang="hu">Funkciók:</p>
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="ka">თვისებები:</p>
@@ -168,6 +172,7 @@
       <li xml:lang="fi">Malleja C++:lle, Rubylle, Pythonille ja PHP:lle</li>
       <li xml:lang="fr">Modèles pour C++, Ruby, Python et PHP</li>
       <li xml:lang="gl">Modelos para C++, Ruby, Python e PHP.</li>
+      <li xml:lang="hu">Sablonok a C++, Ruby, Python és PHP nyelvekhez</li>
       <li xml:lang="id">Template untuk C++, Ruby, Python dan PHP</li>
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
       <li xml:lang="ka">შაბლონები ენებისთვის C++, Ruby, Python და PHP</li>
@@ -206,6 +211,7 @@
       <li xml:lang="fi">Luokat</li>
       <li xml:lang="fr">Catégories</li>
       <li xml:lang="gl">Categorías</li>
+      <li xml:lang="hu">Kategóriák</li>
       <li xml:lang="id">Kategori</li>
       <li xml:lang="it">Categorie</li>
       <li xml:lang="ka">კატეგორიები</li>
@@ -242,6 +248,7 @@
       <li xml:lang="fi">Malleja useille koostamisjärjestelmille ja sovelluskehyksille</li>
       <li xml:lang="fr">Modèles pour différents systèmes de compilations et environnements</li>
       <li xml:lang="gl">Modelos para distintos sistemas de construción e infraestruturas.</li>
+      <li xml:lang="hu">Sablonok különböző összeállító rendszerekhez és keretrendszerekhez</li>
       <li xml:lang="id">Template untuk kerangka-kerja dan bangun-sistem yang berbeda</li>
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
       <li xml:lang="ka">შაბლონების სხვადასხვა აგები სისტემებისა და Framework-ებისთვის</li>
@@ -277,6 +284,7 @@
       <li xml:lang="fi">Malleja erityisesti KDE-kehitykseen (Plasma-, QtQuick-, KTextEditor-, KRunner- ja Akonadi-liitännäiset)</li>
       <li xml:lang="fr">Modèles dédiés au développement KDE (modules externes pour Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, e Akonadi).</li>
+      <li xml:lang="hu">Sablonok kifejezetten KDE fejlesztéshez (Plasma, QtQuick, KTextEditor, KRunner és Akonadi bővítmények)</li>
       <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ka">KDE-ის აპლიკაციების შაბლონები (დამატებები Plasma, QtQuick, KTextEditor, KRunner, Akonadi-სთვის)</li>
@@ -308,6 +316,7 @@
       <li xml:lang="fi">Uusia malleja voi luoda helposti käyttämällä paikanvarauksia ja yksinkertaisia CMake-komentoja.</li>
       <li xml:lang="fr">Vous pouvez facilement créer de nouveaux modèles en utilisant des caractères spéciaux et une simple commande CMake</li>
       <li xml:lang="gl">É doado crear novos modelos usando marcas e ordes sinxelas de CMake.</li>
+      <li xml:lang="hu">Egyszerű új sablonokat létrehozni a helykitöltők és egy egyszerű CMake-parancs használatával</li>
       <li xml:lang="id">Ini mudah untuk menciptakan template baru menggunakan space holders dan perintah CMake yang sederhana</li>
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
       <li xml:lang="ka">ახალი შაბლონების ადგილმჭერებისა და მარტივი CMake ბრძანებით შექმნა უადვილესია</li>
@@ -344,6 +353,7 @@
       <li xml:lang="fi">KDevelop-integraatio</li>
       <li xml:lang="fr">Intégré à KDevelop</li>
       <li xml:lang="gl">Integrado con KDevelop.</li>
+      <li xml:lang="hu">Integrálva a KDevelopba</li>
       <li xml:lang="id">Terintegrasi ke dalam KDevelop</li>
       <li xml:lang="it">Integrato con KDevelop</li>
       <li xml:lang="ka">ინტეგრირებულია KDevelop-ში</li>
