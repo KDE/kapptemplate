@@ -61,6 +61,7 @@ Comment[sl]=Zelo enostaven program z grafičnim vmesnikom v C++ za KDE Framework
 Comment[tr]=C++ ile yazılan temel bir KDE Frameworks 6 GUI Uygulaması
 Comment[uk]=Мінімалістична програма з графічним інтерфейсом KDE Frameworks 6 на C++
 Comment[x-test]=xxA very basic KDE Frameworks 6 GUI Application in C++xx
+Comment[zh_CN]=用 C++ 编写的简易 KDE Frameworks 6 图形用户界面应用程序
 Comment[zh_TW]=最基本的 C++ KDE Frameworks 6 圖形介面應用程式
 Category=Qt/Graphical
 Icon=kde-frameworks6-simple.png
