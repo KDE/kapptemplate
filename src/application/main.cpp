@@ -27,7 +27,7 @@ int main(int argc, char **argv)
                      KAboutLicense::GPL,
                      i18n("(C) 2008 Anne-Marie Mahfouf"),
                      QString(),
-                     QString(),
+                     QStringLiteral("https://apps.kde.org/kapptemplate"),
                      "submit@bugs.kde.org");
     about.addAuthor(i18n("Anne-Marie Mahfouf"), QString(), "annma AT kde DOT org");
     about.addAuthor(i18n("Sean Wilson"), i18n("Icons from Oxygen Team icons"), "suseux AT googlemail DOT com");

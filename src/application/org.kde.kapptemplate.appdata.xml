@@ -403,6 +403,7 @@
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kapptemplate</url>
   <url type="help">https://docs.kde.org/?application=kapptemplate</url>
+  <url type="homepage">https://apps.kde.org/kapptemplate</url>
   <screenshots>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/kapptemplate/kapptemplate.png</image>
