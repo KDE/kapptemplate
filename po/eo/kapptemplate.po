@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-04 12:21+0000\n"
-"PO-Revision-Date: 2023-11-04 19:37+0100\n"
+"PO-Revision-Date: 2024-05-30 07:49+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -274,7 +274,7 @@ msgstr "0.1"
 #: src/application/properties.ui:56
 #, kde-format
 msgid "In&stallation directory:"
-msgstr "Instalada dosierujo:"
+msgstr "Do&sierujo de instalo:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
 #: src/application/properties.ui:66
