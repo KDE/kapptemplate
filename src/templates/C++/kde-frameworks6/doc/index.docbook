@@ -389,8 +389,7 @@ application work. -->
 <para>My Mouse doesn't work. How do I quit &kmyapplication;?</para>
 </question>
 <answer>
-<para>You silly goose! Check out the <link linkend="commands">Commands
-Section</link> for the answer.</para>
+<para>Check out the <link linkend="commands">Commands Section</link> for the answer.</para>
 </answer>
 </qandaentry>
 <qandaentry>
