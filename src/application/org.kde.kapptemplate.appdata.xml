@@ -25,6 +25,7 @@
   <name xml:lang="gl">KAppTemplate</name>
   <name xml:lang="he">KAppTemplate</name>
   <name xml:lang="hu">KAppTemplate</name>
+  <name xml:lang="ia">KAppTemplate</name>
   <name xml:lang="id">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
   <name xml:lang="ka">KAppTemplate</name>
@@ -144,6 +145,7 @@
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="he">יכולות:</p>
     <p xml:lang="hu">Funkciók:</p>
+    <p xml:lang="ia">Characteristicas:</p>
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="ka">თვისებები:</p>
@@ -226,6 +228,7 @@
       <li xml:lang="gl">Categorías</li>
       <li xml:lang="he">קטגוריות</li>
       <li xml:lang="hu">Kategóriák</li>
+      <li xml:lang="ia">Categorias</li>
       <li xml:lang="id">Kategori</li>
       <li xml:lang="it">Categorie</li>
       <li xml:lang="ka">კატეგორიები</li>
