@@ -5,9 +5,11 @@
 | Variable | Value |
 | ---      | ---      |
 | `%{APPNAME}`   | used in .kdev4, project name as entered by user ex: MyKApp |
+| `%{APPNAMEID}` | project name with all non-word chars replaced with _ |
 | `%{APPNAMELC}` | project name in lower case ex: mykapp |
 | `%{APPNAMEUC}` | project name in upper case ex: MYKAPP |
 | `%{PROJECTDIRNAME}` | Equal to `%{APPNAMELC}` for KAppTemplate |
+| `%{PROJECTDIR}` | the full path version of `%{PROJECTDIRNAME}` |
 | `%{CPP_TEMPLATE}` | License header for cpp file |
 | `%{H_TEMPLATE}` | License header for h file |
 | `%{AUTHOR}` | Author name ex: George Ignacious |

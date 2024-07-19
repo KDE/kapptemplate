@@ -16,6 +16,7 @@
 
 #include <QDir>
 #include <QFileInfo>
+#include <QRegularExpression>
 #include <QTemporaryDir>
 
 #include "generatepage.h"
@@ -144,21 +145,27 @@ void GeneratePage::initializePage()
     QString appName = field("appName").toString();
     QString version = field("version").toString();
 
-    QString url = field("url").toString();
-    if (url.endsWith(QLatin1Char('/'))) {
-        url.chop(1);
-    }
-    QString dest(url + '/' + appName.toLower());
+    QUrl projectUrl = QUrl::fromLocalFile(field("url").toString()).adjusted(QUrl::StripTrailingSlash);
+    const QString url = projectUrl.toLocalFile();
+    projectUrl.setPath(projectUrl.path() + QLatin1Char('/') + appName.toLower());
+    const QString dest = projectUrl.toLocalFile();
+
+    const QRegularExpression notWord(QStringLiteral("[^\\w]"));
+    auto generateIdentifier = [&notWord](const QString &appname) {
+        return QString(appname).replace(notWord, QStringLiteral("_"));
+    };
 
     m_variables.clear();
     m_variables["CURRENT_YEAR"] = QString().setNum(QDate::currentDate().year());
     m_variables["APPNAME"] = appName;
-    m_variables["APPNAMEUC"] = appName.toUpper();
+    m_variables["APPNAMEUC"] = generateIdentifier(appName.toUpper()); // TODO: done by KDevelop, update docs here & ECM?
     m_variables["APPNAMELC"] = appName.toLower();
+    m_variables["APPNAMEID"] = generateIdentifier(appName);
     m_variables["AUTHOR"] = field("author").toString();
     m_variables["EMAIL"] = field("email").toString();
     m_variables["VERSION"] = version;
-    m_variables["PROJECTDIRNAME"] = appName.toLower();
+    m_variables["PROJECTDIR"] = dest;
+    m_variables["PROJECTDIRNAME"] = projectUrl.fileName();
     // deprecated
     m_variables["dest"] = dest;
     // undocumented & deprecated
@@ -223,8 +230,7 @@ void GeneratePage::initializePage()
     resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
     resume.append(i18n("Version: %1 <br /><br />", version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
-    resume.append(
-        i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", url + '/' + appName.toLower()));
+    resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", dest));
     ui_generate.summaryLabel->setText(resume);
 }
 
