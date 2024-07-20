@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"POT-Creation-Date: 2024-07-20 00:41+0000\n"
 "PO-Revision-Date: 2020-05-11 20:37+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -68,22 +68,22 @@ msgstr "Inkje eksempelbilete er tilgjengeleg."
 msgid "Template description"
 msgstr "Malskildring"
 
-#: src/application/generatepage.cpp:29
+#: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
 msgstr "Lagar prosjekt"
 
-#: src/application/generatepage.cpp:45
+#: src/application/generatepage.cpp:46
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "Klarte ikkje laga %1."
 
-#: src/application/generatepage.cpp:65
+#: src/application/generatepage.cpp:66
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Klarte ikkje oppretta stien %1."
 
-#: src/application/generatepage.cpp:77
+#: src/application/generatepage.cpp:78
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -92,37 +92,37 @@ msgstr ""
 "Klarte ikkje integrera prosjektinformasjonen din i fila %1. Prosjektet er "
 "ikkje generert og alle mellombelse filer vert fjerna."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Klarte ikkje kopiera malfil til %1."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Framgang\n"
 
-#: src/application/generatepage.cpp:219
+#: src/application/generatepage.cpp:226
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Fullført.\n"
 
-#: src/application/generatepage.cpp:223
+#: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "Prosjektnamnet er <b>%1</b>, basert på malen «%2».<br />"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:231
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versjon: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:232
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installert i: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -131,7 +131,7 @@ msgstr ""
 "Du finn ei «README»-fil i prosjektmappa <b>%1</b><br /> for å hjelpa deg i "
 "gang med prosjektet."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:239
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

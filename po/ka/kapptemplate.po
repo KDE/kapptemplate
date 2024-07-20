@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"POT-Creation-Date: 2024-07-20 00:41+0000\n"
 "PO-Revision-Date: 2022-12-01 09:04+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -67,22 +67,22 @@ msgstr "მაგალითი სურათი ხელმიუწვდ�
 msgid "Template description"
 msgstr "შაბლონის აღწერა"
 
-#: src/application/generatepage.cpp:29
+#: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
 msgstr "თქვენი პროექტის გენერაცია"
 
-#: src/application/generatepage.cpp:45
+#: src/application/generatepage.cpp:46
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1-ის შექმნა შეუძლებელია."
 
-#: src/application/generatepage.cpp:65
+#: src/application/generatepage.cpp:66
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "ბილიკის %1 შექმნა შეუძლებელია."
 
-#: src/application/generatepage.cpp:77
+#: src/application/generatepage.cpp:78
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -91,37 +91,37 @@ msgstr ""
 "ფაილში %1 თქვენი პროექტის ინფორმაციის ინტეგრირების შეცდომა. პროექტი არ "
 "დაგენერირებულა და ყველა დროებითი ფაილები წაიშლება."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "შაბლონის ფაილის %1-ში კოპირების შეცდომა."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "გენერაციის მიმდინარეობა\n"
 
-#: src/application/generatepage.cpp:219
+#: src/application/generatepage.cpp:226
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "წარმატებულია.\n"
 
-#: src/application/generatepage.cpp:223
+#: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "პროექტის სახელია: <b>%1</b>, ეფუძნება %2 შაბლონს.<br />"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:231
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "ვერსია: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:232
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "დაყენებულია: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -130,7 +130,7 @@ msgstr ""
 "თქვენი პროექტის საქაღალდეში <b>%1</b><br /> README ფაილს იპოვით, რომელიც "
 "პროექტთან მუშაობის დაწყებაში დაგეხმარებათ."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:239
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"POT-Creation-Date: 2024-07-20 00:41+0000\n"
 "PO-Revision-Date: 2013-03-13 15:00+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -66,66 +66,66 @@ msgstr ""
 msgid "Template description"
 msgstr ""
 
-#: src/application/generatepage.cpp:29
+#: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
 msgstr ""
 
-#: src/application/generatepage.cpp:45
+#: src/application/generatepage.cpp:46
 #, kde-format
 msgid "%1 cannot be created."
 msgstr ""
 
-#: src/application/generatepage.cpp:65
+#: src/application/generatepage.cpp:66
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr ""
 
-#: src/application/generatepage.cpp:77
+#: src/application/generatepage.cpp:78
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr ""
 
-#: src/application/generatepage.cpp:219
+#: src/application/generatepage.cpp:226
 #, kde-format
 msgid "Succeeded.\n"
 msgstr ""
 
-#: src/application/generatepage.cpp:223
+#: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr ""
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:231
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "आवृत्ती : %1 <br /><br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:232
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr ""
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:239
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"POT-Creation-Date: 2024-07-20 00:41+0000\n"
 "PO-Revision-Date: 2020-05-05 13:03+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -67,22 +67,22 @@ msgstr "Näidispilti pole saada."
 msgid "Template description"
 msgstr "Malli kirjeldus"
 
-#: src/application/generatepage.cpp:29
+#: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
 msgstr "Projekti genereerimine"
 
-#: src/application/generatepage.cpp:45
+#: src/application/generatepage.cpp:46
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 loomine ei ole võimalik."
 
-#: src/application/generatepage.cpp:65
+#: src/application/generatepage.cpp:66
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Asukoha %1 loomine nurjus."
 
-#: src/application/generatepage.cpp:77
+#: src/application/generatepage.cpp:78
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -91,37 +91,37 @@ msgstr ""
 "Sinu projekti teabe lõimimine failiga %1 nurjus. Projekti ei saa genereerida "
 "ja kõik ajutised failid eemaldatakse."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Mallifaili kopeerimine asukohta %1 nurjus."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Genereerimise edenemine\n"
 
-#: src/application/generatepage.cpp:219
+#: src/application/generatepage.cpp:226
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Õnnestus.\n"
 
-#: src/application/generatepage.cpp:223
+#: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "Sinu projekti nimi on: <b>%1</b>, see tugineb %2  mallile.<br />"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:231
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versioon: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:232
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Paigaldatud asukohas: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -130,7 +130,7 @@ msgstr ""
 "LOEMIND-faili leiab projektikataloogis <b>%1</b>.<br /> See aitab sul oma "
 "projektiga korralikult alustada."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:239
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 12:21+0000\n"
+"POT-Creation-Date: 2024-07-20 00:41+0000\n"
 "PO-Revision-Date: 2017-07-24 00:24+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -72,22 +72,22 @@ msgid "Template description"
 msgstr "Opis šablona"
 
 # >> @title:window
-#: src/application/generatepage.cpp:29
+#: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
 msgstr "Stvaranje projekta"
 
-#: src/application/generatepage.cpp:45
+#: src/application/generatepage.cpp:46
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 ne može da se napravi."
 
-#: src/application/generatepage.cpp:65
+#: src/application/generatepage.cpp:66
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Putanja %1 ne može da se napravi."
 
-#: src/application/generatepage.cpp:77
+#: src/application/generatepage.cpp:78
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -96,37 +96,37 @@ msgstr ""
 "Ne mogu da uklopim date podatke o projektu u fajl %1. Projekat nije "
 "generisan i svi privremeni fajlovi će biti uklonjeni."
 
-#: src/application/generatepage.cpp:85
+#: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Ne mogu da kopiram šablonski fajl u %1."
 
-#: src/application/generatepage.cpp:119
+#: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
 msgstr "Napredak stvaranja\n"
 
-#: src/application/generatepage.cpp:219
+#: src/application/generatepage.cpp:226
 #, kde-format
 msgid "Succeeded.\n"
 msgstr "Uspeh.\n"
 
-#: src/application/generatepage.cpp:223
+#: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgstr "Ime projekta je: <b>%1</b>, na osnovu šablona %2.<br />"
 
-#: src/application/generatepage.cpp:224
+#: src/application/generatepage.cpp:231
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "<html>Izdanje: %1 <br /><br /></html>"
 
-#: src/application/generatepage.cpp:225
+#: src/application/generatepage.cpp:232
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "<html>Instalira se u: %1 <br /><br /></html>"
 
-#: src/application/generatepage.cpp:227
+#: src/application/generatepage.cpp:233
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -135,7 +135,7 @@ msgstr ""
 "Pogledajte README u fascikli projekta <b>%1</b><br />za pomoć u prvim "
 "koracima sa projektom."
 
-#: src/application/generatepage.cpp:233
+#: src/application/generatepage.cpp:239
 #, fuzzy, kde-format
 #| msgid "Error"
 msgctxt "@title:window"
