@@ -36,7 +36,7 @@ if (BUILD_TESTING)
     find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
 
-find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets Quick)
 
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
@@ -48,6 +48,14 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     # NewStuff
 )
+
+find_package(KF6KirigamiAddons 1.4.0 REQUIRED)
+set_package_properties(KF6KirigamiAddons PROPERTIES
+    TYPE REQUIRED
+    PURPOSE "Required application components and runtime dependency"
+)
+
+qt_policy(SET QTP0001 NEW)
 
 ecm_set_disabled_deprecation_versions(
     QT 6.5

@@ -1,58 +1,134 @@
-/*
-    SPDX-FileCopyrightText: 2001 Bernd Gehrmann <bernd@kdevelop.org>
-    SPDX-FileCopyrightText: 2004-2005 Sascha Cunz <sascha@kdevelop.org>
-    SPDX-FileCopyrightText: 2007 Alexander Dymo <adymo@kdevelop.org>
-    SPDX-FileCopyrightText: 2008 Anne-Marie Mahfouf <annma@kde.org>
+// SPDX-FileCopyrightText: 2001 Bernd Gehrmann <bernd@kdevelop.org>
+// SPDX-FileCopyrightText: 2004-2005 Sascha Cunz <sascha@kdevelop.org>
+// SPDX-FileCopyrightText: 2007 Alexander Dymo <adymo@kdevelop.org>
+// SPDX-FileCopyrightText: 2008 Anne-Marie Mahfouf <annma@kde.org>
+// SPDX-FileCopyrightText: 2024 Carl Schwan <carl@carlschwan.eu>
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-    SPDX-License-Identifier: GPL-2.0-or-later
-*/
+#include "generator.h"
 
-#include <KIO/CopyJob>
+#include "logging.h"
+#include "prefs.h"
+
+#include <KArchiveDirectory>
+#include <KArchiveFile>
+#include <KConfig>
+#include <KConfigGroup>
 #include <KLocalizedString>
 #include <KMacroExpander>
-#include <KMessageBox>
 #include <KTar>
 #include <KZip>
 
 #include <QDir>
 #include <QFileInfo>
 #include <QRegularExpression>
+#include <QFileInfo>
+#include <QStandardPaths>
 #include <QTemporaryDir>
 
-#include "generatepage.h"
-#include "kapptemplate.h"
-#include "logging.h"
-#include "prefs.h"
+using namespace Qt::StringLiterals;
 
-GeneratePage::GeneratePage(QWidget *parent)
-    : QWizardPage(parent)
+Generator::Generator(QObject *parent)
+    : QObject(parent)
+    , m_name(Prefs::appName())
+    , m_location(Prefs::url())
+    , m_authorName(Prefs::name())
+    , m_authorEmail(Prefs::email())
+    , m_version(Prefs::appVersion())
 {
-    setTitle(i18n("Generating your project"));
-    ui_generate.setupUi(this);
 }
 
-bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList)
+QString Generator::name() const
 {
+    return m_name;
+}
+
+QString Generator::location() const
+{
+    return m_location;
+}
+
+QString Generator::authorName() const
+{
+    return m_authorName;
+}
+
+QString Generator::authorEmail() const
+{
+    return m_authorEmail;
+}
+
+QString Generator::version() const
+{
+    return m_version;
+}
+
+void Generator::setName(const QString &name)
+{
+    if (m_name == name) {
+        return;
+    }
+    m_name = name;
+    Q_EMIT nameChanged();
+}
+
+void Generator::setLocation(const QString &location)
+{
+    if (m_location == location) {
+        return;
+    }
+    m_location = location;
+    Q_EMIT locationChanged();
+}
+
+void Generator::setAuthorName(const QString &authorName)
+{
+    if (m_authorName == authorName) {
+        return;
+    }
+    m_authorName = authorName;
+    Q_EMIT authorNameChanged();
+}
+
+void Generator::setAuthorEmail(const QString &authorEmail)
+{
+    if (m_authorEmail == authorEmail) {
+        return;
+    }
+    m_authorEmail = authorEmail;
+    Q_EMIT authorEmailChanged();
+}
+
+void Generator::setVersion(const QString &version)
+{
+    if (m_version == version) {
+        return;
+    }
+    m_version = version;
+    Q_EMIT versionChanged();
+}
+
+bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList)
+{
+    bool failed;
     qCDebug(KAPPTEMPLATE) << "unpacking dir:" << dir->name() << "to" << dest;
     const QStringList entries = dir->entries();
     qCDebug(KAPPTEMPLATE) << "entries:" << entries.join(",");
 
     QTemporaryDir tdir;
 
-    bool ret = true;
-
     // create path were we want copy files to
     if (!QDir::root().mkpath(dest)) {
-        displayError(i18n("%1 cannot be created.", dest));
+        Q_EMIT errorOccurred(i18n("%1 cannot be created.", dest));
         return false;
     }
 
     int progress = 0;
 
-    bool failed = false;
     for (const QString &entry : entries) {
         progress++;
-        ui_generate.progressBar->setValue((progress / entries.size()) * 100);
+        Q_EMIT progressUpdated(int((progress / entries.size()) * 100));
 
         if (skipList.contains(entry)) {
             continue;
@@ -63,18 +139,18 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
             QString newdest = dest + "/" + file->name();
             if (!QFileInfo(newdest).exists()) {
                 if (!QDir::root().mkdir(newdest)) {
-                    displayError(i18n("Path %1 could not be created.", newdest));
+                    Q_EMIT errorOccurred(i18n("Path %1 could not be created.", newdest));
                     return false;
                 }
             }
-            ret |= unpackArchive(file, newdest);
+            failed = failed & unpackArchive(file, newdest);
         } else if (dir->entry(entry)->isFile()) {
             const KArchiveFile *file = dynamic_cast<const KArchiveFile *>(dir->entry(entry));
             file->copyTo(tdir.path());
             QString destName = KMacroExpander::expandMacros(dest + '/' + file->name(), m_variables);
             if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
                 if (!extractFileMacros(destName)) {
-                    displayError(
+                    Q_EMIT errorOccurred(
                         i18n("Failed to integrate your project information into "
                              "the file %1. The project has not been generated and "
                              "all temporary files will be removed.",
@@ -83,21 +159,25 @@ bool GeneratePage::unpackArchive(const KArchiveDirectory *dir, const QString &de
                     break;
                 }
             } else {
-                displayError(i18n("Could not copy template file to %1.", destName));
+                Q_EMIT errorOccurred(i18n("Could not copy template file to %1.", destName));
                 failed = true;
                 break;
             }
         }
     }
 
-    if (failed && !QDir(dest).removeRecursively()) {
-        qCDebug(KAPPTEMPLATE) << "Failed to remove incomplete destination directory" << dest;
+    if (failed) {
+        if (!QDir(dest).removeRecursively()) {
+            qCDebug(KAPPTEMPLATE) << "Failed to remove incomplete destination directory" << dest;
+        }
+        qWarning() << "failed";
+        return false;
     }
 
-    return ret;
+    return true;
 }
 
-bool GeneratePage::extractFileMacros(const QString &entry)
+bool Generator::extractFileMacros(const QString &entry)
 {
     QString text;
     QFile file(entry);
@@ -115,14 +195,14 @@ bool GeneratePage::extractFileMacros(const QString &entry)
     return false;
 }
 
-void GeneratePage::initializePage()
+void Generator::startGeneration(const QString &templateName)
 {
-    feedback = i18n("Generation Progress\n");
-    ui_generate.label->setText(feedback);
-    templateName = field("tempName").toString();
-    if (templateName.isEmpty()) {
-        templateName = "kde4";
-    }
+    Prefs::setAppVersion(m_version);
+    Prefs::setUrl(m_location);
+    Prefs::setName(m_authorName);
+    Prefs::setEmail(m_authorEmail);
+    Prefs::setAppName(m_name);
+    Prefs::self()->save();
 
     QString archName;
     const QStringList templatePaths =
@@ -138,14 +218,14 @@ void GeneratePage::initializePage()
         }
     }
 
-    if (archName.isEmpty())
+    if (archName.isEmpty()) {
         return;
+    }
 
     // create dir where template project will be copied
-    QString appName = field("appName").toString();
-    QString version = field("version").toString();
+    QString appName = m_name;
 
-    QUrl projectUrl = QUrl::fromLocalFile(field("url").toString()).adjusted(QUrl::StripTrailingSlash);
+    QUrl projectUrl = QUrl::fromLocalFile(m_location).adjusted(QUrl::StripTrailingSlash);
     const QString url = projectUrl.toLocalFile();
     projectUrl.setPath(projectUrl.path() + QLatin1Char('/') + appName.toLower());
     const QString dest = projectUrl.toLocalFile();
@@ -161,22 +241,22 @@ void GeneratePage::initializePage()
     m_variables["APPNAMEUC"] = generateIdentifier(appName.toUpper()); // TODO: done by KDevelop, update docs here & ECM?
     m_variables["APPNAMELC"] = appName.toLower();
     m_variables["APPNAMEID"] = generateIdentifier(appName);
-    m_variables["AUTHOR"] = field("author").toString();
-    m_variables["EMAIL"] = field("email").toString();
-    m_variables["VERSION"] = version;
     m_variables["PROJECTDIR"] = dest;
     m_variables["PROJECTDIRNAME"] = projectUrl.fileName();
+    m_variables["AUTHOR"] = m_authorName;
+    m_variables["EMAIL"] = m_authorEmail;
+    m_variables["VERSION"] = m_version;
     // deprecated
     m_variables["dest"] = dest;
     // undocumented & deprecated
     m_variables["APPNAMEFU"] = appName.replace(0, 1, appName.toUpper().at(0));
     m_variables["VERSIONCONTROLPLUGIN"] = QString(); // creation by kapptemplate is without VCS support/selection
 
-    KArchive *arch = nullptr;
+    std::unique_ptr<KArchive> arch = nullptr;
     if (archName.endsWith(".zip")) {
-        arch = new KZip(archName);
+        arch = std::make_unique<KZip>(archName);
     } else {
-        arch = new KTar(archName, "application/x-bzip");
+        arch = std::make_unique<KTar>(archName, "application/x-bzip");
     }
 
     if (arch->open(QIODevice::ReadOnly)) {
@@ -218,27 +298,16 @@ void GeneratePage::initializePage()
             QDir::root().mkdir(dest);
             qCDebug(KAPPTEMPLATE) << "Creating output directory:" << dest;
         }
-
-        unpackArchive(arch->directory(), dest, metaDataFileNames);
+        const auto ok = unpackArchive(arch->directory(), dest, metaDataFileNames);
+        if (!ok) {
+            return;
+        }
     }
-    delete arch;
-
-    feedback.append(i18n("Succeeded.\n"));
-    ui_generate.label->setText(feedback);
 
     QString resume;
     resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
-    resume.append(i18n("Version: %1 <br /><br />", version));
+    resume.append(i18n("Version: %1 <br /><br />", m_version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
     resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", dest));
-    ui_generate.summaryLabel->setText(resume);
+    Q_EMIT done(resume);
 }
-
-void GeneratePage::displayError(const QString &error)
-{
-    KMessageBox::error(nullptr, error, i18nc("@title:window", "Error"));
-    feedback.append("\n\n" + error);
-    ui_generate.label->setText(feedback);
-}
-
-#include "moc_generatepage.cpp"

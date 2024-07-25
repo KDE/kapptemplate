@@ -6,14 +6,18 @@
 */
 
 #include <KAboutData>
+#include <KLocalizedContext>
 #include <KLocalizedString>
 
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QIcon>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
 
-#include "kapptemplate.h"
 #include "kapptemplate_version.h"
 #include "logging.h"
+#include "previewimageprovider.h"
 
 int main(int argc, char **argv)
 {
@@ -35,14 +39,16 @@ int main(int argc, char **argv)
     KAboutData::setApplicationData(about);
     QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kapptemplate")));
 
-    KAppTemplate appTemplate;
     QCommandLineParser parser;
     about.setupCommandLine(&parser);
 
     parser.process(application);
     about.processCommandLine(&parser);
 
-    appTemplate.show();
+    QQmlApplicationEngine engine;
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    engine.addImageProvider(QLatin1String("preview"), new PreviewImageProvider);
+    engine.loadFromModule("org.kde.kapptemplate", "Main");
 
     return application.exec();
 }

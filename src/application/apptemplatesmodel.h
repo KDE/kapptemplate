@@ -8,9 +8,10 @@
 #ifndef APPTEMPLATESMODEL_H
 #define APPTEMPLATESMODEL_H
 
+#include <QMap>
 #include <QStandardItemModel>
 #include <QVariant>
-#include <QMap>
+#include <qqmlregistration.h>
 
 class ChoicePage;
 class AppTemplateItem;
@@ -22,6 +23,9 @@ class AppTemplateItem;
  */
 class AppTemplatesModel: public QStandardItemModel
 {
+    Q_OBJECT
+    QML_ELEMENT
+
 public:
     enum TemplateRole
     {
@@ -30,11 +34,17 @@ public:
         BaseNameRole = Qt::UserRole + 3
     };
 
-    explicit AppTemplatesModel(ChoicePage *parent);
-    // Refresh the model data
-    void refresh();
-    // Display the header
+    explicit AppTemplatesModel(QObject *parent = nullptr);
+
+    /// Refresh the model data.
+    Q_INVOKABLE void refresh();
+
     QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
+    QHash<int, QByteArray> roleNames() const override;
+
+public Q_SLOTS:
+    /// Load a template from a file.
+    void loadFromFiles(const QStringList &selectedFiles);
 
 private:
     // Based on QStandardItem, create a model item
