@@ -18,12 +18,16 @@
 
 #include "apptemplateitem.h"
 #include "apptemplatesmodel.h"
-#include "choicepage.h"
 #include "logging.h"
 
-AppTemplatesModel::AppTemplatesModel(ChoicePage *parent)
+AppTemplatesModel::AppTemplatesModel(QObject *parent)
     : QStandardItemModel(parent)
 {
+}
+
+QHash<int, QByteArray> AppTemplatesModel::roleNames() const
+{
+    return {{Qt::DisplayRole, "name"}, {DescriptionFileRole, "descriptionFile"}, {PictureNameRole, "pictureName"}, {BaseNameRole, "baseName"}};
 }
 
 void extractTemplateDescriptions()
@@ -130,7 +134,6 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
     QStringList currentPath;
     for (const QString &entry : path) {
         currentPath << entry;
-        qCDebug(KAPPTEMPLATE) << "current path " << currentPath;
         if (!m_templateItems.contains(currentPath.join("/"))) {
             AppTemplateItem *item = new AppTemplateItem(entry);
             parent->appendRow(item);
@@ -161,4 +164,22 @@ QVariant AppTemplatesModel::headerData(int section, Qt::Orientation orientation,
         break;
     }
     return QVariant();
+}
+
+void AppTemplatesModel::loadFromFiles(const QStringList &selectedFiles)
+{
+    const QString saveLocation = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kdevappwizard/templates/");
+
+    QDir dir(saveLocation);
+    if (!dir.exists()) {
+        dir.mkpath(QStringLiteral("."));
+    }
+
+    for (const QString &fileName : selectedFiles) {
+        qCDebug(KAPPTEMPLATE) << "Copying" << fileName << "to" << saveLocation;
+        QFileInfo info(fileName);
+        QFile::copy(fileName, saveLocation + info.fileName());
+    }
+
+    refresh();
 }

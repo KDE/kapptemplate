@@ -5,13 +5,22 @@ ecm_setup_version(${KAPPTEMPLATE_VERSION}
 
 add_executable(kapptemplate)
 
-target_sources(kapptemplate PRIVATE
-   kapptemplate.cpp
-   main.cpp
-   apptemplatesmodel.cpp
-   apptemplateitem.cpp
-   generatepage.cpp
-   choicepage.cpp
+qt_add_qml_module(kapptemplate
+    URI org.kde.kapptemplate
+    QML_FILES
+        Main.qml
+        IntroductionPage.qml
+        ChoicePage.qml
+        ConfigurePage.qml
+        GeneratorPage.qml
+    RESOURCES
+        konqi-app-dev.png
+    SOURCES
+        main.cpp
+        apptemplatesmodel.cpp
+        apptemplateitem.cpp
+        generator.cpp
+        previewimageprovider.cpp
 )
 
 ecm_qt_declare_logging_category(kapptemplate
@@ -22,16 +31,9 @@ ecm_qt_declare_logging_category(kapptemplate
     EXPORT KAPPTEMPLATE
 )
 
-ki18n_wrap_ui(kapptemplate
-    introduction.ui
-    choice.ui
-    properties.ui
-    generate.ui
-)
-
 kconfig_add_kcfg_files(kapptemplate prefs.kcfgc)
 
-target_link_libraries(kapptemplate
+target_link_libraries(kapptemplate PRIVATE
     KF6::CoreAddons
     KF6::ConfigWidgets
     KF6::Completion
@@ -39,6 +41,7 @@ target_link_libraries(kapptemplate
     KF6::Archive
     KF6::KIOCore
     KF6::I18n
+    Qt::Quick
     # KF6::NewStuff
 )
 
