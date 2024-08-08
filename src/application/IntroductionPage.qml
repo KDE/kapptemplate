@@ -12,6 +12,8 @@ Kirigami.ScrollablePage {
 
     title: i18nc("@title", "Introduction")
 
+    Component.onCompleted: nextButton.forceActiveFocus();
+
     ColumnLayout {
         Controls.Label {
             text: i18n("This wizard will help you generate a new project. You will be able to start developing your own software using Qt and KDE technologies from this template.")
@@ -33,6 +35,7 @@ Kirigami.ScrollablePage {
     footer: Controls.ToolBar {
         contentItem: Controls.DialogButtonBox {
             Controls.Button {
+                id: nextButton
                 text: i18nc("@action:button", "Next")
                 icon.name: 'go-next-view-page-symbolic'
                 onClicked: Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'ChoicePage'))

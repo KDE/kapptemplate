@@ -17,7 +17,10 @@ Kirigami.Page {
 
     padding: 0
 
-    Component.onCompleted: appTemplatesModel.refresh();
+    Component.onCompleted: {
+        appTemplatesModel.refresh();
+        choiceView.forceActiveFocus();
+    }
 
     actions: Kirigami.Action {
         text: i18nc("@action:intoolbar", "Install Template From File")
@@ -64,7 +67,11 @@ Kirigami.Page {
                     text: name
 
                     onClicked: if (baseName.length > 0) {
-                        choiceView.currentIndex = index;
+                        if (ListView.isCurrentItem) {
+                            nextButton.clicked();
+                        } else {
+                            choiceView.currentIndex = index;
+                        }
                     } else {
                         treeModel.toggleChildren(delegate.index);
                     }
@@ -127,6 +134,8 @@ Kirigami.Page {
             }
 
             Controls.Button {
+                id: nextButton
+
                 enabled: choiceView.currentItem?.baseName.length > 0
                 text: i18nc("@action:button", "Next")
                 onClicked: Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'ConfigurePage'), {
