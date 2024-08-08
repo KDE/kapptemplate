@@ -32,6 +32,7 @@ FormCard.FormCardPage {
             validator: RegularExpressionValidator {
                 regularExpression: /[a-zA-Z0-9_]*/
             }
+            focus: true
             text: generator.name
             onTextChanged: generator.name = text
         }
