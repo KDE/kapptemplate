@@ -81,45 +81,34 @@ Kirigami.Page {
             Controls.SplitView.minimumWidth: Kirigami.Units.gridUnit * 15
         }
 
-        Controls.ScrollView {
-            id: pane
+        Kirigami.ScrollablePage {
+            id: scrollview
 
-            contentWidth: availableWidth
+            leftPadding: Kirigami.Units.largeSpacing
+            topPadding: Kirigami.Units.largeSpacing
+            bottomPadding: Kirigami.Units.largeSpacing
+            rightPadding: Kirigami.Units.largeSpacing
 
-            Controls.SplitView.fillWidth: true
+            ColumnLayout {
+                spacing: Kirigami.Units.smallSpacing
 
-            Controls.Control {
-                id: control
+                Kirigami.Heading {
+                    text: choiceView.currentItem && choiceView.currentItem.name.length > 0 ? choiceView.currentItem.name : i18nc("@title", "No Template Selected")
+                    wrapMode: Text.WordWrap
+                    Layout.fillWidth: true
+                }
 
-                width: pane.availableWidth
+                Image {
+                    source: choiceView.currentItem ? 'image://preview/' + choiceView.currentItem.pictureName + '/' + choiceView.currentItem.baseName : ''
+                    Layout.fillWidth: true
+                    Layout.maximumHeight: implicitHeight * scrollview.availableWidth / implicitWidth
+                }
 
-                leftPadding: Kirigami.Units.largeSpacing
-                rightPadding: Kirigami.Units.largeSpacing
-                topPadding: Kirigami.Units.largeSpacing
-                bottomPadding: Kirigami.Units.largeSpacing
-
-                contentItem: ColumnLayout {
-                    spacing: Kirigami.Units.smallSpacing
-
-                    Kirigami.Heading {
-                        text: choiceView.currentItem && choiceView.currentItem.name.length > 0 ? choiceView.currentItem.name : i18nc("@title", "No Template Selected")
-                        wrapMode: Text.WordWrap
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                    }
-
-                    Image {
-                        source: choiceView.currentItem ? 'image://preview/' + choiceView.currentItem.pictureName + '/' + choiceView.currentItem.baseName : ''
-                        Layout.maximumWidth: control.availableWidth
-                        Layout.maximumHeight: implicitHeight * control.availableWidth / implicitWidth
-                    }
-
-                    Controls.Label {
-                        text: choiceView.currentItem && choiceView.currentItem.descriptionFile.length > 0 ? choiceView.currentItem.descriptionFile : ''
-                        wrapMode: Text.WordWrap
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                    }
+                Controls.Label {
+                    text: choiceView.currentItem && choiceView.currentItem.descriptionFile.length > 0 ? choiceView.currentItem.descriptionFile : ''
+                    wrapMode: Text.WordWrap
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                 }
             }
         }

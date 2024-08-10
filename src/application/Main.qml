@@ -9,6 +9,8 @@ Kirigami.ApplicationWindow {
 
     width: Kirigami.Units.gridUnit * 35
     height: Kirigami.Units.gridUnit * 30
+    minimumWidth: Kirigami.Units.gridUnit * 25
+    minimumHeight: Kirigami.Units.gridUnit * 25
 
     pageStack {
         initialPage: IntroductionPage {}
