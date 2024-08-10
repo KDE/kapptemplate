@@ -48,7 +48,7 @@ void extractTemplateDescriptions()
     if (!dir.exists())
         dir.mkpath(localDescriptionsDir);
 
-    for (const QString &archName : std::as_const(templateArchives)) {
+    for (const auto &archName : std::as_const(templateArchives)) {
         qCDebug(KAPPTEMPLATE) << "processing template" << archName;
 #ifdef Q_WS_WIN
         KZip templateArchive(archName);
@@ -175,7 +175,6 @@ void AppTemplatesModel::loadFromFiles(const QStringList &selectedFiles)
     }
 
     for (const QString &fileName : selectedFiles) {
-        qCDebug(KAPPTEMPLATE) << "Copying" << fileName << "to" << saveLocation;
         QFileInfo info(fileName);
         QFile::copy(fileName, saveLocation + info.fileName());
     }

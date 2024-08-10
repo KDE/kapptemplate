@@ -84,13 +84,13 @@ FormCard.FormCardPage {
     footer: Controls.ToolBar {
         contentItem: Controls.DialogButtonBox {
             Controls.Button {
-                text: i18nc("@action:button", "Previous")
+                text: i18nc("@action:button Go to the previous page", "Previous")
                 onClicked: Controls.ApplicationWindow.window.pageStack.pop()
                 icon.name: 'go-previous-view-page-symbolic'
             }
 
             Controls.Button {
-                text: i18nc("@action:button", "Generate")
+                text: i18nc("@action:button Generate the application", "Generate")
                 enabled: generator.location.length > 0 && generator.name.length > 0
                 onClicked: {
                     Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'GeneratorPage'), {

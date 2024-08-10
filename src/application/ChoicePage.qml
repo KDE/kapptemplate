@@ -90,7 +90,7 @@ Kirigami.Page {
             rightPadding: Kirigami.Units.largeSpacing
 
             ColumnLayout {
-                spacing: Kirigami.Units.smallSpacing
+                spacing: Kirigami.Units.largeSpacing
 
                 Kirigami.Heading {
                     text: choiceView.currentItem && choiceView.currentItem.name.length > 0 ? choiceView.currentItem.name : i18nc("@title", "No Template Selected")
@@ -100,7 +100,7 @@ Kirigami.Page {
 
                 Image {
                     source: choiceView.currentItem ? 'image://preview/' + choiceView.currentItem.pictureName + '/' + choiceView.currentItem.baseName : ''
-                    Layout.fillWidth: true
+                    Layout.maximumWidth: parent.width
                     Layout.maximumHeight: implicitHeight * scrollview.availableWidth / implicitWidth
                 }
 
@@ -117,7 +117,7 @@ Kirigami.Page {
     footer: Controls.ToolBar {
         contentItem: Controls.DialogButtonBox {
             Controls.Button {
-                text: i18nc("@action:button", "Previous")
+                text: i18nc("@action:button Go to the previous page", "Previous")
                 onClicked: Controls.ApplicationWindow.window.pageStack.pop()
                 icon.name: 'go-previous-view-page-symbolic'
             }
@@ -126,7 +126,7 @@ Kirigami.Page {
                 id: nextButton
 
                 enabled: choiceView.currentItem?.baseName.length > 0
-                text: i18nc("@action:button", "Next")
+                text: i18nc("@action:button Go to the next page", "Next")
                 onClicked: Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'ConfigurePage'), {
                     templateName: choiceView.currentItem.baseName,
                     displayName: choiceView.currentItem.name,

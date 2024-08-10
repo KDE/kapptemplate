@@ -13,7 +13,7 @@ Kirigami.ScrollablePage {
     property bool hasError: false
     property bool done: false
 
-    title: i18nc("@title", "Template Generation")
+    title: i18nc("@title", "Project Generation")
 
     ColumnLayout {
         spacing: Kirigami.Units.smallSpacing
@@ -64,13 +64,13 @@ Kirigami.ScrollablePage {
     footer: Controls.ToolBar {
         contentItem: Controls.DialogButtonBox {
             Controls.Button {
-                text: i18nc("@action:button", "Previous")
+                text: i18nc("@action:button Go to the previous page", "Previous")
                 onClicked: Controls.ApplicationWindow.window.pageStack.pop()
                 icon.name: 'go-previous-view-page-symbolic'
             }
 
             Controls.Button {
-                text: i18nc("@action:button", "Close")
+                text: i18nc("@action:button Close the application", "Close")
                 onClicked: Qt.quit()
                 icon.name: 'dialog-close-symbolic'
             }

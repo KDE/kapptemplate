@@ -170,7 +170,6 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
         if (!QDir(dest).removeRecursively()) {
             qCDebug(KAPPTEMPLATE) << "Failed to remove incomplete destination directory" << dest;
         }
-        qWarning() << "failed";
         return false;
     }
 

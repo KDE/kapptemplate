@@ -16,7 +16,7 @@ Kirigami.ScrollablePage {
 
     ColumnLayout {
         Controls.Label {
-            text: i18n("This wizard will help you generate a new project. You will be able to start developing your own software using Qt and KDE technologies from this template.")
+            text: i18n("This wizard will help you generate a new project to get started with Qt and KDE development.")
             wrapMode: Text.WordWrap
 
             Layout.fillWidth: true
@@ -36,7 +36,7 @@ Kirigami.ScrollablePage {
         contentItem: Controls.DialogButtonBox {
             Controls.Button {
                 id: nextButton
-                text: i18nc("@action:button", "Next")
+                text: i18nc("@action:button Go to the next page", "Next")
                 icon.name: 'go-next-view-page-symbolic'
                 onClicked: Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'ChoicePage'))
             }
