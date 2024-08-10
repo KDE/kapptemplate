@@ -195,7 +195,7 @@ bool Generator::extractFileMacros(const QString &entry)
     return false;
 }
 
-void Generator::startGeneration(const QString &templateName)
+void Generator::startGeneration(const QString &templateName, const QString &displayName)
 {
     Prefs::setAppVersion(m_version);
     Prefs::setUrl(m_location);
@@ -305,7 +305,7 @@ void Generator::startGeneration(const QString &templateName)
     }
 
     QString resume;
-    resume = i18n("Your project name is: <b>%1</b>, based on the %2 template.<br />", appName, templateName);
+    resume = i18n("Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />", appName, displayName);
     resume.append(i18n("Version: %1 <br /><br />", m_version));
     resume.append(i18n("Installed in: %1 <br /><br />", url));
     resume.append(i18n("You will find a README in your project folder <b>%1</b><br /> to help you get started with your project.", dest));

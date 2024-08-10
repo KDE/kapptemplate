@@ -116,7 +116,6 @@ void AppTemplatesModel::refresh()
         KConfigGroup general(&templateConfig, QStringLiteral("General"));
         QString name = general.readEntry("Name");
         QString category = general.readEntry("Category");
-        qCDebug(KAPPTEMPLATE) << "category " << category;
         QString description = general.readEntry("Comment");
         QString picture = general.readEntry("Icon");
         AppTemplateItem *templateItem = createItem(name, category);

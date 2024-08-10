@@ -139,7 +139,8 @@ Kirigami.Page {
                 enabled: choiceView.currentItem?.baseName.length > 0
                 text: i18nc("@action:button", "Next")
                 onClicked: Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'ConfigurePage'), {
-                    templateName: choiceView.currentItem.baseName
+                    templateName: choiceView.currentItem.baseName,
+                    displayName: choiceView.currentItem.name,
                 })
                 icon.name: 'go-next-view-page-symbolic'
             }

@@ -15,6 +15,7 @@ FormCard.FormCardPage {
     title: i18nc("@title", "Configure")
 
     property string templateName
+    property string displayName
 
     Generator {
         id: generator
@@ -95,7 +96,7 @@ FormCard.FormCardPage {
                     Controls.ApplicationWindow.window.pageStack.push(Qt.createComponent('org.kde.kapptemplate', 'GeneratorPage'), {
                         generator: generator,
                     });
-                    generator.startGeneration(root.templateName);
+                    generator.startGeneration(root.templateName, root.displayName);
                 }
                 icon.name: 'dialog-ok-symbolic'
             }

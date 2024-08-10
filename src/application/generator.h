@@ -36,7 +36,7 @@ public:
     void setVersion(const QString &version);
 
 public Q_SLOTS:
-    void startGeneration(const QString &templateName);
+    void startGeneration(const QString &templateName, const QString &generator);
 
 Q_SIGNALS:
     void nameChanged();
