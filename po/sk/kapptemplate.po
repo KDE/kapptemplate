@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-31 00:41+0000\n"
 "PO-Revision-Date: 2022-04-09 19:28+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -26,61 +26,133 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:159
+#: src/application/apptemplatesmodel.cpp:161
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
 msgstr "Projekty šablón"
 
-#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
-#: src/application/choice.ui:37
-#, kde-format
-msgid "Get More Templates"
+#: src/application/ChoicePage.qml:16
+#, fuzzy, kde-format
+#| msgid "Get More Templates"
+msgctxt "@title"
+msgid "Choose Template"
 msgstr "Získať viac šablón"
 
-#. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: src/application/choice.ui:50
-#, kde-format
+#: src/application/ChoicePage.qml:26
+#, fuzzy, kde-format
+#| msgid "Install Template From File"
+msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "Nainštalovať šabllónu zo súbou"
 
-#. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: src/application/choice.ui:111
+#: src/application/ChoicePage.qml:33
 #, kde-format
-msgid "Project name:"
-msgstr "Názov projektu:"
+msgctxt "file dialog name filter"
+msgid "Archive Files (*.tar.bz2 *.zip)"
+msgstr ""
 
-#: src/application/choicepage.cpp:35
+#: src/application/ChoicePage.qml:96
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Templates Projects"
+msgctxt "@title"
+msgid "No Template Selected"
+msgstr "Projekty šablón"
+
+#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/GeneratorPage.qml:67
+#, fuzzy, kde-format
+#| msgctxt "Do not translate"
+#| msgid "Preview"
+msgctxt "@action:button Go to the previous page"
+msgid "Previous"
+msgstr "Náhľad"
+
+#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
-msgid "Choose your project template"
-msgstr "Vyberte vašu šablónu projektu"
+msgctxt "@action:button Go to the next page"
+msgid "Next"
+msgstr ""
 
-#: src/application/choicepage.cpp:146
+#: src/application/ConfigurePage.qml:15
 #, kde-format
-msgid "No sample picture available."
-msgstr "Nie je dostupný vzorový obrázok."
+msgctxt "@title"
+msgid "Configure"
+msgstr ""
 
-#: src/application/choicepage.cpp:159
+#: src/application/ConfigurePage.qml:25
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@title:group"
+msgid "General"
+msgstr "Generovať"
+
+#: src/application/ConfigurePage.qml:32
 #, kde-format
-msgid "Template description"
-msgstr "Popis šablóny"
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr ""
 
-#: src/application/generatepage.cpp:30
+#: src/application/ConfigurePage.qml:44
 #, kde-format
-msgid "Generating your project"
-msgstr "Generujem váš projekt"
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr ""
 
-#: src/application/generatepage.cpp:46
+#: src/application/ConfigurePage.qml:45
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No folder selected"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:57
+#, kde-format
+msgctxt "@title:group"
+msgid "Metadata"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:62
+#, fuzzy, kde-format
+#| msgid "&Version number:"
+msgctxt "@label:textbox"
+msgid "Version:"
+msgstr "Číslo verzie:"
+
+#: src/application/ConfigurePage.qml:70
+#, fuzzy, kde-format
+#| msgid "Author &name:"
+msgctxt "@label:textbox"
+msgid "Author name:"
+msgstr "Meno autora:"
+
+#: src/application/ConfigurePage.qml:78
+#, fuzzy, kde-format
+#| msgid "A&uthor email:"
+msgctxt "@label:textbox"
+msgid "Author email:"
+msgstr "E-mail autora:"
+
+#: src/application/ConfigurePage.qml:93
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@action:button Generate the application"
+msgid "Generate"
+msgstr "Generovať"
+
+#: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 sa nedá vytvoriť."
 
-#: src/application/generatepage.cpp:66
+#: src/application/generator.cpp:142
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Cesta %1 sa nedá vytvoriť."
 
-#: src/application/generatepage.cpp:78
+#: src/application/generator.cpp:154
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -89,37 +161,28 @@ msgstr ""
 "Zlyhalo integrovanie vašich informácií projektu do súboru %1. Projekt nebol "
 "integrovaný a všetky dočasné súbory sa odstránia."
 
-#: src/application/generatepage.cpp:86
+#: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Nemôžem kopírovať súbor šablóny do %1."
 
-#: src/application/generatepage.cpp:120
-#, kde-format
-msgid "Generation Progress\n"
-msgstr "Priebeh generovania\n"
-
-#: src/application/generatepage.cpp:226
-#, kde-format
-msgid "Succeeded.\n"
-msgstr "Úspech.\n"
-
-#: src/application/generatepage.cpp:230
-#, kde-format
-msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#: src/application/generator.cpp:307
+#, fuzzy, kde-format
+#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Názov vášho projektu je: <b>%1</b>, založený na šablóne %2.<br />"
 
-#: src/application/generatepage.cpp:231
+#: src/application/generator.cpp:308
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Verzia: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:232
+#: src/application/generator.cpp:309
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Nainštalované v: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:233
+#: src/application/generator.cpp:310
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -128,50 +191,39 @@ msgstr ""
 "README nájdete v priečinku projektu <b>%1</b><br /> na pomoc pri začiatkoch "
 "s vašim projektom."
 
-#: src/application/generatepage.cpp:239
-#, kde-format
-msgctxt "@title:window"
-msgid "Error"
-msgstr "Chyba"
+#: src/application/GeneratorPage.qml:16
+#, fuzzy, kde-format
+#| msgid "Project version"
+msgctxt "@title"
+msgid "Project Generation"
+msgstr "Verzia projektu"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/application/introduction.ui:17
+#: src/application/GeneratorPage.qml:73
 #, kde-format
-msgid ""
-"This wizard will help you generate a new project.\n"
-"You will be able to start developing your own software using Qt and KDE "
-"technologies from this template."
+msgctxt "@action:button Close the application"
+msgid "Close"
 msgstr ""
-"Tento sprievodca vám pomôže generovať nový projekt.\n"
-"Budete môcť začať vývoj vašich vlastných KDE a Qt projektov z tejto šablóny."
 
-#: src/application/kapptemplate.cpp:21
-#, kde-format
-msgctxt "@title:window"
-msgid "KDE and Qt Template Generator"
-msgstr "Generátor šablón KDE a Qt"
-
-#: src/application/kapptemplate.cpp:42
-#, kde-format
-msgctxt "@title:tab"
+#: src/application/IntroductionPage.qml:13
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "Introduction"
+msgctxt "@title"
 msgid "Introduction"
 msgstr "Úvod"
 
-#: src/application/kapptemplate.cpp:49
-#, kde-format
-msgid "Set the project properties"
-msgstr "Nastaviť vlastnosti projektu"
-
-#: src/application/kapptemplate.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Generate"
-msgstr "Generovať"
-
-#: src/application/kapptemplate.cpp:78
-#, kde-format
-msgid "Your project name is: %1"
-msgstr "Názov vášho projektu je: %1"
+#: src/application/IntroductionPage.qml:19
+#, fuzzy, kde-format
+#| msgid ""
+#| "This wizard will help you generate a new project.\n"
+#| "You will be able to start developing your own software using Qt and KDE "
+#| "technologies from this template."
+msgid ""
+"This wizard will help you generate a new project to get started with Qt and "
+"KDE development."
+msgstr ""
+"Tento sprievodca vám pomôže generovať nový projekt.\n"
+"Budete môcť začať vývoj vašich vlastných KDE a Qt projektov z tejto šablóny."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -203,133 +255,165 @@ msgstr "Meno používateľa"
 msgid "Email of the user"
 msgstr "E-mail používateľa"
 
-#: src/application/main.cpp:24
+#: src/application/main.cpp:28
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:26
+#: src/application/main.cpp:30
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate je generátor šablón projektov KDE"
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:32
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:36
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikony z tímu Oxygen"
 
-#. i18n: ectx: property (text), widget (QLabel, versionLabel)
-#: src/application/properties.ui:30
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
+#: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
-msgid "&Version number:"
-msgstr "Číslo verzie:"
-
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:40
-#, kde-format
-msgid "Project's version number"
-msgstr "Čislo verzie projektu"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:43
-#, kde-format
-msgid ""
-"Set your project version number. A first project should start with version "
-"0.1."
-msgstr "Nastavte číslo verzie projektu. Projekt by mal začínať s verziou 0.1."
-
-#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:46
-#, kde-format
-msgid "0.0"
-msgstr "0.0"
-
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:49
-#, kde-format
-msgid "0.1"
-msgstr "0.1"
-
-#. i18n: ectx: property (text), widget (QLabel, installLabel)
-#: src/application/properties.ui:56
-#, kde-format
-msgid "In&stallation directory:"
-msgstr "Inštalačný adresár:"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:66
-#, kde-format
-msgid "The directory where you will build your project"
-msgstr "Adresár, kde vybudujete váš projekt"
-
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:69
-#, kde-format
-msgid ""
-"Choose the directory where you will build your project. Your home /src is a "
-"good default location."
+msgid "%{APPNAME}"
 msgstr ""
-"Vyberte adresár kde vybudujete váš projekt. Predvolené umiestnenie je /src "
-"vo vašom home."
 
-#. i18n: ectx: property (text), widget (QLabel, authorLabel)
-#: src/application/properties.ui:76
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
+#: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
-msgid "Author &name:"
+msgid "A Simple Application written with KDE Frameworks"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
+#: src/templates/C++/kde-frameworks6/src/main.cpp:36
+#, kde-format
+msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
+#, kde-format
+msgid "%{AUTHOR}"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
+#, fuzzy, kde-format
+#| msgid "Author &name:"
+msgid "Author"
 msgstr "Meno autora:"
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:86
+#. i18n : internationalization
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
-msgid "Your first name and name"
-msgstr "Vaše prvé meno a priezvisko"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:89
-#, kde-format
-msgid "This will set the copyright to this name"
-msgstr "Toto nastaví copyright pre tento názov"
-
-#. i18n: ectx: property (text), widget (QLabel, emailLabel)
-#: src/application/properties.ui:102
-#, kde-format
-msgid "A&uthor email:"
-msgstr "E-mail autora:"
-
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:112
-#, kde-format
-msgid "Your email address"
-msgstr "Vaša e-mailová adresa"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:115
-#, kde-format
-msgid ""
-"This email address will be next to your name in the copyright credit of the "
-"project files."
+msgid "This project is %1 days old"
 msgstr ""
-"Táto e-mailová adresa bude vedľa vášho mena v copyright credit v súboroch "
-"projektu."
 
-#~ msgctxt "Do not translate"
-#~ msgid "Preview"
-#~ msgstr "Náhľad"
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
+#, kde-format
+msgctxt "@action"
+msgid "Switch Colors"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@title:tab"
+msgid "General"
+msgstr "Generovať"
+
+#~ msgid "Project name:"
+#~ msgstr "Názov projektu:"
+
+#~ msgid "Choose your project template"
+#~ msgstr "Vyberte vašu šablónu projektu"
+
+#~ msgid "No sample picture available."
+#~ msgstr "Nie je dostupný vzorový obrázok."
+
+#~ msgid "Template description"
+#~ msgstr "Popis šablóny"
+
+#~ msgid "Generating your project"
+#~ msgstr "Generujem váš projekt"
+
+#~ msgid "Generation Progress\n"
+#~ msgstr "Priebeh generovania\n"
+
+#~ msgid "Succeeded.\n"
+#~ msgstr "Úspech.\n"
+
+#~ msgctxt "@title:window"
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+#~ msgctxt "@title:window"
+#~ msgid "KDE and Qt Template Generator"
+#~ msgstr "Generátor šablón KDE a Qt"
+
+#~ msgid "Set the project properties"
+#~ msgstr "Nastaviť vlastnosti projektu"
+
+#~ msgid "Your project name is: %1"
+#~ msgstr "Názov vášho projektu je: %1"
+
+#~ msgid "Project's version number"
+#~ msgstr "Čislo verzie projektu"
+
+#~ msgid ""
+#~ "Set your project version number. A first project should start with "
+#~ "version 0.1."
+#~ msgstr ""
+#~ "Nastavte číslo verzie projektu. Projekt by mal začínať s verziou 0.1."
+
+#~ msgid "0.0"
+#~ msgstr "0.0"
+
+#~ msgid "0.1"
+#~ msgstr "0.1"
+
+#~ msgid "In&stallation directory:"
+#~ msgstr "Inštalačný adresár:"
+
+#~ msgid "The directory where you will build your project"
+#~ msgstr "Adresár, kde vybudujete váš projekt"
+
+#~ msgid ""
+#~ "Choose the directory where you will build your project. Your home /src is "
+#~ "a good default location."
+#~ msgstr ""
+#~ "Vyberte adresár kde vybudujete váš projekt. Predvolené umiestnenie je /"
+#~ "src vo vašom home."
+
+#~ msgid "Your first name and name"
+#~ msgstr "Vaše prvé meno a priezvisko"
+
+#~ msgid "This will set the copyright to this name"
+#~ msgstr "Toto nastaví copyright pre tento názov"
+
+#~ msgid "Your email address"
+#~ msgstr "Vaša e-mailová adresa"
+
+#~ msgid ""
+#~ "This email address will be next to your name in the copyright credit of "
+#~ "the project files."
+#~ msgstr ""
+#~ "Táto e-mailová adresa bude vedľa vášho mena v copyright credit v súboroch "
+#~ "projektu."
 
 #~ msgctxt "Do not translate"
 #~ msgid "Description"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-31 00:41+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -27,61 +27,131 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: src/application/apptemplatesmodel.cpp:159
+#: src/application/apptemplatesmodel.cpp:161
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
 msgstr "模板项目"
 
-#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
-#: src/application/choice.ui:37
-#, kde-format
-msgid "Get More Templates"
+#: src/application/ChoicePage.qml:16
+#, fuzzy, kde-format
+#| msgid "Get More Templates"
+msgctxt "@title"
+msgid "Choose Template"
 msgstr "获取更多模板"
 
-#. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: src/application/choice.ui:50
-#, kde-format
+#: src/application/ChoicePage.qml:26
+#, fuzzy, kde-format
+#| msgid "Install Template From File"
+msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "从文件安装模板"
 
-#. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: src/application/choice.ui:111
+#: src/application/ChoicePage.qml:33
 #, kde-format
-msgid "Project name:"
-msgstr "项目名称："
+msgctxt "file dialog name filter"
+msgid "Archive Files (*.tar.bz2 *.zip)"
+msgstr ""
 
-#: src/application/choicepage.cpp:35
+#: src/application/ChoicePage.qml:96
+#, fuzzy, kde-format
+#| msgctxt "@title:column"
+#| msgid "Templates Projects"
+msgctxt "@title"
+msgid "No Template Selected"
+msgstr "模板项目"
+
+#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/GeneratorPage.qml:67
 #, kde-format
-msgid "Choose your project template"
-msgstr "选择您的项目模板"
+msgctxt "@action:button Go to the previous page"
+msgid "Previous"
+msgstr ""
 
-#: src/application/choicepage.cpp:146
+#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
-msgid "No sample picture available."
-msgstr "没有可用的示例图片。"
+msgctxt "@action:button Go to the next page"
+msgid "Next"
+msgstr ""
 
-#: src/application/choicepage.cpp:159
+#: src/application/ConfigurePage.qml:15
 #, kde-format
-msgid "Template description"
-msgstr "模板描述"
+msgctxt "@title"
+msgid "Configure"
+msgstr ""
 
-#: src/application/generatepage.cpp:30
+#: src/application/ConfigurePage.qml:25
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@title:group"
+msgid "General"
+msgstr "生成"
+
+#: src/application/ConfigurePage.qml:32
 #, kde-format
-msgid "Generating your project"
-msgstr "正在生成您的项目"
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr ""
 
-#: src/application/generatepage.cpp:46
+#: src/application/ConfigurePage.qml:44
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:45
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No folder selected"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:57
+#, kde-format
+msgctxt "@title:group"
+msgid "Metadata"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:62
+#, fuzzy, kde-format
+#| msgid "&Version number:"
+msgctxt "@label:textbox"
+msgid "Version:"
+msgstr "版本号(&V)："
+
+#: src/application/ConfigurePage.qml:70
+#, fuzzy, kde-format
+#| msgid "Author &name:"
+msgctxt "@label:textbox"
+msgid "Author name:"
+msgstr "作者姓名(&N)："
+
+#: src/application/ConfigurePage.qml:78
+#, fuzzy, kde-format
+#| msgid "A&uthor email:"
+msgctxt "@label:textbox"
+msgid "Author email:"
+msgstr "作者电子邮件(&U)："
+
+#: src/application/ConfigurePage.qml:93
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@action:button Generate the application"
+msgid "Generate"
+msgstr "生成"
+
+#: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "无法创建 %1。"
 
-#: src/application/generatepage.cpp:66
+#: src/application/generator.cpp:142
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "路径 %1 无法创建。"
 
-#: src/application/generatepage.cpp:78
+#: src/application/generator.cpp:154
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -89,37 +159,28 @@ msgid ""
 msgstr ""
 "未能将项目信息集成到文件\"%1\"中。尚未生成项目，并且将删除所有临时文件。"
 
-#: src/application/generatepage.cpp:86
+#: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
-#: src/application/generatepage.cpp:120
-#, kde-format
-msgid "Generation Progress\n"
-msgstr "生成进度\n"
-
-#: src/application/generatepage.cpp:226
-#, kde-format
-msgid "Succeeded.\n"
-msgstr "成功。\n"
-
-#: src/application/generatepage.cpp:230
-#, kde-format
-msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#: src/application/generator.cpp:307
+#, fuzzy, kde-format
+#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "您的项目名称是：<b>%1</b>，基于 %2 模板。<br />"
 
-#: src/application/generatepage.cpp:231
+#: src/application/generator.cpp:308
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "版本：%1 <br /><br />"
 
-#: src/application/generatepage.cpp:232
+#: src/application/generator.cpp:309
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "安装在：%1 <br /><br />"
 
-#: src/application/generatepage.cpp:233
+#: src/application/generator.cpp:310
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -127,50 +188,39 @@ msgid ""
 msgstr ""
 "您可在您项目的文件夹 <b>%1</b><br /> 中找到 README 文件以帮助您开始您的项目。"
 
-#: src/application/generatepage.cpp:239
-#, kde-format
-msgctxt "@title:window"
-msgid "Error"
-msgstr "错误"
+#: src/application/GeneratorPage.qml:16
+#, fuzzy, kde-format
+#| msgid "Project version"
+msgctxt "@title"
+msgid "Project Generation"
+msgstr "项目版本"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/application/introduction.ui:17
+#: src/application/GeneratorPage.qml:73
 #, kde-format
-msgid ""
-"This wizard will help you generate a new project.\n"
-"You will be able to start developing your own software using Qt and KDE "
-"technologies from this template."
+msgctxt "@action:button Close the application"
+msgid "Close"
 msgstr ""
-"本向导能帮助您生成一个 KDE 4 项目模板。\n"
-"您可以从此模板开始开发您自己的 KDE 4 项目。"
 
-#: src/application/kapptemplate.cpp:21
-#, kde-format
-msgctxt "@title:window"
-msgid "KDE and Qt Template Generator"
-msgstr "KDE 和 Qt 模板生成器"
-
-#: src/application/kapptemplate.cpp:42
-#, kde-format
-msgctxt "@title:tab"
+#: src/application/IntroductionPage.qml:13
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "Introduction"
+msgctxt "@title"
 msgid "Introduction"
 msgstr "介绍"
 
-#: src/application/kapptemplate.cpp:49
-#, kde-format
-msgid "Set the project properties"
-msgstr "设定项目属性"
-
-#: src/application/kapptemplate.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Generate"
-msgstr "生成"
-
-#: src/application/kapptemplate.cpp:78
-#, kde-format
-msgid "Your project name is: %1"
-msgstr "您的项目名称为：%1"
+#: src/application/IntroductionPage.qml:19
+#, fuzzy, kde-format
+#| msgid ""
+#| "This wizard will help you generate a new project.\n"
+#| "You will be able to start developing your own software using Qt and KDE "
+#| "technologies from this template."
+msgid ""
+"This wizard will help you generate a new project to get started with Qt and "
+"KDE development."
+msgstr ""
+"本向导能帮助您生成一个 KDE 4 项目模板。\n"
+"您可以从此模板开始开发您自己的 KDE 4 项目。"
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -202,122 +252,157 @@ msgstr "用户名称"
 msgid "Email of the user"
 msgstr "用户电子邮件"
 
-#: src/application/main.cpp:24
+#: src/application/main.cpp:28
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:26
+#: src/application/main.cpp:30
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate 是 KDE 的项目模板生成器"
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:32
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:36
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Oxygen 团队图标"
 
-#. i18n: ectx: property (text), widget (QLabel, versionLabel)
-#: src/application/properties.ui:30
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
+#: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
-msgid "&Version number:"
-msgstr "版本号(&V)："
+msgid "%{APPNAME}"
+msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:40
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
+#: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
-msgid "Project's version number"
-msgstr "项目版本号"
+msgid "A Simple Application written with KDE Frameworks"
+msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:43
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
+#: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
-msgid ""
-"Set your project version number. A first project should start with version "
-"0.1."
-msgstr "设定您项目的版本号。第一个项目应该从版本 0.1 开始。"
+msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
+msgstr ""
 
-#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:46
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
-msgid "0.0"
-msgstr "0.0"
+msgid "%{AUTHOR}"
+msgstr ""
 
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:49
-#, kde-format
-msgid "0.1"
-msgstr "0.1"
-
-#. i18n: ectx: property (text), widget (QLabel, installLabel)
-#: src/application/properties.ui:56
-#, kde-format
-msgid "In&stallation directory:"
-msgstr "安装目录(&S)："
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:66
-#, kde-format
-msgid "The directory where you will build your project"
-msgstr "构建您项目所在的目录"
-
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:69
-#, kde-format
-msgid ""
-"Choose the directory where you will build your project. Your home /src is a "
-"good default location."
-msgstr "选择构建您项目所在的目录。您主文件夹中 /src 是个不错的默认位置。"
-
-#. i18n: ectx: property (text), widget (QLabel, authorLabel)
-#: src/application/properties.ui:76
-#, kde-format
-msgid "Author &name:"
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
+#, fuzzy, kde-format
+#| msgid "Author &name:"
+msgid "Author"
 msgstr "作者姓名(&N)："
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:86
+#. i18n : internationalization
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
-msgid "Your first name and name"
-msgstr "您的姓名"
+msgid "This project is %1 days old"
+msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:89
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
-msgid "This will set the copyright to this name"
-msgstr "会按照此姓名设定版权"
+msgctxt "@action"
+msgid "Switch Colors"
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, emailLabel)
-#: src/application/properties.ui:102
-#, kde-format
-msgid "A&uthor email:"
-msgstr "作者电子邮件(&U)："
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Generate"
+msgctxt "@title:tab"
+msgid "General"
+msgstr "生成"
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:112
-#, kde-format
-msgid "Your email address"
-msgstr "您的电子邮件地址"
+#~ msgid "Project name:"
+#~ msgstr "项目名称："
 
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:115
-#, kde-format
-msgid ""
-"This email address will be next to your name in the copyright credit of the "
-"project files."
-msgstr "此电子邮件地址将会出现在项目文件版权信息中，位于您姓名的旁边。"
+#~ msgid "Choose your project template"
+#~ msgstr "选择您的项目模板"
+
+#~ msgid "No sample picture available."
+#~ msgstr "没有可用的示例图片。"
+
+#~ msgid "Template description"
+#~ msgstr "模板描述"
+
+#~ msgid "Generating your project"
+#~ msgstr "正在生成您的项目"
+
+#~ msgid "Generation Progress\n"
+#~ msgstr "生成进度\n"
+
+#~ msgid "Succeeded.\n"
+#~ msgstr "成功。\n"
+
+#~ msgctxt "@title:window"
+#~ msgid "Error"
+#~ msgstr "错误"
+
+#~ msgctxt "@title:window"
+#~ msgid "KDE and Qt Template Generator"
+#~ msgstr "KDE 和 Qt 模板生成器"
+
+#~ msgid "Set the project properties"
+#~ msgstr "设定项目属性"
+
+#~ msgid "Your project name is: %1"
+#~ msgstr "您的项目名称为：%1"
+
+#~ msgid "Project's version number"
+#~ msgstr "项目版本号"
+
+#~ msgid ""
+#~ "Set your project version number. A first project should start with "
+#~ "version 0.1."
+#~ msgstr "设定您项目的版本号。第一个项目应该从版本 0.1 开始。"
+
+#~ msgid "0.0"
+#~ msgstr "0.0"
+
+#~ msgid "0.1"
+#~ msgstr "0.1"
+
+#~ msgid "In&stallation directory:"
+#~ msgstr "安装目录(&S)："
+
+#~ msgid "The directory where you will build your project"
+#~ msgstr "构建您项目所在的目录"
+
+#~ msgid ""
+#~ "Choose the directory where you will build your project. Your home /src is "
+#~ "a good default location."
+#~ msgstr "选择构建您项目所在的目录。您主文件夹中 /src 是个不错的默认位置。"
+
+#~ msgid "Your first name and name"
+#~ msgstr "您的姓名"
+
+#~ msgid "This will set the copyright to this name"
+#~ msgstr "会按照此姓名设定版权"
+
+#~ msgid "Your email address"
+#~ msgstr "您的电子邮件地址"
+
+#~ msgid ""
+#~ "This email address will be next to your name in the copyright credit of "
+#~ "the project files."
+#~ msgstr "此电子邮件地址将会出现在项目文件版权信息中，位于您姓名的旁边。"

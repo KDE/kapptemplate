@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-20 00:41+0000\n"
+"POT-Creation-Date: 2024-08-31 00:41+0000\n"
 "PO-Revision-Date: 2009-11-11 10:32+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -29,98 +29,154 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bjornst@skogkatt.homelinux.org"
 
-#: src/application/apptemplatesmodel.cpp:159
+#: src/application/apptemplatesmodel.cpp:161
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
-#: src/application/choice.ui:37
-#, kde-format
-msgid "Get More Templates"
+#: src/application/ChoicePage.qml:16
+#, fuzzy, kde-format
+#| msgid "Get More Templates"
+msgctxt "@title"
+msgid "Choose Template"
 msgstr "Hent flere maler"
 
-#. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: src/application/choice.ui:50
+#: src/application/ChoicePage.qml:26
 #, kde-format
+msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: src/application/choice.ui:111
+#: src/application/ChoicePage.qml:33
 #, kde-format
-msgid "Project name:"
-msgstr "Prosjektnavn:"
-
-#: src/application/choicepage.cpp:35
-#, kde-format
-msgid "Choose your project template"
-msgstr "Velg prosjektmal"
-
-#: src/application/choicepage.cpp:146
-#, kde-format
-msgid "No sample picture available."
+msgctxt "file dialog name filter"
+msgid "Archive Files (*.tar.bz2 *.zip)"
 msgstr ""
 
-#: src/application/choicepage.cpp:159
-#, kde-format
-msgid "Template description"
+#: src/application/ChoicePage.qml:96
+#, fuzzy, kde-format
+#| msgid "Template description"
+msgctxt "@title"
+msgid "No Template Selected"
 msgstr "Malbeskrivelse"
 
-#: src/application/generatepage.cpp:30
+#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/GeneratorPage.qml:67
 #, kde-format
-msgid "Generating your project"
-msgstr "Oppretter prosjekt"
+msgctxt "@action:button Go to the previous page"
+msgid "Previous"
+msgstr ""
 
-#: src/application/generatepage.cpp:46
+#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
+#, kde-format
+msgctxt "@action:button Go to the next page"
+msgid "Next"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:15
+#, kde-format
+msgctxt "@title"
+msgid "Configure"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:25
+#, kde-format
+msgctxt "@title:group"
+msgid "General"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:32
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:44
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:45
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No folder selected"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:57
+#, kde-format
+msgctxt "@title:group"
+msgid "Metadata"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:62
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Version:"
+msgstr ""
+
+#: src/application/ConfigurePage.qml:70
+#, fuzzy, kde-format
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgctxt "@label:textbox"
+msgid "Author name:"
+msgstr "Bjørn Steensrud"
+
+#: src/application/ConfigurePage.qml:78
+#, fuzzy, kde-format
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgctxt "@label:textbox"
+msgid "Author email:"
+msgstr "bjornst@skogkatt.homelinux.org"
+
+#: src/application/ConfigurePage.qml:93
+#, kde-format
+msgctxt "@action:button Generate the application"
+msgid "Generate"
+msgstr ""
+
+#: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "Klarte ikke opprette %1."
 
-#: src/application/generatepage.cpp:66
+#: src/application/generator.cpp:142
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr ""
 
-#: src/application/generatepage.cpp:78
+#: src/application/generator.cpp:154
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generatepage.cpp:86
+#: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generatepage.cpp:120
-#, kde-format
-msgid "Generation Progress\n"
-msgstr "Framdrift\n"
-
-#: src/application/generatepage.cpp:226
-#, kde-format
-msgid "Succeeded.\n"
-msgstr "Fullført.\n"
-
-#: src/application/generatepage.cpp:230
-#, kde-format
-msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#: src/application/generator.cpp:307
+#, fuzzy, kde-format
+#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Prosjektnavnet er <b>%1</b>, basert på malen %2.<br />"
 
-#: src/application/generatepage.cpp:231
+#: src/application/generator.cpp:308
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versjon: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:232
+#: src/application/generator.cpp:309
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installert i: %1 <br /><br />"
 
-#: src/application/generatepage.cpp:233
+#: src/application/generator.cpp:310
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -129,47 +185,30 @@ msgstr ""
 "Du finner en «README»-fil i prosjektmappa <b>%1</b><br /> for å hjelpe deg i "
 "gang med prosjektet."
 
-#: src/application/generatepage.cpp:239
+#: src/application/GeneratorPage.qml:16
+#, fuzzy, kde-format
+#| msgid "Project version"
+msgctxt "@title"
+msgid "Project Generation"
+msgstr "Prosjektversjon"
+
+#: src/application/GeneratorPage.qml:73
 #, kde-format
-msgctxt "@title:window"
-msgid "Error"
+msgctxt "@action:button Close the application"
+msgid "Close"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/application/introduction.ui:17
+#: src/application/IntroductionPage.qml:13
 #, kde-format
-msgid ""
-"This wizard will help you generate a new project.\n"
-"You will be able to start developing your own software using Qt and KDE "
-"technologies from this template."
-msgstr ""
-
-#: src/application/kapptemplate.cpp:21
-#, kde-format
-msgctxt "@title:window"
-msgid "KDE and Qt Template Generator"
-msgstr ""
-
-#: src/application/kapptemplate.cpp:42
-#, kde-format
-msgctxt "@title:tab"
+msgctxt "@title"
 msgid "Introduction"
 msgstr ""
 
-#: src/application/kapptemplate.cpp:49
+#: src/application/IntroductionPage.qml:19
 #, kde-format
-msgid "Set the project properties"
-msgstr "Velg prosjektegenskaper"
-
-#: src/application/kapptemplate.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Generate"
-msgstr ""
-
-#: src/application/kapptemplate.cpp:78
-#, kde-format
-msgid "Your project name is: %1"
+msgid ""
+"This wizard will help you generate a new project to get started with Qt and "
+"KDE development."
 msgstr ""
 
 #. i18n: ectx: label, entry (appName), group (Project)
@@ -202,128 +241,140 @@ msgstr "Navn på brukeren"
 msgid "Email of the user"
 msgstr "E-postadresse til brukeren"
 
-#: src/application/main.cpp:24
+#: src/application/main.cpp:28
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:26
+#: src/application/main.cpp:30
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr ""
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:32
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "© 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:36
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:33
+#: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikoner fra Oxygen-laget"
 
-#. i18n: ectx: property (text), widget (QLabel, versionLabel)
-#: src/application/properties.ui:30
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
+#: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
-msgid "&Version number:"
+msgid "%{APPNAME}"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:40
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
+#: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
-msgid "Project's version number"
-msgstr "Prosjektets versjonsnummer"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:43
-#, kde-format
-msgid ""
-"Set your project version number. A first project should start with version "
-"0.1."
-msgstr ""
-"Oppgi versjonsnumme for prosjektet. Nye prosjekter bør begynne med versjon "
-"0.1."
-
-#. i18n: ectx: property (inputMask), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:46
-#, kde-format
-msgid "0.0"
-msgstr "0.0"
-
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_appVersion)
-#: src/application/properties.ui:49
-#, kde-format
-msgid "0.1"
-msgstr "0.1"
-
-#. i18n: ectx: property (text), widget (QLabel, installLabel)
-#: src/application/properties.ui:56
-#, kde-format
-msgid "In&stallation directory:"
+msgid "A Simple Application written with KDE Frameworks"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:66
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
+#: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
-msgid "The directory where you will build your project"
-msgstr "Mappa der du vil bygge prosjektet"
-
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_url)
-#: src/application/properties.ui:69
-#, kde-format
-msgid ""
-"Choose the directory where you will build your project. Your home /src is a "
-"good default location."
-msgstr ""
-"Velg mappe der du vil bygge prosjektet. Undermappa /src under hjemmemappa er "
-"et bra valg,"
-
-#. i18n: ectx: property (text), widget (QLabel, authorLabel)
-#: src/application/properties.ui:76
-#, kde-format
-msgid "Author &name:"
+msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:86
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
-msgid "Your first name and name"
-msgstr "For- og etternavnet ditt"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_name)
-#: src/application/properties.ui:89
-#, kde-format
-msgid "This will set the copyright to this name"
-msgstr "Dette gir opphavsretten til dette navnet"
-
-#. i18n: ectx: property (text), widget (QLabel, emailLabel)
-#: src/application/properties.ui:102
-#, kde-format
-msgid "A&uthor email:"
+msgid "%{AUTHOR}"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:112
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
-msgid "Your email address"
-msgstr "Din e-postadresse"
-
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_email)
-#: src/application/properties.ui:115
-#, kde-format
-msgid ""
-"This email address will be next to your name in the copyright credit of the "
-"project files."
+msgid "Author"
 msgstr ""
-"Denne e-postadressen blir oppgitt ved siden av navnet ditt i "
-"opphavsrettsteksten i prosjektfilene."
+
+#. i18n : internationalization
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
+#, kde-format
+msgid "This project is %1 days old"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
+#, kde-format
+msgctxt "@action"
+msgid "Switch Colors"
+msgstr ""
+
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
+#, kde-format
+msgctxt "@title:tab"
+msgid "General"
+msgstr ""
+
+#~ msgid "Project name:"
+#~ msgstr "Prosjektnavn:"
+
+#~ msgid "Choose your project template"
+#~ msgstr "Velg prosjektmal"
+
+#~ msgid "Generating your project"
+#~ msgstr "Oppretter prosjekt"
+
+#~ msgid "Generation Progress\n"
+#~ msgstr "Framdrift\n"
+
+#~ msgid "Succeeded.\n"
+#~ msgstr "Fullført.\n"
+
+#~ msgid "Set the project properties"
+#~ msgstr "Velg prosjektegenskaper"
+
+#~ msgid "Project's version number"
+#~ msgstr "Prosjektets versjonsnummer"
+
+#~ msgid ""
+#~ "Set your project version number. A first project should start with "
+#~ "version 0.1."
+#~ msgstr ""
+#~ "Oppgi versjonsnumme for prosjektet. Nye prosjekter bør begynne med "
+#~ "versjon 0.1."
+
+#~ msgid "0.0"
+#~ msgstr "0.0"
+
+#~ msgid "0.1"
+#~ msgstr "0.1"
+
+#~ msgid "The directory where you will build your project"
+#~ msgstr "Mappa der du vil bygge prosjektet"
+
+#~ msgid ""
+#~ "Choose the directory where you will build your project. Your home /src is "
+#~ "a good default location."
+#~ msgstr ""
+#~ "Velg mappe der du vil bygge prosjektet. Undermappa /src under hjemmemappa "
+#~ "er et bra valg,"
+
+#~ msgid "Your first name and name"
+#~ msgstr "For- og etternavnet ditt"
+
+#~ msgid "This will set the copyright to this name"
+#~ msgstr "Dette gir opphavsretten til dette navnet"
+
+#~ msgid "Your email address"
+#~ msgstr "Din e-postadresse"
+
+#~ msgid ""
+#~ "This email address will be next to your name in the copyright credit of "
+#~ "the project files."
+#~ msgstr ""
+#~ "Denne e-postadressen blir oppgitt ved siden av navnet ditt i "
+#~ "opphavsrettsteksten i prosjektfilene."
