@@ -35,14 +35,12 @@ msgstr "模板项目"
 
 #: src/application/ChoicePage.qml:16
 #, fuzzy, kde-format
-#| msgid "Get More Templates"
 msgctxt "@title"
 msgid "Choose Template"
 msgstr "获取更多模板"
 
 #: src/application/ChoicePage.qml:26
 #, fuzzy, kde-format
-#| msgid "Install Template From File"
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "从文件安装模板"
@@ -55,8 +53,6 @@ msgstr ""
 
 #: src/application/ChoicePage.qml:96
 #, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
 msgctxt "@title"
 msgid "No Template Selected"
 msgstr "模板项目"
@@ -82,8 +78,6 @@ msgstr ""
 
 #: src/application/ConfigurePage.qml:25
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@title:group"
 msgid "General"
 msgstr "生成"
@@ -114,29 +108,24 @@ msgstr ""
 
 #: src/application/ConfigurePage.qml:62
 #, fuzzy, kde-format
-#| msgid "&Version number:"
 msgctxt "@label:textbox"
 msgid "Version:"
 msgstr "版本号(&V)："
 
 #: src/application/ConfigurePage.qml:70
 #, fuzzy, kde-format
-#| msgid "Author &name:"
 msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "作者姓名(&N)："
 
 #: src/application/ConfigurePage.qml:78
 #, fuzzy, kde-format
-#| msgid "A&uthor email:"
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "作者电子邮件(&U)："
 
 #: src/application/ConfigurePage.qml:93
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "生成"
@@ -166,7 +155,6 @@ msgstr "无法复制模板文件到 %1。"
 
 #: src/application/generator.cpp:307
 #, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "您的项目名称是：<b>%1</b>，基于 %2 模板。<br />"
 
@@ -190,7 +178,6 @@ msgstr ""
 
 #: src/application/GeneratorPage.qml:16
 #, fuzzy, kde-format
-#| msgid "Project version"
 msgctxt "@title"
 msgid "Project Generation"
 msgstr "项目版本"
@@ -203,18 +190,12 @@ msgstr ""
 
 #: src/application/IntroductionPage.qml:13
 #, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
 msgctxt "@title"
 msgid "Introduction"
 msgstr "介绍"
 
 #: src/application/IntroductionPage.qml:19
 #, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
@@ -309,7 +290,6 @@ msgstr ""
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, fuzzy, kde-format
-#| msgid "Author &name:"
 msgid "Author"
 msgstr "作者姓名(&N)："
 
@@ -327,8 +307,6 @@ msgstr ""
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@title:tab"
 msgid "General"
 msgstr "生成"
