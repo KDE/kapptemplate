@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kdesdk-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2024-06-24 00:34+0300\n"
+"PO-Revision-Date: 2024-09-01 19:38+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Serdar Soytetir"
+msgstr "Serdar Soytetir, Emir SARI"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tulliana@gmail.com"
+msgstr "tulliana@gmail.com, emir_sari@icloud.com"
 
 #: src/application/apptemplatesmodel.cpp:161
 #, kde-format
@@ -38,119 +38,106 @@ msgid "Templates Projects"
 msgstr "Şablonlar Projeleri"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Daha Fazla Şablon Getir"
+msgstr "Şablon Seç"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
-msgstr "Şablonu Dosyadan Kur"
+msgstr "Dosyadan Şablon Kur"
 
 #: src/application/ChoicePage.qml:33
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Arşiv dosyaları (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Şablonlar Projeleri"
+msgstr "Seçili Şablon Yok"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
-#, fuzzy, kde-format
-#| msgctxt "Do not translate"
-#| msgid "Preview"
+#, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "Önizleme"
+msgstr "Önceki"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Sonraki"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Yapılandır"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Oluştur"
+msgstr "Genel"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Ad:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Konum:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Seçili klasör yok"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Üst Veri"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "&Sürüm numarası:"
+msgstr "Sürüm:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Yazarın &adı:"
+msgstr "Yazar adı:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "Yazarın &eposta adresi:"
+msgstr "Yazar e-postası:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
-msgstr "Oluştur"
+msgstr "Üret"
 
 #: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
-msgstr "%1 oluşturulamaz."
+msgstr "%1 oluşturulamıyor."
 
 #: src/application/generator.cpp:142
 #, kde-format
@@ -172,10 +159,9 @@ msgid "Could not copy template file to %1."
 msgstr "Şablon dosyası %1 konumuna kopyalanamadı."
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "Projenizin adı: <b>%1</b>, %2 şablonunu temal aldı.<br />"
+msgstr "Projenizin adı: <b>%1</b>, <b>%2</b> şablonu temelli.<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -197,39 +183,31 @@ msgstr ""
 "README dosyası bulacaksınız."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Proje sürümü"
+msgstr "Proje Üretimi"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Kapat"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Giriş"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Bu sihirbaz bir proje oluşturmanıza yardım edecektir.\n"
-"Bu şablon ile Qt ve KDE teknolojilerini kullanarak kendi yazılımınızı "
-"geliştirmeye başlayabileceksiniz."
+"Bu sihirbaz, Qt ve KDE geliştirmesine başlamanıza yardımcı olmak için yeni "
+"bir proje üretecektir."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -274,7 +252,7 @@ msgstr "K Uygulama Şablonu, bir KDE proje şablonu oluşturucusudur"
 #: src/application/main.cpp:32
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
-msgstr "(C) 2008 Anne–Marie Mahfouf"
+msgstr "© 2008 Anne–Marie Mahfouf"
 
 #: src/application/main.cpp:36
 #, kde-format
@@ -289,58 +267,55 @@ msgstr "Sean Wilson"
 #: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
-msgstr "Oxygen Takımından Simgeler"
+msgstr "Oksijen Takımından Simgeler"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "KDE Frameworks kullanılarak yazılmış yalın bir uygulama"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Telif hakkı %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "Yazarın &adı:"
+msgstr "Yazar"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Bu proje %1 gün önce oluşturuldu"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Renkleri Değiştir"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Oluştur"
+msgstr "Genel"
 
 #~ msgid "Project name:"
 #~ msgstr "Projenin adı:"
