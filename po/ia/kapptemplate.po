@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kapptemplate package.
 #
-# giovanni <g.sora@tiscali.it>, 2023.
+# SPDX-FileCopyrightText: 2023, 2024 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2023-12-05 10:41+0100\n"
+"PO-Revision-Date: 2024-09-02 14:59+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -31,108 +31,101 @@ msgstr "g.sora@tiscali.it"
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr ""
+msgstr "Projectos de Patronos"
 
 #: src/application/ChoicePage.qml:16
 #, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr ""
+msgstr "Selige Patrono"
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
-msgstr ""
+msgstr "Installa Patrono ex file"
 
 #: src/application/ChoicePage.qml:33
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Files de archivo (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
 #, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr ""
+msgstr "Nulle patrono seligite"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "Precedente"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Proxime"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Configura"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Genera"
+msgstr "General"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Nomine:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Location:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Necun dossier selectionate"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadatos"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "&Numero de version:"
+msgstr "Version:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Nomi&ne de autor:"
+msgstr "Nomine de autor:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "E-posta de a&utor:"
+msgstr "E-posta de autor:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Genera"
@@ -140,12 +133,12 @@ msgstr "Genera"
 #: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
-msgstr ""
+msgstr "%1 non pote esser create"
 
 #: src/application/generator.cpp:142
 #, kde-format
 msgid "Path %1 could not be created."
-msgstr ""
+msgstr "Percurso %1 non poteva esser create"
 
 #: src/application/generator.cpp:154
 #, kde-format
@@ -153,16 +146,19 @@ msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
+"Il falleva a integrar tu information de projecto in le file %1. Le projecto "
+"non ha essite generate e omne files temporanee esswera removite."
 
 #: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr ""
+msgstr "Nonpoteva copiar file de patrono a %1."
 
 #: src/application/generator.cpp:307
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
+"Tu nomine de projecto es: <b>%1</b>, basate sur le patrono <b>%2</b> .<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -172,7 +168,7 @@ msgstr "Version: %1 <br /><br />"
 #: src/application/generator.cpp:309
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
-msgstr ""
+msgstr "Installate in: %1 <br /><br />"
 
 #: src/application/generator.cpp:310
 #, kde-format
@@ -180,24 +176,23 @@ msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
+"Tu trovera un README in tu dossier de projecto <b>%1</b> per adjutar te a "
+"startar tu projecto."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project name:"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Nomine de projectos:"
+msgstr "Generation de projecto"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Claude"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Introduction"
@@ -208,36 +203,38 @@ msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
+"Iste assistente (wizard) te adjutara a generar un nove projecto per initiar "
+"con disveloppamento de QT e KDE."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
 #, kde-format
 msgid "Name of the project"
-msgstr ""
+msgstr "Nomine del projecto"
 
 #. i18n: ectx: label, entry (appVersion), group (Project)
 #: src/application/kapptemplate.kcfg:15
 #, kde-format
 msgid "Project version"
-msgstr ""
+msgstr "Version de projecto"
 
 #. i18n: ectx: label, entry (url), group (Project)
 #: src/application/kapptemplate.kcfg:19
 #, kde-format
 msgid "Home dir of the user"
-msgstr ""
+msgstr "Directorio initial o domo del usator"
 
 #. i18n: ectx: label, entry (name), group (User)
 #: src/application/kapptemplate.kcfg:27
 #, kde-format
 msgid "Name of the user"
-msgstr ""
+msgstr "Nomine del usator"
 
 #. i18n: ectx: label, entry (email), group (User)
 #: src/application/kapptemplate.kcfg:38
 #, kde-format
 msgid "Email of the user"
-msgstr ""
+msgstr "E-Posta del usator"
 
 #: src/application/main.cpp:28
 #, kde-format
@@ -247,7 +244,7 @@ msgstr "KAppTemplate"
 #: src/application/main.cpp:30
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr ""
+msgstr "KAppTemplate es un generator de patrono de projecto de KDE"
 
 #: src/application/main.cpp:32
 #, kde-format
@@ -267,58 +264,55 @@ msgstr "Sean Wilson"
 #: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
-msgstr ""
+msgstr "Icones ex icones de  Oxygen Team"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "Un simpleapplication scribite con KDE Frameworks"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "Nomi&ne de autor:"
+msgstr "Autor"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Iste projecto ha %1 dies"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Commuta Colores"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Genera"
+msgstr "General"
 
 #~ msgctxt "@title:window"
 #~ msgid "Error"

@@ -34,13 +34,13 @@ msgid "Templates Projects"
 msgstr "模板项目"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "获取更多模板"
+msgstr "选择模板"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "从文件安装模板"
@@ -49,83 +49,83 @@ msgstr "从文件安装模板"
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "压缩文件 (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "模板项目"
+msgstr "没有选择模板"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "上一页"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "下一页"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "配置"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "生成"
+msgstr "常规"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "名称："
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "位置："
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "没有选择文件夹"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "元数据"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "版本号(&V)："
+msgstr "版本："
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "作者姓名(&N)："
+msgstr "作者姓名："
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "作者电子邮件(&U)："
+msgstr "作者邮箱："
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "生成"
@@ -154,9 +154,9 @@ msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "您的项目名称是：<b>%1</b>，基于 %2 模板。<br />"
+msgstr "您的项目名称是：<b>%1</b>，基于 <b>%2</b> 模板。<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -177,31 +177,29 @@ msgstr ""
 "您可在您项目的文件夹 <b>%1</b><br /> 中找到 README 文件以帮助您开始您的项目。"
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "项目版本"
+msgstr "项目生成"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "介绍"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
-msgstr ""
-"本向导能帮助您生成一个 KDE 4 项目模板。\n"
-"您可以从此模板开始开发您自己的 KDE 4 项目。"
+msgstr "此向导将帮助您生成一个新项目来启动 Qt 和 KDE 开发。"
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -267,120 +265,46 @@ msgstr "Oxygen 团队图标"
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "基于 KDE 程序框架开发的简易应用"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
+#, kde-format
 msgid "Author"
-msgstr "作者姓名(&N)："
+msgstr "作者"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "此项目已存续 %1 天"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "切换颜色"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "生成"
-
-#~ msgid "Project name:"
-#~ msgstr "项目名称："
-
-#~ msgid "Choose your project template"
-#~ msgstr "选择您的项目模板"
-
-#~ msgid "No sample picture available."
-#~ msgstr "没有可用的示例图片。"
-
-#~ msgid "Template description"
-#~ msgstr "模板描述"
-
-#~ msgid "Generating your project"
-#~ msgstr "正在生成您的项目"
-
-#~ msgid "Generation Progress\n"
-#~ msgstr "生成进度\n"
-
-#~ msgid "Succeeded.\n"
-#~ msgstr "成功。\n"
-
-#~ msgctxt "@title:window"
-#~ msgid "Error"
-#~ msgstr "错误"
-
-#~ msgctxt "@title:window"
-#~ msgid "KDE and Qt Template Generator"
-#~ msgstr "KDE 和 Qt 模板生成器"
-
-#~ msgid "Set the project properties"
-#~ msgstr "设定项目属性"
-
-#~ msgid "Your project name is: %1"
-#~ msgstr "您的项目名称为：%1"
-
-#~ msgid "Project's version number"
-#~ msgstr "项目版本号"
-
-#~ msgid ""
-#~ "Set your project version number. A first project should start with "
-#~ "version 0.1."
-#~ msgstr "设定您项目的版本号。第一个项目应该从版本 0.1 开始。"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
-#~ msgid "0.1"
-#~ msgstr "0.1"
-
-#~ msgid "In&stallation directory:"
-#~ msgstr "安装目录(&S)："
-
-#~ msgid "The directory where you will build your project"
-#~ msgstr "构建您项目所在的目录"
-
-#~ msgid ""
-#~ "Choose the directory where you will build your project. Your home /src is "
-#~ "a good default location."
-#~ msgstr "选择构建您项目所在的目录。您主文件夹中 /src 是个不错的默认位置。"
-
-#~ msgid "Your first name and name"
-#~ msgstr "您的姓名"
-
-#~ msgid "This will set the copyright to this name"
-#~ msgstr "会按照此姓名设定版权"
-
-#~ msgid "Your email address"
-#~ msgstr "您的电子邮件地址"
-
-#~ msgid ""
-#~ "This email address will be next to your name in the copyright credit of "
-#~ "the project files."
-#~ msgstr "此电子邮件地址将会出现在项目文件版权信息中，位于您姓名的旁边。"
+msgstr "常规"
