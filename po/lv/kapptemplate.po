@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2024-03-10 20:27+0200\n"
+"PO-Revision-Date: 2024-09-05 15:18+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.08.0\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -29,7 +29,7 @@ msgstr "Viesturs Zariņš, Toms Trasūns"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "viesturs.zarins@mi.lu.lv"
+msgstr "viesturs.zarins@mi.lu.lv, toms.trasuns@posteo.net"
 
 #: src/application/apptemplatesmodel.cpp:161
 #, kde-format
@@ -38,15 +38,13 @@ msgid "Templates Projects"
 msgstr "Projektu sagataves"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Iegūt vairāk sagatavju"
+msgstr "Izvēlieties sagatavju"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "Instalēt sagatavi no datnes"
@@ -55,94 +53,83 @@ msgstr "Instalēt sagatavi no datnes"
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Arhīva datnes (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Projektu sagataves"
+msgstr "Nav atlasītu sagatavju"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
-#, fuzzy, kde-format
-#| msgctxt "Do not translate"
-#| msgid "Preview"
+#, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "Priekšskatījums"
+msgstr "Atpakaļ"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Uz priekšu"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Konfigurēt"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Ģenerēt"
+msgstr "Pamata"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Nosaukums:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Atrašanās vieta:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Nav atlasīta mape"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadati"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "&Versijas numurs:"
+msgstr "Versija:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Autora &vārds:"
+msgstr "Autora vārds:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "A&utora e-pasts:"
+msgstr "Autora e-pasta adrese:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Ģenerēt"
@@ -172,16 +159,15 @@ msgid "Could not copy template file to %1."
 msgstr "Neizdevās nokopēt sagataves datni uz „%1“."
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
-"Jūsu projekta nosaukums ir <b>%1</b>, tam pamatā ir sagatave „%2“.<br />"
+"Jūsu projekta nosaukums ir: <b>%1</b>. Tam pamatā ir sagatave „%2“.<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
 msgid "Version: %1 <br /><br />"
-msgstr "Versija: %1 <br /> <br />"
+msgstr "Versija: %1 <br /><br />"
 
 #: src/application/generator.cpp:309
 #, kde-format
@@ -198,39 +184,30 @@ msgstr ""
 "projektu."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Projekta versija"
+msgstr "Projekta ģenerēšana"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Aizvērt"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Ievads"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Šis vednis palīdzēs ģenerēt jaunu projektu.\n"
-"Rezultātā varēsiet izstrādāt savu programmatūru, izmantojot Qt un KDE "
-"tehnoloģijas no šīs sagataves."
+"Šis vednis palīdzēs ģenerēt jaunu projektu un sākt „Qt“ un KDE izstrādi."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -296,52 +273,49 @@ msgstr "Ikonas no „Oxygen“ komandas ikonām"
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "Vienkārša programma, kas rakstīta ar KDE satvariem"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Autortiesības %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "Autora &vārds:"
+msgstr "Autors:"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Šis projekts ir %1 dienas vecs"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Pārslēgt krāsas"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Ģenerēt"
+msgstr "Pamata"
 
 #~ msgid "Project name:"
 #~ msgstr "Projekta nosaukums:"
