@@ -2,16 +2,16 @@
 # translation of kapptemplate.po to
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2009.
 # Michał Smoczyk <msmoczyk@wp.pl>, 2009.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2020, 2021.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2020, 2021, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-20 00:41+0000\n"
-"PO-Revision-Date: 2021-03-14 08:20+0100\n"
+"PO-Revision-Date: 2024-09-07 18:11+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,19 +36,19 @@ msgstr "kde-i18n@rybczynska.net, lukasz.wojnilowicz@gmail.com"
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr "Szablony projektów"
+msgstr "Wzorce projektów"
 
 #. i18n: ectx: property (text), widget (QPushButton, getNewButton)
 #: src/application/choice.ui:37
 #, kde-format
 msgid "Get More Templates"
-msgstr "Pobierz szablony"
+msgstr "Pobierz wzorce"
 
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
 #: src/application/choice.ui:50
 #, kde-format
 msgid "Install Template From File"
-msgstr "Wgraj szablon z pliku"
+msgstr "Wgraj wzorzec z pliku"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #: src/application/choice.ui:111
@@ -58,7 +59,7 @@ msgstr "Nazwa projektu:"
 #: src/application/choicepage.cpp:35
 #, kde-format
 msgid "Choose your project template"
-msgstr "Wybierz szablon projektu"
+msgstr "Wybierz wzorzec projektu"
 
 #: src/application/choicepage.cpp:146
 #, kde-format
@@ -68,7 +69,7 @@ msgstr "Brak zdjęcia próbnego."
 #: src/application/choicepage.cpp:159
 #, kde-format
 msgid "Template description"
-msgstr "Opis szablonu"
+msgstr "Opis wzorca"
 
 #: src/application/generatepage.cpp:30
 #, kde-format
@@ -97,7 +98,7 @@ msgstr ""
 #: src/application/generatepage.cpp:86
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr "Nie można skopiować pliku szablonu do %1."
+msgstr "Nie można skopiować pliku wzorca do %1."
 
 #: src/application/generatepage.cpp:120
 #, kde-format
@@ -112,8 +113,7 @@ msgstr "Sukces!\n"
 #: src/application/generatepage.cpp:230
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
-msgstr ""
-"Twój projekt nazywa się: <b>%1</b> i jest oparty na szablonie %2.<br />"
+msgstr "Twój projekt nazywa się: <b>%1</b> i jest oparty na wzorcu %2.<br />"
 
 #: src/application/generatepage.cpp:231
 #, kde-format
@@ -150,7 +150,7 @@ msgid ""
 msgstr ""
 "Ten pomocnik pomaga w tworzeniu nowego projektu.\n"
 "Dzięki niemu będzie można zacząć tworzenie własnego oprogramowania przy "
-"użyciu technologii Qt oraz KDE z tego szablonu."
+"użyciu technologii Qt oraz KDE z tego wzorca."
 
 #: src/application/kapptemplate.cpp:21
 #, kde-format
