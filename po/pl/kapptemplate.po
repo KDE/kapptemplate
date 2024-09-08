@@ -2,16 +2,16 @@
 # translation of kapptemplate.po to
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2009.
 # Michał Smoczyk <msmoczyk@wp.pl>, 2009.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2020, 2021.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2020, 2021, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2021-03-14 08:20+0100\n"
+"PO-Revision-Date: 2024-09-07 18:11+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,114 +36,101 @@ msgstr "kde-i18n@rybczynska.net, lukasz.wojnilowicz@gmail.com"
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr "Szablony projektów"
+msgstr "Wzorce projektów"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Pobierz szablony"
+msgstr "Wybierz wzorzec"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
-msgstr "Wgraj szablon z pliku"
+msgstr "Wgraj wzorzec z pliku"
 
 #: src/application/ChoicePage.qml:33
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Plik archiwów (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Szablony projektów"
+msgstr "Wzorce projektów"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
-#, fuzzy, kde-format
-#| msgctxt "Do not translate"
-#| msgid "Preview"
+#, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "Preview"
+msgstr "Poprzednia"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Następna"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Ustawienia"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Utwórz"
+msgstr "Ogólne"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Nazwa:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Położenie:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Nie wybrano żadnego katalogu"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadane"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "Numer &wersji:"
+msgstr "Wersja:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "&Nazwa autora:"
+msgstr "Nazwa autora:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "E-mail a&utora:"
+msgstr "E-mail autora:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Utwórz"
@@ -169,14 +157,13 @@ msgstr ""
 #: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr "Nie można skopiować pliku szablonu do %1."
+msgstr "Nie można skopiować pliku wzorca do %1."
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
-"Twój projekt nazywa się: <b>%1</b> i jest oparty na szablonie %2.<br />"
+"Twój projekt nazywa się: <b>%1</b> i jest oparty na wzorcu <b>%2</b>.<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -198,39 +185,31 @@ msgstr ""
 "pomoże zacząć pracę nad projektem."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Wersja projektu"
+msgstr "Tworzenie projektu"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Wprowadzenie"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Ten pomocnik pomaga w tworzeniu nowego projektu.\n"
-"Dzięki niemu będzie można zacząć tworzenie własnego oprogramowania przy "
-"użyciu technologii Qt oraz KDE z tego szablonu."
+"Ten pomocnik pomaga w tworzeniu nowego projektu tak, aby móc zacząć "
+"programować z Qt oraz KDE."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -296,52 +275,49 @@ msgstr "Ikony z zestawu Tlenu"
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "Prosta aplikacja napisana ze Szkieletami KDE"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Prawa autorskie %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "&Nazwa autora:"
+msgstr "Autor"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Projekt istnieje już %1 dni"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Przełącz kolory"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Utwórz"
+msgstr "Ogólne"
 
 #~ msgid "Project name:"
 #~ msgstr "Nazwa projektu:"
