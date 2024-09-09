@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # Frederik Schwarzer <schwarzer@kde.org>, 2008, 2009, 2011, 2016.
 # Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2014, 2016, 2017, 2020.
 msgid ""
@@ -5,14 +6,15 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-20 00:41+0000\n"
-"PO-Revision-Date: 2020-09-14 07:17+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2024-09-07 15:04+0200\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -66,7 +68,7 @@ msgstr "Vorlagenbeschreibung"
 #: src/application/generatepage.cpp:30
 #, kde-format
 msgid "Generating your project"
-msgstr "Ihr Projekt generieren"
+msgstr "Ihr Projekt wird erstellt"
 
 #: src/application/generatepage.cpp:46
 #, kde-format
@@ -95,7 +97,7 @@ msgstr "Die Vorlagendatei kann nicht nach %1 kopiert werden."
 #: src/application/generatepage.cpp:120
 #, kde-format
 msgid "Generation Progress\n"
-msgstr "Fortschritt der Generierung\n"
+msgstr "Fortschritt der Erstellung\n"
 
 #: src/application/generatepage.cpp:226
 #, kde-format
@@ -212,7 +214,7 @@ msgstr "KAppTemplate"
 #: src/application/main.cpp:26
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr "KAppTemplate ist ein Vorlagengenerator für KDE-Projekte"
+msgstr "KAppTemplate ist ein Vorlagenersteller für KDE-Projekte"
 
 #: src/application/main.cpp:28
 #, kde-format
