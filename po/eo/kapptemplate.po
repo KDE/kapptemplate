@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2024-05-30 07:49+0200\n"
+"PO-Revision-Date: 2024-09-14 11:22+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -35,15 +35,13 @@ msgid "Templates Projects"
 msgstr "Ŝablonoj Projektoj"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Akiri Pli da Ŝablonoj"
+msgstr "Elekti Ŝablonon"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "Instali Ŝablonon El Dosiero"
@@ -55,89 +53,80 @@ msgid "Archive Files (*.tar.bz2 *.zip)"
 msgstr ""
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Ŝablonoj Projektoj"
+msgstr "Neniu Ŝablono Elektiĝis"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "Antaŭa"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Sekvanta"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Agordi"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Generi"
+msgstr "Ĝenerala"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Nomo:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Loko:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Neniu dosierujo elektiĝis"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadatenoj"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "&Versionumero:"
+msgstr "Versio:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Aŭtora &nomo:"
+msgstr "Aŭtora nomo:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "Retpoŝto de aŭt&oro:"
+msgstr "Retpoŝto de aŭtoro:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Generi"
@@ -167,10 +156,10 @@ msgid "Could not copy template file to %1."
 msgstr "Ne eblis kopii ŝablondosieron al %1."
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "Via projektnomo estas: <b>%1</b>, bazita sur la ŝablono %2.<br />"
+msgstr ""
+"Via projektnomo estas: <b>%1</b>, bazita sur la ŝablono <b>%2</b>.<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -192,39 +181,31 @@ msgstr ""
 "komenci vian projekton."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Projekta versio"
+msgstr "Projekta Genero"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Fermi"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Enkonduko"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Ĉi tiu asistanto helpos vin generi novan projekton.\n"
-"Vi povos komenci evoluigi vian propran programaron uzante teknologiojn Qt "
-"kaj KDE de ĉi tiu ŝablono."
+"Ĉi tiu asistanto helpos vin generi novan projekton por komenci evoluigon kun "
+"Qt kaj KDE."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -312,107 +293,24 @@ msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "Aŭtora &nomo:"
+msgstr "Aŭtoro"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Ĉi projekto aĝas %1 tagojn"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Ŝanĝi Kolorojn"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Generi"
-
-#~ msgid "Project name:"
-#~ msgstr "Nomo de projekto:"
-
-#~ msgid "Choose your project template"
-#~ msgstr "Elektu vian projektan ŝablonon"
-
-#~ msgid "No sample picture available."
-#~ msgstr "Neniu specimena bildo havebla."
-
-#~ msgid "Template description"
-#~ msgstr "Ŝablona priskribo"
-
-#~ msgid "Generating your project"
-#~ msgstr "Generante vian projekton"
-
-#~ msgid "Generation Progress\n"
-#~ msgstr "Generacia Progreso\n"
-
-#~ msgid "Succeeded.\n"
-#~ msgstr "Sukcesis.\n"
-
-#~ msgctxt "@title:window"
-#~ msgid "Error"
-#~ msgstr "Eraro"
-
-#~ msgctxt "@title:window"
-#~ msgid "KDE and Qt Template Generator"
-#~ msgstr "KDE kaj Qt Ŝablona Generatoro"
-
-#~ msgid "Set the project properties"
-#~ msgstr "Agordi la projektajn proprecojn"
-
-#~ msgid "Your project name is: %1"
-#~ msgstr "Via projektonomo estas: %1"
-
-#~ msgid "Project's version number"
-#~ msgstr "Versionumero de la projekto"
-
-#~ msgid ""
-#~ "Set your project version number. A first project should start with "
-#~ "version 0.1."
-#~ msgstr ""
-#~ "Agordu vian projektan versionumeron. Unua projekto devus komenciĝi per "
-#~ "versio 0.1."
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
-#~ msgid "0.1"
-#~ msgstr "0.1"
-
-#~ msgid "In&stallation directory:"
-#~ msgstr "Do&sierujo de instalo:"
-
-#~ msgid "The directory where you will build your project"
-#~ msgstr "La dosierujo kie vi konstruos vian projekton"
-
-#~ msgid ""
-#~ "Choose the directory where you will build your project. Your home /src is "
-#~ "a good default location."
-#~ msgstr ""
-#~ "Elektu la dosierujon, kie vi konstruos vian projekton. Via hejmo /src "
-#~ "estas bona defaŭlta loko."
-
-#~ msgid "Your first name and name"
-#~ msgstr "Via antaŭnomo kaj nomo"
-
-#~ msgid "This will set the copyright to this name"
-#~ msgstr "Ĉi tio agordos la kopirajton al ĉi tiu nomo"
-
-#~ msgid "Your email address"
-#~ msgstr "Via retpoŝta adreso"
-
-#~ msgid ""
-#~ "This email address will be next to your name in the copyright credit of "
-#~ "the project files."
-#~ msgstr ""
-#~ "Ĉi tiu retadreso estos apud via nomo en la kopirajta kredito de la "
-#~ "projektdosieroj."
+msgstr "Ĝenerala"
