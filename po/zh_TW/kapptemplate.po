@@ -6,13 +6,13 @@
 # Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009, 2015.
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # pan93412 <pan93412@gmail.com>, 2018.
-# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2023-12-13 05:42+0900\n"
+"PO-Revision-Date: 2024-09-17 08:00+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "dot tw>\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.04.70\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #, kde-format
@@ -40,15 +40,13 @@ msgid "Templates Projects"
 msgstr "樣本專案"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "取得更多範本"
+msgstr "選擇範本"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "從檔案安裝範本"
@@ -57,92 +55,83 @@ msgstr "從檔案安裝範本"
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "封存檔 (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "樣本專案"
+msgstr "未選擇範本"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "上一頁"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "下一頁"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "設定"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "生成"
+msgstr "一般"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "名稱："
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "位置："
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "沒有選擇任何資料夾"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "中繼資料"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "版本號 (&V)："
+msgstr "版本："
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "作者名稱 (&N)："
+msgstr "作者名稱："
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "作者電子郵件地址 (&U)："
+msgstr "作者電子郵件地址："
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "生成"
@@ -171,10 +160,9 @@ msgid "Could not copy template file to %1."
 msgstr "無法複製樣本檔到 %1"
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "您的專案名稱為：<b>%1</b>，基於樣本 %2。<br />"
+msgstr "您的專案名稱為：<b>%1</b>，基於範本 <b>%2</b>。<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -195,38 +183,29 @@ msgstr ""
 "在您的專案資料夾 <b>%1</b> 中會找到一個 README 檔<br /> 以協助您開始專案。"
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "專案版本"
+msgstr "專案生成"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "介紹"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
-msgstr ""
-"此精靈會協助您產生新的專案。\n"
-"您可以用此樣本開始開發使用 Qt 與 KDE 技術的應用程式。"
+msgstr "此精靈會協助您產生新的專案來開始進行 Qt 與 KDE 的開發。"
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -292,52 +271,49 @@ msgstr "從 Oxygen 團隊取得圖示"
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "用 KDE Frameworks 寫的簡單應用程式"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "作者名稱 (&N)："
+msgstr "作者"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "這個專案已建立 %1 天"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "切換顏色"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "生成"
+msgstr "一般"
 
 #~ msgid "Project name:"
 #~ msgstr "專案名稱："

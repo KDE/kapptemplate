@@ -1,6 +1,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2011, 2014, 2017, 2020.
+# SPDX-FileCopyrightText: 2011, 2014, 2017, 2020, 2024 Vít Pelčák <vit@pelcak.org>
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2013.
 #
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2020-05-26 13:03+0200\n"
+"PO-Revision-Date: 2024-09-02 16:11+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.04.1\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,15 +35,13 @@ msgid "Templates Projects"
 msgstr "Projekty šablon"
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Get More Templates"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Získat více šablon"
+msgstr "Vyberte šablonu"
 
 #: src/application/ChoicePage.qml:26
-#, fuzzy, kde-format
-#| msgid "Install Template From File"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "Instalovat šablonu ze souboru"
@@ -52,92 +50,83 @@ msgstr "Instalovat šablonu ze souboru"
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Soubory archivu (*.tar.gz *.zip)"
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Projekty šablon"
+msgstr "Žádná šablona nebyla vybrána"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "Předchozí"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "Následující"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "Nastavit"
 
 #: src/application/ConfigurePage.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "Vygenerovat"
+msgstr "Obecné"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Název:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "Umístění:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "Žádná složka není vybrána"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadata"
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "&Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "Číslo &verze:"
+msgstr "Verze:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Jmé&no autora:"
+msgstr "Jméno autora:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "A&uthor email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "E-mail a&utora:"
+msgstr "E-mail autora:"
 
 #: src/application/ConfigurePage.qml:93
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Vygenerovat"
@@ -165,10 +154,10 @@ msgid "Could not copy template file to %1."
 msgstr ""
 
 #: src/application/generator.cpp:307
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "Název vašeho projektu je: <b>%1 </b>, založen na šabloně %2.<br />"
+msgstr ""
+"Název vašeho projektu je: <b>%1 </b>, založen na šabloně <b>%2</b>.<br />"
 
 #: src/application/generator.cpp:308
 #, kde-format
@@ -188,22 +177,19 @@ msgid ""
 msgstr ""
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Verze projektu"
+msgstr "Generování projektu"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Úvod"
@@ -279,13 +265,13 @@ msgstr ""
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "Jednoduchá aplikace napsaná pomocí KDE Frameworks"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
@@ -297,66 +283,28 @@ msgstr ""
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author &name:"
+#, kde-format
 msgid "Author"
-msgstr "Jmé&no autora:"
+msgstr "Autor"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr ""
+msgstr "Tento projekt je %1 dní starý"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "Přepnout barvy"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
+#, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "Vygenerovat"
-
-#~ msgid "Project name:"
-#~ msgstr "Název projektu:"
-
-#~ msgid "Template description"
-#~ msgstr "Popis šablony"
-
-#~ msgid "Succeeded.\n"
-#~ msgstr "Úspěch.\n"
-
-#~ msgctxt "@title:window"
-#~ msgid "Error"
-#~ msgstr "Chyba"
-
-#~ msgctxt "@title:window"
-#~ msgid "KDE and Qt Template Generator"
-#~ msgstr "Generátor šablon pro KDE a Qt"
-
-#~ msgid "Your project name is: %1"
-#~ msgstr "Název vašeho projektu je: %1"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
-#~ msgid "0.1"
-#~ msgstr "0.1"
-
-#~ msgid "In&stallation directory:"
-#~ msgstr "Adresář pro in&stalaci:"
-
-#~ msgid "Your first name and name"
-#~ msgstr "Vaše jméno a příjmení"
-
-#~ msgid "Your email address"
-#~ msgstr "Vaše e-mailová adresa"
+msgstr "Obecné"
