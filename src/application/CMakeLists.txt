@@ -35,13 +35,11 @@ kconfig_add_kcfg_files(kapptemplate prefs.kcfgc)
 
 target_link_libraries(kapptemplate PRIVATE
     KF6::CoreAddons
-    KF6::ConfigWidgets
-    KF6::Completion
-    KF6::KIOWidgets
+    KF6::ConfigGui
     KF6::Archive
-    KF6::KIOCore
     KF6::I18n
     Qt::Quick
+    Qt::Widgets
     # KF6::NewStuff
 )
 
