@@ -9,6 +9,7 @@
 
 #include "logging.h"
 
+#include <KFileUtils>
 #include <KTar>
 #include <KZip>
 
@@ -37,22 +38,14 @@ QPixmap PreviewImageProvider::requestPixmap(const QString &id, QSize *size, cons
     }
 
     // find archive
-    QString archivePath;
     const QStringList templatePaths =
         QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    for (const QString &templatePath : templatePaths) {
-        const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
-        for (const QString &templateArchive : templateArchives) {
-            const QString baseName = QFileInfo(templateArchive).baseName();
-            if (archiveBaseName.compare(baseName) == 0) {
-                archivePath = templatePath + templateArchive;
-                break;
-            }
-        }
-    }
+    const QStringList results = KFileUtils::findAllUniqueFiles(templatePaths, {archiveBaseName + QLatin1String(".*")});
 
     // read icon from archive
-    if (!archivePath.isEmpty()) {
+    if (!results.isEmpty()) {
+        const QString archivePath = results.first();
+
         QScopedPointer<KArchive> templateArchive;
         if (QFileInfo(archivePath).completeSuffix() == QLatin1String("zip")) {
             templateArchive.reset(new KZip(archivePath));
@@ -82,7 +75,7 @@ QPixmap PreviewImageProvider::requestPixmap(const QString &id, QSize *size, cons
         if (!pixmap.isNull()) {
             return pixmap;
         }
-        qCWarning(KAPPTEMPLATE) << "Could not load preview icon" << iconFilePath << "as wanted for" << archivePath;
+        qCWarning(KAPPTEMPLATE) << "Could not load preview icon" << iconFilePath << "as wanted for" << archiveBaseName;
     }
 
     // try theme icon (inofficial feature)

@@ -15,6 +15,7 @@
 #include <KArchiveFile>
 #include <KConfig>
 #include <KConfigGroup>
+#include <KFileUtils>
 #include <KLocalizedString>
 #include <KMacroExpander>
 #include <KTar>
@@ -203,23 +204,15 @@ void Generator::startGeneration(const QString &templateName, const QString &disp
     Prefs::setAppName(m_name);
     Prefs::self()->save();
 
-    QString archName;
     const QStringList templatePaths =
         QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    for (const QString &templatePath : templatePaths) {
-        const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
-        for (const QString &templateArchive : templateArchives) {
-            const QString baseName = QFileInfo(templateArchive).baseName();
-            if (templateName.compare(baseName) == 0) {
-                archName = templatePath + templateArchive;
-                break;
-            }
-        }
-    }
+    const QStringList results = KFileUtils::findAllUniqueFiles(templatePaths, {templateName + QLatin1String(".*")});
 
-    if (archName.isEmpty()) {
+    if (results.isEmpty()) {
         return;
     }
+
+    const QString archName = results.first();
 
     // create dir where template project will be copied
     QString appName = m_name;
