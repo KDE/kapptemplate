@@ -7,6 +7,7 @@
 
 #include <KConfig>
 #include <KConfigGroup>
+#include <KFileUtils>
 #include <KLocalizedString>
 #include <KTar>
 #include <KZip>
@@ -32,15 +33,10 @@ QHash<int, QByteArray> AppTemplatesModel::roleNames() const
 
 void extractTemplateDescriptions()
 {
-    QStringList templateArchives;
     const QStringList templatePaths =
         QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
-    for (const QString &templatePath : std::as_const(templatePaths)) {
-        const auto templateFiles = QDir(templatePath).entryList(QDir::Files);
-        for (const QString &templateArchive : templateFiles) {
-            templateArchives.append(templatePath + templateArchive);
-        }
-    }
+
+    const QStringList templateArchives = KFileUtils::findAllUniqueFiles(templatePaths);
 
     const QString templateDataBasePath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kdevappwizard/";
     const QString localDescriptionsDir = templateDataBasePath + "template_descriptions/";
