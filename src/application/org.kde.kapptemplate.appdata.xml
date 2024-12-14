@@ -37,6 +37,7 @@
   <name xml:lang="pt">KAppTemplate</name>
   <name xml:lang="pt-BR">KAppTemplate</name>
   <name xml:lang="ru">KAppTemplate</name>
+  <name xml:lang="sa">KAppTemplate</name>
   <name xml:lang="sk">KAppTemplate</name>
   <name xml:lang="sl">KAppTemplate</name>
   <name xml:lang="sr">К‑шаблон-програма</name>
@@ -76,6 +77,7 @@
   <summary xml:lang="pt">Gerador de Modelos de Código de Aplicações</summary>
   <summary xml:lang="pt-BR">Gerador de modelo de código de aplicativo</summary>
   <summary xml:lang="ru">Генератор шаблонов приложений</summary>
+  <summary xml:lang="sa">एप्लिकेशन कोड टेम्पलेट जनरेटर</summary>
   <summary xml:lang="sk">Generátor šablón aplikačného kódu</summary>
   <summary xml:lang="sl">Generator predlog kode</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
@@ -114,6 +116,7 @@
     <p xml:lang="pt">O KAppTemplate é uma aplicação para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem algum do código escrito repetitivo e uma estrutura adequada.</p>
     <p xml:lang="pt-BR">KAppTemplate é um aplicativo para iniciar rapidamente o desenvolvimento, usando modelos existentes que oferecem código escrito de forma repetitiva e uma estrutura adequada.</p>
     <p xml:lang="ru">KAppTemplate — программа, помогающая быстро начать разработку, отталкиваясь от готовых шаблонов приложений.</p>
+    <p xml:lang="sa">KAppTemplate मूलभूतं पुनः लिखितं कोडं समुचितसंरचनां च प्रदातुं विद्यमानस्य टेम्पलेट् इत्यस्य उपयोगेन शीघ्रं विकासं आरभ्यतुं एकः अनुप्रयोगः अस्ति ।</p>
     <p xml:lang="sk">KAppTemplate je aplikácia na rýchle začatie vývoja pomocou existujúcich šablón poskytujúcich základný opakovateľné písaný kód a správnu štruktúru.</p>
     <p xml:lang="sl">KAppTemplate je program za hiter začetek razvoja z uporabo obstoječih predlog, ki ponujajo osnovno, pogosto uporabljeno kodo in strukturo.</p>
     <p xml:lang="sr">К‑шаблон-програма је програм за брзо започињање развоја, преко постојећих шаблона који дају основни, често писани код и правилну структуру.</p>
@@ -156,6 +159,7 @@
     <p xml:lang="pt">Funcionalidades:</p>
     <p xml:lang="pt-BR">Funcionalidades:</p>
     <p xml:lang="ru">Возможности:</p>
+    <p xml:lang="sa">गुणाः:</p>
     <p xml:lang="sk">Funkcie:</p>
     <p xml:lang="sl">Zmožnosti:</p>
     <p xml:lang="sr">Могућности:</p>
@@ -196,6 +200,7 @@
       <li xml:lang="pt">Modelos para o C++, Ruby, Python e PHP</li>
       <li xml:lang="pt-BR">Modelos para C++, Ruby, Python e PHP</li>
       <li xml:lang="ru">Шаблоны на языках C++, Ruby, Python и PHP</li>
+      <li xml:lang="sa">C++, Ruby, Python तथा PHP इत्येतयोः कृते टेम्पलेट्</li>
       <li xml:lang="sk">Šablóny pre C++, Ruby, Python a PHP</li>
       <li xml:lang="sl">Predloge za C++, Ruby, Python in PHP</li>
       <li xml:lang="sr">шаблони за Ц++, руби, питон и ПХП</li>
@@ -238,6 +243,7 @@
       <li xml:lang="pt">Categorias</li>
       <li xml:lang="pt-BR">Categorias</li>
       <li xml:lang="ru">Категории</li>
+      <li xml:lang="sa">श्रेणियाँ</li>
       <li xml:lang="sk">Kategórie</li>
       <li xml:lang="sl">Kategorije</li>
       <li xml:lang="sr">категорије</li>
@@ -276,6 +282,7 @@
       <li xml:lang="pt">Modelos para diferentes sistemas de compilação e plataformas</li>
       <li xml:lang="pt-BR">Modelos para diferentes sistemas de compilação e plataformas</li>
       <li xml:lang="ru">Шаблоны для различных систем сборки и платформ</li>
+      <li xml:lang="sa">भिन्न-भिन्न-निर्माण-प्रणालीनां, ढाञ्चानां च कृते टेम्पलेट्</li>
       <li xml:lang="sk">Šablóny pre rôzne systémy zostavenia a frameworky</li>
       <li xml:lang="sl">Predloge za različne sisteme za izgradnjo in ogrodja</li>
       <li xml:lang="sr">шаблони за различите системе градње и радне оквире</li>
@@ -314,6 +321,7 @@
       <li xml:lang="pt">Modelos especiais para o desenvolvimento no KDE ('plugins' para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="pt-BR">Modelos especiais para o desenvolvimento no KDE (plugins para o Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ru">Специальные шаблоны для разработки с использованием технологий KDE (модули для Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="sa">विशेषतः KDE-विकासाय टेम्पलेट् (प्लाज्मा, QtQuick, KTextEditor, KRunner, Akonadi कृते प्लगिन्स्)</li>
       <li xml:lang="sk">Šablóny špeciálne pre vývoj KDE (pluginy pre Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sl">Predloge, posebej za razvoj KDE (vtičniki za Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="sv">Mallar särskilt för KDE-utveckling (insticksprogram för Plasma, QtQuick, Ktexteditor, Krunner, Akonadi)</li>
@@ -348,6 +356,7 @@
       <li xml:lang="pt">É fácil de criar modelos novos com blocos de substituição e um comando simples de CMake</li>
       <li xml:lang="pt-BR">É fácil criar modelos novos usando blocos de substituição e um comando simples de CMake</li>
       <li xml:lang="ru">Легко создавать новые шаблоны</li>
+      <li xml:lang="sa">स्थानधारकाणां सरलस्य CMake-आदेशस्य च उपयोगेन नूतनानि टेम्पलेट् निर्मातुं सुलभम् अस्ति</li>
       <li xml:lang="sk">Je jednoduché vytvoriť nové šablóny pomocou space holderov a jednoduchého príkazu CMake</li>
       <li xml:lang="sl">Nove predloge lahko enostavno ustvarite s pomočjo vsebnikov in preprostega ukaza CMake</li>
       <li xml:lang="sr">лако стварање нових шаблона, преко местодржача и једноставне наредбе Ц‑мејка</li>
@@ -387,6 +396,7 @@
       <li xml:lang="pt">Integrado no KDevelop</li>
       <li xml:lang="pt-BR">Integrado ao KDevelop</li>
       <li xml:lang="ru">Интеграция в KDevelop</li>
+      <li xml:lang="sa">KDevelop इत्यत्र एकीकृतम्</li>
       <li xml:lang="sk">Integrované do KDevelop</li>
       <li xml:lang="sl">Vgrajen v KDevelop</li>
       <li xml:lang="sr">уклапање у К‑девелоп</li>
