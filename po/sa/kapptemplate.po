@@ -19,115 +19,115 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: src/application/apptemplatesmodel.cpp:161
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr ""
+msgstr "टेम्पलेट्स परियोजनाएँ"
 
 #: src/application/ChoicePage.qml:16
 #, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr ""
+msgstr "टेम्पलेट् इति चिनोतु"
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
-msgstr ""
+msgstr "सञ्चिकातः टेम्पलेट् संस्थापयन्तु"
 
 #: src/application/ChoicePage.qml:33
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "संग्रह सञ्चिकाः (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
 #, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr ""
+msgstr "कोऽपि टेम्पलेट् चयनितः नास्ति"
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr ""
+msgstr "पूर्वतनम्‌"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "अग्रिम"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "विन्यस्तं कुर्वन्तु"
 
 #: src/application/ConfigurePage.qml:25
 #, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr ""
+msgstr "सामान्य"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "नामः:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "स्थानीय:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr ""
+msgstr "न पुटं चयनितम्"
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "मेटाडाटा"
 
 #: src/application/ConfigurePage.qml:62
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr ""
+msgstr "संस्करण:"
 
 #: src/application/ConfigurePage.qml:70
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr ""
+msgstr "लेखकस्य नाम : १."
 
 #: src/application/ConfigurePage.qml:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr ""
+msgstr "लेखकस्य ईमेलः : १."
 
 #: src/application/ConfigurePage.qml:93
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
-msgstr ""
+msgstr "उद्- पद्"
 
 #: src/application/generator.cpp:123
 #, kde-format
@@ -181,19 +181,19 @@ msgstr ""
 #, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr ""
+msgstr "परियोजना जननम्"
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "पिधानं करोतु"
 
 #: src/application/IntroductionPage.qml:13
 #, kde-format
 msgctxt "@title"
 msgid "Introduction"
-msgstr ""
+msgstr "आमुख"
 
 #: src/application/IntroductionPage.qml:19
 #, kde-format
@@ -304,10 +304,10 @@ msgstr "एषा परियोजना %1 दिवसपुराणी अ
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr ""
+msgstr "रङ्गं स्विच कुर्वन्तु"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
 #, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr ""
+msgstr "सामान्य"
