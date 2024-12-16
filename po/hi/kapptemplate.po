@@ -1,4 +1,4 @@
-# Sanskrit translations for kapptemplate package.
+# Hindi translations for kapptemplate package.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kapptemplate package.
 # Kali <EMAIL@ADDRESS>, 2024.
@@ -8,137 +8,136 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"PO-Revision-Date: 2024-12-15 15:57+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
-"Language: sa\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "भवतः नामानि"
+msgstr ""
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "भवतः ईमेलपत्राणि"
+msgstr ""
 
 #: src/application/apptemplatesmodel.cpp:161
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr "टेम्पलेट्स परियोजनाएँ"
+msgstr ""
 
 #: src/application/ChoicePage.qml:16
 #, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "टेम्पलेट् इति चिनोतु"
+msgstr ""
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
-msgstr "सञ्चिकातः टेम्पलेट् संस्थापयन्तु"
+msgstr ""
 
 #: src/application/ChoicePage.qml:33
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr "संग्रह सञ्चिकाः (*.tar.bz2 *.zip)"
+msgstr ""
 
 #: src/application/ChoicePage.qml:96
 #, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "कोऽपि टेम्पलेट् चयनितः नास्ति"
+msgstr ""
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "पूर्वतनम्‌"
+msgstr ""
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr "अग्रिम"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr "विन्यस्तं कुर्वन्तु"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:25
 #, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr "सामान्य"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr "नामः:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr "स्थानीय:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No folder selected"
-msgstr "न पुटं चयनितम्"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr "मेटाडाटा"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:62
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "संस्करण:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:70
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "लेखकस्य नाम : १."
+msgstr ""
 
 #: src/application/ConfigurePage.qml:78
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "लेखकस्य ईमेलः : १."
+msgstr ""
 
 #: src/application/ConfigurePage.qml:93
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
-msgstr "उद्- पद्"
+msgstr ""
 
 #: src/application/generator.cpp:123
 #, kde-format
 msgid "%1 cannot be created."
-msgstr "%1 निर्मातुं न शक्यते ।"
+msgstr ""
 
 #: src/application/generator.cpp:142
 #, kde-format
 msgid "Path %1 could not be created."
-msgstr "%1 मार्गः निर्मातुं न शक्तः ।"
+msgstr ""
 
 #: src/application/generator.cpp:154
 #, kde-format
@@ -146,28 +145,26 @@ msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
-"%1 सञ्चिकायां भवतः परियोजनासूचनाः एकीकृत्य असफलः । परियोजना न जनिता अस्ति तथा च "
-"सर्वाणि अस्थायीसञ्चिकाः निष्कासितानि भविष्यन्ति।"
 
 #: src/application/generator.cpp:162
 #, kde-format
 msgid "Could not copy template file to %1."
-msgstr "%1 इत्यत्र टेम्पलेट् सञ्चिकां प्रतिलिखितुं न शक्यते ।"
+msgstr ""
 
 #: src/application/generator.cpp:307
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "भवतः परियोजनानाम अस्ति: <b>%1</b> , <b>%2</b> टेम्पलेट् इत्यस्य आधारेण ।<br />"
+msgstr ""
 
 #: src/application/generator.cpp:308
 #, kde-format
 msgid "Version: %1 <br /><br />"
-msgstr "संस्करणम् : %1<br /><br />"
+msgstr ""
 
 #: src/application/generator.cpp:309
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
-msgstr "संस्थापितम्: %1<br /><br />"
+msgstr ""
 
 #: src/application/generator.cpp:310
 #, kde-format
@@ -175,26 +172,24 @@ msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
-"भवान् स्वस्य परियोजनापुटस्य <b>%1</b> मध्ये README इति ज्ञास्यति<br /> भवतः "
-"परियोजनायाः आरम्भे सहायतार्थम्।"
 
 #: src/application/GeneratorPage.qml:16
 #, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "परियोजना जननम्"
+msgstr ""
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr "पिधानं करोतु"
+msgstr ""
 
 #: src/application/IntroductionPage.qml:13
 #, kde-format
 msgctxt "@title"
 msgid "Introduction"
-msgstr "आमुख"
+msgstr ""
 
 #: src/application/IntroductionPage.qml:19
 #, kde-format
@@ -202,113 +197,111 @@ msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"एषः विजार्ड् भवन्तं Qt तथा KDE विकासेन सह आरम्भं कर्तुं नूतनं परियोजनां जनयितुं साहाय्यं "
-"करिष्यति ।"
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
 #, kde-format
 msgid "Name of the project"
-msgstr "परियोजनायाः नाम"
+msgstr ""
 
 #. i18n: ectx: label, entry (appVersion), group (Project)
 #: src/application/kapptemplate.kcfg:15
 #, kde-format
 msgid "Project version"
-msgstr "परियोजना संस्करणम्"
+msgstr ""
 
 #. i18n: ectx: label, entry (url), group (Project)
 #: src/application/kapptemplate.kcfg:19
 #, kde-format
 msgid "Home dir of the user"
-msgstr "उपयोक्तुः गृहं dir"
+msgstr ""
 
 #. i18n: ectx: label, entry (name), group (User)
 #: src/application/kapptemplate.kcfg:27
 #, kde-format
 msgid "Name of the user"
-msgstr "उपयोक्तुः नाम"
+msgstr ""
 
 #. i18n: ectx: label, entry (email), group (User)
 #: src/application/kapptemplate.kcfg:38
 #, kde-format
 msgid "Email of the user"
-msgstr "उपयोक्तुः ईमेल"
+msgstr ""
 
 #: src/application/main.cpp:28
 #, kde-format
 msgid "KAppTemplate"
-msgstr "KAppTemplate"
+msgstr ""
 
 #: src/application/main.cpp:30
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr "KAppTemplate एकः KDE परियोजना टेम्पलेट् जनरेटरः अस्ति"
+msgstr ""
 
 #: src/application/main.cpp:32
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
-msgstr "(C) 2008 एन्ने-मैरी महफूफ"
+msgstr ""
 
 #: src/application/main.cpp:36
 #, kde-format
 msgid "Anne-Marie Mahfouf"
-msgstr "एन्ने-मैरी महफूफ"
+msgstr ""
 
 #: src/application/main.cpp:37
 #, kde-format
 msgid "Sean Wilson"
-msgstr "शीन् विल्सन"
+msgstr ""
 
 #: src/application/main.cpp:37
 #, kde-format
 msgid "Icons from Oxygen Team icons"
-msgstr "आक्सीजन दलस्य चिह्नानां चिह्नानि"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr "%{APPNAME} इति ।"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr "KDE Frameworks इत्यनेन सह लिखितं सरलम् अनुप्रयोगम्"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr "प्रतिलिपिधर्मः %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr "%{लेखकः}"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "Author"
-msgstr "लेखकः"
+msgstr ""
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr "एषा परियोजना %1 दिवसपुराणी अस्ति"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
 msgctxt "@action"
 msgid "Switch Colors"
-msgstr "रङ्गं स्विच कुर्वन्तु"
+msgstr ""
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
 #, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr "सामान्य"
+msgstr ""
