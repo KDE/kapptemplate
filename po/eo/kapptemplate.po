@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:41+0000\n"
-"PO-Revision-Date: 2024-09-14 11:22+0200\n"
+"PO-Revision-Date: 2024-12-29 19:47+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -50,7 +50,7 @@ msgstr "Instali Ŝablonon El Dosiero"
 #, kde-format
 msgctxt "file dialog name filter"
 msgid "Archive Files (*.tar.bz2 *.zip)"
-msgstr ""
+msgstr "Arkivdosieroj (*.tar.bz2 *.zip)"
 
 #: src/application/ChoicePage.qml:96
 #, kde-format
@@ -271,25 +271,25 @@ msgstr "Piktogramoj el Oxygen-Teamaj piktogramoj"
 #: src/templates/C++/kde-frameworks6/src/main.cpp:32
 #, kde-format
 msgid "%{APPNAME}"
-msgstr ""
+msgstr "%{APPNAME}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
 #: src/templates/C++/kde-frameworks6/src/main.cpp:34
 #, kde-format
 msgid "A Simple Application written with KDE Frameworks"
-msgstr ""
+msgstr "Simpla Aplikaĵo skribita kun KDE Frameworks"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
 #: src/templates/C++/kde-frameworks6/src/main.cpp:36
 #, kde-format
 msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
-msgstr ""
+msgstr "Kopirajto %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, kde-format
 msgid "%{AUTHOR}"
-msgstr ""
+msgstr "%{AUTHOR}"
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
