@@ -36,13 +36,15 @@ if (BUILD_TESTING)
     find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
 
-find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets Quick)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Widgets Quick QuickControls2)
 
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Archive
     Config
+    ConfigWidgets
     CoreAddons
     I18n
+    IconThemes
     DocTools
     # NewStuff
 )

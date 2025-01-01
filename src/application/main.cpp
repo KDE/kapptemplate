@@ -6,21 +6,33 @@
 */
 
 #include <KAboutData>
+#include <KIconTheme>
 #include <KLocalizedContext>
 #include <KLocalizedString>
+#define HAVE_STYLE_MANAGER __has_include(<KStyleManager>)
+#if HAVE_STYLE_MANAGER
+#include <KStyleManager>
+#endif
 
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 
 #include "kapptemplate_version.h"
 #include "logging.h"
 #include "previewimageprovider.h"
 
+using namespace Qt::StringLiterals;
+
 int main(int argc, char **argv)
 {
+#if KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0)
+    KIconTheme::initTheme();
+#endif
+
     QApplication application(argc, argv);
     KLocalizedString::setApplicationDomain("kapptemplate");
 
@@ -38,6 +50,19 @@ int main(int argc, char **argv)
 
     KAboutData::setApplicationData(about);
     QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kapptemplate")));
+
+#if HAVE_STYLE_MANAGER
+    KStyleManager::initStyle();
+#else
+#if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
+    QApplication::setStyle(u"breeze"_s);
+#endif
+#endif
+
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(u"org.kde.desktop"_s);
+        QQuickStyle::setFallbackStyle(u"Fusion"_s);
+    }
 
     QCommandLineParser parser;
     about.setupCommandLine(&parser);
