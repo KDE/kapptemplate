@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:41+0000\n"
+"POT-Creation-Date: 2025-01-02 00:43+0000\n"
 "PO-Revision-Date: 2024-09-17 08:00+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -237,32 +237,32 @@ msgstr "使用者名稱"
 msgid "Email of the user"
 msgstr "使用者電子郵件地址"
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:40
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate 是一個 KDE 專案樣本產生器"
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:44
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:36
+#: src/application/main.cpp:48
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "從 Oxygen 團隊取得圖示"

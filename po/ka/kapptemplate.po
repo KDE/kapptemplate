@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:41+0000\n"
+"POT-Creation-Date: 2025-01-02 00:43+0000\n"
 "PO-Revision-Date: 2024-08-31 03:47+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -236,32 +236,32 @@ msgstr "მომხმარებლის სახელი"
 msgid "Email of the user"
 msgstr "მომხმარებლის ელფოსტა"
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:40
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate -ი KDE -ის პროექტის შაბლონის გენერატორია"
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:44
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:36
+#: src/application/main.cpp:48
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "ხატულები Oxygen -ის გუნდის ხატულებიდან"

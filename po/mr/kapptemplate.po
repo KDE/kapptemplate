@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:41+0000\n"
+"POT-Creation-Date: 2025-01-02 00:43+0000\n"
 "PO-Revision-Date: 2013-03-13 15:00+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -234,32 +234,32 @@ msgstr ""
 msgid "Email of the user"
 msgstr ""
 
-#: src/application/main.cpp:28
+#: src/application/main.cpp:40
 #, kde-format
 msgid "KAppTemplate"
 msgstr ""
 
-#: src/application/main.cpp:30
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr ""
 
-#: src/application/main.cpp:32
+#: src/application/main.cpp:44
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr ""
 
-#: src/application/main.cpp:36
+#: src/application/main.cpp:48
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "आन्ने-मारिआ माहफौफ"
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Sean Wilson"
 msgstr ""
 
-#: src/application/main.cpp:37
+#: src/application/main.cpp:49
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr ""
