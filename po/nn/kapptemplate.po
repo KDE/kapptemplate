@@ -37,14 +37,12 @@ msgstr "Malprosjekt"
 
 #: src/application/ChoicePage.qml:16
 #, fuzzy, kde-format
-#| msgid "Get More Templates"
 msgctxt "@title"
 msgid "Choose Template"
 msgstr "Hent fleire malar"
 
 #: src/application/ChoicePage.qml:26
 #, fuzzy, kde-format
-#| msgid "Install Template From File"
 msgctxt "@action:intoolbar"
 msgid "Install Template From File"
 msgstr "Installer mal frå fil"
@@ -57,8 +55,6 @@ msgstr ""
 
 #: src/application/ChoicePage.qml:96
 #, fuzzy, kde-format
-#| msgctxt "@title:column"
-#| msgid "Templates Projects"
 msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Malprosjekt"
@@ -84,8 +80,6 @@ msgstr ""
 
 #: src/application/ConfigurePage.qml:25
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@title:group"
 msgid "General"
 msgstr "Lag"
@@ -116,29 +110,24 @@ msgstr ""
 
 #: src/application/ConfigurePage.qml:62
 #, fuzzy, kde-format
-#| msgid "&Version number:"
 msgctxt "@label:textbox"
 msgid "Version:"
 msgstr "&Versjonsnummer:"
 
 #: src/application/ConfigurePage.qml:70
 #, fuzzy, kde-format
-#| msgid "Author &name:"
 msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "&Utviklarnamn:"
 
 #: src/application/ConfigurePage.qml:78
 #, fuzzy, kde-format
-#| msgid "A&uthor email:"
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "&E-postadressa til utviklar:"
 
 #: src/application/ConfigurePage.qml:93
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Lag"
@@ -169,7 +158,6 @@ msgstr "Klarte ikkje kopiera malfil til %1."
 
 #: src/application/generator.cpp:307
 #, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Prosjektnamnet er <b>%1</b>, basert på malen «%2».<br />"
 
@@ -194,7 +182,6 @@ msgstr ""
 
 #: src/application/GeneratorPage.qml:16
 #, fuzzy, kde-format
-#| msgid "Project version"
 msgctxt "@title"
 msgid "Project Generation"
 msgstr "Prosjektversjon"
@@ -207,18 +194,12 @@ msgstr ""
 
 #: src/application/IntroductionPage.qml:13
 #, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Introduction"
 msgctxt "@title"
 msgid "Introduction"
 msgstr "Introduksjon"
 
 #: src/application/IntroductionPage.qml:19
 #, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a new project.\n"
-#| "You will be able to start developing your own software using Qt and KDE "
-#| "technologies from this template."
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
@@ -313,7 +294,6 @@ msgstr ""
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
 #, fuzzy, kde-format
-#| msgid "Author &name:"
 msgid "Author"
 msgstr "&Utviklarnamn:"
 
@@ -331,8 +311,6 @@ msgstr ""
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Generate"
 msgctxt "@title:tab"
 msgid "General"
 msgstr "Lag"

@@ -37,7 +37,6 @@ msgstr ""
 
 #: src/application/ChoicePage.qml:16
 #, fuzzy, kde-format
-#| msgid "Get More Templates"
 msgctxt "@title"
 msgid "Choose Template"
 msgstr "Hent flere maler"
@@ -56,7 +55,6 @@ msgstr ""
 
 #: src/application/ChoicePage.qml:96
 #, fuzzy, kde-format
-#| msgid "Template description"
 msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Malbeskrivelse"
@@ -118,16 +116,12 @@ msgstr ""
 
 #: src/application/ConfigurePage.qml:70
 #, fuzzy, kde-format
-#| msgctxt "NAME OF TRANSLATORS"
-#| msgid "Your names"
 msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "Bjørn Steensrud"
 
 #: src/application/ConfigurePage.qml:78
 #, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "bjornst@skogkatt.homelinux.org"
@@ -162,7 +156,6 @@ msgstr ""
 
 #: src/application/generator.cpp:307
 #, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Prosjektnavnet er <b>%1</b>, basert på malen %2.<br />"
 
@@ -187,7 +180,6 @@ msgstr ""
 
 #: src/application/GeneratorPage.qml:16
 #, fuzzy, kde-format
-#| msgid "Project version"
 msgctxt "@title"
 msgid "Project Generation"
 msgstr "Prosjektversjon"
