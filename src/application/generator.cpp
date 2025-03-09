@@ -244,6 +244,7 @@ void Generator::startGeneration(const QString &templateName, const QString &disp
     }
 
     if (archName.isEmpty()) {
+        Q_EMIT errorOccurred(i18n("Could not load template archive for %1.", displayName));
         return;
     }
 
