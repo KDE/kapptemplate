@@ -25,6 +25,7 @@
   <name xml:lang="gl">KAppTemplate</name>
   <name xml:lang="he">KAppTemplate</name>
   <name xml:lang="hu">KAppTemplate</name>
+  <name xml:lang="ia">KAppTemplate</name>
   <name xml:lang="id">KAppTemplate</name>
   <name xml:lang="it">KAppTemplate</name>
   <name xml:lang="ka">KAppTemplate</name>
@@ -66,6 +67,7 @@
   <summary xml:lang="gl">Xerador de modelos de código de aplicativo</summary>
   <summary xml:lang="he">מחולל תבניות קוד יישומים</summary>
   <summary xml:lang="hu">Alkalmazáskód sablonkészítő</summary>
+  <summary xml:lang="ia">Generator de patrono de codice de app</summary>
   <summary xml:lang="id">Penghasil Template Kode Apl</summary>
   <summary xml:lang="it">Generatore di modelli di applicazioni</summary>
   <summary xml:lang="ka">აპის კოდის შაბლონის გენერატორი</summary>
@@ -105,6 +107,7 @@
     <p xml:lang="gl">KAppTemplate é unha aplicación para comezar calquera desenvolvemento rapidamente usando modelos existentes que fornecen código básico e repetitivo, así como unha estrutura axeitada.</p>
     <p xml:lang="he">KAppTemplate הוא יישום שמיועד לסייע להתחלת פיתוח במהירות באמצעות תבניות קיימות שמספקות קוד שנכתב שוב ושוב ובמבנה מותאם.</p>
     <p xml:lang="hu">A KAppTemplate egy olyan alkalmazás, amellyel gyorsan elkezdheti a fejlesztést a meglévő sablonok segítségével, amelyek alapvető, többször megírt kódot és megfelelő struktúrát biztosítanak.</p>
+    <p xml:lang="ia">KAppTemplate es un application per initiar a disveloppar rapidemente usante patronos existente que provide codice basic scribite repetitemente e un proprie structura. </p>
     <p xml:lang="id">KAppTemplate adalah sebuah aplikasi untuk memulai pengembangan secara cepat menggunakan template yang ada menyediakan kode yang ditulis secara bertubi-tubi dan struktur yang layak.</p>
     <p xml:lang="it">KAppTemplate è un'applicazione per iniziare velocemente lo sviluppo con modelli preesistenti che forniscono del codice di base che viene spesso ripetuto in una struttura appropriata.</p>
     <p xml:lang="ka">KAppTemplate აპლიკაციაა, რომელიც არსებული შაბლონების გამოყენებით, რომელიც კოდს და მის სწორ სტრუქტურას გაჩვენებთ, პროგრამირებას გასწავლით.</p>
@@ -147,6 +150,7 @@
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="he">יכולות:</p>
     <p xml:lang="hu">Funkciók:</p>
+    <p xml:lang="ia">Characteristicas:</p>
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="ka">თვისებები:</p>
@@ -189,6 +193,7 @@
       <li xml:lang="gl">Modelos para C++, Ruby, Python e PHP.</li>
       <li xml:lang="he">תבניות ל־C++‎,‏ Ruby,‏ Python ו־PHP</li>
       <li xml:lang="hu">Sablonok a C++, Ruby, Python és PHP nyelvekhez</li>
+      <li xml:lang="ia">Patronos per  C++, Ruby, Python e PHP</li>
       <li xml:lang="id">Template untuk C++, Ruby, Python dan PHP</li>
       <li xml:lang="it">Modelli per C++, Ruby, Python e PHP</li>
       <li xml:lang="ka">შაბლონები ენებისთვის C++, Ruby, Python და PHP</li>
@@ -231,6 +236,7 @@
       <li xml:lang="gl">Categorías</li>
       <li xml:lang="he">קטגוריות</li>
       <li xml:lang="hu">Kategóriák</li>
+      <li xml:lang="ia">Categorias</li>
       <li xml:lang="id">Kategori</li>
       <li xml:lang="it">Categorie</li>
       <li xml:lang="ka">კატეგორიები</li>
@@ -271,6 +277,7 @@
       <li xml:lang="gl">Modelos para distintos sistemas de construción e infraestruturas.</li>
       <li xml:lang="he">תבניות למגוון מערכות בנייה ותשתיות</li>
       <li xml:lang="hu">Sablonok különböző összeállító rendszerekhez és keretrendszerekhez</li>
+      <li xml:lang="ia">Patronos per differente systema condttuite (build-systems) e frameworks</li>
       <li xml:lang="id">Template untuk kerangka-kerja dan bangun-sistem yang berbeda</li>
       <li xml:lang="it">Modelli per diversi sistemi di generazione e infrastrutture</li>
       <li xml:lang="ka">შაბლონების სხვადასხვა აგები სისტემებისა და Framework-ებისთვის</li>
@@ -310,6 +317,7 @@
       <li xml:lang="gl">Modelos para o desenvolvemento de KDE (complementos para Plasma, QtQuick, KTextEditor, KRunner, e Akonadi).</li>
       <li xml:lang="he">תבניות ייעודיות לפיתוח KDE (תוספים לפלזמה, QtQuick,‏ KTextEditor,‏ KRunner,‏ Akonadi)</li>
       <li xml:lang="hu">Sablonok kifejezetten KDE fejlesztéshez (Plasma, QtQuick, KTextEditor, KRunner és Akonadi bővítmények)</li>
+      <li xml:lang="ia">Patronos specialemente per disveloppo  de KDE (plugins per Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="id">Template khususnya untuk pengembangan KDE (plugins untuk Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="it">Modelli speciali per lo sviluppo di KDE (estensioni di Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ka">KDE-ის აპლიკაციების შაბლონები (დამატებები Plasma, QtQuick, KTextEditor, KRunner, Akonadi-სთვის)</li>
@@ -345,6 +353,7 @@
       <li xml:lang="gl">É doado crear novos modelos usando marcas e ordes sinxelas de CMake.</li>
       <li xml:lang="he">קל ליצור תבניות חדשות באמצעות ממלאי מקום ופקודת CMake פשוטה</li>
       <li xml:lang="hu">Egyszerű új sablonokat létrehozni a helykitöltők és egy egyszerű CMake-parancs használatával</li>
+      <li xml:lang="ia">Il es facile crear nove patronos usante detentores de spatio e simple commando de CMake</li>
       <li xml:lang="id">Ini mudah untuk menciptakan template baru menggunakan space holders dan perintah CMake yang sederhana</li>
       <li xml:lang="it">È facile creare nuovi modelli con dei segnaposti e un semplice comando di CMake</li>
       <li xml:lang="ka">ახალი შაბლონების ადგილმჭერებისა და მარტივი CMake ბრძანებით შექმნა უადვილესია</li>
@@ -385,6 +394,7 @@
       <li xml:lang="gl">Integrado con KDevelop.</li>
       <li xml:lang="he">משולב בתוך KDevelop</li>
       <li xml:lang="hu">Integrálva a KDevelopba</li>
+      <li xml:lang="ia">Integrate in KDevelop</li>
       <li xml:lang="id">Terintegrasi ke dalam KDevelop</li>
       <li xml:lang="it">Integrato con KDevelop</li>
       <li xml:lang="ka">ინტეგრირებულია KDevelop-ში</li>
