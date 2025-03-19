@@ -109,14 +109,18 @@ void Generator::setVersion(const QString &version)
     Q_EMIT versionChanged();
 }
 
-bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList)
+bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList, bool firstCall)
 {
-    bool failed;
+    bool failed = false;
     qCDebug(KAPPTEMPLATE) << "unpacking dir:" << dir->name() << "to" << dest;
     const QStringList entries = dir->entries();
     qCDebug(KAPPTEMPLATE) << "entries:" << entries.join(",");
 
     QTemporaryDir tdir;
+
+    if (firstCall) {
+        m_newFiles.clear();
+    }
 
     // create path were we want copy files to
     if (!QDir::root().mkpath(dest)) {
@@ -140,15 +144,29 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
             if (!QFileInfo(newdest).exists()) {
                 if (!QDir::root().mkdir(newdest)) {
                     Q_EMIT errorOccurred(i18n("Path %1 could not be created.", newdest));
-                    return false;
+                    failed = true;
+                    break;
                 }
+                m_newFiles.append(newdest);
             }
-            failed = failed & unpackArchive(file, newdest);
+            if (!unpackArchive(file, newdest, skipList, false)) {
+                failed = true;
+                break;
+            }
         } else if (dir->entry(entry)->isFile()) {
             const KArchiveFile *file = dynamic_cast<const KArchiveFile *>(dir->entry(entry));
             file->copyTo(tdir.path());
             QString destName = KMacroExpander::expandMacros(dest + '/' + file->name(), m_variables);
-            if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
+            if (QFile::exists(destName)) {
+                Q_EMIT errorOccurred(
+                    i18n("Could not copy template file to %1, because the file is "
+                         "already exists. The project has not been generated and "
+                         "all temporary files will be removed.",
+                         destName));
+                failed = true;
+                break;
+            } else if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
+                m_newFiles.append(destName);
                 if (!extractFileMacros(destName)) {
                     Q_EMIT errorOccurred(
                         i18n("Failed to integrate your project information into "
@@ -167,8 +185,16 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
     }
 
     if (failed) {
-        if (!QDir(dest).removeRecursively()) {
-            qCDebug(KAPPTEMPLATE) << "Failed to remove incomplete destination directory" << dest;
+        // Delete only newly created files
+        for (int i = m_newFiles.size() - 1; i >= 0; --i) {
+            const QString &dest = m_newFiles[i];
+            QFileInfo fileInfo(dest);
+            if (fileInfo.isDir()) {
+                QDir().rmdir(dest);
+            } else {
+                QFile::remove(dest);
+            }
+            m_newFiles.removeAt(i);
         }
         return false;
     }

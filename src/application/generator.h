@@ -50,7 +50,7 @@ Q_SIGNALS:
     void done(const QString &summary);
 
 private:
-    bool unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList = {});
+    bool unpackArchive(const KArchiveDirectory *dir, const QString &dest, const QStringList &skipList = {}, bool firstCall = true);
     bool extractFileMacros(const QString &entry);
 
     QHash<QString, QString> m_variables;
@@ -60,4 +60,5 @@ private:
     QString m_authorEmail;
     QString m_version;
     QString m_initialCommitMessage;
+    QStringList m_newFiles;
 };
