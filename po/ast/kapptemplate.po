@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-02 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 02:41+0000\n"
 "PO-Revision-Date: 2023-11-05 01:45+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -134,44 +134,51 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr ""
 
-#: src/application/generator.cpp:123
+#: src/application/generator.cpp:127
 #, kde-format
 msgid "%1 cannot be created."
 msgstr ""
 
-#: src/application/generator.cpp:142
+#: src/application/generator.cpp:146
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr ""
 
-#: src/application/generator.cpp:154
+#: src/application/generator.cpp:162
+#, kde-format
+msgid ""
+"Could not copy template file to %1, because the file is already exists. The "
+"project has not been generated and all temporary files will be removed."
+msgstr ""
+
+#: src/application/generator.cpp:172
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:180
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generator.cpp:307
+#: src/application/generator.cpp:333
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 
-#: src/application/generator.cpp:308
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr ""
 
-#: src/application/generator.cpp:309
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr ""
 
-#: src/application/generator.cpp:310
+#: src/application/generator.cpp:336
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

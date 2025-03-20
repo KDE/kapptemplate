@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-02 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 02:41+0000\n"
 "PO-Revision-Date: 2024-12-10 00:24+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -130,17 +130,29 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "생성"
 
-#: src/application/generator.cpp:123
+#: src/application/generator.cpp:127
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1을(를) 만들 수 없습니다."
 
-#: src/application/generator.cpp:142
+#: src/application/generator.cpp:146
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "경로 %1을(를) 만들 수 없습니다."
 
-#: src/application/generator.cpp:154
+#: src/application/generator.cpp:162
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to integrate your project information into the file %1. The "
+#| "project has not been generated and all temporary files will be removed."
+msgid ""
+"Could not copy template file to %1, because the file is already exists. The "
+"project has not been generated and all temporary files will be removed."
+msgstr ""
+"프로젝트 정보를 파일 %1(으)로 통합할 수 없습니다. 프로젝트를 생성하지 않았으"
+"며 임시 파일을 삭제했습니다."
+
+#: src/application/generator.cpp:172
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -149,27 +161,27 @@ msgstr ""
 "프로젝트 정보를 파일 %1(으)로 통합할 수 없습니다. 프로젝트를 생성하지 않았으"
 "며 임시 파일을 삭제했습니다."
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:180
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "템플릿 파일을 %1(으)로 복사할 수 없습니다."
 
-#: src/application/generator.cpp:307
+#: src/application/generator.cpp:333
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "프로젝트 이름: <b>%1</b>, <b>%2</b> 템플릿을 기반으로 합니다.<br />"
 
-#: src/application/generator.cpp:308
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "버전: %1 <br /><br />"
 
-#: src/application/generator.cpp:309
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "설치 경로: %1 <br /><br />"
 
-#: src/application/generator.cpp:310
+#: src/application/generator.cpp:336
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

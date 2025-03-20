@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-02 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 02:41+0000\n"
 "PO-Revision-Date: 2024-08-31 08:49+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -131,17 +131,29 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Generera"
 
-#: src/application/generator.cpp:123
+#: src/application/generator.cpp:127
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 kan inte skapas."
 
-#: src/application/generator.cpp:142
+#: src/application/generator.cpp:146
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Sökvägen %1 kan inte skapas."
 
-#: src/application/generator.cpp:154
+#: src/application/generator.cpp:162
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to integrate your project information into the file %1. The "
+#| "project has not been generated and all temporary files will be removed."
+msgid ""
+"Could not copy template file to %1, because the file is already exists. The "
+"project has not been generated and all temporary files will be removed."
+msgstr ""
+"Misslyckades integrera din projektinformation i filen %1. Projektet har inte "
+"skapats och alla tillfälliga filer kommer att tas bort."
+
+#: src/application/generator.cpp:172
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -150,27 +162,27 @@ msgstr ""
 "Misslyckades integrera din projektinformation i filen %1. Projektet har inte "
 "skapats och alla tillfälliga filer kommer att tas bort."
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:180
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Kunde inte kopiera mallfil till %1"
 
-#: src/application/generator.cpp:307
+#: src/application/generator.cpp:333
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Projektnamnet är: <b>%1</b>, baserat på mallen <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:308
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Version: %1 <br /><br />"
 
-#: src/application/generator.cpp:309
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installeras i: %1 <br /><br />"
 
-#: src/application/generator.cpp:310
+#: src/application/generator.cpp:336
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
