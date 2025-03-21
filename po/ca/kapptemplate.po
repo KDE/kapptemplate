@@ -1,24 +1,24 @@
 # Translation of kapptemplate.po to Catalan
-# Copyright (C) 2008-2024 This_file_is_part_of_KDE
+# Copyright (C) 2008-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2008, 2014, 2015, 2016, 2017, 2020, 2022, 2024 Josep M. Ferrer <txemaq@gmail.com>
 # Manuel Tortosa <manutortosa@gmail.com>, 2009.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2017.
+# Josep M. Ferrer <txemaq@gmail.com>, 2008, 2014, 2015, 2016, 2017, 2020, 2022, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:44+0000\n"
-"PO-Revision-Date: 2024-08-31 12:24+0200\n"
+"PO-Revision-Date: 2025-03-20 09:06+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -146,16 +146,14 @@ msgid "Path %1 could not be created."
 msgstr "No s'ha pogut crear el camí %1."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Ha fallat en integrar la informació del projecte en el fitxer %1. No s'ha "
-"generat el projecte i s'han eliminat tots els fitxers temporals."
+"No s'ha pogut copiar el fitxer de plantilla a %1, perquè el fitxer ja "
+"existeix. El projecte no s'ha generat i s'eliminaran tots els fitxers "
+"temporals."
 
 #: src/application/generator.cpp:172
 #, kde-format
@@ -331,105 +329,3 @@ msgstr "Commuta els colors"
 msgctxt "@title:tab"
 msgid "General"
 msgstr "General"
-
-#~ msgid "Project name:"
-#~ msgstr "Nom del projecte:"
-
-#~ msgid "Choose your project template"
-#~ msgstr "Seleccioneu una plantilla de projectes"
-
-#~ msgid "No sample picture available."
-#~ msgstr "No hi ha cap imatge de mostra disponible."
-
-#~ msgid "Template description"
-#~ msgstr "Descripció de plantilla"
-
-#~ msgid "Generating your project"
-#~ msgstr "S'està generant el projecte"
-
-#~ msgid "Generation Progress\n"
-#~ msgstr "Generació en curs\n"
-
-#~ msgid "Succeeded.\n"
-#~ msgstr "Ha acabat.\n"
-
-#~ msgctxt "@title:window"
-#~ msgid "Error"
-#~ msgstr "Error"
-
-#~ msgctxt "@title:window"
-#~ msgid "KDE and Qt Template Generator"
-#~ msgstr "Generador de plantilles per al KDE i les Qt"
-
-#~ msgid "Set the project properties"
-#~ msgstr "Definició de les propietats del projecte"
-
-#~ msgid "Your project name is: %1"
-#~ msgstr "El nom del projecte és: %1"
-
-#~ msgid "Project's version number"
-#~ msgstr "Número de versió del projecte"
-
-#~ msgid ""
-#~ "Set your project version number. A first project should start with "
-#~ "version 0.1."
-#~ msgstr ""
-#~ "Definiu el número de versió del projecte. Un projecte inicial hauria de "
-#~ "començar amb la versió 0.1."
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
-#~ msgid "0.1"
-#~ msgstr "0.1"
-
-#~ msgid "In&stallation directory:"
-#~ msgstr "Directori d'in&stal·lació:"
-
-#~ msgid "The directory where you will build your project"
-#~ msgstr "El directori a on construireu el projecte"
-
-#~ msgid ""
-#~ "Choose the directory where you will build your project. Your home /src is "
-#~ "a good default location."
-#~ msgstr ""
-#~ "Seleccioneu el directori a on construireu el projecte. El vostre /src "
-#~ "personal és una bona ubicació per defecte."
-
-#~ msgid "Your first name and name"
-#~ msgstr "El vostre nom i cognoms"
-
-#~ msgid "This will set the copyright to this name"
-#~ msgstr "Això establirà el «copyright» a aquest nom"
-
-#~ msgid "Your email address"
-#~ msgstr "L'adreça de correu electrònic"
-
-#~ msgid ""
-#~ "This email address will be next to your name in the copyright credit of "
-#~ "the project files."
-#~ msgstr ""
-#~ "Aquesta adreça de correu electrònic està al costat del nom en el crèdit "
-#~ "del «copyright» dels fitxers del projecte."
-
-#~ msgctxt "Do not translate"
-#~ msgid "Description"
-#~ msgstr "Description"
-
-#~ msgid ""
-#~ "The extraction of your personal information in file %1 was not successful"
-#~ msgstr ""
-#~ "No s'ha pogut fer l'extracció de la vostra informació personal del fitxer "
-#~ "%1"
-
-#~ msgid "The file %1 cannot be created."
-#~ msgstr "No s'ha pogut crear el fitxer %1."
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "The file %1 cannot be created."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "No s'ha pogut crear el fitxer %1."
