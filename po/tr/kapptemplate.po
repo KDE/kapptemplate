@@ -5,13 +5,13 @@
 # H. İbrahim Güngör <ibrahim@pardus.org.tr>, 2011.
 # obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
 # Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesdk-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 02:41+0000\n"
-"PO-Revision-Date: 2024-09-01 19:38+0300\n"
+"PO-Revision-Date: 2025-03-20 15:26+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -145,16 +145,13 @@ msgid "Path %1 could not be created."
 msgstr "%1 yolu oluşturulamadı."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Proje bilgileriniz %1 dosyasıyla bütünleştirilemedi. Proje oluşturulamadı ve "
-"tüm geçici dosyalar silindi."
+"Şablon dosyası %1 konumuna kopyalanamadı; çünkü dosya halihazırda var. Proje "
+"üretilmedi ve tüm geçici dosyalar kaldırılacak."
 
 #: src/application/generator.cpp:172
 #, kde-format

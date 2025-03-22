@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kapptemplate package.
 #
-# SPDX-FileCopyrightText: 2023, 2024 giovanni <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 02:41+0000\n"
-"PO-Revision-Date: 2024-09-02 14:59+0200\n"
+"PO-Revision-Date: 2025-03-21 18:21+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -141,16 +141,13 @@ msgid "Path %1 could not be created."
 msgstr "Percurso %1 non poteva esser create"
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Il falleva a integrar tu information de projecto in le file %1. Le projecto "
-"non ha essite generate e omne files temporanee esswera removite."
+"Non poteva copiar file patrono a %1, perque le file ja existe. Le projecto "
+"non ha essite generate e omne files temporanee essera removite."
 
 #: src/application/generator.cpp:172
 #, kde-format
@@ -159,7 +156,7 @@ msgid ""
 "has not been generated and all temporary files will be removed."
 msgstr ""
 "Il falleva a integrar tu information de projecto in le file %1. Le projecto "
-"non ha essite generate e omne files temporanee esswera removite."
+"non ha essite generate e omne files temporanee essera removite."
 
 #: src/application/generator.cpp:180
 #, kde-format
