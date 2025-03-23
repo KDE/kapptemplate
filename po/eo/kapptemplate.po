@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:44+0000\n"
-"PO-Revision-Date: 2024-12-29 19:47+0100\n"
+"PO-Revision-Date: 2025-03-22 22:36+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -142,16 +142,13 @@ msgid "Path %1 could not be created."
 msgstr "Vojo %1 ne povis esti kreita."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Malsukcesis integri viajn projektajn informojn en la dosieron %1. La "
-"projekto ne estis kreita kaj ĉiuj provizoraj dosieroj estos forigitaj."
+"Ne eblis kopii ŝablondosieron al %1 ĉar la dosiero jam ekzistas. La projekto "
+"ne estis kreita kaj ĉiuj provizoraj dosieroj estos forigitaj."
 
 #: src/application/generator.cpp:172
 #, kde-format

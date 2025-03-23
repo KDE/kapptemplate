@@ -7,14 +7,14 @@
 # Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2008.
 # Joëlle Cornavin <jcorn@free.fr>, 2009, 2012.
 # Anne-Marie Mahfouf <annemarie.mahfouf@free.fr>, 2009.
-# SPDX-FileCopyrightText: 2013, 2020, 2024 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2013, 2020, 2024, 2025 Xavier Besnard <xavier.besnard@kde.org>
 # Simon Depiets <sdepiets@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:44+0000\n"
-"PO-Revision-Date: 2024-09-01 10:23+0200\n"
+"PO-Revision-Date: 2025-03-21 12:03+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 "X-Text-Markup: kde4\n"
 
 #, kde-format
@@ -152,16 +152,13 @@ msgid "Path %1 could not be created."
 msgstr "Impossible de créer l'emplacement %1."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Impossible d'intégrer les informations de votre projet dans le fichier %1. "
-"Le projet n'a pas été généré et tous les fichiers temporaires seront "
+"Impossible de copier le fichier de modèle vers %1 car le fichier existe "
+"déjà. Le projet n'a pas été généré et tous les fichiers temporaires seront "
 "supprimés."
 
 #: src/application/generator.cpp:172

@@ -146,6 +146,8 @@ msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
+"无法复制模板文件到 %1，因为该文件已存在。项目没有被生成，所有临时文件都将被移"
+"除。"
 
 #: src/application/generator.cpp:172
 #, kde-format
