@@ -1,17 +1,17 @@
 # Translation for kapptemplate.po to Euskara/Basque (eu).
 # Copyright (C) 2018, Free Software Foundation.
-# Copyright (C) 2019-2024 This file is copyright:
+# Copyright (C) 2019-2025 This file is copyright:
 # This file is distributed under the same license as the kapptemplate package.
-# SPDX-FileCopyrightText: 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2018, 2020, 2024.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2018, 2020, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 02:41+0000\n"
-"PO-Revision-Date: 2024-08-31 08:09+0200\n"
+"PO-Revision-Date: 2025-03-22 15:21+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -145,16 +145,14 @@ msgid "Path %1 could not be created."
 msgstr "%1 bide-izena ezin izan da sortu."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Huts egin du zure proiektuaren informazioa %1 fitxategira bateratzea. "
-"Proiektua ez da sortu eta aldi baterako fitxategi guztiak kenduko dira."
+"Ezin izan du txantiloi-fitxategia %1(e)ra kopiatu, fitxategia jada "
+"badagoelako. Proiektua ez da sortu eta aldi baterako fitxategi guztiak "
+"kenduko dira."
 
 #: src/application/generator.cpp:172
 #, kde-format
