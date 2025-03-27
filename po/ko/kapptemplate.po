@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 02:41+0000\n"
+"POT-Creation-Date: 2025-03-27 02:38+0000\n"
 "PO-Revision-Date: 2024-12-10 00:24+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -166,22 +166,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "템플릿 파일을 %1(으)로 복사할 수 없습니다."
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, fuzzy, kde-format
+#| msgid "Could not copy template file to %1."
+msgid "Could not load template archive for %1."
+msgstr "템플릿 파일을 %1(으)로 복사할 수 없습니다."
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "프로젝트 이름: <b>%1</b>, <b>%2</b> 템플릿을 기반으로 합니다.<br />"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "버전: %1 <br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "설치 경로: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

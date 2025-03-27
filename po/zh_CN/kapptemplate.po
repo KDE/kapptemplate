@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 02:41+0000\n"
+"POT-Creation-Date: 2025-03-27 02:38+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -162,22 +162,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, fuzzy, kde-format
+#| msgid "Could not copy template file to %1."
+msgid "Could not load template archive for %1."
+msgstr "无法复制模板文件到 %1。"
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "您的项目名称是：<b>%1</b>，基于 <b>%2</b> 模板。<br />"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "版本：%1 <br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "安装在：%1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 02:41+0000\n"
+"POT-Creation-Date: 2025-03-27 02:38+0000\n"
 "PO-Revision-Date: 2025-03-22 15:21+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -168,24 +168,30 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "Ezin izan da kopiatu txantiloi fitxategia %1-(e)ra."
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, fuzzy, kde-format
+#| msgid "Could not copy template file to %1."
+msgid "Could not load template archive for %1."
+msgstr "Ezin izan da kopiatu txantiloi fitxategia %1-(e)ra."
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Zure proiektuaren izana da: <b>%1</b>, <b>%2</b> txantiloian oinarritua.<br /"
 ">"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Bertsioa: %1 <br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Hemen instalatua: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
