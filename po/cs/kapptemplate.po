@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:44+0000\n"
+"POT-Creation-Date: 2025-03-27 00:44+0000\n"
 "PO-Revision-Date: 2024-09-02 16:11+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -160,23 +160,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, kde-format
+msgid "Could not load template archive for %1."
+msgstr ""
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Název vašeho projektu je: <b>%1 </b>, založen na šabloně <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Verze: %1 <br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Nainstalováno v: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:44+0000\n"
+"POT-Creation-Date: 2025-03-27 00:44+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -168,22 +168,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "%1 इत्यत्र टेम्पलेट् सञ्चिकां प्रतिलिखितुं न शक्यते ।"
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, fuzzy, kde-format
+#| msgid "Could not copy template file to %1."
+msgid "Could not load template archive for %1."
+msgstr "%1 इत्यत्र टेम्पलेट् सञ्चिकां प्रतिलिखितुं न शक्यते ।"
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "भवतः परियोजनानाम अस्ति: <b>%1</b> , <b>%2</b> टेम्पलेट् इत्यस्य आधारेण ।<br />"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "संस्करणम् : %1<br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "संस्थापितम्: %1<br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

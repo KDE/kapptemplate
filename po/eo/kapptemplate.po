@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:44+0000\n"
+"POT-Creation-Date: 2025-03-27 00:44+0000\n"
 "PO-Revision-Date: 2025-03-22 22:36+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -164,23 +164,29 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "Ne eblis kopii ŝablondosieron al %1."
 
-#: src/application/generator.cpp:333
+#: src/application/generator.cpp:247
+#, fuzzy, kde-format
+#| msgid "Could not copy template file to %1."
+msgid "Could not load template archive for %1."
+msgstr "Ne eblis kopii ŝablondosieron al %1."
+
+#: src/application/generator.cpp:334
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Via projektnomo estas: <b>%1</b>, bazita sur la ŝablono <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:335
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versio: %1 <br /><br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:336
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Instalita en: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:337
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
