@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-20 07:26+0100\n"
+"PO-Revision-Date: 2025-03-27 07:00+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -167,10 +167,9 @@ msgid "Could not copy template file to %1."
 msgstr "Ni bilo mogoče kopirati datoteke predloge v %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Ni bilo mogoče kopirati datoteke predloge v %1."
+msgstr "Ni bilo mogoče naložiti arhiva predloge za %1."
 
 #: src/application/generator.cpp:334
 #, kde-format

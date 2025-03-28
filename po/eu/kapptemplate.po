@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-22 15:21+0100\n"
+"PO-Revision-Date: 2025-03-27 18:40+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -169,10 +169,9 @@ msgid "Could not copy template file to %1."
 msgstr "Ezin izan da kopiatu txantiloi fitxategia %1-(e)ra."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Ezin izan da kopiatu txantiloi fitxategia %1-(e)ra."
+msgstr "Ezin izan du %1(e)ren txantiloi-fitxategia zamatu."
 
 #: src/application/generator.cpp:334
 #, kde-format

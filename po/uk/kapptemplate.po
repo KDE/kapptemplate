@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-20 09:57+0200\n"
+"PO-Revision-Date: 2025-03-27 08:58+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -167,10 +167,9 @@ msgid "Could not copy template file to %1."
 msgstr "Не вдалося скопіювати файл шаблона до %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Не вдалося скопіювати файл шаблона до %1."
+msgstr "Не вдалося завантажити архів шаблону для %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
