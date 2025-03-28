@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 02:38+0000\n"
-"PO-Revision-Date: 2025-03-20 12:24+0100\n"
+"PO-Revision-Date: 2025-03-27 13:50+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -168,10 +168,9 @@ msgid "Could not copy template file to %1."
 msgstr "Kon sjabloonbestand niet kopiëren naar %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Kon sjabloonbestand niet kopiëren naar %1."
+msgstr "Kon sjabloonarchief niet laden voor %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
