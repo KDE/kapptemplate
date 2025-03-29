@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-20 20:27+0200\n"
+"PO-Revision-Date: 2025-03-28 22:27+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -164,10 +164,9 @@ msgid "Could not copy template file to %1."
 msgstr "לא ניתן להעתיק את קובץ התבנית אל %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "לא ניתן להעתיק את קובץ התבנית אל %1."
+msgstr "לא ניתן לטעון את ארכיון התבנית עבור %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
