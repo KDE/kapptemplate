@@ -163,10 +163,9 @@ msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "无法复制模板文件到 %1。"
+msgstr ""
 
 #: src/application/generator.cpp:334
 #, kde-format
