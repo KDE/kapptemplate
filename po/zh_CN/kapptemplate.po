@@ -165,7 +165,7 @@ msgstr "无法复制模板文件到 %1。"
 #: src/application/generator.cpp:247
 #, kde-format
 msgid "Could not load template archive for %1."
-msgstr ""
+msgstr "无法加载 %1 的模板压缩包。"
 
 #: src/application/generator.cpp:334
 #, kde-format
