@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 02:38+0000\n"
-"PO-Revision-Date: 2025-03-26 17:17+0100\n"
+"PO-Revision-Date: 2025-03-31 20:50+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -165,10 +165,9 @@ msgid "Could not copy template file to %1."
 msgstr "Kunde inte kopiera mallfil till %1"
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Kunde inte kopiera mallfil till %1"
+msgstr "Kunde inte läsa in mallarkiv för %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
