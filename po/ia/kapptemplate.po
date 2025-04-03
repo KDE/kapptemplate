@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-20 18:24+0100\n"
+"PO-Revision-Date: 2025-04-02 15:15+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -164,10 +164,9 @@ msgid "Could not copy template file to %1."
 msgstr "Nonpoteva copiar file de patrono a %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Nonpoteva copiar file de patrono a %1."
+msgstr "Non poteva cargar archivo de patrono per %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
