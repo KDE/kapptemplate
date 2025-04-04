@@ -4,20 +4,20 @@
 #
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2024-09-05 15:18+0300\n"
-"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-04-02 19:09+0300\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -145,16 +145,13 @@ msgid "Path %1 could not be created."
 msgstr "Neizdevās izveidot ceļu „%1“."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Neizdevās integrēt projekta informāciju datnē „%1“. Projekts nav ģenerēts un "
-"visas pagaidu datnes tiks noņemtas."
+"Neizdevās nokopēt veidnes datni uz „%1“, jo datne jau pastāv. Projekts nav "
+"ģenerēts un visas pagaidu datnes tiks noņemtas."
 
 #: src/application/generator.cpp:172
 #, kde-format
@@ -171,10 +168,9 @@ msgid "Could not copy template file to %1."
 msgstr "Neizdevās nokopēt sagataves datni uz „%1“."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Neizdevās nokopēt sagataves datni uz „%1“."
+msgstr "Neizdevās ielādēt „%1“ veidnes arhīvu."
 
 #: src/application/generator.cpp:334
 #, kde-format
