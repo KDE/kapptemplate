@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-26 11:09+0100\n"
+"PO-Revision-Date: 2025-04-08 10:34+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -167,10 +167,9 @@ msgid "Could not copy template file to %1."
 msgstr "Non è stato possibile copiare il file del modello in «%1»."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Non è stato possibile copiare il file del modello in «%1»."
+msgstr "Impossibile caricare l'archivio del modello per %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
