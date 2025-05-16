@@ -1,12 +1,12 @@
 # KDE Finnish translation sprint participants:
-# SPDX-FileCopyrightText: 2022, 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Tommi Nieminen <translator@legisign.org>
 # Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 02:38+0000\n"
-"PO-Revision-Date: 2024-10-20 21:11+0300\n"
+"PO-Revision-Date: 2025-04-20 10:30+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -140,16 +140,13 @@ msgid "Path %1 could not be created."
 msgstr "Kansiopolun %1 luonti epäonnistui."
 
 #: src/application/generator.cpp:162
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to integrate your project information into the file %1. The "
-#| "project has not been generated and all temporary files will be removed."
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Projektitietojen integrointi tiedostoon %1 epäonnistui. Projektia ei ole "
-"luotu ja väliaikaistiedostot poistetaan."
+"Mallipohjatiedostoa ei voitu kopioida kohteeseen %1, koska tiedosto on jo "
+"olemassa. Projektia ei luotu, ja kaikki väliaikaistiedostot poistetaan."
 
 #: src/application/generator.cpp:172
 #, kde-format
@@ -166,10 +163,9 @@ msgid "Could not copy template file to %1."
 msgstr "Mallitiedoston kopiointi sijaintiin %1 epäonnistui."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Mallitiedoston kopiointi sijaintiin %1 epäonnistui."
+msgstr "Kohteelle %1 ei voitu ladata mallipohja-arkistoa."
 
 #: src/application/generator.cpp:334
 #, kde-format
