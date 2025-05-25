@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-27 02:38+0000\n"
-"PO-Revision-Date: 2025-03-22 12:41+0100\n"
+"PO-Revision-Date: 2025-05-24 08:37+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -169,10 +169,9 @@ msgid "Could not copy template file to %1."
 msgstr "Nie można skopiować pliku wzorca do %1."
 
 #: src/application/generator.cpp:247
-#, fuzzy, kde-format
-#| msgid "Could not copy template file to %1."
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Nie można skopiować pliku wzorca do %1."
+msgstr "Nie można wczytać wzorca archiwum dla %1."
 
 #: src/application/generator.cpp:334
 #, kde-format
