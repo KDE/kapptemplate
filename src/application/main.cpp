@@ -20,7 +20,9 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickStyle>
+#include <QRegularExpression>
 
+#include "generator.h"
 #include "kapptemplate_version.h"
 #include "logging.h"
 #include "previewimageprovider.h"
@@ -64,11 +66,51 @@ int main(int argc, char **argv)
         QQuickStyle::setFallbackStyle(u"Fusion"_s);
     }
 
-    QCommandLineParser parser;
-    about.setupCommandLine(&parser);
+    {
+        QCommandLineParser parser;
+        parser.addPositionalArgument("name", "Name of the generated project");
+        parser.addPositionalArgument("location", "Path where to generate the project");
+        parser.addPositionalArgument("author", "Name");
+        parser.addPositionalArgument("e-mail", "Mail");
+        parser.addPositionalArgument("version", "Version");
+        parser.addPositionalArgument("template", "Which template to use");
+        QCommandLineOption optionList("list-templates");
+        parser.addOption(optionList);
+        about.setupCommandLine(&parser);
+        parser.process(application);
+        about.processCommandLine(&parser);
 
-    parser.process(application);
-    about.processCommandLine(&parser);
+        if (parser.isSet(optionList)) {
+            const auto templates = Generator::templates();
+            for (const auto &templateName : templates) {
+                QTextStream(stdout) << templateName << Qt::endl;
+            }
+            return 0;
+        } else if (const auto args = parser.positionalArguments(); !args.isEmpty()) {
+            if (args.size() != 6) {
+                QTextStream(stderr) << "Wrong number of args: " << args.size() << Qt::endl;
+                return 1;
+            }
+            int ret = 0;
+            Generator generator;
+            QObject::connect(&generator, &Generator::done, &application, [](QString summary) {
+                summary.replace(QLatin1StringView("<br />"), QLatin1StringView("\n"));
+                summary.replace(QRegularExpression("<.*/?>"), QString());
+                QTextStream(stdout) << summary << Qt::endl;
+            });
+            QObject::connect(&generator, &Generator::errorOccurred, &application, [&ret](const QString &error) {
+                ret = 1;
+                QTextStream(stderr) << error << Qt::endl;
+            });
+            generator.setName(args[0]);
+            generator.setLocation(args[1]);
+            generator.setAuthorName(args[2]);
+            generator.setAuthorEmail(args[3]);
+            generator.setVersion(args[4]);
+            generator.startGeneration(args[5], args[5]);
+            return ret;
+        }
+    }
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));

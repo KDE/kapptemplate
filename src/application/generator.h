@@ -35,6 +35,8 @@ public:
     void setAuthorEmail(const QString &authorEmail);
     void setVersion(const QString &version);
 
+    static QStringList templates();
+
 public Q_SLOTS:
     void startGeneration(const QString &templateName, const QString &generator);
 
