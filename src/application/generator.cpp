@@ -220,6 +220,24 @@ bool Generator::extractFileMacros(const QString &entry)
     return false;
 }
 
+QStringList templateDirs()
+{
+    return QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+}
+
+QStringList Generator::templates()
+{
+    QStringList ret;
+    const QStringList templatePaths = templateDirs();
+    for (const QString &templatePath : templatePaths) {
+        const auto templateArchives = QDir(templatePath).entryInfoList(QDir::Files);
+        for (const auto &templateArchive : templateArchives) {
+            ret << templateArchive.baseName();
+        }
+    }
+    return ret;
+}
+
 void Generator::startGeneration(const QString &templateName, const QString &displayName)
 {
     Prefs::setAppVersion(m_version);
@@ -230,14 +248,13 @@ void Generator::startGeneration(const QString &templateName, const QString &disp
     Prefs::self()->save();
 
     QString archName;
-    const QStringList templatePaths =
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "kdevappwizard/templates/", QStandardPaths::LocateDirectory);
+    const QStringList templatePaths = templateDirs();
     for (const QString &templatePath : templatePaths) {
-        const auto templateArchives = QDir(templatePath).entryList(QDir::Files);
-        for (const QString &templateArchive : templateArchives) {
-            const QString baseName = QFileInfo(templateArchive).baseName();
+        const auto templateArchives = QDir(templatePath).entryInfoList(QDir::Files);
+        for (const auto &templateArchive : templateArchives) {
+            const QString baseName = templateArchive.baseName();
             if (templateName.compare(baseName) == 0) {
-                archName = templatePath + templateArchive;
+                archName = templateArchive.absoluteFilePath();
                 break;
             }
         }
