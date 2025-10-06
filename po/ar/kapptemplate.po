@@ -1,0 +1,326 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kapptemplate package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kapptemplate\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-03-27 00:44+0000\n"
+"PO-Revision-Date: 2025-10-05 14:01+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "زايد السعيدي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zayed.alsaidi@gmail.com"
+
+#: src/application/apptemplatesmodel.cpp:161
+#, kde-format
+msgctxt "@title:column"
+msgid "Templates Projects"
+msgstr "مشاريع القوالب"
+
+#: src/application/ChoicePage.qml:16
+#, kde-format
+msgctxt "@title"
+msgid "Choose Template"
+msgstr "اختر قالباً"
+
+#: src/application/ChoicePage.qml:26
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Install Template From File"
+msgstr "ثبِّت القالب من ملف"
+
+#: src/application/ChoicePage.qml:33
+#, kde-format
+msgctxt "file dialog name filter"
+msgid "Archive Files (*.tar.bz2 *.zip)"
+msgstr "ملفات الأرشيف (*.tar.bz2 *.zip)"
+
+#: src/application/ChoicePage.qml:96
+#, kde-format
+msgctxt "@title"
+msgid "No Template Selected"
+msgstr "لا قالب محدد"
+
+#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/GeneratorPage.qml:67
+#, kde-format
+msgctxt "@action:button Go to the previous page"
+msgid "Previous"
+msgstr "السابق"
+
+#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
+#, kde-format
+msgctxt "@action:button Go to the next page"
+msgid "Next"
+msgstr "التالي"
+
+#: src/application/ConfigurePage.qml:15
+#, kde-format
+msgctxt "@title"
+msgid "Configure"
+msgstr "اضبط"
+
+#: src/application/ConfigurePage.qml:25
+#, kde-format
+msgctxt "@title:group"
+msgid "General"
+msgstr "عام"
+
+#: src/application/ConfigurePage.qml:32
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr "الاسم:"
+
+#: src/application/ConfigurePage.qml:44
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "الموقع:"
+
+#: src/application/ConfigurePage.qml:45
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No folder selected"
+msgstr "لا مجلد محدد"
+
+#: src/application/ConfigurePage.qml:57
+#, kde-format
+msgctxt "@title:group"
+msgid "Metadata"
+msgstr "البيانات الوصفية"
+
+#: src/application/ConfigurePage.qml:62
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Version:"
+msgstr "الإصدار:"
+
+#: src/application/ConfigurePage.qml:70
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Author name:"
+msgstr "اسم المؤلف:"
+
+#: src/application/ConfigurePage.qml:78
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Author email:"
+msgstr "بريد المؤلف الإلكتروني:"
+
+#: src/application/ConfigurePage.qml:93
+#, kde-format
+msgctxt "@action:button Generate the application"
+msgid "Generate"
+msgstr "ولِّد"
+
+#: src/application/generator.cpp:127
+#, kde-format
+msgid "%1 cannot be created."
+msgstr "لا أستطيع إنشاء %1."
+
+#: src/application/generator.cpp:146
+#, kde-format
+msgid "Path %1 could not be created."
+msgstr "لا أستطيع إنشاء المسار %1."
+
+#: src/application/generator.cpp:162
+#, kde-format
+msgid ""
+"Could not copy template file to %1, because the file is already exists. The "
+"project has not been generated and all temporary files will be removed."
+msgstr ""
+"لا أستطيع نسخ ملف القالب إلى %1، لأن الملف موجود بالفعل. لم يجري توليد "
+"المشروع و ستُزال جميع الملفات المؤقتة."
+
+#: src/application/generator.cpp:172
+#, kde-format
+msgid ""
+"Failed to integrate your project information into the file %1. The project "
+"has not been generated and all temporary files will be removed."
+msgstr ""
+"فشل دمج معلومات مشروعك في الملف %1. لم يجري توليد المشروع و ستُزال جميع "
+"الملفات المؤقتة."
+
+#: src/application/generator.cpp:180
+#, kde-format
+msgid "Could not copy template file to %1."
+msgstr "لا أستطيع نسخ ملف القالب إلى %1."
+
+#: src/application/generator.cpp:247
+#, kde-format
+msgid "Could not load template archive for %1."
+msgstr "لا أستطيع تحميل أرشيف القالب لـ %1."
+
+#: src/application/generator.cpp:334
+#, kde-format
+msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
+msgstr "اسم مشروعك هو: <b>%1</b>، مستنداً على القالب <b>%2</b>.<br />"
+
+#: src/application/generator.cpp:335
+#, kde-format
+msgid "Version: %1 <br /><br />"
+msgstr "الإصدار: %1 <br /><br />"
+
+#: src/application/generator.cpp:336
+#, kde-format
+msgid "Installed in: %1 <br /><br />"
+msgstr "ثُبِّت في: %1 <br /><br />"
+
+#: src/application/generator.cpp:337
+#, kde-format
+msgid ""
+"You will find a README in your project folder <b>%1</b><br /> to help you "
+"get started with your project."
+msgstr ""
+"ستجد ملف README في مجلد مشروعك <b>%1</b><br /> ليساعدك على البدء بمشروعك."
+
+#: src/application/GeneratorPage.qml:16
+#, kde-format
+msgctxt "@title"
+msgid "Project Generation"
+msgstr "توليد المشروع"
+
+#: src/application/GeneratorPage.qml:73
+#, kde-format
+msgctxt "@action:button Close the application"
+msgid "Close"
+msgstr "أغلِق"
+
+#: src/application/IntroductionPage.qml:13
+#, kde-format
+msgctxt "@title"
+msgid "Introduction"
+msgstr "مقدمة"
+
+#: src/application/IntroductionPage.qml:19
+#, kde-format
+msgid ""
+"This wizard will help you generate a new project to get started with Qt and "
+"KDE development."
+msgstr "سيساعدك هذا المعالج على توليد مشروع جديد لتبدأ بتطوير Qt و KDE."
+
+#. i18n: ectx: label, entry (appName), group (Project)
+#: src/application/kapptemplate.kcfg:11
+#, kde-format
+msgid "Name of the project"
+msgstr "اسم المشروع"
+
+#. i18n: ectx: label, entry (appVersion), group (Project)
+#: src/application/kapptemplate.kcfg:15
+#, kde-format
+msgid "Project version"
+msgstr "إصدار المشروع"
+
+#. i18n: ectx: label, entry (url), group (Project)
+#: src/application/kapptemplate.kcfg:19
+#, kde-format
+msgid "Home dir of the user"
+msgstr "دليل المستخدم الرئيسي"
+
+#. i18n: ectx: label, entry (name), group (User)
+#: src/application/kapptemplate.kcfg:27
+#, kde-format
+msgid "Name of the user"
+msgstr "اسم المستخدم"
+
+#. i18n: ectx: label, entry (email), group (User)
+#: src/application/kapptemplate.kcfg:38
+#, kde-format
+msgid "Email of the user"
+msgstr "بريد المستخدم الإلكتروني"
+
+#: src/application/main.cpp:40
+#, kde-format
+msgid "KAppTemplate"
+msgstr "KAppTemplate"
+
+#: src/application/main.cpp:42
+#, kde-format
+msgid "KAppTemplate is a KDE project template generator"
+msgstr "KAppTemplate هو مولّد قوالب مشاريع KDE"
+
+#: src/application/main.cpp:44
+#, kde-format
+msgid "(C) 2008 Anne-Marie Mahfouf"
+msgstr "(C) 2008 آن-ماري محفوف"
+
+#: src/application/main.cpp:48
+#, kde-format
+msgid "Anne-Marie Mahfouf"
+msgstr "آن-ماري محفوف"
+
+#: src/application/main.cpp:49
+#, kde-format
+msgid "Sean Wilson"
+msgstr "شون ويلسون"
+
+#: src/application/main.cpp:49
+#, kde-format
+msgid "Icons from Oxygen Team icons"
+msgstr "أيقونات من أيقونات فريق Oxygen"
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:25
+#: src/templates/C++/kde-frameworks6/src/main.cpp:32
+#, kde-format
+msgid "%{APPNAME}"
+msgstr "%{APPNAME}"
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:27
+#: src/templates/C++/kde-frameworks6/src/main.cpp:34
+#, kde-format
+msgid "A Simple Application written with KDE Frameworks"
+msgstr "تطبيق بسيط مكتوب بإطارات عمل KDE"
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:29
+#: src/templates/C++/kde-frameworks6/src/main.cpp:36
+#, kde-format
+msgid "Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"
+msgstr "حقوق النسخ %{CURRENT_YEAR}، %{AUTHOR} <%{EMAIL}>"
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
+#, kde-format
+msgid "%{AUTHOR}"
+msgstr "%{AUTHOR}"
+
+#: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
+#: src/templates/C++/kde-frameworks6/src/main.cpp:38
+#, kde-format
+msgid "Author"
+msgstr "المؤلف"
+
+#. i18n : internationalization
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
+#, kde-format
+msgid "This project is %1 days old"
+msgstr "هذا المشروع عمره %1 يوماً"
+
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
+#, kde-format
+msgctxt "@action"
+msgid "Switch Colors"
+msgstr "بدّل الألوان"
+
+#: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:62
+#, kde-format
+msgctxt "@title:tab"
+msgid "General"
+msgstr "عام"
