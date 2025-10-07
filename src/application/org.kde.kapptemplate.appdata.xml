@@ -7,6 +7,7 @@
     <name translate="no">KDE</name>
   </developer>
   <name>KAppTemplate</name>
+  <name xml:lang="ar">KAppTemplate</name>
   <name xml:lang="ast">KAppTemplate</name>
   <name xml:lang="bs">KAppTemplate</name>
   <name xml:lang="ca">KAppTemplate</name>
@@ -50,6 +51,7 @@
   <name xml:lang="zh-CN">KAppTemplate</name>
   <name xml:lang="zh-TW">KAppTemplate</name>
   <summary>App Code Template Generator</summary>
+  <summary xml:lang="ar">مولِّد قوالب شيفرة التطبيق</summary>
   <summary xml:lang="ca">Generador de plantilles de codi d'aplicació</summary>
   <summary xml:lang="ca-valencia">Generador de plantilles de codi d'aplicació</summary>
   <summary xml:lang="cs">Generátor šablon App Code</summary>
@@ -89,6 +91,7 @@
       KAppTemplate is an application to start development quickly using existing templates providing basic
       repeatedly written code and a proper structure.
     </p>
+    <p xml:lang="ar">KAppTemplate هو تطبيق لتبدأ التطوير بسرعة باستخدام قوالب موجودة توفِّر شيفرة أساسية متكررة الكتابة وهيكلًا مناسبًا.</p>
     <p xml:lang="ca">El KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament usant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="ca-valencia">KAppTemplate és una aplicació per a iniciar ràpidament el desenvolupament utilitzant les plantilles existents que proporcionen codi bàsic escrit i una estructura adequada.</p>
     <p xml:lang="de">KAppTemplate ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</p>
@@ -127,6 +130,7 @@
     <p xml:lang="zh-CN">KAppTemplate 是使用已有模板开始快速开发的应用程序，它提供了可重用的代码和良好的结构。</p>
     <p xml:lang="zh-TW">KAppTemplate 是一套讓您用現有的樣本快速開發的應用程式。樣本裡已包括基本常用的程式碼，以及適當的程式結構。</p>
     <p>Features:</p>
+    <p xml:lang="ar">الميزات:</p>
     <p xml:lang="bs">Svojstva:</p>
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="ca-valencia">Característiques:</p>
@@ -170,6 +174,7 @@
     <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Templates for C++, Ruby, Python and PHP</li>
+      <li xml:lang="ar">قوالب لـ C++ و Ruby و Python و PHP</li>
       <li xml:lang="ca">Plantilles per a C++, Ruby, Python i PHP</li>
       <li xml:lang="ca-valencia">Plantilles per a C++, Ruby, Python i PHP</li>
       <li xml:lang="cs">Šablony pro C++, Ruby, Python a PHP</li>
@@ -209,6 +214,7 @@
       <li xml:lang="zh-CN">C++，Ruby，Python 和 PHP 的模板</li>
       <li xml:lang="zh-TW">C++, Ruby, Python 與 PHP 的樣本</li>
       <li>Categories</li>
+      <li xml:lang="ar">الفئات</li>
       <li xml:lang="bs">Kategorije</li>
       <li xml:lang="ca">Categories</li>
       <li xml:lang="ca-valencia">Categories</li>
@@ -251,6 +257,7 @@
       <li xml:lang="zh-CN">分类</li>
       <li xml:lang="zh-TW">類別</li>
       <li>Templates for different build-systems and frameworks</li>
+      <li xml:lang="ar">قوالب لأنظمة بناء وأطر عمل مختلفة</li>
       <li xml:lang="ca">Plantilles per a sistemes de construcció i marcs de treball diferents</li>
       <li xml:lang="ca-valencia">Plantilles per a sistemes de construcció i marcs de treball diferents</li>
       <li xml:lang="de">Vorlagen für verschiedene Erstellungs-Systeme und Frameworks</li>
@@ -289,6 +296,7 @@
       <li xml:lang="zh-CN">不同构建系统和框架的模板</li>
       <li xml:lang="zh-TW">不同編譯系統與框架的樣本</li>
       <li>Templates especially for KDE-development (plugins for Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
+      <li xml:lang="ar">قوالب خصوصًا لتطوير كيدي (ملحقات لـ Plasma و QtQuick و KTextEditor و KRunner و Akonadi)</li>
       <li xml:lang="ca">Plantilles pel desenvolupament del KDE especialment (connectors pel Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="ca-valencia">Plantilles pel desenvolupament de KDE especialment (connectors per Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
       <li xml:lang="de">Spezielle Vorlagen für KDE-Entwicklung (Module für Plasma, QtQuick, KTextEditor, KRunner, Akonadi)</li>
@@ -323,6 +331,7 @@
       <li xml:lang="zh-CN">专为 KDE 开发使用的模板 (Plasma 插件，QtOffice，KTextEditor，KRunner，Akonadi)</li>
       <li xml:lang="zh-TW">特別是 KDE 開發使用的樣本（如 Plasma, QtQuick, KTextEditor, KRunner, Akonadi 等）</li>
       <li>It is easy to create new templates using space holders and a simple CMake-command</li>
+      <li xml:lang="ar">يسهل إنشاء قوالب جديدة باستخدام حوامل المساحات وأمر CMake بسيط</li>
       <li xml:lang="ca">És fàcil crear plantilles noves usant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="ca-valencia">És fàcil crear plantilles noves utilitzant espais variables i una ordre CMake senzilla</li>
       <li xml:lang="de">Neue Vorlagen können leicht mit Platzhaltern und einfachen CMake-Befehlen erstellt werden</li>
@@ -361,6 +370,7 @@
       <li xml:lang="zh-CN">创建新模板非常简单，只需使用占位符和简单的 CMake 命令</li>
       <li xml:lang="zh-TW">只要用空間符與簡單的 CMake 指令即可建立新的樣本</li>
       <li>Integrated into KDevelop</li>
+      <li xml:lang="ar">مُدمَج في مطورك KDevelop</li>
       <li xml:lang="ca">S'integra en el KDevelop</li>
       <li xml:lang="ca-valencia">S'integra en KDevelop</li>
       <li xml:lang="da">Integreret med KDevelop</li>
