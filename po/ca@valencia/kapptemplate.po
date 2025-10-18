@@ -3,9 +3,9 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Manuel Tortosa <manutortosa@gmail.com>, 2009.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2017.
-# Josep M. Ferrer <txemaq@gmail.com>, 2008, 2014, 2015, 2016, 2017, 2020, 2022, 2024, 2025.
+# SPDX-FileCopyrightText: 2009 Manuel Tortosa <manutortosa@gmail.com>
+# SPDX-FileCopyrightText: 2015, 2017 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2008, 2014, 2015, 2016, 2017, 2020, 2022, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
@@ -196,7 +196,7 @@ msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
 "get started with your project."
 msgstr ""
-"Trobareu un fitxer README en la carpeta del projecte <b>%1</b><br /> per a "
+"Trobareu un fitxer README en la carpeta del projecte <b>%1</b><br /> per "
 "ajudar-vos a iniciar el projecte."
 
 #: src/application/GeneratorPage.qml:16
