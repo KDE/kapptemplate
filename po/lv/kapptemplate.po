@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-27 00:44+0000\n"
+"POT-Creation-Date: 2025-10-29 00:46+0000\n"
 "PO-Revision-Date: 2025-04-02 19:09+0300\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -167,28 +167,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "Neizdevās nokopēt sagataves datni uz „%1“."
 
-#: src/application/generator.cpp:247
+#: src/application/generator.cpp:264
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "Neizdevās ielādēt „%1“ veidnes arhīvu."
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:351
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Jūsu projekta nosaukums ir: <b>%1</b>. Tam pamatā ir sagatave „%2“.<br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:352
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versija: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:353
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Instalēts: %1 <br /><br />"
 
-#: src/application/generator.cpp:337
+#: src/application/generator.cpp:354
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -253,32 +253,32 @@ msgstr "Lietotāja vārds"
 msgid "Email of the user"
 msgstr "Lietotāja e-pasts"
 
-#: src/application/main.cpp:40
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:42
+#: src/application/main.cpp:44
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "„KAppTemplate“ ir KDE projektu sagatavju ģenerators"
 
-#: src/application/main.cpp:44
+#: src/application/main.cpp:46
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:48
+#: src/application/main.cpp:50
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Ikonas no „Oxygen“ komandas ikonām"

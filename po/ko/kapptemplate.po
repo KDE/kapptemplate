@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-27 00:44+0000\n"
+"POT-Creation-Date: 2025-10-29 00:46+0000\n"
 "PO-Revision-Date: 2025-04-06 22:16+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -163,27 +163,27 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "템플릿 파일을 %1(으)로 복사할 수 없습니다."
 
-#: src/application/generator.cpp:247
+#: src/application/generator.cpp:264
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "%1의 템플릿 압축 파일을 불러올 수 없습니다."
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:351
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "프로젝트 이름: <b>%1</b>, <b>%2</b> 템플릿을 기반으로 합니다.<br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:352
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "버전: %1 <br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:353
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "설치 경로: %1 <br /><br />"
 
-#: src/application/generator.cpp:337
+#: src/application/generator.cpp:354
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -249,32 +249,32 @@ msgstr "사용자 이름"
 msgid "Email of the user"
 msgstr "사용자의 이메일 주소"
 
-#: src/application/main.cpp:40
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:42
+#: src/application/main.cpp:44
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate은 KDE 프로젝트 템플릿 생성기입니다"
 
-#: src/application/main.cpp:44
+#: src/application/main.cpp:46
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:48
+#: src/application/main.cpp:50
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "Anne-Marie Mahfouf"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Sean Wilson"
 msgstr "Sean Wilson"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "Oxygen 팀 아이콘의 아이콘"

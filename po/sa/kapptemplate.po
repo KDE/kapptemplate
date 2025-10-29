@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-27 00:44+0000\n"
+"POT-Creation-Date: 2025-10-29 00:46+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -168,28 +168,28 @@ msgstr ""
 msgid "Could not copy template file to %1."
 msgstr "%1 इत्यत्र टेम्पलेट् सञ्चिकां प्रतिलिखितुं न शक्यते ।"
 
-#: src/application/generator.cpp:247
+#: src/application/generator.cpp:264
 #, fuzzy, kde-format
 #| msgid "Could not copy template file to %1."
 msgid "Could not load template archive for %1."
 msgstr "%1 इत्यत्र टेम्पलेट् सञ्चिकां प्रतिलिखितुं न शक्यते ।"
 
-#: src/application/generator.cpp:334
+#: src/application/generator.cpp:351
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "भवतः परियोजनानाम अस्ति: <b>%1</b> , <b>%2</b> टेम्पलेट् इत्यस्य आधारेण ।<br />"
 
-#: src/application/generator.cpp:335
+#: src/application/generator.cpp:352
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "संस्करणम् : %1<br /><br />"
 
-#: src/application/generator.cpp:336
+#: src/application/generator.cpp:353
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "संस्थापितम्: %1<br /><br />"
 
-#: src/application/generator.cpp:337
+#: src/application/generator.cpp:354
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
@@ -255,32 +255,32 @@ msgstr "उपयोक्तुः नाम"
 msgid "Email of the user"
 msgstr "उपयोक्तुः ईमेल"
 
-#: src/application/main.cpp:40
+#: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
-#: src/application/main.cpp:42
+#: src/application/main.cpp:44
 #, kde-format
 msgid "KAppTemplate is a KDE project template generator"
 msgstr "KAppTemplate एकः KDE परियोजना टेम्पलेट् जनरेटरः अस्ति"
 
-#: src/application/main.cpp:44
+#: src/application/main.cpp:46
 #, kde-format
 msgid "(C) 2008 Anne-Marie Mahfouf"
 msgstr "(C) 2008 एन्ने-मैरी महफूफ"
 
-#: src/application/main.cpp:48
+#: src/application/main.cpp:50
 #, kde-format
 msgid "Anne-Marie Mahfouf"
 msgstr "एन्ने-मैरी महफूफ"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Sean Wilson"
 msgstr "शीन् विल्सन"
 
-#: src/application/main.cpp:49
+#: src/application/main.cpp:51
 #, kde-format
 msgid "Icons from Oxygen Team icons"
 msgstr "आक्सीजन दलस्य चिह्नानां चिह्नानि"
