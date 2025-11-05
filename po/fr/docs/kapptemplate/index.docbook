@@ -119,7 +119,7 @@
 	</mediaobject>
 </screenshot>
 <para
->Sur la troisième page, une boîte de dialogue vous demande la version du projet, le dossier source et le nom de l'auteur ainsi que son adresse électronique. Si vous avez rempli l'onglet concernant vos informations personnelles dans la &configurationDuSysteme;, celles-ci en seront tirées par défaut.</para>
+>Sur la troisième page, une boite de dialogue vous demande la version du projet, le dossier source et le nom de l'auteur ainsi que son adresse électronique. Si vous avez rempli l'onglet concernant vos informations personnelles dans la &configurationDuSysteme;, celles-ci en seront tirées par défaut.</para>
 <screenshot>
 <screeninfo
 >La troisième page de &kapptemplate;</screeninfo>
