@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2025-11-20 00:45+0000\n"
 "PO-Revision-Date: 2025-03-27 08:58+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -138,12 +138,12 @@ msgstr "Створити"
 msgid "%1 cannot be created."
 msgstr "%1 не вдалося створити."
 
-#: src/application/generator.cpp:146
+#: src/application/generator.cpp:147
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Не вдалося створити шлях %1."
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:163
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
@@ -152,7 +152,7 @@ msgstr ""
 "Не вдалося скопіювати файл шаблону до %1, оскільки такий файл вже існує. "
 "Проєкт не було створено, а усі тимчасові файли буде вилучено."
 
-#: src/application/generator.cpp:172
+#: src/application/generator.cpp:177
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -161,33 +161,33 @@ msgstr ""
 "Не вдалося інтегрувати дані вашого проєкту до файла %1. Проєкт не буде "
 "створено, усі тимчасові файли буде вилучено."
 
-#: src/application/generator.cpp:180
+#: src/application/generator.cpp:185
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Не вдалося скопіювати файл шаблона до %1."
 
-#: src/application/generator.cpp:264
+#: src/application/generator.cpp:275
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "Не вдалося завантажити архів шаблону для %1."
 
-#: src/application/generator.cpp:351
+#: src/application/generator.cpp:362
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Назва вашого проєкту: <b>%1</b>, його засновано на шаблоні <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:352
+#: src/application/generator.cpp:363
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Версія: %1 <br /><br />"
 
-#: src/application/generator.cpp:353
+#: src/application/generator.cpp:364
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Встановлено у: %1 <br /><br />"
 
-#: src/application/generator.cpp:354
+#: src/application/generator.cpp:365
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

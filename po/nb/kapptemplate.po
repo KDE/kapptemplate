@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2025-11-20 00:45+0000\n"
 "PO-Revision-Date: 2009-11-11 10:32+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -137,51 +137,51 @@ msgstr ""
 msgid "%1 cannot be created."
 msgstr "Klarte ikke opprette %1."
 
-#: src/application/generator.cpp:146
+#: src/application/generator.cpp:147
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr ""
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:163
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generator.cpp:172
+#: src/application/generator.cpp:177
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
 "has not been generated and all temporary files will be removed."
 msgstr ""
 
-#: src/application/generator.cpp:180
+#: src/application/generator.cpp:185
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr ""
 
-#: src/application/generator.cpp:264
+#: src/application/generator.cpp:275
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr ""
 
-#: src/application/generator.cpp:351
+#: src/application/generator.cpp:362
 #, fuzzy, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Prosjektnavnet er <b>%1</b>, basert på malen %2.<br />"
 
-#: src/application/generator.cpp:352
+#: src/application/generator.cpp:363
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Versjon: %1 <br /><br />"
 
-#: src/application/generator.cpp:353
+#: src/application/generator.cpp:364
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Installert i: %1 <br /><br />"
 
-#: src/application/generator.cpp:354
+#: src/application/generator.cpp:365
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
