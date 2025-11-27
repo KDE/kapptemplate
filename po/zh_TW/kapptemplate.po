@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-20 00:45+0000\n"
+"POT-Creation-Date: 2025-11-27 00:45+0000\n"
 "PO-Revision-Date: 2025-03-27 21:44+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -33,7 +33,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:161
+#: src/application/apptemplatesmodel.cpp:157
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -136,17 +136,17 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "產生"
 
-#: src/application/generator.cpp:127
+#: src/application/generator.cpp:128
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "無法建立 %1。"
 
-#: src/application/generator.cpp:147
+#: src/application/generator.cpp:148
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "無法建立路徑 %1。"
 
-#: src/application/generator.cpp:163
+#: src/application/generator.cpp:164
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
@@ -155,7 +155,7 @@ msgstr ""
 "無法將範本檔複製到 %1，因為檔案已經存在。未產生專案，所有的暫存檔也都將被移"
 "除。"
 
-#: src/application/generator.cpp:177
+#: src/application/generator.cpp:178
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -163,32 +163,32 @@ msgid ""
 msgstr ""
 "整合您的專案資訊到檔案 %1 中失敗。未產生專案，所有的暫存檔也都將被移除。"
 
-#: src/application/generator.cpp:185
+#: src/application/generator.cpp:186
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "無法複製範本檔到 %1"
 
-#: src/application/generator.cpp:275
+#: src/application/generator.cpp:266
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "無法為 %1 載入範本封存。"
 
-#: src/application/generator.cpp:362
+#: src/application/generator.cpp:355
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "您的專案名稱為：<b>%1</b>，基於範本 <b>%2</b>。<br />"
 
-#: src/application/generator.cpp:363
+#: src/application/generator.cpp:356
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "版本：%1<br /><br />"
 
-#: src/application/generator.cpp:364
+#: src/application/generator.cpp:357
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "安裝於：%1<br /><br />"
 
-#: src/application/generator.cpp:365
+#: src/application/generator.cpp:358
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
