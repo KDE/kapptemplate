@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 14:42+0000\n"
+"POT-Creation-Date: 2025-11-27 02:38+0000\n"
 "PO-Revision-Date: 2025-05-24 08:37+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-i18n@rybczynska.net, lukasz.wojnilowicz@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:161
+#: src/application/apptemplatesmodel.cpp:157
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -135,17 +135,17 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Utwórz"
 
-#: src/application/generator.cpp:127
+#: src/application/generator.cpp:128
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "Nie można utworzyć %1."
 
-#: src/application/generator.cpp:146
+#: src/application/generator.cpp:147
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Nie można utworzyć ścieżki %1."
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:163
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
@@ -154,7 +154,7 @@ msgstr ""
 "Nie można skopiować pliku wzorca do %1, bo istnieje tam plik. Projekt nie "
 "został utworzony, a wszystkie pliki tymczasowe zostaną usunięte."
 
-#: src/application/generator.cpp:172
+#: src/application/generator.cpp:173
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -163,33 +163,33 @@ msgstr ""
 "Nie udało się zintegrować informacji o twoim projekcie w pliku %1. Nie "
 "utworzono projektu, a wszystkie pliki tymczasowe zostaną usunięte."
 
-#: src/application/generator.cpp:180
+#: src/application/generator.cpp:181
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Nie można skopiować pliku wzorca do %1."
 
-#: src/application/generator.cpp:264
+#: src/application/generator.cpp:255
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "Nie można wczytać wzorca archiwum dla %1."
 
-#: src/application/generator.cpp:351
+#: src/application/generator.cpp:344
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr ""
 "Twój projekt nazywa się: <b>%1</b> i jest oparty na wzorcu <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:352
+#: src/application/generator.cpp:345
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "Wersja: %1 <br /><br />"
 
-#: src/application/generator.cpp:353
+#: src/application/generator.cpp:346
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "Zainstalowane: %1 <br /><br />"
 
-#: src/application/generator.cpp:354
+#: src/application/generator.cpp:347
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

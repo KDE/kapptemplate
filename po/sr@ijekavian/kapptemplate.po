@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 14:42+0000\n"
+"POT-Creation-Date: 2025-11-27 02:38+0000\n"
 "PO-Revision-Date: 2017-07-24 00:24+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "slsimic@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:161
+#: src/application/apptemplatesmodel.cpp:157
 #, fuzzy, kde-format
 #| msgid "Templates Projects"
 msgctxt "@title:column"
@@ -142,17 +142,17 @@ msgctxt "@action:button Generate the application"
 msgid "Generate"
 msgstr "Генериши"
 
-#: src/application/generator.cpp:127
+#: src/application/generator.cpp:128
 #, kde-format
 msgid "%1 cannot be created."
 msgstr "%1 не може да се направи."
 
-#: src/application/generator.cpp:146
+#: src/application/generator.cpp:147
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Путања %1 не може да се направи."
 
-#: src/application/generator.cpp:162
+#: src/application/generator.cpp:163
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to integrate your project information into the file %1. The "
@@ -164,7 +164,7 @@ msgstr ""
 "Не могу да уклопим дате податке о пројекту у фајл %1. Пројекат није "
 "генерисан и сви привремени фајлови ће бити уклоњени."
 
-#: src/application/generator.cpp:172
+#: src/application/generator.cpp:173
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -173,34 +173,34 @@ msgstr ""
 "Не могу да уклопим дате податке о пројекту у фајл %1. Пројекат није "
 "генерисан и сви привремени фајлови ће бити уклоњени."
 
-#: src/application/generator.cpp:180
+#: src/application/generator.cpp:181
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Не могу да копирам шаблонски фајл у %1."
 
-#: src/application/generator.cpp:264
+#: src/application/generator.cpp:255
 #, fuzzy, kde-format
 #| msgid "Could not copy template file to %1."
 msgid "Could not load template archive for %1."
 msgstr "Не могу да копирам шаблонски фајл у %1."
 
-#: src/application/generator.cpp:351
+#: src/application/generator.cpp:344
 #, fuzzy, kde-format
 #| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Име пројекта је: <b>%1</b>, на основу шаблона %2.<br />"
 
-#: src/application/generator.cpp:352
+#: src/application/generator.cpp:345
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "<html>Издање: %1 <br /><br /></html>"
 
-#: src/application/generator.cpp:353
+#: src/application/generator.cpp:346
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "<html>Инсталира се у: %1 <br /><br /></html>"
 
-#: src/application/generator.cpp:354
+#: src/application/generator.cpp:347
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
