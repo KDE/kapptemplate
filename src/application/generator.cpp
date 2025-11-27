@@ -23,8 +23,8 @@
 
 #include <QDir>
 #include <QFileInfo>
+#include <QMimeDatabase>
 #include <QRegularExpression>
-#include <QFileInfo>
 #include <QStandardPaths>
 #include <QTemporaryDir>
 
@@ -130,6 +130,7 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
     }
 
     int progress = 0;
+    QMimeDatabase mimeDb;
 
     for (const QString &entry : entries) {
         progress++;
@@ -168,7 +169,11 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
                 break;
             } else if (QFile(QDir::cleanPath(tdir.path() + '/' + file->name())).copy(destName)) {
                 m_newFiles.append(destName);
-                if (!extractFileMacros(destName)) {
+                auto mimeType = mimeDb.mimeTypeForFile(destName);
+                auto processMacros = mimeType.inherits(QStringLiteral("text/plain"));
+                qCDebug(KAPPTEMPLATE) << (processMacros ? "processing file" : "not processing file") << destName << "with mimetype" << mimeType.name()
+                                      << "inheriting" << mimeType.allAncestors();
+                if (processMacros && !extractFileMacros(destName)) {
                     Q_EMIT errorOccurred(
                         i18n("Failed to integrate your project information into "
                              "the file %1. The project has not been generated and "
@@ -205,16 +210,22 @@ bool Generator::unpackArchive(const KArchiveDirectory *dir, const QString &dest,
 
 bool Generator::extractFileMacros(const QString &entry)
 {
-    QString text;
     QFile file(entry);
     if (file.exists() && file.open(QFile::ReadOnly)) {
-        QTextStream input(&file);
-        text = KMacroExpander::expandMacros(input.readAll(), m_variables);
+        auto input = QTextStream(&file).readAll();
         file.close();
-        if (file.open(QFile::WriteOnly | QIODevice::Truncate)) {
-            QTextStream output(&file);
-            output << text;
-            file.close();
+        auto text = KMacroExpander::expandMacros(input, m_variables);
+
+        if (text != input) {
+            if (file.open(QFile::WriteOnly | QIODevice::Truncate)) {
+                QTextStream output(&file);
+                output << text;
+                file.close();
+                qCDebug(KAPPTEMPLATE) << "changed file written";
+                return true;
+            }
+        } else {
+            qCDebug(KAPPTEMPLATE) << "unchanged file not rewritten";
             return true;
         }
     }
