@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 02:38+0000\n"
+"POT-Creation-Date: 2025-11-28 02:35+0000\n"
 "PO-Revision-Date: 2017-07-24 00:24+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -147,12 +147,12 @@ msgstr "Generiši"
 msgid "%1 cannot be created."
 msgstr "%1 ne može da se napravi."
 
-#: src/application/generator.cpp:147
+#: src/application/generator.cpp:148
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "Putanja %1 ne može da se napravi."
 
-#: src/application/generator.cpp:163
+#: src/application/generator.cpp:164
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to integrate your project information into the file %1. The "
@@ -164,7 +164,7 @@ msgstr ""
 "Ne mogu da uklopim date podatke o projektu u fajl %1. Projekat nije "
 "generisan i svi privremeni fajlovi će biti uklonjeni."
 
-#: src/application/generator.cpp:173
+#: src/application/generator.cpp:178
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -173,34 +173,34 @@ msgstr ""
 "Ne mogu da uklopim date podatke o projektu u fajl %1. Projekat nije "
 "generisan i svi privremeni fajlovi će biti uklonjeni."
 
-#: src/application/generator.cpp:181
+#: src/application/generator.cpp:186
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "Ne mogu da kopiram šablonski fajl u %1."
 
-#: src/application/generator.cpp:255
+#: src/application/generator.cpp:266
 #, fuzzy, kde-format
 #| msgid "Could not copy template file to %1."
 msgid "Could not load template archive for %1."
 msgstr "Ne mogu da kopiram šablonski fajl u %1."
 
-#: src/application/generator.cpp:344
+#: src/application/generator.cpp:355
 #, fuzzy, kde-format
 #| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "Ime projekta je: <b>%1</b>, na osnovu šablona %2.<br />"
 
-#: src/application/generator.cpp:345
+#: src/application/generator.cpp:356
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "<html>Izdanje: %1 <br /><br /></html>"
 
-#: src/application/generator.cpp:346
+#: src/application/generator.cpp:357
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "<html>Instalira se u: %1 <br /><br /></html>"
 
-#: src/application/generator.cpp:347
+#: src/application/generator.cpp:358
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

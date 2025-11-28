@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 02:38+0000\n"
+"POT-Creation-Date: 2025-11-28 02:35+0000\n"
 "PO-Revision-Date: 2025-03-28 22:27+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -136,12 +136,12 @@ msgstr "יצירה"
 msgid "%1 cannot be created."
 msgstr "אי אפשר ליצור את %1."
 
-#: src/application/generator.cpp:147
+#: src/application/generator.cpp:148
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "אי אפשר ליצור את הנתיב %1."
 
-#: src/application/generator.cpp:163
+#: src/application/generator.cpp:164
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
@@ -150,7 +150,7 @@ msgstr ""
 "לא ניתן להעתיק את קובץ התבנית אל %1, כיוון שהקובץ כבר קיים. המיזם לא נוצר "
 "וכל הקבצים הזמניים יוסרו."
 
-#: src/application/generator.cpp:173
+#: src/application/generator.cpp:178
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -158,32 +158,32 @@ msgid ""
 msgstr ""
 "שילוב פרטי המיזם שלך לקובץ %1 נכשל. המיזם לא נוצר וכל הקבצים הזמניים יוסרו."
 
-#: src/application/generator.cpp:181
+#: src/application/generator.cpp:186
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "לא ניתן להעתיק את קובץ התבנית אל %1."
 
-#: src/application/generator.cpp:255
+#: src/application/generator.cpp:266
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "לא ניתן לטעון את ארכיון התבנית עבור %1."
 
-#: src/application/generator.cpp:344
+#: src/application/generator.cpp:355
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "שם המיזם שלך הוא: <b>%1</b>, לפי התבנית <b>%2</b>.<br />"
 
-#: src/application/generator.cpp:345
+#: src/application/generator.cpp:356
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "גרסה: %1 <br /><br />"
 
-#: src/application/generator.cpp:346
+#: src/application/generator.cpp:357
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "הותקן תחת: %1 <br /><br />"
 
-#: src/application/generator.cpp:347
+#: src/application/generator.cpp:358
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "

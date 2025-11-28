@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 02:38+0000\n"
+"POT-Creation-Date: 2025-11-28 02:35+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -135,12 +135,12 @@ msgstr "生成"
 msgid "%1 cannot be created."
 msgstr "无法创建 %1。"
 
-#: src/application/generator.cpp:147
+#: src/application/generator.cpp:148
 #, kde-format
 msgid "Path %1 could not be created."
 msgstr "路径 %1 无法创建。"
 
-#: src/application/generator.cpp:163
+#: src/application/generator.cpp:164
 #, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
@@ -149,7 +149,7 @@ msgstr ""
 "无法复制模板文件到 %1，因为该文件已存在。项目没有被生成，所有临时文件都将被移"
 "除。"
 
-#: src/application/generator.cpp:173
+#: src/application/generator.cpp:178
 #, kde-format
 msgid ""
 "Failed to integrate your project information into the file %1. The project "
@@ -157,32 +157,32 @@ msgid ""
 msgstr ""
 "未能将项目信息集成到文件\"%1\"中。尚未生成项目，并且将删除所有临时文件。"
 
-#: src/application/generator.cpp:181
+#: src/application/generator.cpp:186
 #, kde-format
 msgid "Could not copy template file to %1."
 msgstr "无法复制模板文件到 %1。"
 
-#: src/application/generator.cpp:255
+#: src/application/generator.cpp:266
 #, kde-format
 msgid "Could not load template archive for %1."
 msgstr "无法加载 %1 的模板压缩包。"
 
-#: src/application/generator.cpp:344
+#: src/application/generator.cpp:355
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
 msgstr "您的项目名称是：<b>%1</b>，基于 <b>%2</b> 模板。<br />"
 
-#: src/application/generator.cpp:345
+#: src/application/generator.cpp:356
 #, kde-format
 msgid "Version: %1 <br /><br />"
 msgstr "版本：%1 <br /><br />"
 
-#: src/application/generator.cpp:346
+#: src/application/generator.cpp:357
 #, kde-format
 msgid "Installed in: %1 <br /><br />"
 msgstr "安装在：%1 <br /><br />"
 
-#: src/application/generator.cpp:347
+#: src/application/generator.cpp:358
 #, kde-format
 msgid ""
 "You will find a README in your project folder <b>%1</b><br /> to help you "
