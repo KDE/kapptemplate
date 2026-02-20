@@ -28,18 +28,16 @@ msgid "Your emails"
 msgstr "kscanne@gmail.com"
 
 #: src/application/apptemplatesmodel.cpp:157
-#, fuzzy, kde-format
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr "Tionscadail Teimpléid"
+msgstr ""
 
 #: src/application/ChoicePage.qml:16
-#, fuzzy, kde-format
-#| msgid "Choose your project template"
+#, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "Roghnaigh teimpléad do thionscadail"
+msgstr ""
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
@@ -54,20 +52,17 @@ msgid "Archive Files (*.tar.bz2 *.zip)"
 msgstr ""
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Tionscadail Teimpléid"
+msgstr ""
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
-#, fuzzy, kde-format
-#| msgctxt "Do not translate"
-#| msgid "Preview"
+#, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "Preview"
+msgstr ""
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
@@ -112,25 +107,22 @@ msgid "Metadata"
 msgstr ""
 
 #: src/application/ConfigurePage.qml:62
-#, fuzzy, kde-format
-#| msgid "Version number:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr "Uimhir an leagain:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Author name:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "Ainm an údair:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgid "Author email:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "Seoladh ríomhphoist an údair:"
+msgstr ""
 
 #: src/application/ConfigurePage.qml:93
 #, kde-format
@@ -144,10 +136,9 @@ msgid "%1 cannot be created."
 msgstr "Ní féidir %1 a chruthú."
 
 #: src/application/generator.cpp:148
-#, fuzzy, kde-format
-#| msgid "%1 cannot be created."
+#, kde-format
 msgid "Path %1 could not be created."
-msgstr "Ní féidir %1 a chruthú."
+msgstr ""
 
 #: src/application/generator.cpp:164
 #, kde-format
@@ -174,10 +165,9 @@ msgid "Could not load template archive for %1."
 msgstr ""
 
 #: src/application/generator.cpp:355
-#, fuzzy, kde-format
-#| msgid "Your project name is: <b>%1</b>, based on the %2 template.<br />"
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "Is é <b>%1</b> ainm do thionscadail, bunaithe ar theimpléad %2.<br />"
+msgstr ""
 
 #: src/application/generator.cpp:356
 #, kde-format
@@ -199,11 +189,10 @@ msgstr ""
 "chabhróidh leat do thionscadal a thosú."
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project version"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "Leagan an tionscadail"
+msgstr ""
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
@@ -212,24 +201,17 @@ msgid "Close"
 msgstr ""
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
-msgstr "Réamhrá"
+msgstr ""
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
-#| msgid ""
-#| "This wizard will help you generate a KDE 4 project template.\n"
-#| "You will be able to start developing you own KDE 4 project from this "
-#| "template."
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Cabhróidh an treoraí seo leat teimpléad tionscadail KDE 4 a chruthú.\n"
-"Beidh tú in ann do thionscadal féin KDE 4 a fhorbairt ón teimpléad seo."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
@@ -267,10 +249,9 @@ msgid "KAppTemplate"
 msgstr "KAppTemplate"
 
 #: src/application/main.cpp:44
-#, fuzzy, kde-format
-#| msgid "KAppTemplate is a KDE 4 project template generator"
+#, kde-format
 msgid "KAppTemplate is a KDE project template generator"
-msgstr "Is gineadóir teimpléad KDE 4 é KAppTemplate"
+msgstr ""
 
 #: src/application/main.cpp:46
 #, kde-format
@@ -318,10 +299,9 @@ msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Author name:"
+#, kde-format
 msgid "Author"
-msgstr "Ainm an údair:"
+msgstr ""
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
@@ -340,100 +320,3 @@ msgstr ""
 msgctxt "@title:tab"
 msgid "General"
 msgstr ""
-
-#~ msgid "Project name:"
-#~ msgstr "Ainm an tionscadail:"
-
-#~ msgid "Template description"
-#~ msgstr "Cur síos ar theimpléad"
-
-#~ msgid "Generating your project"
-#~ msgstr "Do thionscadal a ghiniúint"
-
-#~ msgid "Generation Progress\n"
-#~ msgstr "Giniúint: Dul Chun Cinn\n"
-
-#~ msgid "Succeeded.\n"
-#~ msgstr "D'éirigh Leis.\n"
-
-#, fuzzy
-#~| msgid "KDE 4 Template Generator"
-#~ msgctxt "@title:window"
-#~ msgid "KDE and Qt Template Generator"
-#~ msgstr "Gineadóir Teimpléad KDE 4"
-
-#~ msgid "Set the project properties"
-#~ msgstr "Socraigh airíonna do thionscadail"
-
-#, fuzzy
-#~| msgid "Your project name is : %1"
-#~ msgid "Your project name is: %1"
-#~ msgstr "Ainm do thionscadail: %1"
-
-#~ msgid "Project's version number"
-#~ msgstr "Uimhir leagain an tionscadail"
-
-#~ msgid ""
-#~ "Set your project version number. A first project should start with "
-#~ "version 0.1."
-#~ msgstr ""
-#~ "Socraigh uimhir leagan do thionscadail.  Ba chóir duit leagan 0.1 a chur "
-#~ "ar thionscadal úrnua."
-
-#, fuzzy
-#~| msgid "0.0; "
-#~ msgid "0.0"
-#~ msgstr "0.0; "
-
-#~ msgid "0.1"
-#~ msgstr "0.1"
-
-#, fuzzy
-#~| msgid "Installation directory:"
-#~ msgid "In&stallation directory:"
-#~ msgstr "Comhadlann suiteála:"
-
-#~ msgid "The directory where you will build your project"
-#~ msgstr "Comhadlann ina dtógfaidh tú do thionscadal"
-
-#~ msgid ""
-#~ "Choose the directory where you will build your project. Your home /src is "
-#~ "a good default location."
-#~ msgstr ""
-#~ "Roghnaigh an chomhadlann ina dtógfaidh tú do thionscadal.  Rogha mhaith "
-#~ "é /src faoi do chomhadlann bhaile."
-
-#~ msgid "Your first name and name"
-#~ msgstr "D'ainm agus sloinn"
-
-#~ msgid "This will set the copyright to this name"
-#~ msgstr "Tá an cóipcheart ag an ainm seo"
-
-#~ msgid "Your email address"
-#~ msgstr "Do sheoladh ríomhphoist"
-
-#~ msgid ""
-#~ "This email address will be next to your name in the copyright credit of "
-#~ "the project files."
-#~ msgstr ""
-#~ "Cuirfear an seoladh ríomhphoist seo in aice le d'ainm ar an líne "
-#~ "chóipchirt i gcomhaid an tionscadail."
-
-#~ msgctxt "Do not translate"
-#~ msgid "Description"
-#~ msgstr "Description"
-
-#~ msgid "The file %1 cannot be created."
-#~ msgstr "Ní féidir comhad %1 a chruthú."
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "The file %1 cannot be created."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Ní féidir comhad %1 a chruthú."
-
-#~ msgid "TextLabel"
-#~ msgstr "Lipéad"
