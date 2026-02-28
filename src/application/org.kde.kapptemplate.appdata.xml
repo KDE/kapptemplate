@@ -428,6 +428,7 @@
     <binary>kapptemplate</binary>
   </provides>
   <releases>
+    <release version="0.1.25123" date="2026-03-05"/>
     <release version="0.1.25122" date="2026-02-05"/>
     <release version="0.1.25121" date="2026-01-08"/>
     <release version="0.1.25120" date="2025-12-11"/>
