@@ -8,37 +8,37 @@ msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-27 00:45+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-30 16:50-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #: src/application/apptemplatesmodel.cpp:157
-#, fuzzy, kde-format
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
-msgstr "Templates Projects"
+msgstr "قېلىپ قۇرۇلۇشى"
 
 #: src/application/ChoicePage.qml:16
 #, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr ""
+msgstr "قېلىپ تاللىنىدۇ"
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
@@ -53,50 +53,47 @@ msgid "Archive Files (*.tar.bz2 *.zip)"
 msgstr ""
 
 #: src/application/ChoicePage.qml:96
-#, fuzzy, kde-format
-#| msgid "Templates Projects"
+#, kde-format
 msgctxt "@title"
 msgid "No Template Selected"
-msgstr "Templates Projects"
+msgstr ""
 
 #: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
-#, fuzzy, kde-format
-#| msgctxt "Do not translate"
-#| msgid "Preview"
+#, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
-msgstr "ئالدىن كۆزەت"
+msgstr "ئالدىنقى"
 
 #: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
-msgstr ""
+msgstr "كېيىنكى"
 
 #: src/application/ConfigurePage.qml:15
 #, kde-format
 msgctxt "@title"
 msgid "Configure"
-msgstr ""
+msgstr "سەپلە"
 
 #: src/application/ConfigurePage.qml:25
 #, kde-format
 msgctxt "@title:group"
 msgid "General"
-msgstr ""
+msgstr "ئادەتتىكى"
 
 #: src/application/ConfigurePage.qml:32
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "ئاتى:"
 
 #: src/application/ConfigurePage.qml:44
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Location:"
-msgstr ""
+msgstr "ئورنى:"
 
 #: src/application/ConfigurePage.qml:45
 #, kde-format
@@ -108,35 +105,31 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Metadata"
-msgstr ""
+msgstr "تەپسىلىي ئۇچۇر"
 
 #: src/application/ConfigurePage.qml:62
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
-msgstr ""
+msgstr "نەشرى:"
 
 #: src/application/ConfigurePage.qml:70
-#, fuzzy, kde-format
-#| msgctxt "NAME OF TRANSLATORS"
-#| msgid "Your names"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author name:"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "يازغۇچى ئاتى:"
 
 #: src/application/ConfigurePage.qml:78
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "يازغۇچى ئېلخەت ئادرېسى:"
 
 #: src/application/ConfigurePage.qml:93
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
-msgstr ""
+msgstr "قۇر"
 
 #: src/application/generator.cpp:128
 #, kde-format
@@ -144,10 +137,9 @@ msgid "%1 cannot be created."
 msgstr ""
 
 #: src/application/generator.cpp:148
-#, fuzzy, kde-format
-#| msgid "The file %1 cannot be created."
+#, kde-format
 msgid "Path %1 could not be created."
-msgstr "ھۆججەت %1 قۇرغىلى بولمىدى."
+msgstr ""
 
 #: src/application/generator.cpp:164
 #, kde-format
@@ -196,21 +188,19 @@ msgid ""
 msgstr ""
 
 #: src/application/GeneratorPage.qml:16
-#, fuzzy, kde-format
-#| msgid "Project name:"
+#, kde-format
 msgctxt "@title"
 msgid "Project Generation"
-msgstr "قۇرۇلۇش ئاتى:"
+msgstr ""
 
 #: src/application/GeneratorPage.qml:73
 #, kde-format
 msgctxt "@action:button Close the application"
 msgid "Close"
-msgstr ""
+msgstr "ياپ"
 
 #: src/application/IntroductionPage.qml:13
-#, fuzzy, kde-format
-#| msgid "Introduction"
+#, kde-format
 msgctxt "@title"
 msgid "Introduction"
 msgstr "تونۇشتۇرۇش"
@@ -255,7 +245,7 @@ msgstr ""
 #: src/application/main.cpp:42
 #, kde-format
 msgid "KAppTemplate"
-msgstr "KAppTemplate"
+msgstr ""
 
 #: src/application/main.cpp:44
 #, kde-format
@@ -275,7 +265,7 @@ msgstr "Anne-Marie Mahfouf"
 #: src/application/main.cpp:51
 #, kde-format
 msgid "Sean Wilson"
-msgstr "Sean Wilson"
+msgstr ""
 
 #: src/application/main.cpp:51
 #, kde-format
@@ -308,11 +298,9 @@ msgstr ""
 
 #: src/templates/C++/kde-frameworks6-simple/src/main.cpp:31
 #: src/templates/C++/kde-frameworks6/src/main.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "NAME OF TRANSLATORS"
-#| msgid "Your names"
+#, kde-format
 msgid "Author"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "يازغۇچى"
 
 #. i18n : internationalization
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
@@ -330,14 +318,12 @@ msgstr ""
 #, kde-format
 msgctxt "@title:tab"
 msgid "General"
-msgstr ""
+msgstr "ئادەتتىكى"
 
-#, fuzzy
 #~| msgid "Project name:"
 #~ msgid "Your project name is: %1"
 #~ msgstr "قۇرۇلۇش ئاتى:"
 
-#, fuzzy
 #~| msgid "0.1"
 #~ msgid "0.0"
 #~ msgstr "0.1"
@@ -345,7 +331,6 @@ msgstr ""
 #~ msgid "0.1"
 #~ msgstr "0.1"
 
-#, fuzzy
 #~| msgid "Installation directory:"
 #~ msgid "In&stallation directory:"
 #~ msgstr "ئورنىتىش مۇندەرىجىسى:"
