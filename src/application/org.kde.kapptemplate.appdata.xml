@@ -83,6 +83,7 @@
   <summary xml:lang="sl">Generator predlog kode</summary>
   <summary xml:lang="sv">Generering av programkodsmallar</summary>
   <summary xml:lang="tr">Uygulama Kod Şablonu Oluşturucu</summary>
+  <summary xml:lang="ug">پىروگرامما كود قېلىپى ھاسىللىغۇچ</summary>
   <summary xml:lang="uk">Генератор шаблонів коду програм</summary>
   <summary xml:lang="zh-CN">应用代码模板生成器</summary>
   <summary xml:lang="zh-TW">App 程式碼範本產生器</summary>
@@ -169,6 +170,7 @@
     <p xml:lang="sr-ijekavianlatin">Mogućnosti:</p>
     <p xml:lang="sv">Funktioner:</p>
     <p xml:lang="tr">Özellikler:</p>
+    <p xml:lang="ug">ئىقتىدار:</p>
     <p xml:lang="uk">Можливості:</p>
     <p xml:lang="zh-CN">功能：</p>
     <p xml:lang="zh-TW">功能：</p>
@@ -253,6 +255,7 @@
       <li xml:lang="sr-ijekavianlatin">kategorije</li>
       <li xml:lang="sv">Kategorier</li>
       <li xml:lang="tr">Kategoriler</li>
+      <li xml:lang="ug">سەھىپە</li>
       <li xml:lang="uk">Категорії.</li>
       <li xml:lang="zh-CN">分类</li>
       <li xml:lang="zh-TW">類別</li>
