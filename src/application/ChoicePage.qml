@@ -63,6 +63,7 @@ Kirigami.Page {
                     required property string descriptionFile
                     required property string pictureName
                     required property string baseName
+                    required property bool isCategory
 
                     text: name
 
@@ -89,11 +90,19 @@ Kirigami.Page {
             bottomPadding: Kirigami.Units.largeSpacing
             rightPadding: Kirigami.Units.largeSpacing
 
+            Kirigami.PlaceholderMessage {
+                anchors.centerIn: parent
+                visible: !heading.visible
+                text: i18nc("@title", "No Template Selected")
+            }
+
             ColumnLayout {
                 spacing: Kirigami.Units.largeSpacing
 
                 Kirigami.Heading {
-                    text: choiceView.currentItem && choiceView.currentItem.name.length > 0 ? choiceView.currentItem.name : i18nc("@title", "No Template Selected")
+                    id: heading
+                    text: choiceView.currentItem?.name ?? ""
+                    visible: choiceView.currentItem && !choiceView.currentItem.isCategory
                     wrapMode: Text.WordWrap
                     Layout.fillWidth: true
                 }
