@@ -28,7 +28,11 @@ AppTemplatesModel::AppTemplatesModel(QObject *parent)
 
 QHash<int, QByteArray> AppTemplatesModel::roleNames() const
 {
-    return {{Qt::DisplayRole, "name"}, {DescriptionFileRole, "descriptionFile"}, {PictureNameRole, "pictureName"}, {BaseNameRole, "baseName"}};
+    return {{Qt::DisplayRole, "name"},
+            {DescriptionFileRole, "descriptionFile"},
+            {PictureNameRole, "pictureName"},
+            {BaseNameRole, "baseName"},
+            {IsCategoryRole, "isCategory"}};
 }
 
 void extractTemplateDescriptions()
@@ -118,6 +122,7 @@ void AppTemplatesModel::refresh()
         templateItem->setData(description, DescriptionFileRole);
         templateItem->setData(picture, PictureNameRole);
         templateItem->setData(baseName, BaseNameRole);
+        templateItem->setData(false, IsCategoryRole);
     }
 }
 
@@ -131,6 +136,8 @@ AppTemplateItem *AppTemplatesModel::createItem(const QString &name, const QStrin
         currentPath << entry;
         if (!m_templateItems.contains(currentPath.join("/"))) {
             AppTemplateItem *item = new AppTemplateItem(entry);
+            item->setData(QString(), DescriptionFileRole);
+            item->setData(true, IsCategoryRole);
             parent->appendRow(item);
             m_templateItems[currentPath.join("/")] = item;
             parent = item;

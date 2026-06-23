@@ -31,7 +31,8 @@ public:
     {
         DescriptionFileRole = Qt::UserRole + 1,
         PictureNameRole = Qt::UserRole + 2,
-        BaseNameRole = Qt::UserRole + 3
+        BaseNameRole = Qt::UserRole + 3,
+        IsCategoryRole = Qt::UserRole + 4,
     };
 
     explicit AppTemplatesModel(QObject *parent = nullptr);
