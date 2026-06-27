@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-27 00:45+0000\n"
-"PO-Revision-Date: 2026-06-23 17:57+0200\n"
+"PO-Revision-Date: 2026-06-26 17:00+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -142,13 +142,13 @@ msgid "Path %1 could not be created."
 msgstr "Klarte ikkje oppretta stien %1."
 
 #: src/application/generator.cpp:164
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Could not copy template file to %1, because the file is already exists. The "
 "project has not been generated and all temporary files will be removed."
 msgstr ""
-"Klarte ikkje integrera prosjektinformasjonen din i fila %1. Prosjektet er "
-"ikkje generert og alle mellombelse filer vert fjerna."
+"Klarte ikkje kopiera malfil til %1, då målfila finst frå før. Prosjektet "
+"vart ikkje oppretta, og alle mellombelse filer vert sletta."
 
 #: src/application/generator.cpp:178
 #, kde-format
@@ -165,14 +165,14 @@ msgid "Could not copy template file to %1."
 msgstr "Klarte ikkje kopiera malfil til %1."
 
 #: src/application/generator.cpp:266
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not load template archive for %1."
-msgstr "Klarte ikkje kopiera malfil til %1."
+msgstr "Klarte ikkja opna malarkiv for %1."
 
 #: src/application/generator.cpp:355
-#, fuzzy, kde-format
+#, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "Prosjektnamnet er <b>%1</b>, basert på malen «%2».<br />"
+msgstr "Prosjektnamnet er <b>%1</b>, basert på malen <b>%2</b>.<br />"
 
 #: src/application/generator.cpp:356
 #, kde-format
@@ -212,13 +212,13 @@ msgid "Introduction"
 msgstr "Introduksjon"
 
 #: src/application/IntroductionPage.qml:19
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "This wizard will help you generate a new project to get started with Qt and "
 "KDE development."
 msgstr ""
-"Denne vegvisaren vil hjelpa deg å laga eit nytt prosjekt.\n"
-"Du kan laga dine eigne program basert på Qt og KDE-teknologi frå denne malen."
+"Denne vegvisaren vil hjelpa deg å laga eit nytt prosjekt, slik at du kjem i "
+"gang med Qt- og KDE-utvikling."
 
 #. i18n: ectx: label, entry (appName), group (Project)
 #: src/application/kapptemplate.kcfg:11
