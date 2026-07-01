@@ -16,6 +16,7 @@
 
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QDebug>
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -31,6 +32,7 @@ using namespace Qt::StringLiterals;
 
 int main(int argc, char **argv)
 {
+    qDebug() << "hello from main";
 #if KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0)
     KIconTheme::initTheme();
 #endif

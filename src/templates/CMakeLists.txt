@@ -15,8 +15,11 @@ function(kde_test_app_template)
     add_custom_target(${ARG_TEMPLATE}_${ARG_NAME}_generated ALL DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/template-test/${ARG_TEMPLATE}/${_lc_app_name}/CMakeLists.txt)
     add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/template-test/${ARG_TEMPLATE}/${_lc_app_name}/CMakeLists.txt
         COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_CURRENT_BINARY_DIR}/template-test/${ARG_TEMPLATE}/${_lc_app_name}"
+        COMMAND ${CMAKE_COMMAND} -E echo "$<TARGET_FILE:kapptemplate>"
+        COMMAND $<TARGET_FILE:kapptemplate> -platform offscreen --list-templates
         COMMAND ${CMAKE_COMMAND} -E env --modify "XDG_DATA_DIRS=path_list_prepend:${CMAKE_BINARY_DIR}/${KDE_INSTALL_DATAROOTDIR}"
             $<TARGET_FILE:kapptemplate> ARGS
+            -platform offscreen
             "${ARG_NAME}"
             "${CMAKE_CURRENT_BINARY_DIR}/template-test/${ARG_TEMPLATE}"
             "Au Thor"
