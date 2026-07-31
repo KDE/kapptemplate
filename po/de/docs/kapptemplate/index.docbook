@@ -77,7 +77,7 @@
 >&kapptemplate; ist ein Programm mit dem die Entwicklung schnell mit vorhandenen Vorlagen mit immer wieder zu schreibendem Quelltext und richtiger Struktur begonnen werden kann.</para>
 
 <para
->&kapptemplate; benutzt alle Vorlagen, die auf Ihrem Rechner installiert sind. Diese Vorlagen sind meistens in Entwicklungsdateien von Bibliotheken enthalten oder können &eg; von der Webseite <ulink url="https://store.kde.org"
+>&kapptemplate; verwendet alle Vorlagen, die auf Ihrem Rechner installiert sind. Diese Vorlagen sind meistens in Entwicklungsdateien von Bibliotheken enthalten oder können &eg; von der Webseite <ulink url="https://store.kde.org"
 >store.kde.org</ulink
 > heruntergeladen werden. </para>
 
