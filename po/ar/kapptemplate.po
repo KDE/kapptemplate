@@ -38,7 +38,7 @@ msgstr "مشاريع القوالب"
 #, kde-format
 msgctxt "@title"
 msgid "Choose Template"
-msgstr "اختر قالباً"
+msgstr "اختر قالبًا"
 
 #: src/application/ChoicePage.qml:26
 #, kde-format
@@ -172,7 +172,7 @@ msgstr "لا أستطيع تحميل أرشيف القالب لـ %1."
 #: src/application/generator.cpp:355
 #, kde-format
 msgid "Your project name is: <b>%1</b>, based on the <b>%2</b> template.<br />"
-msgstr "اسم مشروعك هو: <b>%1</b>، مستنداً على القالب <b>%2</b>.<br />"
+msgstr "اسم مشروعك هو: <b>%1</b>، مستندًا على القالب <b>%2</b>.<br />"
 
 #: src/application/generator.cpp:356
 #, kde-format
@@ -311,7 +311,7 @@ msgstr "المؤلف"
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}view.cpp:44
 #, kde-format
 msgid "This project is %1 days old"
-msgstr "هذا المشروع عمره %1 يوماً"
+msgstr "هذا المشروع عمره %1 يومًا"
 
 #: src/templates/C++/kde-frameworks6/src/%{APPNAMELC}window.cpp:26
 #, kde-format
