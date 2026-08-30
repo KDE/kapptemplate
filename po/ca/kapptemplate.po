@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 00:45+0000\n"
+"POT-Creation-Date: 2026-08-30 00:49+0000\n"
 "PO-Revision-Date: 2025-03-27 05:59+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -32,7 +32,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: src/application/apptemplatesmodel.cpp:157
+#: src/application/apptemplatesmodel.cpp:164
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -62,14 +62,14 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Cap plantilla seleccionada"
 
-#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
+#: src/application/ChoicePage.qml:138 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"

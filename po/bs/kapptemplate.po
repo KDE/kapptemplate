@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdesdk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 00:45+0000\n"
+"POT-Creation-Date: 2026-08-30 00:49+0000\n"
 "PO-Revision-Date: 2014-11-04 08:56+0000\n"
 "Last-Translator: Emina Huskic <ehuskic1@etf.unsa.ba>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Ik@etf.ba,samir.ribic@etf.unsa.ba,ehuskic1@etf.unsa.ba"
 
-#: src/application/apptemplatesmodel.cpp:157
+#: src/application/apptemplatesmodel.cpp:164
 #, fuzzy, kde-format
 #| msgid "Templates Projects"
 msgctxt "@title:column"
@@ -63,7 +63,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Predlošci projekata"
 
-#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, fuzzy, kde-format
 #| msgctxt "Do not translate"
@@ -72,7 +72,7 @@ msgctxt "@action:button Go to the previous page"
 msgid "Previous"
 msgstr "Pregled"
 
-#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
+#: src/application/ChoicePage.qml:138 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"

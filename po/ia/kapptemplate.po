@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-27 00:45+0000\n"
+"POT-Creation-Date: 2026-08-30 00:49+0000\n"
 "PO-Revision-Date: 2026-04-30 17:09+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "g.sora@tiscali.it"
 
-#: src/application/apptemplatesmodel.cpp:157
+#: src/application/apptemplatesmodel.cpp:164
 #, kde-format
 msgctxt "@title:column"
 msgid "Templates Projects"
@@ -57,14 +57,14 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Nulle patrono seligite"
 
-#: src/application/ChoicePage.qml:120 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
 msgid "Previous"
 msgstr "Precedente"
 
-#: src/application/ChoicePage.qml:129 src/application/IntroductionPage.qml:39
+#: src/application/ChoicePage.qml:138 src/application/IntroductionPage.qml:39
 #, kde-format
 msgctxt "@action:button Go to the next page"
 msgid "Next"
