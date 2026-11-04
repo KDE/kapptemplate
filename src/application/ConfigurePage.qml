@@ -26,6 +26,8 @@ FormCard.FormCardPage {
     }
 
     FormCard.FormCard {
+        autoSeparators: true
+
         FormCard.FormTextFieldDelegate {
             id: nameField
 
@@ -37,8 +39,6 @@ FormCard.FormCardPage {
             text: generator.name
             onTextChanged: generator.name = text
         }
-
-        FormCard.FormDelegateSeparator {}
 
         FormCard.FormButtonDelegate {
             text: i18nc("@label:textbox", "Location:")
@@ -58,21 +58,19 @@ FormCard.FormCardPage {
     }
 
     FormCard.FormCard {
+        autoSeparators: true
+
         FormCard.FormTextFieldDelegate {
             label: i18nc("@label:textbox", "Version:")
             text: generator.version
             onTextChanged: generator.version = text
         }
 
-        FormCard.FormDelegateSeparator {}
-
         FormCard.FormTextFieldDelegate {
             label: i18nc("@label:textbox", "Author name:")
             text: generator.authorName
             onTextChanged: generator.authorName = text
         }
-
-        FormCard.FormDelegateSeparator {}
 
         FormCard.FormTextFieldDelegate {
             label: i18nc("@label:textbox", "Author email:")
