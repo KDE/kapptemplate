@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:49+0000\n"
+"POT-Creation-Date: 2026-11-05 00:59+0000\n"
 "PO-Revision-Date: 2020-05-05 09:41+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -63,7 +63,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Projectos-Modelo"
 
-#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:85
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
@@ -90,7 +90,7 @@ msgctxt "@title:group"
 msgid "General"
 msgstr "Gerar"
 
-#: src/application/ConfigurePage.qml:32
+#: src/application/ConfigurePage.qml:34
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -114,7 +114,7 @@ msgctxt "@title:group"
 msgid "Metadata"
 msgstr ""
 
-#: src/application/ConfigurePage.qml:62
+#: src/application/ConfigurePage.qml:64
 #, fuzzy, kde-format
 #| msgid "&Version number:"
 msgctxt "@label:textbox"
@@ -128,14 +128,14 @@ msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "&Nome do autor:"
 
-#: src/application/ConfigurePage.qml:78
+#: src/application/ConfigurePage.qml:76
 #, fuzzy, kde-format
 #| msgid "A&uthor email:"
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "E-Mail do a&utor:"
 
-#: src/application/ConfigurePage.qml:93
+#: src/application/ConfigurePage.qml:91
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Generate"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdesdk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:49+0000\n"
+"POT-Creation-Date: 2026-11-05 00:59+0000\n"
 "PO-Revision-Date: 2014-11-04 08:56+0000\n"
 "Last-Translator: Emina Huskic <ehuskic1@etf.unsa.ba>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -63,7 +63,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Predlošci projekata"
 
-#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:85
 #: src/application/GeneratorPage.qml:67
 #, fuzzy, kde-format
 #| msgctxt "Do not translate"
@@ -90,7 +90,7 @@ msgctxt "@title:group"
 msgid "General"
 msgstr ""
 
-#: src/application/ConfigurePage.qml:32
+#: src/application/ConfigurePage.qml:34
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -114,7 +114,7 @@ msgctxt "@title:group"
 msgid "Metadata"
 msgstr ""
 
-#: src/application/ConfigurePage.qml:62
+#: src/application/ConfigurePage.qml:64
 #, fuzzy, kde-format
 #| msgid "Version number:"
 msgctxt "@label:textbox"
@@ -128,14 +128,14 @@ msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "Ime autora:"
 
-#: src/application/ConfigurePage.qml:78
+#: src/application/ConfigurePage.qml:76
 #, fuzzy, kde-format
 #| msgid "Author email:"
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "E-adresa autora:"
 
-#: src/application/ConfigurePage.qml:93
+#: src/application/ConfigurePage.qml:91
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"

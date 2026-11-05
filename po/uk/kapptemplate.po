@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:49+0000\n"
+"POT-Creation-Date: 2026-11-05 00:59+0000\n"
 "PO-Revision-Date: 2025-03-27 08:58+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -60,7 +60,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "Не вибрано шаблона"
 
-#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:85
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
@@ -85,7 +85,7 @@ msgctxt "@title:group"
 msgid "General"
 msgstr "Загальне"
 
-#: src/application/ConfigurePage.qml:32
+#: src/application/ConfigurePage.qml:34
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -109,7 +109,7 @@ msgctxt "@title:group"
 msgid "Metadata"
 msgstr "Метадані"
 
-#: src/application/ConfigurePage.qml:62
+#: src/application/ConfigurePage.qml:64
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
@@ -121,13 +121,13 @@ msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "Ім'я автора:"
 
-#: src/application/ConfigurePage.qml:78
+#: src/application/ConfigurePage.qml:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "Адреса ел. пошти автора:"
 
-#: src/application/ConfigurePage.qml:93
+#: src/application/ConfigurePage.qml:91
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"

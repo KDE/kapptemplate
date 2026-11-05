@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:49+0000\n"
+"POT-Creation-Date: 2026-11-05 00:59+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -57,7 +57,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "没有选择模板"
 
-#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:85
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
@@ -82,7 +82,7 @@ msgctxt "@title:group"
 msgid "General"
 msgstr "常规"
 
-#: src/application/ConfigurePage.qml:32
+#: src/application/ConfigurePage.qml:34
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -106,7 +106,7 @@ msgctxt "@title:group"
 msgid "Metadata"
 msgstr "元数据"
 
-#: src/application/ConfigurePage.qml:62
+#: src/application/ConfigurePage.qml:64
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
@@ -118,13 +118,13 @@ msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "作者姓名："
 
-#: src/application/ConfigurePage.qml:78
+#: src/application/ConfigurePage.qml:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "作者邮箱："
 
-#: src/application/ConfigurePage.qml:93
+#: src/application/ConfigurePage.qml:91
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"

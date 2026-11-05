@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kapptemplate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-30 00:49+0000\n"
+"POT-Creation-Date: 2026-11-05 00:59+0000\n"
 "PO-Revision-Date: 2025-03-27 04:08+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -58,7 +58,7 @@ msgctxt "@title"
 msgid "No Template Selected"
 msgstr "ნიმუში არჩეული არაა"
 
-#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:87
+#: src/application/ChoicePage.qml:129 src/application/ConfigurePage.qml:85
 #: src/application/GeneratorPage.qml:67
 #, kde-format
 msgctxt "@action:button Go to the previous page"
@@ -83,7 +83,7 @@ msgctxt "@title:group"
 msgid "General"
 msgstr "ზოგადი"
 
-#: src/application/ConfigurePage.qml:32
+#: src/application/ConfigurePage.qml:34
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -107,7 +107,7 @@ msgctxt "@title:group"
 msgid "Metadata"
 msgstr "მეტამონაცემები"
 
-#: src/application/ConfigurePage.qml:62
+#: src/application/ConfigurePage.qml:64
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Version:"
@@ -119,13 +119,13 @@ msgctxt "@label:textbox"
 msgid "Author name:"
 msgstr "ავტორის სახელი:"
 
-#: src/application/ConfigurePage.qml:78
+#: src/application/ConfigurePage.qml:76
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Author email:"
 msgstr "ავტორის ელფოსტა:"
 
-#: src/application/ConfigurePage.qml:93
+#: src/application/ConfigurePage.qml:91
 #, kde-format
 msgctxt "@action:button Generate the application"
 msgid "Generate"
