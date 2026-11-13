@@ -1,0 +1,239 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE">
+]>
+
+<book id="kapptemplate" lang="&language;">
+
+<bookinfo>
+<title
+>دليل &kapptemplate;</title>
+
+<authorgroup>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>2017-11-01</date>
+<releaseinfo
+>0.1 (تطبيقات 17.12)</releaseinfo>
+
+<abstract>
+<para
+>&kapptemplate; هو مولد مشاريع برمجية جديدة باستخدام القوالب. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>برمجة</keyword>
+<keyword
+>قالب</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>مقدمة</title
+> 
+<para
+>&kapptemplate; هو تطبيق لتبدأ التطوير بسرعة باستخدام قوالب موجودة توفِّر شيفرة أساسية متكررة الكتابة وهيكلًا مناسبًا.</para>
+
+<para
+>&kapptemplate; يلتقط القوالب المثبتة على جهازك. غالبًا ما تكون هذه القوالب جزءًا من ملفات التطوير للمكتبات أو يمكن تنزيلها مثلًا من الموقع <ulink url="https://store.kde.org"
+>store.kde.org</ulink
+>. </para>
+
+<para
+>أجب عن أسئلة المعالج في كل صفحة وولّد قالبك.</para>
+
+<note
+><para
+>ملف <filename
+>README</filename
+> في كل قالب سيمكنك من معرفة كيفية بناء القالب. سيزودك أيضًا بروابط لدروس متعلقة بالمشروع. بعد توليد المشروع، ينتهي عمل &kapptemplate; وتكون مسؤولًا عن بنائه بنفسك.</para
+></note>
+</chapter>
+
+<chapter id="using-kapptemplate">
+<title
+>استخدام &kapptemplate;</title>
+<para
+>&kapptemplate; هو معالج. الصفحة الأولى من المعالج تشرح لك أن &kapptemplate; سيولد مشروعًا أساسيًا. انقر <guibutton
+>التالي</guibutton
+> لبدء توليد مشروعك. <guibutton
+>إلغاء</guibutton
+> سيوقف البرنامج ويغلقه. <guibutton
+>مساعدة</guibutton
+> سيعرض دليل المساعدة هذا في &khelpcenter;.</para>
+<screenshot>
+<screeninfo
+>الصفحة الأولى لـ &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>الصفحة الأولى لـ &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>الصفحة الثانية تسرد القوالب المتاحة. على اليمين يمكنك رؤية معاينة القالب وأسفلها وصف القالب. بعد اختيار قالبك، يُطلب منك إدخال اسم المشروع في الحقل في الأسفل.</para>
+<screenshot>
+<screeninfo
+>الصفحة الثانية لـ &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="second-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>الصفحة الثانية لـ &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>في الصفحة الثالثة، يُطلب منك إصدار المشروع، مجلد المصدر، واسم المؤلف وبريده الإلكتروني. إذا ملأت علامة تبويب &systemsettings; حول معلوماتك الشخصية، فسيتم أخذها من هناك كمبدئي.</para>
+<screenshot>
+<screeninfo
+>الصفحة الثالثة لـ &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="third-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>الصفحة الثالثة لـ &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>الصفحة الرابعة والأخيرة تزودك ببعض التغذية الراجعة حول توليد المشروع.</para>
+<screenshot>
+<screeninfo
+>الصفحة الرابعة لـ &kapptemplate;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fourth-page.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>الصفحة الرابعة لـ &kapptemplate;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>ثم انقر <guibutton
+>إنهاء</guibutton
+> لإغلاق &kapptemplate;.</para>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>الحقوق والترخيص</title>
+
+<itemizedlist>
+<listitem
+><para
+>حقوق نشر البرنامج 1998-2003 &Kurt.Granroth;</para
+> </listitem>
+<listitem
+><para
+>حقوق نشر البرنامج 2006-2008 &Anne-Marie.Mahfouf;</para
+></listitem>
+<listitem
+><para
+>حقوق نشر البرنامج 2008 Beat Wolf</para>
+</listitem>
+</itemizedlist>
+<para
+>المساهمون: <itemizedlist>
+<listitem
+><para
+>مساعدة برمجية: Beat Wolf <email
+>asraniel@fryx.ch</email
+></para
+> </listitem>
+<listitem
+><para
+>قالب روبي: Cyrille Berger <email
+>cberger@cberger.net</email
+></para
+> </listitem>
+<listitem
+><para
+>قالب روبي: Richard Dale <email
+>Richard_Dale@tipitina.demon.co.uk
+></email
+></para
+> </listitem>
+<listitem
+><para
+>قالب Py&kde;4: Christoph Burgmer <email
+>chrislb@gmx.de</email
+></para
+> </listitem>
+</itemizedlist>
+</para>
+<para
+>حقوق نشر التوثيق 2008 لـ &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index; 
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
